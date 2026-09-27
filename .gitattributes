@@ -1,0 +1,6 @@
+# Preserve exact archived source bytes and SHA256 identities across checkout.
+* -text
+*.pptx binary
+*.pdf binary
+*.png binary
+*.jpg binary

@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-09-27T08:30:08.493046+00:00",
+  "source": "user_provided_Kaggle_submission_screenshot",
+  "metric": "MAE_total_price_TWD_lower_is_better",
+  "leaderboard_partition": "Public",
+  "public_test_share_approx": 0.3,
+  "private_mae": null,
+  "screenshotted_scores": {
+    "submission_v19_trial.csv": 2387305.3199,
+    "submission_v20_trial.csv": 2069837.8954,
+    "submission_v21_trial.csv": 2071041.3042,
+    "submission_v22_trial.csv": 1998568.5706,
+    "submission_v23_trial.csv": 2026961.4299,
+    "submission_v24_trial.csv": 2083045.2932
+  },
+  "best_in_this_screenshot": "submission_v22_trial.csv",
+  "screenshot_path": "outputs/kaggle_feedback/public_submissions_v19_v24_20260927.png",
+  "screenshot_sha256": "c3c24333be6f9d2b97a4d359888e3fa9e3f96ebf906867bc8f9c29449a4c53bc",
+  "local_csv_sha256": {
+    "submission_v19_trial.csv": "287943c5238b67a1e5a2a5313089f766a5b014d82fea386a5c26117b79e7edb8",
+    "submission_v20_trial.csv": "194301d1fdf36081f3454c20274f8df3a8b8bcbc74ec9257d98fec601915444f",
+    "submission_v21_trial.csv": "2bf6cd75169a102400fb30a14c09bde6359c5cb9ada7ea907f74a8007ebea152",
+    "submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "submission_v23_trial.csv": "58bf1e360df5c95b2982ea2174e3d777932e76320ba4a9c7580a6d6194742fd8",
+    "submission_v24_trial.csv": "98ad881d6b361e5df2f8cc9cb8197b08c07a06cb7ab47e08962b0c757f5f046e"
+  },
+  "uploaded_file_bytes_independently_verified": false,
+  "platform_live_query_performed": false,
+  "selector_modified": false,
+  "model_or_predictions_changed": false,
+  "difference_v22_minus_v20": -71269.32480000006,
+  "relative_improvement_vs_v20_pct": 3.443232195061685
+}

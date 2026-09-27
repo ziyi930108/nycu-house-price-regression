@@ -1,0 +1,4 @@
+# Audited local version: torch 2.13.0+cu126, NVIDIA RTX 4060 Ti.
+# Choose the matching wheel for your platform; install in the same or a second env.
+torch==2.13.0
+numpy==2.3.5

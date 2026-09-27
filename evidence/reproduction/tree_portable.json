@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "new_fits": 0,
+  "query_labels_used": false,
+  "checks": {
+    "C_unit": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    },
+    "C_log": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    },
+    "C_raw": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    },
+    "L_unit": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    },
+    "unit_spatial": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    },
+    "log_spatial": {
+      "rows": 47073,
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0
+    }
+  },
+  "elapsed_seconds": 61.115604900056496,
+  "isolated_module_paths": {
+    "tree_runtime": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\tree_runtime.py",
+    "round2_neighborhood": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\closure_modules\\round2_neighborhood.py",
+    "round8_spatial_reference": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\closure_modules\\round8_spatial_reference.py",
+    "round6_geo": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\closure_modules\\round6_geo.py",
+    "model_common": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\closure_modules\\model_common.py",
+    "prepare_data": "C:\\NYCU_ML\\outputs\\github_delivery_work\\tree_audit\\closure_modules\\prepare_data.py"
+  }
+}

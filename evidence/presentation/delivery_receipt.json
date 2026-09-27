@@ -1,0 +1,65 @@
+{
+  "schema_version": "v22-presentation-delivery.v1",
+  "verified_at": "2026-09-27T17:04:14.841697+00:00",
+  "deck": "deliverables/臺灣房價預測_正式報告_v22.pptx",
+  "sha256": "65d908f82efd8afd4754829cbf751e78b15715e4e6411dec76cf97a381341fc5",
+  "bytes": 477713,
+  "speaker_notes": "deliverables/講稿與問答.md",
+  "speaker_notes_sha256": "0781d4cbdeae0dbcd3b5b572e7527321d651b40d869e1477b7b5f924482bceb7",
+  "slides": 16,
+  "main_talk_slides": 13,
+  "appendix_slides": 3,
+  "suggested_main_talk_seconds": 545,
+  "native_charts": 4,
+  "native_tables": 6,
+  "slides_with_speaker_notes": 16,
+  "visual_review": {
+    "all_final_slides_reviewed_individually": true,
+    "render_scale": 1.25,
+    "slide_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "unresolved_blocking_findings": []
+  },
+  "artifact_tool_import_verified": true,
+  "native_powerpoint_opened": false,
+  "external_review": {
+    "content_all_16_slides": true,
+    "visual_spotcheck": [
+      9,
+      10,
+      12,
+      16
+    ]
+  },
+  "new_model_training": 0,
+  "model_prices_changed": false,
+  "source_report": "deliverables/v22_github/REPORT.md",
+  "repository": "https://github.com/ziyi930108/nycu-house-price-regression",
+  "repository_visibility": "private",
+  "known_limits": [
+    "Private score unknown",
+    "Full clean installation and from-scratch ML retraining untested",
+    "Native PowerPoint application not inspected"
+  ],
+  "build_files": {
+    "build_deck.mjs": "f5e652075255230c720da41c4649cb8884ab7ef40a7a02270f729a93eb4d8649",
+    "finalize_deck.mjs": "9289f000af8924f1fd3ed4b2fbf770fb3e676efab1876d5057d1ba4124ab00f2",
+    "source_data.json": "357a45a41d60859a2fce4159c60e0e7e9e4a030af1f32247ca0b5011ba3f457d"
+  }
+}

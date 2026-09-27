@@ -1,0 +1,218 @@
+{
+  "input": "deliverables\\v22_github\\REPORT.md",
+  "output": "deliverables\\v22_github\\docs\\臺灣房價預測_v22_正式報告.pdf",
+  "input_sha256": "f52aea51923e25e1fd49c8c546e6ccdfef1142b2f092afe5379e8bfe620732ae",
+  "output_sha256": "da3f0dd07c3f2657601c5258ca6703abe0cee0711f4b1d6cdb756849605c0097",
+  "pages": 10,
+  "font": "Microsoft JhengHei",
+  "page_size": "A4",
+  "section_pages": [
+    {
+      "heading": "摘要",
+      "page": 1
+    },
+    {
+      "heading": "1. 問題定義與評估方法",
+      "page": 1
+    },
+    {
+      "heading": "2. 資料來源與前處理",
+      "page": 1
+    },
+    {
+      "heading": "2.1 原始資料與使用範圍",
+      "page": 1
+    },
+    {
+      "heading": "2.2 清理順序",
+      "page": 2
+    },
+    {
+      "heading": "3. 特徵設計",
+      "page": 2
+    },
+    {
+      "heading": "4. 模型方法",
+      "page": 3
+    },
+    {
+      "heading": "4.1 近期加權的單價 CatBoost",
+      "page": 3
+    },
+    {
+      "heading": "4.2 神經網路與其他樹模型",
+      "page": 4
+    },
+    {
+      "heading": "4.3 三分支組合",
+      "page": 4
+    },
+    {
+      "heading": "5. 驗證設計與結果",
+      "page": 4
+    },
+    {
+      "heading": "5.1 時間切分",
+      "page": 4
+    },
+    {
+      "heading": "5.2 年度整體 MAE",
+      "page": 5
+    },
+    {
+      "heading": "5.3 Kaggle Public 與未知 Private",
+      "page": 6
+    },
+    {
+      "heading": "6. 方法比較與取捨",
+      "page": 6
+    },
+    {
+      "heading": "7. 過擬合、洩漏與適用限制",
+      "page": 7
+    },
+    {
+      "heading": "8. 程式與重現範圍",
+      "page": 7
+    },
+    {
+      "heading": "8.1 實際方法入口",
+      "page": 7
+    },
+    {
+      "heading": "8.2 本次交付的實際重現測試",
+      "page": 8
+    },
+    {
+      "heading": "9. 結論",
+      "page": 9
+    },
+    {
+      "heading": "附錄：證據與程式來源",
+      "page": 9
+    }
+  ],
+  "text_checks": {
+    "467,221": true,
+    "1,998,568.5706": true,
+    "Private": true,
+    "v24": true,
+    "138.716": true
+  },
+  "visual_qa": {
+    "status": "passed",
+    "pages_individually_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "renderer": "bundled Poppler pdftoppm",
+    "render_dpi": 110,
+    "clipping_or_overlap_observed": false,
+    "missing_glyphs_observed": false,
+    "source_links": "Readable labels in PDF; full relative links in REPORT.md",
+    "notes": "All pages visually inspected; revision only changed page 9, while previously inspected pages 1-4 were pixel-identical."
+  },
+  "final_content_text_checks": {
+    "84.74": true,
+    "565.28": true,
+    "47,073": true,
+    "CRLF": true,
+    "1,998,568.5706": true,
+    "2,083,045.2932": true,
+    "Private": true,
+    "價格參考狀態": true,
+    "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35": true
+  },
+  "page_text_geometry_checks": [
+    {
+      "page": 1,
+      "chars": 1275,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 2,
+      "chars": 1105,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 3,
+      "chars": 998,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 4,
+      "chars": 1521,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 5,
+      "chars": 1006,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 6,
+      "chars": 1273,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 7,
+      "chars": 1315,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 8,
+      "chars": 1214,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 9,
+      "chars": 1402,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    },
+    {
+      "page": 10,
+      "chars": 498,
+      "out_of_page_characters": 0,
+      "replacement_characters": 0,
+      "footer_page_number_present": true
+    }
+  ],
+  "page_render_sha256": {
+    "1": "4859c93d218f701805951ef6303b08e32f306987f73921b677e7ab1307a7ad88",
+    "2": "58e9139a8e3f0096b5205df0115db8bcb37b7dea8d6057f5b150aff0e359b458",
+    "3": "a3a200557f97b140f8c3ac494b90cc0aa63804d143c818840c2ad4fc55109ee1",
+    "4": "cc700aa0c4885f364ab91769ec1a989da7753dcefb29eea82132a6add9aa8c52",
+    "5": "ab87688fad8a9938cebc15547b0bc484b347887639b6e698caded7c0398ed74b",
+    "6": "36482737e71da15fa3a356766162f0755c272d2dd24373f5bb4f605eebdea119",
+    "7": "cb8d4cf663615be2d0f88fd5d0678042f4f2df7b6e8319a7ac80de1d60690c94",
+    "8": "596575db4e9973f8e4dd9df7879da044656d91e6a4f212b98712460a6c238199",
+    "9": "21eb39d89ad7901283d0a2ad95f4b4de7a05e629863651aed8177b0709db0060",
+    "10": "01b21b6ee3b7c07cf23735bf058e22cd7b84f819cc97b685225195c92cee57b6"
+  }
+}

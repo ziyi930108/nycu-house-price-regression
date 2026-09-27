@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "full_prediction_vector_bitwise_equal": true,
+  "rows": 47073,
+  "max_abs_prediction_difference_TWD": 0.0,
+  "original_csv_sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+  "new_csv_sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+  "unit_tests_passed": 4,
+  "integration_elapsed_seconds": 84.73639529990032,
+  "new_training_runs": 0,
+  "first_attempt": {
+    "exit_code": 1,
+    "reason": "CSV LF instead of original CRLF; prediction values and all branches identical",
+    "legacy_receipt_status_field_is_misleading": true,
+    "final_code_corrected_receipt_status": true
+  },
+  "fresh_environment_install_tested": false,
+  "raw_data_full_retraining_tested": false
+}

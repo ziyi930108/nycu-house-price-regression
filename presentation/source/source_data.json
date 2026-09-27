@@ -1,0 +1,190 @@
+{
+  "publicLabels": [
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+    "v23",
+    "v24"
+  ],
+  "publicScores": [
+    2387305.3199,
+    2069837.8954,
+    2071041.3042,
+    1998568.5706,
+    2026961.4299,
+    2083045.2932
+  ],
+  "oldMAE": [
+    2372150.7229472687,
+    1416140.0530874133,
+    1410654.844830376
+  ],
+  "newMAE": [
+    2309352.35769657,
+    1407387.070805849,
+    1383228.4054499655
+  ],
+  "improvement": 3.443232195061685,
+  "slides": [
+    {
+      "title": "臺灣房屋總價預測",
+      "seconds": 20,
+      "script": "今天分享臺灣房屋總價預測。這是一個監督式回歸問題，輸入房屋與交易屬性，輸出連續的總價數值。我會說明 v22 的資料處理、模型方法、實驗結果與推論重現。Private 成績仍未知。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "Cover photograph: Markus Winkler, Taipei, Taiwan. https://unsplash.com/photos/gray-concrete-building-vztbnMlTDNs",
+        "Photo used under the Unsplash License as contextual imagery only."
+      ]
+    },
+    {
+      "title": "評分與 Public／Private",
+      "seconds": 40,
+      "script": "先說明分數的意義。例如真價一千萬元，預測一千一百萬元，絕對誤差就是一百萬元。把所有評分交易的誤差平均，就是 MAE。公開分數約使用 test 的三成，最終看的 Private 則是另外七成。這與課程另外提供的 valid 不同。分數是總價誤差，不是準確率，也不表示每筆都錯同樣的金額。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json",
+        "User-provided competition evaluation and leaderboard screenshots in this conversation."
+      ]
+    },
+    {
+      "title": "資料清理與列數",
+      "seconds": 45,
+      "script": "原 train 有四十五萬五千七百八十七列，先去掉混入的三列英文表頭，再去掉五百二十九列完全重複交易。最終加入 valid，移除二十八筆跨集重複，得到四十六萬七千二百二十一筆。重複判定包含價格但排除編號，不是按 ID 刪除。這張表是最終 fit 的資料，年度回測另按時間切分且不混入 valid。test 四萬七千零七十三筆全數保留，依 sample 順序輸出。",
+      "sources": [
+        "REPORT.md，第 2 節",
+        "research/src/model_common.py:25",
+        "research/src/round79_final.py:83"
+      ]
+    },
+    {
+      "title": "特徵設計",
+      "seconds": 35,
+      "script": "共同基礎有八十七個特徵，包括民國日期、中文樓層、地址與面積比例等轉換。單價 CatBoost 再加八個道路地理欄位，共九十五個，其中二十三個類別欄。這個維度只適用這支樹模型，神經網路另有自己的編碼。編號、目標價格、完整備註與解約情形不作輸入。道路位置也不等同精確門牌。外部地圖沒有成交價格，我們沒有去內政部查 test 的答案。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "research/src/house_features.py:99",
+        "research/src/round6_geo.py:9"
+      ]
+    },
+    {
+      "title": "模型組合",
+      "seconds": 50,
+      "script": "v22 有三條價格分支，分支內還包含多個模型。單價分支學每單位面積價格，再乘回面積。對數分支用另一種尺度表示總價，神經網路提供不同的非線性預測。每條分支先還原成元，再以訓練資料中的同建案、地址、道路等可比成交與時間趨勢修正，必要時補上空間修正。最後逐筆取三個價格的中位數。這可以降低某一條分支極端輸出的影響，但三條一起錯時仍會錯。完整係數放在附錄。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "research/src/round79_final.py:153",
+        "research/src/round71_final.py:115",
+        "research/src/round46_trial_release.py:243"
+      ]
+    },
+    {
+      "title": "近期成交加權",
+      "seconds": 50,
+      "script": "v22 相對 v20 的主要改動，是在單價 CatBoost 原有面積權重上，乘上日期權重。日期採三百六十五天半衰期，所以相差一年的有效成交，較早一筆的日期權重約是一半。圖中的一、零點五、零點二五是正規化前的相對值，實際資料還會正規化再乘面積權重。這不是只留下最近一年，而是仍保留可用舊資料。面積權重讓單價損失對齊總價 MAE，日期權重則讓近期成交更有影響力。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "research/src/round79_recency_unit.py:78",
+        "research/src/round60_recency_price_prior.py:49"
+      ]
+    },
+    {
+      "title": "時間驗證設計",
+      "seconds": 45,
+      "script": "我們用三個完整年度做時間回測，每次只用評分起點以前的 train，預測接下來一年。模型、編碼與價格參考都必須依該期 fit 建立，不能把看過評分價格的全量模型拿回來測。這比把年份隨機混在一起，更接近用過去推估未來。不過這些年度已反覆用於研究，晚期訓練也包含較早的評分年度，因此不是三個獨立試驗，也不是新盲測。",
+      "sources": [
+        "REPORT.md，第 5、7 節",
+        "evidence/outputs/round79/plan.json"
+      ]
+    },
+    {
+      "title": "歷史回測結果",
+      "seconds": 45,
+      "script": "這張圖按時間順序比較 v20 與 v22，單位是萬元。v22 三期的整體 MAE 都較低，改善幅度依序約二點六五、零點六二、一點九四百分比。最小的改善出現在中間年度，配對抽樣區間也跨過零，所以不能說三期都證明有穩定優勢。這些結果提供跨時間的比較依據，但窗口重用造成的選型偏差仍然存在。",
+      "sources": [
+        "evidence/reports/round79_report.md",
+        "evidence/outputs/round79/results.json",
+        "evidence/outputs/round79/paired_vs_v20/results.json"
+      ]
+    },
+    {
+      "title": "Kaggle Public 成績",
+      "seconds": 45,
+      "script": "這是使用者實際提交後提供的六個 Public 分數，圖上以萬元顯示。v22 的完整 MAE 是一百九十九萬八千五百六十八點五七零六元，在這六版中最低。相對 v20，平均每筆誤差少約七萬一千兩百六十九元，降低三點四四百分比。這是 MAE 降低，不是準確率增加。較新的 v23 和 v24 在這次 Public 沒有超過 v22，但最終七成 test 的 Private 仍未知，不能把公開結果當成 Private 保證。",
+      "sources": [
+        "evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json",
+        "evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.png"
+      ]
+    },
+    {
+      "title": "v24 的有利與不利證據",
+      "seconds": 45,
+      "script": "不能只挑支持 v22 的結果。v24 在三個年度的整體 MAE 都比 v22 更低，但 Public 排序相反。v24 單價分支採兩個 CatBoost seed 各半，已移除這條分支原有的 LightGBM 比例，其他兩條分支保持。它在最新年度真價至少一億的三百一十九筆資料中，群內 MAE 又比 v22 增加約九十點九七萬元。這是局部群組的差值，不是全體變差。我們因此保留 v24 作互補候選，不能宣稱 v22 每個評估都最好。",
+      "sources": [
+        "evidence/reports/round83_delivery.md",
+        "REPORT.md，第 5、6 節",
+        "research/src/round83_final.py"
+      ]
+    },
+    {
+      "title": "不利結果與過擬合風險",
+      "seconds": 40,
+      "script": "平均分數會掩蓋不同族群的差異。例如最新回測年度，真價五千萬到一億這一群有一千七百二十五筆，v22 的群內平均誤差仍比 v20 多約二十點四七萬元。這不是全體 MAE 增加二十萬，也不能在預測時按未知真價決定用哪個模型。另一個風險是反覆看同一批驗證資料，方法會逐漸適應這些窗口。因此我們保留不利結果，不把 bootstrap 解讀成 Private 勝率。",
+      "sources": [
+        "evidence/reports/round79_report.md",
+        "REPORT.md，第 5、7 節"
+      ]
+    },
+    {
+      "title": "保存模型推論重現",
+      "seconds": 50,
+      "script": "這次新增的是可執行的推論入口。我們從原 test Excel 重新產生特徵，搭配保存的地理資料、編碼與價格先驗，真正載入四個樹模型和兩個神經網路，再重算參考與空間修正。四萬七千零七十三筆的未取整結果完全一致，最大差為零，最終 CSV 的完整 SHA256 也相同。單一入口耗時八十四點七四秒，這是同一台電腦既有環境的實測，不是重訓時間。全新安裝、從零重訓與地理資料重建還沒有驗證。",
+      "sources": [
+        "evidence/reproduction/integration_verified.json",
+        "docs/REPRODUCIBILITY.md",
+        "src/predict_v22.py"
+      ]
+    },
+    {
+      "title": "結論與程式交付",
+      "seconds": 35,
+      "script": "v22 把近期成交權重加入單價學習，再與對數與神經網路分支組合，Public MAE 約一百九十九點八六萬元。程式與正式報告已整理成獨立交付目錄，推論入口已完成全量核對。但 v24 的本機優勢與高價群的退步提醒我們，較低的 Public 不能保證 Private 較好。後續研究方向是固定候選配方做時間切分穩定性檢查。畫面是私人 GitHub 儲存庫，閱覽需要授權。",
+      "sources": [
+        "REPORT.md",
+        "README.md",
+        "https://github.com/ziyi930108/nycu-house-price-regression"
+      ]
+    },
+    {
+      "title": "完整模型公式",
+      "seconds": 0,
+      "script": "這頁供模型細節問答。C_unit 是 R79 單價 CatBoost，L_unit 是既有單價 LightGBM，C_raw 是直接總價 CatBoost，C_log 是近期加權對數 CatBoost。N_area 是面積連結 NN，N_prior 是近期加權先驗倍率 NN。所有變數先還原成元。R 為 reference trend，S 同時接收原基準與 reference 結果。最外層取逐筆中位數，沒有在 median 後再乘面積或再次做趨勢。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "research/src/round79_final.py:153",
+        "research/src/round71_final.py:115",
+        "research/src/round46_trial_release.py:243"
+      ]
+    },
+    {
+      "title": "程式與參數",
+      "seconds": 0,
+      "script": "R79 是實驗編號，v22 是提交檔版本名。這段只保留核心概念，完整來源還有日期權重來源、列序、特徵、保存與重載檢查。主要 CatBoost 使用 GPU、兩千九百九十九棵樹、深度八、學習率零點零六五與 seed 四十二，沒有 query eval_set 或 early stopping。資料特徵在 house_features.py，全量 fit 在 round79_final_unit.py，組合在 round79_final.py，CSV 檢查在 round79_release.py。交付已新增 src/predict_v22.py，使用原 test 加十七項保存 artifact 真正重跑六模型。這是保存模型推論，不是從零重訓。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "research/src/round79_recency_unit.py:78",
+        "evidence/outputs/round79/final_model/model/metadata.json"
+      ]
+    },
+    {
+      "title": "課堂問答",
+      "seconds": 0,
+      "script": "若被問到外部資料：價格標籤只來自課程 train 與 valid，外部 OSM 道路資訊只提供地理特徵，沒有查成交答案。若問 OOF：價格先驗採五折建案分組，避免本建案標籤直接進入其先驗，這不是時間 OOF，不能聲稱每筆先驗都只用當日以前的交易。若問 median：它降低單支極端輸出的影響，但不能保證沒有偏誤。若問正式交付：原 test 加保存狀態的推論已核對全部四萬七千零七十三筆，程式與報告已整理。模型與課程交易資料留在本機，GitHub 不包含它們。新環境安裝、其他硬體與從零重訓仍未測。CPU 神經網路可能因數值運算產生不同結果，不能保證位元相同。",
+      "sources": [
+        "REPORT.md，第 2 至 4 節",
+        "REPORT.md，第 5、7 節",
+        "docs/REPRODUCIBILITY.md"
+      ]
+    }
+  ]
+}

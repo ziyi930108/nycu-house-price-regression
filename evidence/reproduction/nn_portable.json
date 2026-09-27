@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "caller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "out_directory": "wrapper_replay",
+  "artifact_directory": "portable_artifacts",
+  "rows": 47073,
+  "copied_artifacts_used": true,
+  "model_predictions_bitwise_equal": {
+    "area": true,
+    "prior": true
+  },
+  "training_calls": 0,
+  "elapsed_seconds": 11.580135899828747
+}

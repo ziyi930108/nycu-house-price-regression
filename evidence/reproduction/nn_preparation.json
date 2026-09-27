@@ -1,0 +1,72 @@
+{
+  "query_rows": 47073,
+  "prepared_from": "87 cached features + archived R6 query geography and frozen encoder/ramp/prior",
+  "query_labels_read": false,
+  "fit_arrays_loaded": false,
+  "new_fits": 0,
+  "original_npz_used_only_for_comparison": true,
+  "arrays_bitwise_equal": {
+    "area": {
+      "query_num": true,
+      "query_cat": true,
+      "cardinalities": true,
+      "query_factor_million": true
+    },
+    "prior": {
+      "query_num": true,
+      "query_cat": true,
+      "cardinalities": true,
+      "query_factor_million": true
+    }
+  },
+  "artifacts": [
+    {
+      "source": "outputs\\round55\\final\\prepared.npz",
+      "size_bytes": 1339035542,
+      "sha256": "55c218255fca255ea0d61632acdebcb899749c6d4354fe34e2dd3251d35ec1c5"
+    },
+    {
+      "source": "outputs\\round55\\final\\model\\model.pt",
+      "size_bytes": 6908702,
+      "sha256": "2650cde4b10fb8d0ce72ef1307e41e1d3d40308240f2c0f8c54680d7a07e6bb3"
+    },
+    {
+      "new": "area_query.npz",
+      "size_bytes": 13934207,
+      "sha256": "c7876174502f2858c4c97272d15f0a6a845f689a1efa72f60bbc133588d46fe6"
+    },
+    {
+      "source": "outputs\\round63\\final\\prepared.npz",
+      "size_bytes": 396660948,
+      "sha256": "c5c86dcb5138f203a53647b5034019089ac8b8d09ffd91cd21408726f1726eef"
+    },
+    {
+      "source": "outputs\\round63\\final\\model\\model.pt",
+      "size_bytes": 5969054,
+      "sha256": "0647d15a57af51081daecb7fdaa9f45340e6536ce45d38364199df42daa77c72"
+    },
+    {
+      "new": "prior_query.npz",
+      "size_bytes": 5553309,
+      "sha256": "1cde470ada3967b798848cdc29752cbc9cf3a12f33d964ae25c518650e8681b1"
+    },
+    {
+      "source": "outputs/round48/final/encoder_state.json",
+      "size_bytes": 1049910,
+      "sha256": "a20cc35db6c67cf46c3715b2eb97ab6f16e941545253c996944bb2d8c57908ac"
+    },
+    {
+      "source": "outputs/round55/final/numeric_state.json",
+      "size_bytes": 23603,
+      "sha256": "02372983c2314ebad277c8fde6ba56e85d6afce066834b18f7374c0fe575597b"
+    },
+    {
+      "source": "outputs/round60/final/price_prior_state.json",
+      "size_bytes": 312217,
+      "sha256": "a961f1d88169029d4bda9e66c6e3f0eac3aba31781844448a369a966b0a63195"
+    }
+  ],
+  "elapsed_seconds": 7.424457099987194,
+  "numpy": "2.3.5",
+  "pandas": "3.0.1"
+}

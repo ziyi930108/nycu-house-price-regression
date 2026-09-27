@@ -1,0 +1,354 @@
+{
+  "new_fits": 0,
+  "query_labels_used": false,
+  "outputs": {
+    "C_unit": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round79/final_model/model/predictions_twd.npy",
+      "comparison_sha256": "9df25c674546142bf63a6f7ef5a20dd0fc85067471879f4a5c3d0f9d00970612"
+    },
+    "C_log": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round46/trial/model/predictions.npy",
+      "comparison_sha256": "9e253c17725cc63d1226502e15dce934d28583244f35e480fa79374183720e5b"
+    },
+    "C_raw": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round2/final_predictions/catboost_raw_test.npy",
+      "comparison_sha256": "a89d10691f10ca6ac5296a59b4695c3eaa038dd3953fb174d546264255fdeda4"
+    },
+    "L_unit": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round2/final_predictions/lightgbm_l1_unit63_test.npy",
+      "comparison_sha256": "0d1da23ea40847bd8e405081730050c2c1a59c08f8ff2efd4d9d1946bf8fb7b6"
+    },
+    "unit_base": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round79/final/new_unit/base.npy",
+      "comparison_sha256": "562ab5e0da756447e34db5ce6023d7fc2b90282e335a98cd36eb4b9227f3ce43"
+    },
+    "unit_reference": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round79/final/new_unit/reference.npy",
+      "comparison_sha256": "2d1c0d5ca4bfc007609ff1f91894fdf2386984564af47ca7a4049c881974cdfd"
+    },
+    "unit_spatial": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round79/final/new_unit/spatial.npy",
+      "comparison_sha256": "9af5d794ffcc0ada6f38f5288313c823842536146de5f7018693756a6d54bb2d"
+    },
+    "log_base": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round46/trial/base_recency_log.npy",
+      "comparison_sha256": "71751435afc48265c06c6b067fb5733890968ea52b076c2072cffc3565909205"
+    },
+    "log_reference": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round46/trial/reference_recency_log.npy",
+      "comparison_sha256": "4086c8101ade33f532f4f49d08830b62b46b9b8caecce4f1a66af08152a63c3e"
+    },
+    "log_spatial": {
+      "rows": 47073,
+      "dtype": "float64",
+      "bitwise_equal": true,
+      "max_abs_difference_TWD": 0.0,
+      "comparison_file": "outputs/round46/trial/recency_log_spatial.npy",
+      "comparison_sha256": "6f0ca7ce8621814a0e418a79a6eed0bbe0bdf9c368d889026366784a56df05b6"
+    }
+  },
+  "native_models": {
+    "C_unit": {
+      "path": "outputs/round79/final_model/model/model.cbm",
+      "sha256": "1f40fe8b40ff0083dd4128e94659ecf0f77e632ff257e540fa645722f7e013db",
+      "trees": 2999,
+      "features": 95,
+      "cat_features": 23
+    },
+    "C_log": {
+      "path": "outputs/round46/trial/model/model.cbm",
+      "sha256": "c333d9afc970a30f53f14ad06cfba842f857a4f241ae59595cdd5a3cefa7f56f",
+      "trees": 2999,
+      "features": 95,
+      "cat_features": 23
+    },
+    "C_raw": {
+      "path": "models/final/catboost_raw.cbm",
+      "sha256": "a7716df5ae940a26d56c1ef13c79b8e5858aa9521baeb3ba15970b76d1a59356",
+      "trees": 2999,
+      "features": 87,
+      "cat_features": 21
+    },
+    "L_unit": {
+      "path": "models/final/lightgbm_l1_unit63/model.txt",
+      "sha256": "9ea53f7398e4717e4ac544d72122ee601208c7d4d98d675a9a22731ddd4eda63",
+      "trees": 3999,
+      "features": 87
+    }
+  },
+  "unit_reports": {
+    "reference": {
+      "reference_rows": 465711,
+      "fitting_rows": 467221,
+      "reference_unit_price_bounds": [
+        34169.51010269716,
+        481684.5226306477
+      ],
+      "hedonic": {
+        "fit_rows": 333090,
+        "project_groups": 6034,
+        "maximum_fit_day_index": 8988.0,
+        "coefficients": {
+          "log_building_area": -0.018720420916278898,
+          "parking_fraction": -0.5096905062212215,
+          "floor_mean_per10": 0.0450403269535941,
+          "transaction_years": 0.07008998867540095
+        }
+      },
+      "fit_seconds": 4.711167500005104,
+      "validation_targets_used_for_references": false,
+      "query_rows": 47073,
+      "eligible_query_rows": 47011,
+      "source_counts": {
+        "district_style": 17666,
+        "project": 15646,
+        "street_section": 6238,
+        "base_fallback": 3765,
+        "address": 2349,
+        "street": 1062,
+        "locality": 347
+      },
+      "mean_reference_weight": 0.2802226708827691,
+      "seconds": 2.7857077999506146
+    },
+    "spatial": {
+      "query_rows": 47073,
+      "weak_source_rows": 21431,
+      "eligible_query_rows": 11005,
+      "applied_rows": 5742,
+      "changed_rows": 5742,
+      "fallback_rows": 41331,
+      "fallback_bitwise_values_preserved": true,
+      "reason_counts": {
+        "not_weak_source": 25642,
+        "invalid_geography_or_group": 10364,
+        "spatial_residual": 5742,
+        "fewer_than_5_projects": 5263,
+        "area_out_of_bounds": 62
+      },
+      "applied_source_counts": {
+        "district_style": 5573,
+        "base_fallback": 169
+      },
+      "neighborhood_cache_entries": 972,
+      "neighborhood_cache_reuses": 10033,
+      "maximum_projects_used": 40,
+      "query_labels_used": false,
+      "reference_refitted": false,
+      "additional_trend_applications_to_G": 0,
+      "parameters": {
+        "format_version": 1,
+        "radius_m": 2000.0,
+        "maximum_extent_m_each": 2000.0,
+        "maximum_projects": 40,
+        "minimum_projects": 5,
+        "same_nonmissing_group": [
+          "address_city",
+          "building_type",
+          "main_use"
+        ],
+        "fit_project_name_required": true,
+        "project_key": "normalized original city|address_district|project_name",
+        "exclude_query_project": true,
+        "fit_area_bounds_m2": [
+          15.0,
+          1500.0
+        ],
+        "query_area_bounds_m2": [
+          15.0,
+          1500.0
+        ],
+        "fit_recent_years": 4.0,
+        "days_per_year": 365.25,
+        "fit_reference_residual_required": "finite existing v2 reference_residual only",
+        "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+        "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+        "project_order": "minimum actual fit-position distance, then project key lexicographically",
+        "spatial_center": "unweighted median of at most 40 project medians",
+        "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+        "maximum_weight": 0.3,
+        "MAD_scale": 0.18,
+        "eligible_v2_sources": [
+          "district_style",
+          "base_fallback"
+        ],
+        "geographic_price_ratio_bounds": [
+          0.65,
+          1.5
+        ],
+        "future_day_cap": 366.0,
+        "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+        "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+        "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+        "v2_refitted": false,
+        "additional_trend_applied_to_G": false,
+        "Dq_plus_Dr_distance_hard_gate": false,
+        "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+        "location_compression": "same group, exact location, project: keep every row residual and source row position",
+        "query_cache": "same group, exact query location, query project; no query fitted state",
+        "cpu_threads": 1
+      },
+      "geometry_is_exact_house_position": false,
+      "distance_plus_extents_used_as_gate": false
+    }
+  },
+  "log_reports": {
+    "reference": {
+      "reference_rows": 465711,
+      "fitting_rows": 467221,
+      "reference_unit_price_bounds": [
+        34169.51010269716,
+        481684.5226306477
+      ],
+      "hedonic": {
+        "fit_rows": 333090,
+        "project_groups": 6034,
+        "maximum_fit_day_index": 8988.0,
+        "coefficients": {
+          "log_building_area": -0.018720420916278898,
+          "parking_fraction": -0.5096905062212215,
+          "floor_mean_per10": 0.0450403269535941,
+          "transaction_years": 0.07008998867540095
+        }
+      },
+      "fit_seconds": 4.711167500005104,
+      "validation_targets_used_for_references": false,
+      "query_rows": 47073,
+      "eligible_query_rows": 47011,
+      "source_counts": {
+        "district_style": 17666,
+        "project": 15646,
+        "street_section": 6238,
+        "base_fallback": 3765,
+        "address": 2349,
+        "street": 1062,
+        "locality": 347
+      },
+      "mean_reference_weight": 0.2802226708827691,
+      "seconds": 2.6004743999801576
+    },
+    "spatial": {
+      "query_rows": 47073,
+      "weak_source_rows": 21431,
+      "eligible_query_rows": 11005,
+      "applied_rows": 5742,
+      "changed_rows": 5742,
+      "fallback_rows": 41331,
+      "fallback_bitwise_values_preserved": true,
+      "reason_counts": {
+        "not_weak_source": 25642,
+        "invalid_geography_or_group": 10364,
+        "spatial_residual": 5742,
+        "fewer_than_5_projects": 5263,
+        "area_out_of_bounds": 62
+      },
+      "applied_source_counts": {
+        "district_style": 5573,
+        "base_fallback": 169
+      },
+      "neighborhood_cache_entries": 972,
+      "neighborhood_cache_reuses": 10033,
+      "maximum_projects_used": 40,
+      "query_labels_used": false,
+      "reference_refitted": false,
+      "additional_trend_applications_to_G": 0,
+      "parameters": {
+        "format_version": 1,
+        "radius_m": 2000.0,
+        "maximum_extent_m_each": 2000.0,
+        "maximum_projects": 40,
+        "minimum_projects": 5,
+        "same_nonmissing_group": [
+          "address_city",
+          "building_type",
+          "main_use"
+        ],
+        "fit_project_name_required": true,
+        "project_key": "normalized original city|address_district|project_name",
+        "exclude_query_project": true,
+        "fit_area_bounds_m2": [
+          15.0,
+          1500.0
+        ],
+        "query_area_bounds_m2": [
+          15.0,
+          1500.0
+        ],
+        "fit_recent_years": 4.0,
+        "days_per_year": 365.25,
+        "fit_reference_residual_required": "finite existing v2 reference_residual only",
+        "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+        "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+        "project_order": "minimum actual fit-position distance, then project key lexicographically",
+        "spatial_center": "unweighted median of at most 40 project medians",
+        "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+        "maximum_weight": 0.3,
+        "MAD_scale": 0.18,
+        "eligible_v2_sources": [
+          "district_style",
+          "base_fallback"
+        ],
+        "geographic_price_ratio_bounds": [
+          0.65,
+          1.5
+        ],
+        "future_day_cap": 366.0,
+        "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+        "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+        "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+        "v2_refitted": false,
+        "additional_trend_applied_to_G": false,
+        "Dq_plus_Dr_distance_hard_gate": false,
+        "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+        "location_compression": "same group, exact location, project: keep every row residual and source row position",
+        "query_cache": "same group, exact query location, query project; no query fitted state",
+        "cpu_threads": 1
+      },
+      "geometry_is_exact_house_position": false,
+      "distance_plus_extents_used_as_gate": false
+    }
+  },
+  "elapsed_seconds": 69.24392969999462,
+  "status": "four_native_trees_and_two_complete_branches_bitwise_exact",
+  "query_frame_sha256": {
+    "X": "222c6f1797f8334350186b991a5a3f9f3026bb07e588d833a970dbb5754770fa",
+    "tree_geo": "df14910e07be7bac8ca14106fca387570050d5e3efcc7011332ce84d8e04d04d",
+    "spatial_geo": "e15a6ff2855a7c7890fbdaf5e1ff86a2800ba638b9341271e8545e64f615143c"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "round": 84,
+  "candidate": "R84",
+  "created_at_utc": "2026-09-26T21:44:23.387624+00:00",
+  "decision": "retain_as_research_no_final_fit_or_new_submission",
+  "reason": "Latest-period improvement versus v24 is small; other two periods worsen overall, weighted and test-composition MAE, with higher >=100m MAE in all three periods. No universal all-periods-must-win rule is imposed.",
+  "strongest_counterargument": "Latest overall/weighted project and month paired intervals favor R84 versus v24; latest and auxiliary also favor R84 versus v22.",
+  "metrics_vs_v24": {
+    "auxiliary": {
+      "overall_delta_TWD": 7114.585064434446,
+      "weighted_delta_TWD": 5601.3983571080025,
+      "test_mix_delta_TWD": 8368.370123831555
+    },
+    "confirmation": {
+      "overall_delta_TWD": -1999.3067347318865,
+      "weighted_delta_TWD": -2303.536197118927,
+      "test_mix_delta_TWD": -2601.8797738880385
+    },
+    "development": {
+      "overall_delta_TWD": 930.0770982329268,
+      "weighted_delta_TWD": 883.1301855156198,
+      "test_mix_delta_TWD": 7693.086220392957
+    }
+  },
+  "paired_interval_count": 24,
+  "new_final_fits": 0,
+  "new_submission": false,
+  "selector_modified": false,
+  "protected_file_count": 26,
+  "protected_files_verified_unchanged": true,
+  "selector_sha256": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+  "Private_score_known": false,
+  "fresh_blind_validation": false,
+  "limitations": [
+    "Repeatedly reused historical windows; no adjustment for accumulated selection bias.",
+    "2999 controls were saved previous runs; GPU retraining variability is not isolated.",
+    "Two seeds do not establish general stability; test-tail distribution remains unknown."
+  ],
+  "next_work": {
+    "status": "direction_selected_implementation_not_started",
+    "comparison": [
+      "v22/R79",
+      "v24/R83"
+    ],
+    "fit_before": "2023-02-11",
+    "query_inclusive": [
+      "2023-02-11",
+      "2024-02-10"
+    ],
+    "purpose": "time-origin sensitivity; not a fresh holdout",
+    "requires_new_origin_fitted_components": true,
+    "new_model_parameter_search": false
+  },
+  "evidence_sha256": {
+    "reports/round84_report.md": "79eb9403aa35534ef43ab59ae1bc6be4474e333cf134eff25376715609eabe52",
+    "reports/continuation_plan_after_r84.md": "22140c6767afe33233132e79e43c682bd5e2166c20588fb78540117c4673bf54",
+    "outputs/round84/results_review.json": "b7a37dcc00d8a527a1522de804693d8d71d4677c6429c16fee7a5974d8e39178",
+    "outputs/round84/execution.json": "84214d9e0e2166033e4739795fd9d01e0ee29fd5a99cbef2643067061b1f5031",
+    "outputs/round84/paired_vs_v24/results.json": "93c5a509f409b42c01bfd67f8c7b39b717bb830743b917379ba7400a9ab5fe53",
+    "outputs/round84/paired_vs_v22/results.json": "3bace6d28d482915df056107a9388ac654be9797de1a2b043ef977cbbaa10827"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "v22",
+  "experiment": "R79",
+  "final_private_selection": false,
+  "rows": 47073,
+  "inputs": {
+    "test": {
+      "filename": "test-reindex-test-v2.2.xlsx",
+      "sha256": "19c785ae5679973c0ad859090340dfa0dc8ad4a968f0fa764c16b0fa81d17736"
+    },
+    "sample": {
+      "filename": "test-reindex-test-sample-submission-v2.csv",
+      "sha256": "b4a26dd34d53c0a24343db3031a6a2cf007b8a8313bf282948070b9907aba204"
+    }
+  },
+  "expected_csv_sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+  "feature_frame_sha256": "222c6f1797f8334350186b991a5a3f9f3026bb07e588d833a970dbb5754770fa",
+  "unit_weight": 0.75,
+  "lgb_weight": 0.25,
+  "fusion": "per-row median after branchwise reference and spatial correction"
+}

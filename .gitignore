@@ -1,0 +1,15 @@
+# Private artifacts and input/output data must stay local.
+/private/
+/data/
+/runs/
+.venv*/
+__pycache__/
+*.py[cod]
+*.log
+*.xlsx
+*.pkl
+*.npz
+*.npy
+*.cbm
+*.pt
+*.csv
