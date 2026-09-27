@@ -25,7 +25,7 @@ ZIP檔名每次使用新的名稱。打包工具會更新SOURCE_MANIFEST.json，
 
 自動檢查範例保留在source-checks.example.yml，尚未啟用GitHub Actions。現有OAuth登入缺workflow scope，GitHub拒絕建立.github/workflows設定；這不影響程式、報告與簡報的發布。日後若要啟用，可在具有workflow權限的登入下把範例移至.github/workflows/，再刷新manifest和提交。自動測試也不能驗證Private分數或替代已記錄的本機全量推論。
 
-完整模型推論仍需DATA.md所列的合法資料與private artifacts。Private分數未知，最終候選未定。
+完整模型推論仍需DATA.md所列的合法資料與private artifacts。使用者已選定v22為唯一提交版本，Private分數仍未知；未代操作Kaggle最終勾選。
 
 ## 原工作區交接
 

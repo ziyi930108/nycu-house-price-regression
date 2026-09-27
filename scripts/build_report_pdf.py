@@ -109,7 +109,7 @@ class NumberedCanvas(Canvas):
             self.line(MARGIN, 14.4 * mm, PAGE_W - MARGIN, 14.4 * mm)
             self.setFont('JhengHei', 7.3)
             self.setFillColor(MUTED)
-            self.drawString(MARGIN, 10.2 * mm, '臺灣房屋總價預測 | 技術報告 | v22 / R79')
+            self.drawString(MARGIN, 10.2 * mm, '臺灣房屋總價預測 | 技術報告 | 提交模型 v22')
             self.drawRightString(PAGE_W - MARGIN, 10.2 * mm, f'{self._pageNumber} / {total}')
             self.restoreState()
             super().showPage()
@@ -131,7 +131,7 @@ class ReportDoc(BaseDocTemplate):
         canvas.setFont('JhengHei', 7.5)
         canvas.setFillColor(MUTED)
         canvas.drawString(MARGIN, PAGE_H-12.0*mm, 'TAIWAN HOUSE PRICE REGRESSION')
-        canvas.drawRightString(PAGE_W-MARGIN, PAGE_H-12.0*mm, '研究候選版本 | Private 尚未知')
+        canvas.drawRightString(PAGE_W-MARGIN, PAGE_H-12.0*mm, '已選定提交模型 | Private 尚未知')
         canvas.setLineWidth(.45)
         canvas.setStrokeColor(LINE)
         canvas.line(MARGIN, PAGE_H-14.3*mm, PAGE_W-MARGIN, PAGE_H-14.3*mm)
@@ -154,7 +154,7 @@ def source_table(rows):
         'E8': 'round47 / round48 NN trainer\nround54_numeric_encode.py\nround60_recency_price_prior.py\nround63_recency_weighted_prior_train.py',
         'E9': 'round12 / round46 log 模型\nround71_final.py / round46_trial_release.py\nround2_neighborhood.py\nround8_spatial_reference.py / round79_final.py',
         'E10': 'round79/final/trial_release.json\nround79/final_export/release.json\nround79_release.py',
-        'E11': 'github_reproducibility_audit_r83.md\nDELIVERY_REQUIREMENTS.md',
+        'E11': 'docs/REPRODUCIBILITY.md\nevidence/reproduction/summary.json\nevidence/reproduction/integration_verified.json\n歷史：github_reproducibility_audit_r83.md',
         'E12': 'geography/ATTRIBUTION.md\ngeography/*.download.json\nREADME_round6.md',
     }
     return [rows[0]] + [[row[0], row[1], short.get(row[0], row[2])] for row in rows[1:]]
@@ -162,11 +162,15 @@ def source_table(rows):
 
 def make_table(rows, st):
     n = len(rows[0])
+    source_index = rows[0][0] == '編號' and any(r[0] == 'E1' for r in rows[1:])
+    vertical_padding = 4 if source_index else 6
     if rows[0][0] == '編號' and any(r[0] == 'E1' for r in rows[1:]):
         rows = source_table(rows)
         fractions = [.07, .31, .62]
-    elif rows[0][0] == 'query 期間':
+    elif rows[0][0] == 'query 期間' and n == 5:
         fractions = [.30, .175, .175, .16, .19]
+    elif rows[0][0] == 'query 期間' and n == 3:
+        fractions = [.46, .30, .24]
     elif rows[0][0] == '期別' and n == 4:
         fractions = [.17, .43, .20, .20]
     elif rows[0][0] == '年度' and n == 3:
@@ -190,7 +194,7 @@ def make_table(rows, st):
                    hAlign='LEFT', splitByRow=1, spaceBefore=4, spaceAfter=9)
     cmds = [('BACKGROUND',(0,0),(-1,0),ACCENT), ('VALIGN',(0,0),(-1,-1),'TOP'),
             ('LEFTPADDING',(0,0),(-1,-1),7), ('RIGHTPADDING',(0,0),(-1,-1),7),
-            ('TOPPADDING',(0,0),(-1,-1),6), ('BOTTOMPADDING',(0,0),(-1,-1),6),
+            ('TOPPADDING',(0,0),(-1,-1),vertical_padding), ('BOTTOMPADDING',(0,0),(-1,-1),vertical_padding),
             ('LINEBELOW',(0,0),(-1,0),.6,ACCENT),
             ('LINEBELOW',(0,1),(-1,-1),.3,LINE)]
     for row in range(1,len(rows)):
@@ -253,7 +257,7 @@ def parse_markdown(source: str, st):
             story.append(make_table(rows,st));continue
         if line.startswith('# '):
             story.append(Paragraph(inline(line[2:]),st['title']))
-            story.append(Paragraph('技術報告 | 研究候選版本 v22（R79） | 以新臺幣總價 MAE 評估',st['subtitle']))
+            story.append(Paragraph('技術報告 | 已選定提交模型 v22 | 以新臺幣總價 MAE 評估',st['subtitle']))
             i+=1;continue
         if line.startswith('## '):
             story.append(Paragraph(inline(line[3:]),st['h2'])); i+=1;continue

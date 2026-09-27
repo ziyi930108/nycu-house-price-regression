@@ -1,21 +1,20 @@
 {
-  "schema_version": "v22-presentation-delivery.v1",
-  "verified_at": "2026-09-27T17:04:14.841697+00:00",
-  "deck": "deliverables/臺灣房價預測_正式報告_v22.pptx",
-  "sha256": "65d908f82efd8afd4754829cbf751e78b15715e4e6411dec76cf97a381341fc5",
-  "bytes": 477713,
+  "schema_version": "v22-focused-presentation-delivery.v1",
+  "verified_at": "2026-09-27T17:34:28.500355+00:00",
+  "final_deck": "deliverables/臺灣房價預測_v22_上台報告.pptx",
+  "final_sha256": "8f930bc12dadcff0a399b5e4c3f58930f0d906d8f4313454efeb1fc3ec561e81",
+  "final_bytes": 471392,
   "speaker_notes": "deliverables/講稿與問答.md",
-  "speaker_notes_sha256": "0781d4cbdeae0dbcd3b5b572e7527321d651b40d869e1477b7b5f924482bceb7",
-  "slides": 16,
-  "main_talk_slides": 13,
-  "appendix_slides": 3,
+  "speaker_notes_sha256": "82d5aaf8c6f9edfd056ee193e093589c8ef7a3359d64ff9849fb591d0977731d",
+  "slides": 15,
+  "main_slides": 13,
+  "appendix_slides": 2,
   "suggested_main_talk_seconds": 545,
   "native_charts": 4,
-  "native_tables": 6,
-  "slides_with_speaker_notes": 16,
+  "native_tables": 5,
+  "speaker_note_slides": 15,
   "visual_review": {
-    "all_final_slides_reviewed_individually": true,
-    "render_scale": 1.25,
+    "all_slides_inspected_individually": true,
     "slide_numbers": [
       1,
       2,
@@ -31,35 +30,41 @@
       12,
       13,
       14,
-      15,
-      16
+      15
     ],
+    "final_notes_only_revision_render_sha_matches_reviewed_images": true,
+    "render_scale": 1.25,
     "unresolved_blocking_findings": []
   },
+  "validation_receipt": "build/final.v3.validation.json",
   "artifact_tool_import_verified": true,
-  "native_powerpoint_opened": false,
-  "external_review": {
-    "content_all_16_slides": true,
-    "visual_spotcheck": [
-      9,
-      10,
-      12,
-      16
-    ]
-  },
-  "new_model_training": 0,
-  "model_prices_changed": false,
-  "source_report": "deliverables/v22_github/REPORT.md",
-  "repository": "https://github.com/ziyi930108/nycu-house-price-regression",
-  "repository_visibility": "private",
-  "known_limits": [
-    "Private score unknown",
-    "Full clean installation and from-scratch ML retraining untested",
-    "Native PowerPoint application not inspected"
+  "native_powerpoint_verified": false,
+  "selected_submission": "submission_v22_trial.csv",
+  "private_score_known": false,
+  "public_mae_twd": 1998568.5706,
+  "historical_mae_twd": [
+    2309352.35769657,
+    1407387.070805849,
+    1383228.4054499655
   ],
+  "spoken_and_visible_copy_has_no_internal_version_comparisons": true,
+  "new_training_runs": 0,
+  "model_or_submission_prices_changed": false,
   "build_files": {
-    "build_deck.mjs": "f5e652075255230c720da41c4649cb8884ab7ef40a7a02270f729a93eb4d8649",
-    "finalize_deck.mjs": "9289f000af8924f1fd3ed4b2fbf770fb3e676efab1876d5057d1ba4124ab00f2",
-    "source_data.json": "357a45a41d60859a2fce4159c60e0e7e9e4a030af1f32247ca0b5011ba3f457d"
+    "build_deck.mjs": "623f91687b0c142b7c7771340dfed9f382212f5238ee6059b5acaac5132131d9",
+    "finalize_deck.mjs": "78f71e903644384c7f80f91c34c9a2b6444cd0e1ae2259127895e77d74a6412c",
+    "source_data.json": "d6156c4069ec57fbacb14af7a9391ed13e32e6d8bfe6bf72c66b0e2cd18adbdc"
+  },
+  "superseded_local_drafts": [
+    "deliverables/臺灣房價預測_單一模型正式報告_v22.pptx",
+    "deliverables/臺灣房價預測_單一模型正式報告_v22_定稿.pptx"
+  ],
+  "source_report": "deliverables/v22_github/REPORT.md",
+  "source_workspace_receipt": "outputs/presentation_v22_focused_20260928/delivery_receipt.json",
+  "repository_paths": {
+    "deck": "presentation/臺灣房價預測_正式報告_v22.pptx",
+    "speaker_notes": "presentation/講稿與問答.md",
+    "validation": "evidence/presentation/final.validation.json",
+    "build": "presentation/source/"
   }
 }

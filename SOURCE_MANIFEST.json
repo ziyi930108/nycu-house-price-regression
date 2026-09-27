@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-27T17:09:14.572594+00:00",
+  "created_at_utc": "2026-09-27T17:36:49.151884+00:00",
   "scope": "code, formal report and presentation, no model/data bundle",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1396,
-      "sha256": "dd21e87df23b146f6b292a7e627eee90df06592a6b2e0c7933e48c11c78593ce"
+      "bytes": 1676,
+      "sha256": "686132d73d088cd79c345894d3d6e1046a99be1ed376ecfd6380b08c795e65ae"
     },
     {
       "path": "artifacts/manifest.json",
@@ -24,8 +24,8 @@
     },
     {
       "path": "config/v22.json",
-      "bytes": 771,
-      "sha256": "1a44ff970317df90f4004e3298a39bca7844b3e5b3d7e88dbd6d6391f43bff6f"
+      "bytes": 979,
+      "sha256": "bdb5bc232d064bc580abcf6d09aa802e19bc13c017a241c1a51ad25992b1e4c7"
     },
     {
       "path": "DATA.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "docs/PUBLISHING.md",
-      "bytes": 2177,
-      "sha256": "5aaecd0a735378def8df1ee293f6f42d74e682d26887ea0c8db97d93ac90fb59"
+      "bytes": 2237,
+      "sha256": "869e0e625346f7ef07c0b5c0f42a72b48f559a50ba2a980a2e5986ae0866a2f0"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
@@ -49,13 +49,13 @@
     },
     {
       "path": "docs/臺灣房價預測_v22_正式報告.build.json",
-      "bytes": 5608,
-      "sha256": "22a43785642d395e84e1104c245ecea9e1187de8f386030d192aed71006cffb4"
+      "bytes": 3263,
+      "sha256": "a57b7a11e77c961dfa4124cd18bd470210d74f43cd5d990e63f77f7d7d63adf5"
     },
     {
       "path": "docs/臺灣房價預測_v22_正式報告.pdf",
-      "bytes": 426159,
-      "sha256": "da3f0dd07c3f2657601c5258ca6703abe0cee0711f4b1d6cdb756849605c0097"
+      "bytes": 453515,
+      "sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca"
     },
     {
       "path": "evidence/data_external/geography/ATTRIBUTION.md",
@@ -133,14 +133,19 @@
       "sha256": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0"
     },
     {
+      "path": "evidence/presentation/content_review.md",
+      "bytes": 4434,
+      "sha256": "dd529b04028d249e977f65c8af3a47bc83d2cda997c73734f9bd8d558fc9ff48"
+    },
+    {
       "path": "evidence/presentation/delivery_receipt.json",
-      "bytes": 1908,
-      "sha256": "344eb68b26885680bc712ae82f8f18a80372ec6869c097b120238c9f3fa63561"
+      "bytes": 2466,
+      "sha256": "5e0fc48333e216d1f98cad045b0c082182723240870e9cc6dd2c45be76f9f7c2"
     },
     {
       "path": "evidence/presentation/final.validation.json",
-      "bytes": 10860,
-      "sha256": "9eabeab38c677a6f5be6e412309e1f3e382149e373265e47cdaeb44435f77234"
+      "bytes": 10708,
+      "sha256": "10078d3c317de86a5cad7a9e37aaedfd4c0863a7f2e6e98b52719c375613ec1a"
     },
     {
       "path": "evidence/README_round6.md",
@@ -228,19 +233,24 @@
       "sha256": "1bbfc471f99c2b9af77ff942766ab3caf21e6424d385c92ba81df0bad32d7ae7"
     },
     {
+      "path": "evidence/selection/user_selected_v22_20260928.json",
+      "bytes": 1113,
+      "sha256": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+    },
+    {
       "path": "evidence/source_manifest.json",
       "bytes": 8287,
       "sha256": "0987d522a97f051d73082d9f42ee79f8a6f7f7774bfc8d43f57441f9f42614a2"
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 2938,
-      "sha256": "c6caba0c1f0632e44c5a11485f774daaa66447801b45d010de480ffb65b618bb"
+      "bytes": 3017,
+      "sha256": "35e4eccf81079858bd39a2d13bc0e6b000b99c08cf02185772bed28f97abcece"
     },
     {
       "path": "presentation/README.md",
-      "bytes": 1226,
-      "sha256": "946d477c065dbdadd58b675ba17f5d9c9b5fde4e2d71e0fa8705cdff07759b1a"
+      "bytes": 1304,
+      "sha256": "4abfb8a13a886985d7335e1d690d64d918ac895d05fd13b7e59a8628e68ff25f"
     },
     {
       "path": "presentation/source/assets/taipei_markus_winkler.jpg",
@@ -249,38 +259,38 @@
     },
     {
       "path": "presentation/source/build_deck.mjs",
-      "bytes": 29418,
-      "sha256": "f5e652075255230c720da41c4649cb8884ab7ef40a7a02270f729a93eb4d8649"
+      "bytes": 27150,
+      "sha256": "623f91687b0c142b7c7771340dfed9f382212f5238ee6059b5acaac5132131d9"
     },
     {
       "path": "presentation/source/finalize_deck.mjs",
-      "bytes": 3091,
-      "sha256": "9289f000af8924f1fd3ed4b2fbf770fb3e676efab1876d5057d1ba4124ab00f2"
+      "bytes": 3098,
+      "sha256": "78f71e903644384c7f80f91c34c9a2b6444cd0e1ae2259127895e77d74a6412c"
     },
     {
       "path": "presentation/source/source_data.json",
-      "bytes": 12257,
-      "sha256": "357a45a41d60859a2fce4159c60e0e7e9e4a030af1f32247ca0b5011ba3f457d"
+      "bytes": 10104,
+      "sha256": "d6156c4069ec57fbacb14af7a9391ed13e32e6d8bfe6bf72c66b0e2cd18adbdc"
     },
     {
       "path": "presentation/臺灣房價預測_正式報告_v22.pptx",
-      "bytes": 477713,
-      "sha256": "65d908f82efd8afd4754829cbf751e78b15715e4e6411dec76cf97a381341fc5"
+      "bytes": 471392,
+      "sha256": "8f930bc12dadcff0a399b5e4c3f58930f0d906d8f4313454efeb1fc3ec561e81"
     },
     {
       "path": "presentation/講稿與問答.md",
-      "bytes": 10920,
-      "sha256": "0781d4cbdeae0dbcd3b5b572e7527321d651b40d869e1477b7b5f924482bceb7"
+      "bytes": 9952,
+      "sha256": "82d5aaf8c6f9edfd056ee193e093589c8ef7a3359d64ff9849fb591d0977731d"
     },
     {
       "path": "README.md",
-      "bytes": 4376,
-      "sha256": "02913ebdc06e31dc24d2adc8c40c484c2b0b2d9858e5e42483e41d4e7b165165"
+      "bytes": 4621,
+      "sha256": "66b45d3bdf4eac19df27488917f2a5fcbd0b8b96aaa1cf97bcc41894e072d393"
     },
     {
       "path": "REPORT.md",
-      "bytes": 24853,
-      "sha256": "f52aea51923e25e1fd49c8c546e6ccdfef1142b2f092afe5379e8bfe620732ae"
+      "bytes": 31353,
+      "sha256": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e"
     },
     {
       "path": "requirements-inference.txt",
@@ -2204,8 +2214,8 @@
     },
     {
       "path": "scripts/build_report_pdf.py",
-      "bytes": 14868,
-      "sha256": "dc97caca8c887a873b6420f241e2e52a2bf6503cc1a47e8db5055340d6db107b"
+      "bytes": 15219,
+      "sha256": "2ec87f9b61c435c1696e58b24b667465cc46e57bda587b4c184a6caac818d8c6"
     },
     {
       "path": "scripts/collect_artifacts.py",
