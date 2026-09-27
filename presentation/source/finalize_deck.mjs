@@ -5,16 +5,16 @@ import { FileBlob, PresentationFile } from '@oai/artifact-tool';
 
 process.env.RUNTIME_NODE_MODULES ||= 'C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const WORKSPACE = 'C:/NYCU_ML';
-const TASK = path.join(WORKSPACE, 'outputs/presentation_v22_focused_20260928');
+const TASK = path.join(WORKSPACE, 'outputs/presentation_v22_fullflow_20260928');
 const BUILD = path.join(TASK, 'build');
 const DELIVERABLES = path.join(TASK, 'deliverables');
 const SKILL = 'C:/Users/ziyi9/.codex/plugins/cache/openai-primary-runtime/presentations/26.905.11957/skills/presentations';
 const PYTHON = 'C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe';
 const CANDIDATE = path.join(BUILD, 'candidate.pptx');
-const FINAL = path.join(DELIVERABLES, '臺灣房價預測_v22_上台報告.pptx');
+const FINAL = path.join(DELIVERABLES, '臺灣房價預測_v22_完整流程報告.pptx');
 const RENDERS = path.join(BUILD, 'final_renders');
-const TABLE_OWNERS = [3, 4, 5, 8, 15];
-const CHART_OWNERS = [2, 6, 7, 9];
+const TABLE_OWNERS = [2, 3, 4, 5, 6, 8, 9, 10, 18, 22];
+const CHART_OWNERS = [11, 14, 15, 16];
 
 const { finalizePresentation } = await import(pathToFileURL(
   path.join(SKILL, 'container_tools/artifact_tool_utils.mjs'),
@@ -24,7 +24,7 @@ await fs.mkdir(RENDERS, { recursive: true });
 
 const result = await finalizePresentation({
   workspaceDir: TASK,
-  explicitTotalSlideCount: 15,
+  explicitTotalSlideCount: 22,
   candidatePath: CANDIDATE,
   finalPath: FINAL,
   pythonExecutable: PYTHON,
@@ -42,7 +42,7 @@ const result = await finalizePresentation({
   materializeLiteralChartWorkbooks: true,
   fontPolicy: { basis: 'design', families: ['Microsoft JhengHei', 'Consolas'] },
   verifyArtifactToolImport: true,
-  receiptPath: path.join(BUILD, 'final.v3.validation.json'),
+  receiptPath: path.join(BUILD, 'final.validation.json'),
 });
 console.log('FINALIZED', JSON.stringify(result));
 

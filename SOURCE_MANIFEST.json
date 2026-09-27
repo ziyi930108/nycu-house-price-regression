@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-27T17:36:49.151884+00:00",
+  "created_at_utc": "2026-09-27T18:32:11.079823+00:00",
   "scope": "code, formal report and presentation, no model/data bundle",
   "files": [
     {
@@ -14,8 +14,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1676,
-      "sha256": "686132d73d088cd79c345894d3d6e1046a99be1ed376ecfd6380b08c795e65ae"
+      "bytes": 1829,
+      "sha256": "8b91a353281a0dcec7cc5baf0113b01ab5061fc8899444ef13cb988359b8dbab"
     },
     {
       "path": "artifacts/manifest.json",
@@ -134,18 +134,23 @@
     },
     {
       "path": "evidence/presentation/content_review.md",
-      "bytes": 4434,
-      "sha256": "dd529b04028d249e977f65c8af3a47bc83d2cda997c73734f9bd8d558fc9ff48"
+      "bytes": 8976,
+      "sha256": "06ed5c6283fdf0d5137f92fa64aa0b0837d0b10a1ca3f74870b2740eed4a0568"
     },
     {
       "path": "evidence/presentation/delivery_receipt.json",
-      "bytes": 2466,
-      "sha256": "5e0fc48333e216d1f98cad045b0c082182723240870e9cc6dd2c45be76f9f7c2"
+      "bytes": 10163,
+      "sha256": "f3811d1b9f6c6794c2dee2f18bdc3861f19a59e1e372a2b259f1cd4e0272d0ca"
     },
     {
       "path": "evidence/presentation/final.validation.json",
-      "bytes": 10708,
-      "sha256": "10078d3c317de86a5cad7a9e37aaedfd4c0863a7f2e6e98b52719c375613ec1a"
+      "bytes": 11447,
+      "sha256": "74aca886bd2e432476d1be0825b9622fab34f44f8e5e0824501a20b9a819c360"
+    },
+    {
+      "path": "evidence/presentation/timing_receipt.json",
+      "bytes": 4409,
+      "sha256": "16370bc4f12c1534163c6b3f2908963d3e967bcc1f6a47060cd782da7fcbb71b"
     },
     {
       "path": "evidence/README_round6.md",
@@ -244,13 +249,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 3017,
-      "sha256": "35e4eccf81079858bd39a2d13bc0e6b000b99c08cf02185772bed28f97abcece"
+      "bytes": 3333,
+      "sha256": "b9ec6c5d4fc8f8d161c37223e5f0844b0e0172da485900be07ddec1ddc406939"
     },
     {
       "path": "presentation/README.md",
-      "bytes": 1304,
-      "sha256": "4abfb8a13a886985d7335e1d690d64d918ac895d05fd13b7e59a8628e68ff25f"
+      "bytes": 2390,
+      "sha256": "76371d8713a916eed9dfa84c70c7991d7e820f062d5022088d7b27b85ce5549b"
     },
     {
       "path": "presentation/source/assets/taipei_markus_winkler.jpg",
@@ -259,33 +264,53 @@
     },
     {
       "path": "presentation/source/build_deck.mjs",
-      "bytes": 27150,
-      "sha256": "623f91687b0c142b7c7771340dfed9f382212f5238ee6059b5acaac5132131d9"
+      "bytes": 21847,
+      "sha256": "2fe45150555d8bbfe4fa771ab6b3203e3606f69b48b9090b7a7fbeee72bb0af0"
+    },
+    {
+      "path": "presentation/source/content_outline.md",
+      "bytes": 11743,
+      "sha256": "d210539ebf53dd144b4ea012db417264f3ade9939e32ac52ab26037ccb1e0c03"
     },
     {
       "path": "presentation/source/finalize_deck.mjs",
-      "bytes": 3098,
-      "sha256": "78f71e903644384c7f80f91c34c9a2b6444cd0e1ae2259127895e77d74a6412c"
+      "bytes": 3123,
+      "sha256": "912ebaf55a1261c11e12d6d1d24a4d1f91a318ee93e90e9dbf0c484863963671"
+    },
+    {
+      "path": "presentation/source/narrative.json",
+      "bytes": 40686,
+      "sha256": "5cb3136ee446128a96ce1f81b5ddbb4b77e555b420e67a3717d7075fb5a633e2"
     },
     {
       "path": "presentation/source/source_data.json",
-      "bytes": 10104,
-      "sha256": "d6156c4069ec57fbacb14af7a9391ed13e32e6d8bfe6bf72c66b0e2cd18adbdc"
+      "bytes": 39534,
+      "sha256": "1762eb6730308075fb84110eb198df8bae8efe1cdc5c9ddbafb078fe95ffc80c"
+    },
+    {
+      "path": "presentation/排練與問答指南.md",
+      "bytes": 6709,
+      "sha256": "7b4a715773f5b1b468d2e6ffdcd204f40b2de7fb51689296ad2d18df22b771ef"
+    },
+    {
+      "path": "presentation/流程與程式對照.md",
+      "bytes": 5721,
+      "sha256": "9b5339605911096de3f9fbffd33018726b494373a9fb1f6331cee3811713e105"
     },
     {
       "path": "presentation/臺灣房價預測_正式報告_v22.pptx",
-      "bytes": 471392,
-      "sha256": "8f930bc12dadcff0a399b5e4c3f58930f0d906d8f4313454efeb1fc3ec561e81"
+      "bytes": 500448,
+      "sha256": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf"
     },
     {
       "path": "presentation/講稿與問答.md",
-      "bytes": 9952,
-      "sha256": "82d5aaf8c6f9edfd056ee193e093589c8ef7a3359d64ff9849fb591d0977731d"
+      "bytes": 18250,
+      "sha256": "4a504d23e14a21eaebb328acdce8f81820cd9f011c74ce10b7ec346a8fb2fa63"
     },
     {
       "path": "README.md",
-      "bytes": 4621,
-      "sha256": "66b45d3bdf4eac19df27488917f2a5fcbd0b8b96aaa1cf97bcc41894e072d393"
+      "bytes": 4831,
+      "sha256": "f788d464e9d97d07094e891b01b170600488a2a2f0812b75ec587c064f0c96c7"
     },
     {
       "path": "REPORT.md",
@@ -2231,6 +2256,11 @@
       "path": "scripts/verify_source.py",
       "bytes": 1836,
       "sha256": "ca82b6e2295ad73339645d08fa6e035fa629964a492b9fd25af6ce8bbacbb3e4"
+    },
+    {
+      "path": "scripts/verify_talk_timing.py",
+      "bytes": 2487,
+      "sha256": "835ca2adfb2e06ff7472f09a94fc3d3d3dd334ec58411ac989253c2b02e67d46"
     },
     {
       "path": "src/closure_modules/model_common.py",
