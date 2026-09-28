@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R99程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R100程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -113,7 +113,7 @@ R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/re
 
 [本批完成複製清單](../evidence/outputs/research_snapshot_r98_20260929/final/copy_manifest_v2.json)及[前置收據](../evidence/outputs/research_snapshot_r98_20260929/preparation/copy_manifest.json)分開保留；當前发布身分仍以 Git main 與外層 SOURCE_MANIFEST 為準。
 
-## 最新追加：R99 四欄含 median 的 L1 組合
+## 歷史追加：R99 四欄含 median 的 L1 組合
 
 [R99完成研究頁](../docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)保存六向量、主要v22與附加R98控制、三窗全部點差和12配對區間。只增加M=median(N,H,U)，原始11-key資料、三支模型與時間狀態均不改；三次CPU meta-fit、0 native fit。相對v22為+10,449.82／−6,281.53／+2,821.52元，門檻未過，不產CSV。
 
@@ -130,4 +130,23 @@ R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/re
 
 原資料／模型state／solver與bootstrap陣列／逐筆向量不在本包；原379來源manifest與正式v22保持。當前發布身分以Git main與外層SOURCE_MANIFEST為準。
 
-[本批完成複製清單](../evidence/outputs/research_snapshot_r99_20260929/final/copy_manifest.json)保存原bytes。另附[有限下一方向](../evidence/reports/round99_next_direction_inventory.md)，僅只讀假說盤點，未立完整計畫／實作／fit，不能把group OOF說成外層query洩漏。
+[本批完成複製清單](../evidence/outputs/research_snapshot_r99_20260929/final/copy_manifest.json)保存原bytes。另附[有限下一方向](../evidence/reports/round99_next_direction_inventory.md)，在 R99 結束時僅是只讀假說；後續另立 R100 完成如下，歷史時序保留。不能把 group OOF 說成外層 query 洩漏。
+## 最新追加：R100 時間前置且排除同折的 prior
+
+[R100 完成頁](../docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)保存 C／T 同樣本比較、三期完整四向量、24 配對區間及分群反證。新增六個 prior NN，原 R63 trainer／架構／30 epochs／日期權重不改。T 相對 v22 為 −5,097.81／+10,063.35／−11,676.48 元，未過門檻，不新增 CSV；C 是機制對照。
+
+|程式|用途|
+|---|---|
+|[contract](src/round100_contract.py)／[fit 標籤擷取](src/round100_prepare_fit_labels.py)|固定科學／評分參數、canonical／raw 索引、每期只輸出 fit 標籤|
+|[純 X 稽核](src/round100_temporal_prior_x_audit.py)|日期與原五折支持，不讀價格；其 audit plan 與科學 plan 分別绑定|
+|[prior helper](src/round100_temporal_prior.py)|日曆季以前且排除同 held fold，五折至少 30 筆，保存完整 prefix 狀態身分|
+|[driver](src/round100_temporal_prior_experiment.py)|原控制回播、C／T 串行、六 NN 與全 query 重載／封存；不評分|
+|[原 scorer](src/round100_temporal_prior_evaluate.py)／[v2 scorer](src/round100_temporal_prior_evaluate_v2.py)|保留原稿；v2 窄修兩種 plan 身分接點，科學評分／配對參數相同|
+|[原 R63 trainer](src/round63_recency_weighted_prior_train.py)|兩組共同重用，9 NPZ 鍵、目標與原始日期權重保持|
+|[保存結果稽核](src/round100_independent_review.py)／[摘要](src/summarize_round100.py)|1,827 唯一 SHA／705 state／24 區間；聚合整理無新 score|
+
+本輪是 fit loss 的 prior 時間方向比較，query prior、outer-fit encoder 與 R/S 保持；不是所有輸入逐列 as-of。C/T 使用同樣 warmup 遮罩，原 raw 日期權重不 renormalize。最近窗 T−C 退 11,158.91 元；不把 C 事後另列提交，也不忽略另外两期完整模型收益。
+
+[前置 41 檔](../evidence/outputs/research_snapshot_r100_20260929/preparation/copy_manifest.json)與[完成複製清單](../evidence/outputs/research_snapshot_r100_20260929/final/copy_manifest.json)分開保留。價格標籤／模型／NPZ／逐筆向量／705 完整 prefix state／含各 prefix 價格的 temporal_prior_evidence 不納入；stage seal 保留其 SHA。原 driver 仍依賴私有工作區，快照不等於乾淨環境重訓。379 歷史清單與正式交付不改，當前包身分以 Git main／SOURCE_MANIFEST 為準。
+
+[下一方向盤點](../evidence/reports/round100_next_direction_inventory.md)只提出先另固定 fit 側表示與支持診斷，未執行，也沒有新增模型計畫。

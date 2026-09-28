@@ -1,0 +1,9 @@
+{
+  "automatic_retry": false,
+  "plan_sha256": "bbb29bcc4fb83eaa3fdac9f15ade8221ced3437abacb04e891038ffb3462e107",
+  "request": {
+    "path": "outputs/round100_launcher_20260929/research_request.json",
+    "sha256": "54340718fec42f6079d354ae02082ea70a66e3a2e4876ed37888c14a2dee6f75"
+  },
+  "started_at_utc": "2026-09-28T21:45:51.643326+00:00"
+}

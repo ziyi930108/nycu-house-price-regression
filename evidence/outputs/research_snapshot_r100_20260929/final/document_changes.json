@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "files": [
+    {
+      "path": "README.md",
+      "before_sha256": "d656d590c34aeefd6eeb780d92007406876c0e35711a075327440af73e1fabe8",
+      "after_sha256": "8eff8a448c8566ad50b2e11cb7c6d3aa23c1e5a4e9ed7dfe485b8e172e646bda",
+      "bytes": 6414
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "34f592b224e7ca49b06ae87a895b275fe89523c5fddd10a5995000e9dd637d8f",
+      "after_sha256": "9d1bfff2cdf620c50abd228c228ead2bc9482d312d4043463921720a533cfeb9",
+      "bytes": 8355
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "d76e61ff79f2d13b2f8c880458cf2680a378e1b07a9e709d3ee7859cbad86bae",
+      "after_sha256": "343add36c9a2c5218c93b17841bcdeb306f6c0ae373289c2e9336efe37dcd463",
+      "bytes": 16889
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md",
+      "before_sha256": null,
+      "after_sha256": "ee18c4ada31b9e27859ede2d511868bf70b9209e776cba176708b7abe8855716",
+      "bytes": 8848
+    }
+  ],
+  "publication_claim": "verified before publication; current identity Git main/SOURCE_MANIFEST"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "round": 100,
+  "review_type": "cross-author bounded source review",
+  "reviewer_role": "pure-X policy and audit author; not helper or driver author; not wholly independent of this experiment",
+  "source_sha256": "6860ed466829f6848140f5fff105b04d5b1d6e31173702bc1348ba29b8937be8",
+  "source_hashes": {
+    "src/round100_temporal_prior.py": "6860ed466829f6848140f5fff105b04d5b1d6e31173702bc1348ba29b8937be8",
+    "src/round100_temporal_prior_x_audit.py": "5322d6bec0bb5972f8b100acc525eff6cec1cd630ffd31df07b2b3b1e043aa62",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round100_temporal_prior_experiment.py": "8d91db83751c6b55e72d0e07a3d0674458af0c2235896e4d04f6c826549b26bf"
+  },
+  "driver_scope": "state_sink and helper call only, not full driver review",
+  "source_closure_completeness_claimed": false,
+  "selfcheck_receipt": {
+    "path": "reports/round100_helper_selfcheck.json",
+    "sha256": "5cd39fa7515f018af179924b8879d60d357a7ad398990ca29aae42893535308a",
+    "status": "passed",
+    "check_count": 19,
+    "source_matches_reviewed_helper": true,
+    "reviewer_reran_selfcheck": false
+  },
+  "reviewed_contracts": [
+    "canonical folds before eligible mask and exact expected identities",
+    "whole-quarter all-five-reference-count minimum 30",
+    "strict earlier-quarter valid dates and whole held-fold exclusion",
+    "warmup omission and partial last-quarter retention",
+    "unchanged R60 weighted-median implementation and hierarchy",
+    "positive finite ordered float64 prior and int64 positions",
+    "per-prefix reference target, unit, date, canonical and state identities",
+    "JSON state prediction reload exact",
+    "explicit optional state_sink and actual exclusive driver callback"
+  ],
+  "blocking_findings": [],
+  "real_data_deserialized_during_review": false,
+  "new_real_prior_builds": 0,
+  "fit_predict_score_calls": 0,
+  "GPU_calls": 0,
+  "existing_source_or_artifact_modified": false,
+  "limitations": [
+    "Input identity and y correspondence also depend on driver provenance checks.",
+    "Only the actual read callback is reviewed; helper does not prove arbitrary callbacks immutable.",
+    "Row permutation synthetic check is tolerance based; saved-state JSON replay is exact.",
+    "Source review does not prove future accuracy or Private improvement."
+  ]
+}

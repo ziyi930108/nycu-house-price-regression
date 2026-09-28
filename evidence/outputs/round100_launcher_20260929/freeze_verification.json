@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-09-28T21:45:39.729055+00:00",
+  "evaluation_request": {
+    "path": "outputs/round100_launcher_20260929/evaluation_request.json",
+    "sha256": "cc4a51d05bf474c1587638e66ec833ec6a891ebeb1544c3a4ee5db21b19b1bab"
+  },
+  "input_authorities": 11,
+  "new_NN_fits": 0,
+  "new_prior_builds": 0,
+  "protected_files": 9,
+  "query_score_calls": 0,
+  "real_data_deserialized": false,
+  "research_request": {
+    "path": "outputs/round100_launcher_20260929/research_request.json",
+    "sha256": "54340718fec42f6079d354ae02082ea70a66e3a2e4876ed37888c14a2dee6f75"
+  },
+  "source_and_plan_files": 45,
+  "status": "passed"
+}

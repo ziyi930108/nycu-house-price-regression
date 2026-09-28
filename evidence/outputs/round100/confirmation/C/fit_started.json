@@ -1,0 +1,89 @@
+{
+  "all_input_arrays": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        133697,
+        23
+      ],
+      "values_sha256": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        133697,
+        144
+      ],
+      "values_sha256": "1dc6f1addb39a7f47b1e63e8d7ee62c1d1b05b40cdd3fef23c1215d04ea84f53"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        321494,
+        23
+      ],
+      "values_sha256": "ec19e919ab1716fada87d210d41eb0f1c66b9781549e4d07412a13705fbadf2d"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        321494,
+        144
+      ],
+      "values_sha256": "3f747c98a76aa31d33957da45a072148daf19ae48f7a65f1d24fa00c5e5ffbf6"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "92e98dadb2c42b23db6f01520bcc988d93900e00ee88f313281bebbf00b8d681"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "fade225c8960a04fb48264bfdbea1ba83727985cf4a527185095d7101c25ad10"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "2e31a4fe2fa9ef653ca73e4cc1c24b5a454aa036065d65ea8805ce39f5b6af0a"
+    }
+  },
+  "automatic_retry": false,
+  "command": [
+    "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round63_recency_weighted_prior_train.py",
+    "--data",
+    "C:\\NYCU_ML\\outputs\\round100\\confirmation\\C\\prepared.npz",
+    "--out",
+    "C:\\NYCU_ML\\outputs\\round100\\confirmation\\C\\model"
+  ],
+  "prepared": {
+    "path": "outputs/round100/confirmation/C/prepared.npz",
+    "sha256": "5789d0c870f10210dc840d7117c04e0912adba15c012d64769053d5efb212e29"
+  },
+  "started_at_utc": "2026-09-28T21:49:41.381196+00:00"
+}

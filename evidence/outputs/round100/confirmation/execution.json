@@ -1,0 +1,8 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 169.45300000021234,
+  "exit_code": 0,
+  "failure": null,
+  "query_scores_computed": false,
+  "stage": "confirmation"
+}

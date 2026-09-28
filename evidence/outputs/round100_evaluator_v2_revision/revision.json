@@ -1,0 +1,57 @@
+{
+  "status": "engineering_revision_before_real_evaluation",
+  "old_source": {
+    "path": "src/round100_temporal_prior_evaluate.py",
+    "sha256": "a86ef89b1216e4dc597b301ef64d8a702d2fd2a44a3f972098b88afebadd9120"
+  },
+  "new_source": {
+    "path": "src/round100_temporal_prior_evaluate_v2.py",
+    "sha256": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf"
+  },
+  "changed_functions": [
+    "check_pure_X_audit",
+    "preflight",
+    "self_check"
+  ],
+  "unchanged_functions": [
+    "need",
+    "now",
+    "safe",
+    "rel",
+    "sha",
+    "values_sha",
+    "read",
+    "write",
+    "exact",
+    "array_record",
+    "save_array",
+    "load_array",
+    "source_hashes",
+    "verify_hashes",
+    "protected_hashes",
+    "parameters",
+    "check_header",
+    "temporal_masks",
+    "check_temporal",
+    "check_formulas",
+    "research_gate",
+    "day",
+    "index",
+    "prices",
+    "select_query_y",
+    "descriptive_metrics",
+    "paired",
+    "comparisons",
+    "check_arms",
+    "render",
+    "run"
+  ],
+  "fixed_scientific_plan_sha256": "bbb29bcc4fb83eaa3fdac9f15ade8221ced3437abacb04e891038ffb3462e107",
+  "reason": "The pure-X result binds its dedicated audit plan; its request separately binds the scientific plan. V1 confused those identities.",
+  "discovered_by": "r85_error_audit source/metadata review",
+  "old_frozen_sources_modified": false,
+  "model_configuration_or_metrics_bootstrap_adoption_rules_changed": false,
+  "true_evaluation_executed": false,
+  "true_fit_failure": false,
+  "model_training_already_running": true
+}

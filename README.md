@@ -10,13 +10,13 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新時間前推組合研究
+## 最新時間前置先驗研究
 
-[R99 把 median 納入可選基線](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)已完成。保留原 N／H／U 三支修正總價，多加逐筆中位數 M，再以較早 forward 資料學非負四權重。相對 v22 的三窗 MAE 差為 **+10,449.82／−6,281.53／+2,821.52 元**，完整研究門檻未過；相對 [R98](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)則為 +1,651.18／−2,026.51／−2,369.15 元，保留有利與不利證據。12 個相對 v22 的配對區間全部跨零，不能稱全面顯著退步或 Private 勝率。
+[R100 時間前置 prior](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)已完成六次 NN、三期完整模型與獨立評分。使用相同 loss 樣本比較原 group-OOF 先驗 C 與「季首以前且排除同建案折」的先驗 T。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **−5,097.81／+10,063.35／−11,676.48 元**；最近窗退 0.7275%，auxiliary 嘉義市亦觸及固定群退步限制，研究門檻未過。C 是機制對照，沒有事後升格成另一個提交候選。
 
-三次 CPU meta-fit 呼叫合計 2.781 秒，包含於 main 6.782 秒；獨立評分 30.156 秒，保存結果稽核 1.250 秒／253 唯一 SHA／12 保存區間。新增 0 次原生樹／NN fit，沒有新 CSV。M 與舊三欄解在 meta 上可行，並不保證較晚 query 較好；唯一提交 v22、未知 Private、正式報告與簡報保持。本頁於發布前核驗，當前發布身分以 Git main 歷史及 SOURCE_MANIFEST 為準。
+24 個 T−v22／T−C 配對區間為 4 負、14 跨零、6 正；不能轉述成 Private 勝率。六次 NN fit 共 118.203 秒，已包含於 main 391.938 秒；scorer 68.985 秒，保存結果稽核內部 77.078 秒（外層 80.109 秒）。評分前的兩份計畫 SHA 契約修正另存 scorer v2，沒有重試模型或更改科學評估參數。唯一提交 v22、未知 Private、正式報告與簡報保持。本頁於發布前核驗，當前發布身分以 Git main 歷史及 SOURCE_MANIFEST 為準。
 
-此前 [R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已重建 5 樹＋2 NN：新窗 v22／v24 MAE 1,336,410.67／1,340,328.14 元，原三年則 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)亦保留未採用結果。這些窗口反覆使用與重疊，不是新盲測。
+此前 [R99 四欄組合](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)、[R98 三欄組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)都未過採用门檻。[R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)重建 5 樹＋2 NN，新窗 v22 較低而原三年 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)亦保留。這些窗口反覆使用與重疊，不是新盲測。
 
 ## 簡報與專案更新
 

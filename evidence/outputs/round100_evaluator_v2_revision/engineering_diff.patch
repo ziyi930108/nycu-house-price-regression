@@ -1,0 +1,87 @@
+--- src/round100_temporal_prior_evaluate.py
++++ src/round100_temporal_prior_evaluate_v2.py
+@@ -1,4 +1,7 @@
+-"""R100 isolated evaluation: all six NN fits and three windows seal before labels.
++"""R100 evaluator v2: separate pure-X audit plan and scientific plan identities.
++
++Engineering-only prelabel fix; the frozen v1 source and checks remain intact.
++All six NN fits and three windows seal before labels.
+ 
+ No model loading, training, or native inference. C is a matched-loss-row
+ mechanism control; T alone is the research candidate. Synthetic checks use
+@@ -33,6 +36,10 @@
+ CANONICAL = "outputs/round6/geography/development/train_source_cache_indices.npy"
+ AUTHORITY = "outputs/round79/plan.json"
+ AUTHORITY_SHA = "7b46ade28f061ddf989fd50692f154e02b3bf73facf5a4cb408d415d09d1ea1f"
++X_AUDIT_RESULT = {"path": "outputs/round100_x_audit/results.json", "sha256": "041fec0253aab789b931e7741c5201880e091bc92b2266d7aa6c5f765ede3ad3"}
++X_AUDIT_REQUEST = {"path": "outputs/round100_x_audit_preflight/request.json", "sha256": "74b02615ca8e7ee51eda4cb6acabf0d8c68850c4f201f52a639af6feab12f98a"}
++X_AUDIT_PLAN = {"path": "reports/round100_x_audit_plan.md", "sha256": "d536d65461487af9ef116eadc7299d8b84c67fa069665a8feac51cc2438fde6b"}
++
+ CONTROL_RESULTS = {"outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+                    "outputs/round83/results.json": "8db07138c15ef2725d848c8b0ca65a6095bcc183b8550611377b3e165c59583b",
+                    "outputs/round63/results.json": "83779882a45379a955aa88197e03dd1d566262c1bc75bbeb0935d735bd387506"}
+@@ -140,12 +147,21 @@
+     need(seal.get("protected_before") == seal.get("protected_after") and len(seal.get("protected_before", {})) == 9, "Protected artifacts differ")
+ 
+ 
+-def check_pure_X_audit(audit):
++def check_pure_X_audit(audit, audit_request):
+     need(audit["status"] == "completed_pure_X_support_audit"
+          and len(audit["stage_order"]) == len(STAGES) and set(audit["stage_order"]) == set(STAGES)
+          and set(audit["stages"]) == set(STAGES), "Pure-X eligibility audit incomplete")
+-    need(audit["plan_sha256"] == PLAN_SHA and audit["labels_rawpricepickle_NPZ_models_loaded"] is False,
+-         "Pure-X audit plan/label boundary differs")
++    need(audit["request_sha256"] == X_AUDIT_REQUEST["sha256"]
++         and audit["plan_sha256"] == audit_request["plan_sha256"] == X_AUDIT_PLAN["sha256"],
++         "Pure-X audit result/request/own-plan identity differs")
++    need(audit_request["status"] == "pure_X_audit_frozen_before_feature_deserialization"
++         and audit_request["scientific_plan_sha256"] == PLAN_SHA,
++         "Pure-X audit was not bound to the scientific plan")
++    need(audit["stage_order"] == audit_request["stage_order"] and audit["rules"] == audit_request["rules"]
++         and audit["input_sha256"] == audit_request["input_sha256"]
++         and audit["source_sha256"] == audit_request["source_sha256"], "Pure-X audit frozen provenance differs")
++    need(audit["labels_rawpricepickle_NPZ_models_loaded"] is False
++         and audit_request["labels_or_real_X_deserialized"] is False, "Pure-X audit label boundary differs")
+ 
+ 
+ def temporal_masks(days, start, end):
+@@ -342,8 +358,14 @@
+     need(labels["status"] == "fit_only_labels_sealed" and labels["plan_sha256"] == PLAN_SHA, "Fit label preparation differs")
+     need(labels["query_statistics_computed"] is False and labels["all_arrays_saved_reload_exact"] is True, "Fit preparation boundary failed")
+     bind_map(labels["input_sha256"]); bind_map(labels["source_sha256"])
+-    audit = document(seal["pure_X_audit"])
+-    check_pure_X_audit(audit)
++    need(seal["pure_X_audit"] == X_AUDIT_RESULT
++         and launch["input_authority_sha256"].get(X_AUDIT_RESULT["path"]) == X_AUDIT_RESULT["sha256"],
++         "Original pure-X result authority differs")
++    audit = document(X_AUDIT_RESULT)
++    audit_request = document(X_AUDIT_REQUEST)
++    checked(X_AUDIT_PLAN["path"], X_AUDIT_PLAN["sha256"])
++    check_pure_X_audit(audit, audit_request)
++    bind_map(audit_request["source_sha256"]); bind_map(audit_request["input_sha256"])
+     original_plan = document({"path": AUTHORITY, "sha256": AUTHORITY_SHA})
+     old = {int(Path(name).parent.name[5:]): document({"path": name, "sha256": digest}) for name, digest in CONTROL_RESULTS.items()}
+     for key, path in (("raw_train", RAW), ("features", FEATURES), ("canonical_mapping", CANONICAL)):
+@@ -586,10 +608,18 @@
+               "plan_sha256": PLAN_SHA, "stages": dict.fromkeys(STAGES),
+               "protected_before": dict.fromkeys(range(9), "same"), "protected_after": dict.fromkeys(range(9), "same")}
+     check_header(header); mark("complete_six_fit_header", True)
+-    audit = {"status": "completed_pure_X_support_audit", "stage_order": ["auxiliary", "development", "confirmation"],
+-             "stages": dict.fromkeys(STAGES), "plan_sha256": PLAN_SHA, "labels_rawpricepickle_NPZ_models_loaded": False}
+-    check_pure_X_audit(audit); mark("pure_X_audit_original_execution_order_preserved", True)
+-    rejects("pure_X_audit_missing_stage_rejected", lambda: check_pure_X_audit({**audit, "stage_order": ["development", "confirmation"]}))
++    audit_request = {"status": "pure_X_audit_frozen_before_feature_deserialization", "plan_sha256": X_AUDIT_PLAN["sha256"],
++                     "scientific_plan_sha256": PLAN_SHA, "stage_order": ["auxiliary", "development", "confirmation"],
++                     "rules": {"synthetic": True}, "input_sha256": {}, "source_sha256": {}, "labels_or_real_X_deserialized": False}
++    audit = {"status": "completed_pure_X_support_audit", "stage_order": audit_request["stage_order"],
++             "stages": dict.fromkeys(STAGES), "plan_sha256": X_AUDIT_PLAN["sha256"], "labels_rawpricepickle_NPZ_models_loaded": False,
++             "request_sha256": X_AUDIT_REQUEST["sha256"], "rules": audit_request["rules"], "input_sha256": {}, "source_sha256": {}}
++    check_pure_X_audit(audit, audit_request); mark("pure_X_audit_original_execution_order_preserved", True)
++    rejects("pure_X_audit_missing_stage_rejected", lambda: check_pure_X_audit({**audit, "stage_order": ["development", "confirmation"]}, audit_request))
++    rejects("scientific_plan_not_substituted_for_audit_plan", lambda: check_pure_X_audit({**audit, "plan_sha256": PLAN_SHA}, audit_request))
++    rejects("scientific_plan_binding_required", lambda: check_pure_X_audit(audit, {**audit_request, "scientific_plan_sha256": "wrong"}))
++    rejects("original_audit_request_identity_required", lambda: check_pure_X_audit({**audit, "request_sha256": "wrong"}, audit_request))
++    rejects("audit_result_and_request_rules_must_match", lambda: check_pure_X_audit(audit, {**audit_request, "rules": {"changed": True}}))
+     for key, value in (("new_NN_fits", 5), ("new_native_tree_fits", 1), ("query_scores_computed", True),
+                        ("all_query_reload_exact", False), ("status", "running"), ("plan_sha256", "wrong")):
+         rejects("header_reject_" + key, lambda key=key, value=value: check_header({**header, key: value}))

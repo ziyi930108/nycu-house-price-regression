@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-09-28T22:07:48.568281+00:00",
+  "published_base": "c34842980f8abc4bcc15dc9d5940fe2d50ac118f",
+  "baseline_files": 1650,
+  "baseline_changed_only": [
+    "HANDOFF.md",
+    "README.md",
+    "research/README.md"
+  ],
+  "other_baseline_unchanged": 1647,
+  "historical_379_sources_and_manifest_unchanged": true,
+  "formal_REPORT_PDF_PPTX_unchanged": true,
+  "SOURCE_MANIFEST_unchanged": true,
+  "preparation_original_copies": 41,
+  "final_original_copies": 118,
+  "total_original_copies": 159,
+  "total_original_copied_bytes": 4221424,
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "d656d590c34aeefd6eeb780d92007406876c0e35711a075327440af73e1fabe8",
+      "after_sha256": "8eff8a448c8566ad50b2e11cb7c6d3aa23c1e5a4e9ed7dfe485b8e172e646bda",
+      "bytes": 6414
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "34f592b224e7ca49b06ae87a895b275fe89523c5fddd10a5995000e9dd637d8f",
+      "after_sha256": "9d1bfff2cdf620c50abd228c228ead2bc9482d312d4043463921720a533cfeb9",
+      "bytes": 8355
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "d76e61ff79f2d13b2f8c880458cf2680a378e1b07a9e709d3ee7859cbad86bae",
+      "after_sha256": "343add36c9a2c5218c93b17841bcdeb306f6c0ae373289c2e9336efe37dcd463",
+      "bytes": 16889
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md",
+      "before_sha256": null,
+      "after_sha256": "ee18c4ada31b9e27859ede2d511868bf70b9209e776cba176708b7abe8855716",
+      "bytes": 8848
+    }
+  ],
+  "navigation_local_links_checked": 136,
+  "all_navigation_links_resolve": true,
+  "original_evidence_link_classifications": {
+    "repository_direct": 22,
+    "repository_source_mapping": 10,
+    "original_workspace_only": 6,
+    "unresolved_original_link": 0
+  },
+  "all_original_copies_exact": true,
+  "extra_new_navigation_script_copy": {
+    "sha256": "37a23e49a55252786e82fe997e276fb7cc41ffa88072635b0d897876540937c1",
+    "bytes": 23644
+  },
+  "privacy_excluded": [
+    "705 complete prefix states",
+    "price-bearing temporal_prior_evidence",
+    "raw transaction data",
+    "labels",
+    "arrays",
+    "models",
+    "private/runs"
+  ],
+  "ML_fit_or_score_performed": false,
+  "package_commit_push_performed": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "existing_files_unchanged": 1650,
+  "copied_count": 41,
+  "copied_bytes": 862277,
+  "all_source_bytes_exact": true,
+  "navigation_not_edited": true,
+  "historical_379_manifest_and_files_protected_by_full_baseline": true,
+  "formal_REPORT_PDF_PPTX_protected_by_full_baseline": true,
+  "real_fit_score_calls": 0,
+  "model_completion_claimed": false,
+  "package_commit_push_zip_executed": false,
+  "copy_manifest_sha256": "60e2ba53cb0c63dda1f4055029826cc992315dfba902f1dff1ab389c10fcf3c3"
+}

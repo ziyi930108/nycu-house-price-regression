@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-09-28T21:52:52.963224+00:00",
+  "phase": "evaluate",
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round100_temporal_prior_evaluate_v2.py",
+    "--sealed-manifest",
+    "C:\\NYCU_ML\\outputs\\round100\\sealed_manifest.json",
+    "--evaluation-request",
+    "C:\\NYCU_ML\\outputs\\round100_launcher_20260929\\evaluation_request_v2.json",
+    "--out",
+    "C:\\NYCU_ML\\outputs\\round100\\evaluation"
+  ],
+  "request_sha256": "0c04526817b45519af9658cf87e9d1bd7ccb90ecbe4af878d175bad5a127ec8d",
+  "source_sha256": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+  "automatic_retry": false
+}
