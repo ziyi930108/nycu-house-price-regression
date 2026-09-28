@@ -1,0 +1,157 @@
+{
+  "arm_feature_identity": {
+    "C": {
+      "query": {
+        "dtype": "float32",
+        "shape": [
+          105511
+        ],
+        "values_sha256": "601e38d4aee0a5f65e60a9c02c6fb09567f5f1a6a5f15abab435737e528bebcc"
+      },
+      "train": {
+        "dtype": "float32",
+        "shape": [
+          134749
+        ],
+        "values_sha256": "dd344990b555c8ed257a2498b3330bb4c0ded7c69ea17b36611165904be4cf88"
+      }
+    },
+    "T": {
+      "query": {
+        "dtype": "float32",
+        "shape": [
+          105511
+        ],
+        "values_sha256": "b5ef5304671f2dad5d69b257cce9dbe9aca4461990b37217ef2be6680c6d589b"
+      },
+      "train": {
+        "dtype": "float32",
+        "shape": [
+          134749
+        ],
+        "values_sha256": "fe5cd614a0abf209d8f252a69ffc31f1f3bd0c6761cc101471ceba7280cab2ec"
+      }
+    }
+  },
+  "date_weights_renormalized": false,
+  "only_arm_numeric_column_difference": 144,
+  "original_144_prefix_identity": {
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        105511,
+        144
+      ],
+      "values_sha256": "3a5ea5ddd30f4c2d2588c84104d8bfa2f17f01997b6a5299742e9636b1e377ec"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        134749,
+        144
+      ],
+      "values_sha256": "236f22407442911309a6ff3ada81f7f4f63dc37d157bc677b3806b06e2ee0959"
+    }
+  },
+  "other_seven_arrays_bitwise_unchanged": true,
+  "prior_build_calls": 0,
+  "prior_records": {
+    "query": {
+      "dtype": "float64",
+      "path": "outputs/round60/auxiliary/query_unit_prior.npy",
+      "sha256": "17407e755f33b0885f4e1d32c3d2d2e95d4cec5ac863b122ff02a00eef255a34",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "3efcbe745af45aa3d597a73866d36f7b0e3afe7166d54a8c6767efd207cd51a1"
+    },
+    "train": {
+      "dtype": "float64",
+      "path": "outputs/round100/auxiliary/temporal_train_prior.npy",
+      "sha256": "87dbf1d36f26402ff089a9deaa0279cadb68e1d316b409c33beeebe15d83c28f",
+      "shape": [
+        134749
+      ],
+      "values_sha256": "d6498c192f1d04de04169ac14777d00193f8b81cc2e9f7fd418327f111466108"
+    }
+  },
+  "query_labels_available": false,
+  "scale_state": {
+    "path": "outputs/round102/auxiliary/scale_state.json",
+    "sha256": "aa616f4164f03584d99367a074b2a0a6ddc8cce740bdf4d289cd1d1aa8bfe214"
+  },
+  "source_input_arrays": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "259b81a94c107bc5371f8c665c6c6813c809df3e460c46284298dddac83c3014"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        105511,
+        23
+      ],
+      "values_sha256": "db81e765bef7339e4d58fb8e0b4e51f3d1650a43d1d0582cdd733f493d114133"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        105511,
+        144
+      ],
+      "values_sha256": "3a5ea5ddd30f4c2d2588c84104d8bfa2f17f01997b6a5299742e9636b1e377ec"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "f38d04a34b7510397cb2f936d1bfd91d023aaee71a982063b33f9e8bb451de2f"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        134749,
+        23
+      ],
+      "values_sha256": "0ba5d608eb67c9376336b75e2f2ccb600c929c32893dfd5002d83c25ec1993cc"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        134749,
+        144
+      ],
+      "values_sha256": "236f22407442911309a6ff3ada81f7f4f63dc37d157bc677b3806b06e2ee0959"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        134749
+      ],
+      "values_sha256": "45fdb02e6dd6a5a07b6ad3229575a5827a5fa3d1255b91d43fd26746997da5ff"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        134749
+      ],
+      "values_sha256": "f75c01cbe1051d991795a96e50d074d0edf8c6778dc3f236fbaefe049f3d864d"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        134749
+      ],
+      "values_sha256": "b0acc3a906c394994b0a6b98e0b67d29f91c562be331bc3c05014aff20c579dd"
+    }
+  },
+  "source_prepared_R100T": {
+    "path": "outputs/round100/auxiliary/T/prepared.npz",
+    "sha256": "c0ddfe53c4f3965a5a448d49afce78d15f8fd9de4e641d1d6cb3a5c484ee7e1f"
+  },
+  "status": "matched_prior_input_arms_prepared"
+}

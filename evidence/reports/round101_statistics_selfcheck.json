@@ -1,0 +1,31 @@
+{
+  "check_count": 20,
+  "checks": [
+    "linear_median",
+    "ordinary_mean_population_std",
+    "inverse_CDF_median",
+    "inverse_CDF_exact_half_not_midpoint",
+    "weighted_mean_ESS",
+    "partition_mass_uses_full_scope",
+    "empty_group_retained",
+    "empty_full_scope_null_mass",
+    "signed_log_values_supported",
+    "common_weight_scale_invariant",
+    "row_permutation_invariant",
+    "positive_mass_endpoint_not_lost_to_roundoff",
+    "reject_nan",
+    "reject_zero_weight",
+    "reject_negative_weight",
+    "reject_misaligned",
+    "reject_matrix",
+    "reject_invalid_scope",
+    "caller_arrays_unchanged",
+    "positive_factor_ratio_loss_algebra"
+  ],
+  "elapsed_seconds": 0.0,
+  "fit_predict_score_calls": 0,
+  "plan_sha256": "f95a13d1a78afbd9949d4738403880c855ed54da6618ab453be4eb909447ef7d",
+  "real_data_read": false,
+  "source_sha256": "7b55dd9d189b1c51ac4de933b24c954b96debe714d5006b0e2964933774d6d30",
+  "status": "passed"
+}

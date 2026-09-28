@@ -1,0 +1,9 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 0.3279999999795109,
+  "exit_code": 0,
+  "failure": null,
+  "new_fit_predict_score": false,
+  "real_array_label_model_access": false,
+  "source_sha256": "c62422f9d29b8b14d8c8f41dd7ee104a808324b807f18685628d3fdfe5360242"
+}

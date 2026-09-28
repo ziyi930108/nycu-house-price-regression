@@ -10,13 +10,13 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新時間前置先驗研究
+## 最新先驗輸入研究
 
-[R100 時間前置 prior](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)已完成六次 NN、三期完整模型與獨立評分。使用相同 loss 樣本比較原 group-OOF 先驗 C 與「季首以前且排除同建案折」的先驗 T。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **−5,097.81／+10,063.35／−11,676.48 元**；最近窗退 0.7275%，auxiliary 嘉義市亦觸及固定群退步限制，研究門檻未過。C 是機制對照，沒有事後升格成另一個提交候選。
+[R101／R102 完成頁](docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：R101 診斷與 R102 六次 NN／三期隔離評分均已完成。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **+934.33／+7,219.36／-9,619.90 元**。Primary gate 未通過，mechanism gate 未通過；**研究門檻未全通過，不採用；唯一提交仍是 v22，Private 未知。**
 
-24 個 T−v22／T−C 配對區間為 4 負、14 跨零、6 正；不能轉述成 Private 勝率。六次 NN fit 共 118.203 秒，已包含於 main 391.938 秒；scorer 68.985 秒，保存結果稽核內部 77.078 秒（外層 80.109 秒）。評分前的兩份計畫 SHA 契約修正另存 scorer v2，沒有重試模型或更改科學評估參數。唯一提交 v22、未知 Private、正式報告與簡報保持。本頁於發布前核驗，當前發布身分以 Git main 歷史及 SOURCE_MANIFEST 為準。
+24 個配對區間為 3 全負／17 跨零／4 全正；窗口重用限制及所有群別反證保留。R101 僅做保存分布診斷；R102 比較同一 R100T 資料的 145 欄正零對照與 log-prior 候選，七個非 numeric array 不變。正式報告與簡報保持 v22；當前發布身分以 Git main／SOURCE_MANIFEST 為準。
 
-此前 [R99 四欄組合](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)、[R98 三欄組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)都未過採用门檻。[R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)重建 5 樹＋2 NN，新窗 v22 較低而原三年 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)亦保留。這些窗口反覆使用與重疊，不是新盲測。
+[上一輪 R100](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)及更早沿革由完成頁連結保留。
 
 ## 簡報與專案更新
 

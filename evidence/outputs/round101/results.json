@@ -1,0 +1,87 @@
+{
+  "MAE_calls": 0,
+  "new_CSV": false,
+  "new_native_fits": 0,
+  "protected_sha256": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_labels_read": false,
+  "request": {
+    "path": "outputs/round101_launcher_20260929/request.json",
+    "sha256": "61526494d90792af029d794a5517c0ae39e4a8fa9d4173834452f29f45f8b57b"
+  },
+  "round": 101,
+  "source_sha256": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round101_launch.py": "dbf4bfa12b1d5023b452556cfa2a16c394238e11c243adb9b5c6ddb3459fafc5",
+    "src/round101_prior_diagnostics.py": "22708cefde4ab7fda769954bd6d3564728e2f517eb5e40c97dddedeb40346308",
+    "src/round101_statistics.py": "7b55dd9d189b1c51ac4de933b24c954b96debe714d5006b0e2964933774d6d30",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "stage_order": [
+    "development",
+    "confirmation",
+    "auxiliary"
+  ],
+  "stages": {
+    "auxiliary": {
+      "elapsed_seconds": 13.202999999979511,
+      "eligible_rows": 134749,
+      "execution": {
+        "path": "outputs/round101/auxiliary/execution.json",
+        "sha256": "4a3db14288cebd9386f164b6d5ce9f42efd147601579992b71fc658001eac174"
+      },
+      "query_rows": 105511,
+      "results": {
+        "path": "outputs/round101/auxiliary/results.json",
+        "sha256": "36c863a4caaedbe5972c32e6e7b34e7c92da117df654400b94ba8f1e13802dc3"
+      }
+    },
+    "confirmation": {
+      "elapsed_seconds": 28.07799999997951,
+      "eligible_rows": 321494,
+      "execution": {
+        "path": "outputs/round101/confirmation/execution.json",
+        "sha256": "e8ce9cf3998d044423f5d76715a7611d16daa0d310f48c806b9bf31f800549fc"
+      },
+      "query_rows": 133697,
+      "results": {
+        "path": "outputs/round101/confirmation/results.json",
+        "sha256": "c41dc9bbf4cecb073ed922c9377dde72cad73a06b940814c19269a1bd2ddbb9a"
+      }
+    },
+    "development": {
+      "elapsed_seconds": 20.030999999959022,
+      "eligible_rows": 240260,
+      "execution": {
+        "path": "outputs/round101/development/execution.json",
+        "sha256": "3098c8240394c7816c0c98fb212ccb8d45bca231734906a32fef5879fd9edcdd"
+      },
+      "query_rows": 81234,
+      "results": {
+        "path": "outputs/round101/development/results.json",
+        "sha256": "f4d316874a766a93280261e9093e8630311fe59741927505e47963b9993db621"
+      }
+    }
+  },
+  "status": "three_isolated_diagnostics_completed"
+}

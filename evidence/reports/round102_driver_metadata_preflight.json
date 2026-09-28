@@ -1,0 +1,37 @@
+{
+  "R100_source_files_verified": 33,
+  "array_NPZ_model_or_price_deserialization": false,
+  "check_count": 5,
+  "checks": [
+    "R100_original_source_closure_and_separate_plans",
+    "R100_R101_exit0",
+    "development_actual_path_record_shapes_config_factor_bias_and_RS_metadata",
+    "confirmation_actual_path_record_shapes_config_factor_bias_and_RS_metadata",
+    "auxiliary_actual_path_record_shapes_config_factor_bias_and_RS_metadata"
+  ],
+  "elapsed_seconds": 0.030999999959021807,
+  "exit_code": 0,
+  "input_metadata_sha256": {
+    "outputs/round100/auxiliary/T/model/training.json": "25ea4743d750421c99efcc8844353b0e0f6f18cecfb69267b581122f574671c3",
+    "outputs/round100/auxiliary/execution.json": "055b20033ae548dc5b64910dfb4b4966f8be43eac1b7d5f2bf11fd57780a1834",
+    "outputs/round100/auxiliary/stage_seal.json": "b84fbc2a383909c372e140dd214991e291b401c3fc6bfdfe3adc5f74dca9970d",
+    "outputs/round100/confirmation/T/model/training.json": "c0f3b6a30cadb373a07c5d76ae7a77fb2e44a3ee734df15e41939ee1ab82c9a2",
+    "outputs/round100/confirmation/execution.json": "b653432a3dac0789d4fb7d949c0246b2c36333e8818ab782c2c390599d2e3847",
+    "outputs/round100/confirmation/stage_seal.json": "8672b8c1da2794407ddf7a0651ed8a431d6dead3ad643b1b8455856e5caf9346",
+    "outputs/round100/development/T/model/training.json": "fcf9a897bd39b9b0928b7f9ec9e7755d405ef24b0981536c9ef8df332f42797c",
+    "outputs/round100/development/execution.json": "520d82f8683c4d8d2ca652ae9477191c482be3f512f56717153aa8a5ebbd62df",
+    "outputs/round100/development/stage_seal.json": "be1fb55f62cb6bd055d1a35c2c36b6c70ced5ddfb9d166ac19ed48d5d91ecbd0",
+    "outputs/round100/execution.json": "22183ecf09ff10f8634ca17c50afa1e13f58cdb6df4c99a6480993fb130463aa",
+    "outputs/round100/sealed_manifest.json": "60f33aff318b5ec85e0cc17cadb001ec1064814960c3feff63d2e9dc55ba8d7f",
+    "outputs/round100_independent_review/results.json": "85e4e10682cd3b584ef7583fc01e9ef5325a5846b1e615a866c7171a45e46265",
+    "outputs/round101/execution.json": "44a788a3ff657ebbecc15cfbc4e0cdbdec0846a78519e38c3345e1a4071caa24",
+    "outputs/round101/results.json": "520e1342a764f92dbad2e10883b04e9de0d00f1d689ec57ffd8b5ee02820fb3f",
+    "outputs/round48/plan.json": "ece3c43bae1d2f4c5f471d623a0a1082dcd8152dc3b0d20e91e7bc10c1a184af",
+    "outputs/round60/results.json": "8e1dc9e35e1685f4169327016b477fd21ff1b46fadf83cfa8cfb915bd23f1934"
+  },
+  "new_native_fits": 0,
+  "plan_sha256": "ee59dba0da8abb79c88cb6e1b73a6417a91944de784f3c7f77e61755a68bc355",
+  "predict_score_bootstrap_calls": 0,
+  "source_sha256": "c1ad2f6070a7ead6adf5eaf9cb289703d507f64609f65610714f3b9e4a2c4edf",
+  "status": "passed"
+}

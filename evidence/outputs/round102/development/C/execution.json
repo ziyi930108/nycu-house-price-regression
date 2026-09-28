@@ -1,0 +1,18 @@
+{
+  "automatic_retry": false,
+  "command": [
+    "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round63_recency_weighted_prior_train.py",
+    "--data",
+    "C:\\NYCU_ML\\outputs\\round102\\development\\C\\prepared.npz",
+    "--out",
+    "C:\\NYCU_ML\\outputs\\round102\\development\\C\\model"
+  ],
+  "elapsed_seconds": 22.280999999959022,
+  "exit_code": 0,
+  "failure": null
+}

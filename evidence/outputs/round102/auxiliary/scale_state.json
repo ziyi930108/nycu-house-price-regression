@@ -1,0 +1,39 @@
+{
+  "clipping": false,
+  "feature": "standardized_log_temporal_unit_prior",
+  "fit_rows": 134749,
+  "format": "R102_log_temporal_unit_prior_v1",
+  "mean_log_float64": 11.213096080849956,
+  "numeric_column_position_zero_based": 144,
+  "query_feature_identity": {
+    "dtype": "float32",
+    "shape": [
+      105511
+    ],
+    "values_sha256": "b5ef5304671f2dad5d69b257cce9dbe9aca4461990b37217ef2be6680c6d589b"
+  },
+  "query_prior_identity": {
+    "dtype": "float64",
+    "shape": [
+      105511
+    ],
+    "values_sha256": "3efcbe745af45aa3d597a73866d36f7b0e3afe7166d54a8c6767efd207cd51a1"
+  },
+  "query_rows": 105511,
+  "query_scaling_uses_fit_only": true,
+  "std_log_ddof0_float64": 0.4229807687149099,
+  "train_feature_identity": {
+    "dtype": "float32",
+    "shape": [
+      134749
+    ],
+    "values_sha256": "fe5cd614a0abf209d8f252a69ffc31f1f3bd0c6761cc101471ceba7280cab2ec"
+  },
+  "train_prior_identity": {
+    "dtype": "float64",
+    "shape": [
+      134749
+    ],
+    "values_sha256": "d6498c192f1d04de04169ac14777d00193f8b81cc2e9f7fd418327f111466108"
+  }
+}

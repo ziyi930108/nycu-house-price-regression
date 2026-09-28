@@ -15,11 +15,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | presentation/內22頁PPTX、講稿、排練指南及程式對照；20主講＋2附錄，規劃870秒 |
-| 研究程式 | research/src/保存379支歷史原碼與後續R85–R100來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
-| 最新研究 | R100 時間前置 prior：6 NN、三期完整評分；T−v22 為 −5,097.81／+10,063.35／−11,676.48 元，未過門檻，無新 CSV |
+| 研究程式 | research/src/保存379支歷史原碼與後續R85–R102來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
+| 最新研究 | R101 診斷＋R102 六 NN 完成；T−v22 +934.33／+7,219.36／-9,619.90 元；研究門檻未全通過，不採用，無新 CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base c3484298…c118f；當前發布身分以 Git main 歷史與 SOURCE_MANIFEST 為準，根工作區另存收據 |
-| 後續界線 | R100 六 NN、評分與保存結果稽核完成；下一方向僅提出 fit 側診斷，未執行、未另立新模型計畫 |
+| 本批發布 | 本頁於發布前核驗，base 4217cc53e54c917a27a57a48f994eb16ea05b066；當前身分以 Git main／SOURCE_MANIFEST 為準 |
+| 後續界線 | R101／R102 已完成，v22 唯一提交；後續研究需另固定計畫，本頁不新增訓練承諾 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
 
@@ -29,7 +29,8 @@
 - REPORT.md：清理、特徵、日期權重、六模型與三分支、年度回測、Public、限制。
 - evidence/reproduction/summary.json及integration_verified.json：全量實測結果。
 - research/README.md：原訓練程式入口及限制。
-- [最新 R100 時間前置 prior](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)：兩組相同 loss 列、三期完整模型、24區間、工程修正與依賴界線。
+- [最新 R101／R102](docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：診斷、145 欄對照、兩項門檻、24 CI 與依賴界線。
+- [前批 R100 時間前置 prior](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)：兩組相同 loss 列、三期完整模型、24區間、工程修正與依賴界線。
 - [前批 R99 含median四欄組合](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)：六向量／兩對照、合法meta、12區間、工程修正與保存结果稽核。
 - [前批 R98 三欄組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)：三窗結果、合法meta資料、完整反證、數值與保存結果稽核。
 - [前批 R97 新切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)：完整重建、四窗反證、評分隔離、實測時間及独立審查。
@@ -48,19 +49,13 @@ v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Publi
 
 ## 最新研究與後續工作
 
-[R100 完成頁](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)是最新入口。原 group-OOF 並非外層 query 洩漏；本輪固定比較相同 eligible loss 列的原先驗 C 與日曆季前置、同 held fold 排除的先驗 T。保留原 R63 trainer、日期權重原值、完整 outer-fit encoder／query prior 與同窗 R/S。每期少 56 warmup 列，沒有重新分折。三期六個 NN 完成封存／重載後才由 scorer 讀 query 真價。
+[R101／R102 完成頁](docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)是最新入口。R101 診斷與 R102 六次 NN／三期隔離評分均已完成。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **+934.33／+7,219.36／-9,619.90 元**。Primary gate 未通過，mechanism gate 未通過；**研究門檻未全通過，不採用；唯一提交仍是 v22，Private 未知。**
 
-T 相對 v22，development／confirmation／auxiliary 整體差為 −5,097.81／+10,063.35／−11,676.48 元，加權方向相同。最近窗退 0.7275%；auxiliary 嘉義市 731 筆退 6.1285%，原固定門檻未過。相對同樣本 C 為 −3,704.14／+11,158.91／−4,972.80 元。C 三期點估計較原 v22 低，仍只是機制對照，不能事後改選。T 原生 prior NN 三期均退，完整 median 兩期改善，層差不能相加成因果。
+R101 的 fit／無真價 query 診斷已完成；R102 比較同一 R100T 七個共享 array 與同一 145 欄架構，只改末欄正零／標準化 log prior。全部六 NN 和 query 重載封存後才由隔離 scorer 讀真價。C 是同寬度機制對照，並非上一輪的 loss-mask C。
 
-24 個主要配對區間中 4 負、14 跨零、6 正；T−v22 的 auxiliary 四個區間全負，而 T−C 的 confirmation 四個全正。窗口多次重用有選型偏差，區間不是 Private 勝率。近期退步不限豪宅，auxiliary 收益也不限豪宅；完整價格／城市／新建案反證見[聚合摘要](evidence/reports/round100_summary.md)。
+完整四向量、五層指標、兩项 gate、24 CI、所有群別退步及實測耗時見完成頁與[摘要](evidence/reports/round102_report.md)。窗口重用偏差、單 seed、未知 Private 與從零重訓未驗證的限制保留。
 
-六次 NN fit 合計 118.203 秒、prior 生成 160.876 秒，均包含於 main 391.938 秒；scorer 68.985 秒；保存結果稽核內部 77.078 秒（外層程序 80.109 秒）。稽核通過 1,827 唯一 SHA、9 保護檔、705 prefix state 與 24 保存區間。稽核者參與純 X 政策／稽核且審閱 helper，其他核心模組由不同作者負責，不能稱完全獨立重作。
-
-原 scorer 的純 X 計畫／科學計畫 SHA 接點在評分前發現，凍結原碼保留，另建 v2 窄修。42 人工檢查與真 metadata 前置核對後正式評分；MAE、配對、gate、公式保持，没有真模型失敗或重試。[v2 契約](evidence/reports/round100_evaluation_contract_v2.md)與原稿／diff 收據均保留。
-
-[R99](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)結束時的 temporal prior 提案現已另立 R100 完成；歷史提案不回寫。[本輪有限下一方向](evidence/reports/round100_next_direction_inventory.md)只提 fit 側 prior／支持層級／ratio／bias 分布診斷，尚未執行或選定新模型，不掃季長、seed 或融合比例。[R98](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)、[R97](docs/RESEARCH_UPDATES_20260929_OFFSET.md)及[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)完整反證保留。
-
-本批以 c34842980f8abc4bcc15dc9d5940fe2d50ac118f 為基礎；本頁於發布前核驗，當前發布身分以 Git main 歷史與 SOURCE_MANIFEST 為準，根工作區另存發布收據。原 prep／歷史收據、379 source manifest、正式 REPORT／PDF／PPTX 與 v22 保持。交易表、模型、標籤、逐筆陣列、705 完整 prefix state 及含每個 prefix 價格的 temporal_prior_evidence 留在本機；只有其身分在 stage seal 保留。這是文件／程式快照，不是完整可重訓備份，沒有背景自動研究承諾。
+[R100](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)的當時下一方向已在 R101／R102 分別診斷與試驗，歷史頁不回寫。[下一方向](evidence/reports/round102_next_direction.md)只提先另固定誤差互補／median 路由診斷，尚未執行；最近窗在 base 已翻負，不能直接怪 R/S，也不能據 query 搜權重。本批不建立新的候選／調參／背景訓練承諾；部分價格狀態與模型依賴只在原工作區。
 
 使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 

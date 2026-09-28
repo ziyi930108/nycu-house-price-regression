@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-09-28T23:07:16.088638+00:00",
+  "published_base": "4217cc53e54c917a27a57a48f994eb16ea05b066",
+  "copied_count": 177,
+  "copied_bytes": 16580855,
+  "all_original_copies_exact": true,
+  "baseline_files": 1766,
+  "baseline_changed_only": [
+    "HANDOFF.md",
+    "README.md",
+    "research/README.md"
+  ],
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "8eff8a448c8566ad50b2e11cb7c6d3aa23c1e5a4e9ed7dfe485b8e172e646bda",
+      "after_sha256": "72964a998dd8071aa8e88bd83969c0a4a6a5a5dd2efc0243e6d4af34cbc040b6",
+      "bytes": 5619
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "9d1bfff2cdf620c50abd228c228ead2bc9482d312d4043463921720a533cfeb9",
+      "after_sha256": "355fd9ec770c772c132cfd05578d6cf353d92d5ef0c923725799b5e72521d8b2",
+      "bytes": 6723
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "343add36c9a2c5218c93b17841bcdeb306f6c0ae373289c2e9336efe37dcd463",
+      "after_sha256": "5b2f0306048c0f9793df07e93948ae1657131978ab7d0dee4261a1a907694a44",
+      "bytes": 18065
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md",
+      "before_sha256": null,
+      "after_sha256": "c644288594b233560981a5704c5e406495547e910f8eafd98bf78d3c27f92339",
+      "bytes": 5904
+    }
+  ],
+  "navigation_local_links_checked": 127,
+  "all_navigation_links_resolve": true,
+  "interval_counts": {
+    "negative": 3,
+    "crossing": 17,
+    "positive": 4
+  },
+  "input_sha256": {
+    "outputs/round101/execution.json": "44a788a3ff657ebbecc15cfbc4e0cdbdec0846a78519e38c3345e1a4071caa24",
+    "outputs/round102/execution.json": "1efaf2ca4e451ae54293a850946334afce69cd7f0433fb2874630966aba9fff3",
+    "outputs/round102/evaluation/execution.json": "4d941f13a731bf27062f26db59cd1ebb1ae1c08a569764d9de10035786d84cd5",
+    "outputs/round101_summary/execution.json": "031e727fd68a3bb0959e2432cd8d890900cd3383f95ea858235d026ac3925bc6",
+    "outputs/round102_summary/execution.json": "2b991ef1866a59907eb82dc1f748a255d3ac7cd7f7921bb1ce0f54b18c5bbfc1",
+    "outputs/round101_summary/summary.json": "b213ea308da37c8032f5335a35bfc4fd4b6863098689f73be826db7ab95d60f2",
+    "outputs/round102_summary/summary.json": "a5322ed961cadf4e95724c2490dddb91d98a3298514e9b1b5731c9effb8ebfe4",
+    "outputs/round102_summary/receipt.json": "8322aa77f20d1cc996e3268b52d62937ebd7477ac5b90220848054f7a00e4286",
+    "outputs/round102/evaluation/results.json": "e385ed630cdf3a2b2b0418867563a4064fbe08c1c979feb004787df2592f2347",
+    "outputs/round102/sealed_manifest.json": "fd75ffd27998d008cedb65a13632e48c480f05beb9c69ee9bccf5b2e7a1aa68a"
+  },
+  "source_sha256": "77607ec8edae5551816ae0035883d11a6b7287fb97fae7e8ebfa71403255ff35",
+  "SOURCE_MANIFEST_unchanged": true,
+  "historical_379_sources_and_manifest_unchanged": true,
+  "formal_REPORT_PDF_PPTX_unchanged": true,
+  "original_workspace_dependencies": [
+    "raw data",
+    "labels",
+    "arrays",
+    "models",
+    "full price-prior/prefix states",
+    "cross-round saved private artifacts"
+  ],
+  "new_fit_score_calls": 0,
+  "package_commit_push_performed": false
+}

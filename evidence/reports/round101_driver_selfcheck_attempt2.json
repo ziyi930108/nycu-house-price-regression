@@ -1,0 +1,109 @@
+{
+  "check_count": 24,
+  "checks": [
+    "target_factor_reciprocal",
+    "effective_ratio_loss_weights",
+    "weighted_absolute_loss_algebra",
+    "float64_ratio_median",
+    "inverse_softplus",
+    "reject_float64_saved_labels",
+    "reject_zero_factor",
+    "reject_nonfinite_weights",
+    "age_boundaries_365_730",
+    "all_25_transitions_include_empty",
+    "reject_future_fit",
+    "prior_band_boundaries",
+    "held_fold_support_excludes_all_own_rows",
+    "first_supported_level_and_global",
+    "support_router_needs_no_price",
+    "reject_subminimum_saved_cell",
+    "full_y_masked_prior_alignment",
+    "reject_unsorted_indices",
+    "reject_reader_foreign_path",
+    "query_ratio_recovery_tolerance",
+    "empty_group_preserved",
+    "weighted_ratio_three_views",
+    "query_12_relative_months",
+    "query_fullfit_membership_not_masked"
+  ],
+  "elapsed_seconds": 0.09300000010989606,
+  "new_native_fits": 0,
+  "new_statistics_on_real_data": false,
+  "parameters": {
+    "MAE_calls": 0,
+    "automatic_adoption": false,
+    "bootstrap_calls": 0,
+    "effective_ratio_loss_weight": "saved raw float32 date weight promoted float64 * factor64",
+    "fit_groups": [
+      "calendar_quarter",
+      "age_0_365_730_inf",
+      "support_transition_25"
+    ],
+    "model_loads": 0,
+    "model_predict_calls": 0,
+    "new_CSV": false,
+    "new_native_fits": 0,
+    "plan_sha256": "f95a13d1a78afbd9949d4738403880c855ed54da6618ab453be4eb909447ef7d",
+    "prior_builds": 0,
+    "prior_ratio_bands": [
+      "<0.9",
+      "[0.9,1.1]",
+      ">1.1"
+    ],
+    "quantile_percentiles": [
+      0,
+      1,
+      10,
+      25,
+      50,
+      75,
+      90,
+      99,
+      100
+    ],
+    "quantile_unweighted": "numpy linear",
+    "quantile_weighted": "stable inverse CDF; no interpolation",
+    "query_groups": [
+      "relative_forecast_month_12",
+      "full_outer_fit_seen_new_missing",
+      "support_level_5"
+    ],
+    "query_labels_read": false,
+    "query_ratio": "saved native TWD / (shared factor64 * 1e6); recovered not original bytes",
+    "ratio_target": "saved train_y_million float32 / saved factor float32, both promoted float64",
+    "round": 101,
+    "source_support_levels": [
+      "city_district_transaction_building",
+      "city_transaction_building",
+      "transaction_building",
+      "transaction",
+      "global"
+    ],
+    "stage_order": [
+      "development",
+      "confirmation",
+      "auxiliary"
+    ]
+  },
+  "plan_sha256": "f95a13d1a78afbd9949d4738403880c855ed54da6618ab453be4eb909447ef7d",
+  "real_arrays_or_labels_read": false,
+  "source_hashes": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round101_prior_diagnostics.py": "22708cefde4ab7fda769954bd6d3564728e2f517eb5e40c97dddedeb40346308",
+    "src/round101_statistics.py": "7b55dd9d189b1c51ac4de933b24c954b96debe714d5006b0e2964933774d6d30",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "source_sha256": "22708cefde4ab7fda769954bd6d3564728e2f517eb5e40c97dddedeb40346308",
+  "status": "passed"
+}

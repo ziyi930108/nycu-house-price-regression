@@ -1,0 +1,8 @@
+{
+  "created_at_utc": "2026-09-28T22:28:28.451515+00:00",
+  "request": {
+    "path": "outputs/round101_launcher_20260929/request.json",
+    "sha256": "61526494d90792af029d794a5517c0ae39e4a8fa9d4173834452f29f45f8b57b"
+  },
+  "stage": "confirmation"
+}

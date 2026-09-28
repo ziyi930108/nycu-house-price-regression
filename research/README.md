@@ -1,6 +1,15 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R100程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+## 最新追加：R101 診斷與 R102 先驗輸入
+
+[完成頁](../docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：R101 診斷與 R102 六次 NN／三期隔離評分均已完成。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **+934.33／+7,219.36／-9,619.90 元**。Primary gate 未通過，mechanism gate 未通過；**研究門檻未全通過，不採用；唯一提交仍是 v22，Private 未知。**
+
+[R101 driver](src/round101_prior_diagnostics.py)／[statistics](src/round101_statistics.py)只做保存分布診斷；[R102 driver](src/round102_prior_input_experiment.py)串行六 NN；[scorer](src/round102_prior_input_evaluate.py)在全部封存後才評分。145 欄／七共享 array 與兩项 gate 詳見[計畫](../evidence/reports/round102_plan.md)及[摘要](../evidence/reports/round102_report.md)。
+
+[本批來源清單](../evidence/outputs/research_snapshot_r102_20260929/copy_manifest.json)保留 bytes；不含標籤／模型／NPZ／逐筆向量／價格 prior states。379 歷史來源與正式交付不改。下方歷史研究的「尚未執行」是各批當時狀態；R100 提議的診斷與本輪輸入假說現已完成。
+
+
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R102程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -131,7 +140,7 @@ R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/re
 原資料／模型state／solver與bootstrap陣列／逐筆向量不在本包；原379來源manifest與正式v22保持。當前發布身分以Git main與外層SOURCE_MANIFEST為準。
 
 [本批完成複製清單](../evidence/outputs/research_snapshot_r99_20260929/final/copy_manifest.json)保存原bytes。另附[有限下一方向](../evidence/reports/round99_next_direction_inventory.md)，在 R99 結束時僅是只讀假說；後續另立 R100 完成如下，歷史時序保留。不能把 group OOF 說成外層 query 洩漏。
-## 最新追加：R100 時間前置且排除同折的 prior
+## 歷史追加：R100 時間前置且排除同折的 prior
 
 [R100 完成頁](../docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)保存 C／T 同樣本比較、三期完整四向量、24 配對區間及分群反證。新增六個 prior NN，原 R63 trainer／架構／30 epochs／日期權重不改。T 相對 v22 為 −5,097.81／+10,063.35／−11,676.48 元，未過門檻，不新增 CSV；C 是機制對照。
 
