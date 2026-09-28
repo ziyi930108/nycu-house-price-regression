@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round83/results.json": "8db07138c15ef2725d848c8b0ca65a6095bcc183b8550611377b3e165c59583b",
+    "outputs/round97/sealed_manifest.json": "429e5405652b4e9d54308d6f09d6722ab540694b13f92e2ad8577277b85893cb",
+    "outputs/round97/execution.json": "991cabd731abcc999a38dd45690d7cc5a72fa27281e24772f9429145747c2c62",
+    "outputs/round97/evaluation/results.json": "0c1fe34c720e72148de78577834661a2695aac7aa033a568ac4a51ec96d79abf",
+    "outputs/round97/evaluation/execution.json": "172d69d95df1f613001b6f5f99ad893fd6584adb6bb9c0d206efcf3d00da1821",
+    "reports/round97_plan.md": "8372960e832bd66203374c942e0f7988e66522aedf358c894d892e82669a3a08",
+    "src/summarize_round97_stability.py": "a0beec15205e69b2a5296f102c4af7c0cb1f20e0ab00a938ca2c8c221109bd84"
+  },
+  "artifact_sha256": {
+    "reports/round97_stability_summary.md": "ad7c142abc353268077791ffc5c309d01fd2b1cf0601775a30ece17ab06e8270",
+    "outputs/round97_summary/summary.json": "0d1a88cd5956c6f4d7de3bb13d880fbb8b261ac259dcaa8c9ea6999b85cf9e15",
+    "outputs/round97_summary/four_window_mae_delta.png": "faf72999d53e11e53c2573f3b4e57026a2a856782a2a7a3fd98418bd5af05696"
+  },
+  "elapsed_seconds": 0.2029999999795109
+}

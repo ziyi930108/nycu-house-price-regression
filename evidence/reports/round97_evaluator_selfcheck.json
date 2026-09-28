@@ -1,0 +1,129 @@
+{
+  "GPU_calls": 0,
+  "check_count": 43,
+  "checks": [
+    "complete_seal_header_accepted",
+    "reject_header_status",
+    "reject_header_all_fits_complete",
+    "reject_header_predictions_sealed",
+    "reject_header_new_native_tree_fits",
+    "reject_header_new_NN_fits",
+    "reject_header_query_labels_available",
+    "reject_header_cutoff",
+    "reject_header_query_end",
+    "reject_header_all_query_saved_model_and_state_reload_exact",
+    "reject_header_new_query_metrics_computed",
+    "reject_header_protected_after",
+    "label_access_requires_gate",
+    "separate_evaluation_freeze_accepted",
+    "evaluation_changed_parameters_rejected",
+    "evaluation_changed_source_rejected",
+    "raw_cache_positional_mapping_not_dataframe_label_or_canonical",
+    "duplicate_raw_indices_rejected",
+    "out_of_range_raw_indices_rejected",
+    "wrong_raw_table_rows_rejected",
+    "invalid_selected_query_price_rejected",
+    "relative_month_inclusive_boundaries",
+    "day_after_query_end_rejected_by_relative_month",
+    "overall_MAE_handcomputed",
+    "fixed_group_weights_missing_zero_not_overall",
+    "price_band_boundaries_partition",
+    "tail_bias_and_small_sample_top1pct",
+    "zero_error_share_null",
+    "missing_positive_weight_strata_rejected",
+    "project_constant_paired_difference",
+    "project_identical_models_exact",
+    "month_constant_paired_difference",
+    "month_identical_models_exact",
+    "month_missing_weight_stratum_not_redrawn",
+    "four_base_and_two_median_exact",
+    "changed_median_rejected",
+    "U24_adding_LGB_rejected",
+    "unsealed_stops_before_request_artifacts_or_label_loading",
+    "small_saved_vector_identity",
+    "changed_array_sha_rejected",
+    "changed_values_sha_rejected",
+    "wrong_record_dtype_rejected",
+    "conflicting_record_hashes_rejected"
+  ],
+  "completed_at_utc": "2026-09-28T19:09:12.420562+00:00",
+  "elapsed_seconds": 0.10999999986961484,
+  "model_fit_load_predict_calls": 0,
+  "parameters": {
+    "candidate": "v24",
+    "control": "v22",
+    "cutoff": "2023-02-11",
+    "error_tail_top_fraction": 0.01,
+    "error_tail_top_rows": 10,
+    "family_order": [
+      "project",
+      "month"
+    ],
+    "fit_rows": 272117,
+    "fixed_group_weights": {
+      "missing": 0.0,
+      "new_nonmissing": 0.6338240605017739,
+      "seen": 0.36617593949822613
+    },
+    "month_block_length": 3,
+    "month_blocks": 4,
+    "new_CSV": false,
+    "price_bands": [
+      "<10m",
+      "10-20m",
+      "20-50m",
+      "50-100m",
+      ">=100m"
+    ],
+    "quarters": {
+      "Q1": [
+        0,
+        91
+      ],
+      "Q2": [
+        92,
+        183
+      ],
+      "Q3": [
+        184,
+        275
+      ],
+      "Q4": [
+        276,
+        null
+      ]
+    },
+    "query_end": "2024-02-10",
+    "query_rows": 107169,
+    "raw_rows": 455784,
+    "replicates": 2000,
+    "rng": "default_rng(SeedSequence([20260925,0,family_index]))",
+    "round": 97,
+    "seed": 20260925,
+    "selection_changed": false,
+    "stage_index": 0,
+    "tail_quantiles": [
+      0.5,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "test_read": false
+  },
+  "real_price_or_prediction_files_loaded": 0,
+  "source_hashes": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round90_offset_data.py": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+    "src/round97_offset_evaluate.py": "fbe0b0f841fce7f13afa6e499b6f88498ae061c816ab381fc89a5357eb87d0d8",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "source_sha256": "fbe0b0f841fce7f13afa6e499b6f88498ae061c816ab381fc89a5357eb87d0d8",
+  "status": "passed",
+  "synthetic_only": true
+}

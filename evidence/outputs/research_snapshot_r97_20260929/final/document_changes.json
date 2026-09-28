@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-09-28T19:36:28.005020+00:00",
+  "changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "af915ec4088fd0237fc0ec8ad4210891aef9acdf935562c6ea6fbb5edb9ee25f",
+      "after_sha256": "f65643e5a137dc73706a6522a4abfbddf3c629b6398156162dec6176d9c87d7e",
+      "preserved_before": "evidence/outputs/research_snapshot_r97_20260929/final/navigation_before/README.md"
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "c33016031d16d64f74b7d2cc02be282c11a60f2e7aecd3a80b5f7330dcf00d9d",
+      "after_sha256": "34f182be5a74a8555c42d2a950af05308a996583ff4d51580adbef3b90df9229",
+      "preserved_before": "evidence/outputs/research_snapshot_r97_20260929/final/navigation_before/HANDOFF.md"
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "95fcf5280d442110111b63be96dc946fba9da36fa590fe77f8f8c6eecfc11061",
+      "after_sha256": "391d0d313963c29b8b4d659fe64f85f6ae62f1fdacacd98b6e734e77a64ce9ae",
+      "preserved_before": "evidence/outputs/research_snapshot_r97_20260929/final/navigation_before/research/README.md"
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_OFFSET.md",
+      "before_sha256": "77389ae0558f9e09da3932fcf33cd8588f0e7889d274b1c3fc1f0536b1064681",
+      "after_sha256": "d6eda005ab794952dfa1119e2a16ae7028643712c7095fe7ad037bfa3b3299fc",
+      "preserved_before": "evidence/outputs/research_snapshot_r97_20260929/final/navigation_before/docs/RESEARCH_UPDATES_20260929_OFFSET.md"
+    }
+  ],
+  "four_navigation_files_only": true
+}

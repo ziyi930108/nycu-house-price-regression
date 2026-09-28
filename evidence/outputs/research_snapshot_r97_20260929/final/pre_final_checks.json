@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-09-28T19:37:33.494742+00:00",
+  "original_missing_links": [],
+  "long_numeric_vectors": [],
+  "navigation_links": 95,
+  "report_link_status_counts": {
+    "mapped_in_snapshot": 14,
+    "direct_in_snapshot": 32,
+    "original_workspace_dependency_not_bundled": 5
+  },
+  "ast_checked": [
+    "research/src/round97_offset_evaluate.py",
+    "research/src/round97_independent_review.py",
+    "research/src/summarize_round97_stability.py",
+    "research/src/summarize_round97_stability_v2.py",
+    "evidence/outputs/round97_launcher_20260929/check_launch.py",
+    "evidence/outputs/round97_launcher_20260929/run_evaluation.py",
+    "evidence/outputs/round97_launcher_20260929/run_pipeline.py",
+    "research/src/round97_prepare_fit_labels.py",
+    "research/src/round97_offset_experiment.py"
+  ],
+  "json_scanned": 58,
+  "existing_files_unchanged_except_4": 1265,
+  "elapsed_seconds": 1.5
+}

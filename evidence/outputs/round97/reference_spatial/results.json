@@ -1,0 +1,484 @@
+{
+  "all_query_reload_exact": true,
+  "elapsed_seconds": 42.75,
+  "fit_state_unchanged_during_all_predictions": true,
+  "new_reference_fits": 1,
+  "new_spatial_state_builds": 1,
+  "query_labels_available": false,
+  "reference_predict_calls": 8,
+  "reports": {
+    "H": {
+      "all_query_reload_exact": true,
+      "reference": {
+        "eligible_query_rows": 107111,
+        "fit_seconds": 4.61531320004724,
+        "fitting_rows": 272117,
+        "hedonic": {
+          "coefficients": {
+            "floor_mean_per10": 0.0423950338395164,
+            "log_building_area": -0.005224887806430253,
+            "parking_fraction": -0.5270264017138987,
+            "transaction_years": 0.0947257887154546
+          },
+          "fit_rows": 175331,
+          "maximum_fit_day_index": 8441.0,
+          "project_groups": 3582
+        },
+        "mean_reference_weight": 0.2807372400965781,
+        "query_rows": 107169,
+        "reference_rows": 271106,
+        "reference_unit_price_bounds": [
+          33173.53405689676,
+          428455.0078280311
+        ],
+        "seconds": 3.224588300101459,
+        "source_counts": {
+          "address": 6193,
+          "base_fallback": 10900,
+          "district_style": 36964,
+          "locality": 1112,
+          "project": 41034,
+          "street": 1768,
+          "street_section": 9198
+        },
+        "validation_targets_used_for_references": false
+      },
+      "spatial": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 13855,
+        "applied_source_counts": {
+          "base_fallback": 280,
+          "district_style": 13575
+        },
+        "changed_rows": 13855,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 27464,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 93314,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 40,
+        "neighborhood_cache_entries": 1561,
+        "neighborhood_cache_reuses": 25903,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 107169,
+        "reason_counts": {
+          "area_out_of_bounds": 58,
+          "fewer_than_5_projects": 13609,
+          "invalid_geography_or_group": 20342,
+          "not_weak_source": 59305,
+          "spatial_residual": 13855
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 47864
+      },
+      "spatial_fallback_exact": true
+    },
+    "N": {
+      "all_query_reload_exact": true,
+      "reference": {
+        "eligible_query_rows": 107111,
+        "fit_seconds": 4.61531320004724,
+        "fitting_rows": 272117,
+        "hedonic": {
+          "coefficients": {
+            "floor_mean_per10": 0.0423950338395164,
+            "log_building_area": -0.005224887806430253,
+            "parking_fraction": -0.5270264017138987,
+            "transaction_years": 0.0947257887154546
+          },
+          "fit_rows": 175331,
+          "maximum_fit_day_index": 8441.0,
+          "project_groups": 3582
+        },
+        "mean_reference_weight": 0.2807372400965781,
+        "query_rows": 107169,
+        "reference_rows": 271106,
+        "reference_unit_price_bounds": [
+          33173.53405689676,
+          428455.0078280311
+        ],
+        "seconds": 3.21724470006302,
+        "source_counts": {
+          "address": 6193,
+          "base_fallback": 10900,
+          "district_style": 36964,
+          "locality": 1112,
+          "project": 41034,
+          "street": 1768,
+          "street_section": 9198
+        },
+        "validation_targets_used_for_references": false
+      },
+      "spatial": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 13855,
+        "applied_source_counts": {
+          "base_fallback": 280,
+          "district_style": 13575
+        },
+        "changed_rows": 13855,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 27464,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 93314,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 40,
+        "neighborhood_cache_entries": 1561,
+        "neighborhood_cache_reuses": 25903,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 107169,
+        "reason_counts": {
+          "area_out_of_bounds": 58,
+          "fewer_than_5_projects": 13609,
+          "invalid_geography_or_group": 20342,
+          "not_weak_source": 59305,
+          "spatial_residual": 13855
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 47864
+      },
+      "spatial_fallback_exact": true
+    },
+    "U22": {
+      "all_query_reload_exact": true,
+      "reference": {
+        "eligible_query_rows": 107111,
+        "fit_seconds": 4.61531320004724,
+        "fitting_rows": 272117,
+        "hedonic": {
+          "coefficients": {
+            "floor_mean_per10": 0.0423950338395164,
+            "log_building_area": -0.005224887806430253,
+            "parking_fraction": -0.5270264017138987,
+            "transaction_years": 0.0947257887154546
+          },
+          "fit_rows": 175331,
+          "maximum_fit_day_index": 8441.0,
+          "project_groups": 3582
+        },
+        "mean_reference_weight": 0.2807372400965781,
+        "query_rows": 107169,
+        "reference_rows": 271106,
+        "reference_unit_price_bounds": [
+          33173.53405689676,
+          428455.0078280311
+        ],
+        "seconds": 3.464620500104502,
+        "source_counts": {
+          "address": 6193,
+          "base_fallback": 10900,
+          "district_style": 36964,
+          "locality": 1112,
+          "project": 41034,
+          "street": 1768,
+          "street_section": 9198
+        },
+        "validation_targets_used_for_references": false
+      },
+      "spatial": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 13855,
+        "applied_source_counts": {
+          "base_fallback": 280,
+          "district_style": 13575
+        },
+        "changed_rows": 13855,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 27464,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 93314,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 40,
+        "neighborhood_cache_entries": 1561,
+        "neighborhood_cache_reuses": 25903,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 107169,
+        "reason_counts": {
+          "area_out_of_bounds": 58,
+          "fewer_than_5_projects": 13609,
+          "invalid_geography_or_group": 20342,
+          "not_weak_source": 59305,
+          "spatial_residual": 13855
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 47864
+      },
+      "spatial_fallback_exact": true
+    },
+    "U24": {
+      "all_query_reload_exact": true,
+      "reference": {
+        "eligible_query_rows": 107111,
+        "fit_seconds": 4.61531320004724,
+        "fitting_rows": 272117,
+        "hedonic": {
+          "coefficients": {
+            "floor_mean_per10": 0.0423950338395164,
+            "log_building_area": -0.005224887806430253,
+            "parking_fraction": -0.5270264017138987,
+            "transaction_years": 0.0947257887154546
+          },
+          "fit_rows": 175331,
+          "maximum_fit_day_index": 8441.0,
+          "project_groups": 3582
+        },
+        "mean_reference_weight": 0.2807372400965781,
+        "query_rows": 107169,
+        "reference_rows": 271106,
+        "reference_unit_price_bounds": [
+          33173.53405689676,
+          428455.0078280311
+        ],
+        "seconds": 3.147762699984014,
+        "source_counts": {
+          "address": 6193,
+          "base_fallback": 10900,
+          "district_style": 36964,
+          "locality": 1112,
+          "project": 41034,
+          "street": 1768,
+          "street_section": 9198
+        },
+        "validation_targets_used_for_references": false
+      },
+      "spatial": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 13855,
+        "applied_source_counts": {
+          "base_fallback": 280,
+          "district_style": 13575
+        },
+        "changed_rows": 13855,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 27464,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 93314,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 40,
+        "neighborhood_cache_entries": 1561,
+        "neighborhood_cache_reuses": 25903,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 107169,
+        "reason_counts": {
+          "area_out_of_bounds": 58,
+          "fewer_than_5_projects": 13609,
+          "invalid_geography_or_group": 20342,
+          "not_weak_source": 59305,
+          "spatial_residual": 13855
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 47864
+      },
+      "spatial_fallback_exact": true
+    }
+  },
+  "spatial_predict_calls": 8
+}

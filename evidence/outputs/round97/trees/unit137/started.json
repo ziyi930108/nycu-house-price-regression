@@ -1,0 +1,28 @@
+{
+  "automatic_retry": false,
+  "fit_rows": 272117,
+  "parameters": {
+    "allow_writing_files": false,
+    "boosting_type": "Plain",
+    "bootstrap_type": "Bernoulli",
+    "border_count": 128,
+    "depth": 8,
+    "devices": "0",
+    "eval_metric": "MAE",
+    "gpu_ram_part": 0.75,
+    "iterations": 2999,
+    "l2_leaf_reg": 6.0,
+    "learning_rate": 0.065,
+    "loss_function": "MAE",
+    "max_ctr_complexity": 2,
+    "one_hot_max_size": 8,
+    "random_seed": 137,
+    "random_strength": 0.5,
+    "subsample": 0.85,
+    "task_type": "GPU",
+    "thread_count": 4,
+    "verbose": 300
+  },
+  "query_labels_available": false,
+  "query_rows": 107169
+}

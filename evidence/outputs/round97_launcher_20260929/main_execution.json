@@ -1,0 +1,19 @@
+{
+  "step": "main",
+  "started_at_utc": "2026-09-28T19:04:18.209990+00:00",
+  "completed_at_utc": "2026-09-28T19:27:50.849975+00:00",
+  "elapsed_seconds": 1412.6399999998976,
+  "exit_code": 0,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round97_offset_experiment.py",
+    "--run",
+    "--plan-sha",
+    "8372960e832bd66203374c942e0f7988e66522aedf358c894d892e82669a3a08"
+  ],
+  "log_sha256": "bcc0fdb3c0f5e95b33427d23a865a1a6200c2e7838fdf4db1caa07034e151783"
+}

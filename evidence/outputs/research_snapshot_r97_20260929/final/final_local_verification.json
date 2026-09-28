@@ -1,0 +1,86 @@
+{
+  "status": "passed_ready_for_parent_packaging",
+  "created_at_utc": "2026-09-28T19:38:24.515944+00:00",
+  "copy_files": 95,
+  "copied_bytes": 899962,
+  "existing_exact_source_reuse": 2,
+  "all_copied_source_sha256_match": true,
+  "baseline_files": 1269,
+  "unchanged_existing_files": 1265,
+  "allowed_existing_navigation_edits": [
+    "README.md",
+    "HANDOFF.md",
+    "research/README.md",
+    "docs/RESEARCH_UPDATES_20260929_OFFSET.md"
+  ],
+  "navigation_links_checked": 95,
+  "navigation_links_all_passed": true,
+  "immutable_report_link_counts": {
+    "mapped_in_snapshot": 14,
+    "direct_in_snapshot": 32,
+    "original_workspace_dependency_not_bundled": 5
+  },
+  "unbundled_original_dependencies": [
+    {
+      "document": "evidence/reports/regression_direction_after_r97_inventory.md",
+      "link": "optimization_round2_report.md",
+      "status": "original_workspace_dependency_not_bundled",
+      "original": "reports/optimization_round2_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_r97_inventory.md",
+      "link": "round43_median_report.md",
+      "status": "original_workspace_dependency_not_bundled",
+      "original": "reports/round43_median_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_r97_inventory.md",
+      "link": "validation_design_audit_r84.md",
+      "status": "original_workspace_dependency_not_bundled",
+      "original": "reports/validation_design_audit_r84.md"
+    },
+    {
+      "document": "evidence/outputs/round97/evaluation/report.md",
+      "link": "project_replicates.npy",
+      "status": "original_workspace_dependency_not_bundled",
+      "original": "outputs/round97/evaluation/project_replicates.npy"
+    },
+    {
+      "document": "evidence/outputs/round97/evaluation/report.md",
+      "link": "month_replicates.npy",
+      "status": "original_workspace_dependency_not_bundled",
+      "original": "outputs/round97/evaluation/month_replicates.npy"
+    }
+  ],
+  "original_link_missing": [],
+  "historical_source_files_verified": 379,
+  "historical_source_manifest_sha256": "1b622630cb01c7335aca20ce5353a04906b08f264aaf54590f9f4f6a31a894b4",
+  "outer_SOURCE_MANIFEST_unchanged_sha256": "7e61ac35bb975122c8daffef395052599d5a0ae924cf21c0f4ee1af64175fb4d",
+  "formal_REPORT_PDF_PPTX_unchanged": {
+    "REPORT.md": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e",
+    "docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf"
+  },
+  "preparation_receipts_preserved": {
+    "copy_manifest.json": "83f296651160671c0b5c96a3765f48f384398a550c8f997428c2ee3dc7f9cd3f",
+    "preparation_verification.json": "2a685fe0de751aa24eaba7ef625bc16afad25e13dc2c243ec96797649f3086cd"
+  },
+  "json_files_scanned": 58,
+  "long_numeric_vectors_found": [],
+  "normal_python_AST_checked": 9,
+  "intentionally_invalid_python_evidence": "evidence/outputs/round97_evaluator_prefreeze/attempt2_syntax_failure.py",
+  "excluded_private_or_out_of_scope_file_count": 70,
+  "snapshot_contains_model_or_data_arrays": false,
+  "verification_elapsed_seconds": 1.5,
+  "verification_time_scope": "copy SHA, existing file protection, original sources, links, JSON vector scan and normal source AST; not total packaging or copy time",
+  "copy_manifest_sha256": "07bbe23eeef8d664a10dfd5d7017be2d24cea195f26f8035515812d1277e91d1",
+  "link_verification_sha256": "10ea5fa051c9c462bdd178b9d810129bde050da48e5f1daff934e2929dfd06ef",
+  "document_changes_sha256": "8652ac62173def3e04fd92370454e6e9398ebdde8e7062b41783709d10289c01",
+  "main_seal_sha256": "429e5405652b4e9d54308d6f09d6722ab540694b13f92e2ad8577277b85893cb",
+  "independent_review_sha256": "6de3065db7af39cfc578abbf436e54a5a91b6deb40be70948e9ff37098c86391",
+  "model_fits_or_scores_run_by_snapshot_task": 0,
+  "no_commit_push_zip_or_package": true,
+  "selected_submission": "v22",
+  "Private_score": null,
+  "not_full_training_backup": true
+}

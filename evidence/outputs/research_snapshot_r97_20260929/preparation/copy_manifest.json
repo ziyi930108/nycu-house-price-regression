@@ -1,0 +1,98 @@
+{
+  "status": "preparation_only_main_in_progress_no_scores",
+  "created_at_utc": "2026-09-28T19:07:50.907888+00:00",
+  "published_base_commit": "40b2f36c64b41514e1f654e9bfb4b3b2e7f66faf",
+  "copies": [
+    {
+      "source": "src/round97_offset_experiment.py",
+      "destination": "research/src/round97_offset_experiment.py",
+      "bytes": 31506,
+      "sha256": "00d927b81170b9b8acfab984bb72635f413513f62da42733b85e5873528914f1"
+    },
+    {
+      "source": "src/round97_prepare_fit_labels.py",
+      "destination": "research/src/round97_prepare_fit_labels.py",
+      "bytes": 4346,
+      "sha256": "bf7c8c01265735293221cd09339a96f0c0a0625afc8fbca8ab0e1b11792f9ef1"
+    },
+    {
+      "source": "reports/round97_plan.md",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/reports/round97_plan.md",
+      "bytes": 4721,
+      "sha256": "8372960e832bd66203374c942e0f7988e66522aedf358c894d892e82669a3a08"
+    },
+    {
+      "source": "reports/round97_driver_selfcheck.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/reports/round97_driver_selfcheck.json",
+      "bytes": 4861,
+      "sha256": "67953878297e44da1eaa3d91eca353e21e16079cec2dffe1a914f581c97173c2"
+    },
+    {
+      "source": "reports/round97_driver_selfcheck_v2.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/reports/round97_driver_selfcheck_v2.json",
+      "bytes": 4737,
+      "sha256": "eb99076e36f882ba79b34344e8e34d1b999846104ee7e6e71546c99670894d77"
+    },
+    {
+      "source": "outputs/round97_inputs/started.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_inputs/started.json",
+      "bytes": 243,
+      "sha256": "80ef1d15ed9a5fab5c9b59c9f801b6977057bc77992ca33c55868468dccf9056"
+    },
+    {
+      "source": "outputs/round97_inputs/manifest.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_inputs/manifest.json",
+      "bytes": 1653,
+      "sha256": "e1250558e16b463ad8eca37eda324b3b65deaa3fe014fa6668d7aba55e098a4b"
+    },
+    {
+      "source": "outputs/round97_inputs/execution.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_inputs/execution.json",
+      "bytes": 66,
+      "sha256": "56928d1e038da06e816aff19cb302b20be73b22d2046b1f4eab6afa6a0a5e07c"
+    },
+    {
+      "source": "outputs/round97_launcher_20260929/research_request.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_launcher_20260929/research_request.json",
+      "bytes": 4786,
+      "sha256": "2ae585b79d833958875ace407bd54ddd4d0631e8dca18c51e9bfbbeb43f8bbb5"
+    },
+    {
+      "source": "outputs/round97_launcher_20260929/pipeline_started.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_launcher_20260929/pipeline_started.json",
+      "bytes": 526,
+      "sha256": "72cf51398b264fefb9c3d8c3ce902f54b0f2bef3379d61b3b2d33d2e27cd00bd"
+    },
+    {
+      "source": "outputs/round97_launcher_20260929/check_launch.json",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_launcher_20260929/check_launch.json",
+      "bytes": 1275,
+      "sha256": "c8ccdd2c9c14e55ca5a0b5069ea4430a17d9a61c6edfaa2adbba3dee127950a5"
+    },
+    {
+      "source": "outputs/round97_launcher_20260929/check_launch.py",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_launcher_20260929/check_launch.py",
+      "bytes": 2613,
+      "sha256": "0761fc30c48d37db07b7c071540a3ca18a1d9a98cc53a07052989ae4da19adcd"
+    },
+    {
+      "source": "outputs/round97_launcher_20260929/run_pipeline.py",
+      "destination": "evidence/outputs/research_snapshot_r97_20260929/preparation/original/outputs/round97_launcher_20260929/run_pipeline.py",
+      "bytes": 2115,
+      "sha256": "454ab351095dcac236571a1c9b6f7f72cad2767a8e0730c61557e9d117ddbc73"
+    }
+  ],
+  "copied_files": 13,
+  "copied_bytes": 63448,
+  "R90_helpers": {
+    "round90_offset_data.py": "already_copied_exact",
+    "round90_offset_trees.py": "already_copied_exact",
+    "round90_offset_nn.py": "already_copied_exact"
+  },
+  "optional_preflight_audits_present_when_copied": [],
+  "evaluator_not_copied_pending_final_source": true,
+  "main_fit_outputs_not_copied": true,
+  "prohibited_payloads_copied": false,
+  "no_fit_or_evaluation_performed_by_snapshot": true,
+  "no_commit_push_package_zip": true
+}

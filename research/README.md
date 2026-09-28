@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R96程式另有複製身分證據，沒有回寫歷史清單；本批發布前還需刷新最外層SOURCE_MANIFEST。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R97程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -44,9 +44,9 @@ R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days
 | [round91_prior_residual.py](src/round91_prior_residual.py)／[driver](src/round91_experiment.py) | 分組OOF prior offset上的signed總價殘差；三期真fit完成未採用 |
 | [round92_shallow_unit.py](src/round92_shallow_unit.py)／[driver](src/round92_experiment.py) | 原日期×面積權重單價樹只改depth6；三期真fit完成未採用 |
 | [round90_offset_data.py](src/round90_offset_data.py) | 固定2023-02-11切點的純X/geo/indices準備，已真執行與完整重載 |
-| [round90_offset_trees.py](src/round90_offset_trees.py)／[NN helper](src/round90_offset_nn.py) | 新切點四樹＋兩NN介面；真窗口模型訓練未執行 |
+| [round90_offset_trees.py](src/round90_offset_trees.py)／[NN helper](src/round90_offset_nn.py) | 新切點四樹＋兩NN介面；R90當時未fit，後於R97完成使用 |
 
-R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新窗口真訓練。若未來啟用，canonical fit_indices用於OOF群身分，fit_source_cache_indices只用來抽取raw cache標籤，兩者不能混用。所有來源仍依賴原工作區的完整私有資料／狀態，快照不等於可在空目錄直接重訓。
+R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新窗口真訓練。R97正式使用時，canonical fit_indices用於OOF群身分，fit_source_cache_indices只用來抽取raw cache標籤，兩者不能混用。所有來源仍依賴原工作區的完整私有資料／狀態，快照不等於可在空目錄直接重訓。
 
 ## 歷史追加：R93建案密度權重
 
@@ -55,11 +55,11 @@ R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新
 - [round93_project_density_unit.py](src/round93_project_density_unit.py)：fit-only群計數、sum-preserving權重及原單價模型wrapper。
 - [round93_experiment.py](src/round93_experiment.py)：三期來源／權重preflight、真fit、全query重載與完整組合評估。
 - [round93_review.py](src/round93_review.py)：讀取完成结果／診斷／paired，整理報告和不可變採用審查。
-- [本批原bytes複製清單](../evidence/outputs/research_snapshot_r93_20260929/copy_manifest.json)：舊379支manifest不改，發布前另刷新SOURCE_MANIFEST。
+- [本批原bytes複製清單](../evidence/outputs/research_snapshot_r93_20260929/copy_manifest.json)：舊379支manifest不改，各次发布包身分由SOURCE_MANIFEST記錄。
 
 R93完成時僅有[Attention可行性研究](../evidence/reports/attention_regression_feasibility_after_r93.md)；這份歷史提案保留原時序。後續實際完成情形見下一節。
 
-## 最新追加：Attention R95 與零訓練 R96
+## 歷史追加：Attention R95 與零訓練 R96
 
 [完成研究摘要](../docs/RESEARCH_UPDATES_20260929_ATTENTION.md)保存兩候選完整三期、分群、兩對照及獨立審查。R95只替换原prior NN，新增三次真NN fit共1,762.376秒；R96僅改reference信任及其傳給spatial的confidence，0 fit。兩者都未通過原固定門檻，沒有全量模型或新CSV。
 
@@ -74,6 +74,22 @@ R93完成時僅有[Attention可行性研究](../evidence/reports/attention_regre
 
 上游固定commit及完整原碼／metadata保留，[歸屬與改編說明](upstream/README.md)與[Apache-2.0授權全文](../docs/third_party/rtdl_LICENSE.txt)隨快照。CLS末層裁切、Softplus回歸頭與本題損失並非完整論文復刻。相同batch保存重載已驗，不把GPU固定seed稱為可跨硬體位元重現。
 
-本批[準備58檔](../evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json)與[完成複製清單](../evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json)分開保留。原379支manifest及source bytes不改；發布前另刷新最外層SOURCE_MANIFEST。所有原driver仍依賴完整本機私有資料、模型、prior与歷史狀態，快照不含這些檔案；從零完整重訓未驗證。
+本批[準備58檔](../evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json)與[完成複製清單](../evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json)分開保留。原379支manifest及source bytes不改；各次发布包身分由最外層SOURCE_MANIFEST記錄。所有原driver仍依賴完整本機私有資料、模型、prior与歷史狀態，快照不含這些檔案；從零完整重訓未驗證。
 
-R90尚無新窗口真fit。若要在錯開日期比较v22／v24／Attention，需重建8個原生模型與全部encoder、prior及修正狀態；保存的pure-X地理映射不等於已完成模型評估。
+R90在上述批次仍只有pure-X/helper；後續R97已完成v22／v24七native與全部新fit狀態，沒有加入Attention。舊文件保留當時時序，不能再當未完成待辦。
+
+## 最新追加：R97 完整新切點重建
+
+[R97完成摘要](../docs/RESEARCH_UPDATES_20260929_OFFSET.md)保存四窗口比較、獨立評分、來源、工程修正及全部反證。固定2023-02-11起點，新fit 272,117／query 107,169列；5樹＋2NN共7次fit呼叫1,100.391秒，包含於main 1,410.656秒。新窗v22較低3,917.46元，但原三年v24都較低；Private未知、提交仍v22。
+
+|程式|用途|
+|---|---|
+|[fit標籤擷取](src/round97_prepare_fit_labels.py)|只輸出fit列；原pickle需整表反序列化的界線明記|
+|[主driver](src/round97_offset_experiment.py)|串行七native、四base與新R/S、保存重載、先封存預測|
+|[獨立scorer](src/round97_offset_evaluate.py)|封存／來源／索引先核對，再讀query y；固定MAE、分群與2,000次配對|
+|[完成後審查](src/round97_independent_review.py)|220唯一SHA、四base／兩median及4區間核對，不重新fit或score|
+|[摘要v2](src/summarize_round97_stability_v2.py)／[原摘要](src/summarize_round97_stability.py)|只讀聚合結果；v1字型警告保留，v2 ASCII減號与完整群反證，不重新評分|
+
+[本批複製清單](../evidence/outputs/research_snapshot_r97_20260929/final/copy_manifest.json)保存原bytes與明確排除项；模型、交易表、labels、encoder／prior／ramps／category states、逐筆預測及bootstrap陣列只保留本機身分。語法失敗原稿在evidence內，標註不可執行；不是訓練入口。現有來源仍依賴完整私有工作區，不把本機新窗口重建稱為全新環境重訓最終提交模型。
+
+時間外L1 stacker只做[有限盤點](../evidence/reports/regression_direction_after_r97_inventory.md)，未立項、未fit、未新增CSV。379原source_manifest與正式交付不改；當前發布包身分以外層SOURCE_MANIFEST及Git main歷史為準。

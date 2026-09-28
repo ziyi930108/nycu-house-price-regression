@@ -1,0 +1,21 @@
+{
+  "fit_seconds": 4.61531320004724,
+  "fitting_rows": 272117,
+  "hedonic": {
+    "coefficients": {
+      "floor_mean_per10": 0.0423950338395164,
+      "log_building_area": -0.005224887806430253,
+      "parking_fraction": -0.5270264017138987,
+      "transaction_years": 0.0947257887154546
+    },
+    "fit_rows": 175331,
+    "maximum_fit_day_index": 8441.0,
+    "project_groups": 3582
+  },
+  "reference_rows": 271106,
+  "reference_unit_price_bounds": [
+    33173.53405689676,
+    428455.0078280311
+  ],
+  "validation_targets_used_for_references": false
+}

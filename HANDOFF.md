@@ -15,11 +15,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | presentation/內22頁PPTX、講稿、排練指南及程式對照；20主講＋2附錄，規劃870秒 |
-| 研究程式 | research/src/保存379支歷史原碼與後續R85–R96來源；歷史清單不回寫，新來源見本批複製清單，發布前刷新SOURCE_MANIFEST |
-| 最新研究 | R95 Attention三期3次NN fit共1,762.376秒；R96三期0 fit對照完成；兩者均未過門檻，沒有新CSV |
-| 新切點R90 | pure-X 272,117 fit／107,169 query準備與重載完成；data/tree/NN helper保存，尚無新窗真模型fit或MAE |
-| 本批發布 | 本機Attention／R96快照以已發布27c5e3ec…0c16為基礎；新commit／push／ZIP由發布流程另記，不由文件複製宣稱完成 |
-| 後續界線 | 本輪訓練與評分已結束；若改做新時間切點，須重建全部fit狀態，沒有背景自動研究保證 |
+| 研究程式 | research/src/保存379支歷史原碼與後續R85–R97來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
+| 最新研究 | R97完整v22／v24新切點完成：7 native fit共1,100.391秒；MAE 1,336,410.67／1,340,328.14元，沒有新CSV |
+| 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
+| 本批發布 | 本頁於發布前核驗，base 40b2f36c…6faf；R97最新發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存收據 |
+| 後續界線 | R97 main／評分／獨立審查已結束；時間外L1盤點尚未立項，後續訓練需另有固定計畫 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
 
@@ -29,7 +29,8 @@
 - REPORT.md：清理、特徵、日期權重、六模型與三分支、年度回測、Public、限制。
 - evidence/reproduction/summary.json及integration_verified.json：全量實測結果。
 - research/README.md：原訓練程式入口及限制。
-- [最新Attention／R96研究](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)：完成結果、反證、實測時間、工程恢復、程式及上游授權。
+- [最新 R97 新切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)：完整重建、四窗反證、評分隔離、實測時間及独立審查。
+- [歷史Attention／R96研究](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)：完成結果、反證、實測時間、工程恢復、程式及上游授權。
 - [R93歷史研究](docs/RESEARCH_UPDATES_20260929_R93.md)：建案密度權重與當時尚未實作的Attention提案。
 - [2026-09-29前批](docs/RESEARCH_UPDATES_20260929.md)：R89/R91/R92完整結果及R90準備。
 - [2026-09-28研究](docs/RESEARCH_UPDATES_20260928.md)：R85–R88歷史結果與採用審查。
@@ -38,23 +39,21 @@
 
 ## 誠實界線
 
-已完成的是保存模型推論重現，沒有在本次從原始train/valid重新訓練全部模型，也未重建OSM地理或驗證全新ML環境。原GPU與CPU的NN輸出有數值差，精確重播須匹配受測設定。固定seed不保證重訓位元一致。
+交付推論階段完成保存模型重現；後續R97另在新cutoff重建完整七模型，沒有從原始train/valid重訓正式test模型，也未重新下載OSM或驗證全新ML環境。原GPU與CPU的NN輸出有數值差，精確重播須匹配受測設定。固定seed不保證重訓位元一致。
 
-v24在三期本機整體MAE更低，但已回報Public較高；部分高價群退步。多輪重用年度窗口有選型偏差，bootstrap不是Private勝率。不可聲稱v22已證明Private最佳。
+v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Public較高；部分高價群退步。多輪重用年度窗口有選型偏差，bootstrap不是Private勝率。不可聲稱v22已證明Private最佳。
 
 ## 最新研究與後續工作
 
-最新 Attention 候選 R95 完成三期真 NN 訓練，fit 1,762.376秒、main內計時1,903.922秒。中間／最新／較早年度對v22差額+14,973.87／+28,835.21／−32,152.87元；固定採用門檻未過。對v22配對區間4負／0跨零／8正，改善區間全在較早年度。既有建案三期改善，較早期五個價帶皆改善，但中間／最新的新建案退步。R94首次main在真fit前工程失敗、0fit；R95是同模型與同科學計畫的恢復，不算第二個模型假設。
+[R97完成頁](docs/RESEARCH_UPDATES_20260929_OFFSET.md)是最新入口。固定fit < 2023-02-11，query至2024-02-10，七native與全部learned states依新fit重建；先封存全部向量，獨立scorer才讀query y。新窗v22／v24整體MAE 1,336,410.67／1,340,328.14元，加權1,392,890.34／1,397,452.28元。v24的新案及四季較差，但seen和2千萬至1億元兩價帶較好；億元群270列的退步亦保留。原三個8月窗口均為v24整體及加權較低，不能刪除。
 
-R96固定把reference局部信任折半，趨勢不變、spatial同步使用新價格與confidence，再三分支median。0 fit、main內計時110.641秒；三期整體差額+3,030.85／+4,963.30／−3,095.98元，固定加權三期皆退，未過門檻。對v22區間0負／11跨零／1正，不能稱全面顯著更差。完整結果與48個配對區間、獨立審查及來源見[最新研究頁](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)。
+project兩區間跨零、month兩區間偏退；都不是Private勝率。7次fit呼叫合1,100.391秒，包含於main 1,410.656秒；scorer 29.578秒、獨立審查1.500秒。220個唯一SHA與4個保存区間核對通過，全query保存重載已完成。沒有重跑正式test模型、沒有新CSV。R90早期文件的「尚未fit」是當時時序，目前helpers已在R97使用。
 
-[九項假設總表](evidence/reports/regression_after_r95_20260929.md)合計15次樹模型、3次NN、3次CPU趨勢wrapper fit；真fit共3,932.126秒已含於成功main共4,798.733秒，不能相加。R96另為第十個機制對照，0fit、另計110.641秒。沒有實測整段聊天時間。原Public、CSV和唯一選定保持，沒有全量fit、新test候選或Kaggle操作。
+[前批Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)均未通過各自事前門檻；[九假設總表](evidence/reports/regression_after_r95_20260929.md)與R96第十項對照及所有失敗來源仍保存。R94是fit前工程失敗，R95是同配置恢復；R97則是現有兩配方的時間穩定檢查，不冒充另一個新模型架構。
 
-上一個已發布commit為27c5e3ec0ae6172f8a2c67cc45491987380e0c16。本批只準備GitHub本機快照，保留初始58檔與所有準備收據、失敗source和Apache-2.0授權；commit／push／ZIP以後續發布收據為準。379支歷史source manifest、正式報告與簡報保持，最外層SOURCE_MANIFEST待發布流程刷新。
+R97快照以已發布40b2f36c64b41514e1f654e9bfb4b3b2e7f66faf為基礎；本頁內容於發布前核驗；最新發布身分以此儲存庫Git main歷史與SOURCE_MANIFEST為準，根工作區另存發布收據。原prep與失敗收據不可改，原379支manifest、正式報告簡報、v22均保持，最外SOURCE_MANIFEST記錄當前發布包身分。[下一方向盤點](evidence/reports/regression_direction_after_r97_inventory.md)寫於本輪結果未知時，未立項或訓練stacker；不可按同窗query標籤調比例再當外樣本。沒有背景自動研究承諾。
 
-R90仍只有272,117 fit／107,169 query純X資料與helpers；沒有新切點encoder／prior、reference／spatial或原生模型fit與MAE。Attention已完成本輪年度窗口研究，舊可行性文件的「未實作」是當時時序。新的錯開時間比較必須重建所有fit狀態，不能用後期模型回測；v22／v24／Attention完整比較需8個原生模型。沒有未經啟動證據的背景研究承諾。
-
-使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點目前只完成純X資料準備與helper，模型比較仍未啟動；不因舊文件而自動訓練。
+使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 
 新切點必須重建encoder、OOF prior、NN、log、unit及reference/spatial。不能拿最終全量模型回測已看過的早期資料。
 

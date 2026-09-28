@@ -1,0 +1,23 @@
+{
+  "started_at_utc": "2026-09-28T19:28:07.267826+00:00",
+  "completed_at_utc": "2026-09-28T19:28:37.786705+00:00",
+  "elapsed_seconds": 30.531999999890104,
+  "exit_code": 0,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round97_offset_evaluate.py",
+    "--sealed-manifest",
+    "outputs/round97/sealed_manifest.json",
+    "--evaluation-request",
+    "outputs/round97_launcher_20260929/evaluation_request.json",
+    "--out",
+    "outputs/round97/evaluation"
+  ],
+  "automatic_retry": false,
+  "source_sha256": "5e839ced88161fe3b2d1bafdb3ba9fcbbf84ba6cc97c0639e538f3979d35317b",
+  "request_sha256": "003127da4aeb2f39784b724da2a68ce6930192b1a1a56549895a5567f3e76cdd",
+  "log_sha256": "21cb91c6ddc05674b58a7a40c5f8a0ef14394bb63d0924b7bdd43fb6644aa20d"
+}

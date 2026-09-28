@@ -1,0 +1,5 @@
+{
+  "started_at_utc": "2026-09-28T18:56:38.232023+00:00",
+  "source_sha256": "bf7c8c01265735293221cd09339a96f0c0a0625afc8fbca8ab0e1b11792f9ef1",
+  "scope": "fit-only export; original full pickle materialized only inside this extractor"
+}
