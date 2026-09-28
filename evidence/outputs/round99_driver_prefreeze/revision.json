@@ -1,0 +1,14 @@
+{
+  "status": "prefreeze_metadata_review_correction",
+  "real_driver_execution": false,
+  "real_data_loaded": false,
+  "initial_source_sha256": "8273ad6c98e008fb95380748e69507b1daf0a88b989b74e35e3a9666a4f6126c",
+  "corrected_source_sha256": "6cd56e486dfae3d44ce09ff065c2c294e9c355aba68889a2f0cafc978dcc6965",
+  "changes": [
+    "R98 actual root stage entry key is stage_manifest, not draft manifest; corrected before any driver run",
+    "save helper state/solver evidence before new R98 feasible-objective engineering check, so rejection retains fitted evidence",
+    "verify saved R98 weights remain a feasible 3-weight simplex"
+  ],
+  "scientific_plan_changed": false,
+  "real_fit_or_score": false
+}

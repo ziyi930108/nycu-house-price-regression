@@ -12,11 +12,11 @@
 
 ## 最新時間前推組合研究
 
-[R98 較早預測學組合權重](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)已完成。只以更早 forward 預測及標籤學 N／H／U 的非負全域 L1 權重，保留原六個模型及三分支修正。development／offset／confirmation 相對 v22 的 MAE 差為 **+8,798.64／−4,255.03／+5,190.67 元**；offset 有改善，但三期均未通過完整分群門檻，12 個配對區間全部跨零。沒有足夠證據替換 v22，也不代表全部群都退步。
+[R99 把 median 納入可選基線](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)已完成。保留原 N／H／U 三支修正總價，多加逐筆中位數 M，再以較早 forward 資料學非負四權重。相對 v22 的三窗 MAE 差為 **+10,449.82／−6,281.53／+2,821.52 元**，完整研究門檻未過；相對 [R98](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)則為 +1,651.18／−2,026.51／−2,369.15 元，保留有利與不利證據。12 個相對 v22 的配對區間全部跨零，不能稱全面顯著退步或 Private 勝率。
 
-三次 CPU meta-fit 呼叫合計 2.828 秒，包含於 main 6.891 秒；另有 26.609 秒独立評分及 233 個唯一 SHA／12 個保存區間的結果稽核。新增 0 個樹／NN fit，沒有新 CSV，Private 未知，正式報告與簡報保持。[四欄含 median 的後續提案](evidence/reports/round98_next_direction.md)尚未立項或執行。本頁於發布前核驗；當前發布身分以此儲存庫 Git main 歷史及 SOURCE_MANIFEST 為準，根工作區另存發布收據。
+三次 CPU meta-fit 呼叫合計 2.781 秒，包含於 main 6.782 秒；獨立評分 30.156 秒，保存結果稽核 1.250 秒／253 唯一 SHA／12 保存區間。新增 0 次原生樹／NN fit，沒有新 CSV。M 與舊三欄解在 meta 上可行，並不保證較晚 query 較好；唯一提交 v22、未知 Private、正式報告與簡報保持。本頁於發布前核驗，當前發布身分以 Git main 歷史及 SOURCE_MANIFEST 為準。
 
-此前 [R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已重建 5 樹＋2 NN：新窗 v22／v24 MAE 1,336,410.67／1,340,328.14 元，原三年則 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)保留全部未採用結果。歷史窗口反覆使用與重疊，不能稱盲測或 Private 勝率。
+此前 [R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已重建 5 樹＋2 NN：新窗 v22／v24 MAE 1,336,410.67／1,340,328.14 元，原三年則 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)亦保留未採用結果。這些窗口反覆使用與重疊，不是新盲測。
 
 ## 簡報與專案更新
 

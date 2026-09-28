@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-09-28T20:56:17.269506+00:00",
+  "elapsed_seconds": 2.0939999998081475,
+  "exit_code": 0,
+  "failure": null,
+  "meta_fit_started": true,
+  "new_native_fits": 0,
+  "query_labels_available": false,
+  "stage": "confirmation",
+  "started_at_utc": "2026-09-28T20:56:15.179830+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "prefreeze_source_review_correction",
+  "reported_by": "r85_error_audit (helper author, cross-checking driver)",
+  "actual_driver_execution": false,
+  "true_fit_count": 0,
+  "before_sha256": "6cd56e486dfae3d44ce09ff065c2c294e9c355aba68889a2f0cafc978dcc6965",
+  "after_sha256": "37a15ac42f8decae65ae863def319d61342d9604406affff24f8dc5bb963ed39",
+  "cause": "move-save edit searched LF against CRLF bytes; old second save remained",
+  "change": "delete only second call bytes; keep save immediately after fit, before R98 objective comparison",
+  "contract_helper_plan_changed": false,
+  "old_selfcheck_preserved": "reports/round99_driver_selfcheck.json",
+  "repair_command_attempt1": {
+    "exit_code": 1,
+    "reason": "line-ending-sensitive repair assertion before changing source",
+    "source_unchanged": true
+  },
+  "premature_check_command": {
+    "exit_code": 2,
+    "reason": "selfcheck_v2.py did not exist because preceding repair script stopped; no check or fit executed"
+  }
+}

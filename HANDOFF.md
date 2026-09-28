@@ -15,11 +15,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | presentation/內22頁PPTX、講稿、排練指南及程式對照；20主講＋2附錄，規劃870秒 |
-| 研究程式 | research/src/保存379支歷史原碼與後續R85–R98來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
-| 最新研究 | R98前置時間L1組合完成：3 CPU meta-fit，0 native fit；三窗差+8,798.64／−4,255.03／+5,190.67元，未過門檻，無新CSV |
+| 研究程式 | research/src/保存379支歷史原碼與後續R85–R99來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
+| 最新研究 | R99四欄含median組合完成：3 CPU meta-fit／0 native fit；相對v22三窗+10,449.82／−6,281.53／+2,821.52元，未過門檻，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 2eec4b00…1799f；當前發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存收據 |
-| 後續界線 | R98 main／獨立評分／保存結果稽核已結束；四欄含median僅有限提案，沒有新plan或fit |
+| 本批發布 | 本頁於發布前核驗，base 77ec5b46…c30；當前發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存收據 |
+| 後續界線 | R99 main／獨立評分／保存結果稽核已結束；原四欄提案已另立R99完成，不能再當未執行待辦 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
 
@@ -29,7 +29,8 @@
 - REPORT.md：清理、特徵、日期權重、六模型與三分支、年度回測、Public、限制。
 - evidence/reproduction/summary.json及integration_verified.json：全量實測結果。
 - research/README.md：原訓練程式入口及限制。
-- [最新 R98 時間前推組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)：三窗結果、合法meta資料、完整反證、數值與保存結果稽核。
+- [最新 R99 含median四欄組合](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)：六向量／兩對照、合法meta、12區間、工程修正與保存结果稽核。
+- [前批 R98 三欄組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)：三窗結果、合法meta資料、完整反證、數值與保存結果稽核。
 - [前批 R97 新切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)：完整重建、四窗反證、評分隔離、實測時間及独立審查。
 - [歷史Attention／R96研究](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)：完成結果、反證、實測時間、工程恢復、程式及上游授權。
 - [R93歷史研究](docs/RESEARCH_UPDATES_20260929_R93.md)：建案密度權重與當時尚未實作的Attention提案。
@@ -46,15 +47,19 @@ v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Publi
 
 ## 最新研究與後續工作
 
-[R98完成頁](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)是最新入口。保留原三支完成R/S的forward預測，三期只用各自cutoff以前的meta資料學非負／和為1的全域L1權重；meta列數105,511／137,312／186,745。三獨立程序只取得自身meta_y，全部query向量保存重載及封存後，另一支scorer才讀query真價。
+[R99完成頁](docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)是最新入口。保留原三支完成R/S的forward預測，另加逐筆median為第四欄；每期只以cutoff前合法meta資料學非負、和為1、無截距的全域L1組合。原R98 prepared與原plan身份保留，driver不重抽標籤；三獨立程序的完整query全封存後，scorer才讀真價。
 
-development／offset／confirmation的整體差為+8,798.64／−4,255.03／+5,190.67元，加權方向相同。offset新案與億元群有利，confirmation中價帶也改善；但每期均有固定大群退超5%，三期門檻皆未过，12配對區間全部跨零。不能稱全面顯著更差，也不代表Private未知部分將改善。仍缺更早forward block，這三窗探索不是原三個8月窗口的完整採用驗證。
+相對v22，development／offset／confirmation整體差為+10,449.82／−6,281.53／+2,821.52元，加權方向相同。offset改善但嘉義縣退6.080%；confirmation本次沒有固定大群>5%退，但整體仍不如v22。development仍有基隆市／部分月份的較大退步。12配對區間全跨零，門檻未過不等於全面顯著更差。相對R98，三窗差+1,651.18／−2,026.51／−2,369.15元；後兩窗改善的反證完整保留。
 
-3次CPU meta-fit呼叫合2.828秒，包含於main 6.891秒；scorer26.609秒、保存結果稽核2.609秒。233唯一SHA、9保護檔與12保存區間通過。稽核者亦為helper作者，此角色明示；scorer與前置source審查由其他代理完成。沒有新樹／NN fit、GPU或CSV。原始失敗／修正／凍結時序及summary圖文修订均保存，不能美化成完整獨立重訓。
+M與舊R98都屬meta可行解，R99同meta目標三期確實較低，但不保證query、固定加權或Private改善。缺auxiliary以前forward block，加上窗口重疊與反覆選型，這不是完整原三個8月窗口的採用驗證。唯一提交v22與未知Private不變。
 
-[前批R97](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已完成新cutoff七模型与fit狀態重建；v22新窗較低而v24原三年較低，反證仍保留。[更早Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)等結果不回寫。[R98後續四欄含median提案](evidence/reports/round98_next_direction.md)尚未立項／fit，不把meta目標保證當query保證，不能按同窗真價挑比例。
+3次CPU meta-fit呼叫2.781秒，包含於main6.782秒；scorer30.156秒，保存結果稽核1.250秒。253唯一SHA、9保護檔、12保存區間通過。稽核者也是helper作者，並非完全獨立重作；driver/scorer各由其他代理編寫。前置double-save在真fit前修正，原28檢查與最終29檢查／source均保存，沒有真實候選重試。沒有新native fit／GPU／CSV。
 
-本批以2eec4b006db5ecf5b0624f791b90faf02ae1799f為基礎；本頁於發布前核驗，當前發布身分以此儲存庫Git main歷史與SOURCE_MANIFEST為準，根工作區另存發布收據。prep及歷史收據、379原source manifest、正式REPORT／PDF／PPTX與v22保留。原資料／標籤／模型state／逐筆陣列不在文件程式包中，沒有背景自動研究承諾。
+[前批R98](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)結束時的四欄提案，已另立新plan完成R99；歷史提案頁仍保留當時時序。[R97](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已重建新cutoff七模型与fit狀態；v22新窗較低而v24原三年較低，反證保留。[更早Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)等結果亦不回寫。
+
+[本輪完成摘要](evidence/reports/round99_summary.md)只整理保存聚合結果，未再評分；[有限下一方向](evidence/reports/round99_next_direction_inventory.md)只保留時間前置prior待核假說，沒有新計畫／實作／fit。舊group OOF不是外層query洩漏，後續是否立項需另固定契約。
+
+本批以77ec5b46a6b28ecef4cc2f64356083fa31c4ec30為基礎；本頁於發布前核驗，當前發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存發布收據。原prep／歷史收據、379 source manifest、正式REPORT／PDF／PPTX與v22保持；原資料、標籤、模型state與逐筆陣列不在文件程式包中，沒有背景自動研究承諾。
 
 使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 

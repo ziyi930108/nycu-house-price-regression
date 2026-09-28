@@ -1,0 +1,11 @@
+# R99 driver／API 作者前置核驗
+
+結論：最後 driver、contract、helper API 與主線 launcher 契約未見剩餘 blocker。**本文件作者同時編寫 R99 contract／driver，是作者自查，不稱完全獨立審查。** helper 作者另以只讀方式交叉檢查保存介面並指出重複保存問題；scorer 由另一代理編寫。這些角色均保留。此工作沒有真 fit、載入真實資料陣列／標籤、模型推論或評分；request 凍結與正式執行由主線處理，本文件不代表執行已成功。
+
+[固定計畫](round99_plan.md) SHA 8918ba8a4a0b50378aca56649131678ce069350902c044a6678384b4e95d75c9。原 [R98 preparation](../outputs/round98_inputs/manifest.json) SHA e496b2afcf7ebc69a4e248d13b691e3b2e6e991bfab4e510386ff77cccc97fc7，仍對原 R98 plan 身分驗證，沒有改綁 R99。三期實際 11-key readset／path 與既存 stage authority 已核；每期只讀自身合法 meta_y。原 N/H/U float64 追加逐筆 median 成四欄，兩個 derived identity 明記 dtype／shape／values SHA，原三欄及 v22 median 不變。舊 R98 的 plain JSON state／metadata／receipt 按原 stage artifact map 核 SHA，沒有假設它們附帶 sidecar。
+
+[driver](../src/round99_temporal_stack.py) 最終 SHA **37a15ac42f8decae65ae863def319d61342d9604406affff24f8dc5bb963ed39**；[contract](../src/round99_contract.py) SHA **8acd9ba333a3f5e557204d871f9e12fbd413649860035627f066656e639dfb35**。helper 的四欄參數、fit／save／load／predict 介面吻合，推論順序固定為 (((N×wN+H×wH)+U×wU)+M×wM)。先保存 helper 的模型／求解器證據，再檢查同 meta 的 R99 primal 不高於舊 R98 primal＋0.10 元；因此工程拒絕也不丟失求解證據。原 R98 的 P3／y／row IDs 與本期輸入必須相同，舊三权重需仍合法；此證書不是 query 或 Private 保證。兩個完整 query 預測重載一致後才封存，三期由 [pipeline](../outputs/round99_launcher_20260929/run_pipeline.py) 依序使用獨立程序，全部成功後才可另執行 scorer。
+
+[最終 driver 自查](round99_driver_selfcheck_v2.json)為 **29 項 passed／0.0437 秒**；13 項為人工 X 矩陣的第四欄／拒絕非法輸入，其餘為實際小型 JSON／來源／API 契約與 AST。特別核 helper.save_artifacts 在 driver 只出現一次。[舊 28 項自查](round99_driver_selfcheck.json)原樣保留；它未覆蓋重複保存問題，不能當成最後版本收據。初稿錯用 manifest 而非真 stage_manifest，以及移動保存呼叫時受 CRLF 影響漏刪第二次呼叫，均在任何真 fit 前修正；[原稿與修訂](../outputs/round99_driver_prefreeze/duplicate_save_revision.json)保留，不是失敗模型實驗。修補命令的斷言與不存在 selfcheck_v2.py 的命令錯誤亦明記，沒有擦除。
+
+最後 metadata 複核確認 [helper 收據](round99_helper_selfcheck.json) **53 項 passed**（source f07d818aa9b12cf03726267188e99d111ce2529dd6d6cd5f9d921fee259fc09e）及 [scorer 收據](round99_evaluator_selfcheck.json) **47 項 passed**（source 1a6d94ba0730124933754137179430256ced82af52c108130a57f9a06295a1f2）均與落盤 source、完整 source_hashes 及 parameters 精確吻合。舊 R98 對照只提供保存向量／聚合結果，不新增 bootstrap；新 12 個區間只比較 R99−v22。三期共享歷史與重疊風險、較早 forward block 缺口及未知 Private 仍適用；唯一選定 v22 不變。

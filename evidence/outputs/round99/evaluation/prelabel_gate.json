@@ -1,0 +1,76 @@
+{
+  "checked_stages": [
+    "development",
+    "offset",
+    "confirmation"
+  ],
+  "completed_at_utc": "2026-09-28T20:56:48.908332+00:00",
+  "meta_target_files_hashed_only": true,
+  "parameters": {
+    "additional_control": "R98",
+    "automatic_adoption": false,
+    "branch_order": [
+      "N",
+      "H",
+      "U",
+      "M"
+    ],
+    "candidate": "R99",
+    "control": "v22",
+    "family_indices": {
+      "month": 1,
+      "project": 0
+    },
+    "family_order": [
+      "project",
+      "month"
+    ],
+    "fixed_group_weights": {
+      "missing": 0.0,
+      "new_nonmissing": 0.6338240605017739,
+      "seen": 0.36617593949822613
+    },
+    "large_group_minimum_rows": 500,
+    "max_adverse_fraction": 0.05,
+    "month_block_length": 3,
+    "month_blocks": 4,
+    "new_CSV": false,
+    "original_three_period_adoption_complete": false,
+    "replicates": 2000,
+    "round": 99,
+    "seed": 20260925,
+    "source_branch_order": [
+      "N",
+      "H",
+      "U"
+    ],
+    "stage_indices": {
+      "confirmation": 2,
+      "development": 0,
+      "offset": 1
+    },
+    "stage_order": [
+      "development",
+      "offset",
+      "confirmation"
+    ]
+  },
+  "sealed_manifest": {
+    "path": "outputs/round99/sealed_manifest.json",
+    "sha256": "1b11ff1d69ce15abf681e09230a5537f5f5a3b19020fb2f7ddf73dd2a3165a06"
+  },
+  "source_sha256": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round99_contract.py": "8acd9ba333a3f5e557204d871f9e12fbd413649860035627f066656e639dfb35",
+    "src/round99_temporal_evaluate.py": "1a6d94ba0730124933754137179430256ced82af52c108130a57f9a06295a1f2",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "status": "all_stages_verified_before_price_deserialization",
+  "verified_input_count": 222
+}

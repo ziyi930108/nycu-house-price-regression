@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R98程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R99程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -94,7 +94,7 @@ R90在上述批次仍只有pure-X/helper；後續R97已完成v22／v24七native�
 
 R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/regression_direction_after_r97_inventory.md)；後續R98執行情形見下一節。379原source_manifest與正式交付不改；當前發布包身分以外層SOURCE_MANIFEST及Git main歷史為準。
 
-## 最新追加：R98 較早 forward 預測的 L1 組合
+## 歷史追加：R98 較早 forward 預測的 L1 組合
 
 [R98 完成研究頁](../docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)記錄三個較晚窗口、各自合法的前置 meta 樣本、純數值求解、全預測封存後獨立評分，以及所有有利／不利分群。三次 CPU meta-fit 完成，0 原生模型 fit／載入與 0 GPU；整體差 +8,798.64／−4,255.03／+5,190.67 元，研究門檻未過，沒有新 CSV。
 
@@ -109,6 +109,25 @@ R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/re
 
 稽核作者亦為helper作者，故不稱完全獨立重作求解器；scorer與前置審查由其他代理處理。三個窗口不獨立，auxiliary以前forward block仍缺；本輪不是原三個8月窗口的完整採用門檻。多輪選型風險與Private未知保留。
 
-[四欄含median的下一方向](../evidence/reports/round98_next_direction.md)只是一份有限提案，沒有新計畫／fit。原始資料、所有逐筆陣列、模型state與solver arrays不在本包；只有來源、聚合metadata及身分。原379來源清單不回寫，正式v22與交付報告不改。
+[四欄含median的下一方向](../evidence/reports/round98_next_direction.md)在R98結束時只是一份有限提案；後續按獨立新計畫實作的R99見下一節，原提案時序不回寫。原始資料、所有逐筆陣列、模型state與solver arrays不在本包；只有來源、聚合metadata及身分。原379來源清單不回寫，正式v22與交付報告不改。
 
 [本批完成複製清單](../evidence/outputs/research_snapshot_r98_20260929/final/copy_manifest_v2.json)及[前置收據](../evidence/outputs/research_snapshot_r98_20260929/preparation/copy_manifest.json)分開保留；當前发布身分仍以 Git main 與外層 SOURCE_MANIFEST 為準。
+
+## 最新追加：R99 四欄含 median 的 L1 組合
+
+[R99完成研究頁](../docs/RESEARCH_UPDATES_20260929_MEDIAN_STACK.md)保存六向量、主要v22與附加R98控制、三窗全部點差和12配對區間。只增加M=median(N,H,U)，原始11-key資料、三支模型與時間狀態均不改；三次CPU meta-fit、0 native fit。相對v22為+10,449.82／−6,281.53／+2,821.52元，門檻未過，不產CSV。
+
+|程式|用途|
+|---|---|
+|[contract](src/round99_contract.py)|原prepared三欄／原R98plan身分與新R99四欄計畫分開驗證|
+|[helper](src/round99_l1_stacker.py)|四欄convex L1、M可行基線與數值證書；固定分項相加，不改權重|
+|[driver](src/round99_temporal_stack.py)|各stage獨立meta資料，derive第四欄與身份，保存後核舊R98同meta目標，再完整query重載|
+|[scorer](src/round99_temporal_evaluate.py)|全封存後評分六個向量；R99−v22抽12區間，R99−R98只報點差|
+|[保存結果稽核](src/round99_independent_review.py)|253唯一SHA／9保護／12區間；helper作者身分明示，不重做LP或逐筆MAE|
+|[聚合摘要](src/summarize_round99.py)|六向量與兩控制的保存結果整理，沒有新fit／score／圖表|
+
+前置曾因CRLF保留兩次save呼叫；交叉讀碼在真fit前發現，舊source／28check保持，最終29check另存並核單次保存。主線只真跑一次，不能把工程草稿錯誤算模型失敗。meta三期均優於原median與舊R98，query仍不穩定，不能把可行性證書當Private改善保證。
+
+原資料／模型state／solver與bootstrap陣列／逐筆向量不在本包；原379來源manifest與正式v22保持。當前發布身分以Git main與外層SOURCE_MANIFEST為準。
+
+[本批完成複製清單](../evidence/outputs/research_snapshot_r99_20260929/final/copy_manifest.json)保存原bytes。另附[有限下一方向](../evidence/reports/round99_next_direction_inventory.md)，僅只讀假說盤點，未立完整計畫／實作／fit，不能把group OOF說成外層query洩漏。

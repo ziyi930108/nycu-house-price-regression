@@ -1,0 +1,11 @@
+{
+  "automatic_retry": false,
+  "completed_at_utc": "2026-09-28T21:04:00.975264+00:00",
+  "elapsed_seconds": 1.25,
+  "exit_code": 0,
+  "failure": null,
+  "new_fit_score_or_bootstrap_calls": 0,
+  "query_or_meta_y_loaded": false,
+  "source_sha256": "15681cd47abb7fa67b4d2b508ed741329b133b46e6a60847c82eb0b188002502",
+  "started_at_utc": "2026-09-28T21:03:59.732261+00:00"
+}

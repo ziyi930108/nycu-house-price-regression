@@ -1,0 +1,11 @@
+{
+  "artifact_sha256": {
+    "outputs/round99/offset/model/fit_metadata.json": "9e59a9167a961f0262c453508dc484e0ecdb0cd4c07ee2814f283d5af1a03278",
+    "outputs/round99/offset/model/solver_arrays.npz": "acba233ff526ea1c214fbf2cd53c4d0cedb33752185a8d4b18b9ec0c36aacfbe",
+    "outputs/round99/offset/model/state.json": "681c807ad58f70239d86a0ae9f45a93354d19ace98c9eebf91888d8c262485d0"
+  },
+  "full_query_prediction_reload_checked_by_caller": false,
+  "solver_arrays_reload_exact": true,
+  "state_reload_exact": true,
+  "status": "saved_model_and_solver_evidence"
+}

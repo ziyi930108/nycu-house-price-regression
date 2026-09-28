@@ -1,0 +1,30 @@
+{
+  "derived_meta_predictions": {
+    "dtype": "float64",
+    "shape": [
+      105511,
+      4
+    ],
+    "values_sha256": "cf0a66044088203aa2e3eda8687f658dc040e35e1589619aefb8fabab98941ec"
+  },
+  "derived_query_predictions": {
+    "dtype": "float64",
+    "shape": [
+      81234,
+      4
+    ],
+    "values_sha256": "a118680e59a5a9d16515acc487fc14d3c32c038210413896153163c49530c53c"
+  },
+  "meta_rows": 105511,
+  "new_native_fits": 0,
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "request_sha256": "d614d88e75ab15975154a7bbc7e968c260504bf12eefefbdfe34b4d098b90f50",
+  "source_sha256": {
+    "src/round99_contract.py": "8acd9ba333a3f5e557204d871f9e12fbd413649860035627f066656e639dfb35",
+    "src/round99_l1_stacker.py": "f07d818aa9b12cf03726267188e99d111ce2529dd6d6cd5f9d921fee259fc09e",
+    "src/round99_temporal_stack.py": "37a15ac42f8decae65ae863def319d61342d9604406affff24f8dc5bb963ed39"
+  },
+  "stage": "development",
+  "started_at_utc": "2026-09-28T20:56:11.538795+00:00"
+}

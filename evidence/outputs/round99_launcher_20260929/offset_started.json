@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round99_temporal_stack.py",
+    "--stage",
+    "offset",
+    "--request-sha",
+    "d614d88e75ab15975154a7bbc7e968c260504bf12eefefbdfe34b4d098b90f50"
+  ],
+  "pid": 21552,
+  "separate_stage_process": true,
+  "stage": "offset",
+  "started_at_utc": "2026-09-28T20:56:12.495313+00:00"
+}

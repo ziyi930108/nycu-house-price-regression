@@ -1,0 +1,240 @@
+{
+  "GPU_calls": 0,
+  "automatic_retry": false,
+  "build_seconds": 0.0,
+  "certificate": {
+    "all_checks_passed": true,
+    "bound_complementarity_mean_TWD": 0.0,
+    "checks": {
+      "bound_complementarity": true,
+      "dual_box": true,
+      "dual_constraints": true,
+      "free_bound_marginals_zero": true,
+      "marginal_signs": true,
+      "median_vertex_optimality": true,
+      "nonnegative_raw_weights": true,
+      "objective_identity": true,
+      "primal_dual_gap": true,
+      "row_complementarity": true,
+      "stationarity_free_variable": true,
+      "stationarity_prices": true,
+      "vertex_optimality": true,
+      "weight_sum_one": true
+    },
+    "dual_box_violation": 0.0,
+    "dual_constraint_violation_mean_TWD": 4.965064763116705e-09,
+    "dual_objective_MAE_TWD": 2283439.974760726,
+    "median_vertex_MAE_TWD": 2309352.3576965467,
+    "minimum_weight": 0.07550668133055438,
+    "native_vertex_MAE_TWD": {
+      "H": 2430121.5912361215,
+      "M": 2309352.3576965467,
+      "N": 2451856.2778064846,
+      "U": 2334314.7117598527
+    },
+    "numerical_certificate_only": true,
+    "objective_identity_mean_TWD": 1.015079907126082e-07,
+    "primal_MAE_TWD": 2283439.974760712,
+    "primal_minus_best_vertex_MAE_TWD": -25912.382935834583,
+    "primal_minus_dual_MAE_TWD": -1.3969838619232178e-08,
+    "primal_minus_median_vertex_MAE_TWD": -25912.382935834583,
+    "raw_dual_constraint_slacks": [
+      -0.0,
+      -5.238689482212067e-10,
+      -0.0,
+      5.820766091346741e-11
+    ],
+    "row_complementarity_mean_TWD": 1.3783631409571267e-09,
+    "saved_solver_constraint_residual_max_difference": 5.238689482212067e-10,
+    "solver_dual_objective_sum_scaled": -240928.03517698968,
+    "stationarity_free_variable_absolute": 0.0,
+    "stationarity_price_max_TWD": 0.0,
+    "tolerance_parameters": {
+      "complementarity_mean_TWD": 0.1,
+      "dual_box_absolute": 1e-08,
+      "dual_constraint_violation_mean_TWD": 0.01,
+      "objective_identity_mean_TWD": 0.01,
+      "primal_dual_gap_mean_TWD": 0.1,
+      "stationarity_free_variable_absolute": 1e-10,
+      "stationarity_price_max_TWD": 0.1,
+      "vertex_optimality_mean_TWD": 0.1,
+      "weight_minimum": 0.0,
+      "weight_sum_absolute": 1e-10
+    },
+    "weight_sum": 1.0,
+    "weight_sum_error": 0.0,
+    "weights": [
+      0.18167190732606753,
+      0.26922268735497445,
+      0.47359872398840364,
+      0.07550668133055438
+    ],
+    "weights_modified": false
+  },
+  "completed_at_utc": "2026-09-28T20:56:12.164923+00:00",
+  "elapsed_seconds": 0.5779999999795109,
+  "fit_rows": 105511,
+  "format": "R99_convex_L1_stacker_v1",
+  "input_arrays": {
+    "P": {
+      "dtype": "float64",
+      "shape": [
+        105511,
+        4
+      ],
+      "values_sha256": "cf0a66044088203aa2e3eda8687f658dc040e35e1589619aefb8fabab98941ec"
+    },
+    "row_alignment_authority": "caller-supplied prediction and target row IDs matched exactly",
+    "row_ids_provided": true,
+    "row_ids_values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf",
+    "y": {
+      "dtype": "float64",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "9d2e7ac3504c89b3bbdd4832b4230db8f9312a981fef398f9cc1e578ba610636"
+    }
+  },
+  "native_model_fit_load_predict_calls": 0,
+  "parameters": {
+    "automatic_retry": false,
+    "branch_order": [
+      "N",
+      "H",
+      "U",
+      "M"
+    ],
+    "certificate_tolerances": {
+      "complementarity_mean_TWD": 0.1,
+      "dual_box_absolute": 1e-08,
+      "dual_constraint_violation_mean_TWD": 0.01,
+      "objective_identity_mean_TWD": 0.01,
+      "primal_dual_gap_mean_TWD": 0.1,
+      "stationarity_free_variable_absolute": 1e-10,
+      "stationarity_price_max_TWD": 0.1,
+      "vertex_optimality_mean_TWD": 0.1,
+      "weight_minimum": 0.0,
+      "weight_sum_absolute": 1e-10
+    },
+    "common_price_scale_TWD": 1000000.0,
+    "fallback_weights": null,
+    "format": "R99_convex_L1_stacker_v1",
+    "formulation": "min -y_scaled@u-v; P_scaled.T@u+v<=0; -1<=u<=1; v free",
+    "intercept": false,
+    "median_input": "M bytes equal np.median(P[:, :3], axis=1); float64",
+    "method": "highs-ds",
+    "multiple_optima": "accept solver solution for fixed runtime and supplied row order; no second objective",
+    "nonnegative_weights": true,
+    "objective": "equal-row TWD MAE",
+    "prediction": "((N*w_N + H*w_H) + U*w_U) + M*w_M; unrounded float64 TWD",
+    "regularization": null,
+    "required_highs": "1.12.0",
+    "required_scipy": "1.18.1",
+    "solver_options": {
+      "dual_feasibility_tolerance": 1e-08,
+      "maxiter": 1000000,
+      "presolve": true,
+      "primal_feasibility_tolerance": 1e-08,
+      "simplex_dual_edge_weight_strategy": "steepest-devex",
+      "threads": 1,
+      "time_limit": 300.0
+    },
+    "time_decay": null,
+    "weight_extraction": "negative of four raw inequality marginals; no clipping or normalization",
+    "weight_sum": 1.0
+  },
+  "price_unit": "TWD",
+  "query_targets_available": false,
+  "resource_estimate": {
+    "CSC_float64_data_int32_indices_indptr_bytes": 5486628,
+    "caution": "Payload counts exclude solver workspaces, copies, Python overhead and certificate arrays; not a peak-RAM bound.",
+    "inequality_rows": 4,
+    "input_prediction_plus_target_float64_bytes": 4220440,
+    "nonzeros": 422048,
+    "rows": 105511,
+    "solver_peak_RAM_measured": false,
+    "solver_runtime_estimate_seconds": null,
+    "variables": 105512
+  },
+  "rows_equal_weight": true,
+  "runtime": {
+    "highs": "1.12.0",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1"
+  },
+  "solver_arrays": {
+    "ineqlin_marginals": {
+      "dtype": "float64",
+      "shape": [
+        4
+      ],
+      "values_sha256": "999cb406d6accbb925c07f86230395218a785157c19ec2cef133b37109600dfe"
+    },
+    "ineqlin_residual": {
+      "dtype": "float64",
+      "shape": [
+        4
+      ],
+      "values_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+    },
+    "lower_marginals": {
+      "dtype": "float64",
+      "shape": [
+        105512
+      ],
+      "values_sha256": "7459d1e6ec70fe6950781cde5f3e5259eb6ed2833eed66f626b6a4e9d8f651c0"
+    },
+    "lower_residual": {
+      "dtype": "float64",
+      "shape": [
+        105512
+      ],
+      "values_sha256": "ff270213249b2b571a09396ce05428bc598e2de9cfea5eee734524c43a2c8298"
+    },
+    "upper_marginals": {
+      "dtype": "float64",
+      "shape": [
+        105512
+      ],
+      "values_sha256": "8d99ea2b06bc5d52f990a1a08926ed36ca2495141e54830fe471c9f3229f29f4"
+    },
+    "upper_residual": {
+      "dtype": "float64",
+      "shape": [
+        105512
+      ],
+      "values_sha256": "75364cc8e334732eacc1e00e67c3cdf8f64337f042294c8f269aac0be52e241b"
+    },
+    "x": {
+      "dtype": "float64",
+      "shape": [
+        105512
+      ],
+      "values_sha256": "194054056a3a54f6f63c41187c16c8d6429e55da57e6e33783757969c4e7e605"
+    }
+  },
+  "solver_result": {
+    "crossover_iterations": 0,
+    "fun": -240928.03517698968,
+    "iterations": 7,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "status": 0,
+    "success": true
+  },
+  "solver_seconds": 0.546000000089407,
+  "source_sha256": {
+    ".venv/Lib/site-packages/scipy/optimize/_highspy/_core.cp312-win_amd64.pyd": "e6beb8321a4905c9bd0ba0eec2dfa7e27d76a01ab7d0abeab81fcce9ae6732e1",
+    ".venv/Lib/site-packages/scipy/optimize/_highspy/_highs_wrapper.py": "1f2a701c25725dc78b53f0185ac802e74f74d484695c6c2127d51d907302994d",
+    ".venv/Lib/site-packages/scipy/optimize/_linprog.py": "883172f6c372b656187a3e5da92998b3e10c608c502de8ce8c27c8a8309a9a15",
+    ".venv/Lib/site-packages/scipy/optimize/_linprog_highs.py": "7f6acb007a35617222845b56c9919d5f549ce3744e5154c3bf0f12934dcf7f9b",
+    "src/round99_l1_stacker.py": "f07d818aa9b12cf03726267188e99d111ce2529dd6d6cd5f9d921fee259fc09e"
+  },
+  "status": "completed",
+  "warnings": [
+    {
+      "category": "OptimizeWarning",
+      "message": "Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim."
+    }
+  ],
+  "weights_clipped_normalized_or_regularized": false
+}
