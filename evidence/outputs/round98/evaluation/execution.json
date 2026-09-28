@@ -1,0 +1,12 @@
+{
+  "automatic_retry": false,
+  "completed_at_utc": "2026-09-28T20:12:36.105718+00:00",
+  "elapsed_seconds": 26.608999999938533,
+  "exit_code": 0,
+  "failure": null,
+  "native_model_load_predict_calls": 0,
+  "new_fits": 0,
+  "raw_prices_deserialized": true,
+  "source_sha256": "6540f7045e8f47c6a0e8339a6680dd59a85839644bb0fcbbef192ea9ac7a23e1",
+  "started_at_utc": "2026-09-28T20:12:09.490282+00:00"
+}

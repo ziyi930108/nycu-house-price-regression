@@ -1,0 +1,186 @@
+{
+  "Private_score": null,
+  "all_query_reload_exact": true,
+  "completed_at_utc": "2026-09-28T20:11:56.402319+00:00",
+  "cross_stage_target_role_overlap_documented": true,
+  "elapsed_seconds": 6.875,
+  "launch_request": {
+    "path": "outputs/round98_launcher_20260929/research_request.json",
+    "sha256": "f09e3283bfdd05b181bea2a96d9f81a2721c01d181ba1b529813775eeebca6bc"
+  },
+  "new_CSV": false,
+  "new_meta_fits": 3,
+  "new_native_fits": 0,
+  "plan_sha256": "394a65459349e479bb3e8a487b60516156705469fa51bfbe75fd8697bae3642b",
+  "preparation": {
+    "path": "outputs/round98_inputs/manifest.json",
+    "sha256": "e496b2afcf7ebc69a4e248d13b691e3b2e6e991bfab4e510386ff77cccc97fc7"
+  },
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_scores_computed": false,
+  "schema_version": 1,
+  "selected_submission": "v22",
+  "separate_stage_processes": true,
+  "source_sha256": {
+    ".venv/Lib/site-packages/scipy/optimize/_highspy/_core.cp312-win_amd64.pyd": "e6beb8321a4905c9bd0ba0eec2dfa7e27d76a01ab7d0abeab81fcce9ae6732e1",
+    ".venv/Lib/site-packages/scipy/optimize/_highspy/_highs_wrapper.py": "1f2a701c25725dc78b53f0185ac802e74f74d484695c6c2127d51d907302994d",
+    ".venv/Lib/site-packages/scipy/optimize/_linprog.py": "883172f6c372b656187a3e5da92998b3e10c608c502de8ce8c27c8a8309a9a15",
+    ".venv/Lib/site-packages/scipy/optimize/_linprog_highs.py": "7f6acb007a35617222845b56c9919d5f549ce3744e5154c3bf0f12934dcf7f9b",
+    "outputs/round98_artifact_inventory/audit.py": "03be8b88aaffe722a25784cc05bd3b0944d95a4678f4b52b713461f5211f30ee",
+    "outputs/round98_artifact_inventory/results.json": "11eccec76cee77b5d660bf60eb1f9679b0cb71c9cb1ba4a5d044dd79df54b359",
+    "outputs/round98_launcher_20260929/freeze_requests.py": "60b46ad8a1100ec05f7706962080c2bc43e22fd03480cc742f40320cf7763c91",
+    "outputs/round98_launcher_20260929/run_evaluation.py": "b06c9341e7879e59d57aeab7dd009f03232c89cd11220244e89a3ad017b7725e",
+    "outputs/round98_launcher_20260929/run_pipeline.py": "bbf2dca46c853ccc037e97d2060631b574a2290568bb1ed117f0f9b1abb5ff02",
+    "reports/round98_artifact_inventory.md": "45a6c6109390d43d23c9141ec83e02f7ae5cd781cf7f6d40ec48466fc73a7e04",
+    "reports/round98_evaluator_selfcheck.json": "ecd4523fce43e35f36b41ee63ed4577400491411ed5d83e793bf448c1107d855",
+    "reports/round98_helper_design.md": "3127931d044b453632675bee26d31020d8ec2de0640952cfa9531f6e81af0419",
+    "reports/round98_helper_selfcheck.json": "7261604d4d671960ecba5fc6ed77a5b3d06419ee5f9b43e8f5f8a02a2556549e",
+    "reports/round98_plan.md": "394a65459349e479bb3e8a487b60516156705469fa51bfbe75fd8697bae3642b",
+    "reports/round98_validation_contract_review.md": "a56a00e9bd0af610f3ac5cca742fa49716182585df5cfa8a7e8010ae50bbc1a4",
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62",
+    "src/round98_l1_stacker.py": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864",
+    "src/round98_prepare_inputs.py": "2f01a180e145e36eb0d798221e5b3aa232661e70c47772274cbf2b9ea1ba9492",
+    "src/round98_temporal_evaluate.py": "6540f7045e8f47c6a0e8339a6680dd59a85839644bb0fcbbef192ea9ac7a23e1",
+    "src/round98_temporal_stack.py": "87e3ededcfd7520b3fcf730d2c1b962f5e8000cd0b49cd283756c4b2f144ac6d",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "stage_order": [
+    "development",
+    "offset",
+    "confirmation"
+  ],
+  "stages": {
+    "confirmation": {
+      "execution": {
+        "path": "outputs/round98/confirmation/execution.json",
+        "sha256": "7578ed2c17e3098474f83da5985138ccecf6e252e0ad3504e23cd39d4fe9d552"
+      },
+      "model_state": {
+        "path": "outputs/round98/confirmation/model/state.json",
+        "sha256": "1b983ace6747223aa09a8e9805e42c514b555527808faca388574d785e0ce4ba"
+      },
+      "predictions": {
+        "R98": {
+          "dtype": "float64",
+          "path": "outputs/round98/confirmation/predictions.npy",
+          "sha256": "e42799629df3bd60e209c7937c23782f7a5be5929fa63a7b6a1e568fcc5ead08",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "b0bc1fcbff31bae7147932741291bc910f1c62931d6838334da98196ee56d531"
+        },
+        "v22": {
+          "dtype": "float64",
+          "path": "outputs/round98/confirmation/control_v22.npy",
+          "sha256": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "80ee6c39452e54993d1aa5c0007f1b7ed59601fd1e31155bf468fdc8d34ee96e"
+        }
+      },
+      "stage_manifest": {
+        "path": "outputs/round98/confirmation/stage_seal.json",
+        "sha256": "fdeead48ee415c865532f5f4e6ee28b46e1f33d918f471f8865f9803103d3d60"
+      }
+    },
+    "development": {
+      "execution": {
+        "path": "outputs/round98/development/execution.json",
+        "sha256": "60f198e9987e4e642cb10583c6fc04b146383ac1b3814b9a3777008b6adee99b"
+      },
+      "model_state": {
+        "path": "outputs/round98/development/model/state.json",
+        "sha256": "db665b36ee7b2664642e86a1cdb0167f9fad8a324e9d96d6aeea0fd17946247e"
+      },
+      "predictions": {
+        "R98": {
+          "dtype": "float64",
+          "path": "outputs/round98/development/predictions.npy",
+          "sha256": "8ba12937f30b5d19147e9d482562a8e23f0932e247f9d809b144b7d7a0c021d5",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "b0ea24f7b0ee9bbc312488a2e5970e48a388b6877174f10fd1be6e8b655c81f3"
+        },
+        "v22": {
+          "dtype": "float64",
+          "path": "outputs/round98/development/control_v22.npy",
+          "sha256": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+        }
+      },
+      "stage_manifest": {
+        "path": "outputs/round98/development/stage_seal.json",
+        "sha256": "ba0bc5d221330b79454f59db89394f4bc0d65afe8684fec93c35d16e4817ba0d"
+      }
+    },
+    "offset": {
+      "execution": {
+        "path": "outputs/round98/offset/execution.json",
+        "sha256": "1fc428247c2765d9d5ece61c5fa4f8b3f39629cc56fdd42767a7d10e2a6968d6"
+      },
+      "model_state": {
+        "path": "outputs/round98/offset/model/state.json",
+        "sha256": "b6778305f1d2b6ea768ebe8379a9dae2b824b8bfd71e8ed236efb08dd3e94e4a"
+      },
+      "predictions": {
+        "R98": {
+          "dtype": "float64",
+          "path": "outputs/round98/offset/predictions.npy",
+          "sha256": "b25ebf11e49f517945f38f50d7ecc0dd1beb56769b91a77524e32dd57dc2dcb1",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "017fb9223a1baac70955da08015c496fbe2a0f7175ff20d534aeacb0ec7c1231"
+        },
+        "v22": {
+          "dtype": "float64",
+          "path": "outputs/round98/offset/control_v22.npy",
+          "sha256": "b957793d3aaf44683ab3700630ac5408d60a543e746cdefd7fccb939e430f0bf",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "d63de133cd3d89cda66ae0c150b612e8b03ca8990bed1940f6a2da0cc8c8faf3"
+        }
+      },
+      "stage_manifest": {
+        "path": "outputs/round98/offset/stage_seal.json",
+        "sha256": "56444094c3498b4435eceff30e0e4b04eb0a7f0732529b275d506a6e3e7613de"
+      }
+    }
+  },
+  "started_at_utc": "2026-09-28T20:11:49.529895+00:00",
+  "status": "all_temporal_stack_predictions_sealed"
+}

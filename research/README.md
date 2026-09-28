@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R97程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R98程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -78,7 +78,7 @@ R93完成時僅有[Attention可行性研究](../evidence/reports/attention_regre
 
 R90在上述批次仍只有pure-X/helper；後續R97已完成v22／v24七native與全部新fit狀態，沒有加入Attention。舊文件保留當時時序，不能再當未完成待辦。
 
-## 最新追加：R97 完整新切點重建
+## 歷史追加：R97 完整新切點重建
 
 [R97完成摘要](../docs/RESEARCH_UPDATES_20260929_OFFSET.md)保存四窗口比較、獨立評分、來源、工程修正及全部反證。固定2023-02-11起點，新fit 272,117／query 107,169列；5樹＋2NN共7次fit呼叫1,100.391秒，包含於main 1,410.656秒。新窗v22較低3,917.46元，但原三年v24都較低；Private未知、提交仍v22。
 
@@ -92,4 +92,23 @@ R90在上述批次仍只有pure-X/helper；後續R97已完成v22／v24七native�
 
 [本批複製清單](../evidence/outputs/research_snapshot_r97_20260929/final/copy_manifest.json)保存原bytes與明確排除项；模型、交易表、labels、encoder／prior／ramps／category states、逐筆預測及bootstrap陣列只保留本機身分。語法失敗原稿在evidence內，標註不可執行；不是訓練入口。現有來源仍依賴完整私有工作區，不把本機新窗口重建稱為全新環境重訓最終提交模型。
 
-時間外L1 stacker只做[有限盤點](../evidence/reports/regression_direction_after_r97_inventory.md)，未立項、未fit、未新增CSV。379原source_manifest與正式交付不改；當前發布包身分以外層SOURCE_MANIFEST及Git main歷史為準。
+R97結束時，時間外L1 stacker只完成[有限盤點](../evidence/reports/regression_direction_after_r97_inventory.md)；後續R98執行情形見下一節。379原source_manifest與正式交付不改；當前發布包身分以外層SOURCE_MANIFEST及Git main歷史為準。
+
+## 最新追加：R98 較早 forward 預測的 L1 組合
+
+[R98 完成研究頁](../docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)記錄三個較晚窗口、各自合法的前置 meta 樣本、純數值求解、全預測封存後獨立評分，以及所有有利／不利分群。三次 CPU meta-fit 完成，0 原生模型 fit／載入與 0 GPU；整體差 +8,798.64／−4,255.03／+5,190.67 元，研究門檻未過，沒有新 CSV。
+
+|程式|用途|
+|---|---|
+|[資料準備](src/round98_prepare_inputs.py)／[共用契約](src/round98_contract.py)|合法 forward 來源、canonical／raw mapping、日期邊界与每期只輸出 meta 標籤|
+|[L1 helper](src/round98_l1_stacker.py)|非負／和為1／無截距的等權總價 MAE，等價 dual LP 與數值證書；不 clip 或 normalize|
+|[每期 driver](src/round98_temporal_stack.py)|精確11陣列／自身stage路徑，獨立程序、求解／保存重載、先封存query預測|
+|[scorer](src/round98_temporal_evaluate.py)|三期全封存核對後才讀query y；固定MAE／分群／12配對區間|
+|[保存結果稽核](src/round98_independent_review.py)|233唯一SHA、9保護檔、公式與保存區間；不讀真價、不重做LP或評分|
+|[摘要v2](src/summarize_round98_v2.py)／[原摘要](src/summarize_round98.py)|只讀聚合結果；保留首圖重疊與修訂收據，v2圖已目視核對，不重評分|
+
+稽核作者亦為helper作者，故不稱完全獨立重作求解器；scorer與前置審查由其他代理處理。三個窗口不獨立，auxiliary以前forward block仍缺；本輪不是原三個8月窗口的完整採用門檻。多輪選型風險與Private未知保留。
+
+[四欄含median的下一方向](../evidence/reports/round98_next_direction.md)只是一份有限提案，沒有新計畫／fit。原始資料、所有逐筆陣列、模型state與solver arrays不在本包；只有來源、聚合metadata及身分。原379來源清單不回寫，正式v22與交付報告不改。
+
+[本批完成複製清單](../evidence/outputs/research_snapshot_r98_20260929/final/copy_manifest_v2.json)及[前置收據](../evidence/outputs/research_snapshot_r98_20260929/preparation/copy_manifest.json)分開保留；當前发布身分仍以 Git main 與外層 SOURCE_MANIFEST 為準。

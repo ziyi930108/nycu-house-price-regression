@@ -1,0 +1,9 @@
+{
+  "status": "snapshot_copy_assertion_before_mutation",
+  "error": "round98_next_direction.md already copied by completed core allowlist; supplement initially required all destinations absent",
+  "tool_exit_code": 1,
+  "source_sha256": "f92389f4e4891c1c1860a24b8538102b9ba9d5b7b81f8f0a9e1134bacf800c2e",
+  "existing_copy_exact": true,
+  "real_fit_or_score": false,
+  "resolution": "reuse byte-identical existing destination; preserve old copies and receipts"
+}

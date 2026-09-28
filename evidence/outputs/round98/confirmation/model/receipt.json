@@ -1,0 +1,11 @@
+{
+  "artifact_sha256": {
+    "outputs/round98/confirmation/model/fit_metadata.json": "5aa14061c826332bde06459f317709d1a19fa26c54ec05383e9f54c3fe377268",
+    "outputs/round98/confirmation/model/solver_arrays.npz": "6e51508386e751eb314f9336293379da2a196948723dfb602c96f83a71dedc6d",
+    "outputs/round98/confirmation/model/state.json": "1b983ace6747223aa09a8e9805e42c514b555527808faca388574d785e0ce4ba"
+  },
+  "full_query_prediction_reload_checked_by_caller": false,
+  "solver_arrays_reload_exact": true,
+  "state_reload_exact": true,
+  "status": "saved_model_and_solver_evidence"
+}

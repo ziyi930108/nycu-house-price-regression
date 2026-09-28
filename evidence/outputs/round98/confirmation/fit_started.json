@@ -1,0 +1,14 @@
+{
+  "meta_rows": 186745,
+  "new_native_fits": 0,
+  "query_labels_available": false,
+  "query_rows": 133697,
+  "request_sha256": "f09e3283bfdd05b181bea2a96d9f81a2721c01d181ba1b529813775eeebca6bc",
+  "source_sha256": {
+    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62",
+    "src/round98_l1_stacker.py": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864",
+    "src/round98_temporal_stack.py": "87e3ededcfd7520b3fcf730d2c1b962f5e8000cd0b49cd283756c4b2f144ac6d"
+  },
+  "stage": "confirmation",
+  "started_at_utc": "2026-09-28T20:11:54.259422+00:00"
+}

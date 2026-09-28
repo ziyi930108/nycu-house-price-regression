@@ -1,0 +1,10 @@
+{
+  "completed_at_utc": "2026-09-28T19:55:43.935333+00:00",
+  "elapsed_seconds": 3.6870000001508743,
+  "exit_code": 0,
+  "failure": null,
+  "new_fits": 0,
+  "query_scores_computed": false,
+  "raw_pickle_deserialized": true,
+  "started_at_utc": "2026-09-28T19:55:40.240522+00:00"
+}

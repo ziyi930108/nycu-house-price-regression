@@ -1,0 +1,251 @@
+{
+  "actual_stage_data_readset": {
+    "outputs/round98_inputs/confirmation/control_v22.npy": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+    "outputs/round98_inputs/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round98_inputs/confirmation/meta_indices.npy": "08b4c23b62944cd67f84ea56db8ca75fd085dfdef229c2c849f7e28b0afa72c2",
+    "outputs/round98_inputs/confirmation/meta_predictions.npy": "00ccf29e9761d3268c22d98803ef371be7f55e74cbecb5b66d4f92d2a82c87ad",
+    "outputs/round98_inputs/confirmation/meta_source_cache_indices.npy": "3aaa743827e84273ff669cd62c571b38b7cb356dce9f18def2108f1a07c11f2d",
+    "outputs/round98_inputs/confirmation/meta_trade_days.npy": "b77044e32c085e5d0e6063532de7f1fe8b8e41659edb9e523eb345697fdaaa78",
+    "outputs/round98_inputs/confirmation/meta_y.npy": "7f49c4ea1f4c5fce2fa25ce4915b270acb57d968e162b87fe899020290505fe5",
+    "outputs/round98_inputs/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round98_inputs/confirmation/query_predictions.npy": "c49b9aca9d8202b7ffdeb05e725002c4ca480a8f240e09c4f581e60af45a2900",
+    "outputs/round98_inputs/confirmation/query_source_cache_indices.npy": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+    "outputs/round98_inputs/confirmation/query_trade_days.npy": "b6ad93180e158feeec2f6e94c4f708232ba013a3ab953cc05f9a2912630de673"
+  },
+  "all_query_reload_exact": true,
+  "caller_arrays_unchanged": true,
+  "caution": "Earlier forward blocks fit a new final three-branch stacker; historically reused data, not a blind holdout. Offset overlaps other windows. Missing pre-auxiliary block prevents the original three-August-window adoption gate. Bootstrap is conditional, not Private win probability.",
+  "completed_at_utc": "2026-09-28T20:11:56.255623+00:00",
+  "cutoff": "2023-08-11",
+  "elapsed_seconds": 2.202999999979511,
+  "fit_call_elapsed_seconds": 1.672000000020489,
+  "input_arrays": {
+    "control_v22": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/control_v22.npy",
+      "sha256": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "80ee6c39452e54993d1aa5c0007f1b7ed59601fd1e31155bf468fdc8d34ee96e"
+    },
+    "fit_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/confirmation/fit_indices.npy",
+      "sha256": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+    },
+    "meta_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/confirmation/meta_indices.npy",
+      "sha256": "08b4c23b62944cd67f84ea56db8ca75fd085dfdef229c2c849f7e28b0afa72c2",
+      "shape": [
+        186745
+      ],
+      "values_sha256": "a176c855c3d290d8eb320ff3f7d23a05fcf48268f40cb1743501f3766f83d40d"
+    },
+    "meta_predictions": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/meta_predictions.npy",
+      "sha256": "00ccf29e9761d3268c22d98803ef371be7f55e74cbecb5b66d4f92d2a82c87ad",
+      "shape": [
+        186745,
+        3
+      ],
+      "values_sha256": "bad83c1168e5bac226588b9b3fcaf7a0543c6294f591d705c7d5c24aba071b9a"
+    },
+    "meta_source_cache_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/confirmation/meta_source_cache_indices.npy",
+      "sha256": "3aaa743827e84273ff669cd62c571b38b7cb356dce9f18def2108f1a07c11f2d",
+      "shape": [
+        186745
+      ],
+      "values_sha256": "0b9432670c2cd8dcf0b26d608ad8204f5e07e1ce6b17518c7d4bc18244c201e5"
+    },
+    "meta_trade_days": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/meta_trade_days.npy",
+      "sha256": "b77044e32c085e5d0e6063532de7f1fe8b8e41659edb9e523eb345697fdaaa78",
+      "shape": [
+        186745
+      ],
+      "values_sha256": "edfaa485a9d8dca959d0bddcb61128947542e245557de402f8a723e81b7685a0"
+    },
+    "meta_y": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/meta_y.npy",
+      "sha256": "7f49c4ea1f4c5fce2fa25ce4915b270acb57d968e162b87fe899020290505fe5",
+      "shape": [
+        186745
+      ],
+      "values_sha256": "3295b5e88f5f475b684c41e759403c48d7812bd8a7e835cbbaf6ae1312a6fd9b"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/confirmation/query_indices.npy",
+      "sha256": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+    },
+    "query_predictions": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/query_predictions.npy",
+      "sha256": "c49b9aca9d8202b7ffdeb05e725002c4ca480a8f240e09c4f581e60af45a2900",
+      "shape": [
+        133697,
+        3
+      ],
+      "values_sha256": "3d633cf2ea36514f52f94e2971ec9cd44037b6cdd0903d25673f583e64fd1bef"
+    },
+    "query_source_cache_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/confirmation/query_source_cache_indices.npy",
+      "sha256": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+    },
+    "query_trade_days": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/confirmation/query_trade_days.npy",
+      "sha256": "b6ad93180e158feeec2f6e94c4f708232ba013a3ab953cc05f9a2912630de673",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7bd5a24280ca3ec3ab50faa316b1ba112d267fdf86d1b8220a5b27fc780f59a0"
+    }
+  },
+  "launch_request": {
+    "path": "outputs/round98_launcher_20260929/research_request.json",
+    "sha256": "f09e3283bfdd05b181bea2a96d9f81a2721c01d181ba1b529813775eeebca6bc"
+  },
+  "meta_rows": 186745,
+  "model_artifact_sha256": {
+    "outputs/round98/confirmation/model/fit_metadata.json": "5aa14061c826332bde06459f317709d1a19fa26c54ec05383e9f54c3fe377268",
+    "outputs/round98/confirmation/model/receipt.json": "3be9b56a34e4fe1faa00d9bb81ce115b2f2585d260caa461e526871c45a73dcc",
+    "outputs/round98/confirmation/model/solver_arrays.npz": "6e51508386e751eb314f9336293379da2a196948723dfb602c96f83a71dedc6d",
+    "outputs/round98/confirmation/model/state.json": "1b983ace6747223aa09a8e9805e42c514b555527808faca388574d785e0ce4ba"
+  },
+  "model_state": {
+    "path": "outputs/round98/confirmation/model/state.json",
+    "sha256": "1b983ace6747223aa09a8e9805e42c514b555527808faca388574d785e0ce4ba"
+  },
+  "new_CSV": false,
+  "new_meta_fits": 1,
+  "new_native_fits": 0,
+  "other_stage_meta_targets_opened": false,
+  "parameters": {
+    "automatic_retry": false,
+    "branch_order": [
+      "N",
+      "H",
+      "U"
+    ],
+    "certificate_tolerances": {
+      "complementarity_mean_TWD": 0.1,
+      "dual_box_absolute": 1e-08,
+      "dual_constraint_violation_mean_TWD": 0.01,
+      "objective_identity_mean_TWD": 0.01,
+      "primal_dual_gap_mean_TWD": 0.1,
+      "stationarity_free_variable_absolute": 1e-10,
+      "stationarity_price_max_TWD": 0.1,
+      "vertex_optimality_mean_TWD": 0.1,
+      "weight_minimum": 0.0,
+      "weight_sum_absolute": 1e-10
+    },
+    "common_price_scale_TWD": 1000000.0,
+    "fallback_weights": null,
+    "format": "R98_convex_L1_stacker_v1",
+    "formulation": "min -y_scaled@u-v; P_scaled.T@u+v<=0; -1<=u<=1; v free",
+    "intercept": false,
+    "method": "highs-ds",
+    "multiple_optima": "accept solver solution for fixed runtime and supplied row order; no second objective",
+    "nonnegative_weights": true,
+    "objective": "equal-row TWD MAE",
+    "prediction": "(N*w_N + H*w_H) + U*w_U; unrounded float64 TWD",
+    "regularization": null,
+    "required_highs": "1.12.0",
+    "required_scipy": "1.18.1",
+    "solver_options": {
+      "dual_feasibility_tolerance": 1e-08,
+      "maxiter": 1000000,
+      "presolve": true,
+      "primal_feasibility_tolerance": 1e-08,
+      "simplex_dual_edge_weight_strategy": "steepest-devex",
+      "threads": 1,
+      "time_limit": 300.0
+    },
+    "time_decay": null,
+    "weight_extraction": "negative of three raw inequality marginals; no clipping or normalization",
+    "weight_sum": 1.0
+  },
+  "plan_sha256": "394a65459349e479bb3e8a487b60516156705469fa51bfbe75fd8697bae3642b",
+  "predictions": {
+    "R98": {
+      "dtype": "float64",
+      "path": "outputs/round98/confirmation/predictions.npy",
+      "sha256": "e42799629df3bd60e209c7937c23782f7a5be5929fa63a7b6a1e568fcc5ead08",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "b0bc1fcbff31bae7147932741291bc910f1c62931d6838334da98196ee56d531"
+    },
+    "v22": {
+      "dtype": "float64",
+      "path": "outputs/round98/confirmation/control_v22.npy",
+      "sha256": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "80ee6c39452e54993d1aa5c0007f1b7ed59601fd1e31155bf468fdc8d34ee96e"
+    }
+  },
+  "preparation": {
+    "path": "outputs/round98_inputs/manifest.json",
+    "sha256": "e496b2afcf7ebc69a4e248d13b691e3b2e6e991bfab4e510386ff77cccc97fc7"
+  },
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_end": "2024-08-10",
+  "query_labels_available": false,
+  "query_rows": 133697,
+  "query_scores_computed": false,
+  "raw_price_pickle_opened": false,
+  "schema_version": 1,
+  "selected_submission": "v22",
+  "source_sha256": {
+    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62",
+    "src/round98_l1_stacker.py": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864",
+    "src/round98_temporal_stack.py": "87e3ededcfd7520b3fcf730d2c1b962f5e8000cd0b49cd283756c4b2f144ac6d"
+  },
+  "stage": "confirmation",
+  "started_at_utc": "2026-09-28T20:11:54.057434+00:00",
+  "status": "temporal_stack_stage_predictions_sealed"
+}

@@ -10,13 +10,13 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新時間穩定性研究
+## 最新時間前推組合研究
 
-[R97 錯開時間切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已完成 5 樹＋2 NN 與全部新 fit 狀態重建。新窗 v22／v24 MAE 為 **1,336,410.67／1,340,328.14 元**，v24 高 3,917.46 元；原三個年度則均是 v24 較低。兩個建案配對區間跨零、兩個月份區間偏退，分群反證完整保留，不能據此宣稱 Private 已知。
+[R98 較早預測學組合權重](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)已完成。只以更早 forward 預測及標籤學 N／H／U 的非負全域 L1 權重，保留原六個模型及三分支修正。development／offset／confirmation 相對 v22 的 MAE 差為 **+8,798.64／−4,255.03／+5,190.67 元**；offset 有改善，但三期均未通過完整分群門檻，12 個配對區間全部跨零。沒有足夠證據替換 v22，也不代表全部群都退步。
 
-七模型 fit 計時合計 1,100.391 秒，已包含於 main 1,410.656 秒；另有獨立評分、220 項 SHA 審查與保存重載。R90 純 X 與 helpers 已在 R97 正式使用。唯一提交仍為 v22，沒有新 CSV；正式報告與簡報保持。本頁於發布前核驗；R97 最新發布身分以此儲存庫 Git main 歷史及 SOURCE_MANIFEST 為準，根工作區另存發布收據。
+三次 CPU meta-fit 呼叫合計 2.828 秒，包含於 main 6.891 秒；另有 26.609 秒独立評分及 233 個唯一 SHA／12 個保存區間的結果稽核。新增 0 個樹／NN fit，沒有新 CSV，Private 未知，正式報告與簡報保持。[四欄含 median 的後續提案](evidence/reports/round98_next_direction.md)尚未立項或執行。本頁於發布前核驗；當前發布身分以此儲存庫 Git main 歷史及 SOURCE_MANIFEST 為準，根工作區另存發布收據。
 
-此前 [Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)保留全部未採用結果。R97 是既有配方的新窗口檢查，不把它或工程失敗另算新模型假設。
+此前 [R97 錯開切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已重建 5 樹＋2 NN：新窗 v22／v24 MAE 1,336,410.67／1,340,328.14 元，原三年則 v24 較低，反證保持。[Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)、[R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)、[R85–R88](docs/RESEARCH_UPDATES_20260928.md)保留全部未採用結果。歷史窗口反覆使用與重疊，不能稱盲測或 Private 勝率。
 
 ## 簡報與專案更新
 

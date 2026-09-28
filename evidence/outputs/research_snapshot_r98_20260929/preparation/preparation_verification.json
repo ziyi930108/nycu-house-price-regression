@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "existing_files_unchanged": 1363,
+  "copied_count": 39,
+  "copied_bytes": 365414,
+  "navigation_not_edited": true,
+  "all_source_bytes_exact": true,
+  "fit_or_score_executed": false,
+  "package_commit_push_zip_executed": false,
+  "final_review_pending": true,
+  "copy_manifest_sha256": "f9ddecf8577689dd1d32edd3fc52b7d2670d42e4387befa211725076eca8d291"
+}

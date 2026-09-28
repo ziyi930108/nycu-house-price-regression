@@ -1,0 +1,57 @@
+{
+  "Private_score": null,
+  "artifact_sha256": {
+    "outputs/round98_summary_v2/mae_delta.png": "23eaff76dd21049c07509fed8747f2b017e6451be968d038d1e6820500b08c89",
+    "outputs/round98_summary_v2/summary.json": "09a5da53b5591ceac9e295c6ae74b10e415c9c9f7a0473f801573048a292a309",
+    "outputs/round98_summary_v2/summary.sha256": "318e623500e35fbd41e9042285fc8096dc6edaa774459cd42b0c9161c9ee4221",
+    "reports/round98_summary_v2.md": "91f608b164ca2a53b6ee79332d93f6712e03164826340cceaf0b6e9d831a0f77"
+  },
+  "completed_at_utc": "2026-09-28T20:29:47.573460+00:00",
+  "decomposition_identity_all_stages_verified": true,
+  "elapsed_seconds": 0.6720000000204891,
+  "input_sha256": {
+    "outputs/round98/confirmation/execution.json": "7578ed2c17e3098474f83da5985138ccecf6e252e0ad3504e23cd39d4fe9d552",
+    "outputs/round98/confirmation/execution.sha256": "8e5d923493330ab07214155410770222be71f49720a908dc18c83d6c6494f8e2",
+    "outputs/round98/confirmation/model/fit_metadata.json": "5aa14061c826332bde06459f317709d1a19fa26c54ec05383e9f54c3fe377268",
+    "outputs/round98/confirmation/stage_seal.json": "fdeead48ee415c865532f5f4e6ee28b46e1f33d918f471f8865f9803103d3d60",
+    "outputs/round98/confirmation/stage_seal.sha256": "1109adea6452a99bb60986f81cbdd458e162f8e55a462fc735645cf2a699a9b3",
+    "outputs/round98/development/execution.json": "60f198e9987e4e642cb10583c6fc04b146383ac1b3814b9a3777008b6adee99b",
+    "outputs/round98/development/execution.sha256": "f90ba3b0201794aa45c2159d0a864f0d2b003820faba98c7f2ca42a3a5c7e5cc",
+    "outputs/round98/development/model/fit_metadata.json": "a3ff8e3451559feecc2de40ded34425f8fa61b04aac1467043c30130dbefbf15",
+    "outputs/round98/development/stage_seal.json": "ba0bc5d221330b79454f59db89394f4bc0d65afe8684fec93c35d16e4817ba0d",
+    "outputs/round98/development/stage_seal.sha256": "3b1344b95066eb3cd3f059027bdcd660824897f5d7768ff579027ffca5bb5209",
+    "outputs/round98/evaluation/execution.json": "3676a2714fd6b15a3fea5c2e5e966253a552ccd036f9db1c40dd20baae104487",
+    "outputs/round98/evaluation/execution.sha256": "f59f347496cca244b9626cc059879441b0d2682600e6221f1ba87034a0d8b802",
+    "outputs/round98/evaluation/results.json": "f76032d2f067e7a317aafc268ffbeacd8a18b51b7ca368101807b1140a80cd1e",
+    "outputs/round98/evaluation/results.sha256": "48e28f7a2531c285200b9ec3ba9aaf907045a89551dc199d01b29cd437b2fa83",
+    "outputs/round98/execution.json": "eb299098e27298d6f61542b28155976ee5ff1328bcb0b28aada4a69a6d72826b",
+    "outputs/round98/execution.sha256": "986739968e2c4356f854b5fdf778d1c23b64c470c79bedd8c007c5420cba9b07",
+    "outputs/round98/offset/execution.json": "1fc428247c2765d9d5ece61c5fa4f8b3f39629cc56fdd42767a7d10e2a6968d6",
+    "outputs/round98/offset/execution.sha256": "eea931b50b3ffd5ccb6e8bf3acb46c35d0e12c42747cbdcdcf8d8427c1919505",
+    "outputs/round98/offset/model/fit_metadata.json": "10abbc5a1ef9404f5f97d7f789b7b4d186f2f717f952a6740480ebe0921679eb",
+    "outputs/round98/offset/stage_seal.json": "56444094c3498b4435eceff30e0e4b04eb0a7f0732529b275d506a6e3e7613de",
+    "outputs/round98/offset/stage_seal.sha256": "64a6fbf97e8423b7379bd7c8d4cf3007390091218df96d03254b4ff1935bbc74",
+    "outputs/round98/sealed_manifest.json": "d0ff684e01bf18d590f9d8cdd402a6067aa7d85df1ea223fc6cf03df097bcbcc",
+    "outputs/round98/sealed_manifest.sha256": "cd2e30ca9f5a0bb6666c2514a922e73e4bf634147d1fe3f994f25ee7ba8fba86"
+  },
+  "new_CSV": false,
+  "new_fit_score_predict_bootstrap_calls": 0,
+  "plot": {
+    "axes_unicode_minus": false,
+    "font_family": "Microsoft JhengHei",
+    "font_path": "C:\\Windows\\Fonts\\msjh.ttc",
+    "matplotlib_version": "3.11.2",
+    "size_pixels": [
+      2048,
+      1760
+    ],
+    "visual_review_performed_by_script": false
+  },
+  "read_scope": "saved aggregate JSON only; no row labels/vectors/model objects",
+  "saved_CI_count": 12,
+  "selected_submission": "v22",
+  "source_sha256": "402fe439810847d3221bb4f093224c1aa211a30941ebcbc3ec8d449659c76f17",
+  "started_at_utc": "2026-09-28T20:29:46.906072+00:00",
+  "status": "completed",
+  "warnings": []
+}

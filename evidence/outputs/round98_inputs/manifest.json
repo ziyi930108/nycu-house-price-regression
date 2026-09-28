@@ -1,0 +1,628 @@
+{
+  "all_arrays_saved_reload_exact": true,
+  "branch_order": [
+    "N",
+    "H",
+    "U"
+  ],
+  "canonical_mapping": {
+    "path": "outputs/round6/geography/development/train_source_cache_indices.npy",
+    "sha256": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4"
+  },
+  "completed_at_utc": "2026-09-28T19:55:43.926302+00:00",
+  "elapsed_seconds": 3.6870000001508743,
+  "features": {
+    "path": "data_cache/train_features.pkl",
+    "sha256": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7"
+  },
+  "input_sha256": {
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/round46/auxiliary/model/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round46/auxiliary/model/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round46/auxiliary/recency_log_spatial.npy": "41424bbabb65d252679f329cbcf573710fca6d1db625055f39a4183e4960c5e4",
+    "outputs/round46/confirmation/model/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round46/confirmation/model/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round46/confirmation/recency_log_spatial.npy": "bb96799aa97fd65d7219e4e3f4c94bb774bbcf7812db1adaae49632fafa6edb7",
+    "outputs/round46/development/model/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round46/development/model/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round46/development/recency_log_spatial.npy": "0c5a0bcb82f899edfa17b84ede5d4094ee72124eac8a94ba84bf4b066c4a7a92",
+    "outputs/round46/plan.json": "ae866e6cf95b57a28495eda74c40d4326fe4a2fa9a1e00afbdb973e9c6e59c7f",
+    "outputs/round46/results.json": "338fd86a01399930d29055be07471823014f6c5ad8da0dd5ad1f7ed1fa96042e",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "outputs/round71/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round71/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round71/auxiliary/seed42/nn_spatial.npy": "63dd3be20c77943a71be10db93c6913b67e5a90fd72c11ad5393b05f85d69988",
+    "outputs/round71/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round71/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round71/confirmation/seed42/nn_spatial.npy": "948ba6c8887fa473983d02cfe1201799774403e26a6cfcf31c78a56a37f4c340",
+    "outputs/round71/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round71/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round71/development/seed42/nn_spatial.npy": "605ab0cdffb811bc2035baffae4b24ae16b22f371b4a8e5e94b6d01da45f4212",
+    "outputs/round71/plan.json": "d5eb11c9d9f8a5e6524eafb27472fef78f1606cc8953d899ea7822bfa1c791d2",
+    "outputs/round71/results.json": "8c9ddd281fb31df324b7aba4febd40c06cbee073ab45704b03b30176752ca833",
+    "outputs/round79/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round79/auxiliary/predictions.npy": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479",
+    "outputs/round79/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round79/auxiliary/unit_spatial.npy": "5f7e2089b05093cdb9fc1c41ff909b92a4775ce04013625ffc96f27beb885867",
+    "outputs/round79/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round79/confirmation/predictions.npy": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+    "outputs/round79/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round79/confirmation/unit_spatial.npy": "01cce0d58655f1a4a39fe1b71a07e71d974f9a605320743d6edf7ea499ff029b",
+    "outputs/round79/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round79/development/predictions.npy": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+    "outputs/round79/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round79/development/unit_spatial.npy": "8eb22194d22ca3ee40edb414295566d181efffc0cfc9acc07a36ed7a193eb179",
+    "outputs/round79/plan.json": "7b46ade28f061ddf989fd50692f154e02b3bf73facf5a4cb408d415d09d1ea1f",
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round90/preparation/Xquery.pkl": "0802aaa2674a64c2edab03199d61cfd600df2b49be0f358d2ad37e10dca4c677",
+    "outputs/round90/preparation/manifest.json": "400f26bc74c00f7fa0e8062ceb509872eeb6a1af3c3b3437512569c441d17fa7",
+    "outputs/round97/fit_indices.npy": "905e5d48f29d7a858fe7487ef056aab7a38b0e92fb8623e1b5fe01e1b590943f",
+    "outputs/round97/fit_source_cache_indices.npy": "c6fb72401d8a4fd41c49d3a747576977bdc3202507da0a8340d5d043bb6432a0",
+    "outputs/round97/query_indices.npy": "82fedd724cba31de7e9110048be6bc71635531c5520d1f9a8dee9432aaea04c4",
+    "outputs/round97/query_source_cache_indices.npy": "52c7cf461c6e9eab76339a620b0294d34b026b862277356959b65eff077fbaf8",
+    "outputs/round97/reference_spatial/H/spatial.npy": "bd6d4b91bf97f9267530a19406f15ae1de37b999b877dd6df2c0d77b3d23f8d4",
+    "outputs/round97/reference_spatial/N/spatial.npy": "4b4ed462ecbbf714e5a1eaa4c6d2697aedc1594d050f7777b420b9d38b211b36",
+    "outputs/round97/reference_spatial/U22/spatial.npy": "4204e008d509163e9b7a94170d62dc19613d0cee97c3af23bf80f06f66ff551d",
+    "outputs/round97/sealed_manifest.json": "429e5405652b4e9d54308d6f09d6722ab540694b13f92e2ad8577277b85893cb",
+    "outputs/round97/v22_predictions.npy": "b957793d3aaf44683ab3700630ac5408d60a543e746cdefd7fccb939e430f0bf",
+    "reports/feature_schema.json": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa",
+    "runs/v1/models/final_config.json": "2ca4258f363d1937df50aed72f5b11dc32b7e70d9dd5fb57fb6f375673a2a425",
+    "src/geography_city_road_support.py": "1ab904ffd435afd80e4abb33d16ff1e16a94d1d2124e23c630e3c07fac6e1a97",
+    "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round12_experiment.py": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+    "src/round12_log_geo.py": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+    "src/round19_experiment.py": "f45ee5cba3e9dedfdcd01f5e3703f3701424ebd6c299186cc151710237934429",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round33_reproduction.py": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+    "src/round35_reproduction.py": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+    "src/round36_combination.py": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+    "src/round38_fixed_average.py": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+    "src/round39_city_road_experiment.py": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+    "src/round39_prepare_geo.py": "2ed6299dc4d7b32db3e123209b12572c6f9798dd15b8aab4b4f11fab352009b8",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round40_three_branch.py": "2642c47c977736eba13d9a1dcf2c8ba1b422d35e69f4b6853dc500ee0f258f80",
+    "src/round46_experiment.py": "e56c758f55b8dc27c4b5fae613c7ca0b169de3645c09b8244c613123a0ea4405",
+    "src/round46_recency_log.py": "48364428cdf6281205666470c8f61662fdb8aa65a18fc5a67d189d60cf7a8fa8",
+    "src/round47_nn_encode.py": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round48_nn_experiment.py": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+    "src/round48_nn_train.py": "38fb91e01eabb2ed3163f1260e16c826ca55592951c22ce1107ad68c24b37082",
+    "src/round52_nn_train.py": "0d27f93d9c48c7dc13cf0252a16eadd1a2aa8a7f53b0740021fc3d8b37c0740f",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round54_nn_experiment.py": "57ebd44c8f27875476fd7b7122970be2c670b319d5b79690bf480d638d074918",
+    "src/round54_numeric_encode.py": "fe73f4154bcd0811b7cdad09c58e1dfd7cba5350446193e90f70bd8a7ef0206e",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/round63_nn_experiment.py": "70d946c76df35761f55658f7b1ad0f04109ece2cf5901978bae6f0ce97ea513e",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round65_nn_experiment.py": "3854f5170170f1d0bdfc3707c8e0e04832a430cdbcd780fb7753bef18c96898c",
+    "src/round66_nn_branch_ablation.py": "19c889a1c222a5d835c65aee07e4db4e4253ae541a6e7ccc064f171f16e33a1c",
+    "src/round69_nn_experiment.py": "8c8a824d18b13251d5f4f81b10ae0cea357f9b95ca59ec75d24e704a5179ea3f",
+    "src/round69_prior_seed_train.py": "b27e5494e596d20cac96847a8929e3145bb9c5233f7c0096dab5be45f6bfd466",
+    "src/round6_common.py": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+    "src/round6_evaluate.py": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round6_prepare_geo.py": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+    "src/round71_missing_cell.py": "6fad31c31699d973779031bd4c93e3b846455f6aabc1f4f95e1e92eff7dc60fd",
+    "src/round74_nn_experiment.py": "f81cc1519e8d74c226afb40bb0bb4b834dd6dc3657c14bccdb4c6f0c70f34a81",
+    "src/round74_recency_weighted_area_train.py": "f760d8a264c5c84c9a612a55ba77be4c0a3bafac655b1f21d0de99b2951f7b4d",
+    "src/round76_unit_branch_ablation.py": "ee1fe6451225882cde3b36aef2fce44c0241c5c29a50efdc716e18e929ef8d82",
+    "src/round77_area_unit_combination.py": "8b6363eea9a3c4189107a714c5826af76f6b796f8f88d80441a24e88f0bf0fd5",
+    "src/round79_experiment.py": "33e59572785a4500288246b09a2a5aed038d83482f7ac79ac2050846cf530db6",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+    "src/round83_seed_unit.py": "c8d39865c161b73b06f54ca9cc5858b85864b149f15ae81c6e2868797a3b0a8b",
+    "src/round8_experiment.py": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+    "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+    "src/round90_offset_data.py": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+    "src/round90_offset_nn.py": "b473b246925dffe3d084c909679892f45e33f19ed0a6c18c100cfc836bc35e06",
+    "src/round90_offset_trees.py": "666e9fc61d22565aae2f738767bfef471e12679d4e1c0bbe86cf366afa540110",
+    "src/round97_offset_experiment.py": "00d927b81170b9b8acfab984bb72635f413513f62da42733b85e5873528914f1",
+    "src/round97_prepare_fit_labels.py": "bf7c8c01265735293221cd09339a96f0c0a0625afc8fbca8ab0e1b11792f9ef1",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "inventory": {
+    "path": "outputs/round98_artifact_inventory/results.json",
+    "sha256": "11eccec76cee77b5d660bf60eb1f9679b0cb71c9cb1ba4a5d044dd79df54b359"
+  },
+  "new_meta_fits": 0,
+  "new_native_fits": 0,
+  "plan_sha256": "394a65459349e479bb3e8a487b60516156705469fa51bfbe75fd8697bae3642b",
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_statistics_computed": false,
+  "raw_price_table_deserialized_in_extractor": true,
+  "raw_train": {
+    "path": "data_cache/train.pkl",
+    "rows": 455784,
+    "sha256": "9acf8c65bf00f7067e9ea9612cabe9a1524b020a7596c8da3ce3d620131e5c00"
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62",
+    "src/round98_prepare_inputs.py": "2f01a180e145e36eb0d798221e5b3aa232661e70c47772274cbf2b9ea1ba9492"
+  },
+  "stage_order": [
+    "development",
+    "offset",
+    "confirmation"
+  ],
+  "stages": {
+    "confirmation": {
+      "arrays": {
+        "control_v22": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/control_v22.npy",
+          "sha256": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "80ee6c39452e54993d1aa5c0007f1b7ed59601fd1e31155bf468fdc8d34ee96e"
+        },
+        "fit_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/confirmation/fit_indices.npy",
+          "sha256": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+          "shape": [
+            321550
+          ],
+          "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+        },
+        "meta_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/confirmation/meta_indices.npy",
+          "sha256": "08b4c23b62944cd67f84ea56db8ca75fd085dfdef229c2c849f7e28b0afa72c2",
+          "shape": [
+            186745
+          ],
+          "values_sha256": "a176c855c3d290d8eb320ff3f7d23a05fcf48268f40cb1743501f3766f83d40d"
+        },
+        "meta_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/meta_predictions.npy",
+          "sha256": "00ccf29e9761d3268c22d98803ef371be7f55e74cbecb5b66d4f92d2a82c87ad",
+          "shape": [
+            186745,
+            3
+          ],
+          "values_sha256": "bad83c1168e5bac226588b9b3fcaf7a0543c6294f591d705c7d5c24aba071b9a"
+        },
+        "meta_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/confirmation/meta_source_cache_indices.npy",
+          "sha256": "3aaa743827e84273ff669cd62c571b38b7cb356dce9f18def2108f1a07c11f2d",
+          "shape": [
+            186745
+          ],
+          "values_sha256": "0b9432670c2cd8dcf0b26d608ad8204f5e07e1ce6b17518c7d4bc18244c201e5"
+        },
+        "meta_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/meta_trade_days.npy",
+          "sha256": "b77044e32c085e5d0e6063532de7f1fe8b8e41659edb9e523eb345697fdaaa78",
+          "shape": [
+            186745
+          ],
+          "values_sha256": "edfaa485a9d8dca959d0bddcb61128947542e245557de402f8a723e81b7685a0"
+        },
+        "meta_y": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/meta_y.npy",
+          "sha256": "7f49c4ea1f4c5fce2fa25ce4915b270acb57d968e162b87fe899020290505fe5",
+          "shape": [
+            186745
+          ],
+          "values_sha256": "3295b5e88f5f475b684c41e759403c48d7812bd8a7e835cbbaf6ae1312a6fd9b"
+        },
+        "query_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/confirmation/query_indices.npy",
+          "sha256": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+        },
+        "query_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/query_predictions.npy",
+          "sha256": "c49b9aca9d8202b7ffdeb05e725002c4ca480a8f240e09c4f581e60af45a2900",
+          "shape": [
+            133697,
+            3
+          ],
+          "values_sha256": "3d633cf2ea36514f52f94e2971ec9cd44037b6cdd0903d25673f583e64fd1bef"
+        },
+        "query_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/confirmation/query_source_cache_indices.npy",
+          "sha256": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+        },
+        "query_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/confirmation/query_trade_days.npy",
+          "sha256": "b6ad93180e158feeec2f6e94c4f708232ba013a3ab953cc05f9a2912630de673",
+          "shape": [
+            133697
+          ],
+          "values_sha256": "7bd5a24280ca3ec3ab50faa316b1ba112d267fdf86d1b8220a5b27fc780f59a0"
+        }
+      },
+      "cross_stage_role_overlap": "Development query rows are legal later-stage meta labels; independent stage processes required.",
+      "cutoff": "2023-08-11",
+      "meta_max_date": "2023-08-10",
+      "meta_min_date": "2021-08-11",
+      "meta_rows": 186745,
+      "meta_target_units": "TWD",
+      "query_end": "2024-08-10",
+      "query_rows": 133697,
+      "query_y_exported_to_this_stage": false,
+      "source_blocks": [
+        {
+          "all_source_rows_selected": true,
+          "block": "auxiliary",
+          "canonical_indices_values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf",
+          "date_mask": {
+            "cutoff": "2023-08-11",
+            "kind": "trade_day_index_strictly_before_target_cutoff"
+          },
+          "dates": {
+            "first_date": "2021-08-11",
+            "last_date": "2022-08-10",
+            "rows": 105511,
+            "trade_day_index_values_sha256": "188596f67f9f7ef792e045207e9495b761cc03a74624b4a590d304e693f5ef18"
+          },
+          "raw_source_indices_values_sha256": "f7fe35c53e70d72480848c70a5718c3ac781d117a4413dd9503450b056c73568",
+          "selected_rows": 105511,
+          "selected_source_positions_values_sha256": "efd52f372de6edd7e82e8b6d720e226158c992fd1a220c6181075d1597f57b0c",
+          "source_order_preserved": true,
+          "source_rows": 105511
+        },
+        {
+          "all_source_rows_selected": true,
+          "block": "development",
+          "canonical_indices_values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43",
+          "date_mask": {
+            "cutoff": "2023-08-11",
+            "kind": "trade_day_index_strictly_before_target_cutoff"
+          },
+          "dates": {
+            "first_date": "2022-08-11",
+            "last_date": "2023-08-10",
+            "rows": 81234,
+            "trade_day_index_values_sha256": "82ac3780f15154bc983f2f8ab7818e59312e39988b1cd480836b53d201f81021"
+          },
+          "raw_source_indices_values_sha256": "48527fbd6d1dfd9a000761ed9a6385a7f13d7d543ebca63038d9a649d34646a6",
+          "selected_rows": 81234,
+          "selected_source_positions_values_sha256": "a518e3c7abde5cd53214db35a0a18ac5348831da9bf2425faa35f84d0eb139fb",
+          "source_order_preserved": true,
+          "source_rows": 81234
+        }
+      ]
+    },
+    "development": {
+      "arrays": {
+        "control_v22": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/control_v22.npy",
+          "sha256": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+        },
+        "fit_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/development/fit_indices.npy",
+          "sha256": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+          "shape": [
+            240316
+          ],
+          "values_sha256": "73750cf8018b2a28198db91ae397137a90366ae96e5f186cfdf862ab4a29e593"
+        },
+        "meta_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/development/meta_indices.npy",
+          "sha256": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+          "shape": [
+            105511
+          ],
+          "values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf"
+        },
+        "meta_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/meta_predictions.npy",
+          "sha256": "2954d2887269af696384f34f9f8275c0adf48a0925a38194c9bdc700a385f5de",
+          "shape": [
+            105511,
+            3
+          ],
+          "values_sha256": "388489d133aae8ddee0d3abcfb9e94fd8d170032051d9d63aa0ec7b849af324f"
+        },
+        "meta_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/development/meta_source_cache_indices.npy",
+          "sha256": "874df813179be04ce9153adbe97b922301330576651b623aaa1ed589047497e1",
+          "shape": [
+            105511
+          ],
+          "values_sha256": "f7fe35c53e70d72480848c70a5718c3ac781d117a4413dd9503450b056c73568"
+        },
+        "meta_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/meta_trade_days.npy",
+          "sha256": "73adb46b34884df2a8ab4b21ad4e5300b9008ede154683a0236df7b4872f4905",
+          "shape": [
+            105511
+          ],
+          "values_sha256": "188596f67f9f7ef792e045207e9495b761cc03a74624b4a590d304e693f5ef18"
+        },
+        "meta_y": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/meta_y.npy",
+          "sha256": "1ff0534d276c3cb035ce2a168df13cb4e1a786f31f48d36f9b1248e0dad125bb",
+          "shape": [
+            105511
+          ],
+          "values_sha256": "9d2e7ac3504c89b3bbdd4832b4230db8f9312a981fef398f9cc1e578ba610636"
+        },
+        "query_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/development/query_indices.npy",
+          "sha256": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43"
+        },
+        "query_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/query_predictions.npy",
+          "sha256": "f8ddbf00b98d38247d3e89e69cdd095c593407be71c049eeb34acb2b0ae8c874",
+          "shape": [
+            81234,
+            3
+          ],
+          "values_sha256": "a6be3bac40ee88974e3a14a0c4b744d4c594cdc3add1170eb5d072cc8899625c"
+        },
+        "query_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/development/query_source_cache_indices.npy",
+          "sha256": "aab5b28f06d9dfa9f0ee7213f19d2194ef619e31bf84378b8e046abfc2a27a59",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "48527fbd6d1dfd9a000761ed9a6385a7f13d7d543ebca63038d9a649d34646a6"
+        },
+        "query_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/development/query_trade_days.npy",
+          "sha256": "3a970777c989bfbce13a4a2c4adaba06a5118e61e38260ab4a4c2ed573fc508f",
+          "shape": [
+            81234
+          ],
+          "values_sha256": "82ac3780f15154bc983f2f8ab7818e59312e39988b1cd480836b53d201f81021"
+        }
+      },
+      "cross_stage_role_overlap": "Development query rows are legal later-stage meta labels; independent stage processes required.",
+      "cutoff": "2022-08-11",
+      "meta_max_date": "2022-08-10",
+      "meta_min_date": "2021-08-11",
+      "meta_rows": 105511,
+      "meta_target_units": "TWD",
+      "query_end": "2023-08-10",
+      "query_rows": 81234,
+      "query_y_exported_to_this_stage": false,
+      "source_blocks": [
+        {
+          "all_source_rows_selected": true,
+          "block": "auxiliary",
+          "canonical_indices_values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf",
+          "date_mask": {
+            "cutoff": "2022-08-11",
+            "kind": "trade_day_index_strictly_before_target_cutoff"
+          },
+          "dates": {
+            "first_date": "2021-08-11",
+            "last_date": "2022-08-10",
+            "rows": 105511,
+            "trade_day_index_values_sha256": "188596f67f9f7ef792e045207e9495b761cc03a74624b4a590d304e693f5ef18"
+          },
+          "raw_source_indices_values_sha256": "f7fe35c53e70d72480848c70a5718c3ac781d117a4413dd9503450b056c73568",
+          "selected_rows": 105511,
+          "selected_source_positions_values_sha256": "efd52f372de6edd7e82e8b6d720e226158c992fd1a220c6181075d1597f57b0c",
+          "source_order_preserved": true,
+          "source_rows": 105511
+        }
+      ]
+    },
+    "offset": {
+      "arrays": {
+        "control_v22": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/control_v22.npy",
+          "sha256": "b957793d3aaf44683ab3700630ac5408d60a543e746cdefd7fccb939e430f0bf",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "d63de133cd3d89cda66ae0c150b612e8b03ca8990bed1940f6a2da0cc8c8faf3"
+        },
+        "fit_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/offset/fit_indices.npy",
+          "sha256": "905e5d48f29d7a858fe7487ef056aab7a38b0e92fb8623e1b5fe01e1b590943f",
+          "shape": [
+            272117
+          ],
+          "values_sha256": "64e7eadeb39fa96abe8f3f2903aa5dd6632de52a1a4d4f1037ab0c02e7a027f3"
+        },
+        "meta_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/offset/meta_indices.npy",
+          "sha256": "ea7ba1aa919789b4da70f0caedfc0f01a8a96c09312f32d7b1446d158ab47433",
+          "shape": [
+            137312
+          ],
+          "values_sha256": "4eec065e8e71cfdcf67950fae92593dd114c6dd4a2fde38ba1b6aa4e13848dd9"
+        },
+        "meta_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/meta_predictions.npy",
+          "sha256": "925c53aed8c7a8f989d7fbddbb59549dcf35ae55be6ef5a1a6295d18696ce59a",
+          "shape": [
+            137312,
+            3
+          ],
+          "values_sha256": "b831b4232cebddc38fd67aa716fbfefcba0d244573cc4059c5a309830534f16b"
+        },
+        "meta_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/offset/meta_source_cache_indices.npy",
+          "sha256": "cf0b0d1f987767f748b50fae28e4ed83c23690a8d224f2522340cb567a26e9ad",
+          "shape": [
+            137312
+          ],
+          "values_sha256": "d01a02e373bf5b400b8be3a99b8cb87a24e40692ef550d20b2195b0dd5f85289"
+        },
+        "meta_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/meta_trade_days.npy",
+          "sha256": "d2d09b673827dc4860e3f683aa94705d5f1bf58bab4e62a825eabd49b22877dc",
+          "shape": [
+            137312
+          ],
+          "values_sha256": "a79aae90d5e2f0da1f167f5d83684ad234f831d62912f6b0deaacdab6ac611b4"
+        },
+        "meta_y": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/meta_y.npy",
+          "sha256": "3a9c4aae6888412ff65a6bf8a39db9453024191f16514a3c5679a4e6e85a062e",
+          "shape": [
+            137312
+          ],
+          "values_sha256": "60bf73957786da7c5a528c7f871f7c147789b769410e027819ad49b45c1a0134"
+        },
+        "query_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/offset/query_indices.npy",
+          "sha256": "82fedd724cba31de7e9110048be6bc71635531c5520d1f9a8dee9432aaea04c4",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "7dd254c2ae8fed176ec2f0740620d24dbbad39f175cb1bc50f80f13c8b354c45"
+        },
+        "query_predictions": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/query_predictions.npy",
+          "sha256": "40c901c50cf6154ea5d9367c8b36dd86ec9ead09443a25b50aadf5d9bc66f9ec",
+          "shape": [
+            107169,
+            3
+          ],
+          "values_sha256": "286dd7489b22aed73748f570d7e2d7bc02030346eff5af8cc83305b31fc2f199"
+        },
+        "query_source_cache_indices": {
+          "dtype": "int64",
+          "path": "outputs/round98_inputs/offset/query_source_cache_indices.npy",
+          "sha256": "52c7cf461c6e9eab76339a620b0294d34b026b862277356959b65eff077fbaf8",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "9e762d7cc8840d629adfbff5741ecc114473be435c36c706a8e294c65d61db1c"
+        },
+        "query_trade_days": {
+          "dtype": "float64",
+          "path": "outputs/round98_inputs/offset/query_trade_days.npy",
+          "sha256": "390aa9b884d360762bbc4ef87cc9926d7f495743ba0c0ffa08d7d9afb6c76a78",
+          "shape": [
+            107169
+          ],
+          "values_sha256": "0e79200a204c261b1baeb43fa20407badc4a98d7f3cf70cf411f337b44c85acc"
+        }
+      },
+      "cross_stage_role_overlap": "Development query rows are legal later-stage meta labels; independent stage processes required.",
+      "cutoff": "2023-02-11",
+      "meta_max_date": "2023-02-10",
+      "meta_min_date": "2021-08-11",
+      "meta_rows": 137312,
+      "meta_target_units": "TWD",
+      "query_end": "2024-02-10",
+      "query_rows": 107169,
+      "query_y_exported_to_this_stage": false,
+      "source_blocks": [
+        {
+          "all_source_rows_selected": true,
+          "block": "auxiliary",
+          "canonical_indices_values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf",
+          "date_mask": {
+            "cutoff": "2023-02-11",
+            "kind": "trade_day_index_strictly_before_target_cutoff"
+          },
+          "dates": {
+            "first_date": "2021-08-11",
+            "last_date": "2022-08-10",
+            "rows": 105511,
+            "trade_day_index_values_sha256": "188596f67f9f7ef792e045207e9495b761cc03a74624b4a590d304e693f5ef18"
+          },
+          "raw_source_indices_values_sha256": "f7fe35c53e70d72480848c70a5718c3ac781d117a4413dd9503450b056c73568",
+          "selected_rows": 105511,
+          "selected_source_positions_values_sha256": "efd52f372de6edd7e82e8b6d720e226158c992fd1a220c6181075d1597f57b0c",
+          "source_order_preserved": true,
+          "source_rows": 105511
+        },
+        {
+          "all_source_rows_selected": false,
+          "block": "development",
+          "canonical_indices_values_sha256": "099622cecbb5197588e7e15db931a48dfbf730b469bf731705426e4cdbec045a",
+          "date_mask": {
+            "cutoff": "2023-02-11",
+            "kind": "trade_day_index_strictly_before_target_cutoff"
+          },
+          "dates": {
+            "first_date": "2022-08-11",
+            "last_date": "2023-02-10",
+            "rows": 31801,
+            "trade_day_index_values_sha256": "f51e1165e2abb9dad85e8fdcdaaf9436cbd79277cded5c450ce4691c1862e4d1"
+          },
+          "raw_source_indices_values_sha256": "a1610122cec0a0061f88cac314564f8212f30a7c704a5ac07af3cc4e6d3205c0",
+          "selected_rows": 31801,
+          "selected_source_positions_values_sha256": "6a0801a0d561ce584f3b5429daa19fac9225b97dd79b122d55b7e1eea724574b",
+          "source_order_preserved": true,
+          "source_rows": 81234
+        }
+      ]
+    }
+  },
+  "started_at_utc": "2026-09-28T19:55:40.240522+00:00",
+  "status": "prepared_temporal_meta_inputs",
+  "test_read": false,
+  "valid_read": false
+}

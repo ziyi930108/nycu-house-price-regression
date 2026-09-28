@@ -1,0 +1,251 @@
+{
+  "actual_stage_data_readset": {
+    "outputs/round98_inputs/development/control_v22.npy": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+    "outputs/round98_inputs/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round98_inputs/development/meta_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round98_inputs/development/meta_predictions.npy": "2954d2887269af696384f34f9f8275c0adf48a0925a38194c9bdc700a385f5de",
+    "outputs/round98_inputs/development/meta_source_cache_indices.npy": "874df813179be04ce9153adbe97b922301330576651b623aaa1ed589047497e1",
+    "outputs/round98_inputs/development/meta_trade_days.npy": "73adb46b34884df2a8ab4b21ad4e5300b9008ede154683a0236df7b4872f4905",
+    "outputs/round98_inputs/development/meta_y.npy": "1ff0534d276c3cb035ce2a168df13cb4e1a786f31f48d36f9b1248e0dad125bb",
+    "outputs/round98_inputs/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round98_inputs/development/query_predictions.npy": "f8ddbf00b98d38247d3e89e69cdd095c593407be71c049eeb34acb2b0ae8c874",
+    "outputs/round98_inputs/development/query_source_cache_indices.npy": "aab5b28f06d9dfa9f0ee7213f19d2194ef619e31bf84378b8e046abfc2a27a59",
+    "outputs/round98_inputs/development/query_trade_days.npy": "3a970777c989bfbce13a4a2c4adaba06a5118e61e38260ab4a4c2ed573fc508f"
+  },
+  "all_query_reload_exact": true,
+  "caller_arrays_unchanged": true,
+  "caution": "Earlier forward blocks fit a new final three-branch stacker; historically reused data, not a blind holdout. Offset overlaps other windows. Missing pre-auxiliary block prevents the original three-August-window adoption gate. Bootstrap is conditional, not Private win probability.",
+  "completed_at_utc": "2026-09-28T20:11:51.146937+00:00",
+  "cutoff": "2022-08-11",
+  "elapsed_seconds": 0.8279999999795109,
+  "fit_call_elapsed_seconds": 0.48400000017136335,
+  "input_arrays": {
+    "control_v22": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/control_v22.npy",
+      "sha256": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+    },
+    "fit_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/development/fit_indices.npy",
+      "sha256": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "73750cf8018b2a28198db91ae397137a90366ae96e5f186cfdf862ab4a29e593"
+    },
+    "meta_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/development/meta_indices.npy",
+      "sha256": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf"
+    },
+    "meta_predictions": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/meta_predictions.npy",
+      "sha256": "2954d2887269af696384f34f9f8275c0adf48a0925a38194c9bdc700a385f5de",
+      "shape": [
+        105511,
+        3
+      ],
+      "values_sha256": "388489d133aae8ddee0d3abcfb9e94fd8d170032051d9d63aa0ec7b849af324f"
+    },
+    "meta_source_cache_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/development/meta_source_cache_indices.npy",
+      "sha256": "874df813179be04ce9153adbe97b922301330576651b623aaa1ed589047497e1",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "f7fe35c53e70d72480848c70a5718c3ac781d117a4413dd9503450b056c73568"
+    },
+    "meta_trade_days": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/meta_trade_days.npy",
+      "sha256": "73adb46b34884df2a8ab4b21ad4e5300b9008ede154683a0236df7b4872f4905",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "188596f67f9f7ef792e045207e9495b761cc03a74624b4a590d304e693f5ef18"
+    },
+    "meta_y": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/meta_y.npy",
+      "sha256": "1ff0534d276c3cb035ce2a168df13cb4e1a786f31f48d36f9b1248e0dad125bb",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "9d2e7ac3504c89b3bbdd4832b4230db8f9312a981fef398f9cc1e578ba610636"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/development/query_indices.npy",
+      "sha256": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43"
+    },
+    "query_predictions": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/query_predictions.npy",
+      "sha256": "f8ddbf00b98d38247d3e89e69cdd095c593407be71c049eeb34acb2b0ae8c874",
+      "shape": [
+        81234,
+        3
+      ],
+      "values_sha256": "a6be3bac40ee88974e3a14a0c4b744d4c594cdc3add1170eb5d072cc8899625c"
+    },
+    "query_source_cache_indices": {
+      "dtype": "int64",
+      "path": "outputs/round98_inputs/development/query_source_cache_indices.npy",
+      "sha256": "aab5b28f06d9dfa9f0ee7213f19d2194ef619e31bf84378b8e046abfc2a27a59",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "48527fbd6d1dfd9a000761ed9a6385a7f13d7d543ebca63038d9a649d34646a6"
+    },
+    "query_trade_days": {
+      "dtype": "float64",
+      "path": "outputs/round98_inputs/development/query_trade_days.npy",
+      "sha256": "3a970777c989bfbce13a4a2c4adaba06a5118e61e38260ab4a4c2ed573fc508f",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "82ac3780f15154bc983f2f8ab7818e59312e39988b1cd480836b53d201f81021"
+    }
+  },
+  "launch_request": {
+    "path": "outputs/round98_launcher_20260929/research_request.json",
+    "sha256": "f09e3283bfdd05b181bea2a96d9f81a2721c01d181ba1b529813775eeebca6bc"
+  },
+  "meta_rows": 105511,
+  "model_artifact_sha256": {
+    "outputs/round98/development/model/fit_metadata.json": "a3ff8e3451559feecc2de40ded34425f8fa61b04aac1467043c30130dbefbf15",
+    "outputs/round98/development/model/receipt.json": "dda06cd18fbd30eb693950047a49f4a02e411b82c34554feedd7feaf09d512db",
+    "outputs/round98/development/model/solver_arrays.npz": "4da52608cc1de89d8f106a47c0dea4e29e0ddbc0c9884343956b7b3e83f3288b",
+    "outputs/round98/development/model/state.json": "db665b36ee7b2664642e86a1cdb0167f9fad8a324e9d96d6aeea0fd17946247e"
+  },
+  "model_state": {
+    "path": "outputs/round98/development/model/state.json",
+    "sha256": "db665b36ee7b2664642e86a1cdb0167f9fad8a324e9d96d6aeea0fd17946247e"
+  },
+  "new_CSV": false,
+  "new_meta_fits": 1,
+  "new_native_fits": 0,
+  "other_stage_meta_targets_opened": false,
+  "parameters": {
+    "automatic_retry": false,
+    "branch_order": [
+      "N",
+      "H",
+      "U"
+    ],
+    "certificate_tolerances": {
+      "complementarity_mean_TWD": 0.1,
+      "dual_box_absolute": 1e-08,
+      "dual_constraint_violation_mean_TWD": 0.01,
+      "objective_identity_mean_TWD": 0.01,
+      "primal_dual_gap_mean_TWD": 0.1,
+      "stationarity_free_variable_absolute": 1e-10,
+      "stationarity_price_max_TWD": 0.1,
+      "vertex_optimality_mean_TWD": 0.1,
+      "weight_minimum": 0.0,
+      "weight_sum_absolute": 1e-10
+    },
+    "common_price_scale_TWD": 1000000.0,
+    "fallback_weights": null,
+    "format": "R98_convex_L1_stacker_v1",
+    "formulation": "min -y_scaled@u-v; P_scaled.T@u+v<=0; -1<=u<=1; v free",
+    "intercept": false,
+    "method": "highs-ds",
+    "multiple_optima": "accept solver solution for fixed runtime and supplied row order; no second objective",
+    "nonnegative_weights": true,
+    "objective": "equal-row TWD MAE",
+    "prediction": "(N*w_N + H*w_H) + U*w_U; unrounded float64 TWD",
+    "regularization": null,
+    "required_highs": "1.12.0",
+    "required_scipy": "1.18.1",
+    "solver_options": {
+      "dual_feasibility_tolerance": 1e-08,
+      "maxiter": 1000000,
+      "presolve": true,
+      "primal_feasibility_tolerance": 1e-08,
+      "simplex_dual_edge_weight_strategy": "steepest-devex",
+      "threads": 1,
+      "time_limit": 300.0
+    },
+    "time_decay": null,
+    "weight_extraction": "negative of three raw inequality marginals; no clipping or normalization",
+    "weight_sum": 1.0
+  },
+  "plan_sha256": "394a65459349e479bb3e8a487b60516156705469fa51bfbe75fd8697bae3642b",
+  "predictions": {
+    "R98": {
+      "dtype": "float64",
+      "path": "outputs/round98/development/predictions.npy",
+      "sha256": "8ba12937f30b5d19147e9d482562a8e23f0932e247f9d809b144b7d7a0c021d5",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "b0ea24f7b0ee9bbc312488a2e5970e48a388b6877174f10fd1be6e8b655c81f3"
+    },
+    "v22": {
+      "dtype": "float64",
+      "path": "outputs/round98/development/control_v22.npy",
+      "sha256": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+    }
+  },
+  "preparation": {
+    "path": "outputs/round98_inputs/manifest.json",
+    "sha256": "e496b2afcf7ebc69a4e248d13b691e3b2e6e991bfab4e510386ff77cccc97fc7"
+  },
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_end": "2023-08-10",
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "query_scores_computed": false,
+  "raw_price_pickle_opened": false,
+  "schema_version": 1,
+  "selected_submission": "v22",
+  "source_sha256": {
+    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62",
+    "src/round98_l1_stacker.py": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864",
+    "src/round98_temporal_stack.py": "87e3ededcfd7520b3fcf730d2c1b962f5e8000cd0b49cd283756c4b2f144ac6d"
+  },
+  "stage": "development",
+  "started_at_utc": "2026-09-28T20:11:50.317319+00:00",
+  "status": "temporal_stack_stage_predictions_sealed"
+}

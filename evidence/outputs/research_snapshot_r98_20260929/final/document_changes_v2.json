@@ -1,0 +1,38 @@
+{
+  "changes": {
+    "README.md": {
+      "before_sha256": "db5e0cc84e938caf5dafadf0820f47407d012a15f323488960e09f5fdbea6007",
+      "after_sha256": "7440a7f0216de1d57512b3e4ab5b6e9fed7b60dbe9dda1c4c389959e7038106f",
+      "after_bytes": 6355,
+      "before_bytes_path": "evidence/outputs/research_snapshot_r98_20260929/final/navigation_before/README.md",
+      "new_page_initial_draft": false
+    },
+    "HANDOFF.md": {
+      "before_sha256": "b7579517c5c371e81d8749c7e9b2bd1fa17944e209a814c0d53bb3d51992b175",
+      "after_sha256": "4ca083cefec0793a625d98642dfc8dcea5a3842cd4195b7b1d66f4018f8c6f87",
+      "after_bytes": 6944,
+      "before_bytes_path": "evidence/outputs/research_snapshot_r98_20260929/final/navigation_before/HANDOFF.md",
+      "new_page_initial_draft": false
+    },
+    "research/README.md": {
+      "before_sha256": "eef0f8aa2e9d8e4cf5a10103420191d87b2f46da9d21a7d0a7feb15f0564c394",
+      "after_sha256": "a3168e1cbfad7be4ab46d6bb17e131966efe7d7b60bb61d4b9ee6b25b0b39222",
+      "after_bytes": 12294,
+      "before_bytes_path": "evidence/outputs/research_snapshot_r98_20260929/final/navigation_before/research/README.md",
+      "new_page_initial_draft": false
+    },
+    "docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md": {
+      "before_sha256": "d40b98800a2253ace09a9aed97121e2675e037e7a529390be8f12043a08f5880",
+      "after_sha256": "522b9cc33799c99ee50594a5fb588813c54ecc60ac78607140fd258af6530038",
+      "after_bytes": 9001,
+      "before_bytes_path": "evidence/outputs/research_snapshot_r98_20260929/final/navigation_before/docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md",
+      "new_page_initial_draft": true
+    }
+  },
+  "supersedes": "document_changes.json",
+  "prior_sha256": "e0a505d5ac1f513a56cc357d5eeda0619c34f343f5e0702e7f083cb901f7f188",
+  "changes_after_v1": [
+    "helper 38 initial checks passed, 42 expanded checks passed; not a true initial test failure",
+    "final manifest link points to v2 with recovered 15 exact copy identities"
+  ]
+}

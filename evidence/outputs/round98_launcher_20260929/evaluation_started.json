@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round98_temporal_evaluate.py",
+    "--sealed-manifest",
+    "outputs/round98/sealed_manifest.json",
+    "--evaluation-request",
+    "outputs/round98_launcher_20260929/evaluation_request.json",
+    "--out",
+    "outputs/round98/evaluation"
+  ],
+  "pid": 11056,
+  "request_sha256": "5926be59655d74e3db75e38aa46418ea5c28f3eb3c4b8894338996ddc27dbd0a",
+  "started_at_utc": "2026-09-28T20:12:08.807134+00:00"
+}

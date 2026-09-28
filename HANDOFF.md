@@ -15,11 +15,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | presentation/內22頁PPTX、講稿、排練指南及程式對照；20主講＋2附錄，規劃870秒 |
-| 研究程式 | research/src/保存379支歷史原碼與後續R85–R97來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
-| 最新研究 | R97完整v22／v24新切點完成：7 native fit共1,100.391秒；MAE 1,336,410.67／1,340,328.14元，沒有新CSV |
+| 研究程式 | research/src/保存379支歷史原碼與後續R85–R98來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
+| 最新研究 | R98前置時間L1組合完成：3 CPU meta-fit，0 native fit；三窗差+8,798.64／−4,255.03／+5,190.67元，未過門檻，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 40b2f36c…6faf；R97最新發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存收據 |
-| 後續界線 | R97 main／評分／獨立審查已結束；時間外L1盤點尚未立項，後續訓練需另有固定計畫 |
+| 本批發布 | 本頁於發布前核驗，base 2eec4b00…1799f；當前發布身分以Git main歷史與SOURCE_MANIFEST為準，根工作區另存收據 |
+| 後續界線 | R98 main／獨立評分／保存結果稽核已結束；四欄含median僅有限提案，沒有新plan或fit |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
 
@@ -29,7 +29,8 @@
 - REPORT.md：清理、特徵、日期權重、六模型與三分支、年度回測、Public、限制。
 - evidence/reproduction/summary.json及integration_verified.json：全量實測結果。
 - research/README.md：原訓練程式入口及限制。
-- [最新 R97 新切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)：完整重建、四窗反證、評分隔離、實測時間及独立審查。
+- [最新 R98 時間前推組合](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)：三窗結果、合法meta資料、完整反證、數值與保存結果稽核。
+- [前批 R97 新切點](docs/RESEARCH_UPDATES_20260929_OFFSET.md)：完整重建、四窗反證、評分隔離、實測時間及独立審查。
 - [歷史Attention／R96研究](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)：完成結果、反證、實測時間、工程恢復、程式及上游授權。
 - [R93歷史研究](docs/RESEARCH_UPDATES_20260929_R93.md)：建案密度權重與當時尚未實作的Attention提案。
 - [2026-09-29前批](docs/RESEARCH_UPDATES_20260929.md)：R89/R91/R92完整結果及R90準備。
@@ -45,13 +46,15 @@ v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Publi
 
 ## 最新研究與後續工作
 
-[R97完成頁](docs/RESEARCH_UPDATES_20260929_OFFSET.md)是最新入口。固定fit < 2023-02-11，query至2024-02-10，七native與全部learned states依新fit重建；先封存全部向量，獨立scorer才讀query y。新窗v22／v24整體MAE 1,336,410.67／1,340,328.14元，加權1,392,890.34／1,397,452.28元。v24的新案及四季較差，但seen和2千萬至1億元兩價帶較好；億元群270列的退步亦保留。原三個8月窗口均為v24整體及加權較低，不能刪除。
+[R98完成頁](docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md)是最新入口。保留原三支完成R/S的forward預測，三期只用各自cutoff以前的meta資料學非負／和為1的全域L1權重；meta列數105,511／137,312／186,745。三獨立程序只取得自身meta_y，全部query向量保存重載及封存後，另一支scorer才讀query真價。
 
-project兩區間跨零、month兩區間偏退；都不是Private勝率。7次fit呼叫合1,100.391秒，包含於main 1,410.656秒；scorer 29.578秒、獨立審查1.500秒。220個唯一SHA與4個保存区間核對通過，全query保存重載已完成。沒有重跑正式test模型、沒有新CSV。R90早期文件的「尚未fit」是當時時序，目前helpers已在R97使用。
+development／offset／confirmation的整體差為+8,798.64／−4,255.03／+5,190.67元，加權方向相同。offset新案與億元群有利，confirmation中價帶也改善；但每期均有固定大群退超5%，三期門檻皆未过，12配對區間全部跨零。不能稱全面顯著更差，也不代表Private未知部分將改善。仍缺更早forward block，這三窗探索不是原三個8月窗口的完整採用驗證。
 
-[前批Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)均未通過各自事前門檻；[九假設總表](evidence/reports/regression_after_r95_20260929.md)與R96第十項對照及所有失敗來源仍保存。R94是fit前工程失敗，R95是同配置恢復；R97則是現有兩配方的時間穩定檢查，不冒充另一個新模型架構。
+3次CPU meta-fit呼叫合2.828秒，包含於main 6.891秒；scorer26.609秒、保存結果稽核2.609秒。233唯一SHA、9保護檔與12保存區間通過。稽核者亦為helper作者，此角色明示；scorer與前置source審查由其他代理完成。沒有新樹／NN fit、GPU或CSV。原始失敗／修正／凍結時序及summary圖文修订均保存，不能美化成完整獨立重訓。
 
-R97快照以已發布40b2f36c64b41514e1f654e9bfb4b3b2e7f66faf為基礎；本頁內容於發布前核驗；最新發布身分以此儲存庫Git main歷史與SOURCE_MANIFEST為準，根工作區另存發布收據。原prep與失敗收據不可改，原379支manifest、正式報告簡報、v22均保持，最外SOURCE_MANIFEST記錄當前發布包身分。[下一方向盤點](evidence/reports/regression_direction_after_r97_inventory.md)寫於本輪結果未知時，未立項或訓練stacker；不可按同窗query標籤調比例再當外樣本。沒有背景自動研究承諾。
+[前批R97](docs/RESEARCH_UPDATES_20260929_OFFSET.md)已完成新cutoff七模型与fit狀態重建；v22新窗較低而v24原三年較低，反證仍保留。[更早Attention／R96](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)等結果不回寫。[R98後續四欄含median提案](evidence/reports/round98_next_direction.md)尚未立項／fit，不把meta目標保證當query保證，不能按同窗真價挑比例。
+
+本批以2eec4b006db5ecf5b0624f791b90faf02ae1799f為基礎；本頁於發布前核驗，當前發布身分以此儲存庫Git main歷史與SOURCE_MANIFEST為準，根工作區另存發布收據。prep及歷史收據、379原source manifest、正式REPORT／PDF／PPTX與v22保留。原資料／標籤／模型state／逐筆陣列不在文件程式包中，沒有背景自動研究承諾。
 
 使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 

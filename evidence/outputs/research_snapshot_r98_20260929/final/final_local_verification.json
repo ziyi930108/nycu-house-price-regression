@@ -1,0 +1,111 @@
+{
+  "status": "passed_ready_for_parent_packaging",
+  "created_at_utc": "2026-09-28T20:36:36.749414+00:00",
+  "base_commit": "2eec4b006db5ecf5b0624f791b90faf02ae1799f",
+  "copied_files": 124,
+  "copied_bytes": 1557976,
+  "copy_batches": {
+    "preparation": 39,
+    "completed_core": 66,
+    "summary_supplement_including_15_recovered_records": 19
+  },
+  "all_copied_source_sha256_match": true,
+  "actual_disk_baseline_files": 1363,
+  "previous_published_manifest_plus_itself": 1322,
+  "existing_ignored_private_runs_files_hashed_only": 41,
+  "unchanged_existing_files": 1360,
+  "allowed_existing_navigation_edits": [
+    "HANDOFF.md",
+    "README.md",
+    "research/README.md"
+  ],
+  "new_research_page": "docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md",
+  "navigation_before_bytes_saved": true,
+  "navigation_links_checked": 110,
+  "navigation_links_all_passed": true,
+  "immutable_report_link_counts": {
+    "direct_in_snapshot": 42,
+    "mapped_in_snapshot": 11,
+    "original_workspace_dependency_not_bundled": 3,
+    "original_missing": 0
+  },
+  "unbundled_original_dependencies": [
+    {
+      "document": "evidence/reports/round98_artifact_inventory.md",
+      "link": "../outputs/round71/results.json",
+      "original": "outputs/round71/results.json",
+      "status": "original_workspace_dependency_not_bundled"
+    },
+    {
+      "document": "evidence/reports/round98_artifact_inventory.md",
+      "link": "../outputs/round46/results.json",
+      "original": "outputs/round46/results.json",
+      "status": "original_workspace_dependency_not_bundled"
+    },
+    {
+      "document": "evidence/reports/round98_validation_contract_review.md",
+      "link": "validation_design_audit_r84.md",
+      "original": "reports/validation_design_audit_r84.md",
+      "status": "original_workspace_dependency_not_bundled"
+    }
+  ],
+  "historical_source_files_verified": 379,
+  "historical_source_manifest_sha256": "1b622630cb01c7335aca20ce5353a04906b08f264aaf54590f9f4f6a31a894b4",
+  "outer_SOURCE_MANIFEST_unchanged_sha256": "8b3c111d9db378526f7d1fe012a6096cb96d5802609c00449b8ca658713b8740",
+  "formal_REPORT_PDF_PPTX_unchanged": {
+    "REPORT.md": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e",
+    "docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf"
+  },
+  "preparation_receipts_preserved": {
+    "baseline.json": "7a024137ac78d9ab3a288425b0fe83be22d47af251a7e578c09e126a3a8c2c4f",
+    "copy_manifest.json": "f9ddecf8577689dd1d32edd3fc52b7d2670d42e4387befa211725076eca8d291",
+    "preparation_verification.json": "6a272fc418c2e56a9d601b94998be63d2df64f7a4d455fe956e8f09be4f9c214"
+  },
+  "json_files_scanned": 55,
+  "long_numeric_vectors_found": [],
+  "new_snapshot_contains_model_or_data_arrays": false,
+  "excluded_from_copy": [
+    "outputs/round98/confirmation/control_v22.npy",
+    "outputs/round98/confirmation/predictions.npy",
+    "outputs/round98/development/control_v22.npy",
+    "outputs/round98/development/predictions.npy",
+    "outputs/round98/offset/control_v22.npy",
+    "outputs/round98/offset/predictions.npy",
+    "outputs/round98/confirmation/model/solver_arrays.npz",
+    "outputs/round98/confirmation/model/state.json",
+    "outputs/round98/development/model/solver_arrays.npz",
+    "outputs/round98/development/model/state.json",
+    "outputs/round98/evaluation/confirmation/month_replicates.npy",
+    "outputs/round98/evaluation/confirmation/project_replicates.npy",
+    "outputs/round98/evaluation/development/month_replicates.npy",
+    "outputs/round98/evaluation/development/project_replicates.npy",
+    "outputs/round98/evaluation/offset/month_replicates.npy",
+    "outputs/round98/evaluation/offset/project_replicates.npy",
+    "outputs/round98/offset/model/solver_arrays.npz",
+    "outputs/round98/offset/model/state.json",
+    "outputs/round98_launcher_20260929/confirmation.log",
+    "outputs/round98_launcher_20260929/development.log",
+    "outputs/round98_launcher_20260929/evaluation.log",
+    "outputs/round98_launcher_20260929/offset.log"
+  ],
+  "copy_manifest_final": "copy_manifest_v2.json",
+  "copy_manifest_sha256": "3e4a15c76529ed4a60875f7ec7cfd84b48036df98b4b180b8c021cc90a70f081",
+  "first_copy_manifest_and_attempt_receipts_preserved": true,
+  "document_changes_final": "document_changes_v2.json",
+  "document_changes_sha256": "12c4de94fac707158c9555393c3e6a20b00eea828a55203cdcb01bdaee799b51",
+  "link_verification_sha256": "132ff0b992ac35b90ed7b3262abfefbf782b70fc990efa4b9612780a90e38bc0",
+  "final_navigation_sha256": {
+    "README.md": "7440a7f0216de1d57512b3e4ab5b6e9fed7b60dbe9dda1c4c389959e7038106f",
+    "HANDOFF.md": "4ca083cefec0793a625d98642dfc8dcea5a3842cd4195b7b1d66f4018f8c6f87",
+    "research/README.md": "a3168e1cbfad7be4ab46d6bb17e131966efe7d7b60bb61d4b9ee6b25b0b39222",
+    "docs/RESEARCH_UPDATES_20260929_TEMPORAL_STACK.md": "522b9cc33799c99ee50594a5fb588813c54ecc60ac78607140fd258af6530038"
+  },
+  "verification_elapsed_seconds": 1.587,
+  "verification_time_scope": "final copy identities, baseline protection, links and JSON privacy scan; not total snapshot work",
+  "fit_score_predict_calls": 0,
+  "package_commit_push_zip_executed": false,
+  "selected_submission": "v22",
+  "Private_score": null,
+  "not_full_training_backup": true
+}

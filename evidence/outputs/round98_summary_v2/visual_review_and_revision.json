@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-09-28T20:30:42.032821+00:00",
+  "v1_preserved": true,
+  "v1_plot_issue": "Title/subtitle and footer/legend overlap seen by root with view_image",
+  "v2_plot_visual_review": "passed: titles, axes, legends and footer separated; no clipping observed",
+  "v2_changes": [
+    "new output/source/report names",
+    "chart spacing/height/legend placement",
+    "clarify general median function-class statement"
+  ],
+  "aggregate_data_unchanged": true,
+  "new_fit_predict_score_bootstrap_calls": 0,
+  "pre_run_cli_attempt": {
+    "command": "python src/summarize_round98_v2.py",
+    "tool_exit_code": 1,
+    "message": "--run required",
+    "aggregate_outputs_created": false
+  },
+  "successful_command": "python src/summarize_round98_v2.py --run",
+  "file_sha256": {
+    "src/summarize_round98_v2.py": "402fe439810847d3221bb4f093224c1aa211a30941ebcbc3ec8d449659c76f17",
+    "reports/round98_summary_v2.md": "91f608b164ca2a53b6ee79332d93f6712e03164826340cceaf0b6e9d831a0f77",
+    "outputs/round98_summary_v2/summary.json": "09a5da53b5591ceac9e295c6ae74b10e415c9c9f7a0473f801573048a292a309",
+    "outputs/round98_summary_v2/mae_delta.png": "23eaff76dd21049c07509fed8747f2b017e6451be968d038d1e6820500b08c89",
+    "outputs/round98_summary_v2/receipt.json": "d5ba924a54177cc0326a862ced82ef24a8c93320229d8663020612d8508b9b73"
+  }
+}
