@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "check_count": 23,
+  "checks": [
+    "same_effective_area_fallbacks",
+    "fixed_sqrt_dimensionless_scale",
+    "transform_correct_million_scale",
+    "inverse_correct_one_million_and_nonnegative_projection",
+    "saved_float32_dates_promoted_without_renormalization",
+    "weighted_L1_matches_recency_total_TWD_L1_before_projection",
+    "target_inverse_roundtrip",
+    "hundred_m2_matches_raw_million_target",
+    "quarter_and_four_times_area_multiply_scale_by_half_and_two",
+    "same_rows_and_no_feature_mutation",
+    "query_labels_absent_from_predict_API",
+    "fit_state_API_no_y_or_query",
+    "misordered_target_series_rejected",
+    "misordered_dates_series_rejected",
+    "float64_date_input_rejected",
+    "zero_date_input_rejected",
+    "NaN_date_input_rejected",
+    "negative_target_rejected",
+    "NaN_target_rejected",
+    "wrong_target_shape_rejected",
+    "nonfinite_prediction_rejected",
+    "prediction_overflow_rejected",
+    "underflow_zero_scale_rejected"
+  ],
+  "synthetic_only": true,
+  "real_data_loaded": false,
+  "real_model_training_performed": false,
+  "real_model_or_configuration_loaded": false,
+  "files_written": false,
+  "source_sha256": {
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+    "src/round85_sqrt_area.py": "fabe106b7a6f38c71384119074daba52542ad2bcf6b49ba368f4cbd4248038e3"
+  },
+  "elapsed_seconds": 0.004561499925330281,
+  "purpose": "Pure mathematical and API-boundary helper checks; no GPU, true fit, data-cache loading or model prediction."
+}

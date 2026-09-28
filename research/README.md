@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留原研究程式，原始路徑與SHA256見source_manifest.json。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；本輪新增R85–R88程式另由最外層SOURCE_MANIFEST核對，沒有回寫歷史清單。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -24,8 +24,12 @@ src/保留原研究程式，原始路徑與SHA256見source_manifest.json。原�
 
 這是命令介面說明，並非本次已執行命令。需另提供約1.34GB／396.7MB的原prepared，原trainer要求CUDA。它不是raw Excel至v22的完整重訓入口。
 
-本次實測交付為../src/predict_v22.py保存模型推論，沒有重新訓練六模型、重新下載地理或安裝全新環境。不得把原碼保存寫成從零重訓已驗證。
+v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28另行完成六次單價分支CatBoost研究fit，仍不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
 
 R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days/365)，合法日期正規化、無效日期1；R79沿用R63保存的float32權重。NN價格先驗採建案分組五折OOF，不是時間OOF。歷史回測必須按切點重建全部fit狀態。
 
 如後續要求從原始四表一鍵重訓，需串接原driver前置狀態並實際跑完，另保存收據。
+
+## 後續固定實驗R85–R88
+
+[完整摘要](../docs/RESEARCH_UPDATES_20260928.md)含各新driver與保存結果。R85／R86各三期新fit；R87／R88各三期CPU後處理評估。全數保留研究、不final、不產CSV。這些來源依賴原工作區的完整歷史artifact與精確SHA，複製程式不等於已取得必要資料或可在乾淨環境重跑。原training source bytes與拒絕覆寫保護仍保留。

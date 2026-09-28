@@ -1,0 +1,1322 @@
+{
+  "review_type": "recommendation_only_not_selection_mutation",
+  "timestamp_utc": "2026-09-28T14:35:13.648669+00:00",
+  "round": 86,
+  "candidate": "OOF_prior_feature_in_unit_CatBoost",
+  "recommendation": "retain_research_do_not_final_fit_or_export",
+  "reason": "Tiny confirmation benefit with all paired intervals crossing zero; development and auxiliary worsen; all periods worse than v24. Some price-band and city gains are preserved.",
+  "selector_changed": false,
+  "csv_generated": false,
+  "private_score": null,
+  "new_fits_in_review": 0,
+  "prices_recomputed_in_review": false,
+  "stage_summary": {
+    "development": {
+      "query_rows": 81234,
+      "fit_rows": 240316,
+      "fit_seconds": 143.3279999999795,
+      "period_seconds": 164.8279999999795,
+      "overall_mae": 1439650.0170976613,
+      "weighted_mae": 1431496.9599014884,
+      "vs_v22": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": 101379.08208561665,
+            "direction": "higher_MAE",
+            "relative_change_pct": 8.158676386653418
+          },
+          "Q2": {
+            "delta_TWD": 21959.88522178703,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.6676534641108853
+          },
+          "Q3": {
+            "delta_TWD": 553.4163650830742,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.03817520616264947
+          },
+          "Q4": {
+            "delta_TWD": 18987.752428970765,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.2430688774110354
+          }
+        },
+        "overall": {
+          "delta_TWD": 32262.94629181223,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.2924003609994026
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": 50589.952819532715,
+            "direction": "higher_MAE",
+            "relative_change_pct": 2.9794664249476854
+          },
+          "seen": {
+            "delta_TWD": -780.8089993441245,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.08837746490939491
+          }
+        },
+        "weighted": {
+          "delta_TWD": 31779.215847765794,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.2704017279748134
+        }
+      },
+      "vs_v24": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": 86906.0868001706,
+            "direction": "higher_MAE",
+            "relative_change_pct": 6.913410880478454
+          },
+          "Q2": {
+            "delta_TWD": 34360.550279103685,
+            "direction": "higher_MAE",
+            "relative_change_pct": 2.63417765501468
+          },
+          "Q3": {
+            "delta_TWD": 679.3655174470041,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.046867374677317386
+          },
+          "Q4": {
+            "delta_TWD": 21948.160788557492,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.439667772503861
+          }
+        },
+        "overall": {
+          "delta_TWD": 32309.30028667883,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.2957695958581548
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": 51565.73545592604,
+            "direction": "higher_MAE",
+            "relative_change_pct": 3.0386808609666804
+          },
+          "seen": {
+            "delta_TWD": -2410.2230872113723,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.27230382780789597
+          }
+        },
+        "weighted": {
+          "delta_TWD": 31801.03812607564,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.271996197984083
+        }
+      },
+      "testmix_delta_vs_v22": 76651.27472488768,
+      "unit_layer_differences_vs_v22": {
+        "native": 37449.60665541608,
+        "base": 42914.9181715718,
+        "reference": 27804.515771383652,
+        "spatial": 31143.693755446002
+      }
+    },
+    "confirmation": {
+      "query_rows": 133697,
+      "fit_rows": 321550,
+      "fit_seconds": 154.875,
+      "period_seconds": 186.7970000000205,
+      "overall_mae": 1382177.3931922794,
+      "weighted_mae": 1445471.3423724398,
+      "vs_v22": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": 9184.340296383714,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.0091440305740607
+          },
+          "Q2": {
+            "delta_TWD": -4225.602477482753,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.3591264001504113
+          },
+          "Q3": {
+            "delta_TWD": -14538.602134115761,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.9752996367382138
+          },
+          "Q4": {
+            "delta_TWD": 7447.09409692511,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.42053723153181455
+          }
+        },
+        "overall": {
+          "delta_TWD": -1051.0122576861177,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.0759825531015057
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": -5256.027751867427,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.2905187942069065
+          },
+          "seen": {
+            "delta_TWD": 4504.183989691897,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.5489561532067366
+          }
+        },
+        "weighted": {
+          "delta_TWD": -1682.073047700571,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.11623322239212586
+        }
+      },
+      "vs_v24": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": 6302.627035015263,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.6903253954271715
+          },
+          "Q2": {
+            "delta_TWD": 7000.554965723306,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.6006958363658388
+          },
+          "Q3": {
+            "delta_TWD": 522.8157203900628,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.03543026135484073
+          },
+          "Q4": {
+            "delta_TWD": 20547.327762220055,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.1689546987467825
+          }
+        },
+        "overall": {
+          "delta_TWD": 8981.477884972002,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.6540565541197418
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": 11653.386733990628,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.6501999444436635
+          },
+          "seen": {
+            "delta_TWD": 5451.650698379846,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.6651986283281008
+          }
+        },
+        "weighted": {
+          "delta_TWD": 9382.4602146307,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.6533342282082799
+        }
+      },
+      "testmix_delta_vs_v22": -3363.175210446352,
+      "unit_layer_differences_vs_v22": {
+        "native": -40227.13661938277,
+        "base": -18933.34361434914,
+        "reference": -26033.8747401617,
+        "spatial": -23466.986429441487
+      }
+    },
+    "auxiliary": {
+      "query_rows": 105511,
+      "fit_rows": 134805,
+      "fit_seconds": 119.0,
+      "period_seconds": 138.1720000000205,
+      "overall_mae": 2322308.4175787326,
+      "weighted_mae": 2029987.3013534679,
+      "vs_v22": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": -6332.130394276697,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.3543874485082754
+          },
+          "Q2": {
+            "delta_TWD": 20213.55318497354,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.8440171846696432
+          },
+          "Q3": {
+            "delta_TWD": 8526.261421258096,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.32893989244908717
+          },
+          "Q4": {
+            "delta_TWD": 44495.54767220933,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.6079136873206945
+          }
+        },
+        "overall": {
+          "delta_TWD": 12956.059882162604,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.5610256849277517
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": 16886.23185532121,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.6774259737827526
+          },
+          "seen": {
+            "delta_TWD": -10599.442901747534,
+            "direction": "lower_MAE",
+            "relative_change_pct": -0.8756781054727547
+          }
+        },
+        "weighted": {
+          "delta_TWD": 6821.639078408945,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.337176495509417
+        }
+      },
+      "vs_v24": {
+        "forecast_quarters": {
+          "Q1": {
+            "delta_TWD": 17574.305564794922,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.9969114111972877
+          },
+          "Q2": {
+            "delta_TWD": 52192.38990940573,
+            "direction": "higher_MAE",
+            "relative_change_pct": 2.208787365819598
+          },
+          "Q3": {
+            "delta_TWD": 48957.07241295185,
+            "direction": "higher_MAE",
+            "relative_change_pct": 1.9186726139191812
+          },
+          "Q4": {
+            "delta_TWD": 91739.96792970132,
+            "direction": "higher_MAE",
+            "relative_change_pct": 3.372743130302003
+          }
+        },
+        "overall": {
+          "delta_TWD": 46899.275720728096,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.0611359450912747
+        },
+        "strata": {
+          "missing": {
+            "delta_TWD": null,
+            "direction": "no_samples",
+            "relative_change_pct": null
+          },
+          "new_nonmissing": {
+            "delta_TWD": 52974.76810441259,
+            "direction": "higher_MAE",
+            "relative_change_pct": 2.1564117372284253
+          },
+          "seen": {
+            "delta_TWD": 10485.785742451902,
+            "direction": "higher_MAE",
+            "relative_change_pct": 0.8816462453410612
+          }
+        },
+        "weighted": {
+          "delta_TWD": 37416.32506969804,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.8777913316534
+        }
+      },
+      "testmix_delta_vs_v22": 4467.646730907261,
+      "unit_layer_differences_vs_v22": {
+        "native": -1848.7264638147317,
+        "base": 13300.445064212196,
+        "reference": 8543.642511463258,
+        "spatial": 10897.999044304714
+      }
+    }
+  },
+  "true_price_tail_decomposition": {
+    "development": {
+      "v22": {
+        "band_contributions_TWD": {
+          "<10m": -1943.305148666789,
+          "10-20m": 733.9656833048624,
+          "20-50m": 6996.8393504572,
+          "50-100m": -3195.733649988442,
+          ">=100m": 29671.180056705074
+        },
+        "all_bands_sum": 32262.946291811906,
+        "ge_100m_contribution": 29671.180056705074,
+        "all_other_bands_contribution": 2591.766235106832
+      },
+      "v24": {
+        "band_contributions_TWD": {
+          "<10m": -2467.8904629731373,
+          "10-20m": 1349.2918674598413,
+          "20-50m": 7720.826798219977,
+          "50-100m": -3278.5678435577265,
+          ">=100m": 28985.639927529526
+        },
+        "all_bands_sum": 32309.30028667848,
+        "ge_100m_contribution": 28985.639927529526,
+        "all_other_bands_contribution": 3323.6603591489543
+      }
+    },
+    "confirmation": {
+      "v22": {
+        "band_contributions_TWD": {
+          "<10m": 1383.49978153169,
+          "10-20m": 1686.5942682848042,
+          "20-50m": -6533.023137317407,
+          "50-100m": -4045.0041099714676,
+          ">=100m": 6456.920939786607
+        },
+        "all_bands_sum": -1051.0122576857739,
+        "ge_100m_contribution": 6456.920939786607,
+        "all_other_bands_contribution": -7507.933197472381
+      },
+      "v24": {
+        "band_contributions_TWD": {
+          "<10m": 384.3605538407265,
+          "10-20m": 3110.5810203218152,
+          "20-50m": 2758.894857242352,
+          "50-100m": -1558.6765472481643,
+          ">=100m": 4286.31800081559
+        },
+        "all_bands_sum": 8981.477884972319,
+        "ge_100m_contribution": 4286.31800081559,
+        "all_other_bands_contribution": 4695.159884156729
+      }
+    },
+    "auxiliary": {
+      "v22": {
+        "band_contributions_TWD": {
+          "<10m": 2254.8537103361914,
+          "10-20m": 10350.971339438069,
+          "20-50m": 6698.595107934279,
+          "50-100m": -2275.371338148764,
+          ">=100m": -4072.988937396615
+        },
+        "all_bands_sum": 12956.059882163161,
+        "ge_100m_contribution": -4072.988937396615,
+        "all_other_bands_contribution": 17029.048819559775
+      },
+      "v24": {
+        "band_contributions_TWD": {
+          "<10m": 4031.6218784762773,
+          "10-20m": 26902.799868394668,
+          "20-50m": 20035.19520390669,
+          "50-100m": -2852.775127775356,
+          ">=100m": -1217.5661022738232
+        },
+        "all_bands_sum": 46899.27572072845,
+        "ge_100m_contribution": -1217.5661022738232,
+        "all_other_bands_contribution": 48116.84182300228
+      }
+    }
+  },
+  "paired_interval_counts": {
+    "v22": {
+      "entirely_positive": 2,
+      "crosses_zero": 10,
+      "entirely_negative": 0
+    },
+    "v24": {
+      "entirely_positive": 8,
+      "crosses_zero": 4,
+      "entirely_negative": 0
+    }
+  },
+  "all_24_intervals": [
+    {
+      "control": "v22",
+      "stage": "development",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": 32262.946291817818,
+      "lower": -2971.0423036538236,
+      "upper": 84597.21251258384,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "development",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": 31779.215847771848,
+      "lower": -3065.56435334665,
+      "upper": 82974.08206184427,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "development",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": 32262.946291817818,
+      "lower": 5596.240743592143,
+      "upper": 81341.65793385754,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "development",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": 31779.215847771848,
+      "lower": 5499.859059137304,
+      "upper": 93463.54703825385,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "confirmation",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": -1051.0122576698195,
+      "lower": -18279.447561119112,
+      "upper": 16242.343879957509,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "confirmation",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": -1682.073047682643,
+      "lower": -20870.546593485255,
+      "upper": 17325.24861989524,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "confirmation",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": -1051.0122576698195,
+      "lower": -9594.812649413361,
+      "upper": 8701.052214898402,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "confirmation",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": -1682.073047682643,
+      "lower": -10222.471087987937,
+      "upper": 9246.030317818004,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "auxiliary",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": 12956.05988217052,
+      "lower": -12649.659389639715,
+      "upper": 38268.693538863496,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "auxiliary",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": 6821.63907841593,
+      "lower": -14639.261591537972,
+      "upper": 27338.66868539209,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "auxiliary",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": 12956.05988217052,
+      "lower": -936.45009292225,
+      "upper": 32054.89885577218,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v22",
+      "stage": "auxiliary",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": 6821.63907841593,
+      "lower": -2196.196994366916,
+      "upper": 15456.45516848797,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "development",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": 32309.300286672078,
+      "lower": -4131.350103698048,
+      "upper": 83029.60934147089,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "development",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": 31801.03812606912,
+      "lower": -4131.503237715218,
+      "upper": 82095.86510650977,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "development",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": 32309.300286672078,
+      "lower": 5948.955262625142,
+      "upper": 75773.44202429788,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "development",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": 31801.03812606912,
+      "lower": 5998.262141447555,
+      "upper": 84122.7692001514,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "confirmation",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": 8981.477884982247,
+      "lower": -6758.869465668941,
+      "upper": 25102.400522659886,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "confirmation",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": 9382.460214641877,
+      "lower": -7888.710064020537,
+      "upper": 27522.267405857274,
+      "classification": "crosses_zero",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "confirmation",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": 8981.477884982247,
+      "lower": 2953.9408948470373,
+      "upper": 16939.959194202347,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "confirmation",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": 9382.460214641877,
+      "lower": 2675.823335804738,
+      "upper": 17963.5208191372,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "auxiliary",
+      "method": "project",
+      "metric": "overall",
+      "point_delta": 46899.27572072949,
+      "lower": 14304.600179581566,
+      "upper": 80337.13450502422,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "auxiliary",
+      "method": "project",
+      "metric": "weighted",
+      "point_delta": 37416.325069700135,
+      "lower": 11632.22701197883,
+      "upper": 62546.71417481219,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "auxiliary",
+      "method": "month",
+      "metric": "overall",
+      "point_delta": 46899.27572072949,
+      "lower": 26342.667533200693,
+      "upper": 74534.4335219362,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    },
+    {
+      "control": "v24",
+      "stage": "auxiliary",
+      "method": "month",
+      "metric": "weighted",
+      "point_delta": 37416.325069700135,
+      "lower": 23928.64717031956,
+      "upper": 52163.178712488676,
+      "classification": "entirely_positive",
+      "valid_replicates": 2000,
+      "invalid_replicates": 0
+    }
+  ],
+  "favorable_evidence": [
+    "Confirmation native improves 40,227.14 TWD, spatial improves 23,466.99 TWD, final median improves only 1,051.01.",
+    "50-100m TWD band improves in all three periods: 802, 1725 and 1382 rows.",
+    "Auxiliary >=100m improves 2,513,129.45 TWD on 171 rows while lower price bands worsen.",
+    "Several sizeable cities and confirmation Q2/Q3 plus auxiliary Q1 improve."
+  ],
+  "OOF_prior_replay_evidence": {
+    "development": {
+      "R63_factor_values_exact": true,
+      "chronological_oof": false,
+      "elapsed_seconds": 6.641000000061467,
+      "fit_only_OOF_rebuild_exact": true,
+      "fit_rows": 240316,
+      "full_fit_state_exact": true,
+      "prior_source_sha256": {
+        "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+        "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+        "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+        "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+      },
+      "query_labels_used": false,
+      "query_prediction_exact": true,
+      "query_rows": 81234
+    },
+    "confirmation": {
+      "R63_factor_values_exact": true,
+      "chronological_oof": false,
+      "elapsed_seconds": 9.265999999828637,
+      "fit_only_OOF_rebuild_exact": true,
+      "fit_rows": 321550,
+      "full_fit_state_exact": true,
+      "prior_source_sha256": {
+        "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+        "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+        "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+        "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+      },
+      "query_labels_used": false,
+      "query_prediction_exact": true,
+      "query_rows": 133697
+    },
+    "auxiliary": {
+      "R63_factor_values_exact": true,
+      "chronological_oof": false,
+      "elapsed_seconds": 4.281999999890104,
+      "fit_only_OOF_rebuild_exact": true,
+      "fit_rows": 134805,
+      "full_fit_state_exact": true,
+      "prior_source_sha256": {
+        "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+        "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+        "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+        "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+      },
+      "query_labels_used": false,
+      "query_prediction_exact": true,
+      "query_rows": 105511
+    }
+  },
+  "prior_replay_seconds_sum": 20.188999999780208,
+  "complete_city_comparison": {
+    "development": {
+      "__MISSING__": {
+        "rows": 3,
+        "candidate_mae": 680461.9350168774,
+        "v22_mae": 279735.0033029721,
+        "delta_vs_v22": 400726.93171390524,
+        "delta_vs_v24": 439776.8249299247
+      },
+      "南投縣": {
+        "rows": 659,
+        "candidate_mae": 827103.8503182725,
+        "v22_mae": 808945.2852708332,
+        "delta_vs_v22": 18158.565047439304,
+        "delta_vs_v24": 11711.22057271062
+      },
+      "嘉義市": {
+        "rows": 569,
+        "candidate_mae": 1471044.0399232756,
+        "v22_mae": 1449839.2619602145,
+        "delta_vs_v22": 21204.77796306112,
+        "delta_vs_v24": 38273.127590473974
+      },
+      "嘉義縣": {
+        "rows": 798,
+        "candidate_mae": 788817.9851270993,
+        "v22_mae": 796139.8951729237,
+        "delta_vs_v22": -7321.910045824363,
+        "delta_vs_v24": -9303.994572406751
+      },
+      "基隆市": {
+        "rows": 737,
+        "candidate_mae": 1167165.7060196379,
+        "v22_mae": 1576679.1173530903,
+        "delta_vs_v22": -409513.41133345244,
+        "delta_vs_v24": -405857.8905616102
+      },
+      "宜蘭縣": {
+        "rows": 2242,
+        "candidate_mae": 846702.3763677326,
+        "v22_mae": 837796.7260337677,
+        "delta_vs_v22": 8905.650333964964,
+        "delta_vs_v24": 12832.620979888714
+      },
+      "屏東縣": {
+        "rows": 615,
+        "candidate_mae": 808348.5341338993,
+        "v22_mae": 804476.4257907437,
+        "delta_vs_v22": 3872.108343155589,
+        "delta_vs_v24": 2248.630225879024
+      },
+      "彰化縣": {
+        "rows": 2246,
+        "candidate_mae": 1064337.7615977249,
+        "v22_mae": 1091125.4413547,
+        "delta_vs_v22": -26787.679756975034,
+        "delta_vs_v24": -34979.058098732494
+      },
+      "新北市": {
+        "rows": 15979,
+        "candidate_mae": 1156148.022937335,
+        "v22_mae": 1158410.7336403904,
+        "delta_vs_v22": -2262.7107030553743,
+        "delta_vs_v24": -18907.037028825842
+      },
+      "新竹市": {
+        "rows": 1250,
+        "candidate_mae": 4774184.281002553,
+        "v22_mae": 4487920.887612366,
+        "delta_vs_v22": 286263.39339018706,
+        "delta_vs_v24": 785799.6843857844
+      },
+      "新竹縣": {
+        "rows": 3639,
+        "candidate_mae": 3032693.661296724,
+        "v22_mae": 2992703.9456951255,
+        "delta_vs_v22": 39989.71560159838,
+        "delta_vs_v24": 58739.33318302035
+      },
+      "桃園市": {
+        "rows": 15846,
+        "candidate_mae": 974628.4724218807,
+        "v22_mae": 967173.1625842331,
+        "delta_vs_v22": 7455.309837647597,
+        "delta_vs_v24": 5751.601774926647
+      },
+      "澎湖縣": {
+        "rows": 28,
+        "candidate_mae": 948497.7643287849,
+        "v22_mae": 881982.6596547604,
+        "delta_vs_v22": 66515.10467402451,
+        "delta_vs_v24": 72915.40128312772
+      },
+      "臺中市": {
+        "rows": 14719,
+        "candidate_mae": 1580365.9466877915,
+        "v22_mae": 1574353.597172104,
+        "delta_vs_v22": 6012.349515687441,
+        "delta_vs_v24": 8240.003222172149
+      },
+      "臺北市": {
+        "rows": 2698,
+        "candidate_mae": 5077656.078039639,
+        "v22_mae": 4386933.1422169255,
+        "delta_vs_v22": 690722.9358227132,
+        "delta_vs_v24": 565854.6303497972
+      },
+      "臺南市": {
+        "rows": 7530,
+        "candidate_mae": 1250096.1090135064,
+        "v22_mae": 1219448.6505086643,
+        "delta_vs_v22": 30647.45850484213,
+        "delta_vs_v24": 10818.938340372639
+      },
+      "臺東縣": {
+        "rows": 265,
+        "candidate_mae": 723823.8191965652,
+        "v22_mae": 645283.1553844083,
+        "delta_vs_v22": 78540.66381215688,
+        "delta_vs_v24": 81075.29118117399
+      },
+      "花蓮縣": {
+        "rows": 535,
+        "candidate_mae": 552311.5872361555,
+        "v22_mae": 568331.7888954201,
+        "delta_vs_v22": -16020.201659264625,
+        "delta_vs_v24": -5979.259830159484
+      },
+      "苗栗縣": {
+        "rows": 2402,
+        "candidate_mae": 1309317.7221554357,
+        "v22_mae": 1310349.0950077362,
+        "delta_vs_v22": -1031.3728523005266,
+        "delta_vs_v24": 128.11934715905227
+      },
+      "金門縣": {
+        "rows": 29,
+        "candidate_mae": 662626.9776066325,
+        "v22_mae": 669907.2026994231,
+        "delta_vs_v22": -7280.225092790555,
+        "delta_vs_v24": -2351.103100011591
+      },
+      "雲林縣": {
+        "rows": 1350,
+        "candidate_mae": 898374.8136694093,
+        "v22_mae": 912461.0147432813,
+        "delta_vs_v22": -14086.201073872042,
+        "delta_vs_v24": -2489.955019526067
+      },
+      "高雄市": {
+        "rows": 7095,
+        "candidate_mae": 1000989.2821252634,
+        "v22_mae": 975547.2646202797,
+        "delta_vs_v22": 25442.017504983698,
+        "delta_vs_v24": 30597.780993235065
+      }
+    },
+    "confirmation": {
+      "南投縣": {
+        "rows": 1015,
+        "candidate_mae": 966015.340469034,
+        "v22_mae": 968899.2763539847,
+        "delta_vs_v22": -2883.9358849506825,
+        "delta_vs_v24": 741.5720652483869
+      },
+      "嘉義市": {
+        "rows": 689,
+        "candidate_mae": 1176837.9594892361,
+        "v22_mae": 1177190.9662041427,
+        "delta_vs_v22": -353.0067149065435,
+        "delta_vs_v24": -15485.509673314169
+      },
+      "嘉義縣": {
+        "rows": 2251,
+        "candidate_mae": 1400770.449578383,
+        "v22_mae": 1421996.8499113687,
+        "delta_vs_v22": -21226.40033298568,
+        "delta_vs_v24": -671.5478855909314
+      },
+      "基隆市": {
+        "rows": 1100,
+        "candidate_mae": 1970249.5749087534,
+        "v22_mae": 1823161.7663045553,
+        "delta_vs_v22": 147087.80860419804,
+        "delta_vs_v24": 158904.60799047095
+      },
+      "宜蘭縣": {
+        "rows": 2907,
+        "candidate_mae": 946384.6445047011,
+        "v22_mae": 936698.9115479336,
+        "delta_vs_v22": 9685.732956767548,
+        "delta_vs_v24": 5691.514884513919
+      },
+      "屏東縣": {
+        "rows": 1013,
+        "candidate_mae": 796951.2100404041,
+        "v22_mae": 756737.25172707,
+        "delta_vs_v22": 40213.95831333415,
+        "delta_vs_v24": 39341.11665234761
+      },
+      "彰化縣": {
+        "rows": 3295,
+        "candidate_mae": 1080165.8589640446,
+        "v22_mae": 1062266.6481675114,
+        "delta_vs_v22": 17899.210796533152,
+        "delta_vs_v24": 12080.532185167074
+      },
+      "新北市": {
+        "rows": 21822,
+        "candidate_mae": 1332436.0380252455,
+        "v22_mae": 1317138.3839079912,
+        "delta_vs_v22": 15297.654117254307,
+        "delta_vs_v24": 24401.672077145195
+      },
+      "新竹市": {
+        "rows": 2131,
+        "candidate_mae": 2559265.1679507303,
+        "v22_mae": 2566026.527375179,
+        "delta_vs_v22": -6761.359424448572,
+        "delta_vs_v24": 144460.8213322051
+      },
+      "新竹縣": {
+        "rows": 5589,
+        "candidate_mae": 2026313.4678843708,
+        "v22_mae": 2035069.8017705318,
+        "delta_vs_v22": -8756.333886160981,
+        "delta_vs_v24": 2441.294124042848
+      },
+      "桃園市": {
+        "rows": 26327,
+        "candidate_mae": 1250644.0500777743,
+        "v22_mae": 1233473.199087833,
+        "delta_vs_v22": 17170.850989941275,
+        "delta_vs_v24": 14101.328881687019
+      },
+      "澎湖縣": {
+        "rows": 30,
+        "candidate_mae": 2527145.4214091306,
+        "v22_mae": 2655932.53910729,
+        "delta_vs_v22": -128787.11769815953,
+        "delta_vs_v24": -31460.203841120936
+      },
+      "臺中市": {
+        "rows": 27157,
+        "candidate_mae": 1411753.748397984,
+        "v22_mae": 1415137.0706278514,
+        "delta_vs_v22": -3383.3222298673354,
+        "delta_vs_v24": 15191.453130458714
+      },
+      "臺北市": {
+        "rows": 4957,
+        "candidate_mae": 3999443.9703249545,
+        "v22_mae": 4070746.049499567,
+        "delta_vs_v22": -71302.07917461265,
+        "delta_vs_v24": -16746.889372215606
+      },
+      "臺南市": {
+        "rows": 9822,
+        "candidate_mae": 906722.7069869433,
+        "v22_mae": 914103.0924280909,
+        "delta_vs_v22": -7380.385441147606,
+        "delta_vs_v24": -18007.506927799783
+      },
+      "臺東縣": {
+        "rows": 115,
+        "candidate_mae": 514777.9161970963,
+        "v22_mae": 528232.2745536994,
+        "delta_vs_v22": -13454.35835660313,
+        "delta_vs_v24": 3260.4423549047206
+      },
+      "花蓮縣": {
+        "rows": 583,
+        "candidate_mae": 643447.3558014812,
+        "v22_mae": 617914.0969179472,
+        "delta_vs_v22": 25533.258883534,
+        "delta_vs_v24": 25862.75979167805
+      },
+      "苗栗縣": {
+        "rows": 4001,
+        "candidate_mae": 1442892.0038966103,
+        "v22_mae": 1491506.7586415755,
+        "delta_vs_v22": -48614.75474496512,
+        "delta_vs_v24": -44616.75647511054
+      },
+      "金門縣": {
+        "rows": 86,
+        "candidate_mae": 689204.271831197,
+        "v22_mae": 780406.0260853175,
+        "delta_vs_v22": -91201.75425412052,
+        "delta_vs_v24": -101311.54750353098
+      },
+      "雲林縣": {
+        "rows": 2364,
+        "candidate_mae": 892943.1267369499,
+        "v22_mae": 901443.8646967484,
+        "delta_vs_v22": -8500.737959798542,
+        "delta_vs_v24": -27168.44962399511
+      },
+      "高雄市": {
+        "rows": 16443,
+        "candidate_mae": 988823.0487536237,
+        "v22_mae": 1011384.7135197725,
+        "delta_vs_v22": -22561.66476614878,
+        "delta_vs_v24": -12146.881493464694
+      }
+    },
+    "auxiliary": {
+      "__MISSING__": {
+        "rows": 1,
+        "candidate_mae": 677521.543432232,
+        "v22_mae": 466689.4190578535,
+        "delta_vs_v22": 210832.12437437847,
+        "delta_vs_v24": 210832.12437437847
+      },
+      "南投縣": {
+        "rows": 869,
+        "candidate_mae": 1157657.4826137845,
+        "v22_mae": 1120003.274417699,
+        "delta_vs_v22": 37654.20819608541,
+        "delta_vs_v24": 38780.560239438666
+      },
+      "嘉義市": {
+        "rows": 731,
+        "candidate_mae": 2369034.074183224,
+        "v22_mae": 2112509.041619518,
+        "delta_vs_v22": 256525.03256370593,
+        "delta_vs_v24": 292405.5794788704
+      },
+      "嘉義縣": {
+        "rows": 1560,
+        "candidate_mae": 1384249.5201395734,
+        "v22_mae": 1356477.5197938092,
+        "delta_vs_v22": 27772.000345764216,
+        "delta_vs_v24": 6934.7194161985535
+      },
+      "基隆市": {
+        "rows": 1577,
+        "candidate_mae": 3389649.2705106367,
+        "v22_mae": 3376918.2425181074,
+        "delta_vs_v22": 12731.027992529329,
+        "delta_vs_v24": 739947.7402307699
+      },
+      "宜蘭縣": {
+        "rows": 2330,
+        "candidate_mae": 1302153.2885136188,
+        "v22_mae": 1324721.5643911606,
+        "delta_vs_v22": -22568.275877541862,
+        "delta_vs_v24": 8036.87503409409
+      },
+      "屏東縣": {
+        "rows": 1240,
+        "candidate_mae": 1370886.1024526954,
+        "v22_mae": 1417256.999851761,
+        "delta_vs_v22": -46370.89739906555,
+        "delta_vs_v24": -47606.097407023655
+      },
+      "彰化縣": {
+        "rows": 2607,
+        "candidate_mae": 1490075.3838597739,
+        "v22_mae": 1467814.145295777,
+        "delta_vs_v22": 22261.238563996973,
+        "delta_vs_v24": 52345.44665679103
+      },
+      "新北市": {
+        "rows": 17191,
+        "candidate_mae": 1900620.439249578,
+        "v22_mae": 1951416.1240692795,
+        "delta_vs_v22": -50795.68481970159,
+        "delta_vs_v24": -30520.60388872819
+      },
+      "新竹市": {
+        "rows": 1586,
+        "candidate_mae": 4314648.450465724,
+        "v22_mae": 4256273.926924423,
+        "delta_vs_v22": 58374.52354130056,
+        "delta_vs_v24": 108639.50346244685
+      },
+      "新竹縣": {
+        "rows": 5042,
+        "candidate_mae": 2849220.581370326,
+        "v22_mae": 2826546.4328607083,
+        "delta_vs_v22": 22674.148509617895,
+        "delta_vs_v24": 9834.294174912851
+      },
+      "桃園市": {
+        "rows": 20723,
+        "candidate_mae": 1808714.7661147271,
+        "v22_mae": 1812176.4616733082,
+        "delta_vs_v22": -3461.6955585810356,
+        "delta_vs_v24": 6905.731827460462
+      },
+      "澎湖縣": {
+        "rows": 40,
+        "candidate_mae": 489317.2624018031,
+        "v22_mae": 956266.8785589598,
+        "delta_vs_v22": -466949.6161571567,
+        "delta_vs_v24": -416113.87579667574
+      },
+      "臺中市": {
+        "rows": 20837,
+        "candidate_mae": 2923021.3808472645,
+        "v22_mae": 2875015.269156784,
+        "delta_vs_v22": 48006.11169048073,
+        "delta_vs_v24": 109171.9832527833
+      },
+      "臺北市": {
+        "rows": 4712,
+        "candidate_mae": 6672017.838776749,
+        "v22_mae": 6656440.228257315,
+        "delta_vs_v22": 15577.610519433394,
+        "delta_vs_v24": 52421.755799636245
+      },
+      "臺南市": {
+        "rows": 8886,
+        "candidate_mae": 1803707.2170418862,
+        "v22_mae": 1777694.4268086532,
+        "delta_vs_v22": 26012.790233233012,
+        "delta_vs_v24": 33659.50536632794
+      },
+      "臺東縣": {
+        "rows": 235,
+        "candidate_mae": 1918888.4802567838,
+        "v22_mae": 1914010.7558401232,
+        "delta_vs_v22": 4877.724416660611,
+        "delta_vs_v24": 35884.209907453274
+      },
+      "花蓮縣": {
+        "rows": 691,
+        "candidate_mae": 1005854.9913736525,
+        "v22_mae": 879105.6143084031,
+        "delta_vs_v22": 126749.37706524937,
+        "delta_vs_v24": 176711.3397035785
+      },
+      "苗栗縣": {
+        "rows": 2607,
+        "candidate_mae": 1654358.0331289503,
+        "v22_mae": 1672356.2437517988,
+        "delta_vs_v22": -17998.210622848477,
+        "delta_vs_v24": 550.8500259763096
+      },
+      "金門縣": {
+        "rows": 35,
+        "candidate_mae": 1528802.6333127208,
+        "v22_mae": 1581063.2769521934,
+        "delta_vs_v22": -52260.643639472546,
+        "delta_vs_v24": 33564.99886935856
+      },
+      "雲林縣": {
+        "rows": 1873,
+        "candidate_mae": 1108518.3954159026,
+        "v22_mae": 1068528.7518653253,
+        "delta_vs_v22": 39989.64355057734,
+        "delta_vs_v24": 31370.8975515645
+      },
+      "高雄市": {
+        "rows": 10138,
+        "candidate_mae": 1856510.7274337334,
+        "v22_mae": 1809932.9185925287,
+        "delta_vs_v22": 46577.80884120474,
+        "delta_vs_v24": 58231.410414311336
+      }
+    }
+  },
+  "fit_seconds_sum": 417.2029999999795,
+  "main_inner_seconds": 494.0,
+  "main_outer_seconds": 494.14100000006147,
+  "limitations": [
+    "Repeatedly inspected historical windows, not blind",
+    "No same-run v22 retrain; GPU randomness not isolated",
+    "Bootstrap not corrected for selection or future shift; not Private probability",
+    "True-price groups cannot be inference routing",
+    "This review does not rescore per-row area/type candidate groups or reload models",
+    "Grouped project OOF is not temporal OOF"
+  ],
+  "input_sha256": {
+    "outputs/round86/results.json": "0056e3e508fd6fe3cc4df8902d7824298d50817ac1826b407789eeb641294132",
+    "outputs/round86/results.sha256": "1ac5257ed5276f02ea261a661b5a00e1b989db0f30cf46fa552cb252b53722bf",
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round79/results.sha256": "a6defd8e9e91e5e9dafd063fdc34a7227b6e0014757e6c923a876c330907fc88",
+    "reports/round86_diagnostics.json": "93f9db805b3cd26e6a7e8ea0cae435cdebc985f36fbb1a3a83fae49c744ae623",
+    "reports/round86_diagnostics.sha256": "b0d0eae667c04c91172386a0c6d621784534fb33c73be3337d2eb1dc7f318ad3",
+    "outputs/round86/paired_vs_v22/results.json": "42cb59fe36cbff786c0c065234d6aea54adcbbc565274d1fb295c872d74e41e3",
+    "outputs/round86/paired_vs_v22/results.sha256": "a940bd54b6e8c83b21c0cc609a2d5dcbb5d734a163f395600416c454bf7ea232",
+    "outputs/round86/paired_vs_v24/results.json": "6f7a732b06b06c1b887e2579c2dcde1a3daa43fb1d0d7b93ed3ce933840bd0a1",
+    "outputs/round86/paired_vs_v24/results.sha256": "ce39a82f4f7117da4f8a6320ba1efe78fc0f7a31af47fc4f43d210a3f2f2ca17",
+    "outputs/round86/execution.json": "939b3227ab371da68c0670032e19c386602e384a4948197e3cfc483728fa3f77",
+    "outputs/round86/execution.sha256": "9cdc4d06dbdc209d2a9fa254b8193ba72a42ffffa1273a9308ad34f243a4b574",
+    "outputs/round86/diagnostics/execution.json": "2f58980197dcf4123e40f328ba4ba08d7df445489ba58600dbbb545120a253f7",
+    "outputs/round86/diagnostics/execution.sha256": "4cbb9bbba8ffb69947be77adc96ef5b993cb740e0935cfe2a214c5a6cef0d4a6",
+    "outputs/round86/plan.json": "0379444edaae881a3d0d4b441e2cd21b3945d03f05e3c20b29b5022c4b957112",
+    "outputs/round86/plan.sha256": "cc035dfc6fedbce071ed10c5d2864f6289dc88efd298211449a51e8aef10f5dd",
+    "outputs/round86/development/model/metadata.json": "38336b9764800a9643d0639916719dfb9af1fda0325a0f1b4adb93504189fb76",
+    "outputs/round86/development/model/metadata.sha256": "edeb7b0d40d043c15a125b4ffd56ec528f0530535c5e185c1e0b8ba07f6df13c",
+    "outputs/round86/confirmation/model/metadata.json": "647b22183c509edbdfc100a1e34e31ca7614236a57e876813812ccc40107e02f",
+    "outputs/round86/confirmation/model/metadata.sha256": "2272408660a4cd04183a068c43661d8db4e5698bd5a8ceba5c84a973105de8c3",
+    "outputs/round86/auxiliary/model/metadata.json": "5242599709a692b1807fd6164b594c2d14874dad10e2fe08e6fed04d04099079",
+    "outputs/round86/auxiliary/model/metadata.sha256": "346f46b915211aac683329e91ec06006ba55c16512511b0af8889c65ee658ccc",
+    "outputs/round86/development/prior_verification.json": "947f1dadb3f506d81395602a132017c3b9a028adfd2b26a394271316d4f7b4e3",
+    "outputs/round86/development/prior_verification.sha256": "df22e388ee41765952d761c9e18939fb966dd09bd5f8e14399fbbfbfdd73ac03",
+    "outputs/round86/confirmation/prior_verification.json": "0d00b30bca74a2febe186984ad445c10d87fae70689c6abf05523d8bced96763",
+    "outputs/round86/confirmation/prior_verification.sha256": "8bad3c536d27ab2d58d7964dd8f05ac2fea1f2071413f3e7b4f64c8c09c80209",
+    "outputs/round86/auxiliary/prior_verification.json": "7d31223c65973bb2aad3b3607ef4af262d5167d9f73403713fbd9df471783611",
+    "outputs/round86/auxiliary/prior_verification.sha256": "33afae32492eb89b92ee27c6757ddd773675af03413108fdd5a7770f41641017",
+    "outputs/round86/development/model/execution.json": "41e356793116661e5f24b38e85e92316dc5cd8361fe275d602f32082bf161b60",
+    "outputs/round86/development/model/execution.sha256": "bc26f9768c2aebeba297a36ec4b6e47ae332e1176c267fc8f1a5737a7a04713e",
+    "outputs/round86/confirmation/model/execution.json": "d92712a5d54b74ade7539289fc11d8412e1000a107fb11540b46bd3385bbfcd6",
+    "outputs/round86/confirmation/model/execution.sha256": "7891b2c3367f0fe2508d6936299243b70ccf8035866291fb3333b3434aa98270",
+    "outputs/round86/auxiliary/model/execution.json": "240a0bdd3260a1dd053533f17bf8c69dd6663af41fcdc5e0ecebf27b36d25587",
+    "outputs/round86/auxiliary/model/execution.sha256": "dec4c4d7681243363f117c144a4db60b280fc06603b963d232cf8653dd91f3a6",
+    "outputs/round86/review_results.py": "ff9d22b87353f71368758345aaf6443b0b9ed98f9c0478efd6907a67f4b11a34"
+  },
+  "inputs_unchanged": true,
+  "review_elapsed_seconds": 0.0193227999843657,
+  "report_sha256": "1ea161351af08de9d0377651b8756af2e91894437bfbfab696b3189e18522aed"
+}

@@ -1,0 +1,2951 @@
+{
+  "purpose": "descriptive_error_audit_not_model_selection",
+  "timestamp_utc": "2026-09-28T14:05:09.954394+00:00",
+  "new_fits": 0,
+  "new_predictions": 0,
+  "test_labels_accessed": false,
+  "test_features_accessed": false,
+  "inputs_unchanged": true,
+  "bias_sign": "prediction minus observed price; positive means overprediction",
+  "true_price_bins": "posthoc diagnostics only; unavailable at deployment; never used for routing",
+  "window_limitation": "Repeatedly inspected historical windows, not fresh blind evidence",
+  "stages": {
+    "auxiliary": {
+      "rows": 105511,
+      "fit_rows": 134805,
+      "overall": {
+        "rows": 105511,
+        "mae": 2309352.35769657,
+        "mean_pred_minus_true": -1291353.0794625431,
+        "median_pred_minus_true": -875144.7652509166,
+        "overprediction_fraction": 0.3014188094132365,
+        "error_share": null,
+        "whole_period_mae_contribution": null
+      },
+      "groups": {
+        "building_area_m2": {
+          "(-inf, 0.0]": {
+            "rows": 62,
+            "mae": 1766249.6919782192,
+            "mean_pred_minus_true": 1735170.1557310794,
+            "median_pred_minus_true": 1437706.7872608895,
+            "overprediction_fraction": 0.9516129032258065,
+            "error_share": 0.0004494235722886464,
+            "whole_period_mae_contribution": 1037.8773862692003
+          },
+          "(0.0, 50.0]": {
+            "rows": 827,
+            "mae": 1603699.584031748,
+            "mean_pred_minus_true": -533208.3514292873,
+            "median_pred_minus_true": -512546.3711555917,
+            "overprediction_fraction": 0.37726723095526,
+            "error_share": 0.005443028207057135,
+            "whole_period_mae_contribution": 12569.870022976329
+          },
+          "(100.0, 200.0]": {
+            "rows": 75133,
+            "mae": 2018613.816753143,
+            "mean_pred_minus_true": -1142478.7881685635,
+            "median_pred_minus_true": -902860.9825631566,
+            "overprediction_fraction": 0.3032089760824139,
+            "error_share": 0.6224379025343587,
+            "whole_period_mae_contribution": 1437428.4377374293
+          },
+          "(1000.0, 5000.0]": {
+            "rows": 24,
+            "mae": 57125766.83097509,
+            "mean_pred_minus_true": -23616504.45788979,
+            "median_pred_minus_true": 8985108.786832668,
+            "overprediction_fraction": 0.5833333333333334,
+            "error_share": 0.005626720509820564,
+            "whole_period_mae_contribution": 12994.080275453765
+          },
+          "(200.0, 500.0]": {
+            "rows": 10956,
+            "mae": 5604517.979450719,
+            "mean_pred_minus_true": -3429408.9830171964,
+            "median_pred_minus_true": -2076196.8774368688,
+            "overprediction_fraction": 0.29819277108433734,
+            "error_share": 0.2520010493073403,
+            "whole_period_mae_contribution": 581959.2173599158
+          },
+          "(50.0, 100.0]": {
+            "rows": 18360,
+            "mae": 1271093.144111625,
+            "mean_pred_minus_true": -733813.8887716745,
+            "median_pred_minus_true": -615503.7655797177,
+            "overprediction_fraction": 0.28763616557734206,
+            "error_share": 0.09577719458971289,
+            "whole_period_mae_contribution": 221183.2901393166
+          },
+          "(500.0, 1000.0]": {
+            "rows": 145,
+            "mae": 18636786.36821497,
+            "mean_pred_minus_true": 869841.0788992879,
+            "median_pred_minus_true": 3630741.425108824,
+            "overprediction_fraction": 0.593103448275862,
+            "error_share": 0.011090499026174065,
+            "whole_period_mae_contribution": 25611.87007412659
+          },
+          "(5000.0, inf]": {
+            "rows": 4,
+            "mae": 437019036.45648086,
+            "mean_pred_minus_true": 351345936.9015738,
+            "median_pred_minus_true": 308135919.62088615,
+            "overprediction_fraction": 0.75,
+            "error_share": 0.007174182253247746,
+            "whole_period_mae_contribution": 16567.714701082572
+          }
+        },
+        "true_price_TWD": {
+          "[-inf, 10000000.0)": {
+            "rows": 41132,
+            "mae": 1112063.336947904,
+            "mean_pred_minus_true": 48420.92901301604,
+            "median_pred_minus_true": -115178.14381213393,
+            "overprediction_fraction": 0.45876689681999416,
+            "error_share": 0.18772469565711342,
+            "whole_period_mae_contribution": 433522.46851362596
+          },
+          "[10000000.0, 20000000.0)": {
+            "rows": 47793,
+            "mae": 2061110.5063464227,
+            "mean_pred_minus_true": -1368580.913425671,
+            "median_pred_minus_true": -1455652.8775677402,
+            "overprediction_fraction": 0.20720607620362816,
+            "error_share": 0.4042756911503323,
+            "whole_period_mae_contribution": 933615.0205174302
+          },
+          "[100000000.0, inf)": {
+            "rows": 171,
+            "mae": 56334125.73125411,
+            "mean_pred_minus_true": -33281504.86486271,
+            "median_pred_minus_true": -35351357.75583337,
+            "overprediction_fraction": 0.11695906432748537,
+            "error_share": 0.039534816553941955,
+            "whole_period_mae_contribution": 91299.82181994723
+          },
+          "[20000000.0, 50000000.0)": {
+            "rows": 15033,
+            "mae": 4699207.877937597,
+            "mean_pred_minus_true": -3632090.6784964157,
+            "median_pred_minus_true": -3173745.9473196343,
+            "overprediction_fraction": 0.17927226767777557,
+            "error_share": 0.2899228021488892,
+            "whole_period_mae_contribution": 669533.9066925335
+          },
+          "[50000000.0, 100000000.0)": {
+            "rows": 1382,
+            "mae": 13847833.197313063,
+            "mean_pred_minus_true": -9075731.058071291,
+            "median_pred_minus_true": -11162011.316533536,
+            "overprediction_fraction": 0.22793053545586106,
+            "error_share": 0.07854199448972303,
+            "whole_period_mae_contribution": 181381.1401530329
+          }
+        },
+        "transaction_type": {
+          "房地(土地+建物)": {
+            "rows": 23659,
+            "mae": 1828634.704982464,
+            "mean_pred_minus_true": -964263.6684285126,
+            "median_pred_minus_true": -606677.9236866357,
+            "overprediction_fraction": 0.33446045902193666,
+            "error_share": 0.17755601974084792,
+            "whole_period_mae_contribution": 410039.41281174583
+          },
+          "房地(土地+建物)+車位": {
+            "rows": 81690,
+            "mae": 2448502.444422672,
+            "mean_pred_minus_true": -1393267.6669558273,
+            "median_pred_minus_true": -988970.4323930405,
+            "overprediction_fraction": 0.2905251560778553,
+            "error_share": 0.8208834442572421,
+            "whole_period_mae_contribution": 1895709.117389543
+          },
+          "車位": {
+            "rows": 162,
+            "mae": 2347181.746016257,
+            "mean_pred_minus_true": 2330833.8135760715,
+            "median_pred_minus_true": 1671151.2717604844,
+            "overprediction_fraction": 0.9691358024691358,
+            "error_share": 0.0015605360019100615,
+            "whole_period_mae_contribution": 3603.8274952813795
+          }
+        },
+        "building_type": {
+          "住宅大樓(11層含以上有電梯)": {
+            "rows": 71553,
+            "mae": 2411618.3124626945,
+            "mean_pred_minus_true": -1516023.137421675,
+            "median_pred_minus_true": -1022141.5054075327,
+            "overprediction_fraction": 0.28591393792014314,
+            "error_share": 0.7081878621011942,
+            "whole_period_mae_contribution": 1635455.3090354863
+          },
+          "公寓(5樓含以下無電梯)": {
+            "rows": 47,
+            "mae": 2436601.016004705,
+            "mean_pred_minus_true": 300235.54009786656,
+            "median_pred_minus_true": -504189.0205679592,
+            "overprediction_fraction": 0.40425531914893614,
+            "error_share": 0.00046999619039669416,
+            "whole_period_mae_contribution": 1085.3868104010116
+          },
+          "其他": {
+            "rows": 293,
+            "mae": 4641483.139032507,
+            "mean_pred_minus_true": -4263254.721043047,
+            "median_pred_minus_true": -1829938.010216646,
+            "overprediction_fraction": 0.08532423208191127,
+            "error_share": 0.005581314001098842,
+            "whole_period_mae_contribution": 12889.220647482485
+          },
+          "套房(1房1廳1衛)": {
+            "rows": 179,
+            "mae": 697611.2789962664,
+            "mean_pred_minus_true": -535578.6900186597,
+            "median_pred_minus_true": -657195.5568628069,
+            "overprediction_fraction": 0.20670391061452514,
+            "error_share": 0.000512481961395666,
+            "whole_period_mae_contribution": 1183.5014258260437
+          },
+          "工廠": {
+            "rows": 100,
+            "mae": 8140208.15570077,
+            "mean_pred_minus_true": -5294768.905097878,
+            "median_pred_minus_true": -6791561.990951738,
+            "overprediction_fraction": 0.25,
+            "error_share": 0.0033407776330463437,
+            "whole_period_mae_contribution": 7715.03270341554
+          },
+          "店面(店鋪)": {
+            "rows": 942,
+            "mae": 3931664.943568668,
+            "mean_pred_minus_true": -873750.8304523005,
+            "median_pred_minus_true": -303138.8782617552,
+            "overprediction_fraction": 0.445859872611465,
+            "error_share": 0.015199855588217789,
+            "whole_period_mae_contribution": 35101.82233929813
+          },
+          "廠辦": {
+            "rows": 330,
+            "mae": 17271189.331211407,
+            "mean_pred_minus_true": 11335571.21760936,
+            "median_pred_minus_true": 10954758.138311315,
+            "overprediction_fraction": 0.8939393939393939,
+            "error_share": 0.023390970636574998,
+            "whole_period_mae_contribution": 54017.99318838571
+          },
+          "華廈(10層含以下有電梯)": {
+            "rows": 18664,
+            "mae": 1475783.3663211635,
+            "mean_pred_minus_true": -686168.0030020997,
+            "median_pred_minus_true": -524053.3532799091,
+            "overprediction_fraction": 0.32383197599657093,
+            "error_share": 0.11304188625452016,
+            "whole_period_mae_contribution": 261053.5465403436
+          },
+          "辦公商業大樓": {
+            "rows": 1620,
+            "mae": 2935488.0725943423,
+            "mean_pred_minus_true": -1353347.2729175303,
+            "median_pred_minus_true": -1786320.632107628,
+            "overprediction_fraction": 0.16111111111111112,
+            "error_share": 0.0195167452551811,
+            "whole_period_mae_contribution": 45071.04166961582
+          },
+          "透天厝": {
+            "rows": 11783,
+            "mae": 2290380.3086241162,
+            "mean_pred_minus_true": -1174080.1328780928,
+            "median_pred_minus_true": -740093.6408047881,
+            "overprediction_fraction": 0.3580582194687261,
+            "error_share": 0.11075811037837416,
+            "whole_period_mae_contribution": 255779.5033363153
+          }
+        },
+        "address_missing": {
+          "False": {
+            "rows": 105511,
+            "mae": 2309352.35769657,
+            "mean_pred_minus_true": -1291353.0794625431,
+            "median_pred_minus_true": -875144.7652509166,
+            "overprediction_fraction": 0.3014188094132365,
+            "error_share": 1.0,
+            "whole_period_mae_contribution": 2309352.35769657
+          }
+        },
+        "address_road_missing": {
+          "False": {
+            "rows": 96048,
+            "mae": 2368203.9376246384,
+            "mean_pred_minus_true": -1329867.7402122936,
+            "median_pred_minus_true": -893744.3249152275,
+            "overprediction_fraction": 0.3018386640013327,
+            "error_share": 0.9335110943928797,
+            "whole_period_mae_contribution": 2155806.046772102
+          },
+          "True": {
+            "rows": 9463,
+            "mae": 1712017.8391579338,
+            "mean_pred_minus_true": -900435.1743909961,
+            "median_pred_minus_true": -744676.8606762998,
+            "overprediction_fraction": 0.2971573496776921,
+            "error_share": 0.06648890560712026,
+            "whole_period_mae_contribution": 153546.31092446786
+          }
+        },
+        "geo_has_position": {
+          "0.0": {
+            "rows": 36761,
+            "mae": 2091293.1778656074,
+            "mean_pred_minus_true": -1324578.248652918,
+            "median_pred_minus_true": -803150.0491272677,
+            "overprediction_fraction": 0.2950681428688012,
+            "error_share": 0.3155108483855067,
+            "whole_period_mae_contribution": 728625.7215979148
+          },
+          "1.0": {
+            "rows": 68750,
+            "mae": 2425949.790565894,
+            "mean_pred_minus_true": -1273587.4002682539,
+            "median_pred_minus_true": -920161.1094289632,
+            "overprediction_fraction": 0.30481454545454545,
+            "error_share": 0.6844891516144934,
+            "whole_period_mae_contribution": 1580726.6360986552
+          }
+        },
+        "geo_match_status": {
+          "disconnected": {
+            "rows": 4704,
+            "mae": 2338052.345549045,
+            "mean_pred_minus_true": -1690732.4889576128,
+            "median_pred_minus_true": -1121627.771264723,
+            "overprediction_fraction": 0.2493622448979592,
+            "error_share": 0.04513709472703152,
+            "whole_period_mae_contribution": 104237.45612744366
+          },
+          "ineligible_address": {
+            "rows": 3706,
+            "mae": 1689243.1742003073,
+            "mean_pred_minus_true": -741501.4420841167,
+            "median_pred_minus_true": -545760.9754051962,
+            "overprediction_fraction": 0.3704803022126282,
+            "error_share": 0.02569269412216081,
+            "whole_period_mae_contribution": 59333.48374658888
+          },
+          "intersection_admin_or_parse_ineligible": {
+            "rows": 153,
+            "mae": 4473806.854221538,
+            "mean_pred_minus_true": -3855981.666821034,
+            "median_pred_minus_true": -3987070.083179295,
+            "overprediction_fraction": 0.24836601307189543,
+            "error_share": 0.0028091874542433117,
+            "whole_period_mae_contribution": 6487.403670668416
+          },
+          "intersection_lane_or_alley_unsupported": {
+            "rows": 706,
+            "mae": 1979523.4055607032,
+            "mean_pred_minus_true": -1037220.3393588235,
+            "median_pred_minus_true": -509310.30660636956,
+            "overprediction_fraction": 0.3314447592067989,
+            "error_share": 0.005735580783652144,
+            "whole_period_mae_contribution": 13245.477005486218
+          },
+          "intersection_multiple_distant_points": {
+            "rows": 1063,
+            "mae": 2822946.833642361,
+            "mean_pred_minus_true": -2537441.1231040596,
+            "median_pred_minus_true": -2206515.3239330305,
+            "overprediction_fraction": 0.2464722483537159,
+            "error_share": 0.012315385823986206,
+            "whole_period_mae_contribution": 28440.565288565456
+          },
+          "intersection_no_geometric_intersection": {
+            "rows": 619,
+            "mae": 1707335.582492458,
+            "mean_pred_minus_true": -1355931.1486299154,
+            "median_pred_minus_true": -1389520.5846441053,
+            "overprediction_fraction": 0.22617124394184168,
+            "error_share": 0.004337321343779359,
+            "whole_period_mae_contribution": 10016.403271344518
+          },
+          "intersection_not_explicit": {
+            "rows": 3011,
+            "mae": 1819999.138756228,
+            "mean_pred_minus_true": -1451034.8729752123,
+            "median_pred_minus_true": -984993.0012007058,
+            "overprediction_fraction": 0.24842245101295252,
+            "error_share": 0.022490235177222345,
+            "whole_period_mae_contribution": 51937.87763166876
+          },
+          "intersection_parse_uncertain": {
+            "rows": 227,
+            "mae": 1438331.7764302082,
+            "mean_pred_minus_true": -1372628.3258602102,
+            "median_pred_minus_true": -1297124.9007861707,
+            "overprediction_fraction": 0.09251101321585903,
+            "error_share": 0.0013399759116734912,
+            "whole_period_mae_contribution": 3094.476530879788
+          },
+          "intersection_road_key_not_found": {
+            "rows": 2586,
+            "mae": 2810705.066259893,
+            "mean_pred_minus_true": -2126885.5570614752,
+            "median_pred_minus_true": -1569115.5076059164,
+            "overprediction_fraction": 0.19334880123743234,
+            "error_share": 0.029830178755698065,
+            "whole_period_mae_contribution": 68888.39363998146
+          },
+          "land_parcel": {
+            "rows": 11772,
+            "mae": 1691062.350322764,
+            "mean_pred_minus_true": -737806.9038774556,
+            "median_pred_minus_true": -598400.3436863106,
+            "overprediction_fraction": 0.3360516479782535,
+            "error_share": 0.08169997672483016,
+            "whole_period_mae_contribution": 188674.03387324142
+          },
+          "multiple_roads": {
+            "rows": 883,
+            "mae": 3013391.8200078057,
+            "mean_pred_minus_true": -2297823.9063807135,
+            "median_pred_minus_true": -1910085.7820521435,
+            "overprediction_fraction": 0.27633069082672707,
+            "error_share": 0.01092014405382349,
+            "whole_period_mae_contribution": 25218.460417083457
+          },
+          "planar_intersection": {
+            "rows": 7806,
+            "mae": 2310047.4164706874,
+            "mean_pred_minus_true": -1496355.5978146861,
+            "median_pred_minus_true": -1242152.288979304,
+            "overprediction_fraction": 0.25672559569561876,
+            "error_share": 0.07400507450166675,
+            "whole_period_mae_contribution": 170903.79328193443
+          },
+          "road_key_not_found": {
+            "rows": 7331,
+            "mae": 2433066.8265261115,
+            "mean_pred_minus_true": -1669284.8058924982,
+            "median_pred_minus_true": -708928.2793768086,
+            "overprediction_fraction": 0.29436638930568815,
+            "error_share": 0.07320307350740578,
+            "whole_period_mae_contribution": 169051.69039496285
+          },
+          "road_level": {
+            "rows": 60944,
+            "mae": 2440795.122874032,
+            "mean_pred_minus_true": -1245054.1804263098,
+            "median_pred_minus_true": -879200.4234698936,
+            "overprediction_fraction": 0.31097400892622734,
+            "error_share": 0.6104840771128265,
+            "whole_period_mae_contribution": 1409822.8428167205
+          }
+        },
+        "partial_share_flag": {
+          "0.0": {
+            "rows": 103490,
+            "mae": 2293050.737173953,
+            "mean_pred_minus_true": -1295924.8505889336,
+            "median_pred_minus_true": -875580.7101170649,
+            "overprediction_fraction": 0.3006860566238284,
+            "error_share": 0.9739218514792326,
+            "whole_period_mae_contribution": 2249128.7239257745
+          },
+          "1.0": {
+            "rows": 2021,
+            "mae": 3144114.706971988,
+            "mean_pred_minus_true": -1057244.918220504,
+            "median_pred_minus_true": -853836.7342915991,
+            "overprediction_fraction": 0.338941118258288,
+            "error_share": 0.026078148520767327,
+            "whole_period_mae_contribution": 60223.63377079535
+          }
+        },
+        "project_seen_in_fit": {
+          "False": {
+            "rows": 90075,
+            "mae": 2497026.531572914,
+            "mean_pred_minus_true": -1390811.800102239,
+            "median_pred_minus_true": -1009085.9095043996,
+            "overprediction_fraction": 0.30223702470163755,
+            "error_share": 0.9230803084254002,
+            "whole_period_mae_contribution": 2131717.686605475
+          },
+          "True": {
+            "rows": 15436,
+            "mae": 1214201.3333436458,
+            "mean_pred_minus_true": -710973.1713502974,
+            "median_pred_minus_true": -445573.64963845164,
+            "overprediction_fraction": 0.2966442083441306,
+            "error_share": 0.07691969157459976,
+            "whole_period_mae_contribution": 177634.6710910949
+          }
+        },
+        "unit_reference_source": {
+          "address": {
+            "rows": 1639,
+            "mae": 1910336.0514030985,
+            "mean_pred_minus_true": -1668096.8035031313,
+            "median_pred_minus_true": -849498.908493422,
+            "overprediction_fraction": 0.18791946308724833,
+            "error_share": 0.01284993065713543,
+            "whole_period_mae_contribution": 29675.017659293142
+          },
+          "base_fallback": {
+            "rows": 38077,
+            "mae": 2135291.8626616052,
+            "mean_pred_minus_true": -644311.0312866758,
+            "median_pred_minus_true": -570012.8858378399,
+            "overprediction_fraction": 0.3712477348530609,
+            "error_share": 0.33368142217603447,
+            "whole_period_mae_contribution": 770587.9790217697
+          },
+          "district_style": {
+            "rows": 42236,
+            "mae": 2772294.1103365747,
+            "mean_pred_minus_true": -1826663.0744288831,
+            "median_pred_minus_true": -1188819.5017334837,
+            "overprediction_fraction": 0.2882611989771759,
+            "error_share": 0.4805450879834026,
+            "whole_period_mae_contribution": 1109747.9319139763
+          },
+          "locality": {
+            "rows": 855,
+            "mae": 3603626.0158557747,
+            "mean_pred_minus_true": -3197328.8781470293,
+            "median_pred_minus_true": -2755442.4670785386,
+            "overprediction_fraction": 0.13450292397660818,
+            "error_share": 0.01264497244046421,
+            "whole_period_mae_contribution": 29201.69691839417
+          },
+          "project": {
+            "rows": 9055,
+            "mae": 959724.3045356049,
+            "mean_pred_minus_true": -707650.2689451191,
+            "median_pred_minus_true": -444447.20403049886,
+            "overprediction_fraction": 0.25278851463279955,
+            "error_share": 0.035665392408910486,
+            "whole_period_mae_contribution": 82363.95804769079
+          },
+          "street": {
+            "rows": 2383,
+            "mae": 2342879.5599392573,
+            "mean_pred_minus_true": -1009879.6761041016,
+            "median_pred_minus_true": -1055511.6326758377,
+            "overprediction_fraction": 0.2895509861519094,
+            "error_share": 0.022913216816273112,
+            "whole_period_mae_contribution": 52914.691277073005
+          },
+          "street_section": {
+            "rows": 11266,
+            "mae": 2199576.3992073266,
+            "mean_pred_minus_true": -1800598.1459328807,
+            "median_pred_minus_true": -1532641.2461091299,
+            "overprediction_fraction": 0.18551393573584235,
+            "error_share": 0.10169997751777961,
+            "whole_period_mae_contribution": 234861.0828583725
+          }
+        },
+        "unit_spatial_reason": {
+          "area_out_of_bounds": {
+            "rows": 90,
+            "mae": 33923510.63247991,
+            "mean_pred_minus_true": 8572565.875445884,
+            "median_pred_minus_true": 1248889.1647757292,
+            "overprediction_fraction": 0.8222222222222222,
+            "error_share": 0.012530123683437687,
+            "whole_period_mae_contribution": 28936.47067057645
+          },
+          "fewer_than_5_projects": {
+            "rows": 34526,
+            "mae": 2426454.0488206497,
+            "mean_pred_minus_true": -747986.065819045,
+            "median_pred_minus_true": -594487.2771924641,
+            "overprediction_fraction": 0.38999594508486357,
+            "error_share": 0.34381941438784674,
+            "whole_period_mae_contribution": 794000.1752384278
+          },
+          "invalid_geography_or_group": {
+            "rows": 35314,
+            "mae": 2225390.580283737,
+            "mean_pred_minus_true": -1379505.9564604496,
+            "median_pred_minus_true": -860753.1875283206,
+            "overprediction_fraction": 0.30616752562723,
+            "error_share": 0.32252636128100676,
+            "whole_period_mae_contribution": 744827.0128435886
+          },
+          "not_weak_source": {
+            "rows": 25198,
+            "mae": 1796410.600610416,
+            "mean_pred_minus_true": -1371838.3211878445,
+            "median_pred_minus_true": -921488.2565315189,
+            "overprediction_fraction": 0.21795380585760774,
+            "error_share": 0.18577348984056286,
+            "whole_period_mae_contribution": 429016.4467608236
+          },
+          "spatial_residual": {
+            "rows": 10383,
+            "mae": 3176327.7376573915,
+            "mean_pred_minus_true": -2688535.43520741,
+            "median_pred_minus_true": -1756400.0087706912,
+            "overprediction_fraction": 0.18877010497929309,
+            "error_share": 0.13535061080714597,
+            "whole_period_mae_contribution": 312572.25218315335
+          }
+        }
+      },
+      "selected_group_branch_metrics": {
+        "industrial_office": {
+          "rows": 330,
+          "projects": 20,
+          "largest_project_rows": 80,
+          "reference_source_counts": {
+            "base_fallback": 330
+          },
+          "reference_confidence_mean": 0.0,
+          "spatial_applied_rows": 0,
+          "branches": {
+            "v22": {
+              "rows": 330,
+              "mae": 17271189.331211407,
+              "mean_pred_minus_true": 11335571.21760936,
+              "median_pred_minus_true": 10954758.138311315,
+              "overprediction_fraction": 0.8939393939393939,
+              "error_share": 0.023390970636574998,
+              "whole_period_mae_contribution": 54017.99318838571
+            },
+            "unit_base": {
+              "rows": 330,
+              "mae": 16488125.60665545,
+              "mean_pred_minus_true": 15388463.27617061,
+              "median_pred_minus_true": 10193556.866142668,
+              "overprediction_fraction": 0.8303030303030303,
+              "error_share": 0.022330440279551188,
+              "whole_period_mae_contribution": 51568.85490798399
+            },
+            "unit_reference": {
+              "rows": 330,
+              "mae": 17294005.810175423,
+              "mean_pred_minus_true": 16450179.984400425,
+              "median_pred_minus_true": 10912069.406658057,
+              "overprediction_fraction": 0.8424242424242424,
+              "error_share": 0.02342187178525923,
+              "whole_period_mae_contribution": 54089.35482895517
+            },
+            "unit_spatial": {
+              "rows": 330,
+              "mae": 17294005.810175423,
+              "mean_pred_minus_true": 16450179.984400425,
+              "median_pred_minus_true": 10912069.406658057,
+              "overprediction_fraction": 0.8424242424242424,
+              "error_share": 0.02342187178525923,
+              "whole_period_mae_contribution": 54089.35482895517
+            },
+            "nn_spatial": {
+              "rows": 330,
+              "mae": 14749912.216096831,
+              "mean_pred_minus_true": 8436637.576560572,
+              "median_pred_minus_true": 7214194.731570344,
+              "overprediction_fraction": 0.8636363636363636,
+              "error_share": 0.01997631760745572,
+              "whole_period_mae_contribution": 46132.356164873374
+            },
+            "log_spatial": {
+              "rows": 330,
+              "mae": 25748879.952057797,
+              "mean_pred_minus_true": 2377574.6561598503,
+              "median_pred_minus_true": 12347627.990276888,
+              "overprediction_fraction": 0.8787878787878788,
+              "error_share": 0.0348726010312941,
+              "whole_period_mae_contribution": 80533.12341063087
+            }
+          }
+        },
+        "area_above_500m2": {
+          "rows": 173,
+          "projects": 43,
+          "largest_project_rows": 44,
+          "reference_source_counts": {
+            "base_fallback": 155,
+            "district_style": 10,
+            "project": 5,
+            "street_section": 3
+          },
+          "reference_confidence_mean": 0.017154191733858553,
+          "spatial_applied_rows": 4,
+          "branches": {
+            "v22": {
+              "rows": 173,
+              "mae": 33649876.1454364,
+              "mean_pred_minus_true": 5576384.954088654,
+              "median_pred_minus_true": 3805854.4311335683,
+              "overprediction_fraction": 0.5953757225433526,
+              "error_share": 0.023891401789242376,
+              "whole_period_mae_contribution": 55173.66505066293
+            },
+            "unit_base": {
+              "rows": 173,
+              "mae": 34861571.935390234,
+              "mean_pred_minus_true": 19912617.153674558,
+              "median_pred_minus_true": 13896802.253066257,
+              "overprediction_fraction": 0.7225433526011561,
+              "error_share": 0.0247517054301533,
+              "whole_period_mae_contribution": 57160.40929213552
+            },
+            "unit_reference": {
+              "rows": 173,
+              "mae": 36269102.68072046,
+              "mean_pred_minus_true": 22136123.49721795,
+              "median_pred_minus_true": 15149602.84131512,
+              "overprediction_fraction": 0.7398843930635838,
+              "error_share": 0.025751051829588915,
+              "whole_period_mae_contribution": 59468.252255827734
+            },
+            "unit_spatial": {
+              "rows": 173,
+              "mae": 36561990.36019435,
+              "mean_pred_minus_true": 21843235.81774406,
+              "median_pred_minus_true": 15149602.84131512,
+              "overprediction_fraction": 0.7398843930635838,
+              "error_share": 0.025959001992590585,
+              "whole_period_mae_contribution": 59948.482455039026
+            },
+            "nn_spatial": {
+              "rows": 173,
+              "mae": 32583484.72409336,
+              "mean_pred_minus_true": 5969963.47562821,
+              "median_pred_minus_true": 3070300.641769141,
+              "overprediction_fraction": 0.5953757225433526,
+              "error_share": 0.02313426420568063,
+              "whole_period_mae_contribution": 53425.16758696393
+            },
+            "log_spatial": {
+              "rows": 173,
+              "mae": 55910740.78364092,
+              "mean_pred_minus_true": -39737426.99715559,
+              "median_pred_minus_true": -4045577.5283709615,
+              "overprediction_fraction": 0.4393063583815029,
+              "error_share": 0.03969660888565574,
+              "whole_period_mae_contribution": 91673.45732264768
+            }
+          }
+        },
+        "parking_only": {
+          "rows": 162,
+          "projects": 50,
+          "largest_project_rows": 37,
+          "reference_source_counts": {
+            "base_fallback": 145,
+            "district_style": 9,
+            "address": 4,
+            "project": 3,
+            "street_section": 1
+          },
+          "reference_confidence_mean": 0.004131436875174109,
+          "spatial_applied_rows": 2,
+          "branches": {
+            "v22": {
+              "rows": 162,
+              "mae": 2347181.746016257,
+              "mean_pred_minus_true": 2330833.8135760715,
+              "median_pred_minus_true": 1671151.2717604844,
+              "overprediction_fraction": 0.9691358024691358,
+              "error_share": 0.0015605360019100615,
+              "whole_period_mae_contribution": 3603.8274952813795
+            },
+            "unit_base": {
+              "rows": 162,
+              "mae": 2563492.127983749,
+              "mean_pred_minus_true": 2545231.8157369876,
+              "median_pred_minus_true": 1894470.542363564,
+              "overprediction_fraction": 0.9691358024691358,
+              "error_share": 0.0017043510853479377,
+              "whole_period_mae_contribution": 3935.947197290968
+            },
+            "unit_reference": {
+              "rows": 162,
+              "mae": 2626151.3924322943,
+              "mean_pred_minus_true": 2608796.581195712,
+              "median_pred_minus_true": 1932678.2852181764,
+              "overprediction_fraction": 0.9691358024691358,
+              "error_share": 0.0017460104234844577,
+              "whole_period_mae_contribution": 4032.153288036619
+            },
+            "unit_spatial": {
+              "rows": 162,
+              "mae": 2622785.964975584,
+              "mean_pred_minus_true": 2605431.153739001,
+              "median_pred_minus_true": 1932678.2852181764,
+              "overprediction_fraction": 0.9691358024691358,
+              "error_share": 0.001743772901521394,
+              "whole_period_mae_contribution": 4026.9860614158197
+            },
+            "nn_spatial": {
+              "rows": 162,
+              "mae": 1263380.8897837298,
+              "mean_pred_minus_true": 1168695.032471831,
+              "median_pred_minus_true": 784590.4689461319,
+              "overprediction_fraction": 0.8209876543209876,
+              "error_share": 0.0008399653610032047,
+              "whole_period_mae_contribution": 1939.7759868162013
+            },
+            "log_spatial": {
+              "rows": 162,
+              "mae": 3301566.5678075044,
+              "mean_pred_minus_true": 3296041.0514485827,
+              "median_pred_minus_true": 2677834.8699579886,
+              "overprediction_fraction": 0.9814814814814815,
+              "error_share": 0.0021950637186535795,
+              "whole_period_mae_contribution": 5069.175573966844
+            }
+          }
+        },
+        "partial_share": {
+          "rows": 2021,
+          "projects": 403,
+          "largest_project_rows": 93,
+          "reference_source_counts": {
+            "district_style": 822,
+            "base_fallback": 811,
+            "street_section": 182,
+            "project": 137,
+            "street": 60,
+            "locality": 9
+          },
+          "reference_confidence_mean": 0.0803581760274041,
+          "spatial_applied_rows": 256,
+          "branches": {
+            "v22": {
+              "rows": 2021,
+              "mae": 3144114.706971988,
+              "mean_pred_minus_true": -1057244.918220504,
+              "median_pred_minus_true": -853836.7342915991,
+              "overprediction_fraction": 0.338941118258288,
+              "error_share": 0.026078148520767327,
+              "whole_period_mae_contribution": 60223.63377079535
+            },
+            "unit_base": {
+              "rows": 2021,
+              "mae": 2906513.0564886266,
+              "mean_pred_minus_true": -659608.2028112296,
+              "median_pred_minus_true": -852311.8027693359,
+              "overprediction_fraction": 0.34537357743691244,
+              "error_share": 0.02410741535497518,
+              "whole_period_mae_contribution": 55672.51648798243
+            },
+            "unit_reference": {
+              "rows": 2021,
+              "mae": 2852121.873719419,
+              "mean_pred_minus_true": -409690.2732916495,
+              "median_pred_minus_true": -667151.8226505918,
+              "overprediction_fraction": 0.37209302325581395,
+              "error_share": 0.02365627998789386,
+              "whole_period_mae_contribution": 54630.68596437287
+            },
+            "unit_spatial": {
+              "rows": 2021,
+              "mae": 2869676.4604634596,
+              "mean_pred_minus_true": -428860.7406060705,
+              "median_pred_minus_true": -669466.0156819159,
+              "overprediction_fraction": 0.3711034141514102,
+              "error_share": 0.023801882538372263,
+              "whole_period_mae_contribution": 54966.93355760681
+            },
+            "nn_spatial": {
+              "rows": 2021,
+              "mae": 3803569.791554093,
+              "mean_pred_minus_true": -1797321.1481376975,
+              "median_pred_minus_true": -1455719.527497923,
+              "overprediction_fraction": 0.27956457199406237,
+              "error_share": 0.03154784961035309,
+              "whole_period_mae_contribution": 72855.10087792572
+            },
+            "log_spatial": {
+              "rows": 2021,
+              "mae": 3933277.3853830458,
+              "mean_pred_minus_true": -2311330.3257419714,
+              "median_pred_minus_true": -731121.8042903617,
+              "overprediction_fraction": 0.3602177140029688,
+              "error_share": 0.03262367991916534,
+              "whole_period_mae_contribution": 75339.57213806272
+            }
+          }
+        },
+        "common_area_100_to_200m2": {
+          "rows": 75133,
+          "projects": 3224,
+          "largest_project_rows": 1267,
+          "reference_source_counts": {
+            "district_style": 31304,
+            "base_fallback": 25040,
+            "street_section": 8224,
+            "project": 6871,
+            "street": 1733,
+            "address": 1277,
+            "locality": 684
+          },
+          "reference_confidence_mean": 0.11607608084103381,
+          "spatial_applied_rows": 6884,
+          "branches": {
+            "v22": {
+              "rows": 75133,
+              "mae": 2018613.816753143,
+              "mean_pred_minus_true": -1142478.7881685635,
+              "median_pred_minus_true": -902860.9825631566,
+              "overprediction_fraction": 0.3032089760824139,
+              "error_share": 0.6224379025343587,
+              "whole_period_mae_contribution": 1437428.4377374293
+            },
+            "unit_base": {
+              "rows": 75133,
+              "mae": 2116246.2017058516,
+              "mean_pred_minus_true": -1063192.6296911265,
+              "median_pred_minus_true": -847185.8216824606,
+              "overprediction_fraction": 0.32863056180373473,
+              "error_share": 0.6525427677666483,
+              "whole_period_mae_contribution": 1506951.1792397546
+            },
+            "unit_reference": {
+              "rows": 75133,
+              "mae": 2023879.0471989089,
+              "mean_pred_minus_true": -943117.4402065848,
+              "median_pred_minus_true": -747620.7658086326,
+              "overprediction_fraction": 0.340063620512957,
+              "error_share": 0.6240614319919614,
+              "whole_period_mae_contribution": 1441177.7393181338
+            },
+            "unit_spatial": {
+              "rows": 75133,
+              "mae": 2022742.5649499677,
+              "mean_pred_minus_true": -961509.7181933249,
+              "median_pred_minus_true": -757512.0654093139,
+              "overprediction_fraction": 0.3371354797492447,
+              "error_share": 0.6237109986295086,
+              "whole_period_mae_contribution": 1440368.4652063379
+            },
+            "nn_spatial": {
+              "rows": 75133,
+              "mae": 2160726.9919555145,
+              "mean_pred_minus_true": -1286603.7714034785,
+              "median_pred_minus_true": -1040528.2377471998,
+              "overprediction_fraction": 0.2903384664528237,
+              "error_share": 0.6662583826882797,
+              "whole_period_mae_contribution": 1538625.3668962824
+            },
+            "log_spatial": {
+              "rows": 75133,
+              "mae": 2100466.0415740684,
+              "mean_pred_minus_true": -1074076.500319702,
+              "median_pred_minus_true": -891933.0849031806,
+              "overprediction_fraction": 0.3076411164202148,
+              "error_share": 0.647676968428228,
+              "whole_period_mae_contribution": 1495714.3340654953
+            }
+          }
+        }
+      },
+      "worst_error_concentration": {
+        "1": {
+          "rows": 1,
+          "error_share": 0.003941762792246508
+        },
+        "10": {
+          "rows": 10,
+          "error_share": 0.010388986314939855
+        },
+        "100": {
+          "rows": 100,
+          "error_share": 0.03437631798199654
+        },
+        "1000": {
+          "rows": 1000,
+          "error_share": 0.11066662424756726
+        }
+      }
+    },
+    "development": {
+      "rows": 81234,
+      "fit_rows": 240316,
+      "overall": {
+        "rows": 81234,
+        "mae": 1407387.070805849,
+        "mean_pred_minus_true": -78118.67712162615,
+        "median_pred_minus_true": 116040.99349114578,
+        "overprediction_fraction": 0.5486003397592141,
+        "error_share": null,
+        "whole_period_mae_contribution": null
+      },
+      "groups": {
+        "building_area_m2": {
+          "(-inf, 0.0]": {
+            "rows": 44,
+            "mae": 620402.8075696569,
+            "mean_pred_minus_true": 365969.7567620782,
+            "median_pred_minus_true": 131889.6008461581,
+            "overprediction_fraction": 0.5227272727272727,
+            "error_share": 0.00023876740278747235,
+            "whole_period_mae_contribution": 336.03815561298103
+          },
+          "(0.0, 50.0]": {
+            "rows": 804,
+            "mae": 695476.1899877745,
+            "mean_pred_minus_true": 59263.651555813,
+            "median_pred_minus_true": 242903.0239783791,
+            "overprediction_fraction": 0.6629353233830846,
+            "error_share": 0.0048908790097366645,
+            "whole_period_mae_contribution": 6883.359883179096
+          },
+          "(100.0, 200.0]": {
+            "rows": 56549,
+            "mae": 1274935.580970948,
+            "mean_pred_minus_true": -94254.81029313547,
+            "median_pred_minus_true": 122353.8954006955,
+            "overprediction_fraction": 0.5475251551751579,
+            "error_share": 0.6306113387617479,
+            "whole_period_mae_contribution": 887514.2448768513
+          },
+          "(1000.0, 5000.0]": {
+            "rows": 41,
+            "mae": 40817494.60267616,
+            "mean_pred_minus_true": 26524914.880500183,
+            "median_pred_minus_true": 12988595.969502568,
+            "overprediction_fraction": 0.8780487804878049,
+            "error_share": 0.01463790098370211,
+            "whole_period_mae_contribution": 20601.19258819857
+          },
+          "(200.0, 500.0]": {
+            "rows": 6866,
+            "mae": 3429480.6856717034,
+            "mean_pred_minus_true": -387166.2737143157,
+            "median_pred_minus_true": 301743.388183821,
+            "overprediction_fraction": 0.5444217885231576,
+            "error_share": 0.20595899538981374,
+            "whole_period_mae_contribution": 289864.0272277853
+          },
+          "(50.0, 100.0]": {
+            "rows": 16781,
+            "mae": 795688.8929375617,
+            "mean_pred_minus_true": -26746.934994259205,
+            "median_pred_minus_true": 74297.14896993898,
+            "overprediction_fraction": 0.5458554317382754,
+            "error_share": 0.11679109695401235,
+            "whole_period_mae_contribution": 164370.27983830936
+          },
+          "(500.0, 1000.0]": {
+            "rows": 147,
+            "mae": 16588945.002171516,
+            "mean_pred_minus_true": 3528102.416013048,
+            "median_pred_minus_true": 6370216.686018236,
+            "overprediction_fraction": 0.7619047619047619,
+            "error_share": 0.021329697999475466,
+            "whole_period_mae_contribution": 30019.141188655154
+          },
+          "(5000.0, inf]": {
+            "rows": 2,
+            "mae": 316763333.49844944,
+            "mean_pred_minus_true": 210671695.51333153,
+            "median_pred_minus_true": 210671695.51333153,
+            "overprediction_fraction": 0.5,
+            "error_share": 0.005541323498724357,
+            "whole_period_mae_contribution": 7798.787047257292
+          }
+        },
+        "true_price_TWD": {
+          "[-inf, 10000000.0)": {
+            "rows": 22139,
+            "mae": 724299.1442519368,
+            "mean_pred_minus_true": 374340.03616996424,
+            "median_pred_minus_true": 252521.74797810242,
+            "overprediction_fraction": 0.6642576448800759,
+            "error_share": 0.14025701012107528,
+            "whole_period_mae_contribution": 197395.90263428647
+          },
+          "[10000000.0, 20000000.0)": {
+            "rows": 43914,
+            "mae": 1121125.6461835282,
+            "mean_pred_minus_true": -48725.12691741071,
+            "median_pred_minus_true": 49625.98972036224,
+            "overprediction_fraction": 0.5179441635924762,
+            "error_share": 0.43063159387511374,
+            "whole_period_mae_contribution": 606065.3375003504
+          },
+          "[100000000.0, inf)": {
+            "rows": 182,
+            "mae": 31529922.141700063,
+            "mean_pred_minus_true": 2353013.7482450395,
+            "median_pred_minus_true": 5480592.482546873,
+            "overprediction_fraction": 0.6428571428571429,
+            "error_share": 0.05019296957696102,
+            "whole_period_mae_contribution": 70640.93642796627
+          },
+          "[20000000.0, 50000000.0)": {
+            "rows": 14197,
+            "mae": 2680263.403665634,
+            "mean_pred_minus_true": -826572.5170756609,
+            "median_pred_minus_true": -242884.6519752778,
+            "overprediction_fraction": 0.46397126153412693,
+            "error_share": 0.3328301519447082,
+            "whole_period_mae_contribution": 468420.85262132855
+          },
+          "[50000000.0, 100000000.0)": {
+            "rows": 802,
+            "mae": 6570031.86672673,
+            "mean_pred_minus_true": -1480162.0098145704,
+            "median_pred_minus_true": 176740.71674142033,
+            "overprediction_fraction": 0.5112219451371571,
+            "error_share": 0.04608827448214172,
+            "whole_period_mae_contribution": 64864.04162191739
+          }
+        },
+        "transaction_type": {
+          "房地(土地+建物)": {
+            "rows": 16552,
+            "mae": 1231830.975565533,
+            "mean_pred_minus_true": 12387.045189604645,
+            "median_pred_minus_true": 103786.55151357874,
+            "overprediction_fraction": 0.555884485258579,
+            "error_share": 0.17834059148198092,
+            "whole_period_mae_contribution": 250994.2426516077
+          },
+          "房地(土地+建物)+車位": {
+            "rows": 64582,
+            "mae": 1453516.7129439635,
+            "mean_pred_minus_true": -101986.54457332645,
+            "median_pred_minus_true": 120232.9742327854,
+            "overprediction_fraction": 0.546560961258555,
+            "error_share": 0.8210698868364593,
+            "whole_period_mae_contribution": 1155563.1429616546
+          },
+          "車位": {
+            "rows": 100,
+            "mae": 673986.4693460327,
+            "mean_pred_minus_true": 355720.3235805408,
+            "median_pred_minus_true": 242879.67158008402,
+            "overprediction_fraction": 0.66,
+            "error_share": 0.0005895216815597308,
+            "whole_period_mae_contribution": 829.6851925868882
+          }
+        },
+        "building_type": {
+          "住宅大樓(11層含以上有電梯)": {
+            "rows": 57385,
+            "mae": 1358559.965976002,
+            "mean_pred_minus_true": -77894.80184684531,
+            "median_pred_minus_true": 130556.46822103858,
+            "overprediction_fraction": 0.5515378583253463,
+            "error_share": 0.6819080274727944,
+            "whole_period_mae_contribution": 959708.5413439308
+          },
+          "公寓(5樓含以下無電梯)": {
+            "rows": 79,
+            "mae": 924991.7680653738,
+            "mean_pred_minus_true": -64025.00129713822,
+            "median_pred_minus_true": -125156.10161601566,
+            "overprediction_fraction": 0.45569620253164556,
+            "error_share": 0.0006391658506492744,
+            "whole_period_mae_contribution": 899.553754304411
+          },
+          "其他": {
+            "rows": 78,
+            "mae": 867420.3599541655,
+            "mean_pred_minus_true": -194729.59915939407,
+            "median_pred_minus_true": -101388.11158011016,
+            "overprediction_fraction": 0.4358974358974359,
+            "error_share": 0.0005917970809979178,
+            "whole_period_mae_contribution": 832.8875603371115
+          },
+          "套房(1房1廳1衛)": {
+            "rows": 226,
+            "mae": 727135.3093723502,
+            "mean_pred_minus_true": 207264.07720506637,
+            "median_pred_minus_true": 227158.7517192494,
+            "overprediction_fraction": 0.6637168141592921,
+            "error_share": 0.0014373822510472267,
+            "whole_period_mae_contribution": 2022.953195929674
+          },
+          "工廠": {
+            "rows": 102,
+            "mae": 7471881.81173287,
+            "mean_pred_minus_true": 5253541.187548116,
+            "median_pred_minus_true": 237291.83372213878,
+            "overprediction_fraction": 0.5392156862745098,
+            "error_share": 0.006666206609502379,
+            "whole_period_mae_contribution": 9381.932993534145
+          },
+          "店面(店鋪)": {
+            "rows": 739,
+            "mae": 4611913.9267864255,
+            "mean_pred_minus_true": 97648.30212410615,
+            "median_pred_minus_true": 150375.56143022887,
+            "overprediction_fraction": 0.523680649526387,
+            "error_share": 0.02981084154640124,
+            "whole_period_mae_contribution": 41955.39296224695
+          },
+          "廠辦": {
+            "rows": 218,
+            "mae": 6829160.55750239,
+            "mean_pred_minus_true": 3980721.0227526687,
+            "median_pred_minus_true": 4657613.374815971,
+            "overprediction_fraction": 0.7889908256880734,
+            "error_share": 0.013021841993810781,
+            "whole_period_mae_contribution": 18326.772060165953
+          },
+          "華廈(10層含以下有電梯)": {
+            "rows": 14327,
+            "mae": 1096037.1722013152,
+            "mean_pred_minus_true": -248758.47209161156,
+            "median_pred_minus_true": 60846.97753740009,
+            "overprediction_fraction": 0.532979688699658,
+            "error_share": 0.13735015340310583,
+            "whole_period_mae_contribution": 193304.83007273116
+          },
+          "辦公商業大樓": {
+            "rows": 834,
+            "mae": 2973293.64165348,
+            "mean_pred_minus_true": 1289079.1455650553,
+            "median_pred_minus_true": 242458.94055991527,
+            "overprediction_fraction": 0.5635491606714629,
+            "error_share": 0.021689645663490992,
+            "whole_period_mae_contribution": 30525.726877157376
+          },
+          "透天厝": {
+            "rows": 7246,
+            "mae": 1686434.8803675221,
+            "mean_pred_minus_true": -122749.66437107926,
+            "median_pred_minus_true": 128393.80675807316,
+            "overprediction_fraction": 0.5485785260833563,
+            "error_share": 0.10688493812819998,
+            "whole_period_mae_contribution": 150428.47998551177
+          }
+        },
+        "address_missing": {
+          "False": {
+            "rows": 81234,
+            "mae": 1407387.070805849,
+            "mean_pred_minus_true": -78118.67712162615,
+            "median_pred_minus_true": 116040.99349114578,
+            "overprediction_fraction": 0.5486003397592141,
+            "error_share": 1.0,
+            "whole_period_mae_contribution": 1407387.070805849
+          }
+        },
+        "address_road_missing": {
+          "False": {
+            "rows": 73557,
+            "mae": 1417235.8855867423,
+            "mean_pred_minus_true": -47923.78438237023,
+            "median_pred_minus_true": 133543.92253420316,
+            "overprediction_fraction": 0.5549301901926397,
+            "error_share": 0.911831840213569,
+            "whole_period_mae_contribution": 1283300.3426656818
+          },
+          "True": {
+            "rows": 7677,
+            "mae": 1313020.8771314751,
+            "mean_pred_minus_true": -367430.3516326914,
+            "median_pred_minus_true": -28616.30385321565,
+            "overprediction_fraction": 0.48795102253484435,
+            "error_share": 0.08816815978643094,
+            "whole_period_mae_contribution": 124086.7281401671
+          }
+        },
+        "geo_has_position": {
+          "0.0": {
+            "rows": 30389,
+            "mae": 1390248.399569431,
+            "mean_pred_minus_true": -189058.19361949238,
+            "median_pred_minus_true": 88017.30454585329,
+            "overprediction_fraction": 0.53624666820231,
+            "error_share": 0.3695365648151069,
+            "whole_period_mae_contribution": 520080.9835107891
+          },
+          "1.0": {
+            "rows": 50845,
+            "mae": 1417630.4984821891,
+            "mean_pred_minus_true": -11812.433305053088,
+            "median_pred_minus_true": 134904.59426159877,
+            "overprediction_fraction": 0.5559838725538401,
+            "error_share": 0.6304634351848931,
+            "whole_period_mae_contribution": 887306.08729506
+          }
+        },
+        "geo_match_status": {
+          "disconnected": {
+            "rows": 3037,
+            "mae": 1394770.0151460455,
+            "mean_pred_minus_true": -384984.3376722201,
+            "median_pred_minus_true": 14096.089232161641,
+            "overprediction_fraction": 0.5054329930852816,
+            "error_share": 0.0370506642614283,
+            "whole_period_mae_contribution": 52144.62584630253
+          },
+          "ineligible_address": {
+            "rows": 3276,
+            "mae": 1259239.1156125693,
+            "mean_pred_minus_true": -141150.50256659678,
+            "median_pred_minus_true": -94671.11350342911,
+            "overprediction_fraction": 0.4539072039072039,
+            "error_share": 0.036082839216924074,
+            "whole_period_mae_contribution": 50782.521391865186
+          },
+          "intersection_admin_or_parse_ineligible": {
+            "rows": 231,
+            "mae": 2188304.4863238693,
+            "mean_pred_minus_true": 834523.7178769765,
+            "median_pred_minus_true": 1487695.5962260533,
+            "overprediction_fraction": 0.7748917748917749,
+            "error_share": 0.004421486822345762,
+            "whole_period_mae_contribution": 6222.743387507864
+          },
+          "intersection_lane_or_alley_unsupported": {
+            "rows": 2060,
+            "mae": 1426099.2012666434,
+            "mean_pred_minus_true": 241100.02016891565,
+            "median_pred_minus_true": 636253.1693120254,
+            "overprediction_fraction": 0.7640776699029126,
+            "error_share": 0.025696002236305096,
+            "whole_period_mae_contribution": 36164.221318773976
+          },
+          "intersection_multiple_distant_points": {
+            "rows": 289,
+            "mae": 1079549.2042964578,
+            "mean_pred_minus_true": -375305.5810532275,
+            "median_pred_minus_true": 52773.03756116517,
+            "overprediction_fraction": 0.5086505190311419,
+            "error_share": 0.0027289079640839126,
+            "whole_period_mae_contribution": 3840.6297860708114
+          },
+          "intersection_no_geometric_intersection": {
+            "rows": 1307,
+            "mae": 1420078.42386969,
+            "mean_pred_minus_true": -531319.8614436795,
+            "median_pred_minus_true": -196927.13578062877,
+            "overprediction_fraction": 0.4521805661820964,
+            "error_share": 0.016234410413411404,
+            "whole_period_mae_contribution": 22848.099317991047
+          },
+          "intersection_not_explicit": {
+            "rows": 2578,
+            "mae": 1171308.626922295,
+            "mean_pred_minus_true": -52861.16193920427,
+            "median_pred_minus_true": 23937.959948724136,
+            "overprediction_fraction": 0.5124127230411172,
+            "error_share": 0.02641209552760972,
+            "whole_period_mae_contribution": 37172.04175844691
+          },
+          "intersection_parse_uncertain": {
+            "rows": 891,
+            "mae": 1309073.7822450611,
+            "mean_pred_minus_true": 582326.5282576012,
+            "median_pred_minus_true": -59512.492511691526,
+            "overprediction_fraction": 0.4725028058361392,
+            "error_share": 0.010202120139385148,
+            "whole_period_mae_contribution": 14358.331978978624
+          },
+          "intersection_road_key_not_found": {
+            "rows": 3523,
+            "mae": 1334449.1511665934,
+            "mean_pred_minus_true": 99032.24236100273,
+            "median_pred_minus_true": 286165.6884864066,
+            "overprediction_fraction": 0.6037468066988362,
+            "error_share": 0.04112096305722228,
+            "whole_period_mae_contribution": 57873.111745819595
+          },
+          "land_parcel": {
+            "rows": 8626,
+            "mae": 1264059.8024698396,
+            "mean_pred_minus_true": -224497.75030087878,
+            "median_pred_minus_true": 77667.63157830015,
+            "overprediction_fraction": 0.5350104335729191,
+            "error_share": 0.09537305166326451,
+            "whole_period_mae_contribution": 134226.79981417677
+          },
+          "multiple_roads": {
+            "rows": 909,
+            "mae": 1361751.2377966587,
+            "mean_pred_minus_true": -580870.5411633314,
+            "median_pred_minus_true": -100557.539621206,
+            "overprediction_fraction": 0.46534653465346537,
+            "error_share": 0.010827053089640496,
+            "whole_period_mae_contribution": 15237.854533288557
+          },
+          "planar_intersection": {
+            "rows": 10525,
+            "mae": 1270992.4645373512,
+            "mean_pred_minus_true": -343797.5915769885,
+            "median_pred_minus_true": 33318.3593050763,
+            "overprediction_fraction": 0.5144893111638955,
+            "error_share": 0.1170074957874965,
+            "whole_period_mae_contribution": 164674.83675869243
+          },
+          "road_key_not_found": {
+            "rows": 3662,
+            "mae": 1978941.9316692334,
+            "mean_pred_minus_true": -619105.4477207932,
+            "median_pred_minus_true": 34109.10984851094,
+            "overprediction_fraction": 0.5122883670125614,
+            "error_share": 0.0633869704234862,
+            "whole_period_mae_contribution": 89210.00263156723
+          },
+          "road_level": {
+            "rows": 40320,
+            "mae": 1455908.4078886728,
+            "mean_pred_minus_true": 74847.87896707292,
+            "median_pred_minus_true": 163070.04039519466,
+            "overprediction_fraction": 0.5668154761904762,
+            "error_share": 0.5134559393973966,
+            "whole_period_mae_contribution": 722631.2505363676
+          }
+        },
+        "partial_share_flag": {
+          "0.0": {
+            "rows": 78224,
+            "mae": 1352221.5082242365,
+            "mean_pred_minus_true": -20620.17965749976,
+            "median_pred_minus_true": 128081.9673191933,
+            "overprediction_fraction": 0.5541521783595827,
+            "error_share": 0.9252017888184577,
+            "whole_period_mae_contribution": 1302117.0354695409
+          },
+          "1.0": {
+            "rows": 3010,
+            "mae": 2841031.910468325,
+            "mean_pred_minus_true": -1572391.921518245,
+            "median_pred_minus_true": -473722.69836799614,
+            "overprediction_fraction": 0.40431893687707643,
+            "error_share": 0.07479821118154233,
+            "whole_period_mae_contribution": 105270.03533630817
+          }
+        },
+        "project_seen_in_fit": {
+          "False": {
+            "rows": 51720,
+            "mae": 1701417.546386672,
+            "mean_pred_minus_true": -347940.2722421253,
+            "median_pred_minus_true": -115529.4704722166,
+            "overprediction_fraction": 0.4648105181747873,
+            "error_share": 0.7696938702065943,
+            "whole_period_mae_contribution": 1083257.201407276
+          },
+          "True": {
+            "rows": 29514,
+            "mae": 892131.3888569385,
+            "mean_pred_minus_true": 394713.6363442619,
+            "median_pred_minus_true": 327134.97927350085,
+            "overprediction_fraction": 0.6954326760181608,
+            "error_share": 0.23030612979340578,
+            "whole_period_mae_contribution": 324129.86939857306
+          }
+        },
+        "unit_reference_source": {
+          "address": {
+            "rows": 3679,
+            "mae": 1482980.5130387761,
+            "mean_pred_minus_true": 499711.1657312683,
+            "median_pred_minus_true": 197149.2159412466,
+            "overprediction_fraction": 0.5659146507203044,
+            "error_share": 0.04772147256869073,
+            "whole_period_mae_contribution": 67162.58349299133
+          },
+          "base_fallback": {
+            "rows": 10779,
+            "mae": 2006108.2767512924,
+            "mean_pred_minus_true": -209795.32525288867,
+            "median_pred_minus_true": -18102.104625873268,
+            "overprediction_fraction": 0.49457278040634567,
+            "error_share": 0.18913915569142753,
+            "whole_period_mae_contribution": 266192.0023032496
+          },
+          "district_style": {
+            "rows": 29073,
+            "mae": 1711529.2643426966,
+            "mean_pred_minus_true": -441497.1684455787,
+            "median_pred_minus_true": -185963.70031806827,
+            "overprediction_fraction": 0.4440890173012761,
+            "error_share": 0.43523396724351743,
+            "whole_period_mae_contribution": 612542.6582740629
+          },
+          "locality": {
+            "rows": 1010,
+            "mae": 1618930.3809242258,
+            "mean_pred_minus_true": -676020.2086606243,
+            "median_pred_minus_true": -257839.58024986088,
+            "overprediction_fraction": 0.4623762376237624,
+            "error_share": 0.014302045366441822,
+            "whole_period_mae_contribution": 20128.513734808923
+          },
+          "project": {
+            "rows": 24776,
+            "mae": 768151.7204844235,
+            "mean_pred_minus_true": 448260.9805406949,
+            "median_pred_minus_true": 338629.0225270232,
+            "overprediction_fraction": 0.7163383919922506,
+            "error_share": 0.16646648308333753,
+            "whole_period_mae_contribution": 234282.77601400984
+          },
+          "street": {
+            "rows": 3061,
+            "mae": 1283288.1530461018,
+            "mean_pred_minus_true": 429646.99220362765,
+            "median_pred_minus_true": 583369.6719651781,
+            "overprediction_fraction": 0.7027115321790265,
+            "error_share": 0.034358652178280005,
+            "whole_period_mae_contribution": 48355.92284602651
+          },
+          "street_section": {
+            "rows": 8856,
+            "mae": 1455925.1171076808,
+            "mean_pred_minus_true": -544916.6771870654,
+            "median_pred_minus_true": -190399.08275221847,
+            "overprediction_fraction": 0.43755645889792233,
+            "error_share": 0.11277822386830492,
+            "whole_period_mae_contribution": 158722.61414069997
+          }
+        },
+        "unit_spatial_reason": {
+          "area_out_of_bounds": {
+            "rows": 67,
+            "mae": 25243124.18649503,
+            "mean_pred_minus_true": 14875250.133176088,
+            "median_pred_minus_true": -86047.0053856317,
+            "overprediction_fraction": 0.43283582089552236,
+            "error_share": 0.014793349266933535,
+            "whole_period_mae_contribution": 20819.96849219744
+          },
+          "fewer_than_5_projects": {
+            "rows": 12532,
+            "mae": 1500417.8789418668,
+            "mean_pred_minus_true": -144784.20602679142,
+            "median_pred_minus_true": -50487.56387682911,
+            "overprediction_fraction": 0.48148739227577403,
+            "error_share": 0.1644679280072194,
+            "whole_period_mae_contribution": 231470.0354395878
+          },
+          "invalid_geography_or_group": {
+            "rows": 17597,
+            "mae": 1773747.369878714,
+            "mean_pred_minus_true": -454216.4341251658,
+            "median_pred_minus_true": -129860.28299308196,
+            "overprediction_fraction": 0.46252202079899984,
+            "error_share": 0.27301028158845964,
+            "whole_period_mae_contribution": 384231.1405046622
+          },
+          "not_weak_source": {
+            "rows": 41382,
+            "mae": 1037759.1680562792,
+            "mean_pred_minus_true": 211472.09829928516,
+            "median_pred_minus_true": 261726.53584331833,
+            "overprediction_fraction": 0.6360978203083466,
+            "error_share": 0.37562687706505504,
+            "whole_period_mae_contribution": 528652.4102285366
+          },
+          "spatial_residual": {
+            "rows": 9656,
+            "mae": 2037693.9488594693,
+            "mean_pred_minus_true": -651034.640307964,
+            "median_pred_minus_true": -295573.4694441287,
+            "overprediction_fraction": 0.4183927091963546,
+            "error_share": 0.17210156407233243,
+            "whole_period_mae_contribution": 242213.51614086507
+          }
+        }
+      },
+      "selected_group_branch_metrics": {
+        "industrial_office": {
+          "rows": 218,
+          "projects": 23,
+          "largest_project_rows": 45,
+          "reference_source_counts": {
+            "base_fallback": 152,
+            "project": 34,
+            "street": 31,
+            "district_style": 1
+          },
+          "reference_confidence_mean": 0.10084701258235722,
+          "spatial_applied_rows": 0,
+          "branches": {
+            "v22": {
+              "rows": 218,
+              "mae": 6829160.55750239,
+              "mean_pred_minus_true": 3980721.0227526687,
+              "median_pred_minus_true": 4657613.374815971,
+              "overprediction_fraction": 0.7889908256880734,
+              "error_share": 0.013021841993810781,
+              "whole_period_mae_contribution": 18326.772060165953
+            },
+            "unit_base": {
+              "rows": 218,
+              "mae": 4771094.090352782,
+              "mean_pred_minus_true": 1160203.9615287625,
+              "median_pred_minus_true": 514901.1188414637,
+              "overprediction_fraction": 0.5688073394495413,
+              "error_share": 0.00909752126327227,
+              "whole_period_mae_contribution": 12803.733802310688
+            },
+            "unit_reference": {
+              "rows": 218,
+              "mae": 6886701.040052631,
+              "mean_pred_minus_true": 4751426.306863113,
+              "median_pred_minus_true": 3611871.2225650847,
+              "overprediction_fraction": 0.7981651376146789,
+              "error_share": 0.013131560174501922,
+              "whole_period_mae_contribution": 18481.188009103003
+            },
+            "unit_spatial": {
+              "rows": 218,
+              "mae": 6886701.040052631,
+              "mean_pred_minus_true": 4751426.306863113,
+              "median_pred_minus_true": 3611871.2225650847,
+              "overprediction_fraction": 0.7981651376146789,
+              "error_share": 0.013131560174501922,
+              "whole_period_mae_contribution": 18481.188009103003
+            },
+            "nn_spatial": {
+              "rows": 218,
+              "mae": 9653358.984439857,
+              "mean_pred_minus_true": 5362508.442522401,
+              "median_pred_minus_true": 3005828.1225630343,
+              "overprediction_fraction": 0.7064220183486238,
+              "error_share": 0.018407022993010884,
+              "whole_period_mae_contribution": 25905.8061723895
+            },
+            "log_spatial": {
+              "rows": 218,
+              "mae": 10903259.890237385,
+              "mean_pred_minus_true": 5905073.253176658,
+              "median_pred_minus_true": 3508481.442571128,
+              "overprediction_fraction": 0.7522935779816514,
+              "error_share": 0.020790333791778953,
+              "whole_period_mae_contribution": 29260.046976287642
+            }
+          }
+        },
+        "area_above_500m2": {
+          "rows": 190,
+          "projects": 44,
+          "largest_project_rows": 45,
+          "reference_source_counts": {
+            "base_fallback": 109,
+            "project": 37,
+            "district_style": 23,
+            "street": 10,
+            "street_section": 9,
+            "address": 2
+          },
+          "reference_confidence_mean": 0.10377602031731846,
+          "spatial_applied_rows": 3,
+          "branches": {
+            "v22": {
+              "rows": 190,
+              "mae": 24976941.373820186,
+              "mean_pred_minus_true": 10671031.348847834,
+              "median_pred_minus_true": 7824162.404334933,
+              "overprediction_fraction": 0.7842105263157895,
+              "error_share": 0.04150892248190194,
+              "whole_period_mae_contribution": 58419.12082411103
+            },
+            "unit_base": {
+              "rows": 190,
+              "mae": 24467618.006158467,
+              "mean_pred_minus_true": 7072384.59563182,
+              "median_pred_minus_true": 3358405.4460724294,
+              "overprediction_fraction": 0.6,
+              "error_share": 0.04066248320536782,
+              "whole_period_mae_contribution": 57227.85313009465
+            },
+            "unit_reference": {
+              "rows": 190,
+              "mae": 27104823.140570983,
+              "mean_pred_minus_true": 14075480.161511125,
+              "median_pred_minus_true": 8228898.176184669,
+              "overprediction_fraction": 0.8210526315789474,
+              "error_share": 0.045045227347448494,
+              "whole_period_mae_contribution": 63396.070570309064
+            },
+            "unit_spatial": {
+              "rows": 190,
+              "mae": 27138682.08689609,
+              "mean_pred_minus_true": 14082576.145426655,
+              "median_pred_minus_true": 8228898.176184669,
+              "overprediction_fraction": 0.8210526315789474,
+              "error_share": 0.04510149718278554,
+              "whole_period_mae_contribution": 63475.2640090388
+            },
+            "nn_spatial": {
+              "rows": 190,
+              "mae": 38727734.67354338,
+              "mean_pred_minus_true": 23920863.285899326,
+              "median_pred_minus_true": 8028658.3088648245,
+              "overprediction_fraction": 0.6684210526315789,
+              "error_share": 0.06436122471539862,
+              "whole_period_mae_contribution": 90581.15552568188
+            },
+            "log_spatial": {
+              "rows": 190,
+              "mae": 39812524.242669925,
+              "mean_pred_minus_true": -16141606.377764765,
+              "median_pred_minus_true": 2938440.7118243724,
+              "overprediction_fraction": 0.5947368421052631,
+              "error_share": 0.06616402536501086,
+              "whole_period_mae_contribution": 93118.39385118653
+            }
+          }
+        },
+        "parking_only": {
+          "rows": 100,
+          "projects": 52,
+          "largest_project_rows": 9,
+          "reference_source_counts": {
+            "base_fallback": 74,
+            "project": 17,
+            "district_style": 4,
+            "address": 4,
+            "locality": 1
+          },
+          "reference_confidence_mean": 0.07406535866322497,
+          "spatial_applied_rows": 1,
+          "branches": {
+            "v22": {
+              "rows": 100,
+              "mae": 673986.4693460327,
+              "mean_pred_minus_true": 355720.3235805408,
+              "median_pred_minus_true": 242879.67158008402,
+              "overprediction_fraction": 0.66,
+              "error_share": 0.0005895216815597308,
+              "whole_period_mae_contribution": 829.6851925868882
+            },
+            "unit_base": {
+              "rows": 100,
+              "mae": 954553.1672016646,
+              "mean_pred_minus_true": 692361.9084713396,
+              "median_pred_minus_true": 537207.2667185292,
+              "overprediction_fraction": 0.78,
+              "error_share": 0.0008349274263812855,
+              "whole_period_mae_contribution": 1175.0660649502236
+            },
+            "unit_reference": {
+              "rows": 100,
+              "mae": 1017891.2094603552,
+              "mean_pred_minus_true": 787150.4305073959,
+              "median_pred_minus_true": 623773.7682169664,
+              "overprediction_fraction": 0.83,
+              "error_share": 0.0008903278696799093,
+              "whole_period_mae_contribution": 1253.0359325656193
+            },
+            "unit_spatial": {
+              "rows": 100,
+              "mae": 1018132.4494801953,
+              "mean_pred_minus_true": 786909.1904875557,
+              "median_pred_minus_true": 623773.7682169664,
+              "overprediction_fraction": 0.83,
+              "error_share": 0.000890538877212885,
+              "whole_period_mae_contribution": 1253.332901839372
+            },
+            "nn_spatial": {
+              "rows": 100,
+              "mae": 541213.7182377237,
+              "mean_pred_minus_true": 90021.24318276328,
+              "median_pred_minus_true": 110437.42852763971,
+              "overprediction_fraction": 0.53,
+              "error_share": 0.00047338816989646337,
+              "whole_period_mae_contribution": 666.2403897847253
+            },
+            "log_spatial": {
+              "rows": 100,
+              "mae": 1021535.9659979172,
+              "mean_pred_minus_true": 755224.8214473699,
+              "median_pred_minus_true": 470632.8889059322,
+              "overprediction_fraction": 0.73,
+              "error_share": 0.0008935158609833315,
+              "whole_period_mae_contribution": 1257.5226703078972
+            }
+          }
+        },
+        "partial_share": {
+          "rows": 3010,
+          "projects": 472,
+          "largest_project_rows": 201,
+          "reference_source_counts": {
+            "district_style": 1070,
+            "base_fallback": 779,
+            "project": 655,
+            "street_section": 205,
+            "address": 186,
+            "street": 94,
+            "locality": 21
+          },
+          "reference_confidence_mean": 0.191223997229681,
+          "spatial_applied_rows": 230,
+          "branches": {
+            "v22": {
+              "rows": 3010,
+              "mae": 2841031.910468325,
+              "mean_pred_minus_true": -1572391.921518245,
+              "median_pred_minus_true": -473722.69836799614,
+              "overprediction_fraction": 0.40431893687707643,
+              "error_share": 0.07479821118154233,
+              "whole_period_mae_contribution": 105270.03533630817
+            },
+            "unit_base": {
+              "rows": 3010,
+              "mae": 3318302.676925035,
+              "mean_pred_minus_true": -2490267.8200058835,
+              "median_pred_minus_true": -1401690.6859737271,
+              "overprediction_fraction": 0.25813953488372093,
+              "error_share": 0.08736371579578682,
+              "whole_period_mae_contribution": 122954.5640685471
+            },
+            "unit_reference": {
+              "rows": 3010,
+              "mae": 2997183.9439688874,
+              "mean_pred_minus_true": -1652787.9393915772,
+              "median_pred_minus_true": -593375.0771121588,
+              "overprediction_fraction": 0.39800664451827245,
+              "error_share": 0.07890935570447626,
+              "whole_period_mae_contribution": 111056.00698409966
+            },
+            "unit_spatial": {
+              "rows": 3010,
+              "mae": 2971563.705206068,
+              "mean_pred_minus_true": -1621663.2949443283,
+              "median_pred_minus_true": -578136.6195648164,
+              "overprediction_fraction": 0.3996677740863787,
+              "error_share": 0.07823483035949799,
+              "whole_period_mae_contribution": 110106.68873464639
+            },
+            "nn_spatial": {
+              "rows": 3010,
+              "mae": 2395872.505916601,
+              "mean_pred_minus_true": -1125904.3248509178,
+              "median_pred_minus_true": -429288.7163018137,
+              "overprediction_fraction": 0.4225913621262459,
+              "error_share": 0.06307812911262228,
+              "whole_period_mae_contribution": 88775.34336372664
+            },
+            "log_spatial": {
+              "rows": 3010,
+              "mae": 2962360.0548048182,
+              "mean_pred_minus_true": -1614964.1911591494,
+              "median_pred_minus_true": -422583.8124319948,
+              "overprediction_fraction": 0.40564784053156144,
+              "error_share": 0.07799251819685837,
+              "whole_period_mae_contribution": 109765.66172984838
+            }
+          }
+        },
+        "common_area_100_to_200m2": {
+          "rows": 56549,
+          "projects": 2955,
+          "largest_project_rows": 563,
+          "reference_source_counts": {
+            "district_style": 20690,
+            "project": 17863,
+            "base_fallback": 6849,
+            "street_section": 6167,
+            "address": 2658,
+            "street": 1533,
+            "locality": 789
+          },
+          "reference_confidence_mean": 0.25267542483064587,
+          "spatial_applied_rows": 6496,
+          "branches": {
+            "v22": {
+              "rows": 56549,
+              "mae": 1274935.580970948,
+              "mean_pred_minus_true": -94254.81029313547,
+              "median_pred_minus_true": 122353.8954006955,
+              "overprediction_fraction": 0.5475251551751579,
+              "error_share": 0.6306113387617479,
+              "whole_period_mae_contribution": 887514.2448768513
+            },
+            "unit_base": {
+              "rows": 56549,
+              "mae": 1539274.8690859834,
+              "mean_pred_minus_true": -833787.7080225791,
+              "median_pred_minus_true": -483602.1450970974,
+              "overprediction_fraction": 0.34244637394118377,
+              "error_share": 0.7613593976076702,
+              "whole_period_mae_contribution": 1071527.3724295648
+            },
+            "unit_reference": {
+              "rows": 56549,
+              "mae": 1372600.8510374066,
+              "mean_pred_minus_true": -142472.88482321415,
+              "median_pred_minus_true": 82574.71936257929,
+              "overprediction_fraction": 0.5304779925374454,
+              "error_share": 0.6789187416034138,
+              "whole_period_mae_contribution": 955501.4590604218
+            },
+            "unit_spatial": {
+              "rows": 56549,
+              "mae": 1362152.0284324444,
+              "mean_pred_minus_true": -146178.54004414004,
+              "median_pred_minus_true": 74134.36843796633,
+              "overprediction_fraction": 0.5273833312702259,
+              "error_share": 0.6737505228245629,
+              "whole_period_mae_contribution": 948227.774771971
+            },
+            "nn_spatial": {
+              "rows": 56549,
+              "mae": 1305588.5402935238,
+              "mean_pred_minus_true": 129660.1125436959,
+              "median_pred_minus_true": 249048.36840007827,
+              "overprediction_fraction": 0.5880563758863994,
+              "error_share": 0.6457729704582276,
+              "whole_period_mae_contribution": 908852.5292987969
+            },
+            "log_spatial": {
+              "rows": 56549,
+              "mae": 1316852.0789879255,
+              "mean_pred_minus_true": -99028.70825073122,
+              "median_pred_minus_true": 118006.20642999932,
+              "overprediction_fraction": 0.5456860421934959,
+              "error_share": 0.6513441658356929,
+              "whole_period_mae_contribution": 916693.357641975
+            }
+          }
+        }
+      },
+      "worst_error_concentration": {
+        "1": {
+          "rows": 1,
+          "error_share": 0.004613362424296579
+        },
+        "10": {
+          "rows": 10,
+          "error_share": 0.0185042380761399
+        },
+        "100": {
+          "rows": 100,
+          "error_share": 0.04956100714979098
+        },
+        "1000": {
+          "rows": 1000,
+          "error_share": 0.13594998096254318
+        }
+      }
+    },
+    "confirmation": {
+      "rows": 133697,
+      "fit_rows": 321550,
+      "overall": {
+        "rows": 133697,
+        "mae": 1383228.4054499655,
+        "mean_pred_minus_true": -353695.90820683,
+        "median_pred_minus_true": -53903.12360101007,
+        "overprediction_fraction": 0.4785148507445941,
+        "error_share": null,
+        "whole_period_mae_contribution": null
+      },
+      "groups": {
+        "building_area_m2": {
+          "(-inf, 0.0]": {
+            "rows": 37,
+            "mae": 1713833.480074271,
+            "mean_pred_minus_true": 1685479.1315881393,
+            "median_pred_minus_true": 1167080.364541441,
+            "overprediction_fraction": 0.972972972972973,
+            "error_share": 0.000342889973071942,
+            "whole_period_mae_contribution": 474.29515069708395
+          },
+          "(0.0, 50.0]": {
+            "rows": 814,
+            "mae": 977851.6437717314,
+            "mean_pred_minus_true": -266613.9206722091,
+            "median_pred_minus_true": 24376.11419212632,
+            "overprediction_fraction": 0.5098280098280098,
+            "error_share": 0.004304094656446833,
+            "whole_period_mae_contribution": 5953.54598854267
+          },
+          "(100.0, 200.0]": {
+            "rows": 98334,
+            "mae": 1271996.2369945846,
+            "mean_pred_minus_true": -364627.2845730026,
+            "median_pred_minus_true": -39483.2104529161,
+            "overprediction_fraction": 0.4842780726910326,
+            "error_share": 0.6763538569344112,
+            "whole_period_mae_contribution": 935551.8670473197
+          },
+          "(1000.0, 5000.0]": {
+            "rows": 27,
+            "mae": 19896075.086476944,
+            "mean_pred_minus_true": 5295674.953080631,
+            "median_pred_minus_true": 4320244.613310486,
+            "overprediction_fraction": 0.7777777777777778,
+            "error_share": 0.002904795841931548,
+            "whole_period_mae_contribution": 4017.9961205926647
+          },
+          "(200.0, 500.0]": {
+            "rows": 10984,
+            "mae": 2991065.906368115,
+            "mean_pred_minus_true": -109438.37078407513,
+            "median_pred_minus_true": 317997.02737136185,
+            "overprediction_fraction": 0.5577203204661325,
+            "error_share": 0.17765234544009278,
+            "whole_period_mae_contribution": 245733.77050754597
+          },
+          "(50.0, 100.0]": {
+            "rows": 23254,
+            "mae": 953737.8807503475,
+            "mean_pred_minus_true": -475474.65798259265,
+            "median_pred_minus_true": -177695.01144539006,
+            "overprediction_fraction": 0.4114560935752989,
+            "error_share": 0.11992538995514165,
+            "whole_period_mae_contribution": 165884.20592061587
+          },
+          "(500.0, 1000.0]": {
+            "rows": 240,
+            "mae": 11657851.845072897,
+            "mean_pred_minus_true": 4047633.3927329886,
+            "median_pred_minus_true": 3318420.519050613,
+            "overprediction_fraction": 0.7708333333333334,
+            "error_share": 0.01512913897427757,
+            "whole_period_mae_contribution": 20927.05477922089
+          },
+          "(5000.0, inf]": {
+            "rows": 7,
+            "mae": 89494287.62246895,
+            "mean_pred_minus_true": -19116844.476871114,
+            "median_pred_minus_true": 14754241.405029058,
+            "overprediction_fraction": 0.5714285714285714,
+            "error_share": 0.003387488224626561,
+            "whole_period_mae_contribution": 4685.669935430732
+          }
+        },
+        "true_price_TWD": {
+          "[-inf, 10000000.0)": {
+            "rows": 25585,
+            "mae": 647011.4443501264,
+            "mean_pred_minus_true": 208322.47803533098,
+            "median_pred_minus_true": 162661.4543102961,
+            "overprediction_fraction": 0.6145397693961305,
+            "error_share": 0.08951211579726571,
+            "whole_period_mae_contribution": 123815.70120270451
+          },
+          "[10000000.0, 20000000.0)": {
+            "rows": 74109,
+            "mae": 1043370.989199036,
+            "mean_pred_minus_true": -197291.21881024298,
+            "median_pred_minus_true": -64563.55593965575,
+            "overprediction_fraction": 0.4735727104670148,
+            "error_share": 0.41811346026706503,
+            "whole_period_mae_contribution": 578346.4149423799
+          },
+          "[100000000.0, inf)": {
+            "rows": 319,
+            "mae": 18130151.987229306,
+            "mean_pred_minus_true": -3277728.9033334744,
+            "median_pred_minus_true": -32994.255894988775,
+            "overprediction_fraction": 0.49843260188087773,
+            "error_share": 0.03127350564039338,
+            "whole_period_mae_contribution": 43258.40133979183
+          },
+          "[20000000.0, 50000000.0)": {
+            "rows": 31959,
+            "mae": 2322224.574094642,
+            "mean_pred_minus_true": -1079951.143723484,
+            "median_pred_minus_true": -610798.1323640719,
+            "overprediction_fraction": 0.381363622140868,
+            "error_share": 0.4013117143713373,
+            "whole_period_mae_contribution": 555105.7627582569
+          },
+          "[50000000.0, 100000000.0)": {
+            "rows": 1725,
+            "mae": 6409870.164508904,
+            "mean_pred_minus_true": -1412871.526279418,
+            "median_pred_minus_true": -391792.507091254,
+            "overprediction_fraction": 0.46956521739130436,
+            "error_share": 0.059789203923938536,
+            "whole_period_mae_contribution": 82702.12520683232
+          }
+        },
+        "transaction_type": {
+          "建物": {
+            "rows": 3,
+            "mae": 2058953.4161705573,
+            "mean_pred_minus_true": 2058953.4161705573,
+            "median_pred_minus_true": 1757869.4104371965,
+            "overprediction_fraction": 1.0,
+            "error_share": 3.340044202480292e-05,
+            "whole_period_mae_contribution": 46.200440163292164
+          },
+          "房地(土地+建物)": {
+            "rows": 21114,
+            "mae": 1301391.530668018,
+            "mean_pred_minus_true": -451887.5329609777,
+            "median_pred_minus_true": -82397.74627979938,
+            "overprediction_fraction": 0.4644311831012598,
+            "error_share": 0.14858088200976943,
+            "whole_period_mae_contribution": 205521.2965027228
+          },
+          "房地(土地+建物)+車位": {
+            "rows": 112504,
+            "mae": 1398544.6495071652,
+            "mean_pred_minus_true": -336466.9535417602,
+            "median_pred_minus_true": -49037.67947014049,
+            "overprediction_fraction": 0.4808540140794994,
+            "error_share": 0.8508024633328044,
+            "whole_period_mae_contribution": 1176854.1347087377
+          },
+          "車位": {
+            "rows": 76,
+            "mae": 1419253.112063996,
+            "mean_pred_minus_true": 1325958.058200154,
+            "median_pred_minus_true": 1151664.4005272267,
+            "overprediction_fraction": 0.9078947368421053,
+            "error_share": 0.0005832542154012931,
+            "whole_period_mae_contribution": 806.7737983415013
+          }
+        },
+        "building_type": {
+          "住宅大樓(11層含以上有電梯)": {
+            "rows": 99622,
+            "mae": 1388034.5223469096,
+            "mean_pred_minus_true": -393774.9354502128,
+            "median_pred_minus_true": -77999.40489207394,
+            "overprediction_fraction": 0.4708096605167533,
+            "error_share": 0.747721662465708,
+            "whole_period_mae_contribution": 1034269.8428928385
+          },
+          "倉庫": {
+            "rows": 1,
+            "mae": 5866315.633873757,
+            "mean_pred_minus_true": -5866315.633873757,
+            "median_pred_minus_true": -5866315.633873757,
+            "overprediction_fraction": 0.0,
+            "error_share": 3.1721218765732475e-05,
+            "whole_period_mae_contribution": 43.87769085225366
+          },
+          "公寓(5樓含以下無電梯)": {
+            "rows": 108,
+            "mae": 767411.8857354954,
+            "mean_pred_minus_true": -240417.83047365485,
+            "median_pred_minus_true": 33530.72478565294,
+            "overprediction_fraction": 0.5277777777777778,
+            "error_share": 0.0004481637398420256,
+            "whole_period_mae_contribution": 619.9128152421782
+          },
+          "其他": {
+            "rows": 110,
+            "mae": 3145886.9516915083,
+            "mean_pred_minus_true": -839322.578947611,
+            "median_pred_minus_true": 171983.34009417286,
+            "overprediction_fraction": 0.5272727272727272,
+            "error_share": 0.0018712001173907314,
+            "whole_period_mae_contribution": 2588.29715465617
+          },
+          "套房(1房1廳1衛)": {
+            "rows": 144,
+            "mae": 330865.7726592918,
+            "mean_pred_minus_true": -179164.60963179648,
+            "median_pred_minus_true": -77662.17108533555,
+            "overprediction_fraction": 0.3333333333333333,
+            "error_share": 0.00025763138816229416,
+            "whole_period_mae_contribution": 356.3630542415912
+          },
+          "工廠": {
+            "rows": 90,
+            "mae": 5218581.8683910575,
+            "mean_pred_minus_true": -70757.99455743929,
+            "median_pred_minus_true": 418431.74482709356,
+            "overprediction_fraction": 0.5555555555555556,
+            "error_share": 0.0025396826335838457,
+            "whole_period_mae_contribution": 3512.961159601152
+          },
+          "店面(店鋪)": {
+            "rows": 994,
+            "mae": 3209414.9864438246,
+            "mean_pred_minus_true": 5175.307154091439,
+            "median_pred_minus_true": 185216.20582558773,
+            "overprediction_fraction": 0.528169014084507,
+            "error_share": 0.01725030187283179,
+            "whole_period_mae_contribution": 23861.107553087666
+          },
+          "廠辦": {
+            "rows": 356,
+            "mae": 6514812.155708092,
+            "mean_pred_minus_true": 3457290.8347759717,
+            "median_pred_minus_true": 2760072.4947866425,
+            "overprediction_fraction": 0.8117977528089888,
+            "error_share": 0.012541120329077199,
+            "whole_period_mae_contribution": 17347.2338753456
+          },
+          "華廈(10層含以下有電梯)": {
+            "rows": 21834,
+            "mae": 961870.2682315501,
+            "mean_pred_minus_true": -257429.5594835408,
+            "median_pred_minus_true": -6240.849145553075,
+            "overprediction_fraction": 0.4962901896125309,
+            "error_share": 0.11356231718589051,
+            "whole_period_mae_contribution": 157082.62292024252
+          },
+          "辦公商業大樓": {
+            "rows": 1747,
+            "mae": 2691117.1785389488,
+            "mean_pred_minus_true": -130667.55483640624,
+            "median_pred_minus_true": 4343.48271352984,
+            "overprediction_fraction": 0.5020034344590727,
+            "error_share": 0.02542201392843111,
+            "whole_period_mae_contribution": 35164.45178955058
+          },
+          "透天厝": {
+            "rows": 8691,
+            "mae": 1667277.961496976,
+            "mean_pred_minus_true": -378559.0776929713,
+            "median_pred_minus_true": -4691.522637646645,
+            "overprediction_fraction": 0.4985617305258313,
+            "error_share": 0.07835418512031667,
+            "whole_period_mae_contribution": 108381.73454430704
+          }
+        },
+        "address_missing": {
+          "False": {
+            "rows": 133697,
+            "mae": 1383228.4054499655,
+            "mean_pred_minus_true": -353695.90820683,
+            "median_pred_minus_true": -53903.12360101007,
+            "overprediction_fraction": 0.4785148507445941,
+            "error_share": 1.0,
+            "whole_period_mae_contribution": 1383228.4054499655
+          }
+        },
+        "address_road_missing": {
+          "False": {
+            "rows": 122507,
+            "mae": 1398126.8124906854,
+            "mean_pred_minus_true": -348956.12188661634,
+            "median_pred_minus_true": -51926.83179759607,
+            "overprediction_fraction": 0.47935220028243286,
+            "error_share": 0.9261725561757961,
+            "whole_period_mae_contribution": 1281108.188050565
+          },
+          "True": {
+            "rows": 11190,
+            "mae": 1220122.1363402726,
+            "mean_pred_minus_true": -405586.6144383239,
+            "median_pred_minus_true": -69867.37378639728,
+            "overprediction_fraction": 0.46934763181411976,
+            "error_share": 0.07382744382420395,
+            "whole_period_mae_contribution": 102120.21739940053
+          }
+        },
+        "geo_has_position": {
+          "0.0": {
+            "rows": 48942,
+            "mae": 1333547.9008675069,
+            "mean_pred_minus_true": -465065.68162610574,
+            "median_pred_minus_true": -98488.80081972945,
+            "overprediction_fraction": 0.46015692043643497,
+            "error_share": 0.35291878191737674,
+            "whole_period_mae_contribution": 488167.2839649171
+          },
+          "1.0": {
+            "rows": 84755,
+            "mae": 1411916.5448550119,
+            "mean_pred_minus_true": -289385.1365628421,
+            "median_pred_minus_true": -27061.213090514764,
+            "overprediction_fraction": 0.4891156863901835,
+            "error_share": 0.6470812180826233,
+            "whole_period_mae_contribution": 895061.1214850484
+          }
+        },
+        "geo_match_status": {
+          "disconnected": {
+            "rows": 5561,
+            "mae": 1710409.6239595716,
+            "mean_pred_minus_true": -1038718.6104044097,
+            "median_pred_minus_true": -540531.0190988127,
+            "overprediction_fraction": 0.34364322963495775,
+            "error_share": 0.05143247994376306,
+            "whole_period_mae_contribution": 71142.8672209487
+          },
+          "ineligible_address": {
+            "rows": 4209,
+            "mae": 990661.9974909524,
+            "mean_pred_minus_true": -123651.45697004221,
+            "median_pred_minus_true": 120644.91443289164,
+            "overprediction_fraction": 0.561416013304823,
+            "error_share": 0.022547005357169952,
+            "whole_period_mae_contribution": 31187.65826787002
+          },
+          "intersection_admin_or_parse_ineligible": {
+            "rows": 542,
+            "mae": 2776270.3538833405,
+            "mean_pred_minus_true": -1454920.9515910016,
+            "median_pred_minus_true": 209013.03761884663,
+            "overprediction_fraction": 0.5424354243542435,
+            "error_share": 0.008136647110664728,
+            "whole_period_mae_contribution": 11254.841408593838
+          },
+          "intersection_lane_or_alley_unsupported": {
+            "rows": 4129,
+            "mae": 1253309.3304286406,
+            "mean_pred_minus_true": -537966.4185650598,
+            "median_pred_minus_true": -411405.10156566836,
+            "overprediction_fraction": 0.34972148219907967,
+            "error_share": 0.027982569721961746,
+            "whole_period_mae_contribution": 38706.28529690163
+          },
+          "intersection_multiple_distant_points": {
+            "rows": 184,
+            "mae": 713353.8855506268,
+            "mean_pred_minus_true": 282972.6049585949,
+            "median_pred_minus_true": 149401.78367057908,
+            "overprediction_fraction": 0.592391304347826,
+            "error_share": 0.0007097530916288161,
+            "whole_period_mae_contribution": 981.7506371969105
+          },
+          "intersection_no_geometric_intersection": {
+            "rows": 1159,
+            "mae": 1378265.8619247482,
+            "mean_pred_minus_true": -637350.8556493276,
+            "median_pred_minus_true": -167001.27147761174,
+            "overprediction_fraction": 0.4081104400345125,
+            "error_share": 0.008637754850027508,
+            "whole_period_mae_contribution": 11947.987867871256
+          },
+          "intersection_not_explicit": {
+            "rows": 6851,
+            "mae": 1922106.1872473683,
+            "mean_pred_minus_true": -735119.7791104314,
+            "median_pred_minus_true": -232053.2587145865,
+            "overprediction_fraction": 0.4376003503138228,
+            "error_share": 0.07120586770115848,
+            "whole_period_mae_contribution": 98493.97883895466
+          },
+          "intersection_parse_uncertain": {
+            "rows": 1529,
+            "mae": 791810.7666002738,
+            "mean_pred_minus_true": 93477.99515649017,
+            "median_pred_minus_true": -65265.30665175244,
+            "overprediction_fraction": 0.4695879659908437,
+            "error_share": 0.006546562628633731,
+            "whole_period_mae_contribution": 9055.39138598337
+          },
+          "intersection_road_key_not_found": {
+            "rows": 5707,
+            "mae": 1122242.6941289727,
+            "mean_pred_minus_true": -48594.54862051854,
+            "median_pred_minus_true": 54738.147531710565,
+            "overprediction_fraction": 0.5204135272472402,
+            "error_share": 0.03463212163672011,
+            "whole_period_mae_contribution": 47904.1343889096
+          },
+          "land_parcel": {
+            "rows": 12629,
+            "mae": 1125828.9515308104,
+            "mean_pred_minus_true": -372692.4284760092,
+            "median_pred_minus_true": -68311.59902550653,
+            "overprediction_fraction": 0.4674954469870932,
+            "error_share": 0.07688220220770377,
+            "whole_period_mae_contribution": 106345.6459672439
+          },
+          "multiple_roads": {
+            "rows": 2795,
+            "mae": 984261.3622635601,
+            "mean_pred_minus_true": -470872.4614278853,
+            "median_pred_minus_true": -101769.40143282339,
+            "overprediction_fraction": 0.44543828264758495,
+            "error_share": 0.014875675224869695,
+            "whole_period_mae_contribution": 20576.456521288066
+          },
+          "planar_intersection": {
+            "rows": 18992,
+            "mae": 1344827.8701568884,
+            "mean_pred_minus_true": -193306.56977742544,
+            "median_pred_minus_true": 4182.684012170881,
+            "overprediction_fraction": 0.5015269587194608,
+            "error_share": 0.13810895565313133,
+            "whole_period_mae_contribution": 191036.23050644086
+          },
+          "road_key_not_found": {
+            "rows": 3647,
+            "mae": 1487284.219675172,
+            "mean_pred_minus_true": -431724.75594004383,
+            "median_pred_minus_true": 156256.48493107595,
+            "overprediction_fraction": 0.5736221551960515,
+            "error_share": 0.029330142443075104,
+            "whole_period_mae_contribution": 40570.286163155135
+          },
+          "road_level": {
+            "rows": 65763,
+            "mae": 1431291.3925637046,
+            "mean_pred_minus_true": -317132.1088784091,
+            "median_pred_minus_true": -34868.2245321013,
+            "overprediction_fraction": 0.48553137782643735,
+            "error_share": 0.508972262429492,
+            "whole_period_mae_contribution": 704024.8909786076
+          }
+        },
+        "partial_share_flag": {
+          "0.0": {
+            "rows": 129979,
+            "mae": 1375747.9061468067,
+            "mean_pred_minus_true": -368957.4308166884,
+            "median_pred_minus_true": -59599.97382474877,
+            "overprediction_fraction": 0.47614614668523375,
+            "error_share": 0.966933241283448,
+            "whole_period_mae_contribution": 1337489.5255170707
+          },
+          "1.0": {
+            "rows": 3718,
+            "mae": 1644742.0737999608,
+            "mean_pred_minus_true": 179837.5633657338,
+            "median_pred_minus_true": 212774.78391204216,
+            "overprediction_fraction": 0.5613232920925229,
+            "error_share": 0.03306675871655197,
+            "whole_period_mae_contribution": 45738.87993289493
+          }
+        },
+        "project_seen_in_fit": {
+          "False": {
+            "rows": 75399,
+            "mae": 1808827.0652860971,
+            "mean_pred_minus_true": -722226.8474528391,
+            "median_pred_minus_true": -469036.39534263127,
+            "overprediction_fraction": 0.3803896603403228,
+            "error_share": 0.7374746092739548,
+            "whole_period_mae_contribution": 1020095.8278458487
+          },
+          "True": {
+            "rows": 58298,
+            "mae": 832785.6226274931,
+            "mean_pred_minus_true": 122939.04133191658,
+            "median_pred_minus_true": 164689.0447497368,
+            "overprediction_fraction": 0.6054238567360801,
+            "error_share": 0.26252539072604525,
+            "whole_period_mae_contribution": 363132.5776041167
+          }
+        },
+        "unit_reference_source": {
+          "address": {
+            "rows": 9109,
+            "mae": 1418475.1095188705,
+            "mean_pred_minus_true": -138078.51104234427,
+            "median_pred_minus_true": -181771.22656184807,
+            "overprediction_fraction": 0.43802832363596444,
+            "error_share": 0.06986776653443444,
+            "whole_period_mae_contribution": 96643.0792957762
+          },
+          "base_fallback": {
+            "rows": 11976,
+            "mae": 1914486.3054660014,
+            "mean_pred_minus_true": -165533.71370010954,
+            "median_pred_minus_true": -65279.214122164994,
+            "overprediction_fraction": 0.4813794255177021,
+            "error_share": 0.12397910311925958,
+            "whole_period_mae_contribution": 171491.41711677026
+          },
+          "district_style": {
+            "rows": 43257,
+            "mae": 1820094.1119211924,
+            "mean_pred_minus_true": -712063.4012536615,
+            "median_pred_minus_true": -431477.1227917075,
+            "overprediction_fraction": 0.3985944471415031,
+            "error_share": 0.42573041690978725,
+            "whole_period_mae_contribution": 588882.4057336741
+          },
+          "locality": {
+            "rows": 2065,
+            "mae": 1713438.875525105,
+            "mean_pred_minus_true": -1051673.5518350403,
+            "median_pred_minus_true": -644474.7420672365,
+            "overprediction_fraction": 0.27796610169491526,
+            "error_share": 0.019132561191932646,
+            "whole_period_mae_contribution": 26464.702109690883
+          },
+          "project": {
+            "rows": 51039,
+            "mae": 707797.7037208284,
+            "mean_pred_minus_true": 174392.14000581612,
+            "median_pred_minus_true": 173950.79767359048,
+            "overprediction_fraction": 0.6187033445012637,
+            "error_share": 0.19534205171155128,
+            "whole_period_mae_contribution": 270202.6747062938
+          },
+          "street": {
+            "rows": 3549,
+            "mae": 1636272.7251644533,
+            "mean_pred_minus_true": -1080002.4882799138,
+            "median_pred_minus_true": -485015.3413008824,
+            "overprediction_fraction": 0.2888137503522119,
+            "error_share": 0.03140119164211273,
+            "whole_period_mae_contribution": 43435.02024434837
+          },
+          "street_section": {
+            "rows": 12702,
+            "mae": 1958922.1522142533,
+            "mean_pred_minus_true": -1270849.6376518472,
+            "median_pred_minus_true": -943394.8079072982,
+            "overprediction_fraction": 0.2993229412690915,
+            "error_share": 0.13454690889092208,
+            "whole_period_mae_contribution": 186109.10624341192
+          }
+        },
+        "unit_spatial_reason": {
+          "area_out_of_bounds": {
+            "rows": 56,
+            "mae": 17833128.87206168,
+            "mean_pred_minus_true": 582579.7700760985,
+            "median_pred_minus_true": 1191432.344117975,
+            "overprediction_fraction": 0.875,
+            "error_share": 0.005400077762924402,
+            "whole_period_mae_contribution": 7469.540953315737
+          },
+          "fewer_than_5_projects": {
+            "rows": 14829,
+            "mae": 1706841.6349728545,
+            "mean_pred_minus_true": -11690.738149583589,
+            "median_pred_minus_true": 151297.3887867555,
+            "overprediction_fraction": 0.5396857508935194,
+            "error_share": 0.13686409563700763,
+            "whole_period_mae_contribution": 189314.30477132963
+          },
+          "invalid_geography_or_group": {
+            "rows": 25149,
+            "mae": 1791676.5754934635,
+            "mean_pred_minus_true": -728773.2604734893,
+            "median_pred_minus_true": -389844.84636094794,
+            "overprediction_fraction": 0.39504552864925047,
+            "error_share": 0.2436490797545985,
+            "whole_period_mae_contribution": 337022.32807830477
+          },
+          "not_weak_source": {
+            "rows": 78464,
+            "mae": 1061299.3108917235,
+            "mean_pred_minus_true": -184848.12826552818,
+            "median_pred_minus_true": 42503.06215933617,
+            "overprediction_fraction": 0.5221375407830342,
+            "error_share": 0.4502904799709533,
+            "whole_period_mae_contribution": 622854.5825995213
+          },
+          "spatial_residual": {
+            "rows": 15199,
+            "mae": 1992987.3659255756,
+            "mean_pred_minus_true": -941871.3130310184,
+            "median_pred_minus_true": -750330.4790124111,
+            "overprediction_fraction": 0.3302848871636292,
+            "error_share": 0.16379626687451626,
+            "whole_period_mae_contribution": 226567.64904749414
+          }
+        }
+      },
+      "selected_group_branch_metrics": {
+        "industrial_office": {
+          "rows": 356,
+          "projects": 24,
+          "largest_project_rows": 70,
+          "reference_source_counts": {
+            "base_fallback": 182,
+            "project": 137,
+            "district_style": 33,
+            "address": 4
+          },
+          "reference_confidence_mean": 0.23668049044877057,
+          "spatial_applied_rows": 0,
+          "branches": {
+            "v22": {
+              "rows": 356,
+              "mae": 6514812.155708092,
+              "mean_pred_minus_true": 3457290.8347759717,
+              "median_pred_minus_true": 2760072.4947866425,
+              "overprediction_fraction": 0.8117977528089888,
+              "error_share": 0.012541120329077199,
+              "whole_period_mae_contribution": 17347.2338753456
+            },
+            "unit_base": {
+              "rows": 356,
+              "mae": 6111322.383295619,
+              "mean_pred_minus_true": -71126.13047010275,
+              "median_pred_minus_true": 123923.86673032492,
+              "overprediction_fraction": 0.5421348314606742,
+              "error_share": 0.011764395894598581,
+              "whole_period_mae_contribution": 16272.846574367715
+            },
+            "unit_reference": {
+              "rows": 356,
+              "mae": 6180078.764697548,
+              "mean_pred_minus_true": 3521235.9648286714,
+              "median_pred_minus_true": 2119040.4319270775,
+              "overprediction_fraction": 0.7780898876404494,
+              "error_share": 0.01189675305731401,
+              "whole_period_mae_contribution": 16455.92676150046
+            },
+            "unit_spatial": {
+              "rows": 356,
+              "mae": 6180078.764697548,
+              "mean_pred_minus_true": 3521235.9648286714,
+              "median_pred_minus_true": 2119040.4319270775,
+              "overprediction_fraction": 0.7780898876404494,
+              "error_share": 0.01189675305731401,
+              "whole_period_mae_contribution": 16455.92676150046
+            },
+            "nn_spatial": {
+              "rows": 356,
+              "mae": 12577110.818194106,
+              "mean_pred_minus_true": 9586406.613989407,
+              "median_pred_minus_true": 3091656.6772035435,
+              "overprediction_fraction": 0.8061797752808989,
+              "error_share": 0.024211144756477964,
+              "whole_period_mae_contribution": 33489.5431556213
+            },
+            "log_spatial": {
+              "rows": 356,
+              "mae": 26269310.8071934,
+              "mean_pred_minus_true": -9959644.734893788,
+              "median_pred_minus_true": 3144240.791281853,
+              "overprediction_fraction": 0.8258426966292135,
+              "error_share": 0.050568854469010105,
+              "whole_period_mae_contribution": 69948.2759326002
+            }
+          }
+        },
+        "area_above_500m2": {
+          "rows": 274,
+          "projects": 48,
+          "largest_project_rows": 47,
+          "reference_source_counts": {
+            "project": 132,
+            "base_fallback": 81,
+            "district_style": 45,
+            "street_section": 16
+          },
+          "reference_confidence_mean": 0.27344878721752297,
+          "spatial_applied_rows": 4,
+          "branches": {
+            "v22": {
+              "rows": 274,
+              "mae": 14458169.647845458,
+              "mean_pred_minus_true": 3578822.3600401334,
+              "median_pred_minus_true": 3504569.690827545,
+              "overprediction_fraction": 0.7664233576642335,
+              "error_share": 0.02142142304083568,
+              "whole_period_mae_contribution": 29630.720835244287
+            },
+            "unit_base": {
+              "rows": 274,
+              "mae": 13981683.719455322,
+              "mean_pred_minus_true": -3426472.3280102676,
+              "median_pred_minus_true": 998557.9243627973,
+              "overprediction_fraction": 0.5474452554744526,
+              "error_share": 0.020715454934660395,
+              "whole_period_mae_contribution": 28654.205697440917
+            },
+            "unit_reference": {
+              "rows": 274,
+              "mae": 14199713.728341512,
+              "mean_pred_minus_true": 2649909.4806589126,
+              "median_pred_minus_true": 3800017.406072393,
+              "overprediction_fraction": 0.781021897810219,
+              "error_share": 0.02103849119510739,
+              "whole_period_mae_contribution": 29101.038628881535
+            },
+            "unit_spatial": {
+              "rows": 274,
+              "mae": 14251495.663661314,
+              "mean_pred_minus_true": 2608688.6469763205,
+              "median_pred_minus_true": 3800017.406072393,
+              "overprediction_fraction": 0.781021897810219,
+              "error_share": 0.02111521202280386,
+              "whole_period_mae_contribution": 29207.16105704092
+            },
+            "nn_spatial": {
+              "rows": 274,
+              "mae": 23878060.315038685,
+              "mean_pred_minus_true": 14462100.330153713,
+              "median_pred_minus_true": 5149076.215634365,
+              "overprediction_fraction": 0.8248175182481752,
+              "error_share": 0.035378062635975316,
+              "whole_period_mae_contribution": 48935.94116786913
+            },
+            "log_spatial": {
+              "rows": 274,
+              "mae": 42332288.76038826,
+              "mean_pred_minus_true": -17392621.255115908,
+              "median_pred_minus_true": 2597003.931610629,
+              "overprediction_fraction": 0.656934306569343,
+              "error_share": 0.06272010136208517,
+              "whole_period_mae_contribution": 86756.22579673729
+            }
+          }
+        },
+        "parking_only": {
+          "rows": 76,
+          "projects": 41,
+          "largest_project_rows": 10,
+          "reference_source_counts": {
+            "base_fallback": 65,
+            "project": 9,
+            "district_style": 1,
+            "address": 1
+          },
+          "reference_confidence_mean": 0.030275194746120015,
+          "spatial_applied_rows": 0,
+          "branches": {
+            "v22": {
+              "rows": 76,
+              "mae": 1419253.112063996,
+              "mean_pred_minus_true": 1325958.058200154,
+              "median_pred_minus_true": 1151664.4005272267,
+              "overprediction_fraction": 0.9078947368421053,
+              "error_share": 0.0005832542154012931,
+              "whole_period_mae_contribution": 806.7737983415013
+            },
+            "unit_base": {
+              "rows": 76,
+              "mae": 1468186.9009796702,
+              "mean_pred_minus_true": 1343492.1008766983,
+              "median_pred_minus_true": 1151083.6320724846,
+              "overprediction_fraction": 0.8947368421052632,
+              "error_share": 0.0006033639748360409,
+              "whole_period_mae_contribution": 834.5901888184098
+            },
+            "unit_reference": {
+              "rows": 76,
+              "mae": 1601421.537855967,
+              "mean_pred_minus_true": 1507635.9765045107,
+              "median_pred_minus_true": 1331750.9208792886,
+              "overprediction_fraction": 0.9078947368421053,
+              "error_share": 0.0006581178893668667,
+              "whole_period_mae_contribution": 910.3273587070278
+            },
+            "unit_spatial": {
+              "rows": 76,
+              "mae": 1601421.537855967,
+              "mean_pred_minus_true": 1507635.9765045107,
+              "median_pred_minus_true": 1331750.9208792886,
+              "overprediction_fraction": 0.9078947368421053,
+              "error_share": 0.0006581178893668667,
+              "whole_period_mae_contribution": 910.3273587070278
+            },
+            "nn_spatial": {
+              "rows": 76,
+              "mae": 848031.5634516607,
+              "mean_pred_minus_true": 601400.7959905118,
+              "median_pred_minus_true": 281224.10942824115,
+              "overprediction_fraction": 0.6710526315789473,
+              "error_share": 0.00034850583026533975,
+              "whole_period_mae_contribution": 482.0631638879422
+            },
+            "log_spatial": {
+              "rows": 76,
+              "mae": 1975477.6806573365,
+              "mean_pred_minus_true": 1886614.5691465344,
+              "median_pred_minus_true": 1555186.0436207426,
+              "overprediction_fraction": 0.9605263157894737,
+              "error_share": 0.0008118394632222631,
+              "whole_period_mae_contribution": 1122.9594061942869
+            }
+          }
+        },
+        "partial_share": {
+          "rows": 3718,
+          "projects": 682,
+          "largest_project_rows": 181,
+          "reference_source_counts": {
+            "project": 1352,
+            "district_style": 1204,
+            "address": 591,
+            "base_fallback": 284,
+            "street_section": 263,
+            "street": 13,
+            "locality": 11
+          },
+          "reference_confidence_mean": 0.3013389459994981,
+          "spatial_applied_rows": 413,
+          "branches": {
+            "v22": {
+              "rows": 3718,
+              "mae": 1644742.0737999608,
+              "mean_pred_minus_true": 179837.5633657338,
+              "median_pred_minus_true": 212774.78391204216,
+              "overprediction_fraction": 0.5613232920925229,
+              "error_share": 0.03306675871655197,
+              "whole_period_mae_contribution": 45738.87993289493
+            },
+            "unit_base": {
+              "rows": 3718,
+              "mae": 1902658.9982145673,
+              "mean_pred_minus_true": -778991.6533875742,
+              "median_pred_minus_true": -663957.5920211021,
+              "overprediction_fraction": 0.342926304464766,
+              "error_share": 0.0382520560615813,
+              "whole_period_mae_contribution": 52911.33051124379
+            },
+            "unit_reference": {
+              "rows": 3718,
+              "mae": 1707266.509578663,
+              "mean_pred_minus_true": 128727.37116193537,
+              "median_pred_minus_true": 164672.89085987397,
+              "overprediction_fraction": 0.5492200107584723,
+              "error_share": 0.03432378282064524,
+              "whole_period_mae_contribution": 47477.63138001203
+            },
+            "unit_spatial": {
+              "rows": 3718,
+              "mae": 1699478.2305931374,
+              "mean_pred_minus_true": 139755.46123388776,
+              "median_pred_minus_true": 165611.98288403917,
+              "overprediction_fraction": 0.5511027434104357,
+              "error_share": 0.034167203168349626,
+              "whole_period_mae_contribution": 47261.045957241266
+            },
+            "nn_spatial": {
+              "rows": 3718,
+              "mae": 1756355.2720756885,
+              "mean_pred_minus_true": 349089.8787480447,
+              "median_pred_minus_true": 308760.38340493385,
+              "overprediction_fraction": 0.5901022054868209,
+              "error_share": 0.035310689090655746,
+              "whole_period_mae_contribution": 48842.748166207246
+            },
+            "log_spatial": {
+              "rows": 3718,
+              "mae": 1667676.3381981899,
+              "mean_pred_minus_true": 178226.2175534937,
+              "median_pred_minus_true": 252870.6252668025,
+              "overprediction_fraction": 0.5669714900484131,
+              "error_share": 0.0335278412165246,
+              "whole_period_mae_contribution": 46376.662344112956
+            }
+          }
+        },
+        "common_area_100_to_200m2": {
+          "rows": 98334,
+          "projects": 3569,
+          "largest_project_rows": 727,
+          "reference_source_counts": {
+            "project": 39148,
+            "district_style": 31232,
+            "street_section": 10175,
+            "base_fallback": 7197,
+            "address": 6344,
+            "street": 2639,
+            "locality": 1599
+          },
+          "reference_confidence_mean": 0.3087662170771887,
+          "spatial_applied_rows": 10711,
+          "branches": {
+            "v22": {
+              "rows": 98334,
+              "mae": 1271996.2369945846,
+              "mean_pred_minus_true": -364627.2845730026,
+              "median_pred_minus_true": -39483.2104529161,
+              "overprediction_fraction": 0.4842780726910326,
+              "error_share": 0.6763538569344112,
+              "whole_period_mae_contribution": 935551.8670473197
+            },
+            "unit_base": {
+              "rows": 98334,
+              "mae": 1661056.3310066573,
+              "mean_pred_minus_true": -1075284.0179555009,
+              "median_pred_minus_true": -637677.2034533778,
+              "overprediction_fraction": 0.30179795391217684,
+              "error_share": 0.8832273424928831,
+              "whole_period_mae_contribution": 1221705.1486062414
+            },
+            "unit_reference": {
+              "rows": 98334,
+              "mae": 1351048.5939688433,
+              "mean_pred_minus_true": -353730.5783794106,
+              "median_pred_minus_true": -29098.148111349903,
+              "overprediction_fraction": 0.4885288913295503,
+              "error_share": 0.7183880744770873,
+              "whole_period_mae_contribution": 993694.7907532124
+            },
+            "unit_spatial": {
+              "rows": 98334,
+              "mae": 1342459.8240405337,
+              "mean_pred_minus_true": -362759.39094811253,
+              "median_pred_minus_true": -36558.744132557884,
+              "overprediction_fraction": 0.4858950108812822,
+              "error_share": 0.713821199593039,
+              "whole_period_mae_contribution": 987377.7596894609
+            },
+            "nn_spatial": {
+              "rows": 98334,
+              "mae": 1274299.9751664107,
+              "mean_pred_minus_true": -210741.4122049984,
+              "median_pred_minus_true": 27725.40279385727,
+              "overprediction_fraction": 0.5112677202188459,
+              "error_share": 0.677578815116334,
+              "whole_period_mae_contribution": 937246.2640000436
+            },
+            "log_spatial": {
+              "rows": 98334,
+              "mae": 1291657.3693322886,
+              "mean_pred_minus_true": -409488.4890787706,
+              "median_pred_minus_true": -72865.64308097679,
+              "overprediction_fraction": 0.4726747615270405,
+              "error_share": 0.6868081981514289,
+              "whole_period_mae_contribution": 950012.608778965
+            }
+          }
+        }
+      },
+      "worst_error_concentration": {
+        "1": {
+          "rows": 1,
+          "error_share": 0.0010443141027344995
+        },
+        "10": {
+          "rows": 10,
+          "error_share": 0.005612508715073075
+        },
+        "100": {
+          "rows": 100,
+          "error_share": 0.02434789956781418
+        },
+        "1000": {
+          "rows": 1000,
+          "error_share": 0.08925140107861387
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "outputs/round79/plan.json": "7b46ade28f061ddf989fd50692f154e02b3bf73facf5a4cb408d415d09d1ea1f",
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "data_cache/train.pkl": "9acf8c65bf00f7067e9ea9612cabe9a1524b020a7596c8da3ce3d620131e5c00",
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/round79/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round79/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round79/auxiliary/predictions.npy": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479",
+    "outputs/round79/auxiliary/base.npy": "3d3669194c5d1f2d6ebe12ec7c4050a1c7e4562d2b45ab1935317beec2f7dc18",
+    "outputs/round79/auxiliary/reference.npy": "b79a7fea46f9b5ba14e9f52c25825367a61d82b5d19ef478eea8cc1ae8bd5e82",
+    "outputs/round79/auxiliary/unit_spatial.npy": "5f7e2089b05093cdb9fc1c41ff909b92a4775ce04013625ffc96f27beb885867",
+    "outputs/round71/auxiliary/seed42/nn_spatial.npy": "63dd3be20c77943a71be10db93c6913b67e5a90fd72c11ad5393b05f85d69988",
+    "outputs/round46/auxiliary/recency_log_spatial.npy": "41424bbabb65d252679f329cbcf573710fca6d1db625055f39a4183e4960c5e4",
+    "outputs/round39/geography/auxiliary/query.pkl": "e771d43c3655b63882bfa25bcd98746a1f815396cc16841868eabf395d4027c5",
+    "outputs/round79/auxiliary/reference_diagnostics.pkl": "3fc7682c632912cdf54f638c1d7ea7c89c7a61669e09096e34da03ef207c6f10",
+    "outputs/round79/auxiliary/spatial_diagnostics.pkl": "b39b4c5a65f6b90fd16bc4964eb164b3bf385cf100a0820b92a449bfc34b9002",
+    "outputs/round79/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round79/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round79/development/predictions.npy": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+    "outputs/round79/development/base.npy": "01362b07cf86208bdf1b61a808a5ebc17feb32bb4de43b10df9b7627d6a37af6",
+    "outputs/round79/development/reference.npy": "adda548363b6b57b0b9b94d849b3228da7ea67948148c4fcad5df7602c57f63d",
+    "outputs/round79/development/unit_spatial.npy": "8eb22194d22ca3ee40edb414295566d181efffc0cfc9acc07a36ed7a193eb179",
+    "outputs/round71/development/seed42/nn_spatial.npy": "605ab0cdffb811bc2035baffae4b24ae16b22f371b4a8e5e94b6d01da45f4212",
+    "outputs/round46/development/recency_log_spatial.npy": "0c5a0bcb82f899edfa17b84ede5d4094ee72124eac8a94ba84bf4b066c4a7a92",
+    "outputs/round39/geography/development/query.pkl": "98d45586f1d5f07676b41be23f291c4960779a37801487489860c864250df1ec",
+    "outputs/round79/development/reference_diagnostics.pkl": "a9c9bd7c3abac0fc11694bcfd014af654a47d9705aa3174e12b2450ab309cdab",
+    "outputs/round79/development/spatial_diagnostics.pkl": "906e68b94fceab6457b6c5a6fdea48b6b6756e0af21d535591669a39818f9ba9",
+    "outputs/round79/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round79/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round79/confirmation/predictions.npy": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+    "outputs/round79/confirmation/base.npy": "6c6564f622f4cab4e06e5bc664476a5adbaeead86768e96bcd0ffe0f8cb1757c",
+    "outputs/round79/confirmation/reference.npy": "09746b2c6a3eb0fe9c2177ec55d1b9eed5a06ce6d9ff1468d5b45389add5ef5a",
+    "outputs/round79/confirmation/unit_spatial.npy": "01cce0d58655f1a4a39fe1b71a07e71d974f9a605320743d6edf7ea499ff029b",
+    "outputs/round71/confirmation/seed42/nn_spatial.npy": "948ba6c8887fa473983d02cfe1201799774403e26a6cfcf31c78a56a37f4c340",
+    "outputs/round46/confirmation/recency_log_spatial.npy": "bb96799aa97fd65d7219e4e3f4c94bb774bbcf7812db1adaae49632fafa6edb7",
+    "outputs/round39/geography/confirmation/query.pkl": "36820f4960ad0f2461d210ec7621c6fb1d622c14926daa97cc752804251d2a36",
+    "outputs/round79/confirmation/reference_diagnostics.pkl": "7a9cf6dd564ee039b970f1efbb777a6d7e4bfa36110e5e7caa6723486bfce108",
+    "outputs/round79/confirmation/spatial_diagnostics.pkl": "651862af84bef5e28658176e8cda826a9754c8af5f39c8eb7dc20074dd6b9daf",
+    "outputs/round85_error_audit/audit.py": "4d3945811105885522f73e48e661a88c1b731471e81a2051efbe4aa4d5d9e8ae"
+  },
+  "elapsed_seconds": 4.956078799907118
+}

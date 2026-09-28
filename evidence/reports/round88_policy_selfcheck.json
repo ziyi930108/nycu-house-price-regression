@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": [
+    "all_mask",
+    "no_mask_reference",
+    "no_mask_spatial",
+    "mixed"
+  ],
+  "inputs_unchanged": true,
+  "zero_model_fit_load_predict": true,
+  "real_data_loaded": false,
+  "query_labels_in_policy_API": false,
+  "source_sha256": "a005f51c04d5308fb22ea77c3c24f3129be4e03987f81d1b7cfec1f75cc1da9f",
+  "record_note": "Result captured from the single self-check invocation before candidate evaluation; no fit."
+}
