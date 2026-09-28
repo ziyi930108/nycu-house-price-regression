@@ -1,0 +1,6 @@
+{
+  "started_at_utc": "2026-09-28T16:56:11.7452795Z",
+  "pid": 30588,
+  "automatic_retry": false,
+  "command": "python -B -X utf8 src/round93_experiment.py --plan-sha ac3ced3aa70ea3bb2548e4f4d4476da4c5b2e9ba2bd4795a5a673ee97f884054"
+}

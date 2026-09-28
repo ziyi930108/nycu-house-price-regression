@@ -1,0 +1,207 @@
+{
+  "status": "passed_local_snapshot_only",
+  "copy_manifest_sha256": "e7970a2a9fdb47eebccaf43e518f367b699a8f127686bf203006688bf558ff00",
+  "exact_byte_copies": 75,
+  "copy_bytes": 1395103,
+  "new_research_src_count": 3,
+  "updated_documents": [
+    {
+      "path": "README.md",
+      "sha256": "df260f7cbca5daa1711ee08f6ee0b9383b29843ec042ada3ea0c7ee2f7ab1f86"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "a3a56ec3208ac3a27ac0a28e9134f23018ed8810b5f4bea3fb5d3837112542ab"
+    },
+    {
+      "path": "research/README.md",
+      "sha256": "756e73601eddf5e03e1aa8df189f33bad8d027fb1a66bf4e11a29b8305261a55"
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_R93.md",
+      "sha256": "15559e845f3d46c4d313e1ddf2bfa16bcb122c8c4ccedd4757df88107c005b57"
+    }
+  ],
+  "navigation_links_checked": 62,
+  "navigation_missing": [],
+  "frozen_evidence_direct_links": 43,
+  "frozen_evidence_mapped_links": 19,
+  "frozen_evidence_original_workspace_dependencies": 13,
+  "frozen_evidence_exceptions": [
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "../src/round47_nn_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "../src/round57_tabm_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "../src/round63_recency_weighted_prior_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "../src/round47_nn_encode.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "../src/round60_recency_price_prior.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "round71_plan.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "round57_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93.md",
+      "link": "round58_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "../src/round47_nn_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "../src/round57_tabm_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "../src/round63_recency_weighted_prior_train.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "../src/round47_nn_encode.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "../src/round60_recency_price_prior.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "round71_plan.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "round57_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/attention_regression_feasibility_after_r93_initial.md",
+      "link": "round58_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "round5_research_features.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "../outputs/round5/research_decision.json",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "v3_cluster_stability_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "../src/round5_project_mask.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "round11_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/next_regression_direction_after_r92.md",
+      "link": "round18_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/r93_validation_audit.md",
+      "link": "../src/round93_project_density_unit.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/r93_validation_audit.md",
+      "link": "../src/round5_project_mask.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/r93_validation_audit.md",
+      "link": "round5_research_features.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/r93_validation_audit.md",
+      "link": "round11_report.md",
+      "classification": "original_workspace_dependency_excluded"
+    },
+    {
+      "document": "evidence/reports/r93_validation_audit.md",
+      "link": "../src/round93_experiment.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/round93_diagnostics.md",
+      "link": "../src/candidate_diagnostics_v3.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/round93_independent_review.md",
+      "link": "../src/round93_experiment.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/round93_independent_review.md",
+      "link": "../src/round93_project_density_unit.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/round93_paired_vs_v22.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "classification": "available_via_package_mapping"
+    },
+    {
+      "document": "evidence/reports/round93_paired_vs_v24.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "classification": "available_via_package_mapping"
+    }
+  ],
+  "all_original_references_resolve_in_workspace": true,
+  "protected_sha256_verified": {
+    "research/source_manifest.json": "1b622630cb01c7335aca20ce5353a04906b08f264aaf54590f9f4f6a31a894b4",
+    "SOURCE_MANIFEST.json": "d4f95b6a0b0b86cfba85e76c9d24c87caa66dff19f842308dc8eeaf06b86824d",
+    "REPORT.md": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e",
+    "docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "config/v22.json": "bdb5bc232d064bc580abcf6d09aa802e19bc13c017a241c1a51ad25992b1e4c7",
+    "evidence/selection/user_selected_v22_20260928.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76",
+    "docs/RESEARCH_UPDATES_20260929.md": "d52149bd460ee86f5b2248eb45107454cf5afd9f94482d92c390fafc9cc9339a"
+  },
+  "numeric_and_379_source_check_receipt_sha256": "95ce5cedec6cc4a94b6ca0f3a22b7dd7843d46d193901c3df07d7cbf7e1e1dde",
+  "commit_or_push_performed": false,
+  "zip_created": false,
+  "SOURCE_MANIFEST_refreshed": false
+}

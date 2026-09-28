@@ -1,0 +1,8 @@
+{
+  "received_at_utc": "2026-09-28T16:57:20.302054+00:00",
+  "path": "reports/r93_validation_audit.md",
+  "sha256": "6a451dbecbaee2ae4f462593606a19a3b49e106c7d079f4f0830c33fce3db5d0",
+  "root_rechecked_plan_driver_helper_and_selfcheck": true,
+  "approval_message_preceded_launch": true,
+  "report_written_after_launch": true
+}

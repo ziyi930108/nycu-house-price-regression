@@ -1,0 +1,474 @@
+{
+  "candidate": "R93",
+  "caution": "Conditional on saved predictions and reused historical windows. Not Private probability or a p-value; excludes selection, model retraining and future-shift uncertainty.",
+  "control": "v22",
+  "difference": "candidate minus control",
+  "elapsed_seconds": 7.359000000171363,
+  "fits": 0,
+  "fresh_blind_validation": false,
+  "methods_source_sha256": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9",
+  "model_predict_calls": 0,
+  "new_CSV": false,
+  "replicates": 2000,
+  "seed": 20260925,
+  "source_sha256": "3761c1cb09abe4e26412bf3aea48273ce0a4bad10b5a408e23d8fae488903bb0",
+  "stages": {
+    "auxiliary": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": -10656.943230326679,
+            "candidate_mae": 2298811.823088151,
+            "control_mae": 2309352.3576965467,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 1.0,
+            "percentile_2_5": -15767.148166813597,
+            "percentile_97_5": -6061.962216487131,
+            "point_delta": -10540.53460839577,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": -8558.557673574209,
+            "candidate_mae": 2015134.404540798,
+            "control_mae": 2023165.66227504,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 1.0,
+            "percentile_2_5": -14798.91374411761,
+            "percentile_97_5": -3789.9017961989157,
+            "point_delta": -8031.257734242128,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            9387,
+            12463,
+            11844,
+            12872,
+            9987,
+            6310,
+            8284,
+            9188,
+            7187,
+            5780,
+            5992,
+            6217
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              6221,
+              8890,
+              9717,
+              11020,
+              8980,
+              5642,
+              7528,
+              8530,
+              6699,
+              5484,
+              5703,
+              6010
+            ],
+            "seen": [
+              3166,
+              3573,
+              2127,
+              1852,
+              1007,
+              668,
+              756,
+              658,
+              488,
+              296,
+              289,
+              207
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R93": "d9eae14b1c953cdeb300b180f401d500482170385a8a8db58c74ed02f52388d5",
+        "v22": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": -11070.751236062102,
+            "candidate_mae": 2298811.823088151,
+            "control_mae": 2309352.3576965467,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.8495,
+            "percentile_2_5": -33144.471176111954,
+            "percentile_97_5": 10104.136561355017,
+            "point_delta": -10540.53460839577,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": -8572.878354223612,
+            "candidate_mae": 2015134.404540798,
+            "control_mae": 2023165.66227504,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.8365,
+            "percentile_2_5": -26367.4900439806,
+            "percentile_97_5": 8788.40692871767,
+            "point_delta": -8031.257734242128,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 3539,
+            "largest_cluster_row_share": 0.020171635848889674,
+            "largest_cluster_rows": 1824,
+            "row_weight_effective_cluster_count": 555.4469244346247,
+            "rows": 90424
+          },
+          "seen": {
+            "clusters": 546,
+            "largest_cluster_row_share": 0.027308278650493803,
+            "largest_cluster_rows": 412,
+            "row_weight_effective_cluster_count": 161.37173036553264,
+            "rows": 15087
+          }
+        }
+      },
+      "rows": 105511
+    },
+    "confirmation": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 3752.4402830602503,
+            "candidate_mae": 1387196.6831693763,
+            "control_mae": 1383228.4054499408,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.152,
+            "percentile_2_5": -3547.775749429333,
+            "percentile_97_5": 10717.936797178008,
+            "point_delta": 3968.277719435515,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 4550.38026748755,
+            "candidate_mae": 1452028.9221719773,
+            "control_mae": 1447153.4154201136,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.101,
+            "percentile_2_5": -2651.2306499526367,
+            "percentile_97_5": 11555.669838185908,
+            "point_delta": 4875.506751863752,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            7252,
+            9394,
+            9933,
+            10809,
+            9935,
+            10413,
+            8995,
+            12434,
+            14629,
+            14519,
+            14072,
+            11312
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              787,
+              2706,
+              3778,
+              5451,
+              5004,
+              5959,
+              5017,
+              7708,
+              9840,
+              10260,
+              10630,
+              8956
+            ],
+            "seen": [
+              6465,
+              6688,
+              6155,
+              5358,
+              4931,
+              4454,
+              3978,
+              4726,
+              4789,
+              4259,
+              3442,
+              2356
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R93": "4bf1b8deaf8ca563b34db6a16e2463187ddf04c7951478039e8503a1d5f07f91",
+        "v22": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 4020.4695065385176,
+            "candidate_mae": 1387196.6831693763,
+            "control_mae": 1383228.4054499408,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.2575,
+            "percentile_2_5": -7920.064453038788,
+            "percentile_97_5": 16873.51153352396,
+            "point_delta": 3968.277719435515,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 4911.161074249344,
+            "candidate_mae": 1452028.9221719773,
+            "control_mae": 1447153.4154201136,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.231,
+            "percentile_2_5": -8322.488844881673,
+            "percentile_97_5": 18618.980503502382,
+            "point_delta": 4875.506751863752,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 2075,
+            "largest_cluster_row_share": 0.01755677039529016,
+            "largest_cluster_rows": 1336,
+            "row_weight_effective_cluster_count": 383.30050459350207,
+            "rows": 76096
+          },
+          "seen": {
+            "clusters": 2403,
+            "largest_cluster_row_share": 0.00946164129094981,
+            "largest_cluster_rows": 545,
+            "row_weight_effective_cluster_count": 533.2518158646615,
+            "rows": 57601
+          }
+        }
+      },
+      "rows": 133697
+    },
+    "development": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 513.8217689203607,
+            "candidate_mae": 1408053.9730181384,
+            "control_mae": 1407387.0708058395,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.4335,
+            "percentile_2_5": -7207.702857915079,
+            "percentile_97_5": 7350.509749470865,
+            "point_delta": 666.9022122989409,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 610.0612722289477,
+            "candidate_mae": 1400315.7983816338,
+            "control_mae": 1399717.744053713,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.4385,
+            "percentile_2_5": -7188.547098786745,
+            "percentile_97_5": 8686.366993384901,
+            "point_delta": 598.0543279207777,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            6145,
+            6235,
+            5228,
+            5046,
+            5881,
+            3266,
+            5055,
+            7516,
+            9057,
+            9401,
+            11490,
+            6914
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              1873,
+              2516,
+              2453,
+              2908,
+              3879,
+              2127,
+              3277,
+              5270,
+              6645,
+              7274,
+              8899,
+              5132
+            ],
+            "seen": [
+              4272,
+              3719,
+              2775,
+              2138,
+              2002,
+              1139,
+              1778,
+              2246,
+              2412,
+              2127,
+              2591,
+              1782
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R93": "ce2d72343c65349e1a513fd274ed946da1b064a0159fb7a96f10512b30e2068e",
+        "v22": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 518.5714715490127,
+            "candidate_mae": 1408053.9730181384,
+            "control_mae": 1407387.0708058395,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.4805,
+            "percentile_2_5": -16487.572883632638,
+            "percentile_97_5": 16361.203407178327,
+            "point_delta": 666.9022122989409,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 503.2401505743338,
+            "candidate_mae": 1400315.7983816338,
+            "control_mae": 1399717.744053713,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.484,
+            "percentile_2_5": -16035.542192641913,
+            "percentile_97_5": 16344.677044538761,
+            "point_delta": 598.0543279207777,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 1944,
+            "largest_cluster_row_share": 0.03303159627198438,
+            "largest_cluster_rows": 1726,
+            "row_weight_effective_cluster_count": 326.58441409315515,
+            "rows": 52253
+          },
+          "seen": {
+            "clusters": 1861,
+            "largest_cluster_row_share": 0.022877057382422968,
+            "largest_cluster_rows": 663,
+            "row_weight_effective_cluster_count": 305.65955703842644,
+            "rows": 28981
+          }
+        }
+      },
+      "rows": 81234
+    }
+  },
+  "status": "completed"
+}

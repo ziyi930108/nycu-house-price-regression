@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "source_decision_sha256": "60bece5be45e200f942eee36fa4ddbba03d2795afe3c1ba2b89c0295970581c4",
+  "stage_table_all_numeric_values_verified": true,
+  "paired_interval_counts_verified": {
+    "v22": {
+      "negative": 2,
+      "crosses_zero": 10,
+      "positive": 0
+    },
+    "v24": {
+      "negative": 0,
+      "crosses_zero": 5,
+      "positive": 7
+    }
+  },
+  "vs_v22_negative_intervals_only_auxiliary_month": true,
+  "fit_count_and_elapsed_numbers_verified": true,
+  "historical_sources_checked": 379,
+  "historical_sources_unchanged": true,
+  "model_loads": 0,
+  "fits": 0,
+  "new_prediction_or_score_calls": 0
+}

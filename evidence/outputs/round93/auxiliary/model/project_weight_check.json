@@ -1,0 +1,60 @@
+{
+  "counts_content_sha256": "5ea0e5fdd046f8ada68070b7440e15ffd3da83895e725470a128a6046f827585",
+  "fit_only_counts": true,
+  "group_summary": {
+    "counts_sha256": "5ea0e5fdd046f8ada68070b7440e15ffd3da83895e725470a128a6046f827585",
+    "fit_only": true,
+    "max_named_project_count": 1226,
+    "missing_count_is_neutral_sentinel_not_group_size": true,
+    "missing_name_rows": 50965,
+    "named_projects": 1797,
+    "named_rows": 83840,
+    "named_singleton_rows": 587,
+    "ordered_keys_and_index_sha256": "a54c8c392f3d92875abf55a8f2ae981d13c07962224dd4fc9bfc0a3af9ab394c",
+    "ordered_missing_flags_sha256": "2b8ce5503c0e5d33668b1df23802981001b5e09b3b94348642eeb8bda253699c",
+    "raw_q_sha256": "1c380a464c92fc63e42737d85f785020a4d8d966dc51ec18d134c74858af6bae",
+    "raw_q_summary": {
+      "effective_sample_size": 67710.28606468665,
+      "max": 1.0,
+      "mean": 0.4433859717152951,
+      "min": 0.02855977389887699,
+      "rows": 134805,
+      "sum": 59770.64591708036,
+      "sum_squares": 52761.99999999997
+    },
+    "rows": 134805,
+    "rules": {
+      "counts_use_target_or_query": false,
+      "fit_named_count": "count every fit transaction row within full geographic project key",
+      "key_fields": [
+        "address_city",
+        "address_district",
+        "project_name"
+      ],
+      "key_normalization": "existing R5 fill/str/strip/sentinels",
+      "key_source": "src/round5_project_mask.py::project_keys",
+      "missing_count_sentinel": 1,
+      "missing_final_weight_unchanged": false,
+      "missing_location_named_project_remains_named": true,
+      "missing_name_only_is_missing": true,
+      "missing_raw_q": 1.0,
+      "normalization": "c=sum_float64(w0)/sum_float64(w0*q)",
+      "normalization_uses_fit_area_and_saved_dates": true,
+      "normalized_literal_pipe_in_any_key_field": "reject",
+      "preserves_original_pool_weight_sum": true,
+      "q_clipping_or_count_threshold": false,
+      "query_prediction_uses_counts_or_weights": false,
+      "raw_q": "1/sqrt(float64(named_fit_count)); missing=1"
+    },
+    "uses_query": false,
+    "uses_target": false
+  },
+  "independent_reconstruction_exact": true,
+  "key_source": "src/round5_project_mask.py::project_keys",
+  "new_pool_weight_sum": 192553.7411107481,
+  "normalization_c": 7.23576817467623,
+  "original_pool_weight_sum": 192553.7411107481,
+  "pool_weight_content_sha256": "4241cf36fa61f4fdb2153f64c66bba01871633035f037044c8f33e64c7e26a21",
+  "query_or_target_used_for_weights": false,
+  "raw_q_content_sha256": "1c380a464c92fc63e42737d85f785020a4d8d966dc51ec18d134c74858af6bae"
+}
