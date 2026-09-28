@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "historical_source_count": 379,
+  "all_historical_source_bytes_exact": true,
+  "historical_manifest_unchanged": true,
+  "new_exact_byte_copies": 213,
+  "new_copy_suffixes": [
+    ".py",
+    ".md",
+    ".json",
+    ".sha256"
+  ],
+  "private_or_data_paths_included": false,
+  "models_or_price_vectors_copied": false,
+  "navigation_links_checked": 56,
+  "navigation_missing": 0,
+  "frozen_evidence_links_unresolved_in_original_workspace": 0,
+  "protected_reports_slides_v22_and_SOURCE_MANIFEST_unchanged": true,
+  "commit_or_push_performed": false,
+  "zip_created": false
+}

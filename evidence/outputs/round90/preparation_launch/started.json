@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round90_offset_data.py",
+    "--prepare"
+  ],
+  "started_at_utc": "2026-09-28T16:05:32.872936+00:00",
+  "source_sha256": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+  "authorized_scope": "one target-free preparation; zero model fits, price tables, test or scoring",
+  "selfcheck_sha256": "83656e08457d33aca4ae8b7e43936fdddec8bf6f4afab98a9eac54eeaca6f0c6",
+  "automatic_retry": false
+}

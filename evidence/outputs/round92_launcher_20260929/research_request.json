@@ -1,0 +1,12 @@
+{
+  "candidate": "R79 unit CatBoost depth8->6 only",
+  "selected_submission_unchanged": "v22",
+  "private_score": null,
+  "plan_sha256": "8b1a7419fb3536eca1179c202f58984c0941f6b5f79d0714adc7b3b1c3ec10f7",
+  "driver_sha256": "d84cb2acb42f188a049768ad55f1277cfa3ee6ab5305b4856b0f14c826817f43",
+  "helper_sha256": "21bbf98551de72aa3d03da367f8b46abd8b39746bbdfafe5e081fcb03786fd07",
+  "selfcheck_sha256": "590261e49d90a245bf07135a4f2ba9a248033ffbdff6c5979e39a8be2297b7ca",
+  "root_and_independent_preflight_passed": true,
+  "prior_round91_main_completed": true,
+  "automatic_retry": false
+}

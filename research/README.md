@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；本輪新增R85–R88程式另由最外層SOURCE_MANIFEST核對，沒有回寫歷史清單。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R92程式另有複製身分證據，沒有回寫歷史清單；本批發布前還需刷新最外層SOURCE_MANIFEST。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -24,7 +24,7 @@ src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.jso
 
 這是命令介面說明，並非本次已執行命令。需另提供約1.34GB／396.7MB的原prepared，原trainer要求CUDA。它不是raw Excel至v22的完整重訓入口。
 
-v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28另行完成六次單價分支CatBoost研究fit，仍不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
+v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28完成六次單價分支CatBoost研究fit，2026-09-29另完成六次CatBoost與三次CPU趨勢wrapper fit；都不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
 
 R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days/365)，合法日期正規化、無效日期1；R79沿用R63保存的float32權重。NN價格先驗採建案分組五折OOF，不是時間OOF。歷史回測必須按切點重建全部fit狀態。
 
@@ -33,3 +33,17 @@ R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days
 ## 後續固定實驗R85–R88
 
 [完整摘要](../docs/RESEARCH_UPDATES_20260928.md)含各新driver與保存結果。R85／R86各三期新fit；R87／R88各三期CPU後處理評估。全數保留研究、不final、不產CSV。這些來源依賴原工作區的完整歷史artifact與精確SHA，複製程式不等於已取得必要資料或可在乾淨環境重跑。原training source bytes與拒絕覆寫保護仍保留。
+
+## 2026-09-29：R89／R91／R92與R90準備
+
+[最新完整摘要](../docs/RESEARCH_UPDATES_20260929.md)保存三項候選未過門檻的結果與反證。本次新增來源保留原bytes，[複製清單](../evidence/outputs/research_snapshot_20260929/copy_manifest.json)記錄路徑／SHA；原379支source_manifest不變。
+
+| 程式 | 角色 |
+| --- | --- |
+| [round89_group_trend.py](src/round89_group_trend.py)／[driver](src/round89_experiment.py) | fit-only支持門檻、分群時間delta與完整三分支回測；三期完成未採用 |
+| [round91_prior_residual.py](src/round91_prior_residual.py)／[driver](src/round91_experiment.py) | 分組OOF prior offset上的signed總價殘差；三期真fit完成未採用 |
+| [round92_shallow_unit.py](src/round92_shallow_unit.py)／[driver](src/round92_experiment.py) | 原日期×面積權重單價樹只改depth6；三期真fit完成未採用 |
+| [round90_offset_data.py](src/round90_offset_data.py) | 固定2023-02-11切點的純X/geo/indices準備，已真執行與完整重載 |
+| [round90_offset_trees.py](src/round90_offset_trees.py)／[NN helper](src/round90_offset_nn.py) | 新切點四樹＋兩NN介面；真窗口模型訓練未執行 |
+
+R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新窗口真訓練。若未來啟用，canonical fit_indices用於OOF群身分，fit_source_cache_indices只用來抽取raw cache標籤，兩者不能混用。所有來源仍依賴原工作區的完整私有資料／狀態，快照不等於可在空目錄直接重訓。

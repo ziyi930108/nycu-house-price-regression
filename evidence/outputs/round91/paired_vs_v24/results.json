@@ -1,0 +1,474 @@
+{
+  "candidate": "R91",
+  "caution": "Conditional on saved predictions and reused historical windows. Not Private probability or a p-value; excludes selection, model retraining and future-shift uncertainty.",
+  "control": "v24",
+  "difference": "candidate minus control",
+  "elapsed_seconds": 7.062000000150874,
+  "fits": 0,
+  "fresh_blind_validation": false,
+  "methods_source_sha256": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9",
+  "model_predict_calls": 0,
+  "new_CSV": false,
+  "replicates": 2000,
+  "seed": 20260925,
+  "source_sha256": "3761c1cb09abe4e26412bf3aea48273ce0a4bad10b5a408e23d8fae488903bb0",
+  "stages": {
+    "auxiliary": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 72212.20428713522,
+            "candidate_mae": 2347209.5033456376,
+            "control_mae": 2275409.1418579877,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 56753.43822552976,
+            "percentile_97_5": 88669.13780046767,
+            "point_delta": 71800.36148764985,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 53022.10783697689,
+            "candidate_mae": 2046858.3072957965,
+            "control_mae": 1992570.9762837559,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 35441.877670540474,
+            "percentile_97_5": 72510.08016781787,
+            "point_delta": 54287.33101204061,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            9387,
+            12463,
+            11844,
+            12872,
+            9987,
+            6310,
+            8284,
+            9188,
+            7187,
+            5780,
+            5992,
+            6217
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              6221,
+              8890,
+              9717,
+              11020,
+              8980,
+              5642,
+              7528,
+              8530,
+              6699,
+              5484,
+              5703,
+              6010
+            ],
+            "seen": [
+              3166,
+              3573,
+              2127,
+              1852,
+              1007,
+              668,
+              756,
+              658,
+              488,
+              296,
+              289,
+              207
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R91": "79f308eb7db75f12933385c0f79bc0a5525891089ba0008b37674b4c17b51e77",
+        "v24": "ecad3b23b8648aef27e0a29ed2c2e21b9dbb25c9f416e30e9d8261441663b3a4"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 72089.40149148056,
+            "candidate_mae": 2347209.5033456376,
+            "control_mae": 2275409.1418579877,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 27953.491936120125,
+            "percentile_97_5": 113534.71754124826,
+            "point_delta": 71800.36148764985,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 54563.03391199948,
+            "candidate_mae": 2046858.3072957965,
+            "control_mae": 1992570.9762837559,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 21534.332648004238,
+            "percentile_97_5": 86561.10979038833,
+            "point_delta": 54287.33101204061,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 3539,
+            "largest_cluster_row_share": 0.020171635848889674,
+            "largest_cluster_rows": 1824,
+            "row_weight_effective_cluster_count": 555.4469244346247,
+            "rows": 90424
+          },
+          "seen": {
+            "clusters": 546,
+            "largest_cluster_row_share": 0.027308278650493803,
+            "largest_cluster_rows": 412,
+            "row_weight_effective_cluster_count": 161.37173036553264,
+            "rows": 15087
+          }
+        }
+      },
+      "rows": 105511
+    },
+    "confirmation": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 5862.6227457314235,
+            "candidate_mae": 1378833.711643815,
+            "control_mae": 1373195.9153072888,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0645,
+            "percentile_2_5": -1458.594039738516,
+            "percentile_97_5": 13820.576997090298,
+            "point_delta": 5637.796336526284,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 1475.4221093793856,
+            "candidate_mae": 1438216.1179173058,
+            "control_mae": 1436088.882157789,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.3545,
+            "percentile_2_5": -7063.143982726848,
+            "percentile_97_5": 9875.260382520977,
+            "point_delta": 2127.2357595167123,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            7252,
+            9394,
+            9933,
+            10809,
+            9935,
+            10413,
+            8995,
+            12434,
+            14629,
+            14519,
+            14072,
+            11312
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              787,
+              2706,
+              3778,
+              5451,
+              5004,
+              5959,
+              5017,
+              7708,
+              9840,
+              10260,
+              10630,
+              8956
+            ],
+            "seen": [
+              6465,
+              6688,
+              6155,
+              5358,
+              4931,
+              4454,
+              3978,
+              4726,
+              4789,
+              4259,
+              3442,
+              2356
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R91": "b5aa8380d7e9f04257d3ba9608c206624596b63901974e4ba4bac2199ebf3beb",
+        "v24": "c1f259486dd82693903ed61d90bb7f270d49be22af1c7021e245eb06c494c4cb"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 5153.724880961847,
+            "candidate_mae": 1378833.711643815,
+            "control_mae": 1373195.9153072888,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.367,
+            "percentile_2_5": -23506.769015233964,
+            "percentile_97_5": 34916.72655370465,
+            "point_delta": 5637.796336526284,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 1646.4670705042836,
+            "candidate_mae": 1438216.1179173058,
+            "control_mae": 1436088.882157789,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.4605,
+            "percentile_2_5": -28035.466871791083,
+            "percentile_97_5": 33656.31913405514,
+            "point_delta": 2127.2357595167123,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 2075,
+            "largest_cluster_row_share": 0.01755677039529016,
+            "largest_cluster_rows": 1336,
+            "row_weight_effective_cluster_count": 383.30050459350207,
+            "rows": 76096
+          },
+          "seen": {
+            "clusters": 2403,
+            "largest_cluster_row_share": 0.00946164129094981,
+            "largest_cluster_rows": 545,
+            "row_weight_effective_cluster_count": 533.2518158646615,
+            "rows": 57601
+          }
+        }
+      },
+      "rows": 133697
+    },
+    "development": {
+      "fallback": {
+        "address": 0,
+        "road": 0,
+        "singleton": 0
+      },
+      "month": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 48303.89459611352,
+            "candidate_mae": 1454424.528953893,
+            "control_mae": 1407340.7168109852,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 21235.634243099485,
+            "percentile_97_5": 87524.642677116,
+            "point_delta": 47083.812142907875,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 49763.19151122399,
+            "candidate_mae": 1446541.0673906673,
+            "control_mae": 1399695.9217754158,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0,
+            "percentile_2_5": 21218.497947802523,
+            "percentile_97_5": 95365.72626361414,
+            "point_delta": 46845.1456152515,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "block_length_months": 3,
+          "blocks_per_replicate": 4,
+          "circular_boundary_assumption": true,
+          "months_with_rows": 12,
+          "rows_by_relative_month": [
+            6145,
+            6235,
+            5228,
+            5046,
+            5881,
+            3266,
+            5055,
+            7516,
+            9057,
+            9401,
+            11490,
+            6914
+          ],
+          "stratum_rows_by_relative_month": {
+            "missing": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "new_nonmissing": [
+              1873,
+              2516,
+              2453,
+              2908,
+              3879,
+              2127,
+              3277,
+              5270,
+              6645,
+              7274,
+              8899,
+              5132
+            ],
+            "seen": [
+              4272,
+              3719,
+              2775,
+              2138,
+              2002,
+              1139,
+              1778,
+              2246,
+              2412,
+              2127,
+              2591,
+              1782
+            ]
+          }
+        }
+      },
+      "point_metrics_reproduced": true,
+      "prediction_sha256": {
+        "R91": "9fb187d6d1e17d6dbd61fcea479a2a516994229bbdd47cdab0025a37f618f849",
+        "v24": "63a537bd3395376fcca68c53706e33aeb137607310f95de41ffd5a1c788d8b40"
+      },
+      "project": {
+        "summary": {
+          "overall": {
+            "bootstrap_mean_delta": 47654.87041008617,
+            "candidate_mae": 1454424.528953893,
+            "control_mae": 1407340.7168109852,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0045,
+            "percentile_2_5": 10272.23261798977,
+            "percentile_97_5": 95399.28390680367,
+            "point_delta": 47083.812142907875,
+            "valid_replicates": 2000
+          },
+          "weighted": {
+            "bootstrap_mean_delta": 47464.95459318803,
+            "candidate_mae": 1446541.0673906673,
+            "control_mae": 1399695.9217754158,
+            "invalid_replicates": 0,
+            "negative_delta_fraction": 0.0035,
+            "percentile_2_5": 10484.665624258405,
+            "percentile_97_5": 95267.79319580819,
+            "point_delta": 46845.1456152515,
+            "valid_replicates": 2000
+          }
+        },
+        "support": {
+          "missing": {
+            "clusters": 0,
+            "largest_cluster_row_share": null,
+            "largest_cluster_rows": 0,
+            "row_weight_effective_cluster_count": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "clusters": 1944,
+            "largest_cluster_row_share": 0.03303159627198438,
+            "largest_cluster_rows": 1726,
+            "row_weight_effective_cluster_count": 326.58441409315515,
+            "rows": 52253
+          },
+          "seen": {
+            "clusters": 1861,
+            "largest_cluster_row_share": 0.022877057382422968,
+            "largest_cluster_rows": 663,
+            "row_weight_effective_cluster_count": 305.65955703842644,
+            "rows": 28981
+          }
+        }
+      },
+      "rows": 81234
+    }
+  },
+  "status": "completed"
+}

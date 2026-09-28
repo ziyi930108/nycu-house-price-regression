@@ -1,0 +1,12 @@
+{
+  "started_at_utc": "2026-09-28T16:05:32.872936+00:00",
+  "completed_at_utc": "2026-09-28T16:05:43.111564+00:00",
+  "elapsed_seconds": 10.233999999938533,
+  "exit_code": 0,
+  "failure": null,
+  "source_sha256_before": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+  "source_sha256_after": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+  "source_unchanged": true,
+  "automatic_retry": false,
+  "log_sha256": "61848adfcc0a2390e02cdb74113fa9e35105606cab304b9b85ad5bbf664a0249"
+}

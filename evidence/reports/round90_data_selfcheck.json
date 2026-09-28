@@ -1,0 +1,36 @@
+{
+  "check_count": 12,
+  "checks": [
+    "fixed_date_start_inclusive_end_inclusive_invalid_excluded",
+    "canonical_not_raw_position_indices",
+    "canonical_input_unchanged",
+    "target_column_rejected",
+    "duplicate_canonical_indices_rejected",
+    "out_of_range_canonical_rejected",
+    "cross_old_role_mapping_preserves_values_order_dtypes",
+    "geography_inputs_unmutated_and_copied",
+    "missing_canonical_geo_row_rejected",
+    "overlapping_old_geo_partitions_rejected",
+    "wrong_old_partition_length_rejected",
+    "mixed_geography_dtypes_rejected"
+  ],
+  "elapsed_seconds": null,
+  "elapsed_seconds_note": "原合成檢查未獨立量測；本收據不以tool等待時間代替測試耗時。",
+  "executed_by": "subagent /root/r85_validation_audit",
+  "execution_command": ".venv/Scripts/python.exe -B -X utf8 src/round90_offset_data.py --self-check",
+  "new_model_fits": 0,
+  "new_real_preparation": false,
+  "query_prices_read": false,
+  "real_dataset_files_opened": 0,
+  "record_date_Asia_Taipei": "2026-09-29",
+  "record_written_after_execution": true,
+  "rerun_for_recording": false,
+  "result_source": "本代理先前實際執行的終端stdout，exit_code=0；非推測或僅AST檢查。",
+  "round": 90,
+  "source_sha256": {
+    "src/round90_offset_data.py": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1"
+  },
+  "status": "passed",
+  "synthetic_only": true,
+  "test_read": false
+}

@@ -1,0 +1,35 @@
+{
+  "automatic_retry": false,
+  "candidate": "R92",
+  "command": [
+    "src/candidate_diagnostics_v3.py",
+    "--round",
+    "92",
+    "--candidate",
+    "R92",
+    "--extra-control",
+    "v22:79:R79",
+    "--extra-control",
+    "v24:83:R83"
+  ],
+  "completed_at_utc": "2026-09-28T16:31:58.100746+00:00",
+  "elapsed_seconds": 23.405999999959022,
+  "exit_code": 0,
+  "extra_controls": [
+    [
+      "v22",
+      79,
+      "R79"
+    ],
+    [
+      "v24",
+      83,
+      "R83"
+    ]
+  ],
+  "failure": null,
+  "log_sha256": "877e4317e31f7f91973375312713e0e0c4b5fb1432f0719882635690e6fa3a7e",
+  "round": 92,
+  "source_sha256": "49cf3a89e8a1d60defb8f49bc63ef0f8f88ded528af1e3687684d70c8a4ae128",
+  "started_at_utc": "2026-09-28T16:31:34.691427+00:00"
+}

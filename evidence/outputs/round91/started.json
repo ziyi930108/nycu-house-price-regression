@@ -1,0 +1,9 @@
+{
+  "command": [
+    "src/round91_experiment.py",
+    "--plan-sha",
+    "7cd2c36668326975db32142853c3846fd286fcbba37148e70df68def4c81eb1e"
+  ],
+  "source_sha256": "f590c97467906bada203dd10475b567770aca05891b83ae39ac768401b658636",
+  "started_at_utc": "2026-09-28T16:10:12.951681+00:00"
+}

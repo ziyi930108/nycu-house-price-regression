@@ -1,0 +1,10 @@
+{
+  "automatic_retry": false,
+  "command": [
+    "src/round89_experiment.py",
+    "--plan-sha",
+    "34811ae50be55f3165e6debe8c24559dee2436939e45a90d29282697d61de391"
+  ],
+  "source_sha256": "1e111dbc2dc234cb41b593910de33b41cadf82a20807ac82008ac810ca5129d1",
+  "started_at_utc": "2026-09-28T15:50:35.456901+00:00"
+}

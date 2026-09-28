@@ -1,0 +1,12 @@
+{
+  "automatic_retry": false,
+  "completed_at_utc": "2026-09-28T16:05:42.884491+00:00",
+  "elapsed_seconds": 9.5,
+  "exit_code": 0,
+  "failure": null,
+  "models_fitted": 0,
+  "price_tables_read": 0,
+  "source_sha256": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+  "started_at_utc": "2026-09-28T16:05:33.386799+00:00",
+  "test_files_read": 0
+}
