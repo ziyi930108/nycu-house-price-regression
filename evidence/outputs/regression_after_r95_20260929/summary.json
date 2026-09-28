@@ -1,0 +1,334 @@
+{
+  "created_at_utc": "2026-09-28T18:28:03.464171+00:00",
+  "scope": "Nine scientific hypotheses; R94/R95 are one recovered hypothesis.",
+  "selected_submission": "v22",
+  "Private_score": null,
+  "new_fit_or_predict_calls_in_this_summary": 0,
+  "input_price_or_prediction_arrays_loaded": false,
+  "experiments": [
+    {
+      "round": 85,
+      "hypothesis": "平方根面積尺度",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2341241.1006775885,
+          "delta_mae": 31888.7429810185,
+          "delta_weighted_mae": 30200.709739002632
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1416845.462524392,
+          "delta_mae": 9458.391718542902,
+          "delta_weighted_mae": 9350.229690378532
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1412885.092017636,
+          "delta_mae": 29656.686567670433,
+          "delta_weighted_mae": 30607.522411842598
+        }
+      },
+      "tree_fits": 3,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 388.2490000000689,
+      "main_elapsed_seconds": 449.2650000001304,
+      "saved_recommendation": "retain_research_do_not_final_fit_or_export",
+      "decision_path": "outputs/round85/decision_review.json"
+    },
+    {
+      "round": 86,
+      "hypothesis": "單價樹加入價格先驗",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2322308.4175787326,
+          "delta_mae": 12956.059882162604,
+          "delta_weighted_mae": 6821.639078408945
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1439650.0170976613,
+          "delta_mae": 32262.94629181223,
+          "delta_weighted_mae": 31779.215847765794
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1382177.3931922794,
+          "delta_mae": -1051.0122576861177,
+          "delta_weighted_mae": -1682.073047700571
+        }
+      },
+      "tree_fits": 3,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 417.2029999999795,
+      "main_elapsed_seconds": 494.14100000006147,
+      "saved_recommendation": "retain_research_do_not_final_fit_or_export",
+      "decision_path": "outputs/round86/decision_review.json"
+    },
+    {
+      "round": 87,
+      "hypothesis": "固定混合兩種面積表示",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2299534.8291375567,
+          "delta_mae": -9817.52855901327,
+          "delta_weighted_mae": -5663.141299274052
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1406652.005994818,
+          "delta_mae": -735.0648110311013,
+          "delta_weighted_mae": -747.8257663697004
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1391857.0467560175,
+          "delta_mae": 8628.641306051984,
+          "delta_weighted_mae": 8997.99214929156
+        }
+      },
+      "tree_fits": 0,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 0,
+      "main_elapsed_seconds": 47.063000000081956,
+      "saved_recommendation": "do_not_advance_R87_to_final_fit",
+      "decision_path": "outputs/round87/decision_review.json"
+    },
+    {
+      "round": 88,
+      "hypothesis": "低支持群調整參考修正",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2325969.4943258106,
+          "delta_mae": 16617.136629240587,
+          "delta_weighted_mae": 13647.831646326464
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1418364.5929216465,
+          "delta_mae": 10977.522115797503,
+          "delta_weighted_mae": 10740.71014396497
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1390903.4302327633,
+          "delta_mae": 7675.024782797787,
+          "delta_weighted_mae": 8949.941379856318
+        }
+      },
+      "tree_fits": 0,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 0,
+      "main_elapsed_seconds": 57.73400000017136,
+      "saved_recommendation": "retain_research_do_not_final_fit_or_export",
+      "decision_path": "outputs/round88/decision_review.json"
+    },
+    {
+      "round": 89,
+      "hypothesis": "分群時間趨勢",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2320127.9448091416,
+          "delta_mae": 10775.587112571578,
+          "delta_weighted_mae": 10158.587164415512
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1400980.4033685355,
+          "delta_mae": -6406.66743731359,
+          "delta_weighted_mae": -6640.322777425172
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1393135.435474802,
+          "delta_mae": 9907.030024836538,
+          "delta_weighted_mae": 12462.632837918587
+        }
+      },
+      "tree_fits": 0,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 3,
+      "fit_seconds": 21.438000000081956,
+      "main_elapsed_seconds": 226.43699999991804,
+      "saved_recommendation": "retain_research_no_final_fit_no_CSV",
+      "decision_path": "outputs/round89/decision_review.json"
+    },
+    {
+      "round": 91,
+      "hypothesis": "先驗上的總價殘差",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2347209.5033456576,
+          "delta_mae": 37857.145649087615,
+          "delta_weighted_mae": 23692.645020754542
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1454424.528953898,
+          "delta_mae": 47037.45814804896,
+          "delta_weighted_mae": 46823.32333694957
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1378833.711643826,
+          "delta_mae": -4394.693806139519,
+          "delta_weighted_mae": -8937.297502822476
+        }
+      },
+      "tree_fits": 3,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 465.00000000023283,
+      "main_elapsed_seconds": 592.3279999999795,
+      "saved_recommendation": "retain_research_no_final_fit_no_CSV",
+      "decision_path": "outputs/round91/decision_review.json"
+    },
+    {
+      "round": 92,
+      "hypothesis": "較淺的單價樹",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2302598.4125552876,
+          "delta_mae": -6753.945141282398,
+          "delta_weighted_mae": -2545.0064059209544
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1409199.8741974516,
+          "delta_mae": 1812.8033916025888,
+          "delta_weighted_mae": 1859.5152320244815
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1404783.1942111312,
+          "delta_mae": 21554.78876116569,
+          "delta_weighted_mae": 23266.582964400062
+        }
+      },
+      "tree_fits": 3,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 404.3759999999311,
+      "main_elapsed_seconds": 478.0150000001304,
+      "saved_recommendation": "retain_research_no_final_fit_no_CSV",
+      "decision_path": "outputs/round92/decision_review.json"
+    },
+    {
+      "round": 93,
+      "hypothesis": "建案密度權重",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2298811.8230881603,
+          "delta_mae": -10540.53460840974,
+          "delta_weighted_mae": -8031.25773425051
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1408053.9730181368,
+          "delta_mae": 666.902212287765,
+          "delta_weighted_mae": 598.0543279096019
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1387196.6831693863,
+          "delta_mae": 3968.2777194208466,
+          "delta_weighted_mae": 4875.506751847453
+        }
+      },
+      "tree_fits": 3,
+      "NN_fits": 0,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 473.48399999993853,
+      "main_elapsed_seconds": 549.8279999999795,
+      "saved_recommendation": "retain_research_no_final_fit_no_CSV",
+      "decision_path": "outputs/round93/decision_review.json"
+    },
+    {
+      "round": 95,
+      "hypothesis": "欄位 Attention 先驗回歸",
+      "stages": {
+        "auxiliary": {
+          "v22_mae": 2309352.35769657,
+          "candidate_mae": 2277199.4828251954,
+          "delta_mae": -32152.874871374574,
+          "delta_weighted_mae": -26139.249819960678
+        },
+        "development": {
+          "v22_mae": 1407387.070805849,
+          "candidate_mae": 1422360.9370677653,
+          "delta_mae": 14973.866261916235,
+          "delta_weighted_mae": 14733.960921343882
+        },
+        "confirmation": {
+          "v22_mae": 1383228.4054499655,
+          "candidate_mae": 1412063.6161061144,
+          "delta_mae": 28835.210656148847,
+          "delta_weighted_mae": 32836.367438333575
+        }
+      },
+      "tree_fits": 0,
+      "NN_fits": 3,
+      "CPU_wrapper_fits": 0,
+      "fit_seconds": 1762.375999999931,
+      "main_elapsed_seconds": 1903.9220000000205,
+      "saved_recommendation": "retain_research_no_final_fit_no_CSV",
+      "decision_path": "outputs/round95/decision_review.json"
+    }
+  ],
+  "total_tree_fits": 15,
+  "total_NN_fits": 3,
+  "total_CPU_wrapper_fits": 3,
+  "total_fit_seconds": 3932.126000000164,
+  "total_successful_main_seconds": 4798.733000000473,
+  "R94_prefit_failed_seconds": 7.812999999849126,
+  "timing_note": "Fit is included in main. Development, review, synthetic tests, diagnostics and publishing are not included. Not whole-chat elapsed time.",
+  "limitations": [
+    "Same historical windows reused; no correction for adaptive model selection.",
+    "Different hypotheses change different components and are not independent replications.",
+    "Selection reasoning and favorable counterevidence remain in each original report.",
+    "Lower historical MAE does not establish lower unknown Private MAE."
+  ],
+  "input_sha256": {
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round85/results.json": "6a67ca817d5dceb62fd6fbfbb1e1428f82a064963b530dfafaf3201d08cefc17",
+    "outputs/round85/execution.json": "00cd9de78bcd0481a1d7ec95f47625dd6554c0c73b3dc9170765f6e18ef92d88",
+    "outputs/round85/decision_review.json": "00d197200905f12f487ce321c0003b89db055347a90328109e18b861db3789fc",
+    "outputs/round86/results.json": "0056e3e508fd6fe3cc4df8902d7824298d50817ac1826b407789eeb641294132",
+    "outputs/round86/execution.json": "939b3227ab371da68c0670032e19c386602e384a4948197e3cfc483728fa3f77",
+    "outputs/round86/decision_review.json": "0fc7b60b21232367aee54302cb32f8803e7cb32615b348296204109b00ab9761",
+    "outputs/round87/results.json": "97149b56e4c8955b9e653a2cd59e3f624a7c002697687fc1cde0648b09e64d21",
+    "outputs/round87/execution.json": "8ce65142186ab5468c4eefdd7771f7bdaa81d1a3a51c83f1bacd16ab3cfe2593",
+    "outputs/round87/decision_review.json": "b2c9d6b3dbe73d98588a9487237206250eb51ef6bcaa27aea2f23b0aeeea6b82",
+    "outputs/round88/results.json": "67a2b84b566575f524b8bf781dcf4f4d35f3e4bd1442a7b2ebb9fe404a6de6ce",
+    "outputs/round88/execution.json": "07fc501f2a6777374c1c1443b55be52b2649c5fa56a20a09d55ba9e07f4b55a5",
+    "outputs/round88/decision_review.json": "7b136f3c1ccbcaa2caaf17b9a6fd4b37c6a31faed4651d359d33122165f97a0f",
+    "outputs/round89/results.json": "a2f0a42d4ed22e27eae07d397839318f32703628cdfdacc94e619e12ba4038d1",
+    "outputs/round89/execution.json": "8a8e8d34a99beb4fbd790fca3b1f1fda6dcc1b436f02ddf362ed3e393b67f47e",
+    "outputs/round89/decision_review.json": "073c7fa004d2e7b464375d39d931a27d097ee3c09ea391e731c200cc69e98aa3",
+    "outputs/round91/results.json": "4f9d6d0b5b600b0706d78febecea1e7b625b1722e11c3d4f888fb3505875b13f",
+    "outputs/round91/execution.json": "973cab0339e7dde884098d3c72007155482a9ab83af3b63a5836c8763e1b34e9",
+    "outputs/round91/decision_review.json": "fa0f2b13575e5e2b9ddc303c635ac4269ee3c0661c9bad8eec95eae177109f34",
+    "outputs/round92/results.json": "da261f7854fe1a7bf74963ec880a0af6e4e4b10982fe1228d811fc83373069ce",
+    "outputs/round92/execution.json": "c41dc0e9fc6f371438a065546f874745bc5f9aa824fdaa724b91d1eb91206fc9",
+    "outputs/round92/decision_review.json": "d0b4b626c650a248ea6461e83605820b9f83ed0a4f46ca86801a84cc0535fc3a",
+    "outputs/round93/results.json": "0b6c41074bf9f21d5585edf60c3b545441fcc1f28b2afb7708b05e8aa5bb6df8",
+    "outputs/round93/execution.json": "94ebaffe1444f8fbee7b89b0044e04bf408cf2f2a5fb9dd931512a9aca82789c",
+    "outputs/round93/decision_review.json": "60bece5be45e200f942eee36fa4ddbba03d2795afe3c1ba2b89c0295970581c4",
+    "outputs/round95/results.json": "c895c6f0719cca0d84d221a95f6ccdcf872ab5f8a7851262e9acdf5fd01dc806",
+    "outputs/round95/execution.json": "ae2630239731be6f91328fa74905383e72fba4c8b76f3e2b672f391d6b19a855",
+    "outputs/round95/decision_review.json": "a823c3ce3ac2b8b652a5e62a64c6f8502f003bd10b9711fd41ab549d5f0d4298",
+    "outputs/round94/execution.json": "bc04228adc4ec4932e58f742ef831e8ad7c6069112db90962a27f1cdacde0ca3"
+  },
+  "source_sha256": "bcdc2537a99c0bcc33d268ecd19793e2d8aa8dbc77615a516a51497283b85176"
+}

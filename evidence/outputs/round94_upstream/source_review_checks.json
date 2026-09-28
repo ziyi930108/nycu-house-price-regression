@@ -1,0 +1,142 @@
+{
+  "status": "source_only_review",
+  "upstream_commit": "e3ed46cac38568785289d8fa16b8cfa585bde27e",
+  "manifest_sha256": "699800b3ceb2c12c6dccee1931cd27a1c0eb53ba94e7977f5cdfa019963cbc8f",
+  "all_saved_file_hashes_rechecked": true,
+  "source_classes": {
+    "LinearEmbeddings": {
+      "start_line": 161,
+      "end_line": 209,
+      "methods": {
+        "__init__": {
+          "start_line": 180,
+          "end_line": 194
+        },
+        "reset_parameters": {
+          "start_line": 196,
+          "end_line": 199
+        },
+        "forward": {
+          "start_line": 201,
+          "end_line": 209
+        }
+      }
+    },
+    "CategoricalEmbeddings": {
+      "start_line": 212,
+      "end_line": 289,
+      "methods": {
+        "__init__": {
+          "start_line": 231,
+          "end_line": 261
+        },
+        "reset_parameters": {
+          "start_line": 263,
+          "end_line": 268
+        },
+        "forward": {
+          "start_line": 270,
+          "end_line": 289
+        }
+      }
+    },
+    "MultiheadAttention": {
+      "start_line": 295,
+      "end_line": 465,
+      "methods": {
+        "__init__": {
+          "start_line": 326,
+          "end_line": 424
+        },
+        "_reshape": {
+          "start_line": 426,
+          "end_line": 433
+        },
+        "forward": {
+          "start_line": 435,
+          "end_line": 465
+        }
+      }
+    },
+    "_ReGLU": {
+      "start_line": 468,
+      "end_line": 476,
+      "methods": {
+        "forward": {
+          "start_line": 469,
+          "end_line": 476
+        }
+      }
+    },
+    "FTTransformerBackbone": {
+      "start_line": 482,
+      "end_line": 672,
+      "methods": {
+        "__init__": {
+          "start_line": 515,
+          "end_line": 640
+        },
+        "forward": {
+          "start_line": 642,
+          "end_line": 672
+        }
+      }
+    },
+    "_CLSEmbedding": {
+      "start_line": 675,
+      "end_line": 689,
+      "methods": {
+        "__init__": {
+          "start_line": 676,
+          "end_line": 679
+        },
+        "reset_parameters": {
+          "start_line": 681,
+          "end_line": 683
+        },
+        "forward": {
+          "start_line": 685,
+          "end_line": 689
+        }
+      }
+    },
+    "FTTransformer": {
+      "start_line": 692,
+      "end_line": 872,
+      "methods": {
+        "__init__": {
+          "start_line": 695,
+          "end_line": 749
+        },
+        "get_default_kwargs": {
+          "start_line": 752,
+          "end_line": 778
+        },
+        "make_parameter_groups": {
+          "start_line": 780,
+          "end_line": 819
+        },
+        "make_default_optimizer": {
+          "start_line": 821,
+          "end_line": 834
+        },
+        "forward": {
+          "start_line": 840,
+          "end_line": 872
+        }
+      }
+    }
+  },
+  "local_torch_sources_sha256": {
+    ".venv_torch/Lib/site-packages/torch/nn/modules/linear.py": "5559b5aa67c9baa896ecbba6ff8abd71abaa77ad23cfdf283c5ba6001c4dbf1f",
+    ".venv_torch/Lib/site-packages/torch/nn/modules/normalization.py": "8bca8b020e4a1ee2dd27287a39808464b81274e36bbf586befa8ac2b64889897",
+    ".venv_torch/Lib/site-packages/torch/version.py": "7900564c19844732aeb16023969ff14428d3a191cad59ecd9e311592f6645ceb"
+  },
+  "local_torch_version_from_source": "2.13.0+cu126",
+  "upstream_imported": false,
+  "torch_imported": false,
+  "model_instantiated": false,
+  "synthetic_or_real_training": false,
+  "new_dependency_installed": false,
+  "query_labels_read": false
+}

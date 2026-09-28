@@ -1,0 +1,5546 @@
+{
+  "all_branch_zero_confidence_final_bitwise_unchanged": true,
+  "all_branch_zero_confidence_rows": 38077,
+  "artifact_sha256": {
+    "outputs/round96/auxiliary/control/log_base.npy": "63b2af2554b7aae9ff7d1606e4d1a722266813214c60045de8a7d79b9737f174",
+    "outputs/round96/auxiliary/control/log_reference.npy": "b3b3e047f82b91789610118df3cf629538b83976e719dc32cbbda69db552ad0d",
+    "outputs/round96/auxiliary/control/log_spatial.npy": "41424bbabb65d252679f329cbcf573710fca6d1db625055f39a4183e4960c5e4",
+    "outputs/round96/auxiliary/control/nn_base.npy": "e27deb48c4c5bfe229b30310a6e55da1c16edc0756ff0597c9360875e2a6be1c",
+    "outputs/round96/auxiliary/control/nn_reference.npy": "fb14770587cc1158af4a79bf35511899e819aa6c9ffdb2633015337ad052fadf",
+    "outputs/round96/auxiliary/control/nn_spatial.npy": "63dd3be20c77943a71be10db93c6913b67e5a90fd72c11ad5393b05f85d69988",
+    "outputs/round96/auxiliary/control/unit_base.npy": "3d3669194c5d1f2d6ebe12ec7c4050a1c7e4562d2b45ab1935317beec2f7dc18",
+    "outputs/round96/auxiliary/control/unit_reference.npy": "b79a7fea46f9b5ba14e9f52c25825367a61d82b5d19ef478eea8cc1ae8bd5e82",
+    "outputs/round96/auxiliary/control/unit_spatial.npy": "5f7e2089b05093cdb9fc1c41ff909b92a4775ce04013625ffc96f27beb885867",
+    "outputs/round96/auxiliary/control/v11.npy": "dfdad5bf059e425e9bd882a65e2ec23105c41b304761e94b3c4ee73b8967dcaf",
+    "outputs/round96/auxiliary/control/v12.npy": "8192ae36573f37140f28287db2d1e028df3421d805ee0814283572375b0f7199",
+    "outputs/round96/auxiliary/control/v22.npy": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479",
+    "outputs/round96/auxiliary/control/v24.npy": "ecad3b23b8648aef27e0a29ed2c2e21b9dbb25c9f416e30e9d8261441663b3a4",
+    "outputs/round96/auxiliary/control/v5.npy": "d33691c0a820d852fb5dda7cc6baa308ff0383fc54e00c7f9b176bf1a16deb1a",
+    "outputs/round96/auxiliary/control_verification.json": "1d01e31ce83256d03e2721e4c1c8620d900c756bc3ec8b909229cedbdd4f768a",
+    "outputs/round96/auxiliary/control_verification.sha256": "6495aadb3fe5e9baa6bd858645429f3851058f9e44cf964165a9541ab3227d26",
+    "outputs/round96/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round96/auxiliary/log/base_future.npy": "67e329642aefeca3d88d458d4ba5524ba08127ee0c8941ef923a33d246278fd8",
+    "outputs/round96/auxiliary/log/reference.npy": "1bcd66f5ca6f0f468c28413e21cefc09a3c08000ed155ee250875390819e6d44",
+    "outputs/round96/auxiliary/log/reference_diagnostics.pkl": "9b5901fb5f326f26f40d7b00bf40a55b7834f87a2b3caba747c79972eb632d1a",
+    "outputs/round96/auxiliary/log/spatial.npy": "6edd38918aec859156612ea9acadc4700d58cb5a6cd768f4cd2e069b79906c9f",
+    "outputs/round96/auxiliary/log/spatial_diagnostics.pkl": "a6e384241ee59a0fd6e79734e8977780bb5160f678c02b417e3c3bb5e569be9d",
+    "outputs/round96/auxiliary/nn/base_future.npy": "ba40fd46b21215a25a15e8542c4c9b184ebce597026403582e47fd3915796839",
+    "outputs/round96/auxiliary/nn/reference.npy": "4013d9766f2396d812c00cd92a91a8a08adfa3a7ddee092d228543a13d0d70f4",
+    "outputs/round96/auxiliary/nn/reference_diagnostics.pkl": "9b5901fb5f326f26f40d7b00bf40a55b7834f87a2b3caba747c79972eb632d1a",
+    "outputs/round96/auxiliary/nn/spatial.npy": "d3bf460c85de3239601bc6bfe887cd6247bee3e65072564938006350cc852d6c",
+    "outputs/round96/auxiliary/nn/spatial_diagnostics.pkl": "03ad02d180a8d41586e969fe183228baf71c9e69c1b22a0b35fc16636052acfd",
+    "outputs/round96/auxiliary/predictions.npy": "d1c8bac816c7773995057e1d897cbb4004667f070dbb8bb63a2c5a578427d1c4",
+    "outputs/round96/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round96/auxiliary/unit/base_future.npy": "176121612eee773464dca764d7cc8e796d02ca1a537b3d797df59c13c907063c",
+    "outputs/round96/auxiliary/unit/reference.npy": "d4553e1e61b52cdc25775d5cd7ac2b02ffc20c8e2a6d54841e904c7e740e98c3",
+    "outputs/round96/auxiliary/unit/reference_diagnostics.pkl": "9b5901fb5f326f26f40d7b00bf40a55b7834f87a2b3caba747c79972eb632d1a",
+    "outputs/round96/auxiliary/unit/spatial.npy": "df478daed6dee0644b7ff93ab0c611f4d0a50ba4163fd940464b0c7c7b722f41",
+    "outputs/round96/auxiliary/unit/spatial_diagnostics.pkl": "a7e2625c98e51360a19155404c214666deab5ea906715c710e5c2b6ec3fc15a8"
+  },
+  "branch_diagnostics": {
+    "log": {
+      "changed_reference_rows": 67434,
+      "changed_spatial_rows": 67434,
+      "mean_candidate_confidence": 0.053736328997421465,
+      "mean_candidate_spatial_effective_weight": 0.018257180300346003,
+      "mean_original_confidence": 0.10747265799484293,
+      "mean_original_spatial_effective_weight": 0.017637041670097647,
+      "reference_confidence_exactly_halved": true,
+      "reference_shrink": {
+        "base_TWD_sha256": "173b39b8d0c85e096d74d7201c2ed3d700930f551274652caed2215a025c1500",
+        "base_fallback_rows": 38077,
+        "caller_must_pass_new_reference_and_confidence_to_original_spatial": true,
+        "candidate": "R96",
+        "candidate_confidence_sha256": "7d042dd12f17e37bdb098003adf94afa892f3316cb9c92af67a74766f0ac392c",
+        "candidate_reference_sha256": "482764aee3016d5b0e0a6ef7e8c15df0e2932be8b60777478667241e4952ccf1",
+        "changed_reference_rows": 67434,
+        "diagnostics_only_confidence_changed": true,
+        "format_version": 1,
+        "future_base_sha256": "c5bb1f72118c4c87698f68425c4b248213a010e3bce871123cf0d2a56ea57fea",
+        "input_state_and_values_mutated": false,
+        "mean_candidate_confidence": 0.053736328997421465,
+        "mean_original_confidence": 0.10747265799484293,
+        "new_fits": 0,
+        "new_reference_or_spatial_state": false,
+        "original_confidence_sha256": "64d6a691592e3991acfc92a262efa94a55dd159a85f8d2451efeb2b7dfaff6f1",
+        "original_reference_sha256": "4bee8854acbb2aa23645e1a435713f4b8003ec39695a9b34b92366380d881d3a",
+        "parameters": {
+          "branches": [
+            "nn",
+            "log",
+            "unit"
+          ],
+          "candidate": "R96",
+          "confidence_formula": "0.5 * original confidence",
+          "final": "median(candidate nn spatial, candidate log spatial, candidate unit spatial)",
+          "format_version": 1,
+          "future_base": "original raw branch base * exp(original beta[3] * original capped future_days / 365.25)",
+          "new_fits": 0,
+          "new_reference_or_spatial_state": false,
+          "query_labels_used": false,
+          "reference_formula": "Bfuture + 0.5 * (original_reference - Bfuture), only where c > 0",
+          "rho": 0.5,
+          "spatial_contract": "original spatial.predict receives new reference and new confidence; source unchanged",
+          "zero_confidence": "copy original reference exactly"
+        },
+        "plan_sha256": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "source_counts": {
+          "address": 1639,
+          "base_fallback": 38077,
+          "district_style": 42236,
+          "locality": 855,
+          "project": 9055,
+          "street": 2383,
+          "street_section": 11266
+        },
+        "source_hashes": {
+          "reports/round96_plan.md": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+          "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+          "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+          "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+          "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+          "src/round96_reference_shrink.py": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894"
+        },
+        "source_sha256": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894",
+        "supported_reference_rows": 67434,
+        "zero_confidence_reference_bitwise_preserved": true,
+        "zero_confidence_rows": 38077
+      },
+      "spatial_report": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 10383,
+        "applied_source_counts": {
+          "base_fallback": 740,
+          "district_style": 9643
+        },
+        "changed_rows": 10383,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 44909,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 95128,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 34,
+        "neighborhood_cache_entries": 2255,
+        "neighborhood_cache_reuses": 42654,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "reason_counts": {
+          "area_out_of_bounds": 90,
+          "fewer_than_5_projects": 34526,
+          "invalid_geography_or_group": 35314,
+          "not_weak_source": 25198,
+          "spatial_residual": 10383
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 80313
+      },
+      "spatial_support_and_future_trend_diagnostics_unchanged": true,
+      "spatial_used_new_confidence": true,
+      "zero_confidence_full_branch_bitwise_unchanged": true,
+      "zero_confidence_rows": 38077
+    },
+    "nn": {
+      "changed_reference_rows": 67434,
+      "changed_spatial_rows": 67434,
+      "mean_candidate_confidence": 0.053736328997421465,
+      "mean_candidate_spatial_effective_weight": 0.018257180300346003,
+      "mean_original_confidence": 0.10747265799484293,
+      "mean_original_spatial_effective_weight": 0.017637041670097647,
+      "reference_confidence_exactly_halved": true,
+      "reference_shrink": {
+        "base_TWD_sha256": "5838b9c581b5e2db884a67c0104060e0af42b0be7a26c32bd5a49ff282a0d1c5",
+        "base_fallback_rows": 38077,
+        "caller_must_pass_new_reference_and_confidence_to_original_spatial": true,
+        "candidate": "R96",
+        "candidate_confidence_sha256": "7d042dd12f17e37bdb098003adf94afa892f3316cb9c92af67a74766f0ac392c",
+        "candidate_reference_sha256": "9420adcb6394ab5f94e453a4bae1dc88ee1f679940ffc741cc0b23feeec5298b",
+        "changed_reference_rows": 67434,
+        "diagnostics_only_confidence_changed": true,
+        "format_version": 1,
+        "future_base_sha256": "8765c9ff987578d01daa85046a7e90deee36474bd8931c1bbf3b696732465050",
+        "input_state_and_values_mutated": false,
+        "mean_candidate_confidence": 0.053736328997421465,
+        "mean_original_confidence": 0.10747265799484293,
+        "new_fits": 0,
+        "new_reference_or_spatial_state": false,
+        "original_confidence_sha256": "64d6a691592e3991acfc92a262efa94a55dd159a85f8d2451efeb2b7dfaff6f1",
+        "original_reference_sha256": "c30fb99f7d7cabb4758dca976526cf99f34b69d4d0a0e6cd8a8b9f73a6406953",
+        "parameters": {
+          "branches": [
+            "nn",
+            "log",
+            "unit"
+          ],
+          "candidate": "R96",
+          "confidence_formula": "0.5 * original confidence",
+          "final": "median(candidate nn spatial, candidate log spatial, candidate unit spatial)",
+          "format_version": 1,
+          "future_base": "original raw branch base * exp(original beta[3] * original capped future_days / 365.25)",
+          "new_fits": 0,
+          "new_reference_or_spatial_state": false,
+          "query_labels_used": false,
+          "reference_formula": "Bfuture + 0.5 * (original_reference - Bfuture), only where c > 0",
+          "rho": 0.5,
+          "spatial_contract": "original spatial.predict receives new reference and new confidence; source unchanged",
+          "zero_confidence": "copy original reference exactly"
+        },
+        "plan_sha256": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "source_counts": {
+          "address": 1639,
+          "base_fallback": 38077,
+          "district_style": 42236,
+          "locality": 855,
+          "project": 9055,
+          "street": 2383,
+          "street_section": 11266
+        },
+        "source_hashes": {
+          "reports/round96_plan.md": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+          "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+          "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+          "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+          "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+          "src/round96_reference_shrink.py": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894"
+        },
+        "source_sha256": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894",
+        "supported_reference_rows": 67434,
+        "zero_confidence_reference_bitwise_preserved": true,
+        "zero_confidence_rows": 38077
+      },
+      "spatial_report": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 10383,
+        "applied_source_counts": {
+          "base_fallback": 740,
+          "district_style": 9643
+        },
+        "changed_rows": 10383,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 44909,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 95128,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 34,
+        "neighborhood_cache_entries": 2255,
+        "neighborhood_cache_reuses": 42654,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "reason_counts": {
+          "area_out_of_bounds": 90,
+          "fewer_than_5_projects": 34526,
+          "invalid_geography_or_group": 35314,
+          "not_weak_source": 25198,
+          "spatial_residual": 10383
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 80313
+      },
+      "spatial_support_and_future_trend_diagnostics_unchanged": true,
+      "spatial_used_new_confidence": true,
+      "zero_confidence_full_branch_bitwise_unchanged": true,
+      "zero_confidence_rows": 38077
+    },
+    "unit": {
+      "changed_reference_rows": 67434,
+      "changed_spatial_rows": 67434,
+      "mean_candidate_confidence": 0.053736328997421465,
+      "mean_candidate_spatial_effective_weight": 0.018257180300346003,
+      "mean_original_confidence": 0.10747265799484293,
+      "mean_original_spatial_effective_weight": 0.017637041670097647,
+      "reference_confidence_exactly_halved": true,
+      "reference_shrink": {
+        "base_TWD_sha256": "524784807e6e57a8610055b165a51e0d7c9159ed6b73200ffdb43234e15416a2",
+        "base_fallback_rows": 38077,
+        "caller_must_pass_new_reference_and_confidence_to_original_spatial": true,
+        "candidate": "R96",
+        "candidate_confidence_sha256": "7d042dd12f17e37bdb098003adf94afa892f3316cb9c92af67a74766f0ac392c",
+        "candidate_reference_sha256": "6a6f24d7f96649cf8f4540f460b94fe06038da9d5956c2e02df2ba3095b05171",
+        "changed_reference_rows": 67434,
+        "diagnostics_only_confidence_changed": true,
+        "format_version": 1,
+        "future_base_sha256": "efe448fddf2266d2dea86610080ff67aadf63787fbd644f0adadab3dff8697a6",
+        "input_state_and_values_mutated": false,
+        "mean_candidate_confidence": 0.053736328997421465,
+        "mean_original_confidence": 0.10747265799484293,
+        "new_fits": 0,
+        "new_reference_or_spatial_state": false,
+        "original_confidence_sha256": "64d6a691592e3991acfc92a262efa94a55dd159a85f8d2451efeb2b7dfaff6f1",
+        "original_reference_sha256": "ddc98b3099af1ce720db215e9f1d35bc76f5faf1f56448a4d6353af2e0b80263",
+        "parameters": {
+          "branches": [
+            "nn",
+            "log",
+            "unit"
+          ],
+          "candidate": "R96",
+          "confidence_formula": "0.5 * original confidence",
+          "final": "median(candidate nn spatial, candidate log spatial, candidate unit spatial)",
+          "format_version": 1,
+          "future_base": "original raw branch base * exp(original beta[3] * original capped future_days / 365.25)",
+          "new_fits": 0,
+          "new_reference_or_spatial_state": false,
+          "query_labels_used": false,
+          "reference_formula": "Bfuture + 0.5 * (original_reference - Bfuture), only where c > 0",
+          "rho": 0.5,
+          "spatial_contract": "original spatial.predict receives new reference and new confidence; source unchanged",
+          "zero_confidence": "copy original reference exactly"
+        },
+        "plan_sha256": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "source_counts": {
+          "address": 1639,
+          "base_fallback": 38077,
+          "district_style": 42236,
+          "locality": 855,
+          "project": 9055,
+          "street": 2383,
+          "street_section": 11266
+        },
+        "source_hashes": {
+          "reports/round96_plan.md": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+          "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+          "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+          "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+          "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+          "src/round96_reference_shrink.py": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894"
+        },
+        "source_sha256": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894",
+        "supported_reference_rows": 67434,
+        "zero_confidence_reference_bitwise_preserved": true,
+        "zero_confidence_rows": 38077
+      },
+      "spatial_report": {
+        "additional_trend_applications_to_G": 0,
+        "applied_rows": 10383,
+        "applied_source_counts": {
+          "base_fallback": 740,
+          "district_style": 9643
+        },
+        "changed_rows": 10383,
+        "distance_plus_extents_used_as_gate": false,
+        "eligible_query_rows": 44909,
+        "fallback_bitwise_values_preserved": true,
+        "fallback_rows": 95128,
+        "geometry_is_exact_house_position": false,
+        "maximum_projects_used": 34,
+        "neighborhood_cache_entries": 2255,
+        "neighborhood_cache_reuses": 42654,
+        "parameters": {
+          "Bfuture": "raw_v3_blend * exp(saved_v2_beta[3] * clipped_future_days / 365.25)",
+          "Dq_plus_Dr_distance_hard_gate": false,
+          "G": "area * exp(center + query_hedonic @ saved_v2_beta), then clip to [0.65,1.5] * Bfuture",
+          "MAD_scale": 0.18,
+          "additional_trend_applied_to_G": false,
+          "adjustment": "p8 = p3 + (1-c) * 0.30 * exp(-MAD/0.18) * (G - Bfuture)",
+          "cpu_threads": 1,
+          "days_per_year": 365.25,
+          "eligible_v2_sources": [
+            "district_style",
+            "base_fallback"
+          ],
+          "exclude_query_project": true,
+          "fit_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "fit_dates": "finite and anchor - 4*365.25 <= trade_day_index <= anchor",
+          "fit_project_name_required": true,
+          "fit_recent_years": 4.0,
+          "fit_reference_residual_required": "finite existing v2 reference_residual only",
+          "format_version": 1,
+          "future_day_cap": 366.0,
+          "geographic_price_ratio_bounds": [
+            0.65,
+            1.5
+          ],
+          "geometry_semantics": "road representative or planar intersection; extent is support, not house error bound",
+          "location_compression": "same group, exact location, project: keep every row residual and source row position",
+          "maximum_extent_m_each": 2000.0,
+          "maximum_projects": 40,
+          "maximum_weight": 0.3,
+          "minimum_projects": 5,
+          "project_key": "normalized original city|address_district|project_name",
+          "project_order": "minimum actual fit-position distance, then project key lexicographically",
+          "project_vote": "median of all eligible actual fit rows of this project inside query radius",
+          "query_area_bounds_m2": [
+            15.0,
+            1500.0
+          ],
+          "query_cache": "same group, exact query location, query project; no query fitted state",
+          "radius_m": 2000.0,
+          "same_nonmissing_group": [
+            "address_city",
+            "building_type",
+            "main_use"
+          ],
+          "spatial_MAD": "unweighted median absolute deviation of project medians from center",
+          "spatial_center": "unweighted median of at most 40 project medians",
+          "v2_refitted": false
+        },
+        "query_labels_used": false,
+        "query_rows": 105511,
+        "reason_counts": {
+          "area_out_of_bounds": 90,
+          "fewer_than_5_projects": 34526,
+          "invalid_geography_or_group": 35314,
+          "not_weak_source": 25198,
+          "spatial_residual": 10383
+        },
+        "reference_refitted": false,
+        "weak_source_rows": 80313
+      },
+      "spatial_support_and_future_trend_diagnostics_unchanged": true,
+      "spatial_used_new_confidence": true,
+      "zero_confidence_full_branch_bitwise_unchanged": true,
+      "zero_confidence_rows": 38077
+    }
+  },
+  "branch_metrics": {
+    "log": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 337259.37517710775,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1170905.6542821182,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2566687.7388610994,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1505276.8729940604,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3646502.744516306,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1449862.4578972629,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1529438.0840276347,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1663007.0292083286,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2255584.789839294,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4339891.006472306,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3367141.0263061957,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1947863.7501744595,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1172449.5237445317,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3090450.7280464605,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7481725.261917697,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1811176.4933806944,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2598579.8138883472,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1276351.2490966024,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1720568.1411578357,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1839335.403082114,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1139351.924248323,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1867153.2989332376,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1984178.7555237708,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2565426.3388630818,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2858237.4304688615,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 3025541.448214729,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1813580.2591138843,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1826048.1974394366,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2173214.4573004018,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2193249.50221544,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2475724.313530521,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3109912.3246918865,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2664662.049824146,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2704778.035961884,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 3131796.341728679,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2875427.265507269,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2994646.3519277773,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 3127838.0328471046,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 3078401.8288289695,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2525811.4826980163,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2713938.9513996267,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1398268.6822821305,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2232172.1545356433
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 466689.4190578535,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1121709.098469568,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2493419.7258321014,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1431074.1596246217,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3776152.1282692584,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1431050.6016812967,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1477658.8804428969,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1580298.7166075208,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2144602.9822752136,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4307771.253261848,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3221987.7872952633,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1866068.8687297346,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1134390.243475775,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2991281.133633596,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7226612.745578049,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1739454.9435403321,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2749564.390188173,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1178203.7343263961,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1669066.0296756886,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1830234.6973340085,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1118529.0742675199,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1786165.6198751223,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1952813.0285537515,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2501868.6766115366,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2735907.985033033,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2815840.9096141616,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1774160.102474544,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1796586.6123559468,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2147704.313294894,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2149830.359593093,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2419972.9785700203,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3014272.630439646,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2571653.449042422,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2588412.5104821613,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2995952.869770573,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2707170.711798153,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2794407.9887673547,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2898878.319019123,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2849225.5805793046,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2434340.7218008814,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2623522.1170226755,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1300481.208210671,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2139056.369243853
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 466689.4190578535,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1121709.098469568,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2493419.7258321014,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1431074.1596246217,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3776152.1282692584,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1431050.6016812967,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1477658.8804428969,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1580298.7166075208,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2131534.8355412157,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4307771.253261848,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3221987.7872952633,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1866943.8556554148,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1134390.243475775,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2976020.736726666,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7267589.04768595,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1741472.203738956,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2749564.390188173,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1177062.0412134158,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1669066.0296756886,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1830234.6973340085,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1118529.0742675199,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1791852.9690517208,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1947422.9605908548,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2501784.345144791,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2735575.2806905163,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2812160.5762593527,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1775063.078075581,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1786125.0281795887,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2143968.682720214,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2148029.647384974,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2421997.3125162977,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3012585.999527213,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2575856.0498688165,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2584707.2936453535,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2990650.4346249397,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2711598.8230797923,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2790666.4554186417,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2894508.899131409,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2846452.5027310937,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2431908.4834454083,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2620112.5339679252,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1303906.6895534433,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2138149.6223163963
+      }
+    },
+    "nn": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 545175.0822283179,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1290414.0043776154,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2565848.230772813,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1615198.538733964,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3324951.6735911258,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1341013.0115878892,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1395545.697413471,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1585292.478953384,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2191643.309262884,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4173366.5483495747,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3332776.0166239073,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 2034993.3511095059,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 386705.4254893821,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3132783.47606617,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7188409.4241584465,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1979422.1841720867,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1903079.43360436,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 940523.9959884929,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2096569.0292911716,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1599027.725540083,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1188360.4270058905,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2010611.1936802047,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1974768.6470397697,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2590294.075125184,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2865639.885185942,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 3134845.7721868427,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1767402.9161780989,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1891412.0868093732,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2103839.008708185,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2220915.2663111747,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2506147.4452685867,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3094406.140889526,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2690674.876734115,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2791571.154762913,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 3003696.750184525,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 3023343.2238872712,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 3084655.855605423,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 3206318.6880247183,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 3199551.0534145464,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2549511.9668466346,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2742877.912540991,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1390572.3318319563,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2247696.1460361658
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 677521.543432232,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1266875.135231539,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2527524.765632831,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1570475.372124074,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3431488.687220567,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1330782.870650481,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1361769.9918347567,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1567900.1644795476,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2051221.447295358,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4137940.719318292,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3242274.3071432724,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1940653.2610372035,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 368281.2278664127,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3013955.1263128314,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6930568.851760768,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1907205.219411475,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1925974.1762244916,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 924436.2145996805,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2046867.5663253798,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1550834.436750991,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1154319.4578984687,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1931569.775969206,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1946243.8691729603,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2517966.2348474413,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2735869.3049151017,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2909127.0077296547,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1745724.2462344754,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1866940.3238318337,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2076263.95539676,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2164508.2784818527,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2440975.507887122,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2997719.3224138115,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2580754.8078775792,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2664549.618156812,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2878643.6194334873,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2836245.854734537,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2864647.6021754285,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2960050.4476330723,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2962463.352791293,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2452098.835161924,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2647599.7590889824,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1280363.198840566,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2146950.6271236953
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 677521.543432232,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1266875.135231539,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2527524.765632831,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1570475.372124074,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3431488.687220567,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1330782.870650481,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1361769.9918347567,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1567900.1644795476,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2046707.955327373,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4137940.719318292,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3242274.3071432724,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1951991.0135564297,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 368281.2278664127,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3002021.135930354,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6960004.07115591,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1918740.056063081,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1925974.1762244916,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 925119.6970316465,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2046867.5663253798,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1550834.436750991,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1154319.4578984687,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1935116.5518681114,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1944848.6008224722,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2518097.137492043,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2740714.7569912686,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2915283.8502589855,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1751552.7675643521,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1861092.2916011934,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2074912.391362317,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2163294.093911953,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2444307.7015646705,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2996077.0432378515,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2591296.951127946,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2667361.7243521134,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2877094.8252009843,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2845624.922135688,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2866416.2807165673,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2971597.7911585453,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2965414.7799318414,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2453864.708484462,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2649168.8194313645,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1283308.6716141265,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2149023.6965812016
+      }
+    },
+    "unit": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 65871.09336196631,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1245440.8561129584,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1884827.7291138123,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1332195.1151357372,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3351364.2194364984,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1376578.395446273,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1627774.3040054664,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1547214.0796920913,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2066622.4109463962,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4313896.185923142,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2873178.911132642,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1854799.6677597016,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1153149.2931385024,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3096665.6507481653,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6890852.88530317,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1797418.4386520453,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1328612.5407361025,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 913086.0682062008,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1603148.0647935846,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1599308.7210232143,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1137388.8795674269,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2131766.3039051197,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1915108.0567368986,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2500487.182231118,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2734922.694840281,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2861447.4153446853,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1720704.8938738774,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1773869.718495492,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2087495.219612021,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2153401.8544580946,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2437463.060718045,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2960803.5141113917,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2585730.371548882,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2592932.945059484,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2927400.2379876464,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2800544.914583856,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2820905.7299833978,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2996750.8029797426,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2808522.8164520194,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2429218.7835745574,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2573264.378032283,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1565880.8878202403,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2204384.7820688863
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 57904.271040163934,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1186839.801111833,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1798019.058584674,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1263680.5186177325,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3473244.5413090615,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1378379.634614005,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1564401.1277247833,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1479688.024350203,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 1978246.0029080187,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4275698.722015361,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2750401.650464686,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1768844.929429107,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1121119.307487747,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2989791.8244370515,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6711856.15791897,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1728966.168063365,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1288969.2071760625,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 876349.6166507311,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1554979.2081174378,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1554075.7781042357,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1113639.546340547,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2022232.6215970884,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1878867.775795387,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2439910.041072107,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2623260.482872123,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2663400.4881955334,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1684370.7663072033,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1735255.0997852501,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2059739.0906952398,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2101663.534955321,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2388190.7970329095,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2875167.869507137,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2486657.1398308505,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2481279.79920424,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2821916.5071138754,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2640492.284816081,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2635296.4262853344,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2779775.7081106408,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2589245.8799437447,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2341490.0900572073,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2490551.655201564,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1448088.952215802,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2108826.8955438924
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 57904.271040163934,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1186839.801111833,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1798019.058584674,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1263680.5186177325,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3473244.5413090615,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1378379.634614005,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1564401.1277247833,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1479688.024350203,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 1977994.437984007,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4275698.722015361,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2750401.650464686,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1775142.3019123825,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1121119.307487747,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2967143.8281137664,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6764958.639626735,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1746676.8472858046,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1288969.2071760625,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 878817.0366150305,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1554979.2081174378,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1554075.7781042357,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1113639.546340547,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2027062.044343792,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1875248.6922394156,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2439656.6868718467,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2628084.214430007,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2670296.496717833,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1690574.8939412045,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1729799.011421274,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2054344.9036618322,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2096129.1534857827,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2387989.5136118154,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2879676.9281898774,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2504437.7605769043,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2484060.054893697,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2816567.4768498554,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2648021.7285256907,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2640101.7179405023,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2791017.9926220374,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2588150.1400781483,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2342556.5301663233,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2491456.4163552835,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1450124.4158460156,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2110145.692739235
+      }
+    }
+  },
+  "changed_final_rows": 67434,
+  "controls_full_metrics_exact": true,
+  "dates": [
+    "2021-08-11",
+    "2022-08-10"
+  ],
+  "differences": {
+    "v11": {
+      "forecast_quarters": {
+        "Q1": {
+          "delta_TWD": -135785.93429835024,
+          "direction": "lower_MAE",
+          "relative_change_pct": -7.047656571504057
+        },
+        "Q2": {
+          "delta_TWD": -96351.40298579307,
+          "direction": "lower_MAE",
+          "relative_change_pct": -3.873030705499081
+        },
+        "Q3": {
+          "delta_TWD": -118739.31484225579,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.393843114444628
+        },
+        "Q4": {
+          "delta_TWD": -87367.24069374893,
+          "direction": "lower_MAE",
+          "relative_change_pct": -3.069854207312417
+        }
+      },
+      "overall": {
+        "delta_TWD": -112809.73102856148,
+        "direction": "lower_MAE",
+        "relative_change_pct": -4.6633587533222665
+      },
+      "strata": {
+        "missing": {
+          "delta_TWD": null,
+          "direction": "no_samples",
+          "relative_change_pct": null
+        },
+        "new_nonmissing": {
+          "delta_TWD": -121851.24014885491,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.669689676221478
+        },
+        "seen": {
+          "delta_TWD": -58619.406862491975,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.585899572119856
+        }
+      },
+      "weighted": {
+        "delta_TWD": -98697.26418902585,
+        "direction": "lower_MAE",
+        "relative_change_pct": -4.651207207184327
+      }
+    },
+    "v12": {
+      "forecast_quarters": {
+        "Q1": {
+          "delta_TWD": -127590.48928582482,
+          "direction": "lower_MAE",
+          "relative_change_pct": -6.650580138285633
+        },
+        "Q2": {
+          "delta_TWD": -94194.51402492449,
+          "direction": "lower_MAE",
+          "relative_change_pct": -3.7896159976666843
+        },
+        "Q3": {
+          "delta_TWD": -129517.73720200127,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.7736495728113
+        },
+        "Q4": {
+          "delta_TWD": -73951.05209482554,
+          "direction": "lower_MAE",
+          "relative_change_pct": -2.6107520878877355
+        }
+      },
+      "overall": {
+        "delta_TWD": -109954.99073022697,
+        "direction": "lower_MAE",
+        "relative_change_pct": -4.550719041633178
+      },
+      "strata": {
+        "missing": {
+          "delta_TWD": null,
+          "direction": "no_samples",
+          "relative_change_pct": null
+        },
+        "new_nonmissing": {
+          "delta_TWD": -118072.42828307813,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.53143694388729
+        },
+        "seen": {
+          "delta_TWD": -61303.093515468296,
+          "direction": "lower_MAE",
+          "relative_change_pct": -4.7858013436894
+        }
+      },
+      "weighted": {
+        "delta_TWD": -97284.86378985923,
+        "direction": "lower_MAE",
+        "relative_change_pct": -4.587700035844023
+      }
+    },
+    "v22": {
+      "forecast_quarters": {
+        "Q1": {
+          "delta_TWD": 4114.328874855302,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.23026476422560727
+        },
+        "Q2": {
+          "delta_TWD": -3521.289404607378,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.14703148637386088
+        },
+        "Q3": {
+          "delta_TWD": -8379.45396297006,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.3232761170668952
+        },
+        "Q4": {
+          "delta_TWD": -8678.216732417699,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.31360044309118873
+        }
+      },
+      "overall": {
+        "delta_TWD": -3095.982172775548,
+        "direction": "lower_MAE",
+        "relative_change_pct": -0.13406278874928956
+      },
+      "strata": {
+        "missing": {
+          "delta_TWD": null,
+          "direction": "no_samples",
+          "relative_change_pct": null
+        },
+        "new_nonmissing": {
+          "delta_TWD": -5148.687885821331,
+          "direction": "lower_MAE",
+          "relative_change_pct": -0.20655022000405365
+        },
+        "seen": {
+          "delta_TWD": 9206.918430161662,
+          "direction": "higher_MAE",
+          "relative_change_pct": 0.7606340222689356
+        }
+      },
+      "weighted": {
+        "delta_TWD": 107.98974400036968,
+        "direction": "higher_MAE",
+        "relative_change_pct": 0.005337661962823148
+      }
+    },
+    "v24": {
+      "forecast_quarters": {
+        "Q1": {
+          "delta_TWD": 28020.76483392692,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.5894921202107337
+        },
+        "Q2": {
+          "delta_TWD": 28457.547319824807,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.204326360439656
+        },
+        "Q3": {
+          "delta_TWD": 32051.357028723694,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.2561221073686735
+        },
+        "Q4": {
+          "delta_TWD": 38566.20352507429,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.417854190887624
+        }
+      },
+      "overall": {
+        "delta_TWD": 30847.233665789943,
+        "direction": "higher_MAE",
+        "relative_change_pct": 1.3556785502145452
+      },
+      "strata": {
+        "missing": {
+          "delta_TWD": null,
+          "direction": "no_samples",
+          "relative_change_pct": null
+        },
+        "new_nonmissing": {
+          "delta_TWD": 30939.84836327005,
+          "direction": "higher_MAE",
+          "relative_change_pct": 1.2594496313248715
+        },
+        "seen": {
+          "delta_TWD": 30292.1470743611,
+          "direction": "higher_MAE",
+          "relative_change_pct": 2.5469677129970503
+        }
+      },
+      "weighted": {
+        "delta_TWD": 30702.675735289464,
+        "direction": "higher_MAE",
+        "relative_change_pct": 1.5408573195496045
+      }
+    },
+    "v5": {
+      "forecast_quarters": {
+        "Q1": {
+          "delta_TWD": -163325.13343316154,
+          "direction": "lower_MAE",
+          "relative_change_pct": -8.357555894999413
+        },
+        "Q2": {
+          "delta_TWD": -129960.96390107088,
+          "direction": "lower_MAE",
+          "relative_change_pct": -5.154395957875191
+        },
+        "Q3": {
+          "delta_TWD": -164681.45309056388,
+          "direction": "lower_MAE",
+          "relative_change_pct": -5.99202393498447
+        },
+        "Q4": {
+          "delta_TWD": -69435.97148834821,
+          "direction": "lower_MAE",
+          "relative_change_pct": -2.4552663309250877
+        }
+      },
+      "overall": {
+        "delta_TWD": -138910.9954563887,
+        "direction": "lower_MAE",
+        "relative_change_pct": -5.681042414724525
+      },
+      "strata": {
+        "missing": {
+          "delta_TWD": null,
+          "direction": "no_samples",
+          "relative_change_pct": null
+        },
+        "new_nonmissing": {
+          "delta_TWD": -148769.7453980744,
+          "direction": "lower_MAE",
+          "relative_change_pct": -5.643070546868989
+        },
+        "seen": {
+          "delta_TWD": -79822.53487926838,
+          "direction": "lower_MAE",
+          "relative_change_pct": -6.142764071507145
+        }
+      },
+      "weighted": {
+        "delta_TWD": -123522.93581056874,
+        "direction": "lower_MAE",
+        "relative_change_pct": -5.753825793781797
+      }
+    }
+  },
+  "elapsed_seconds": 29.188000000081956,
+  "fit_rows": 134805,
+  "metrics": {
+    "R96": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 466689.4190578535,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1122251.1949745582,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2112509.041619518,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1356443.5363111792,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 3379957.825189039,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1325562.6015691082,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1417256.999851761,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1467801.887184362,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 1941334.2382195555,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4214995.493758784,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 2852187.7456321754,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1804386.8162841538,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 956266.8785589598,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 2875316.626053875,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 6709464.588804442,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1755965.8743950003,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 1914010.7558401232,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 881903.8135035529,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1658094.6167557463,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1581063.2769521934,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1067119.198505744,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1801102.9015525228,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1790896.1183910002,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2391400.704142859,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2583662.9273293815,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2758606.372178146,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1594173.7375855944,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1641080.2612425855,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 1973969.0700081408,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2060968.359958276,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2332790.383295061,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 2822632.251909547,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2479662.844555844,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2481864.2509667454,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 2714926.151339967,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2657106.14750229,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2720778.396827903,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2850517.88993372,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2788435.5414410466,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2306256.3755237944,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2487556.4206927978,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1219633.76769176,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 2023273.6520190593
+    },
+    "v11": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 920705.7102678604,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1123355.3219641426,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2497267.88764295,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1395431.091674119,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 4287202.062510788,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1370183.9503916278,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1458192.8942595322,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1519925.723457982,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 2075275.2477289427,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4379732.351821871,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 2967644.5897936416,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1892182.766576942,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 1015626.4335968506,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 3042604.411875444,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 6885505.441058141,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1784557.3033746018,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 2154731.1139955856,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 946675.7759902403,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1713318.7375472428,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1807245.6824472707,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1097920.2452813205,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1800100.079029713,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1926682.0526893504,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2487752.1071286523,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2702402.2421716372,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2845973.612871895,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1741961.8657475668,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1756468.0776072321,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 2131835.947504164,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2146775.8735114783,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2451074.3568841056,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 2916200.4088229826,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2583338.043740371,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2585629.011272787,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 2859058.289179138,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2763481.137968013,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2794909.407679089,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2935230.997574141,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2911913.164480245,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2419066.106552356,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2609407.6608416527,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1278253.174554252,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 2121970.916208085
+    },
+    "v12": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 889498.0456391517,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1126185.455685478,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2493216.8063108632,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1399495.7121886858,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 4132961.796443925,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1371736.7938380819,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1440403.5831660044,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1529383.846531672,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 2061039.992429655,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4393488.452216526,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 3028578.8745011077,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1887808.0205834135,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 1047121.1331037555,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 3021395.5366402026,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 6975605.264972711,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1780785.3280447428,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 2371255.629110468,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 987333.6877987833,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1696285.0645238517,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1752832.991781062,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1116579.5361892423,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1792046.7931214944,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1918486.607676825,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2485595.2181677837,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2713180.6645313827,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2832557.4242729717,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1746322.955333159,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1734579.4652289995,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 2128662.561443262,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2142802.6198223643,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2431237.8051635358,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 2946027.9296791586,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2582792.9345852584,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2574665.8063668385,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 2914085.7689162265,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2747742.8245171895,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2781869.193743159,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2921666.747711947,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2898828.090386843,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2416211.3662540214,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2605628.848975876,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1280936.8612072284,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 2120558.5158089185
+    },
+    "v22": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 466689.4190578535,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1120003.274417699,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2112509.041619518,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1356477.5197938092,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 3376918.2425181074,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1324721.5643911606,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1417256.999851761,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1467814.145295777,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 1951416.1240692795,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4256273.926924423,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 2826546.4328607083,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1812176.4616733082,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 956266.8785589598,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 2875015.269156784,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 6656440.228257315,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1777694.4268086532,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 1914010.7558401232,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 879105.6143084031,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1672356.2437517988,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1581063.2769521934,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1068528.7518653253,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1809932.9185925287,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1786781.789516145,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2394921.9935474666,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2592042.3812923515,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2767284.588910564,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1582895.918134424,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1635477.711471901,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 1974747.7076645852,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2058545.5987789645,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2337763.370808852,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 2829560.491191386,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2486222.024377295,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2490617.854012914,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 2723947.833353284,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2663963.0114872917,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2729959.480611572,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2858865.3996891356,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2803311.076154396,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2309352.35769657,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2492705.108578619,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1210426.8492615984,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 2023165.662275059
+    },
+    "v24": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 466689.4190578535,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1118876.9223743458,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2076628.4947043534,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1377314.8007233748,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 2649701.530279867,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1294116.4134795247,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1418492.199859719,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1437729.9372029828,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 1931141.0431383061,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4206008.947003277,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 2839386.2871954134,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1801809.0342872667,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 905431.1381984788,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 2813849.3975944812,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 6619596.082977112,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1770047.7116755582,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 1883004.2703493305,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 829143.651670074,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1653807.183102974,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1495237.6344433622,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1077147.497864338,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1798279.317019422,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1762875.3535570733,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2362943.1568230344,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2551611.570300658,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2720040.168653072,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1563207.6855669126,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1621468.4185501335,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 1937066.7553911388,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2042288.2736402748,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2308971.313995403,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 2773309.212675835,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2452771.3776768353,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2450727.282373386,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 2671623.6542875506,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2633628.192055837,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2695679.6338523687,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2793109.3935268214,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2766911.3766995794,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2275409.1418580045,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2456616.5723295277,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1189341.620617399,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 1992570.9762837698
+    },
+    "v5": {
+      "cities": {
+        "__MISSING__": {
+          "mae": 677947.2728147842,
+          "rows": 1
+        },
+        "南投縣": {
+          "mae": 1132896.3598706708,
+          "rows": 869
+        },
+        "嘉義市": {
+          "mae": 2513936.5555563546,
+          "rows": 731
+        },
+        "嘉義縣": {
+          "mae": 1422495.1351935775,
+          "rows": 1560
+        },
+        "基隆市": {
+          "mae": 3702408.101118645,
+          "rows": 1577
+        },
+        "宜蘭縣": {
+          "mae": 1386363.3347244004,
+          "rows": 2330
+        },
+        "屏東縣": {
+          "mae": 1420794.3677983843,
+          "rows": 1240
+        },
+        "彰化縣": {
+          "mae": 1595953.6855674344,
+          "rows": 2607
+        },
+        "新北市": {
+          "mae": 2091709.2918988445,
+          "rows": 17191
+        },
+        "新竹市": {
+          "mae": 4408839.2863532575,
+          "rows": 1586
+        },
+        "新竹縣": {
+          "mae": 3256420.2154737767,
+          "rows": 5042
+        },
+        "桃園市": {
+          "mae": 1896541.5902214097,
+          "rows": 20723
+        },
+        "澎湖縣": {
+          "mae": 1286298.3681459173,
+          "rows": 40
+        },
+        "臺中市": {
+          "mae": 2987138.1839083172,
+          "rows": 20837
+        },
+        "臺北市": {
+          "mae": 7387933.251001102,
+          "rows": 4712
+        },
+        "臺南市": {
+          "mae": 1762181.8854436043,
+          "rows": 8886
+        },
+        "臺東縣": {
+          "mae": 2821605.4942940893,
+          "rows": 235
+        },
+        "花蓮縣": {
+          "mae": 1139814.394756209,
+          "rows": 691
+        },
+        "苗栗縣": {
+          "mae": 1658112.5899727356,
+          "rows": 2607
+        },
+        "金門縣": {
+          "mae": 1814051.1751971522,
+          "rows": 35
+        },
+        "雲林縣": {
+          "mae": 1128122.6823287415,
+          "rows": 1873
+        },
+        "高雄市": {
+          "mae": 1831905.6397980559,
+          "rows": 10138
+        }
+      },
+      "forecast_quarters": {
+        "Q1": {
+          "horizon_days": [
+            0,
+            91
+          ],
+          "mae": 1954221.2518241617,
+          "rows": 33694
+        },
+        "Q2": {
+          "horizon_days": [
+            92,
+            183
+          ],
+          "mae": 2521361.66804393,
+          "rows": 29169
+        },
+        "Q3": {
+          "horizon_days": [
+            184,
+            275
+          ],
+          "mae": 2748344.3804199453,
+          "rows": 25213
+        },
+        "Q4": {
+          "horizon_days": [
+            276,
+            null
+          ],
+          "mae": 2828042.3436664944,
+          "rows": 17435
+        }
+      },
+      "months": {
+        "2021-08": {
+          "mae": 1808982.4353094862,
+          "rows": 5654
+        },
+        "2021-09": {
+          "mae": 1788252.8164075923,
+          "rows": 12352
+        },
+        "2021-10": {
+          "mae": 2132333.290913151,
+          "rows": 11842
+        },
+        "2021-11": {
+          "mae": 2162011.7349755755,
+          "rows": 12524
+        },
+        "2021-12": {
+          "mae": 2452050.7772955676,
+          "rows": 11482
+        },
+        "2022-01": {
+          "mae": 3038125.2105662413,
+          "rows": 8017
+        },
+        "2022-02": {
+          "mae": 2606789.4300304395,
+          "rows": 6204
+        },
+        "2022-03": {
+          "mae": 2585212.935723161,
+          "rows": 9626
+        },
+        "2022-04": {
+          "mae": 3001332.7118575494,
+          "rows": 7535
+        },
+        "2022-05": {
+          "mae": 2742135.1401084843,
+          "rows": 6424
+        },
+        "2022-06": {
+          "mae": 2804223.8814784056,
+          "rows": 5629
+        },
+        "2022-07": {
+          "mae": 2894200.0916682906,
+          "rows": 6566
+        },
+        "2022-08": {
+          "mae": 2874246.8999512843,
+          "rows": 1656
+        }
+      },
+      "overall_mae": 2445167.370980183,
+      "rows": 105511,
+      "strata": {
+        "missing": {
+          "mae": null,
+          "rows": 0
+        },
+        "new_nonmissing": {
+          "mae": 2636326.166090872,
+          "rows": 90424
+        },
+        "seen": {
+          "mae": 1299456.3025710285,
+          "rows": 15087
+        }
+      },
+      "weighted_mae": 2146796.587829628
+    }
+  },
+  "model_predict_calls": 0,
+  "models_loaded": 0,
+  "native_models_loaded": 0,
+  "new_NN_fits": 0,
+  "new_fits": 0,
+  "new_native_tree_fits": 0,
+  "new_reference_or_spatial_states": 0,
+  "original_branch_metrics": {
+    "log": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 337259.37517710775,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1170905.6542821182,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2566687.7388610994,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1505276.8729940604,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3646502.744516306,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1449862.4578972629,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1529438.0840276347,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1663007.0292083286,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2255584.789839294,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4339891.006472306,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3367141.0263061957,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1947863.7501744595,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1172449.5237445317,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3090450.7280464605,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7481725.261917697,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1811176.4933806944,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2598579.8138883472,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1276351.2490966024,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1720568.1411578357,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1839335.403082114,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1139351.924248323,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1867153.2989332376,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1984178.7555237708,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2565426.3388630818,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2858237.4304688615,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 3025541.448214729,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1813580.2591138843,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1826048.1974394366,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2173214.4573004018,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2193249.50221544,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2475724.313530521,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3109912.3246918865,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2664662.049824146,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2704778.035961884,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 3131796.341728679,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2875427.265507269,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2994646.3519277773,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 3127838.0328471046,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 3078401.8288289695,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2525811.4826980163,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2713938.9513996267,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1398268.6822821305,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2232172.1545356433
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 466689.4190578535,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1115783.1614581342,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2493419.7258321014,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1429365.555890667,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3772475.9113475797,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1428800.0935004677,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1477658.8804428969,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1580282.501404392,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2142234.939439807,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4348096.764345971,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3182497.570263454,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1868584.350069243,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1134390.243475775,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2991035.66581972,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7151602.0736571895,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1757706.5312957505,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2749564.390188173,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1171116.0825135505,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1684011.066032005,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1830234.6973340085,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1118795.7018539913,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1788609.2960753378,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1938616.506403478,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2501293.0951807615,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2740742.632179465,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2821206.7999534127,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1745778.6950753182,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1779452.8096349202,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2140657.7107971604,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2145694.136098892,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2420201.578161729,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3015211.4019236234,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2574054.57830706,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2593202.933232654,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 3001562.4547955818,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2711730.300103362,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2799718.583783507,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2904101.4928846625,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2861767.12569455,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2431690.036132868,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2624285.614590326,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1277367.600497073,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2131076.645352644
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 466689.4190578535,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1115783.1614581342,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2493419.7258321014,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1429365.555890667,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3772475.9113475797,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1428800.0935004677,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1477658.8804428969,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1580282.501404392,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2131896.1063419385,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4348096.764345971,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3182497.570263454,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1869689.777719236,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1134390.243475775,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2976275.977146245,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7195977.933626736,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1760480.7871131152,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 2749564.390188173,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 1169974.3894005702,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1684011.066032005,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1830234.6973340085,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1118795.7018539913,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1794914.7179098204,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1933650.6807375196,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2501877.817456837,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2741799.115962869,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2818805.7360468837,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1747026.0134285071,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1769781.3740610853,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2137054.0913429684,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2144331.054601466,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2422968.5386143206,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3014148.8560829093,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2580452.797034079,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2590875.132799291,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2997371.2673830236,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2717122.8200306315,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2797426.5659434423,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2900998.762597214,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2859557.4226145386,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2430121.5912361527,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2621890.0212902282,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1280756.6731470844,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2130799.2575415107
+      }
+    },
+    "nn": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 545175.0822283179,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1290414.0043776154,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2565848.230772813,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1615198.538733964,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3324951.6735911258,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1341013.0115878892,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1395545.697413471,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1585292.478953384,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2191643.309262884,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4173366.5483495747,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3332776.0166239073,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 2034993.3511095059,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 386705.4254893821,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3132783.47606617,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 7188409.4241584465,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1979422.1841720867,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1903079.43360436,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 940523.9959884929,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2096569.0292911716,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1599027.725540083,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1188360.4270058905,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2010611.1936802047,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1974768.6470397697,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2590294.075125184,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2865639.885185942,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 3134845.7721868427,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1767402.9161780989,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1891412.0868093732,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2103839.008708185,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2220915.2663111747,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2506147.4452685867,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3094406.140889526,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2690674.876734115,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2791571.154762913,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 3003696.750184525,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 3023343.2238872712,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 3084655.855605423,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 3206318.6880247183,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 3199551.0534145464,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2549511.9668466346,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2742877.912540991,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1390572.3318319563,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2247696.1460361658
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 677521.543432232,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1262543.6113739808,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2527524.765632831,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1570090.6303211665,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3417786.9224905856,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1330733.9923212056,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1361769.9918347567,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1567912.4225909626,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2050338.1596872918,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4177034.545355423,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3228940.877785605,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1943216.246063267,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 368281.2278664127,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2999393.0176718114,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6918037.497318095,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1920546.4055878096,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1925974.1762244916,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 921861.7267616654,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2047590.216660361,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1550834.436750991,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1138526.0952986432,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1936802.665792169,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1938130.6624485147,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2516406.847583074,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2738325.7535595195,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2911605.5874347785,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1731676.722400351,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1857608.0663970304,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2073768.9478038284,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2153450.4170883293,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2442847.3669173704,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 3000620.8094166685,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2583321.1673655785,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2667487.6090662815,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2880577.2547252523,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2835185.592657954,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2867424.9929488245,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2964062.381386721,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2968704.773361868,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2450073.419066377,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2651367.1467407704,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1243618.5883359876,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2135883.4957896257
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 677521.543432232,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1262543.6113739808,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 2527524.765632831,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1570090.6303211665,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3417786.9224905856,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1330733.9923212056,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1361769.9918347567,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1567912.4225909626,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2046378.4814163607,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4177034.545355423,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 3228940.877785605,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1954109.6378964696,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 368281.2278664127,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2987625.2062746645,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6947278.286380969,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1931712.5115124267,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1925974.1762244916,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 922545.2091936313,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 2047590.216660361,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1550834.436750991,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1138526.0952986432,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1940567.43824559,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1936845.4385828609,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2516640.3021523063,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2743089.921910256,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2917598.5285588107,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1737410.1124144,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1852023.0408930043,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2072515.4053248034,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2152368.504392022,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2446246.40866494,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2999022.7207095413,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2593606.6619244586,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2670335.869250816,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2879095.1856389237,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2844404.4594199997,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2869063.401913906,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2975260.147443739,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2971620.808740942,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2451856.2778064627,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2652960.5772542716,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1246536.7859745116,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2137962.0241497485
+      }
+    },
+    "unit": {
+      "base": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 65871.09336196631,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1245440.8561129584,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1884827.7291138123,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1332195.1151357372,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3351364.2194364984,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1376578.395446273,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1627774.3040054664,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1547214.0796920913,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 2066622.4109463962,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4313896.185923142,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2873178.911132642,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1854799.6677597016,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1153149.2931385024,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 3096665.6507481653,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6890852.88530317,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1797418.4386520453,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1328612.5407361025,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 913086.0682062008,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1603148.0647935846,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1599308.7210232143,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1137388.8795674269,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 2131766.3039051197,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1915108.0567368986,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2500487.182231118,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2734922.694840281,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2861447.4153446853,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1720704.8938738774,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1773869.718495492,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2087495.219612021,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2153401.8544580946,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2437463.060718045,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2960803.5141113917,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2585730.371548882,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2592932.945059484,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2927400.2379876464,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2800544.914583856,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2820905.7299833978,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2996750.8029797426,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2808522.8164520194,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2429218.7835745574,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2573264.378032283,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1565880.8878202403,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2204384.7820688863
+      },
+      "reference": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 57904.271040163934,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1184589.5779615918,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1798019.058584674,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1264126.2483909777,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3470721.5881633633,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1376978.8624034983,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1564401.1277247833,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1479704.1312363064,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 1965532.7024042062,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4311720.271306887,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2725644.7230082587,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1772587.97910762,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1121119.307487747,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2979419.237227685,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6630312.683933287,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1748836.7070081902,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1288969.2071760625,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 873971.5845234069,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1568283.1734306181,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1554075.7781042357,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1114069.3370810547,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1990466.890011982,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1857036.675286847,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2431419.72446597,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2620018.9878996597,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2671190.815366596,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1656911.010157395,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1708801.0778085436,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2046308.5975217612,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2084651.3678018767,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2384192.3060625494,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2866682.359553493,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2475399.315420365,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2479737.769846043,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2820476.7538170735,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2642615.726447834,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2641773.315757141,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2787211.66583954,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2610706.0157009624,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2332684.0451506823,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2487634.978274867,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1403984.954753566,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2090828.4128246796
+      },
+      "spatial": {
+        "cities": {
+          "__MISSING__": {
+            "mae": 57904.271040163934,
+            "rows": 1
+          },
+          "南投縣": {
+            "mae": 1184589.5779615918,
+            "rows": 869
+          },
+          "嘉義市": {
+            "mae": 1798019.058584674,
+            "rows": 731
+          },
+          "嘉義縣": {
+            "mae": 1264126.2483909777,
+            "rows": 1560
+          },
+          "基隆市": {
+            "mae": 3470721.5881633633,
+            "rows": 1577
+          },
+          "宜蘭縣": {
+            "mae": 1376978.8624034983,
+            "rows": 2330
+          },
+          "屏東縣": {
+            "mae": 1564401.1277247833,
+            "rows": 1240
+          },
+          "彰化縣": {
+            "mae": 1479704.1312363064,
+            "rows": 2607
+          },
+          "新北市": {
+            "mae": 1966631.4980119828,
+            "rows": 17191
+          },
+          "新竹市": {
+            "mae": 4311720.271306887,
+            "rows": 1586
+          },
+          "新竹縣": {
+            "mae": 2725644.7230082587,
+            "rows": 5042
+          },
+          "桃園市": {
+            "mae": 1778969.4997935242,
+            "rows": 20723
+          },
+          "澎湖縣": {
+            "mae": 1121119.307487747,
+            "rows": 40
+          },
+          "臺中市": {
+            "mae": 2957388.666124924,
+            "rows": 20837
+          },
+          "臺北市": {
+            "mae": 6688282.831668583,
+            "rows": 4712
+          },
+          "臺南市": {
+            "mae": 1766453.9300651147,
+            "rows": 8886
+          },
+          "臺東縣": {
+            "mae": 1288969.2071760625,
+            "rows": 235
+          },
+          "花蓮縣": {
+            "mae": 876439.0044877063,
+            "rows": 691
+          },
+          "苗栗縣": {
+            "mae": 1568283.1734306181,
+            "rows": 2607
+          },
+          "金門縣": {
+            "mae": 1554075.7781042357,
+            "rows": 35
+          },
+          "雲林縣": {
+            "mae": 1114069.3370810547,
+            "rows": 1873
+          },
+          "高雄市": {
+            "mae": 1995257.1502993435,
+            "rows": 10138
+          }
+        },
+        "forecast_quarters": {
+          "Q1": {
+            "horizon_days": [
+              0,
+              91
+            ],
+            "mae": 1853980.5886427558,
+            "rows": 33694
+          },
+          "Q2": {
+            "horizon_days": [
+              92,
+              183
+            ],
+            "mae": 2431691.18595407,
+            "rows": 29169
+          },
+          "Q3": {
+            "horizon_days": [
+              184,
+              275
+            ],
+            "mae": 2625633.7894039694,
+            "rows": 25213
+          },
+          "Q4": {
+            "horizon_days": [
+              276,
+              null
+            ],
+            "mae": 2678391.319955737,
+            "rows": 17435
+          }
+        },
+        "months": {
+          "2021-08": {
+            "mae": 1663105.668567785,
+            "rows": 5654
+          },
+          "2021-09": {
+            "mae": 1704299.601307657,
+            "rows": 12352
+          },
+          "2021-10": {
+            "mae": 2041334.1846469801,
+            "rows": 11842
+          },
+          "2021-11": {
+            "mae": 2079648.445987872,
+            "rows": 12524
+          },
+          "2021-12": {
+            "mae": 2384665.7957840357,
+            "rows": 11482
+          },
+          "2022-01": {
+            "mae": 2871496.5620725285,
+            "rows": 8017
+          },
+          "2022-02": {
+            "mae": 2494075.9046048108,
+            "rows": 6204
+          },
+          "2022-03": {
+            "mae": 2483074.6105470946,
+            "rows": 9626
+          },
+          "2022-04": {
+            "mae": 2816049.4533921177,
+            "rows": 7535
+          },
+          "2022-05": {
+            "mae": 2650812.04753586,
+            "rows": 6424
+          },
+          "2022-06": {
+            "mae": 2646887.691060701,
+            "rows": 5629
+          },
+          "2022-07": {
+            "mae": 2798775.949306219,
+            "rows": 6566
+          },
+          "2022-08": {
+            "mae": 2609594.3451027256,
+            "rows": 1656
+          }
+        },
+        "overall_mae": 2334314.7117598527,
+        "rows": 105511,
+        "strata": {
+          "missing": {
+            "mae": null,
+            "rows": 0
+          },
+          "new_nonmissing": {
+            "mae": 2489190.5029814057,
+            "rows": 90424
+          },
+          "seen": {
+            "mae": 1406065.9846823884,
+            "rows": 15087
+          }
+        },
+        "weighted_mae": 2092576.3648996996
+      }
+    }
+  },
+  "original_control_vectors_saved": true,
+  "original_diagnostics_replay_exact": true,
+  "original_frame_sha256": {
+    "fit_X": "1aac28c3a56839699729663b0a2e31ea52aa5268d3d3983be54c44bd32fa004e",
+    "query_X": "5a41a3bfc570ea3bb1617238ee102a6ee9c998a16d51bc0f8d29093b2401bebc"
+  },
+  "original_reference_spatial_replay_exact": true,
+  "original_v22_median_exact": true,
+  "prediction_sha256": "d1c8bac816c7773995057e1d897cbb4004667f070dbb8bb63a2c5a578427d1c4",
+  "query_labels_used_only_for_evaluation": true,
+  "query_rows": 105511,
+  "reference_predict_calls": 3,
+  "reference_shrink_calls": 3,
+  "saved_arrays_full_roundtrip_exact": true,
+  "saved_candidate_diagnostics_roundtrip_exact": true,
+  "saved_reference_state_loads": 1,
+  "saved_spatial_state_loads": 1,
+  "saved_states_and_query_frames_unchanged": true,
+  "spatial_predict_calls": 6,
+  "stage": "auxiliary",
+  "status": "completed"
+}

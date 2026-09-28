@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-09-28T18:25:45.188106+00:00",
+  "candidate": "R96 fixed half local reference confidence",
+  "approval_for_three_evaluations": true,
+  "new_fits": 0,
+  "model_parameters_tuned_from_Public": false,
+  "plan_sha256": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+  "helper_parameters": {
+    "format_version": 1,
+    "candidate": "R96",
+    "rho": 0.5,
+    "reference_formula": "Bfuture + 0.5 * (original_reference - Bfuture), only where c > 0",
+    "zero_confidence": "copy original reference exactly",
+    "confidence_formula": "0.5 * original confidence",
+    "future_base": "original raw branch base * exp(original beta[3] * original capped future_days / 365.25)",
+    "spatial_contract": "original spatial.predict receives new reference and new confidence; source unchanged",
+    "branches": [
+      "nn",
+      "log",
+      "unit"
+    ],
+    "final": "median(candidate nn spatial, candidate log spatial, candidate unit spatial)",
+    "new_fits": 0,
+    "query_labels_used": false,
+    "new_reference_or_spatial_state": false
+  },
+  "frozen_source_and_plan": {
+    "outputs/round96_launcher_20260929/run_pipeline.py": "102631fc7d624973ddf8e4e49b521f40ca200ee219fdbdd19a1d6b12a2b91786",
+    "reports/r96_validation_audit.json": "048793450a7b451c3076beaa52e6f700fb4ba04359f4ab223a4b442c5fa7de78",
+    "reports/r96_validation_audit.md": "837803c11c8fed48abbc94b7f509df64088d4ef304d014e68cbac64c49ca7286",
+    "reports/regression_direction_after_attention_audit.md": "0685ec9ce79f09a274158ce027cab8aa73144bbf3df22b2ba6649d3438ca4db2",
+    "reports/round96_helper_selfcheck.json": "8824ec6b9829228357c62dc8b936451c1515d850d198e90637531bece4455701",
+    "reports/round96_helper_selfcheck_attempt1.json": "f334c9939f1287f09041a1324239b3cfa5180aebf1ea2ee32437f6a1f530dfd9",
+    "reports/round96_helper_selfcheck_attempt2.json": "d1d5fdd950ee1ae21d8df2b8c288ff7dcff99ab7dd49e439d08e5f4efe203310",
+    "reports/round96_helper_selfcheck_attempt3.json": "329d723b2f10b7cbee3b99b316177f4f76122985e7e7015fc957897603b86d74",
+    "reports/round96_plan.md": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+    "src/candidate_diagnostics_v3.py": "49cf3a89e8a1d60defb8f49bc63ef0f8f88ded528af1e3687684d70c8a4ae128",
+    "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+    "src/paired_candidate_bootstrap.py": "3761c1cb09abe4e26412bf3aea48273ce0a4bad10b5a408e23d8fae488903bb0",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+    "src/round96_experiment.py": "5ec0a6682bf3153fe56d274d96f60d4917c5410acf85857147e53e0196d948f2",
+    "src/round96_reference_shrink.py": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894",
+    "src/round96_review.py": "2434a0504b8953a7b10003cd560a3631dd3ed1978689c9a038ffc65547189b79"
+  },
+  "written_independent_preflight_before_launch": true,
+  "main_command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round96_experiment.py",
+    "--run",
+    "--plan-sha",
+    "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071"
+  ]
+}

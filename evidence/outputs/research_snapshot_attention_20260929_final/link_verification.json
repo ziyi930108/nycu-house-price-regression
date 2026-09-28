@@ -1,0 +1,1616 @@
+{
+  "timestamp_utc": "2026-09-28T18:41:33.873872+00:00",
+  "status": "passed_with_original_report_path_mapping",
+  "navigation_direct_links": 124,
+  "navigation_links": [
+    {
+      "document": "README.md",
+      "link": "evidence/selection/user_selected_v22_20260928.json",
+      "resolved": "evidence/selection/user_selected_v22_20260928.json"
+    },
+    {
+      "document": "README.md",
+      "link": "HANDOFF.md",
+      "resolved": "HANDOFF.md"
+    },
+    {
+      "document": "README.md",
+      "link": "REPORT.md",
+      "resolved": "REPORT.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/臺灣房價預測_v22_正式報告.pdf",
+      "resolved": "docs/臺灣房價預測_v22_正式報告.pdf"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/REPRODUCIBILITY.md",
+      "resolved": "docs/REPRODUCIBILITY.md"
+    },
+    {
+      "document": "README.md",
+      "link": "research/README.md",
+      "resolved": "research/README.md"
+    },
+    {
+      "document": "README.md",
+      "link": "artifacts/manifest.json",
+      "resolved": "artifacts/manifest.json"
+    },
+    {
+      "document": "README.md",
+      "link": "DATA.md",
+      "resolved": "DATA.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md"
+    },
+    {
+      "document": "README.md",
+      "link": "evidence/reports/regression_after_r95_20260929.md",
+      "resolved": "evidence/reports/regression_after_r95_20260929.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/RESEARCH_UPDATES_20260929_R93.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_R93.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/RESEARCH_UPDATES_20260929.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/RESEARCH_UPDATES_20260928.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260928.md"
+    },
+    {
+      "document": "README.md",
+      "link": "presentation/臺灣房價預測_正式報告_v22.pptx",
+      "resolved": "presentation/臺灣房價預測_正式報告_v22.pptx"
+    },
+    {
+      "document": "README.md",
+      "link": "presentation/講稿與問答.md",
+      "resolved": "presentation/講稿與問答.md"
+    },
+    {
+      "document": "README.md",
+      "link": "presentation/排練與問答指南.md",
+      "resolved": "presentation/排練與問答指南.md"
+    },
+    {
+      "document": "README.md",
+      "link": "presentation/流程與程式對照.md",
+      "resolved": "presentation/流程與程式對照.md"
+    },
+    {
+      "document": "README.md",
+      "link": "docs/PUBLISHING.md",
+      "resolved": "docs/PUBLISHING.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "docs/RESEARCH_UPDATES_20260929_R93.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_R93.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "docs/RESEARCH_UPDATES_20260929.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "docs/RESEARCH_UPDATES_20260928.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260928.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md"
+    },
+    {
+      "document": "HANDOFF.md",
+      "link": "evidence/reports/regression_after_r95_20260929.md",
+      "resolved": "evidence/reports/regression_after_r95_20260929.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../docs/RESEARCH_UPDATES_20260928.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260928.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../docs/RESEARCH_UPDATES_20260929.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../evidence/outputs/research_snapshot_20260929/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_20260929/copy_manifest.json"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round89_group_trend.py",
+      "resolved": "research/src/round89_group_trend.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round89_experiment.py",
+      "resolved": "research/src/round89_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round91_prior_residual.py",
+      "resolved": "research/src/round91_prior_residual.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round91_experiment.py",
+      "resolved": "research/src/round91_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round92_shallow_unit.py",
+      "resolved": "research/src/round92_shallow_unit.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round92_experiment.py",
+      "resolved": "research/src/round92_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round90_offset_data.py",
+      "resolved": "research/src/round90_offset_data.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round90_offset_trees.py",
+      "resolved": "research/src/round90_offset_trees.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round90_offset_nn.py",
+      "resolved": "research/src/round90_offset_nn.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../docs/RESEARCH_UPDATES_20260929_R93.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_R93.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round93_project_density_unit.py",
+      "resolved": "research/src/round93_project_density_unit.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round93_experiment.py",
+      "resolved": "research/src/round93_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round93_review.py",
+      "resolved": "research/src/round93_review.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../evidence/outputs/research_snapshot_r93_20260929/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_r93_20260929/copy_manifest.json"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../evidence/reports/attention_regression_feasibility_after_r93.md",
+      "resolved": "evidence/reports/attention_regression_feasibility_after_r93.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round94_attention_prior_train_v2.py",
+      "resolved": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round94_attention_prior_train.py",
+      "resolved": "research/src/round94_attention_prior_train.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round95_experiment.py",
+      "resolved": "research/src/round95_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round95_review.py",
+      "resolved": "research/src/round95_review.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round94_experiment.py",
+      "resolved": "research/src/round94_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round96_reference_shrink.py",
+      "resolved": "research/src/round96_reference_shrink.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round96_experiment.py",
+      "resolved": "research/src/round96_experiment.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/round96_review.py",
+      "resolved": "research/src/round96_review.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "src/summarize_research_after_r95.py",
+      "resolved": "research/src/summarize_research_after_r95.py"
+    },
+    {
+      "document": "research/README.md",
+      "link": "upstream/README.md",
+      "resolved": "research/upstream/README.md"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../docs/third_party/rtdl_LICENSE.txt",
+      "resolved": "docs/third_party/rtdl_LICENSE.txt"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json"
+    },
+    {
+      "document": "research/README.md",
+      "link": "../evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "RESEARCH_UPDATES_20260929_R93.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_R93.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "RESEARCH_UPDATES_20260929.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round95_report.md",
+      "resolved": "evidence/reports/round95_report.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round96_report.md",
+      "resolved": "evidence/reports/round96_report.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round94_integration_inventory.md",
+      "resolved": "evidence/reports/round94_integration_inventory.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round96_plan.md",
+      "resolved": "evidence/reports/round96_plan.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/regression_direction_after_attention_audit.md",
+      "resolved": "evidence/reports/regression_direction_after_attention_audit.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round95_independent_review.md",
+      "resolved": "evidence/reports/round95_independent_review.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round96_independent_review.md",
+      "resolved": "evidence/reports/round96_independent_review.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/r94_validation_audit.md",
+      "resolved": "evidence/reports/r94_validation_audit.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/r95_validation_audit.md",
+      "resolved": "evidence/reports/r95_validation_audit.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/r96_validation_audit.md",
+      "resolved": "evidence/reports/r96_validation_audit.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/regression_after_r95_20260929.md",
+      "resolved": "evidence/reports/regression_after_r95_20260929.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/regression_after_r95_20260929/mae_delta_comparison.png",
+      "resolved": "evidence/outputs/regression_after_r95_20260929/mae_delta_comparison.png"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/regression_summary_20260929/attempt1.json",
+      "resolved": "evidence/outputs/regression_summary_20260929/attempt1.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round94_attention_prior_train_v2.py",
+      "resolved": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round94_attention_prior_train.py",
+      "resolved": "research/src/round94_attention_prior_train.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round95_experiment.py",
+      "resolved": "research/src/round95_experiment.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round95_review.py",
+      "resolved": "research/src/round95_review.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round96_reference_shrink.py",
+      "resolved": "research/src/round96_reference_shrink.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round96_experiment.py",
+      "resolved": "research/src/round96_experiment.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round96_review.py",
+      "resolved": "research/src/round96_review.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round96_helper_selfcheck.json",
+      "resolved": "evidence/reports/round96_helper_selfcheck.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round95/results.json",
+      "resolved": "evidence/outputs/round95/results.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round95_diagnostics.md",
+      "resolved": "evidence/reports/round95_diagnostics.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round95/decision_review.json",
+      "resolved": "evidence/outputs/round95/decision_review.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round95_launcher_20260929/pipeline_execution.json",
+      "resolved": "evidence/outputs/round95_launcher_20260929/pipeline_execution.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round96/results.json",
+      "resolved": "evidence/outputs/round96/results.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round96_diagnostics.md",
+      "resolved": "evidence/reports/round96_diagnostics.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round96/decision_review.json",
+      "resolved": "evidence/outputs/round96/decision_review.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round96_launcher_20260929/pipeline_execution.json",
+      "resolved": "evidence/outputs/round96_launcher_20260929/pipeline_execution.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round94/execution.json",
+      "resolved": "evidence/outputs/round94/execution.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/src/round94_experiment.py",
+      "resolved": "research/src/round94_experiment.py"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round95_launcher_20260929/driver_engineering_diff.patch",
+      "resolved": "evidence/outputs/round95_launcher_20260929/driver_engineering_diff.patch"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round94_trainer_revision.md",
+      "resolved": "evidence/reports/round94_trainer_revision.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../research/upstream/README.md",
+      "resolved": "research/upstream/README.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "third_party/rtdl_LICENSE.txt",
+      "resolved": "docs/third_party/rtdl_LICENSE.txt"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/round94_upstream/manifest.json",
+      "resolved": "evidence/outputs/round94_upstream/manifest.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/reports/round90_validation_inventory_after_attention.md",
+      "resolved": "evidence/reports/round90_validation_inventory_after_attention.md"
+    },
+    {
+      "document": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "link": "../evidence/README.md",
+      "resolved": "evidence/README.md"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../docs/third_party/rtdl_LICENSE.txt",
+      "resolved": "docs/third_party/rtdl_LICENSE.txt"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/upstream/package/LICENSE",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/LICENSE"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/upstream/package/rtdl_revisiting_models.py",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/rtdl_revisiting_models.py"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/upstream/README.md",
+      "resolved": "evidence/outputs/round94_upstream/upstream/README.md"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/upstream/package/README.md",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/README.md"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/upstream/package/pyproject.toml",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/pyproject.toml"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/outputs/round94_upstream/manifest.json",
+      "resolved": "evidence/outputs/round94_upstream/manifest.json"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../src/round94_attention_prior_train_v2.py",
+      "resolved": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/reports/round94_upstream_review.md",
+      "resolved": "evidence/reports/round94_upstream_review.md"
+    },
+    {
+      "document": "research/upstream/README.md",
+      "link": "../../evidence/reports/round94_trainer_selfcheck_v2.json",
+      "resolved": "evidence/reports/round94_trainer_selfcheck_v2.json"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../docs/RESEARCH_UPDATES_20260929_ATTENTION.md",
+      "resolved": "docs/RESEARCH_UPDATES_20260929_ATTENTION.md"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/README.md",
+      "resolved": "research/README.md"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "outputs/research_snapshot_attention_20260929_final/copy_manifest.json",
+      "resolved": "evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/candidate_diagnostics_v3.py",
+      "resolved": "research/src/candidate_diagnostics_v3.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/paired_candidate_bootstrap.py",
+      "resolved": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round96_reference_shrink.py",
+      "resolved": "research/src/round96_reference_shrink.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round96_experiment.py",
+      "resolved": "research/src/round96_experiment.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round96_review.py",
+      "resolved": "research/src/round96_review.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round94_attention_prior_train_v2.py",
+      "resolved": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round83_seed_unit.py",
+      "resolved": "research/src/round83_seed_unit.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round83_experiment.py",
+      "resolved": "research/src/round83_experiment.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round2_neighborhood.py",
+      "resolved": "research/src/round2_neighborhood.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../research/src/round8_spatial_reference.py",
+      "resolved": "research/src/round8_spatial_reference.py"
+    },
+    {
+      "document": "evidence/README.md",
+      "link": "../HANDOFF.md",
+      "resolved": "HANDOFF.md"
+    }
+  ],
+  "frozen_report_direct_links": 129,
+  "frozen_report_direct": [
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round95_plan.md",
+      "resolved": "evidence/reports/round95_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round94_upstream_review.md",
+      "resolved": "evidence/reports/round94_upstream_review.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round94_integration_inventory.md",
+      "resolved": "evidence/reports/round94_integration_inventory.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round94_trainer_selfcheck_v2.json",
+      "resolved": "evidence/reports/round94_trainer_selfcheck_v2.json"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "../outputs/round94_smoke_v2_20260929/smoke.json",
+      "resolved": "evidence/outputs/round94_smoke_v2_20260929/smoke.json"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "r95_validation_audit.md",
+      "resolved": "evidence/reports/r95_validation_audit.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "../outputs/round95/results.json",
+      "resolved": "evidence/outputs/round95/results.json"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round95_diagnostics.md",
+      "resolved": "evidence/reports/round95_diagnostics.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "../outputs/round95/decision_review.json",
+      "resolved": "evidence/outputs/round95/decision_review.json"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round95_paired_vs_v22.md",
+      "resolved": "evidence/reports/round95_paired_vs_v22.md"
+    },
+    {
+      "document": "evidence/reports/round95_report.md",
+      "link": "round95_paired_vs_v24.md",
+      "resolved": "evidence/reports/round95_paired_vs_v24.md"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/results.json",
+      "resolved": "evidence/outputs/round95/development/results.json"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/model/training.json",
+      "resolved": "evidence/outputs/round95/development/model/training.json"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/model/run.json",
+      "resolved": "evidence/outputs/round95/development/model/run.json"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/model/execution.json",
+      "resolved": "evidence/outputs/round95/development/model/execution.json"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/trainer_process/execution.json",
+      "resolved": "evidence/outputs/round95/development/trainer_process/execution.json"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "round95_plan.md",
+      "resolved": "evidence/reports/round95_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_development_audit.md",
+      "link": "../outputs/round95/development/prepared_verification.json",
+      "resolved": "evidence/outputs/round95/development/prepared_verification.json"
+    },
+    {
+      "document": "evidence/reports/round95_diagnostics.md",
+      "link": "round95_diagnostics.json",
+      "resolved": "evidence/reports/round95_diagnostics.json"
+    },
+    {
+      "document": "evidence/reports/round95_diagnostics.md",
+      "link": "../outputs/round95/results.json",
+      "resolved": "evidence/outputs/round95/results.json"
+    },
+    {
+      "document": "evidence/reports/round95_paired_vs_v22.md",
+      "link": "../outputs/round95/paired_vs_v22/results.json",
+      "resolved": "evidence/outputs/round95/paired_vs_v22/results.json"
+    },
+    {
+      "document": "evidence/reports/round95_paired_vs_v24.md",
+      "link": "../outputs/round95/paired_vs_v24/results.json",
+      "resolved": "evidence/outputs/round95/paired_vs_v24/results.json"
+    },
+    {
+      "document": "evidence/reports/round96_plan.md",
+      "link": "regression_direction_after_attention_audit.md",
+      "resolved": "evidence/reports/regression_direction_after_attention_audit.md"
+    },
+    {
+      "document": "evidence/reports/round96_plan.md",
+      "link": "round82_followup_audit.md",
+      "resolved": "evidence/reports/round82_followup_audit.md"
+    },
+    {
+      "document": "evidence/reports/round96_plan.md",
+      "link": "reference_blending_audit_r84.md",
+      "resolved": "evidence/reports/reference_blending_audit_r84.md"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "r96_validation_audit.json",
+      "resolved": "evidence/reports/r96_validation_audit.json"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "round96_plan.md",
+      "resolved": "evidence/reports/round96_plan.md"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "round96_helper_selfcheck.json",
+      "resolved": "evidence/reports/round96_helper_selfcheck.json"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "round96_plan.md",
+      "resolved": "evidence/reports/round96_plan.md"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "round96_helper_selfcheck.json",
+      "resolved": "evidence/reports/round96_helper_selfcheck.json"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "r96_validation_audit.md",
+      "resolved": "evidence/reports/r96_validation_audit.md"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "../outputs/round96/results.json",
+      "resolved": "evidence/outputs/round96/results.json"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "round96_diagnostics.md",
+      "resolved": "evidence/reports/round96_diagnostics.md"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "../outputs/round96/decision_review.json",
+      "resolved": "evidence/outputs/round96/decision_review.json"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "round96_paired_vs_v22.md",
+      "resolved": "evidence/reports/round96_paired_vs_v22.md"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "round96_paired_vs_v24.md",
+      "resolved": "evidence/reports/round96_paired_vs_v24.md"
+    },
+    {
+      "document": "evidence/reports/round96_report.md",
+      "link": "regression_direction_after_attention_audit.md",
+      "resolved": "evidence/reports/regression_direction_after_attention_audit.md"
+    },
+    {
+      "document": "evidence/reports/round96_diagnostics.md",
+      "link": "round96_diagnostics.json",
+      "resolved": "evidence/reports/round96_diagnostics.json"
+    },
+    {
+      "document": "evidence/reports/round96_diagnostics.md",
+      "link": "../outputs/round96/results.json",
+      "resolved": "evidence/outputs/round96/results.json"
+    },
+    {
+      "document": "evidence/reports/round96_paired_vs_v22.md",
+      "link": "../outputs/round96/paired_vs_v22/results.json",
+      "resolved": "evidence/outputs/round96/paired_vs_v22/results.json"
+    },
+    {
+      "document": "evidence/reports/round96_paired_vs_v24.md",
+      "link": "../outputs/round96/paired_vs_v24/results.json",
+      "resolved": "evidence/outputs/round96/paired_vs_v24/results.json"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "../outputs/regression_after_r95_20260929/mae_delta_comparison.png",
+      "resolved": "evidence/outputs/regression_after_r95_20260929/mae_delta_comparison.png"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round85_report.md",
+      "resolved": "evidence/reports/round85_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round86_report.md",
+      "resolved": "evidence/reports/round86_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round87_report.md",
+      "resolved": "evidence/reports/round87_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round88_report.md",
+      "resolved": "evidence/reports/round88_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round89_report.md",
+      "resolved": "evidence/reports/round89_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round91_report.md",
+      "resolved": "evidence/reports/round91_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round92_report.md",
+      "resolved": "evidence/reports/round92_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round93_report.md",
+      "resolved": "evidence/reports/round93_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round95_report.md",
+      "resolved": "evidence/reports/round95_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "../outputs/regression_after_r95_20260929/summary.json",
+      "resolved": "evidence/outputs/regression_after_r95_20260929/summary.json"
+    },
+    {
+      "document": "evidence/reports/regression_after_r95_20260929.md",
+      "link": "round95_report.md",
+      "resolved": "evidence/reports/round95_report.md"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "round90_preparation_report.md",
+      "resolved": "evidence/reports/round90_preparation_report.md"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "round90_preflight_review.md",
+      "resolved": "evidence/reports/round90_preflight_review.md"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "r89_offset_validation_inventory.md",
+      "resolved": "evidence/reports/r89_offset_validation_inventory.md"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "round90_nn_helper_review.md",
+      "resolved": "evidence/reports/round90_nn_helper_review.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round85_report.md",
+      "resolved": "evidence/reports/round85_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round87_report.md",
+      "resolved": "evidence/reports/round87_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round86_report.md",
+      "resolved": "evidence/reports/round86_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round91_report.md",
+      "resolved": "evidence/reports/round91_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round88_report.md",
+      "resolved": "evidence/reports/round88_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round89_report.md",
+      "resolved": "evidence/reports/round89_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round92_report.md",
+      "resolved": "evidence/reports/round92_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round93_report.md",
+      "resolved": "evidence/reports/round93_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "reference_blending_audit_r84.md",
+      "resolved": "evidence/reports/reference_blending_audit_r84.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "r85_error_audit.md",
+      "resolved": "evidence/reports/r85_error_audit.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round30_report.md",
+      "resolved": "evidence/reports/round30_report.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round82_followup_audit.md",
+      "resolved": "evidence/reports/round82_followup_audit.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "continuation_plan_after_r84.md",
+      "resolved": "evidence/reports/continuation_plan_after_r84.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "r85_direction_audit.md",
+      "resolved": "evidence/reports/r85_direction_audit.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "next_regression_direction_after_r92.md",
+      "resolved": "evidence/reports/next_regression_direction_after_r92.md"
+    },
+    {
+      "document": "evidence/reports/regression_direction_after_attention_audit.md",
+      "link": "round18_feature_audit.md",
+      "resolved": "evidence/reports/round18_feature_audit.md"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "../outputs/round95/independent_review.py",
+      "resolved": "evidence/outputs/round95/independent_review.py"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "../outputs/round95/independent_review.json",
+      "resolved": "evidence/outputs/round95/independent_review.json"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "../outputs/round95/independent_review_attempt1.json",
+      "resolved": "evidence/outputs/round95/independent_review_attempt1.json"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "round95_report.md",
+      "resolved": "evidence/reports/round95_report.md"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "round95_plan.md",
+      "resolved": "evidence/reports/round95_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "round95_diagnostics.md",
+      "resolved": "evidence/reports/round95_diagnostics.md"
+    },
+    {
+      "document": "evidence/reports/round95_independent_review.md",
+      "link": "../outputs/round95/decision_review.json",
+      "resolved": "evidence/outputs/round95/decision_review.json"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "round84_report.md",
+      "resolved": "evidence/reports/round84_report.md"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "reference_blending_audit_r84.md",
+      "resolved": "evidence/reports/reference_blending_audit_r84.md"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "github_reproducibility_audit_r83.md",
+      "resolved": "evidence/reports/github_reproducibility_audit_r83.md"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "r96_validation_audit.md",
+      "resolved": "evidence/reports/r96_validation_audit.md"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_diagnostics.json",
+      "resolved": "evidence/reports/round96_diagnostics.json"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_independent_review.json",
+      "resolved": "evidence/reports/round96_independent_review.json"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_plan.md",
+      "resolved": "evidence/reports/round96_plan.md"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_report.md",
+      "resolved": "evidence/reports/round96_report.md"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "../outputs/round96/results.json",
+      "resolved": "evidence/outputs/round96/results.json"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "../outputs/round96/decision_review.json",
+      "resolved": "evidence/outputs/round96/decision_review.json"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "../outputs/round96_launcher_20260929/pipeline_execution.json",
+      "resolved": "evidence/outputs/round96_launcher_20260929/pipeline_execution.json"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_paired_vs_v22.md",
+      "resolved": "evidence/reports/round96_paired_vs_v22.md"
+    },
+    {
+      "document": "evidence/reports/round96_independent_review.md",
+      "link": "round96_paired_vs_v24.md",
+      "resolved": "evidence/reports/round96_paired_vs_v24.md"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "attention_regression_feasibility_after_r93.md",
+      "resolved": "evidence/reports/attention_regression_feasibility_after_r93.md"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/manifest.json",
+      "resolved": "evidence/outputs/round94_upstream/manifest.json"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/upstream/package/rtdl_revisiting_models.py",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/rtdl_revisiting_models.py"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/upstream/package/LICENSE",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/LICENSE"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/upstream/LICENSE",
+      "resolved": "evidence/outputs/round94_upstream/upstream/LICENSE"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/upstream/package/pyproject.toml",
+      "resolved": "evidence/outputs/round94_upstream/upstream/package/pyproject.toml"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "../outputs/round94_upstream/source_review_checks.json",
+      "resolved": "evidence/outputs/round94_upstream/source_review_checks.json"
+    },
+    {
+      "document": "evidence/reports/round94_upstream_review.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../reports/round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../reports/attention_regression_feasibility_after_r93.md",
+      "resolved": "evidence/reports/attention_regression_feasibility_after_r93.md"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "../outputs/round94_launcher_20260929/trainer_v2_engineering_diff.patch",
+      "resolved": "evidence/outputs/round94_launcher_20260929/trainer_v2_engineering_diff.patch"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "../outputs/round94_launcher_20260929/trainer_v2_engineering.json",
+      "resolved": "evidence/outputs/round94_launcher_20260929/trainer_v2_engineering.json"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "round94_trainer_selfcheck_v2.json",
+      "resolved": "evidence/reports/round94_trainer_selfcheck_v2.json"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "../outputs/round94_smoke_v2_20260929/smoke.json",
+      "resolved": "evidence/outputs/round94_smoke_v2_20260929/smoke.json"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../reports/round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../reports/round94_trainer_selfcheck_v2.json",
+      "resolved": "evidence/reports/round94_trainer_selfcheck_v2.json"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../outputs/round94_smoke_v2_20260929/smoke.json",
+      "resolved": "evidence/outputs/round94_smoke_v2_20260929/smoke.json"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../outputs/round94_smoke_v2_20260929/execution.json",
+      "resolved": "evidence/outputs/round94_smoke_v2_20260929/execution.json"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "round94_upstream_review.md",
+      "resolved": "evidence/reports/round94_upstream_review.md"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "round94_integration_inventory.md",
+      "resolved": "evidence/reports/round94_integration_inventory.md"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "r94_validation_audit_checks.json",
+      "resolved": "evidence/reports/r94_validation_audit_checks.json"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../outputs/round94_launcher_20260929/trainer_v2_engineering.json",
+      "resolved": "evidence/outputs/round94_launcher_20260929/trainer_v2_engineering.json"
+    },
+    {
+      "document": "evidence/reports/round95_plan.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/round95_plan.md",
+      "link": "../outputs/round95_launcher_20260929/driver_engineering_diff.patch",
+      "resolved": "evidence/outputs/round95_launcher_20260929/driver_engineering_diff.patch"
+    },
+    {
+      "document": "evidence/reports/round95_plan.md",
+      "link": "../outputs/round94/execution.json",
+      "resolved": "evidence/outputs/round94/execution.json"
+    },
+    {
+      "document": "evidence/reports/round95_plan.md",
+      "link": "r94_validation_audit.md",
+      "resolved": "evidence/reports/r94_validation_audit.md"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "../outputs/round95_launcher_20260929/driver_engineering_diff.patch",
+      "resolved": "evidence/outputs/round95_launcher_20260929/driver_engineering_diff.patch"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "r95_validation_audit_checks.json",
+      "resolved": "evidence/reports/r95_validation_audit_checks.json"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "round94_plan.md",
+      "resolved": "evidence/reports/round94_plan.md"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "round95_plan.md",
+      "resolved": "evidence/reports/round95_plan.md"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "../outputs/round94/execution.json",
+      "resolved": "evidence/outputs/round94/execution.json"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "r94_validation_audit.md",
+      "resolved": "evidence/reports/r94_validation_audit.md"
+    }
+  ],
+  "frozen_report_source_mapping_count": 45,
+  "frozen_report_source_mapping": [
+    {
+      "document": "evidence/reports/round95_diagnostics.md",
+      "link": "../src/candidate_diagnostics_v3.py",
+      "mapped_to": "research/src/candidate_diagnostics_v3.py"
+    },
+    {
+      "document": "evidence/reports/round95_paired_vs_v22.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "mapped_to": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/reports/round95_paired_vs_v24.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "mapped_to": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "../src/round96_reference_shrink.py",
+      "mapped_to": "research/src/round96_reference_shrink.py"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "../src/round96_experiment.py",
+      "mapped_to": "research/src/round96_experiment.py"
+    },
+    {
+      "document": "evidence/reports/r96_validation_audit.md",
+      "link": "../src/round96_review.py",
+      "mapped_to": "research/src/round96_review.py"
+    },
+    {
+      "document": "evidence/reports/round96_diagnostics.md",
+      "link": "../src/candidate_diagnostics_v3.py",
+      "mapped_to": "research/src/candidate_diagnostics_v3.py"
+    },
+    {
+      "document": "evidence/reports/round96_paired_vs_v22.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "mapped_to": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/reports/round96_paired_vs_v24.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "mapped_to": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "../src/round83_seed_unit.py",
+      "mapped_to": "research/src/round83_seed_unit.py"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "../src/round94_attention_prior_train_v2.py",
+      "mapped_to": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "../src/round83_experiment.py",
+      "mapped_to": "research/src/round83_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "../src/round2_neighborhood.py",
+      "mapped_to": "research/src/round2_neighborhood.py"
+    },
+    {
+      "document": "evidence/reports/round90_validation_inventory_after_attention.md",
+      "link": "../src/round8_spatial_reference.py",
+      "mapped_to": "research/src/round8_spatial_reference.py"
+    },
+    {
+      "document": "evidence/reports/round82_followup_audit.md",
+      "link": "../src/round19_unit_geo.py",
+      "mapped_to": "research/src/round19_unit_geo.py"
+    },
+    {
+      "document": "evidence/reports/round82_followup_audit.md",
+      "link": "../src/round79_recency_unit.py",
+      "mapped_to": "research/src/round79_recency_unit.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round84_experiment.py#L330",
+      "mapped_to": "research/src/round84_experiment.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round48_nn_experiment.py",
+      "mapped_to": "research/src/round48_nn_experiment.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round12_experiment.py#L15",
+      "mapped_to": "research/src/round12_experiment.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round2_neighborhood.py#L321",
+      "mapped_to": "research/src/round2_neighborhood.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round8_spatial_reference.py#L177",
+      "mapped_to": "research/src/round8_spatial_reference.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round2_neighborhood.py#L236",
+      "mapped_to": "research/src/round2_neighborhood.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round2_neighborhood.py#L48",
+      "mapped_to": "research/src/round2_neighborhood.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round8_spatial_reference.py#L18",
+      "mapped_to": "research/src/round8_spatial_reference.py"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../src/round84_experiment.py#L350",
+      "mapped_to": "research/src/round84_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "../src/house_features.py",
+      "mapped_to": "research/src/house_features.py"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "../src/round18_feature_audit.py",
+      "mapped_to": "research/src/round18_feature_audit.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round63_recency_weighted_prior_train.py",
+      "mapped_to": "research/src/round63_recency_weighted_prior_train.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round63_nn_experiment.py",
+      "mapped_to": "research/src/round63_nn_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round60_recency_price_prior.py",
+      "mapped_to": "research/src/round60_recency_price_prior.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round60_nn_experiment.py",
+      "mapped_to": "research/src/round60_nn_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round47_nn_encode.py",
+      "mapped_to": "research/src/round47_nn_encode.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round47_nn_train.py",
+      "mapped_to": "research/src/round47_nn_train.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round48_nn_experiment.py",
+      "mapped_to": "research/src/round48_nn_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round54_nn_experiment.py",
+      "mapped_to": "research/src/round54_nn_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round71_missing_cell.py",
+      "mapped_to": "research/src/round71_missing_cell.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/round93_experiment.py",
+      "mapped_to": "research/src/round93_experiment.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/candidate_diagnostics_v3.py",
+      "mapped_to": "research/src/candidate_diagnostics_v3.py"
+    },
+    {
+      "document": "evidence/reports/round94_integration_inventory.md",
+      "link": "../src/paired_candidate_bootstrap.py",
+      "mapped_to": "research/src/paired_candidate_bootstrap.py"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "../src/round94_attention_prior_train.py",
+      "mapped_to": "research/src/round94_attention_prior_train.py"
+    },
+    {
+      "document": "evidence/reports/round94_trainer_revision.md",
+      "link": "../src/round94_attention_prior_train_v2.py",
+      "mapped_to": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../src/round94_experiment.py",
+      "mapped_to": "research/src/round94_experiment.py"
+    },
+    {
+      "document": "evidence/reports/r94_validation_audit.md",
+      "link": "../src/round94_attention_prior_train_v2.py",
+      "mapped_to": "research/src/round94_attention_prior_train_v2.py"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "../src/round95_experiment.py",
+      "mapped_to": "research/src/round95_experiment.py"
+    },
+    {
+      "document": "evidence/reports/r95_validation_audit.md",
+      "link": "../src/round94_experiment.py",
+      "mapped_to": "research/src/round94_experiment.py"
+    }
+  ],
+  "historical_dependency_workspace_only_count": 21,
+  "historical_dependencies_not_claimed_bundled": [
+    {
+      "document": "evidence/reports/round82_followup_audit.md",
+      "link": "round24_report.md",
+      "original_workspace_only": "reports/round24_report.md"
+    },
+    {
+      "document": "evidence/reports/round82_followup_audit.md",
+      "link": "round69_report.md",
+      "original_workspace_only": "reports/round69_report.md"
+    },
+    {
+      "document": "evidence/reports/reference_blending_audit_r84.md",
+      "link": "../outputs/round84/development/results.json",
+      "original_workspace_only": "outputs/round84/development/results.json"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "round30_plan.md",
+      "original_workspace_only": "reports/round30_plan.md"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "round30_work_log.md",
+      "original_workspace_only": "reports/round30_work_log.md"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "parking_ratio_research.md",
+      "original_workspace_only": "reports/parking_ratio_research.md"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "../outputs/round30/evaluation/development/results.json",
+      "original_workspace_only": "outputs/round30/evaluation/development/results.json"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "../outputs/round30/models/development/metadata.json",
+      "original_workspace_only": "outputs/round30/models/development/metadata.json"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "../outputs/round30/accepted_candidate.json",
+      "original_workspace_only": "outputs/round30/accepted_candidate.json"
+    },
+    {
+      "document": "evidence/reports/round30_report.md",
+      "link": "../outputs/round30/execution/finalize.json",
+      "original_workspace_only": "outputs/round30/execution/finalize.json"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "round84_diagnostics.md",
+      "original_workspace_only": "reports/round84_diagnostics.md"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "../outputs/round84/results_review.json",
+      "original_workspace_only": "outputs/round84/results_review.json"
+    },
+    {
+      "document": "evidence/reports/continuation_plan_after_r84.md",
+      "link": "validation_design_audit_r84.md",
+      "original_workspace_only": "reports/validation_design_audit_r84.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round16_numeric_review.md",
+      "original_workspace_only": "reports/round16_numeric_review.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round16_numeric_review.md",
+      "original_workspace_only": "reports/round16_numeric_review.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round16_prior_unit_methods.md",
+      "original_workspace_only": "reports/round16_prior_unit_methods.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round16_prefix_support.md",
+      "original_workspace_only": "reports/round16_prefix_support.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round16_plan.md",
+      "original_workspace_only": "reports/round16_plan.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round3_preprocessing_record.md",
+      "original_workspace_only": "reports/round3_preprocessing_record.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round4_preprocessing_record.md",
+      "original_workspace_only": "reports/round4_preprocessing_record.md"
+    },
+    {
+      "document": "evidence/reports/round18_feature_audit.md",
+      "link": "round7_feature_audit.md",
+      "original_workspace_only": "reports/round7_feature_audit.md"
+    }
+  ],
+  "missing_navigation_links": [],
+  "missing_original_workspace_dependencies": [],
+  "anchors_not_validated": true,
+  "remote_links_not_requested": true,
+  "original_report_bytes_not_rewritten": true
+}

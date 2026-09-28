@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-09-28T17:42:21.930403+00:00",
+  "old_source_sha256": "1f2a4140bdb9a439e098273b442fb524bef9d3fee70af8618f7cb997355ace94",
+  "new_source_sha256": "ae197952be777f3e9e2fdb66458887d2a3885fd736b75dd3677eeae43cfeef83",
+  "configuration_unchanged": true,
+  "true_fits_before_change": 0,
+  "old_source_and_receipts_preserved": true,
+  "patch_sha256": "4f03190451b096e275d1ef99d0943f2b0addbe6d7ba20ad48e7dc9f311a62474",
+  "reason": "Verify member names before array materialization. Synthetic object-valued extra proves rejection precedes deserialization."
+}

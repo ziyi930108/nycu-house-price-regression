@@ -1,6 +1,6 @@
 # 原始訓練程式與重現界線
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R93程式另有複製身分證據，沒有回寫歷史清單；本批發布前還需刷新最外層SOURCE_MANIFEST。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R96程式另有複製身分證據，沒有回寫歷史清單；本批發布前還需刷新最外層SOURCE_MANIFEST。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |
@@ -48,7 +48,7 @@ R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days
 
 R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新窗口真訓練。若未來啟用，canonical fit_indices用於OOF群身分，fit_source_cache_indices只用來抽取raw cache標籤，兩者不能混用。所有來源仍依賴原工作區的完整私有資料／狀態，快照不等於可在空目錄直接重訓。
 
-## 最新追加：R93建案密度權重
+## 歷史追加：R93建案密度權重
 
 [R93研究摘要](../docs/RESEARCH_UPDATES_20260929_R93.md)保留三期、兩對照與全部分群反證。僅用fit建案筆數q=n^(-1/2)，以c=sum(w0)/sum(w0*q)保留原Pool總權重；其他target／參數／特徵與組合保持。門檻未過，不新增CSV；對v22多數配對區間跨零，不能稱全面顯著退步。
 
@@ -57,4 +57,23 @@ R90純X資料沒有載價格表；NN helper的合成OOF／encoder檢查並非新
 - [round93_review.py](src/round93_review.py)：讀取完成结果／診斷／paired，整理報告和不可變採用審查。
 - [本批原bytes複製清單](../evidence/outputs/research_snapshot_r93_20260929/copy_manifest.json)：舊379支manifest不改，發布前另刷新SOURCE_MANIFEST。
 
-後續Attention僅[可行性研究](../evidence/reports/attention_regression_feasibility_after_r93.md)，沒有新trainer或已測模型；R90仍尚無新切點六native fit。研究程式依賴原工作區歷史artifacts，不能把來源保存或單模型重載當全新環境完整重訓。
+R93完成時僅有[Attention可行性研究](../evidence/reports/attention_regression_feasibility_after_r93.md)；這份歷史提案保留原時序。後續實際完成情形見下一節。
+
+## 最新追加：Attention R95 與零訓練 R96
+
+[完成研究摘要](../docs/RESEARCH_UPDATES_20260929_ATTENTION.md)保存兩候選完整三期、分群、兩對照及獨立審查。R95只替换原prior NN，新增三次真NN fit共1,762.376秒；R96僅改reference信任及其傳給spatial的confidence，0 fit。兩者都未通過原固定門檻，沒有全量模型或新CSV。
+
+|程式|角色|
+|---|---|
+|[Attention trainer v2](src/round94_attention_prior_train_v2.py)|固定168 tokens／d64／2blocks／4heads；同窗fit encoder、OOF prior、日期總價MAE|
+|[原 trainer](src/round94_attention_prior_train.py)|保留v1；v2只硬化NPZ先驗keys的讀取契約，CONFIG不變|
+|[R95 driver](src/round95_experiment.py)／[review](src/round95_review.py)|三期新NN、保存重載、原控制整鏈重播及完整集成診斷|
+|[R94 failed driver](src/round94_experiment.py)|真fit前因JSON sidecar契約停止，0 fit；R95是同科學配置工程恢復|
+|[R96 helper](src/round96_reference_shrink.py)／[driver](src/round96_experiment.py)／[review](src/round96_review.py)|原趨勢保留，局部confidence固定折半，重新套spatial後median，無新fit|
+|[九假設彙整](src/summarize_research_after_r95.py)|讀完成聚合結果與雜湊，不重新fit或評分；R96另為第十個對照|
+
+上游固定commit及完整原碼／metadata保留，[歸屬與改編說明](upstream/README.md)與[Apache-2.0授權全文](../docs/third_party/rtdl_LICENSE.txt)隨快照。CLS末層裁切、Softplus回歸頭與本題損失並非完整論文復刻。相同batch保存重載已驗，不把GPU固定seed稱為可跨硬體位元重現。
+
+本批[準備58檔](../evidence/outputs/research_snapshot_attention_20260929_preparation/copy_manifest.json)與[完成複製清單](../evidence/outputs/research_snapshot_attention_20260929_final/copy_manifest.json)分開保留。原379支manifest及source bytes不改；發布前另刷新最外層SOURCE_MANIFEST。所有原driver仍依賴完整本機私有資料、模型、prior与歷史狀態，快照不含這些檔案；從零完整重訓未驗證。
+
+R90尚無新窗口真fit。若要在錯開日期比较v22／v24／Attention，需重建8個原生模型與全部encoder、prior及修正狀態；保存的pure-X地理映射不等於已完成模型評估。

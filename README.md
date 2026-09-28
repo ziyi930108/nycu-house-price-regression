@@ -12,7 +12,9 @@
 
 ## 最新回歸研究
 
-R93建案密度權重已完成三期CatBoost訓練與診斷：相對v22，中間／最新／最舊MAE差額為+666.90／+3,968.28／−10,540.53元。固定採用門檻未過；對v22十二區間有十個跨零、兩個偏改善，不能說全面顯著退步。[R93最新研究](docs/RESEARCH_UPDATES_20260929_R93.md)列出完整反證、程式與實測473.484秒fit／549.828秒main，沒有新CSV或Public分數。R90尚無新窗口模型fit；Attention僅來源與文獻可行性盤點，未實作或訓練。[前批R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)及[R85–R88](docs/RESEARCH_UPDATES_20260928.md)保留。這是本機文件更新；發布以Git歷史／收據為準，原v22推論、正式報告與簡報保持。
+[Attention 與參考修正研究](docs/RESEARCH_UPDATES_20260929_ATTENTION.md)已完成。Attention 三期新增 3 次 NN fit，共 1,762.376 秒；相對 v22，中間／最新／較早年度 MAE 差額為 +14,973.87／+28,835.21／−32,152.87 元。零訓練的局部信任折半對照差額為 +3,030.85／+4,963.30／−3,095.98 元，固定加權 MAE 三期皆退。兩者均未通過事前門檻，不新增 CSV，v22 與未知 Private 保持。
+
+新頁保存有利與不利分群、獨立審查、實測時間、上游授權及 R94 真 fit 前工程失敗；R95 是相同科學配置的恢復。[九假設總表](evidence/reports/regression_after_r95_20260929.md)之後另加 R96 為第十個機制對照，不能把失敗啟動或 R90 pure-X 準備另算模型實驗。R90 尚無新窗口模型 fit。歷史 [R93](docs/RESEARCH_UPDATES_20260929_R93.md)、[R89／R91／R92](docs/RESEARCH_UPDATES_20260929.md)與[R85–R88](docs/RESEARCH_UPDATES_20260928.md)保留；正式報告與簡報不改。這是本機文件快照，發布以 Git 歷史／收據為準。
 
 ## 簡報與專案更新
 

@@ -1,0 +1,14 @@
+{
+  "reason": "Include upstream LICENSE, pyproject metadata and plain-text engineering diffs already linked in new research docs.",
+  "before_sha256": "f8ac4bba28cfe89c7f3fea1627d548812f9b302c8f77249a0059725ed0ac29a4",
+  "after_sha256": "315979c07605a8a04971e22082664d32a93fc8585078e754495ca6602bd0c565",
+  "required_new_document_paths_included": [
+    "evidence/outputs/round94_upstream/upstream/LICENSE",
+    "evidence/outputs/round94_upstream/upstream/package/LICENSE",
+    "evidence/outputs/round94_upstream/upstream/package/pyproject.toml",
+    "docs/third_party/rtdl_LICENSE.txt"
+  ],
+  "forbidden_data_model_extensions_included": false,
+  "package_written": false,
+  "GitHub_pushed": false
+}

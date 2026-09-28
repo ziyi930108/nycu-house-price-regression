@@ -1,0 +1,9 @@
+{
+  "automatic_retry": false,
+  "completed_at_utc": "2026-09-28T18:28:55.467653+00:00",
+  "elapsed_seconds": 110.64100000006147,
+  "exit_code": 0,
+  "failure": null,
+  "source_sha256": "5ec0a6682bf3153fe56d274d96f60d4917c5410acf85857147e53e0196d948f2",
+  "started_at_utc": "2026-09-28T18:27:04.829795+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "OOF_fold_state_evidence_replay_exact": true,
+  "all_input_arrays": {
+    "cardinalities": {
+      "dtype": "int64",
+      "sha256": "259b81a94c107bc5371f8c665c6c6813c809df3e460c46284298dddac83c3014",
+      "shape": [
+        23
+      ]
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "sha256": "db81e765bef7339e4d58fb8e0b4e51f3d1650a43d1d0582cdd733f493d114133",
+      "shape": [
+        105511,
+        23
+      ]
+    },
+    "query_num": {
+      "dtype": "float32",
+      "sha256": "3a5ea5ddd30f4c2d2588c84104d8bfa2f17f01997b6a5299742e9636b1e377ec",
+      "shape": [
+        105511,
+        144
+      ]
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "sha256": "f38d04a34b7510397cb2f936d1bfd91d023aaee71a982063b33f9e8bb451de2f",
+      "shape": [
+        105511
+      ]
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "sha256": "695c5bc61ee4cae792316499d9a057178d1fa83d1f2fab2c5ae02d7094d49bf9",
+      "shape": [
+        134805,
+        23
+      ]
+    },
+    "train_num": {
+      "dtype": "float32",
+      "sha256": "73b9b7935d78a76ded2442ce939656fe80c05ee7a609175fc95435015e220393",
+      "shape": [
+        134805,
+        144
+      ]
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "sha256": "b8ae2fe88390340fb62ce94a2b22ef5544e4fcc182d95ca9a028304c23ab3624",
+      "shape": [
+        134805
+      ]
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "sha256": "1e0259dafd5d7b510f7a7490677202d9de5f065a6a5547636e280dde3cb7c39f",
+      "shape": [
+        134805
+      ]
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "sha256": "2e93e092d3b3be4d670a64c52ca21036c69e717bf73fe50ebef8bb660fc500b5",
+      "shape": [
+        134805
+      ]
+    }
+  },
+  "chronological_oof": false,
+  "date_weight_replay_exact": true,
+  "elapsed_seconds": 9.265000000130385,
+  "encoded_fit_query_replay_exact": true,
+  "encoder_state_path": "outputs/round47/auxiliary/encoder_state.json",
+  "encoder_state_sha256": "dba7eca8e4cbbcac3accf36a953138e4bf7cb51d7b6e06a6a321fbe22f9005a0",
+  "factor_replay_exact": true,
+  "fit_encoder_state_replay_exact": true,
+  "fit_indices_content_sha256": "105c98493c615bb92904ba2ec7597d7dd56d72b839d86b1e7fab5d2a7bd4e655",
+  "fit_labels_used_only_for_prior_and_train_target": true,
+  "fit_rows": 134805,
+  "prepared_path": "outputs/round63/auxiliary/prepared.npz",
+  "prepared_sha256": "b5faa0c320a67332f7bccd8d199be61cfc35ae9b098eb70656302c08923a19db",
+  "query_indices_content_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf",
+  "query_labels_used": false,
+  "query_prior_replay_exact": true,
+  "query_rows": 105511,
+  "source_indices_role": "canonical train positions; not raw cache mapping or reset index",
+  "status": "passed"
+}

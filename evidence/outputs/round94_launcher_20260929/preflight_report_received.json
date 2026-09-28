@@ -1,0 +1,9 @@
+{
+  "report_path": "reports/r94_validation_audit.md",
+  "report_sha256": "f7c6196e9a7c7d1dd7cca96ed1ce2c8a4168354fc7d38dbb734d0dfb57c4efab",
+  "report_file_mtime_utc": "2026-09-28T17:47:50.498385+00:00",
+  "original_launch_started_at_utc": "2026-09-28T17:46:53.3263406Z",
+  "independent_no_blocker_message_preceded_launch": true,
+  "written_report_preceded_launch": false,
+  "report_not_rewritten_after_runtime_failure": true
+}

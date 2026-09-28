@@ -1,0 +1,35 @@
+{
+  "copies": [
+    {
+      "source": "reports/round82_followup_audit.md",
+      "destination": "evidence/reports/round82_followup_audit.md",
+      "bytes": 4279,
+      "sha256": "93c63de59c932f1664915ec50e16275fbcc8cbd96ffd2e9a47077cbe75d44d18"
+    },
+    {
+      "source": "reports/reference_blending_audit_r84.md",
+      "destination": "evidence/reports/reference_blending_audit_r84.md",
+      "bytes": 6335,
+      "sha256": "570dc019b6a6a003adee8f1a0782a0409c473227f5ff284d0355616de68fd2a3"
+    },
+    {
+      "source": "reports/round30_report.md",
+      "destination": "evidence/reports/round30_report.md",
+      "bytes": 3890,
+      "sha256": "7464f4b53cc3225bbc19603644564b3897a9c77aee75e5f561406ce99f1085e0"
+    },
+    {
+      "source": "reports/continuation_plan_after_r84.md",
+      "destination": "evidence/reports/continuation_plan_after_r84.md",
+      "bytes": 5061,
+      "sha256": "22140c6767afe33233132e79e43c682bd5e2166c20588fb78540117c4673bf54"
+    },
+    {
+      "source": "reports/round18_feature_audit.md",
+      "destination": "evidence/reports/round18_feature_audit.md",
+      "bytes": 12816,
+      "sha256": "c20d990e6bd0c787e3eb033b68dbcc8d00669de68656a78498f73a04a8b1c6e6"
+    }
+  ],
+  "scope": "Five directly linked historical methodological reports; no recursive data/state copying; original bytes retained"
+}

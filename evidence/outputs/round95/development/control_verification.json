@@ -1,0 +1,8 @@
+{
+  "R71_diagnostics_exact": true,
+  "R71_seed42_mean_base_reference_spatial_vectors_exact": true,
+  "controls_full_metrics_exact": true,
+  "old_NN_fit_calls": 0,
+  "old_NN_model_predict_calls": 0,
+  "v22_complete_median_exact": true
+}

@@ -1,0 +1,118 @@
+{
+  "started_at_utc": "2026-09-28T18:27:04.026029+00:00",
+  "completed_at_utc": "2026-09-28T18:29:32.423380+00:00",
+  "elapsed_seconds": 148.39100000006147,
+  "exit_code": 0,
+  "failure": null,
+  "steps": [
+    {
+      "step": "main",
+      "started_at_utc": "2026-09-28T18:27:04.026029+00:00",
+      "completed_at_utc": "2026-09-28T18:28:55.568234+00:00",
+      "elapsed_seconds": 111.54700000002049,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-X",
+        "utf8",
+        "src/round96_experiment.py",
+        "--run",
+        "--plan-sha",
+        "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071"
+      ],
+      "exit_code": 0,
+      "log_sha256": "969c0684048906f8e0d34dd9c8a4e87e217b9221b070e65d507b9e2ecbf6dc26"
+    },
+    {
+      "step": "diagnostics",
+      "started_at_utc": "2026-09-28T18:28:55.583807+00:00",
+      "completed_at_utc": "2026-09-28T18:29:18.845243+00:00",
+      "elapsed_seconds": 23.25,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "src/candidate_diagnostics_v3.py",
+        "--round",
+        "96",
+        "--candidate",
+        "R96",
+        "--extra-control",
+        "v22:79:R79",
+        "--extra-control",
+        "v24:83:R83"
+      ],
+      "exit_code": 0,
+      "log_sha256": "cb2bfaf8b7d1b31b3b34b15dc8d8c37b1e9ba2432194813bad4397203e65e422"
+    },
+    {
+      "step": "paired_v22",
+      "started_at_utc": "2026-09-28T18:29:18.858295+00:00",
+      "completed_at_utc": "2026-09-28T18:29:25.531722+00:00",
+      "elapsed_seconds": 6.672000000020489,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "src/paired_candidate_bootstrap.py",
+        "--round",
+        "96",
+        "--candidate",
+        "R96",
+        "--control-round",
+        "79",
+        "--control-name",
+        "v22",
+        "--control-key",
+        "R79"
+      ],
+      "exit_code": 0,
+      "log_sha256": "549d0e9edbc022b23016163c1c940c17fe83ec3a804e23957bc3864a8a937164"
+    },
+    {
+      "step": "paired_v24",
+      "started_at_utc": "2026-09-28T18:29:25.537864+00:00",
+      "completed_at_utc": "2026-09-28T18:29:32.316568+00:00",
+      "elapsed_seconds": 6.780999999959022,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "src/paired_candidate_bootstrap.py",
+        "--round",
+        "96",
+        "--candidate",
+        "R96",
+        "--control-round",
+        "83",
+        "--control-name",
+        "v24",
+        "--control-key",
+        "R83"
+      ],
+      "exit_code": 0,
+      "log_sha256": "0c638a91f54b97fc96de68509eb5cbc87603ee8d6d36d1fa3518fb7f9ec9b309"
+    },
+    {
+      "step": "review",
+      "started_at_utc": "2026-09-28T18:29:32.324126+00:00",
+      "completed_at_utc": "2026-09-28T18:29:32.418375+00:00",
+      "elapsed_seconds": 0.0940000000409782,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "src/round96_review.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "5ba3239443e77a8dd60dbcbc824b3422ff1df541e2f07f041a013eac848bdc31"
+    }
+  ],
+  "automatic_retry": false,
+  "source_sha256": "102631fc7d624973ddf8e4e49b521f40ca200ee219fdbdd19a1d6b12a2b91786"
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed_no_blocker",
+  "timestamp_utc": "2026-09-28T18:39:20.543957+00:00",
+  "scope": "Independent read-only review of frozen source, metadata, saved prediction/diagnostic arithmetic, completed metrics and saved bootstrap quantiles. No new scoring or model execution.",
+  "main_unique_artifact_hashes_verified": 549,
+  "generic_source_input_hash_entries_verified": 80,
+  "decision_evidence_hash_entries_verified": 9,
+  "paired_saved_arrays": 12,
+  "paired_saved_arrays_shape": [
+    2000,
+    4
+  ],
+  "paired_intervals_exact": 24,
+  "decision_branch_layers_exact": 27,
+  "all_generic_and_control_full_metrics_exact": true,
+  "all_nine_branch_saved_arithmetic_checks_passed": true,
+  "saved_arithmetic_checks": [
+    "Original base/reference/spatial vectors equal authoritative saved controls.",
+    "new confidence = 0.5 * old confidence, all other reference diagnostics unchanged.",
+    "new reference uses fixed Bfuture + 0.5*(P-Bfuture) only where c>0.",
+    "Spatial invariant diagnostics unchanged; new c is used; effective weight = (1-new c)*alpha and never decreases.",
+    "Saved spatial equals new reference plus saved effective weight*(G-Bfuture) where applied.",
+    "Zero-confidence reference and spatial values remain byte-exact, including applied spatial cases.",
+    "Final median equals saved three candidate branches; original v22 equals original branch median.",
+    "All-common-c0 final median remains byte-exact."
+  ],
+  "zero_confidence_rows": {
+    "development": 10779,
+    "confirmation": 11976,
+    "auxiliary": 38077
+  },
+  "zero_confidence_and_spatial_applied_rows_per_branch": {
+    "development": 162,
+    "confirmation": 335,
+    "auxiliary": 740
+  },
+  "paired_interval_counts": {
+    "v22": {
+      "negative": 0,
+      "cross_zero": 11,
+      "positive": 1
+    },
+    "v24": {
+      "negative": 0,
+      "cross_zero": 4,
+      "positive": 8
+    }
+  },
+  "adoption_gate_passed": false,
+  "new_model_fits": 0,
+  "new_model_loads": 0,
+  "new_model_predict_calls": 0,
+  "new_score_calls": 0,
+  "query_labels_read": false,
+  "test_data_read": false,
+  "new_CSV": false,
+  "source_modified": false,
+  "evidence_sha256": {
+    "reports/round96_plan.md": "7178be401e3927f4ec26164159d2b515aef97e3a2f0158c3e19ee50d1c08a071",
+    "src/round96_reference_shrink.py": "65fd4cddf98c686fe53054baefe8ab8ec1bf00822e25589a0ad513669e41d894",
+    "src/round96_experiment.py": "5ec0a6682bf3153fe56d274d96f60d4917c5410acf85857147e53e0196d948f2",
+    "src/round96_review.py": "2434a0504b8953a7b10003cd560a3631dd3ed1978689c9a038ffc65547189b79",
+    "reports/round96_helper_selfcheck.json": "8824ec6b9829228357c62dc8b936451c1515d850d198e90637531bece4455701",
+    "reports/r96_validation_audit.md": "837803c11c8fed48abbc94b7f509df64088d4ef304d014e68cbac64c49ca7286",
+    "reports/r96_validation_audit.json": "048793450a7b451c3076beaa52e6f700fb4ba04359f4ab223a4b442c5fa7de78",
+    "outputs/round96/results.json": "cb57871d168f2a000f6eb3059bb65ba21e6b3428a6b4f51fa667599ec17a67bd",
+    "outputs/round96/execution.json": "0b75740e4bd41d40a64053851b0d96ff166985874c7635cbc8dcdbe2f6a8380c",
+    "reports/round96_diagnostics.json": "861e8027333fcd05962e06c85f7c44ec84e9ad083f33bcbf446012aedd3e73d4",
+    "outputs/round96/diagnostics/execution.json": "8c3f5a2a692733d4d3e63f638fb71ef933a91d8b71fabef252570218c593d778",
+    "outputs/round96/paired_vs_v22/results.json": "7069a5e4c4ba2347aecff88ef9bdf7e797b5d62cfc9e318cd2c6fb63d7a32381",
+    "outputs/round96/paired_vs_v24/results.json": "2caa1ba24d61e067fb9283124046935e7389affd6744f1d2cad6e1c397d34433",
+    "outputs/round96/decision_review.json": "d878d94adddbd7a05865404e357195aba3faae9603851635f001597b8e586cf8",
+    "reports/round96_report.md": "2c6b504669943572ae2f05724c077c45261889da03c355fe75d8ea3b1e063b8b",
+    "outputs/round96_launcher_20260929/pipeline_execution.json": "6ad27b29f5d1aaee5e8275205e5b5c5f358b26018804d78caa0f276c01c8bac4"
+  },
+  "limitations": [
+    "Source review and stored-output integrity do not constitute clean-environment end-to-end retraining.",
+    "Existing repeated validation windows are not independent confirmation.",
+    "Bootstrap intervals condition on saved models and do not correct adaptive selection or imply Private probabilities.",
+    "Reference and spatial changes are coupled; branch errors cannot be added as causal contributions."
+  ]
+}

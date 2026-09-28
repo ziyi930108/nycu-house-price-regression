@@ -1,0 +1,9 @@
+{
+  "automatic_retry": false,
+  "completed_at_utc": "2026-09-28T17:47:02.191558+00:00",
+  "elapsed_seconds": 7.812999999849126,
+  "exit_code": 1,
+  "failure": "Traceback (most recent call last):\n  File \"C:\\NYCU_ML\\src\\round94_experiment.py\", line 470, in <module>\n    run(args.plan_sha)\n  File \"C:\\NYCU_ML\\src\\round94_experiment.py\", line 271, in run\n    assert saved_encoder == locked(ROOT / f'outputs/round48/{s}/encoder_state.json')\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\NYCU_ML\\src\\round6_common.py\", line 28, in read_locked\n    require(path.is_file() and receipt.is_file(),'Missing immutable contract: '+str(path))\n  File \"C:\\NYCU_ML\\src\\round6_common.py\", line 19, in require\n    if not ok:raise RuntimeError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Missing immutable contract: C:\\NYCU_ML\\outputs\\round48\\development\\encoder_state.json\n",
+  "source_sha256": "ca1823069d1310409bfb7a8a04c09177ed2ca5e15496f66a99b769ac70948563",
+  "started_at_utc": "2026-09-28T17:46:54.382180+00:00"
+}

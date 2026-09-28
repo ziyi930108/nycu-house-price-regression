@@ -1,0 +1,19 @@
+{
+  "step": "main",
+  "started_at_utc": "2026-09-28T17:46:53.430668+00:00",
+  "completed_at_utc": "2026-09-28T17:47:02.307803+00:00",
+  "elapsed_seconds": 8.875,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round94_experiment.py",
+    "--run",
+    "--plan-sha",
+    "c44e8d40e8eabe5c00f4e69905aa6987e9b68adf5bdccd920f84deb5cbf38c0a"
+  ],
+  "exit_code": 1,
+  "log_sha256": "3cd49185d925ac40a82f75a8c139ca868c9de1f67c77f13f80ddbd93c1978007"
+}

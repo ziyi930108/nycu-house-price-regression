@@ -1,0 +1,25 @@
+{
+  "step": "paired_v22",
+  "started_at_utc": "2026-09-28T18:25:54.762551+00:00",
+  "completed_at_utc": "2026-09-28T18:26:01.622621+00:00",
+  "elapsed_seconds": 6.859999999869615,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/paired_candidate_bootstrap.py",
+    "--round",
+    "95",
+    "--candidate",
+    "R95",
+    "--control-round",
+    "79",
+    "--control-name",
+    "v22",
+    "--control-key",
+    "R79"
+  ],
+  "exit_code": 0,
+  "log_sha256": "e1fe2eebf8b23f3485ec74c9047bf4058fc53ac0af56f28a6b7fba0d1897e2f0"
+}

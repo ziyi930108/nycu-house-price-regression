@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "request_sha256": "62401b4dc0d8b88dcbc3ca52e20d1aa3a8e6ea612f087cfc82a6efbd25bcf9fa",
+  "source_files_frozen": 18,
+  "new_fits": 0,
+  "real_data_or_prediction_arrays_loaded": false,
+  "main_launched": false
+}

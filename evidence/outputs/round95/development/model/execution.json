@@ -1,0 +1,9 @@
+{
+  "mode": "fit",
+  "exit_code": 0,
+  "failure": null,
+  "elapsed_seconds": 620.1719999997877,
+  "source_sha256": "ae197952be777f3e9e2fdb66458887d2a3885fd736b75dd3677eeae43cfeef83",
+  "plan_sha256": "c44e8d40e8eabe5c00f4e69905aa6987e9b68adf5bdccd920f84deb5cbf38c0a",
+  "configuration_sha256": "1db116b6a537010f0ce85829aee5362133af8de6f2e8bb86167d732514f36b0a"
+}

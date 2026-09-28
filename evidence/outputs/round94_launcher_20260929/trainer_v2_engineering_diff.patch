@@ -1,0 +1,64 @@
+--- src\round94_attention_prior_train.py
++++ src\round94_attention_prior_train_v2.py
+@@ -6,6 +6,7 @@
+ Modified for this task: small fixed model, CLS-only final residual/FFN, category
+  dropout, positive prior-ratio head, weighted TWD L1, accumulated batches,
+  fixed last epoch and all-parameter AdamW. Not an official full reproduction.
++V2 engineering change: verify NPZ member names before any member read.
+ No upstream module/package is imported; no real data or CUDA on import.
+ """
+ from __future__ import annotations
+@@ -87,7 +88,7 @@
+ 
+ 
+ def source_hashes():
+-    return {**SOURCE_DEPENDENCIES,'src/round94_attention_prior_train.py':sha(__file__)}
++    return {**SOURCE_DEPENDENCIES,Path(__file__).resolve().relative_to(ROOT).as_posix():sha(__file__)}
+ 
+ 
+ def check_configuration():
+@@ -135,6 +136,13 @@
+     positive32(a['query_price_factor_million'],len(qn),'Query factors')
+     positive32(a['train_sample_weight'],len(xn),'Fit dates')
+     return a
++
++
++def load_prepared(path):
++    """Check NPZ member names before deserializing any arrays, including extras."""
++    with np.load(path,allow_pickle=False) as z:
++        need(set(z.files)==set(ARRAY_NAMES),'Expected exactly nine NPZ members before any array read')
++        return validate_arrays({k:z[k] for k in ARRAY_NAMES})
+ 
+ 
+ def fit_head_bias(y,factor):
+@@ -350,7 +358,7 @@
+     started=time.monotonic();check_configuration()
+     need(not out.exists(),'Output must be a new directory; preserve prior evidence')
+     out.mkdir(parents=True)
+-    with np.load(data_path,allow_pickle=False) as z: a=validate_arrays({k:z[k] for k in z.files})
++    a=load_prepared(data_path)
+     meta=metadata_for(a,data_path);device=setup('cuda');meta.update(runtime())
+     model=AttentionPriorRegressor(meta['cardinalities']).to(device)
+     with torch.no_grad(): model.head.bias.fill_(meta['initial_head_bias'])
+@@ -487,6 +495,21 @@
+        'train_sample_weight':w.numpy().copy()}
+     validated=validate_arrays(a)
+     ok('nine_arrays_exact_shapes_dtypes_positive_finite',set(validated)==set(ARRAY_NAMES))
++    buffer=io.BytesIO()
++    np.savez(buffer,**a,query_y_million=np.array([None],dtype=object))
++    buffer.seek(0)
++    try:
++        load_prepared(buffer)
++    except ValueError as exc:
++        ok('extra_NPZ_member_rejected_before_deserialization',
++           str(exc)=='Expected exactly nine NPZ members before any array read')
++    else:
++        raise AssertionError('extra member accepted')
++    buffer=io.BytesIO();np.savez(buffer,**a);buffer.seek(0)
++    roundtrip=load_prepared(buffer)
++    ok('valid_nine_member_NPZ_exact_roundtrip',
++       all(v.dtype==roundtrip[k].dtype and v.shape==roundtrip[k].shape and v.tobytes()==roundtrip[k].tobytes() for k,v in a.items()))
++
+     reject('query_labels_member_rejected',lambda:validate_arrays({**a,'query_y_million':np.ones(9,dtype=np.float32)}))
+     reject('float64_numeric_rejected',lambda:validate_arrays({**a,'train_num':a['train_num'].astype(np.float64)}))
+     reject('wrong_numeric_width_rejected',lambda:validate_arrays({**a,'query_num':a['query_num'][:,:143]}))

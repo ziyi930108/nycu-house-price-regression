@@ -1,0 +1,8 @@
+{
+  "new_fits": 0,
+  "pid": 15432,
+  "automatic_retry": false,
+  "source": "outputs/round96_launcher_20260929/run_pipeline.py",
+  "R95_pipeline_completed_before_launch": true,
+  "started_at_utc": "2026-09-28T18:27:03.9413846Z"
+}
