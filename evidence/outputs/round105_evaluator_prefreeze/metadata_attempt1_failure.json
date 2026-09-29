@@ -1,0 +1,12 @@
+{
+  "driver_source_sha256": "dff64d2e81f37f226ff0f4be5e0889a706b081716821b9090854f287a650d3b0",
+  "exit_code": 1,
+  "failure": "AssertionError: AST checker collected dictionary literal keys only; artifact_sha256 is added by later subscript assignment in driver. No driver/scorer defect or true execution failure.",
+  "first_exec_wall_seconds": 1.5112335,
+  "new_fit_score_calls": 0,
+  "phase": "read_only_metadata_checker_after_14_synthetic_checks_passed",
+  "real_arrays_or_labels_read": false,
+  "source_modified": false,
+  "source_sha256": "d11a8d7a7646f42b5d8fffc9a52971e65484d6cbfc5b51892b99aa3d088d5f9d",
+  "status": "failed"
+}

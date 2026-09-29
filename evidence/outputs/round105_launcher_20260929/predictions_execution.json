@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round105_native_average.py",
+    "--run",
+    "--request",
+    "C:\\NYCU_ML\\outputs\\round105_launcher_20260929\\research_request.json"
+  ],
+  "elapsed_seconds": 55.70299999997951,
+  "exit_code": 0,
+  "log": {
+    "path": "outputs/round105_launcher_20260929/predictions.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "step": "predictions"
+}

@@ -1,0 +1,9 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 54.32799999997951,
+  "exit_code": 0,
+  "failure": null,
+  "new_fit_calls": 0,
+  "query_scores_computed": false,
+  "source_sha256": "dff64d2e81f37f226ff0f4be5e0889a706b081716821b9090854f287a650d3b0"
+}

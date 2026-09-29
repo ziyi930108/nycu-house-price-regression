@@ -1,0 +1,72 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 125.43800000008196,
+  "exit_code": 0,
+  "failure": null,
+  "finished_at_utc": "2026-09-29T00:32:51.093171+00:00",
+  "new_fits": 0,
+  "steps": [
+    {
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-X",
+        "utf8",
+        "src/round105_native_average.py",
+        "--freeze-request",
+        "C:\\NYCU_ML\\outputs\\round105_launcher_20260929\\research_request.json"
+      ],
+      "elapsed_seconds": 2.077999999979511,
+      "exit_code": 0,
+      "log": {
+        "path": "outputs/round105_launcher_20260929/freeze.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "step": "freeze"
+    },
+    {
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-X",
+        "utf8",
+        "src/round105_native_average.py",
+        "--run",
+        "--request",
+        "C:\\NYCU_ML\\outputs\\round105_launcher_20260929\\research_request.json"
+      ],
+      "elapsed_seconds": 55.70299999997951,
+      "exit_code": 0,
+      "log": {
+        "path": "outputs/round105_launcher_20260929/predictions.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "step": "predictions"
+    },
+    {
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-X",
+        "utf8",
+        "src/round105_native_average_evaluate.py",
+        "--sealed-manifest",
+        "outputs/round105/sealed_manifest.json",
+        "--evaluation-request",
+        "C:\\NYCU_ML\\outputs\\round105_launcher_20260929\\evaluation_request.json",
+        "--out",
+        "outputs/round105/evaluation"
+      ],
+      "elapsed_seconds": 67.34400000004098,
+      "exit_code": 0,
+      "log": {
+        "path": "outputs/round105_launcher_20260929/evaluation.log",
+        "sha256": "b0986cc9391fc03146929a3742664be6174b973e05c9b2166205f4105f0d1a45"
+      },
+      "step": "evaluation"
+    }
+  ]
+}

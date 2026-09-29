@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-09-29T00:41:16.849538+00:00",
+  "published_base": "374d488b2d1cfac5833bf685016522ad683d8949",
+  "copied_count": 75,
+  "copied_bytes": 4182993,
+  "baseline_files": 2189,
+  "baseline_changed_only": [
+    "HANDOFF.md",
+    "README.md",
+    "research/README.md"
+  ],
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "fe90d62f53a4c63c7273e3c3355cd4595567daf464f26910502be0205eb540b4",
+      "after_sha256": "de180567463c394998790fd1a47a2bb4e19086631af8d914cce82dba58b80c00",
+      "bytes": 5242
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "f7e8ae60e5d4418e6917a9816269b104bbd04714922be6ab287435027f7b864e",
+      "after_sha256": "397da731ff3a3c9c5dadebc3b466eddb7f5a749eb8f3737f7ce2c6cdd94c1d48",
+      "bytes": 6519
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "66ad359831ef8bd59c74a4249076bdbace88ce9269225d35d0fa532b7905feac",
+      "after_sha256": "50aa843538c67587d2a3224e148cab49e8b9e9f527ee510a161e628c2734e5b9",
+      "bytes": 19611
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md",
+      "before_sha256": null,
+      "after_sha256": "358dc4888bfad500ad10cb4963f204c93bc7eccde499b8e2cf2c16124bb6911d",
+      "bytes": 2180
+    }
+  ],
+  "navigation_local_links_checked": 130,
+  "all_navigation_links_resolve": true,
+  "all_original_copies_exact": true,
+  "interval_counts": {
+    "negative": 6,
+    "crosses_zero": 18,
+    "positive": 0,
+    "unavailable": 0
+  },
+  "input_sha256": {
+    "outputs/round105/execution.json": "ca1ce36e0c3f7f20209cb32305100b6ac465a555f5bf9bf36d6a8c05553549d9",
+    "outputs/round105/evaluation/execution.json": "89d3c1da0517b5fb1bf679b1a0b773118593c27d7a16c2380326db479326867d",
+    "outputs/round105_summary/execution.json": "3e718adce779eeca64b93bdca57b17badb461ca412d2d69a608c1789bb4b8489",
+    "outputs/round105_launcher_20260929/execution.json": "71e414c77b161225a923c1a32c877cb27b52d118d5a70a8756b83e2a49afa23d",
+    "outputs/round105/evaluation/results.json": "5626796e29e1d0b41fb952aa19e949b3c1312a273cf16f77c04e146c0cee89b0",
+    "outputs/round105/sealed_manifest.json": "94ddd34ff92eaffcff79766ac5dd35665823b01fc43a5f99ea242d1bf95c6b3c",
+    "outputs/round105_summary/summary.json": "ea8d64e05cefd1e127126fc80f61fb0753317eb97fc1168d6d493a42c517586f",
+    "outputs/round105_summary/receipt.json": "54be537c20a9a60c33b69b65d40ee2f6b703d90e337bdf8ef028fac1c3023bfb"
+  },
+  "source_sha256": "849a48ddaa400a0d82be88befea3d8ed47df8921050796dbddfca54169ddc659",
+  "SOURCE_MANIFEST_unchanged": true,
+  "historical_sources_and_formal_REPORT_PDF_PPTX_unchanged": true,
+  "new_fit_score_calls": 0,
+  "package_commit_push_performed": false,
+  "full_retraining_backup": false
+}

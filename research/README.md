@@ -1,6 +1,13 @@
 # 原始訓練程式與重現界線
 
-## 最新追加：R103 診斷與 R104 固定 base 目標
+## 最新追加：R105固定原生平均
+
+[完成頁](../docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)：R105固定原生50/50平均與三期隔離評分已完成；完整T−v22 MAE為 **-317.81／+2,010.70／-6,060.66 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。**
+
+[固定計畫](../evidence/reports/round105_plan.md)／[報告](../evidence/reports/round105_report.md)／[精確複製清單](../evidence/outputs/research_snapshot_r105_20260929/copy_manifest.json)。保留舊來源與限制，0新fit，不包原始交易表、逐筆向量或learned states。
+
+
+## 歷史追加：R103 診斷與 R104 固定 base 目標
 
 [完成頁](../docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md)：R103 誤差互補診斷與 R104 兩教師／六學生、三期隔離評分均已完成。完整 T−v22 MAE 為 **+39,238.32／+11,007.42／-43,442.06 元**（development／confirmation／auxiliary）；兩項固定門檻未通過，**不採用、無新 CSV；唯一提交仍為 v22，Private 未知。**
 
@@ -16,7 +23,7 @@
 [本批來源清單](../evidence/outputs/research_snapshot_r102_20260929/copy_manifest.json)保留 bytes；不含標籤／模型／NPZ／逐筆向量／價格 prior states。379 歷史來源與正式交付不改。下方歷史研究的「尚未執行」是各批當時狀態；R100 提議的診斷與本輪輸入假說現已完成。
 
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R104程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R105程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |

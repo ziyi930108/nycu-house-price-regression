@@ -10,11 +10,11 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新組合目標研究
+## 最新原生平均研究
 
-[R103／R104 完成頁](docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md)：R103 誤差互補診斷與 R104 兩教師／六學生、三期隔離評分均已完成。完整 T−v22 MAE 為 **+39,238.32／+11,007.42／-43,442.06 元**（development／confirmation／auxiliary）；兩項固定門檻未通過，**不採用、無新 CSV；唯一提交仍為 v22，Private 未知。**
+[R105完成頁](docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)：R105固定原生50/50平均與三期隔離評分已完成；完整T−v22 MAE為 **-317.81／+2,010.70／-6,060.66 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。**
 
-24 CI：8 全負／6 跨零／10 全正。T−C base 三窗均退步，較早窗口完整改善也保留；2023 地理非 as-of、單 seed 與重用窗口限制見完成頁。正式報告及簡報仍聚焦 v22。
+0新fit，兩端全五層重播後套固定平均；24 CI為6全負／18跨零／0全正。正式報告與簡報仍聚焦v22。
 
 ## 簡報與專案更新
 
