@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round104_teacher_preparation.py",
+    "--extract-fit-labels",
+    "--request",
+    "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\preparation_request.json",
+    "--preparation",
+    "outputs/round104_teacher/preparation/manifest.json",
+    "--out",
+    "outputs/round104_teacher/fit_labels"
+  ],
+  "elapsed_seconds": 2.3899999998975545,
+  "exit_code": 0,
+  "log": {
+    "path": "outputs/round104_teacher_launcher_20260929/extract_fit_labels.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "step": "extract_fit_labels"
+}

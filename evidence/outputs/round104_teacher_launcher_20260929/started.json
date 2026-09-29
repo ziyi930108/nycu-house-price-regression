@@ -1,0 +1,64 @@
+{
+  "source": {
+    "path": "outputs/round104_teacher_launcher_20260929/launch.py",
+    "sha256": "7960258823b682deeee50b6442bab8c8a71748263fd1f3c859a2948bc4504d85"
+  },
+  "started_at_utc": "2026-09-28T23:53:23.625840+00:00",
+  "steps": [
+    [
+      "freeze_preparation",
+      [
+        "src/round104_teacher_preparation.py",
+        "--freeze-request",
+        "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\preparation_request.json"
+      ]
+    ],
+    [
+      "prepare",
+      [
+        "src/round104_teacher_preparation.py",
+        "--prepare",
+        "--request",
+        "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\preparation_request.json",
+        "--out",
+        "outputs/round104_teacher/preparation"
+      ]
+    ],
+    [
+      "extract_fit_labels",
+      [
+        "src/round104_teacher_preparation.py",
+        "--extract-fit-labels",
+        "--request",
+        "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\preparation_request.json",
+        "--preparation",
+        "outputs/round104_teacher/preparation/manifest.json",
+        "--out",
+        "outputs/round104_teacher/fit_labels"
+      ]
+    ],
+    [
+      "freeze_fit",
+      [
+        "src/round104_teacher_fit.py",
+        "--freeze-request",
+        "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\fit_request.json",
+        "--preparation",
+        "outputs/round104_teacher/preparation/manifest.json",
+        "--labels",
+        "outputs/round104_teacher/fit_labels/manifest.json"
+      ]
+    ],
+    [
+      "fit",
+      [
+        "src/round104_teacher_fit.py",
+        "--run",
+        "--request",
+        "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\fit_request.json",
+        "--out",
+        "outputs/round104_teacher/models"
+      ]
+    ]
+  ]
+}

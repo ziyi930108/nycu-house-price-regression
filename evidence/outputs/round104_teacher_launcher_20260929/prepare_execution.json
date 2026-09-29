@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round104_teacher_preparation.py",
+    "--prepare",
+    "--request",
+    "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\preparation_request.json",
+    "--out",
+    "outputs/round104_teacher/preparation"
+  ],
+  "elapsed_seconds": 11.765999999828637,
+  "exit_code": 0,
+  "log": {
+    "path": "outputs/round104_teacher_launcher_20260929/prepare.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "step": "prepare"
+}

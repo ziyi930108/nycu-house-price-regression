@@ -1,0 +1,37 @@
+{
+  "checks": [
+    "root_stage_equal_development",
+    "root_stage_equal_confirmation",
+    "root_stage_equal_auxiliary"
+  ],
+  "conditional_interval_counts": {
+    "C": {
+      "crosses_zero": 4,
+      "negative": 4,
+      "positive": 4
+    },
+    "v22": {
+      "crosses_zero": 2,
+      "negative": 4,
+      "positive": 6
+    }
+  },
+  "created_at_utc": "2026-09-29T00:04:24.871303+00:00",
+  "duration_measured": false,
+  "evaluation": {
+    "path": "outputs/round104/evaluation/results.json",
+    "sha256": "3c2c27c7299100c64d97bfac3750f92391f5f7b34bfd8637b4c402ca65fd52a4"
+  },
+  "independent_end_to_end_reproduction": false,
+  "new_array_reads": 0,
+  "new_score_or_fit_calls": 0,
+  "report": {
+    "path": "reports/round104_results_review.md",
+    "sha256": "4a47f3c7b6d9fd1a677d99b67b39c00843466b359b2fccc30f93522c8b714adb"
+  },
+  "review_roles": [
+    "root source/aggregate inspection",
+    "separate subagent source/metadata/aggregate inspection"
+  ],
+  "status": "finite_aggregate_review_passed"
+}

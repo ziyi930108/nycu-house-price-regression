@@ -1,0 +1,10 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 58.59399999980815,
+  "exit_code": 0,
+  "failure": null,
+  "model_load_predict_calls": 0,
+  "new_fits": 0,
+  "raw_prices_deserialized": true,
+  "source_sha256": "04d657672f4e55511688e6a327dda0d6ac34b35f531ea1f140c40599d3c9021b"
+}

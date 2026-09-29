@@ -1,6 +1,13 @@
 # 原始訓練程式與重現界線
 
-## 最新追加：R101 診斷與 R102 先驗輸入
+## 最新追加：R103 診斷與 R104 固定 base 目標
+
+[完成頁](../docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md)：R103 誤差互補診斷與 R104 兩教師／六學生、三期隔離評分均已完成。完整 T−v22 MAE 為 **+39,238.32／+11,007.42／-43,442.06 元**（development／confirmation／auxiliary）；兩項固定門檻未通過，**不採用、無新 CSV；唯一提交仍為 v22，Private 未知。**
+
+[R103 計畫](../evidence/reports/round103_plan.md)／[診斷](../evidence/reports/round103_report.md)；[R104 計畫](../evidence/reports/round104_plan.md)／[摘要](../evidence/reports/round104_report.md)。新來源、人工歷史與聚合證據見[精確複製清單](../evidence/outputs/research_snapshot_r104_20260929/copy_manifest.json)。不包逐筆資料、模型、完整 encoder／價格 state；舊研究的待辦是當時狀態。
+
+
+## 歷史追加：R101 診斷與 R102 先驗輸入
 
 [完成頁](../docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：R101 診斷與 R102 六次 NN／三期隔離評分均已完成。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **+934.33／+7,219.36／-9,619.90 元**。Primary gate 未通過，mechanism gate 未通過；**研究門檻未全通過，不採用；唯一提交仍是 v22，Private 未知。**
 
@@ -9,7 +16,7 @@
 [本批來源清單](../evidence/outputs/research_snapshot_r102_20260929/copy_manifest.json)保留 bytes；不含標籤／模型／NPZ／逐筆向量／價格 prior states。379 歷史來源與正式交付不改。下方歷史研究的「尚未執行」是各批當時狀態；R100 提議的診斷與本輪輸入假說現已完成。
 
 
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R102程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R104程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
 
 | 分量 | 訓練入口／方法 |
 | --- | --- |

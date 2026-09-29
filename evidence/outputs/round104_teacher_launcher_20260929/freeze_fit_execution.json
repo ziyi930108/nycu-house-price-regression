@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round104_teacher_fit.py",
+    "--freeze-request",
+    "C:\\NYCU_ML\\outputs\\round104_teacher_launcher_20260929\\fit_request.json",
+    "--preparation",
+    "outputs/round104_teacher/preparation/manifest.json",
+    "--labels",
+    "outputs/round104_teacher/fit_labels/manifest.json"
+  ],
+  "elapsed_seconds": 2.2350000001024455,
+  "exit_code": 0,
+  "log": {
+    "path": "outputs/round104_teacher_launcher_20260929/freeze_fit.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "step": "freeze_fit"
+}

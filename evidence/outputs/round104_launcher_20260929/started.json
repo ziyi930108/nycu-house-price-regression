@@ -1,0 +1,8 @@
+{
+  "query_scores_computed": false,
+  "source": {
+    "path": "outputs/round104_launcher_20260929/launch.py",
+    "sha256": "818ed56981cfc748242f6b9f0b461901e5abbec19f605128965cd32b87bdb383"
+  },
+  "started_at_utc": "2026-09-28T23:57:00.468923+00:00"
+}

@@ -1,0 +1,353 @@
+{
+  "Private_score": null,
+  "array_paths_loaded": [
+    "outputs/round6/geography/development/train_source_cache_indices.npy",
+    "outputs/round102/development/fit_indices.npy",
+    "outputs/round102/development/query_indices.npy",
+    "outputs/round102/development/fit_source_cache_indices.npy",
+    "outputs/round102/development/query_source_cache_indices.npy",
+    "outputs/round102/development/H.npy",
+    "outputs/round102/development/U.npy",
+    "outputs/round102/development/area.npy",
+    "outputs/round102/development/lgb.npy",
+    "outputs/round102/development/v22/native.npy",
+    "outputs/round102/development/v22/base.npy",
+    "outputs/round102/development/v22/reference.npy",
+    "outputs/round102/development/v22/spatial.npy",
+    "outputs/round102/development/C/native.npy",
+    "outputs/round102/development/C/base.npy",
+    "outputs/round102/development/C/reference.npy",
+    "outputs/round102/development/C/spatial.npy",
+    "outputs/round102/development/T/native.npy",
+    "outputs/round102/development/T/base.npy",
+    "outputs/round102/development/T/reference.npy",
+    "outputs/round102/development/T/spatial.npy",
+    "outputs/round102/development/prediction_v22.npy",
+    "outputs/round102/development/prediction_C.npy",
+    "outputs/round102/development/prediction_T.npy",
+    "outputs/round102/confirmation/fit_indices.npy",
+    "outputs/round102/confirmation/query_indices.npy",
+    "outputs/round102/confirmation/fit_source_cache_indices.npy",
+    "outputs/round102/confirmation/query_source_cache_indices.npy",
+    "outputs/round102/confirmation/H.npy",
+    "outputs/round102/confirmation/U.npy",
+    "outputs/round102/confirmation/area.npy",
+    "outputs/round102/confirmation/lgb.npy",
+    "outputs/round102/confirmation/v22/native.npy",
+    "outputs/round102/confirmation/v22/base.npy",
+    "outputs/round102/confirmation/v22/reference.npy",
+    "outputs/round102/confirmation/v22/spatial.npy",
+    "outputs/round102/confirmation/C/native.npy",
+    "outputs/round102/confirmation/C/base.npy",
+    "outputs/round102/confirmation/C/reference.npy",
+    "outputs/round102/confirmation/C/spatial.npy",
+    "outputs/round102/confirmation/T/native.npy",
+    "outputs/round102/confirmation/T/base.npy",
+    "outputs/round102/confirmation/T/reference.npy",
+    "outputs/round102/confirmation/T/spatial.npy",
+    "outputs/round102/confirmation/prediction_v22.npy",
+    "outputs/round102/confirmation/prediction_C.npy",
+    "outputs/round102/confirmation/prediction_T.npy",
+    "outputs/round102/auxiliary/fit_indices.npy",
+    "outputs/round102/auxiliary/query_indices.npy",
+    "outputs/round102/auxiliary/fit_source_cache_indices.npy",
+    "outputs/round102/auxiliary/query_source_cache_indices.npy",
+    "outputs/round102/auxiliary/H.npy",
+    "outputs/round102/auxiliary/U.npy",
+    "outputs/round102/auxiliary/area.npy",
+    "outputs/round102/auxiliary/lgb.npy",
+    "outputs/round102/auxiliary/v22/native.npy",
+    "outputs/round102/auxiliary/v22/base.npy",
+    "outputs/round102/auxiliary/v22/reference.npy",
+    "outputs/round102/auxiliary/v22/spatial.npy",
+    "outputs/round102/auxiliary/C/native.npy",
+    "outputs/round102/auxiliary/C/base.npy",
+    "outputs/round102/auxiliary/C/reference.npy",
+    "outputs/round102/auxiliary/C/spatial.npy",
+    "outputs/round102/auxiliary/T/native.npy",
+    "outputs/round102/auxiliary/T/base.npy",
+    "outputs/round102/auxiliary/T/reference.npy",
+    "outputs/round102/auxiliary/T/spatial.npy",
+    "outputs/round102/auxiliary/prediction_v22.npy",
+    "outputs/round102/auxiliary/prediction_C.npy",
+    "outputs/round102/auxiliary/prediction_T.npy"
+  ],
+  "caution": "Post-hoc diagnostics on repeatedly used query windows, not blind validation or causal effects. No weights learned or predictions changed; Private unknown; only v22 selected.",
+  "elapsed_seconds": 6.875,
+  "input_sha256": {
+    "data_cache/train.pkl": "9acf8c65bf00f7067e9ea9612cabe9a1524b020a7596c8da3ce3d620131e5c00",
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/github_publish_r97_20260929/protected_before.json": "13f16bb94a4ef426c6bde2a23c271e743e9f0d13c5322dd4d7da19d82315004f",
+    "outputs/round102/auxiliary/C/base.npy": "58e4d02c0c0d298bc655cc36a779639bbc3b7ecdf8b7defba62d5dd69dc366f9",
+    "outputs/round102/auxiliary/C/native.npy": "3fec29b4c87fab5ec6a36db87ef2997aaac2d79d3fb841fe6cea3b5f1778d2e7",
+    "outputs/round102/auxiliary/C/reference.npy": "46a30ad38488f3fdd417ff4d13a031a0440d247bfbce562829c120b3926fbe63",
+    "outputs/round102/auxiliary/C/spatial.npy": "3a38fdd2cdbf3604ddccc1247ff62f6a0dbc18fc026bb28147b577146ad8d854",
+    "outputs/round102/auxiliary/H.npy": "41424bbabb65d252679f329cbcf573710fca6d1db625055f39a4183e4960c5e4",
+    "outputs/round102/auxiliary/T/base.npy": "4c3ef934ea7dd4f1cca553008cbabf51ff2199817f13b93a5a2e60d4f7a7d66e",
+    "outputs/round102/auxiliary/T/native.npy": "5dd01319048251c05ba1b05b271266c6df23f11f7b739152e5e623e05d1afd70",
+    "outputs/round102/auxiliary/T/reference.npy": "27b20523affc139c03778d446cbacc18d2ed2fe6ae4e9ce74f8388453a2f728d",
+    "outputs/round102/auxiliary/T/spatial.npy": "16df0060177227f9ff2fe8f952c577e8ab06d9eb29703c950c3e6c31cc23ddb9",
+    "outputs/round102/auxiliary/U.npy": "5f7e2089b05093cdb9fc1c41ff909b92a4775ce04013625ffc96f27beb885867",
+    "outputs/round102/auxiliary/area.npy": "59dcc2b65cb3dd5c17bcb6356f7ca656fbcb4b4c151b3b94127ce6436dd855d0",
+    "outputs/round102/auxiliary/execution.json": "8e636aa556a58077b176e77eb1af61c88f1b54b2281ebbbd01c3f93950771eb1",
+    "outputs/round102/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round102/auxiliary/fit_source_cache_indices.npy": "41114ad788dc5767447de8ad6053f9b155500e12799a401b7e5a85b05782a50e",
+    "outputs/round102/auxiliary/lgb.npy": "2c749621fd4d765a8735b983e485a268c86ae753f21d88c545837a826973f8be",
+    "outputs/round102/auxiliary/prediction_C.npy": "5bfaf3615fd38434516ca6487a18c23e50db825a6a1e70839e03dea3b75bc580",
+    "outputs/round102/auxiliary/prediction_T.npy": "7421d919be838371238fee7abfca87b3bbacfcefdfa72f1bd84776c58b66562c",
+    "outputs/round102/auxiliary/prediction_v22.npy": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479",
+    "outputs/round102/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round102/auxiliary/query_source_cache_indices.npy": "874df813179be04ce9153adbe97b922301330576651b623aaa1ed589047497e1",
+    "outputs/round102/auxiliary/stage_seal.json": "adc9ef58c50136bb8c213cbc73309bfe0918e4687a9a05f1f87687ad9813ab11",
+    "outputs/round102/auxiliary/v22/base.npy": "e27deb48c4c5bfe229b30310a6e55da1c16edc0756ff0597c9360875e2a6be1c",
+    "outputs/round102/auxiliary/v22/native.npy": "760466874b5b328728c13f7040606c18b37183152ae8c08c55e232480a759cd1",
+    "outputs/round102/auxiliary/v22/reference.npy": "fb14770587cc1158af4a79bf35511899e819aa6c9ffdb2633015337ad052fadf",
+    "outputs/round102/auxiliary/v22/spatial.npy": "63dd3be20c77943a71be10db93c6913b67e5a90fd72c11ad5393b05f85d69988",
+    "outputs/round102/confirmation/C/base.npy": "61803c216c0cf40c235e2ed4fedaddd107d127a86916f5f4dc35dc7fdc5e8cf4",
+    "outputs/round102/confirmation/C/native.npy": "c66563b8ddb98583c3cea17469f73eb77ae4b35927ab3da19324c5f2d2a6b0f7",
+    "outputs/round102/confirmation/C/reference.npy": "c9d9cd78cdbf76416746e9010eb3d85554e9e396522dbe4cb8a75fff6c4c6d41",
+    "outputs/round102/confirmation/C/spatial.npy": "d7b7a8e6cf8a453e1f40d4ed69b9764450be5c393307e9726ff0d5a9ae8a64b2",
+    "outputs/round102/confirmation/H.npy": "bb96799aa97fd65d7219e4e3f4c94bb774bbcf7812db1adaae49632fafa6edb7",
+    "outputs/round102/confirmation/T/base.npy": "822d9b7abf1ae7fc43ee0f7f0b18dc4526ab4251af85e0d4476f04c76bb756ff",
+    "outputs/round102/confirmation/T/native.npy": "e644ab43edf367b8cde6238728dfeebd5b12a784631508ccc67d822764532afb",
+    "outputs/round102/confirmation/T/reference.npy": "251d7e441ac9f2b3393fec7eb1cb6e273e586d1d29e6687b7ae21ce883c68f12",
+    "outputs/round102/confirmation/T/spatial.npy": "b185707b49c700bf0e7993708029f7b8e4290c06b7bd179e05638e4bad531311",
+    "outputs/round102/confirmation/U.npy": "01cce0d58655f1a4a39fe1b71a07e71d974f9a605320743d6edf7ea499ff029b",
+    "outputs/round102/confirmation/area.npy": "a8f684a5356f5206981dc966be577ac452c2166e41cd63aa0d34ffc10f7f81ad",
+    "outputs/round102/confirmation/execution.json": "854b90985320d57c7e9990355e52d3684b2343f27ae33b01a251a8ad4b8d0e81",
+    "outputs/round102/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round102/confirmation/fit_source_cache_indices.npy": "80db4ee06dc43fd911f565671031af91521ee1737920aff03f5b64d807b90f90",
+    "outputs/round102/confirmation/lgb.npy": "ee0836ddaf24049a7b4c4ba342f87b2d62ca40cd5fa5026f1e675698275c73d0",
+    "outputs/round102/confirmation/prediction_C.npy": "d3e547153658901c6f15fbeaf7c6468cec1c0d681bec97a467c16897dfe72a6f",
+    "outputs/round102/confirmation/prediction_T.npy": "d19279dcc5171ff0afc8298051fed0468c048d57b47057d2d72c91f94b51faf0",
+    "outputs/round102/confirmation/prediction_v22.npy": "f7fb850c4f2251bab7003eb354ac94fb7843a2aac0cf6e99994f0768102c0c64",
+    "outputs/round102/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round102/confirmation/query_source_cache_indices.npy": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+    "outputs/round102/confirmation/stage_seal.json": "519ce8e4eb2db3a5ec3a2d97e077fb9bfa242853e51e55e33ae96a3ff69fd57e",
+    "outputs/round102/confirmation/v22/base.npy": "e132ac0932b75e693a8d8466dbdadc5b464e4cd0abc6ce502baf82b81019a987",
+    "outputs/round102/confirmation/v22/native.npy": "a464ca48eaa5edc1a12586d7c09c8297700e125a684b6288cca71b84e17159e4",
+    "outputs/round102/confirmation/v22/reference.npy": "5d1a759118b0eacf95ac4dad757d6918a7fc44f6d61d5c118124a64feaa1913a",
+    "outputs/round102/confirmation/v22/spatial.npy": "948ba6c8887fa473983d02cfe1201799774403e26a6cfcf31c78a56a37f4c340",
+    "outputs/round102/development/C/base.npy": "6a93113d864e2b06cbb4eef6a87ccc98562437eedf3a79eb548bbfa1a2795f24",
+    "outputs/round102/development/C/native.npy": "f50ac698180da4d3e885cdc0c1f8bf63c7159daac13c372fcf0de0906cf04aa8",
+    "outputs/round102/development/C/reference.npy": "4934d28cf5fa9b098fe26c11de4cee49e9f7023f64cc02abcffc2193edc40f59",
+    "outputs/round102/development/C/spatial.npy": "21ec4cc89eb019195361b3daa8c7e61c801f0e6b7f56a347c81a2f06d3c08d73",
+    "outputs/round102/development/H.npy": "0c5a0bcb82f899edfa17b84ede5d4094ee72124eac8a94ba84bf4b066c4a7a92",
+    "outputs/round102/development/T/base.npy": "a4262f5b0cc34b2920d554630dc32805dadad35f254acb38fbc68674052a77df",
+    "outputs/round102/development/T/native.npy": "147d04e4f84ce9f6d57bce8be3667dde44468ab5b942e9961eb17dc8c16c72e1",
+    "outputs/round102/development/T/reference.npy": "4a86dfccaa0d736a658349009d1edeea4c73beee116ce449220394b58f5a7fa9",
+    "outputs/round102/development/T/spatial.npy": "109f7d89eb1478035659230ddc86765b71ac3e88a5d0da2339f568606997f98d",
+    "outputs/round102/development/U.npy": "8eb22194d22ca3ee40edb414295566d181efffc0cfc9acc07a36ed7a193eb179",
+    "outputs/round102/development/area.npy": "588ef8dc942c13cd64d354b6655c32608218d89d887aff5239b383f97c516edf",
+    "outputs/round102/development/execution.json": "23aa89cfd63e62691612ef1c6037e59b9179e6178c5f20d76fe7fc89d55c157b",
+    "outputs/round102/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round102/development/fit_source_cache_indices.npy": "10e0b3d52cd9cb8c4a2d36e7840c2d8eca4605888b08c61ec1a7bc4dc7d2c533",
+    "outputs/round102/development/lgb.npy": "b9fc67b54633b35ae34be098019823b39ab7273df87f5aaa89c957ecd27bbe46",
+    "outputs/round102/development/prediction_C.npy": "196ad8230740ce7e15f4a11de6f3b060a27bbddea5733d3e5b8e5c03576f7104",
+    "outputs/round102/development/prediction_T.npy": "f79103195e2e47ca105e5973d149cbba95ab7b2626dbcd4f761d53ca5eda96cc",
+    "outputs/round102/development/prediction_v22.npy": "82dada9c51585ea1840a7e1a688316a0ca8adf37c5a689b93708db7e6b946058",
+    "outputs/round102/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round102/development/query_source_cache_indices.npy": "aab5b28f06d9dfa9f0ee7213f19d2194ef619e31bf84378b8e046abfc2a27a59",
+    "outputs/round102/development/stage_seal.json": "0d9d1a87c882d6cbc6468107d3fdfd725e1752d4b9f0e3c11618e2b6436d90b9",
+    "outputs/round102/development/v22/base.npy": "1628880798a20b710b063477638f12eb7f546a16337ff35dc1ab76d57cd72966",
+    "outputs/round102/development/v22/native.npy": "762e7e9d3c3c4913e845fe4cb2bd427bc1f75e6b0a1308aeff9903ac7d293333",
+    "outputs/round102/development/v22/reference.npy": "a970955866f3a4bfabfaad87236cde4e5dc54dc7318f25f0366bf0c946077fb0",
+    "outputs/round102/development/v22/spatial.npy": "605ab0cdffb811bc2035baffae4b24ae16b22f371b4a8e5e94b6d01da45f4212",
+    "outputs/round102/evaluation/execution.json": "4d941f13a731bf27062f26db59cd1ebb1ae1c08a569764d9de10035786d84cd5",
+    "outputs/round102/evaluation/results.json": "e385ed630cdf3a2b2b0418867563a4064fbe08c1c979feb004787df2592f2347",
+    "outputs/round102/execution.json": "1efaf2ca4e451ae54293a850946334afce69cd7f0433fb2874630966aba9fff3",
+    "outputs/round102/sealed_manifest.json": "fd75ffd27998d008cedb65a13632e48c480f05beb9c69ee9bccf5b2e7a1aa68a",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "reports/round103_driver_selfcheck.json": "53babfe3447cadfaf21fc43aac0972811b79dd54a9d4d85e781e3e0d408ff420",
+    "reports/round103_math_selfcheck.json": "9b77979fa49acb2be82c83ca5c187d1bc6e48ca5dcb3ad9003311b531569e211"
+  },
+  "new_CSV": false,
+  "new_bootstrap": 0,
+  "new_models": 0,
+  "new_predictions": 0,
+  "parameters": {
+    "arms": [
+      "v22",
+      "C",
+      "T"
+    ],
+    "comparisons": [
+      "T-v22",
+      "T-C"
+    ],
+    "families": [
+      "all",
+      "status",
+      "city",
+      "relative_quarter",
+      "price_band"
+    ],
+    "fixed_status_weights": {
+      "missing": 0.0,
+      "new_nonmissing": 0.6338240605017739,
+      "seen": 0.36617593949822613
+    },
+    "helper_parameters": {
+      "arms": [
+        "v22",
+        "C",
+        "T"
+      ],
+      "base_formula": ".75*(.5*A+.5*P)+.25*L",
+      "changes": [
+        "improved",
+        "equal",
+        "worsened"
+      ],
+      "comparisons": [
+        "T-v22",
+        "T-C"
+      ],
+      "error_signs": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "layers": [
+        "native",
+        "base",
+        "reference",
+        "spatial",
+        "median"
+      ],
+      "new_fit_or_bootstrap": false,
+      "round": 103,
+      "routes": [
+        "below",
+        "lower_equal",
+        "inside",
+        "upper_equal",
+        "above",
+        "both_equal"
+      ],
+      "row_identity_tolerance_TWD": 1e-05,
+      "weights_renormalized": false,
+      "zero_sign_rule": "exact_float64_zero"
+    },
+    "index_arrays_per_stage": 4,
+    "maximum_MAE_replay_difference_TWD": 1e-06,
+    "maximum_identity_residual_TWD": 1e-05,
+    "model_loads": 0,
+    "new_CSV": false,
+    "new_bootstrap": 0,
+    "new_fits": 0,
+    "new_predictions": 0,
+    "prior_builds": 0,
+    "relative_quarter_horizon_days": {
+      "Q1": [
+        0,
+        91
+      ],
+      "Q2": [
+        92,
+        183
+      ],
+      "Q3": [
+        184,
+        275
+      ],
+      "Q4": [
+        276,
+        null
+      ]
+    },
+    "round": 103,
+    "saved_prediction_arrays_per_stage": 19,
+    "stage_order": [
+      "development",
+      "confirmation",
+      "auxiliary"
+    ]
+  },
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_target_values_persisted": false,
+  "raw_pickle_whole_table_deserialized": true,
+  "request": {
+    "path": "outputs/round103_launcher_20260929/request.json",
+    "sha256": "fe07ab8c4f63d6e39b963cd24fb2e8f808084de18a06dd942c7e280298585bde"
+  },
+  "round": 103,
+  "row_arrays_loaded": 70,
+  "selected_submission": "v22",
+  "source_sha256": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round100_temporal_prior_evaluate_v2.py": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+    "src/round103_complementarity_diagnostics.py": "c74dcddbde9139f0e375da978856f5a33e9b58f9554c2a3c111602a79381fe9d",
+    "src/round103_complementarity_math.py": "af11c5a429063ffd71b0899ad4183c39c23506b4228631656b79e1744bffd538",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "stage_order": [
+    "development",
+    "confirmation",
+    "auxiliary"
+  ],
+  "stages": {
+    "auxiliary": {
+      "MAE_replay": {
+        "all_30_MAE_values_within_1e_6": true,
+        "maximum_absolute_difference_TWD": 4.656612873077393e-10
+      },
+      "elapsed_seconds": 1.2660000000614673,
+      "results": {
+        "path": "outputs/round103/auxiliary/results.json",
+        "sha256": "04b31dfeca187f0c553d549d0781433895a51b3bf8aa662ac70b2ce8964f87af"
+      }
+    },
+    "confirmation": {
+      "MAE_replay": {
+        "all_30_MAE_values_within_1e_6": true,
+        "maximum_absolute_difference_TWD": 4.656612873077393e-10
+      },
+      "elapsed_seconds": 1.952999999979511,
+      "results": {
+        "path": "outputs/round103/confirmation/results.json",
+        "sha256": "04d2b70059657db087a8032d371c161707b8d1a1c893467b496fea3200914fac"
+      }
+    },
+    "development": {
+      "MAE_replay": {
+        "all_30_MAE_values_within_1e_6": true,
+        "maximum_absolute_difference_TWD": 4.656612873077393e-10
+      },
+      "elapsed_seconds": 1.1880000000819564,
+      "results": {
+        "path": "outputs/round103/development/results.json",
+        "sha256": "3d5be682326a6233cfca2176aea552f0a37399f93013821077c2da4a125efc60"
+      }
+    }
+  },
+  "status": "three_window_complementarity_diagnostics_completed"
+}

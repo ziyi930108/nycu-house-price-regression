@@ -1,0 +1,103 @@
+{
+  "check_count": 15,
+  "checks": [
+    "successful_teacher_header",
+    "unfinished_teacher_rejected",
+    "wrong_teacher_origin_rejected",
+    "query_labels_teacher_rejected",
+    "same_identity_merge",
+    "conflicting_source_rejected",
+    "own_stage_NPZ_allowed",
+    "forbidden_readset_data_cache/train.pkl",
+    "forbidden_readset_outputs/round102/confirmation/T/prepared.npz",
+    "forbidden_readset_outputs/round104_teacher/fit_y.npy",
+    "forbidden_readset_data_cache/test.pkl",
+    "trainer_metadata_contract",
+    "unmatched_initialization_rejected",
+    "training_input_mismatch_rejected",
+    "wrong_objective_rejected"
+  ],
+  "elapsed_seconds": 0.2970000000204891,
+  "exit_code": 0,
+  "new_fit_predict_score_calls": 0,
+  "parameters": {
+    "C_role": "same-subset gradient-scale-matched native objective",
+    "T_role": "same-subset fixed-base objective",
+    "arm_order": [
+      "C",
+      "T"
+    ],
+    "epochs": 30,
+    "geography_historically_asof": false,
+    "new_CSV": false,
+    "numeric_count": 145,
+    "price_label_temporal_OOT": true,
+    "prior_or_R_S_build_calls": 0,
+    "query_labels_available": false,
+    "round": 104,
+    "same_prepared_for_both_arms": true,
+    "sample_weights_renormalized": false,
+    "seed": 42,
+    "stage_order": [
+      "development",
+      "confirmation",
+      "auxiliary"
+    ],
+    "student_new_NN_fits": 6,
+    "teacher_new_native_fits": 2,
+    "teacher_origins": {
+      "auxiliary": [
+        "pre_auxiliary"
+      ],
+      "confirmation": [
+        "pre_auxiliary",
+        "auxiliary",
+        "development"
+      ],
+      "development": [
+        "pre_auxiliary",
+        "auxiliary"
+      ]
+    },
+    "total_new_native_fits": 8
+  },
+  "plan_sha256": "106fda0c56cc7c5660c6255bb572fd78c59ccac9c13d25604bbe592204e43778",
+  "real_data_read": false,
+  "source_sha256": {
+    "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round100_temporal_prior_evaluate_v2.py": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+    "src/round104_base_aware_train.py": "726636bab32437947f2a446c5baec1e2b4788074a221740f03bdf1c928d2ddaf",
+    "src/round104_composition.py": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0",
+    "src/round104_experiment.py": "e939647e2e463bcf320eb58ac03727587ac21268f45ac707bbde42e2a72373da",
+    "src/round104_student_preparation.py": "59dd1dacd5c7516fed3a7b2997714f49340763cd898fd30ca7c39bfa91368f59",
+    "src/round12_experiment.py": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+    "src/round12_log_geo.py": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round33_reproduction.py": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+    "src/round35_reproduction.py": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+    "src/round36_combination.py": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+    "src/round38_fixed_average.py": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+    "src/round39_city_road_experiment.py": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round47_nn_encode.py": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round48_nn_experiment.py": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round6_common.py": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+    "src/round6_evaluate.py": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round6_prepare_geo.py": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+    "src/round8_experiment.py": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+    "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "status": "passed",
+  "synthetic_only": true
+}

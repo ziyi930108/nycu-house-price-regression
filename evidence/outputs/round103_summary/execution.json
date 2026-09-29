@@ -1,0 +1,15 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 0.0779999999795109,
+  "exit_code": 0,
+  "failure": null,
+  "input_sha256": {
+    "outputs/round103/auxiliary/results.json": "04b31dfeca187f0c553d549d0781433895a51b3bf8aa662ac70b2ce8964f87af",
+    "outputs/round103/confirmation/results.json": "04d2b70059657db087a8032d371c161707b8d1a1c893467b496fea3200914fac",
+    "outputs/round103/development/results.json": "3d5be682326a6233cfca2176aea552f0a37399f93013821077c2da4a125efc60",
+    "outputs/round103/execution.json": "3432a7e1377254899e9e7bdbe66433c6ffecd386488a94cd92897c79bfc7ab76",
+    "outputs/round103/results.json": "6180805006d80c1cb55d26830cd1bcb17c788fce222f47a68465b28311a965ec"
+  },
+  "row_arrays_or_labels_read": false,
+  "source_sha256": "2975dd0168e8194fd7ac8058098ada4e8905f83f8f399aced497464d51d1a988"
+}

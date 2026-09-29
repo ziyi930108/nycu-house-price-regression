@@ -1,0 +1,469 @@
+{
+  "NPZ_full_roundtrip_exact": true,
+  "all_five_train_arrays_exact_source_subset": true,
+  "all_input_arrays": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        133697,
+        23
+      ],
+      "values_sha256": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        133697,
+        145
+      ],
+      "values_sha256": "c23430fde53242c8a107f44ea7607b683cbf47cc5239c965612a7ef6a8ece27b"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32"
+    },
+    "train_base_offset_million": {
+      "dtype": "float32",
+      "shape": [
+        204586
+      ],
+      "values_sha256": "865f949849e0d45060abcbc90d125d56e0194a82ddf53e310a1f27a97fbe1a02"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        204586,
+        23
+      ],
+      "values_sha256": "dfca84bdf57bdf10a1ae7af70eb6930f51ba8d42656b7c3e131ea9410527af94"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        204586,
+        145
+      ],
+      "values_sha256": "596d599b82bcef5188c65ec8968c9e34fd919cdaaf2f1a42b2bfb4e4952cdb99"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        204586
+      ],
+      "values_sha256": "6239a9a69f43bb48157a86b40efe6ab8145e8f689365e46542f20830661018cc"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        204586
+      ],
+      "values_sha256": "4d59babff4f99712dbeef7359a80fe4e505a0e37222b8a38a1ce0ef66072078a"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        204586
+      ],
+      "values_sha256": "2cbd31ee5895c2fb6239a67aaf7d9ad9e4552ec231bb408604b2116ec32dc0c0"
+    }
+  },
+  "cutoff": "2023-08-11",
+  "elapsed_seconds": 8.797000000020489,
+  "eligible_without_forward_teacher_rows": 116908,
+  "fit_rows": 204586,
+  "initial_head_bias": 0.7375439514854777,
+  "initial_training_median_ratio": 1.1284280519180703,
+  "input_sha256": {
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/round102/auxiliary/area.npy": "59dcc2b65cb3dd5c17bcb6356f7ca656fbcb4b4c151b3b94127ce6436dd855d0",
+    "outputs/round102/auxiliary/lgb.npy": "2c749621fd4d765a8735b983e485a268c86ae753f21d88c545837a826973f8be",
+    "outputs/round102/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round102/auxiliary/stage_seal.json": "adc9ef58c50136bb8c213cbc73309bfe0918e4687a9a05f1f87687ad9813ab11",
+    "outputs/round102/confirmation/T/prepared.npz": "9d0d095a20927403026f3d6e6f32251ed2747d255d1d5e7720a453091b3dc3c1",
+    "outputs/round102/confirmation/eligible_positions.npy": "a05d8ba7e2f6a788245770b0711d170ea8c1b3bd268c55c956407c14a31e821e",
+    "outputs/round102/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round102/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round102/confirmation/stage_seal.json": "519ce8e4eb2db3a5ec3a2d97e077fb9bfa242853e51e55e33ae96a3ff69fd57e",
+    "outputs/round102/development/area.npy": "588ef8dc942c13cd64d354b6655c32608218d89d887aff5239b383f97c516edf",
+    "outputs/round102/development/lgb.npy": "b9fc67b54633b35ae34be098019823b39ab7273df87f5aaa89c957ecd27bbe46",
+    "outputs/round102/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round102/development/stage_seal.json": "0d9d1a87c882d6cbc6468107d3fdfd725e1752d4b9f0e3c11618e2b6436d90b9",
+    "outputs/round102/sealed_manifest.json": "fd75ffd27998d008cedb65a13632e48c480f05beb9c69ee9bccf5b2e7a1aa68a",
+    "outputs/round104_teacher/models/area_predictions.npy": "2e78760c972d4c1b5c7c3e644a03e8f6d0e2fd64065547d55c84ca8941f3d3bf",
+    "outputs/round104_teacher/models/lgb_predictions.npy": "30022daddb705b6d9fe0d82befa854b349a7bba384c6a49b4f991f956f15d7ff",
+    "outputs/round104_teacher/models/sealed_manifest.json": "dcce7daba213df2efb56ecb8ab404f56f65458e0916a31235def4f8c0b09f28d",
+    "outputs/round104_teacher/preparation/query_indices.npy": "dc7d5ca426e1985185ab2e12e44439864438b6a62cfdff99eda5c132dc528e3c",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "reports/round104_plan.md": "106fda0c56cc7c5660c6255bb572fd78c59ccac9c13d25604bbe592204e43778"
+  },
+  "new_prior_encoder_model_calls": 0,
+  "nonpositive_equivalent_residual_rows_retained": 1292,
+  "offset_from_float64_then_float32": true,
+  "other_stage_NPZ_opened": false,
+  "parameters": {
+    "exact_keys": [
+      "train_num",
+      "train_cat",
+      "train_y_million",
+      "train_price_factor_million",
+      "train_sample_weight",
+      "query_num",
+      "query_cat",
+      "query_price_factor_million",
+      "cardinalities",
+      "train_base_offset_million"
+    ],
+    "geography_is_historically_asof": false,
+    "numeric_count": 145,
+    "offset_formula": "float32((.375*teacher_area_TWD+.25*teacher_lgb_TWD)/1e6)",
+    "plan_sha256": "106fda0c56cc7c5660c6255bb572fd78c59ccac9c13d25604bbe592204e43778",
+    "query_four_arrays_unchanged": true,
+    "round": 104,
+    "sample_weights_renormalized": false,
+    "selection_uses_labels_or_errors": false,
+    "source": "R102 T only, own stage",
+    "teacher_origins": {
+      "auxiliary": [
+        "pre_auxiliary"
+      ],
+      "confirmation": [
+        "pre_auxiliary",
+        "auxiliary",
+        "development"
+      ],
+      "development": [
+        "pre_auxiliary",
+        "auxiliary"
+      ]
+    }
+  },
+  "plan_sha256": "106fda0c56cc7c5660c6255bb572fd78c59ccac9c13d25604bbe592204e43778",
+  "prepared": {
+    "path": "outputs/round104/confirmation/preparation/prepared.npz",
+    "sha256": "8c727533effb998f65f69b6dc9f66ea2265e8b47c7df60f4ee2dc3344060368c"
+  },
+  "query_end": "2024-08-10",
+  "query_four_arrays_bitwise_unchanged": true,
+  "query_labels_available": false,
+  "query_rows": 133697,
+  "raw_price_pickle_opened": false,
+  "round": 104,
+  "same_prepared_for_C_and_T": true,
+  "sample_weights_renormalized": false,
+  "schema_version": 1,
+  "selected_sample_weight_sum_float64": 311686.1162484586,
+  "selection_uses_labels_or_errors": false,
+  "source_eligible_rows": 321494,
+  "source_ineligible_rows": 56,
+  "source_input_arrays": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        133697,
+        23
+      ],
+      "values_sha256": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        133697,
+        145
+      ],
+      "values_sha256": "c23430fde53242c8a107f44ea7607b683cbf47cc5239c965612a7ef6a8ece27b"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        321494,
+        23
+      ],
+      "values_sha256": "ec19e919ab1716fada87d210d41eb0f1c66b9781549e4d07412a13705fbadf2d"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        321494,
+        145
+      ],
+      "values_sha256": "c515282d8309c2f03c17e3b0f37f524733f9294f931fa46432f2c3a0eb25434e"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "9ee89f37455f6607246424c83207f8dcab53c08303203008914823ca514f5e9d"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "fade225c8960a04fb48264bfdbea1ba83727985cf4a527185095d7101c25ad10"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "2e31a4fe2fa9ef653ca73e4cc1c24b5a454aa036065d65ea8805ce39f5b6af0a"
+    }
+  },
+  "source_npz_row_positions": {
+    "dtype": "int64",
+    "path": "outputs/round104/confirmation/preparation/source_npz_row_positions.npy",
+    "sha256": "24b78c1440290c7fac4e376446cc4d23a8865a1d5073c23255d228f4d50c683c",
+    "shape": [
+      204586
+    ],
+    "values_sha256": "167a332cf0731760e3d69c0b5c2deac2677b42dccb41f38bde082ff68d5ef5a8"
+  },
+  "source_outer_fit_rows": 321550,
+  "source_records": {
+    "canonical_mapping": {
+      "path": "outputs/round6/geography/development/train_source_cache_indices.npy",
+      "sha256": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4"
+    },
+    "eligible_positions": {
+      "dtype": "int64",
+      "path": "outputs/round102/confirmation/eligible_positions.npy",
+      "sha256": "a05d8ba7e2f6a788245770b0711d170ea8c1b3bd268c55c956407c14a31e821e",
+      "shape": [
+        321494
+      ],
+      "values_sha256": "f19938af5462171ab735ec36ef49622879ba8f6e203faa57fe13c08ea554269f"
+    },
+    "features": {
+      "path": "data_cache/train_features.pkl",
+      "sha256": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7"
+    },
+    "fit_indices": {
+      "dtype": "int64",
+      "path": "outputs/round102/confirmation/fit_indices.npy",
+      "sha256": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+    },
+    "prepared": {
+      "path": "outputs/round102/confirmation/T/prepared.npz",
+      "sha256": "9d0d095a20927403026f3d6e6f32251ed2747d255d1d5e7720a453091b3dc3c1"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "path": "outputs/round102/confirmation/query_indices.npy",
+      "sha256": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+    },
+    "stage_seal": {
+      "path": "outputs/round102/confirmation/stage_seal.json",
+      "sha256": "519ce8e4eb2db3a5ec3a2d97e077fb9bfa242853e51e55e33ae96a3ff69fd57e"
+    }
+  },
+  "source_sample_weight_sum_float64": 321549.97504535824,
+  "source_sha256": {
+    "src/round104_student_preparation.py": "59dd1dacd5c7516fed3a7b2997714f49340763cd898fd30ca7c39bfa91368f59"
+  },
+  "stage": "confirmation",
+  "status": "matched_base_aware_student_prepared",
+  "student_fit_indices": {
+    "dtype": "int64",
+    "path": "outputs/round104/confirmation/preparation/student_fit_indices.npy",
+    "sha256": "70b7b5ee6c07a75219f0187bdd1bdc20ad60e85cfe18ebf317cb672828f0143b",
+    "shape": [
+      204586
+    ],
+    "values_sha256": "cff629f51153f3157fd60a226f9dc876167b132dfbbec309875920c3a60a7e50"
+  },
+  "student_outer_fit_positions": {
+    "dtype": "int64",
+    "path": "outputs/round104/confirmation/preparation/student_outer_fit_positions.npy",
+    "sha256": "7a9c3c54bf8c3e1307f59aafb65fedefe2496629306103dac35533b8c89b0f1c",
+    "shape": [
+      204586
+    ],
+    "values_sha256": "3188bec13a7607b9dee0707c88cf3bfc95be8daae6bf1b28325b72b69ff73296"
+  },
+  "teacher_counts": {
+    "auxiliary": {
+      "cutoff": "2021-08-11",
+      "full_forward_rows": 105511,
+      "query_end": "2022-08-10",
+      "selected_student_rows": 105511
+    },
+    "development": {
+      "cutoff": "2022-08-11",
+      "full_forward_rows": 81234,
+      "query_end": "2023-08-10",
+      "selected_student_rows": 81234
+    },
+    "pre_auxiliary": {
+      "cutoff": "2020-08-11",
+      "full_forward_rows": 17841,
+      "query_end": "2021-08-10",
+      "selected_student_rows": 17841
+    }
+  },
+  "teacher_origin_codes": {
+    "dtype": "int64",
+    "path": "outputs/round104/confirmation/preparation/teacher_origin_codes.npy",
+    "sha256": "8e83bc841737034bf63593f434240c11e0ebba4561ff7336deb6f0ef9abf27c7",
+    "shape": [
+      204586
+    ],
+    "values_sha256": "5c390fb869e6f90e3d08eb0bc37a9cf851fcb7692059c33daa0439f9d055cd85"
+  },
+  "teacher_origin_order": [
+    "pre_auxiliary",
+    "auxiliary",
+    "development"
+  ],
+  "teacher_query_positions": {
+    "dtype": "int64",
+    "path": "outputs/round104/confirmation/preparation/teacher_query_positions.npy",
+    "sha256": "d3da926294ada2c7f3145b8411693cd9fe893efb4c5ad470f76abb483a9db8a5",
+    "shape": [
+      204586
+    ],
+    "values_sha256": "e7c06a9a69cf0b81c3a95934fcbeee6905ac1a9be1fdbe14678f268db327e159"
+  },
+  "teacher_records": {
+    "auxiliary": {
+      "area": {
+        "dtype": "float64",
+        "path": "outputs/round102/auxiliary/area.npy",
+        "sha256": "59dcc2b65cb3dd5c17bcb6356f7ca656fbcb4b4c151b3b94127ce6436dd855d0",
+        "shape": [
+          105511
+        ],
+        "values_sha256": "0135765786eacde874e5cd4eba42103fe722a67b493cdaff44fd800d55417198"
+      },
+      "cutoff": "2021-08-11",
+      "lgb": {
+        "dtype": "float64",
+        "path": "outputs/round102/auxiliary/lgb.npy",
+        "sha256": "2c749621fd4d765a8735b983e485a268c86ae753f21d88c545837a826973f8be",
+        "shape": [
+          105511
+        ],
+        "values_sha256": "3ad660e00f48118575a6649eb466cf9fb4ae9091ed76c42fb3d5f845009e7885"
+      },
+      "query_end": "2022-08-10",
+      "query_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/auxiliary/query_indices.npy",
+        "sha256": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+        "shape": [
+          105511
+        ],
+        "values_sha256": "3ad65ebb87d7ced138d9b04ddc1f6658885d1c6afcecb846ccf2e230137e80bf"
+      },
+      "stage_seal": {
+        "path": "outputs/round102/auxiliary/stage_seal.json",
+        "sha256": "adc9ef58c50136bb8c213cbc73309bfe0918e4687a9a05f1f87687ad9813ab11"
+      }
+    },
+    "development": {
+      "area": {
+        "dtype": "float64",
+        "path": "outputs/round102/development/area.npy",
+        "sha256": "588ef8dc942c13cd64d354b6655c32608218d89d887aff5239b383f97c516edf",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "b0177f3e6dc659d5a6370608267b47867cd7a24a0ce5e3276632a2c0723a2fd2"
+      },
+      "cutoff": "2022-08-11",
+      "lgb": {
+        "dtype": "float64",
+        "path": "outputs/round102/development/lgb.npy",
+        "sha256": "b9fc67b54633b35ae34be098019823b39ab7273df87f5aaa89c957ecd27bbe46",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6a18771a5fb977a18c9b4c950d0f5b68824e114b7fb2d76a13db2263ec5ca89b"
+      },
+      "query_end": "2023-08-10",
+      "query_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/development/query_indices.npy",
+        "sha256": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43"
+      },
+      "stage_seal": {
+        "path": "outputs/round102/development/stage_seal.json",
+        "sha256": "0d9d1a87c882d6cbc6468107d3fdfd725e1752d4b9f0e3c11618e2b6436d90b9"
+      }
+    },
+    "pre_auxiliary": {
+      "area": {
+        "dtype": "float64",
+        "path": "outputs/round104_teacher/models/area_predictions.npy",
+        "sha256": "2e78760c972d4c1b5c7c3e644a03e8f6d0e2fd64065547d55c84ca8941f3d3bf",
+        "shape": [
+          17841
+        ],
+        "values_sha256": "f540606bdb06095819864cff3d6001ca55ee9fc5558837099e6e2ef26cd23de4"
+      },
+      "cutoff": "2020-08-11",
+      "lgb": {
+        "dtype": "float64",
+        "path": "outputs/round104_teacher/models/lgb_predictions.npy",
+        "sha256": "30022daddb705b6d9fe0d82befa854b349a7bba384c6a49b4f991f956f15d7ff",
+        "shape": [
+          17841
+        ],
+        "values_sha256": "14746e0e71baaaa97f483180b7ca7246f9c24de1d47e40641f3486deb0f19a8f"
+      },
+      "query_end": "2021-08-10",
+      "query_indices": {
+        "dtype": "int64",
+        "path": "outputs/round104_teacher/preparation/query_indices.npy",
+        "sha256": "dc7d5ca426e1985185ab2e12e44439864438b6a62cfdff99eda5c132dc528e3c",
+        "shape": [
+          17841
+        ],
+        "values_sha256": "d56ca2e95a367a039d7d6ee0621538a9eaedbf20531d7d7d49ac8f5987b94616"
+      },
+      "stage_seal": {
+        "path": "outputs/round104_teacher/models/sealed_manifest.json",
+        "sha256": "dcce7daba213df2efb56ecb8ab404f56f65458e0916a31235def4f8c0b09f28d"
+      }
+    }
+  },
+  "teacher_rows_not_in_source_eligible": 0,
+  "union_teacher_rows": 204586,
+  "union_unique_teacher_rows": 204586
+}

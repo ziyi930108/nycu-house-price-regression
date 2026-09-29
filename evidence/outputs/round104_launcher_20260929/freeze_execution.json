@@ -1,0 +1,14 @@
+{
+  "elapsed_seconds": 1.9850000001024455,
+  "evaluation_request": {
+    "path": "outputs/round104_launcher_20260929/evaluation_request.json",
+    "sha256": "63e833b2fef4b5eb35425276aaa899e996a7ff122adab5cd529a61a136e5df3d"
+  },
+  "exit_code": 0,
+  "query_prices_read": false,
+  "research_request": {
+    "path": "outputs/round104_launcher_20260929/research_request.json",
+    "sha256": "874099c538ac365f1980c0e826eaac468e47b87684671dd4e5e41d9159dafc2b"
+  },
+  "source_count": 35
+}

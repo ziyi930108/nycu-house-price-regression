@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-09-28T23:26:24.285719+00:00",
+  "completed_at_utc": "2026-09-28T23:26:31.967556+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 7.672000000020489,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round103_complementarity_diagnostics.py",
+    "--run",
+    "--request",
+    "C:\\NYCU_ML\\outputs\\round103_launcher_20260929\\request.json",
+    "--out",
+    "C:\\NYCU_ML\\outputs\\round103"
+  ],
+  "request_sha256": "fe07ab8c4f63d6e39b963cd24fb2e8f808084de18a06dd942c7e280298585bde",
+  "new_model_fits": 0,
+  "automatic_retry": false
+}

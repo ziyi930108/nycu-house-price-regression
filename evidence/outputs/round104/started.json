@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-09-28T23:57:03.463817+00:00",
+  "request": {
+    "path": "outputs/round104_launcher_20260929/research_request.json",
+    "sha256": "874099c538ac365f1980c0e826eaac468e47b87684671dd4e5e41d9159dafc2b"
+  },
+  "stage_order": [
+    "development",
+    "confirmation",
+    "auxiliary"
+  ]
+}

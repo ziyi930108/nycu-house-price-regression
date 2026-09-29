@@ -1,0 +1,70 @@
+{
+  "categorical_count": 21,
+  "category_state": {
+    "path": "outputs/round104_teacher/models/lgb/category_state.json",
+    "sha256": "6521f8279ac03c8a53f386fb4c8e1ab7fc7d1af21f3ae00bd630a7d9f442d9ae"
+  },
+  "eval_set_used": false,
+  "feature_count": 87,
+  "fit_rows": 116964,
+  "fit_seconds": 103.95299999997951,
+  "geography_features_used": false,
+  "iterations": 3999,
+  "lightgbm_version": "4.7.0",
+  "model": {
+    "path": "outputs/round104_teacher/models/lgb/model.txt",
+    "sha256": "c635016b26419b6fe2953ac20ca110126c34f53890ea3413e1bc9a07bd7c3705"
+  },
+  "parameters": {
+    "cat_l2": 10.0,
+    "cat_smooth": 20.0,
+    "colsample_bytree": 0.9,
+    "deterministic": true,
+    "force_col_wise": true,
+    "learning_rate": 0.04,
+    "max_cat_threshold": 64,
+    "max_cat_to_onehot": 4,
+    "max_depth": -1,
+    "metric": "None",
+    "min_child_samples": 40,
+    "n_estimators": 3999,
+    "n_jobs": 4,
+    "num_leaves": 63,
+    "objective": "regression_l1",
+    "random_state": 42,
+    "reg_lambda": 2.0,
+    "subsample": 0.9,
+    "subsample_freq": 1,
+    "verbosity": -1
+  },
+  "prediction": {
+    "dtype": "float64",
+    "path": "outputs/round104_teacher/models/lgb/predictions_twd.npy",
+    "sha256": "30022daddb705b6d9fe0d82befa854b349a7bba384c6a49b4f991f956f15d7ff",
+    "shape": [
+      17841
+    ],
+    "values_sha256": "14746e0e71baaaa97f483180b7ca7246f9c24de1d47e40641f3486deb0f19a8f"
+  },
+  "query_labels_available": false,
+  "query_rows": 17841,
+  "reload_rows": 17841,
+  "sample_weight_formula": "effective_area / 100",
+  "sample_weight_identity": {
+    "dtype": "float64",
+    "shape": [
+      116964
+    ],
+    "values_sha256": "eef671df884de2a748eaaa71651b9d45ba0302a1612aaebc2986c8051e06debc"
+  },
+  "saved_model_reload_exact": true,
+  "status": "completed",
+  "target_identity": {
+    "dtype": "float64",
+    "shape": [
+      116964
+    ],
+    "values_sha256": "c8ee6df082e8a6743f512506506f2775496176d31524d7ddb3fefdd174c84f4f"
+  },
+  "target_mode": "unit"
+}

@@ -1,0 +1,124 @@
+{
+  "check_count": 14,
+  "checks": [
+    "fixed_weight_seen_new_missing",
+    "all_fixed_families",
+    "missing_city_separate",
+    "five_price_boundaries",
+    "relative_quarter_boundaries",
+    "positive_weight_group_absent",
+    "exact_23_record_readset",
+    "wrong_stage_vector",
+    "thirty_MAE_replay_values",
+    "weighted_MAE_mismatch",
+    "unordered_query_mapping",
+    "raw_source_index_order",
+    "actual_helper_API_all_5_families",
+    "actual_helper_retains_36_routes_and_9_cells"
+  ],
+  "elapsed_seconds": 0.01500000013038516,
+  "parameters": {
+    "arms": [
+      "v22",
+      "C",
+      "T"
+    ],
+    "comparisons": [
+      "T-v22",
+      "T-C"
+    ],
+    "families": [
+      "all",
+      "status",
+      "city",
+      "relative_quarter",
+      "price_band"
+    ],
+    "fixed_status_weights": {
+      "missing": 0.0,
+      "new_nonmissing": 0.6338240605017739,
+      "seen": 0.36617593949822613
+    },
+    "helper_parameters": {
+      "arms": [
+        "v22",
+        "C",
+        "T"
+      ],
+      "base_formula": ".75*(.5*A+.5*P)+.25*L",
+      "changes": [
+        "improved",
+        "equal",
+        "worsened"
+      ],
+      "comparisons": [
+        "T-v22",
+        "T-C"
+      ],
+      "error_signs": [
+        "negative",
+        "zero",
+        "positive"
+      ],
+      "layers": [
+        "native",
+        "base",
+        "reference",
+        "spatial",
+        "median"
+      ],
+      "new_fit_or_bootstrap": false,
+      "round": 103,
+      "routes": [
+        "below",
+        "lower_equal",
+        "inside",
+        "upper_equal",
+        "above",
+        "both_equal"
+      ],
+      "row_identity_tolerance_TWD": 1e-05,
+      "weights_renormalized": false,
+      "zero_sign_rule": "exact_float64_zero"
+    },
+    "index_arrays_per_stage": 4,
+    "maximum_MAE_replay_difference_TWD": 1e-06,
+    "maximum_identity_residual_TWD": 1e-05,
+    "model_loads": 0,
+    "new_CSV": false,
+    "new_bootstrap": 0,
+    "new_fits": 0,
+    "new_predictions": 0,
+    "prior_builds": 0,
+    "relative_quarter_horizon_days": {
+      "Q1": [
+        0,
+        91
+      ],
+      "Q2": [
+        92,
+        183
+      ],
+      "Q3": [
+        184,
+        275
+      ],
+      "Q4": [
+        276,
+        null
+      ]
+    },
+    "round": 103,
+    "saved_prediction_arrays_per_stage": 19,
+    "stage_order": [
+      "development",
+      "confirmation",
+      "auxiliary"
+    ]
+  },
+  "plan_sha256": "9d59b91dbb3cc6dd1adef038a4ea68c307da024fb2fe908b20fde20f03a0955c",
+  "real_arrays_labels_models_read": false,
+  "real_fit_score_calls": 0,
+  "source_sha256": "91b6805961b47ae179ce75fabdee82d251a3b39f694724eec5a165e77ff8405b",
+  "status": "passed"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-09-29T00:13:40.846324+00:00",
+  "published_base": "cca69847befe8f123f19ff7351be0e23cc1ec7f2",
+  "copied_count": 228,
+  "copied_bytes": 6150536,
+  "baseline_files": 1952,
+  "baseline_changed_only": [
+    "HANDOFF.md",
+    "README.md",
+    "research/README.md"
+  ],
+  "navigation_changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "72964a998dd8071aa8e88bd83969c0a4a6a5a5dd2efc0243e6d4af34cbc040b6",
+      "after_sha256": "fe90d62f53a4c63c7273e3c3355cd4595567daf464f26910502be0205eb540b4",
+      "bytes": 5380
+    },
+    {
+      "path": "HANDOFF.md",
+      "before_sha256": "355fd9ec770c772c132cfd05578d6cf353d92d5ef0c923725799b5e72521d8b2",
+      "after_sha256": "f7e8ae60e5d4418e6917a9816269b104bbd04714922be6ab287435027f7b864e",
+      "bytes": 6570
+    },
+    {
+      "path": "research/README.md",
+      "before_sha256": "5b2f0306048c0f9793df07e93948ae1657131978ab7d0dee4261a1a907694a44",
+      "after_sha256": "66ad359831ef8bd59c74a4249076bdbace88ce9269225d35d0fa532b7905feac",
+      "bytes": 18944
+    },
+    {
+      "path": "docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md",
+      "before_sha256": null,
+      "after_sha256": "9e16e8fa5c5bef551bdf9370fd56fade6243f1721f4a9f2df8838969560a7b07",
+      "bytes": 6099
+    }
+  ],
+  "navigation_local_links_checked": 134,
+  "all_navigation_links_resolve": true,
+  "all_original_copies_exact": true,
+  "interval_counts": {
+    "negative": 8,
+    "crossing": 6,
+    "positive": 10
+  },
+  "input_sha256": {
+    "outputs/round103/execution.json": "3432a7e1377254899e9e7bdbe66433c6ffecd386488a94cd92897c79bfc7ab76",
+    "outputs/round104_teacher/models/execution.json": "315e1c6a979be73abdd4fb1ca0ca6d9e4f2428735e9ff52f2c792b994f50543d",
+    "outputs/round104_teacher_launcher_20260929/execution.json": "069373268bccdcad9c67147408b17aeadd0b9bf29cadfba2f39ab0738b21738e",
+    "outputs/round104/execution.json": "b0638cd3b87eb492535580fdbdc63689458d4c4df0c2dd7b131c15a7220f33fd",
+    "outputs/round104/evaluation/execution.json": "6abb402e6ace515ae8e20d613783dee3672f4bbe1ab481441fa69b43c32b2664",
+    "outputs/round104_summary/execution.json": "dfce04b59188e87e88bc5855189c925d4ff394b95d1e37727d2b7df0c6a4a411",
+    "outputs/round104/evaluation/results.json": "3c2c27c7299100c64d97bfac3750f92391f5f7b34bfd8637b4c402ca65fd52a4",
+    "outputs/round104/sealed_manifest.json": "e9f20e033ecd8625ee50dc90345d93d6f08955ca69a5c7790eb8a56fac6e1a61",
+    "outputs/round104_teacher/models/sealed_manifest.json": "dcce7daba213df2efb56ecb8ab404f56f65458e0916a31235def4f8c0b09f28d",
+    "outputs/round104_summary/summary.json": "58bdd2a81ea935c139e0d68d6aeeb9016287da02397386ce5a3fde23967493b2",
+    "outputs/round104_summary/receipt.json": "8897e8a6bc1afadd9b8632588f31e5ce4a6622cec82b59be366c8c7157ddbe38"
+  },
+  "source_sha256": "ad1e6185000b430bcb55fe535ca90f76f3d8e19e3168bb9895cbd54e3edd5b10",
+  "SOURCE_MANIFEST_unchanged": true,
+  "historical_sources_and_formal_REPORT_PDF_PPTX_unchanged": true,
+  "new_fit_score_calls": 0,
+  "package_commit_push_performed": false,
+  "full_retraining_backup": false
+}

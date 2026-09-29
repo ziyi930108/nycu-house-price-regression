@@ -10,13 +10,11 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新先驗輸入研究
+## 最新組合目標研究
 
-[R101／R102 完成頁](docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：R101 診斷與 R102 六次 NN／三期隔離評分均已完成。T 相對 v22 的 development／confirmation／auxiliary MAE 差為 **+934.33／+7,219.36／-9,619.90 元**。Primary gate 未通過，mechanism gate 未通過；**研究門檻未全通過，不採用；唯一提交仍是 v22，Private 未知。**
+[R103／R104 完成頁](docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md)：R103 誤差互補診斷與 R104 兩教師／六學生、三期隔離評分均已完成。完整 T−v22 MAE 為 **+39,238.32／+11,007.42／-43,442.06 元**（development／confirmation／auxiliary）；兩項固定門檻未通過，**不採用、無新 CSV；唯一提交仍為 v22，Private 未知。**
 
-24 個配對區間為 3 全負／17 跨零／4 全正；窗口重用限制及所有群別反證保留。R101 僅做保存分布診斷；R102 比較同一 R100T 資料的 145 欄正零對照與 log-prior 候選，七個非 numeric array 不變。正式報告與簡報保持 v22；當前發布身分以 Git main／SOURCE_MANIFEST 為準。
-
-[上一輪 R100](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)及更早沿革由完成頁連結保留。
+24 CI：8 全負／6 跨零／10 全正。T−C base 三窗均退步，較早窗口完整改善也保留；2023 地理非 as-of、單 seed 與重用窗口限制見完成頁。正式報告及簡報仍聚焦 v22。
 
 ## 簡報與專案更新
 

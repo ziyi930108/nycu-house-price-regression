@@ -1,0 +1,91 @@
+{
+  "canonical_mapping": {
+    "path": "outputs/round6/geography/development/train_source_cache_indices.npy",
+    "sha256": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4"
+  },
+  "elapsed_seconds": 0.625,
+  "fit_indices": {
+    "dtype": "int64",
+    "path": "outputs/round104_teacher/preparation/fit_indices.npy",
+    "sha256": "bb1c2f9e45fd8544ab9d0b08f9c94863223d92b8988e23ed6eec9812f07a6526",
+    "shape": [
+      116964
+    ],
+    "values_sha256": "7b2b3e0f93bb371fa31508706e98b79045204e2ef74761adbb8e0320cb750499"
+  },
+  "fit_rows": 116964,
+  "fit_source_cache_indices": {
+    "dtype": "int64",
+    "path": "outputs/round104_teacher/preparation/fit_source_cache_indices.npy",
+    "sha256": "3ade8d0bc445ca510eb6df2a796ae08dbf847b31da029a171ea4449e7ddc21ea",
+    "shape": [
+      116964
+    ],
+    "values_sha256": "23c35616b11f517cf63b5e2b437f9c8ce976a67638674cd634cdc0879def2c79"
+  },
+  "fit_y": {
+    "dtype": "float64",
+    "path": "outputs/round104_teacher/fit_labels/fit_y.npy",
+    "sha256": "e064258fa014b5a043c67eb19b1601ba939dced26d31e904726188b151579dec",
+    "shape": [
+      116964
+    ],
+    "values_sha256": "84d40c3a8c2e9358bbbb9a59a390d9149547642f7a86601f103d0e71c479a9dc"
+  },
+  "plan_sha256": "106fda0c56cc7c5660c6255bb572fd78c59ccac9c13d25604bbe592204e43778",
+  "preparation": {
+    "path": "outputs/round104_teacher/preparation/manifest.json",
+    "sha256": "c3a1d6bb5f62602dfd2b0c3051a7fdc6a838b9fc0574a5eb5f28ec57dbc3d642"
+  },
+  "protected_after": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "protected_before": {
+    "CURRENT_STATUS.md": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+    "PRIVATE_SELECTION.md": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+    "outputs/current_private_candidate.json": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+    "outputs/round79/selection/decision.json": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+    "outputs/round84/decision.json": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/v22_submission_focus_20260928/user_selection.json": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  "query_prices_exported_or_scored": false,
+  "raw_query_bytes_in_deserialized_table": true,
+  "raw_train": {
+    "declared_only": true,
+    "path": "data_cache/train.pkl",
+    "rows": 455784,
+    "sha256": "9acf8c65bf00f7067e9ea9612cabe9a1524b020a7596c8da3ce3d620131e5c00"
+  },
+  "request": {
+    "path": "outputs/round104_teacher_launcher_20260929/preparation_request.json",
+    "sha256": "93e8fccde5f8ed77557729b326a27098690221270c20c5b102ca9b3e15699f6a"
+  },
+  "schema_version": 1,
+  "source_sha256": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round104_teacher_fit.py": "52d81bc02f43bce19583bfa15b680bcced028b8b62d3570069754ded08092637",
+    "src/round104_teacher_preparation.py": "4e0efb41aede01af68e99e456a5bc42b5854ef3b746a62d17d7eed9c29717b96",
+    "src/round47_nn_encode.py": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round48_nn_train.py": "38fb91e01eabb2ed3163f1260e16c826ca55592951c22ce1107ad68c24b37082",
+    "src/round54_numeric_encode.py": "fe73f4154bcd0811b7cdad09c58e1dfd7cba5350446193e90f70bd8a7ef0206e",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round90_offset_data.py": "4f58575bff75b69fd900af84f9152dc3e900f34ad6909e0f2e0366bb67c928f1",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d"
+  },
+  "status": "teacher_fit_labels_sealed",
+  "whole_price_pickle_deserialized": true
+}
