@@ -10,11 +10,11 @@
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新原生平均研究
+## 最新聯動dropout研究
 
-[R105完成頁](docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)：R105固定原生50/50平均與三期隔離評分已完成；完整T−v22 MAE為 **-317.81／+2,010.70／-6,060.66 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。**
+[R106完成頁](docs/RESEARCH_UPDATES_20260929_JOINT_DROPOUT.md)：R106六次NN與三窗評分完成；完整T−v22 MAE為 **-63.26／+2,439.67／+422.80 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。依使用者要求，本輪完成後暫停研究。**
 
-0新fit，兩端全五層重播後套固定平均；24 CI為6全負／18跨零／0全正。正式報告與簡報仍聚焦v22。
+C為原R63設定重訓，T只改四欄mask聯動；C−v22偏移、24CI及反證全部保留。正式報告／簡報聚焦v22。研究於本輪完成後暫停，不安排下一輪。
 
 ## 簡報與專案更新
 

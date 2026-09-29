@@ -1,0 +1,48 @@
+{
+  "categorical_columns": [
+    "district",
+    "transaction_type",
+    "urban_zone",
+    "nonurban_zone",
+    "nonurban_use",
+    "building_type",
+    "main_use",
+    "main_material",
+    "partition",
+    "parking_type",
+    "project_name",
+    "building_and_unit",
+    "transfer_floor_raw",
+    "address_raw",
+    "address_city",
+    "address_district",
+    "address_road",
+    "address_section",
+    "address_locality",
+    "location_road",
+    "building_block",
+    "geo_match_status",
+    "geo_grid_002"
+  ],
+  "encoder_source": {
+    "path": "outputs/round47/development/encoder_state.json",
+    "sha256": "77fa38ab40e3b43638146e57cde9bf8a460d0f654c9bd023ff658ed20d40e9fd"
+  },
+  "identity_columns": [
+    "project_name",
+    "address_raw",
+    "building_and_unit",
+    "building_block"
+  ],
+  "identity_indices": [
+    10,
+    13,
+    11,
+    20
+  ],
+  "prepared_source": {
+    "path": "outputs/round63/development/prepared.npz",
+    "sha256": "e1411757d89ad74fdd5b6cd3622f6c8d26fdc9932859ae49eaa9be9705449bea"
+  },
+  "schema_version": 1
+}

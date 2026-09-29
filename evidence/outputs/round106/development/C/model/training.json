@@ -1,0 +1,477 @@
+{
+  "round": 106,
+  "mask_mode": "C",
+  "created_at_utc": "2026-09-29T01:00:09.483482+00:00",
+  "configuration": {
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "dropout": 0.1,
+    "category_dropout": 0.1,
+    "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "minimum_learning_rate": 1e-05,
+    "loss": "fit-recency weighted MAE in million TWD",
+    "positive_output": "Softplus",
+    "epoch_selection": "fixed last epoch; no query labels or early stopping",
+    "float_precision": "float32; matmul precision high",
+    "thread_count": 4,
+    "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+    "output_units": "dimensionless positive price ratio",
+    "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+    "price_factor_uses_fit_labels": true,
+    "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+    "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+    "loss_formula": "mean(train_sample_weight * abs(ratio_output * train_price_factor_million - train_y_million))",
+    "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+    "extra_sample_weights": true,
+    "price_or_ratio_clipping": false,
+    "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+    "category_dropout_mode": "independent_original_23_columns",
+    "identity_dropout_columns": [
+      "project_name",
+      "address_raw",
+      "building_and_unit",
+      "building_block"
+    ],
+    "category_dropout_full_mask_draw": true,
+    "eval_category_dropout": false
+  },
+  "parameters": {
+    "round": 106,
+    "mask_modes": {
+      "C": "independent_original_23_columns",
+      "T": "four_columns_share_original_project_name_mask"
+    },
+    "identity_columns": [
+      "project_name",
+      "address_raw",
+      "building_and_unit",
+      "building_block"
+    ],
+    "input_keys": [
+      "train_num",
+      "train_cat",
+      "train_y_million",
+      "query_num",
+      "query_cat",
+      "cardinalities",
+      "train_price_factor_million",
+      "query_price_factor_million",
+      "train_sample_weight"
+    ],
+    "numeric_count": 144,
+    "categorical_count": 23,
+    "category_dropout": 0.1,
+    "complete_original_mask_sampled": true,
+    "shared_anchor": "project_name",
+    "other_categorical_columns_unchanged": 19,
+    "eval_category_mask_applied": false,
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "query_batch_size": 4096,
+    "loss_equals_R63": true,
+    "sample_weights_renormalized": false,
+    "query_labels_available": false
+  },
+  "source_sha256": "e6d21eb22dcfb6edc615c6e05dcc4e84dec980a74528945a34af4dc8c3c6194e",
+  "source_hashes": {
+    "src/round106_joint_dropout_train.py": "e6d21eb22dcfb6edc615c6e05dcc4e84dec980a74528945a34af4dc8c3c6194e",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round52_nn_train.py": "0d27f93d9c48c7dc13cf0252a16eadd1a2aa8a7f53b0740021fc3d8b37c0740f",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7"
+  },
+  "plan_sha256": "2748f8f5cd76df02e99717a10a13f88186b1547d1196affb54bd603cb0351f51",
+  "parent_trainer_source": "src/round63_recency_weighted_prior_train.py",
+  "parent_trainer_source_sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+  "architecture_parent_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+  "identity_contract": {
+    "path": "outputs/round106/development/identity_contract.json",
+    "sha256": "7295428009d87b90d00cbdfafa61a5bacdf9a443fa50c57908841aeaa58de0a1"
+  },
+  "categorical_columns": [
+    "district",
+    "transaction_type",
+    "urban_zone",
+    "nonurban_zone",
+    "nonurban_use",
+    "building_type",
+    "main_use",
+    "main_material",
+    "partition",
+    "parking_type",
+    "project_name",
+    "building_and_unit",
+    "transfer_floor_raw",
+    "address_raw",
+    "address_city",
+    "address_district",
+    "address_road",
+    "address_section",
+    "address_locality",
+    "location_road",
+    "building_block",
+    "geo_match_status",
+    "geo_grid_002"
+  ],
+  "identity_columns": [
+    "project_name",
+    "address_raw",
+    "building_and_unit",
+    "building_block"
+  ],
+  "identity_indices": [
+    10,
+    13,
+    11,
+    20
+  ],
+  "encoder_source": {
+    "path": "outputs/round47/development/encoder_state.json",
+    "sha256": "77fa38ab40e3b43638146e57cde9bf8a460d0f654c9bd023ff658ed20d40e9fd"
+  },
+  "encoder_provenance_verified_in_trainer": false,
+  "input_sha256": "e1411757d89ad74fdd5b6cd3622f6c8d26fdc9932859ae49eaa9be9705449bea",
+  "input_array_identities": {
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        240316,
+        144
+      ],
+      "values_sha256": "265f10cf50cafa33a4cf4b14eb2a9f4493df66f53333ebf90737b961ccbccc8b"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        240316,
+        23
+      ],
+      "values_sha256": "11132bbd8641c5d39009745b8249873682692cbdd23885023292197b115d9493"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "28a552d3bd69273bf4dd27526be00989036dbfeac9ff63aadc5d20b13af9fb6d"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        81234,
+        144
+      ],
+      "values_sha256": "937fbfad3b4ba2a98db4a97f01fd2b909236a3fc4a3ea7785075daa39a83aef7"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        81234,
+        23
+      ],
+      "values_sha256": "8349e52df32564a908de5ebbb86ed60064d0a467d51c98ce9b4418cd0574e8cc"
+    },
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "668d04f6fcc55a2e1482984319ed219ad36cc4b3b9af17871f1bf27f122b19e8"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "6f24b6cfaf044eb4494c637da5a4a79b48b25e3e1dee9d9a7c5a27185b580365"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "d36bf6a2eceebab34522992939217b4d7e6e9c85e1878e0114966e4d14f6ef0f"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6"
+    }
+  },
+  "fit_rows": 240316,
+  "query_rows": 81234,
+  "numeric_count": 144,
+  "categorical_count": 23,
+  "cardinalities": [
+    239,
+    4,
+    7,
+    8,
+    8,
+    11,
+    12,
+    14,
+    3,
+    9,
+    3594,
+    3582,
+    65,
+    2965,
+    23,
+    248,
+    2090,
+    16,
+    1180,
+    2753,
+    318,
+    15,
+    696
+  ],
+  "initial_training_median_ratio": 0.8936894499827281,
+  "initial_head_bias": 0.36750743408829034,
+  "initial_state_sha256": "ab35549adae5d5ec2ce48fda473c2173d0cbbeadc0fde949188b21ffd8fa53fd",
+  "initial_torch_CPU_rng_sha256": "38e246e3d0766236b6a26262f1181138ac91befe3e8a51f6f75fa668e7e24adc",
+  "initial_torch_CUDA_rng_sha256": "aefdce03def94ffed42159e55677ec20e91200e1981f25b1f271b6fd99c3c263",
+  "loss_equals_R63": true,
+  "complete_original_category_mask_draw": true,
+  "other_19_masks_unchanged": true,
+  "eval_category_mask_applied": false,
+  "query_labels_available": false,
+  "query_labels_used": false,
+  "price_factor_provenance_verified_in_trainer": false,
+  "sample_weight_provenance_verified_in_trainer": false,
+  "canonical_row_alignment_verified_in_trainer": false,
+  "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+  "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+  "train_price_factor_million_sha256": "6f24b6cfaf044eb4494c637da5a4a79b48b25e3e1dee9d9a7c5a27185b580365",
+  "query_price_factor_million_sha256": "d36bf6a2eceebab34522992939217b4d7e6e9c85e1878e0114966e4d14f6ef0f",
+  "train_sample_weight_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6",
+  "train_sample_weight_summary": {
+    "rows": 240316,
+    "min": 0.00015728281869087368,
+    "max": 2.8228559494018555,
+    "mean": 1.0000000003887903,
+    "sum": 240316.00009343255,
+    "sum_squares": 439578.0612011316,
+    "effective_sample_size": 131380.03234989019
+  },
+  "sample_weights_recomputed_in_trainer": false,
+  "sample_weights_batch_renormalized": false,
+  "price_or_ratio_clipping": false,
+  "prediction_units": "TWD",
+  "output_units": "dimensionless positive price ratio",
+  "epoch_selection_uses_training_metrics": false,
+  "automatic_retry": false,
+  "bitwise_retraining_determinism_claimed": false,
+  "torch": "2.13.0+cu126",
+  "numpy": "2.3.5",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "status": "completed",
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "training_mae_million_with_dropout": 3.3662188053131104,
+      "training_weighted_mae_million_with_dropout": 2.5282013416290283
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972883382072953,
+      "training_mae_million_with_dropout": 2.1903586387634277,
+      "training_weighted_mae_million_with_dropout": 1.4665179252624512
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009891830623632338,
+      "training_mae_million_with_dropout": 1.802596926689148,
+      "training_weighted_mae_million_with_dropout": 1.185894250869751
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009757729755661011,
+      "training_mae_million_with_dropout": 1.6109439134597778,
+      "training_weighted_mae_million_with_dropout": 1.057187557220459
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009572050015330874,
+      "training_mae_million_with_dropout": 1.4808616638183594,
+      "training_weighted_mae_million_with_dropout": 0.9642120599746704
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009336825748732973,
+      "training_mae_million_with_dropout": 1.4007723331451416,
+      "training_weighted_mae_million_with_dropout": 0.9168314337730408
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009054634122155991,
+      "training_mae_million_with_dropout": 1.320453405380249,
+      "training_weighted_mae_million_with_dropout": 0.8576281070709229
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008728566886113102,
+      "training_mae_million_with_dropout": 1.2653521299362183,
+      "training_weighted_mae_million_with_dropout": 0.8280012607574463
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008362196501476349,
+      "training_mae_million_with_dropout": 1.2169296741485596,
+      "training_weighted_mae_million_with_dropout": 0.7959581613540649
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007959536998847742,
+      "training_mae_million_with_dropout": 1.1721441745758057,
+      "training_weighted_mae_million_with_dropout": 0.7706539034843445
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.0007525,
+      "training_mae_million_with_dropout": 1.130269169807434,
+      "training_weighted_mae_million_with_dropout": 0.7468180060386658
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007063346383225212,
+      "training_mae_million_with_dropout": 1.104202151298523,
+      "training_weighted_mae_million_with_dropout": 0.7322477102279663
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.000657963412215599,
+      "training_mae_million_with_dropout": 1.0761959552764893,
+      "training_weighted_mae_million_with_dropout": 0.709144651889801
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006079162869547909,
+      "training_mae_million_with_dropout": 1.068660855293274,
+      "training_weighted_mae_million_with_dropout": 0.7030399441719055
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005567415893174886,
+      "training_mae_million_with_dropout": 1.0457568168640137,
+      "training_weighted_mae_million_with_dropout": 0.6829929351806641
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005050000000000002,
+      "training_mae_million_with_dropout": 1.0273566246032715,
+      "training_weighted_mae_million_with_dropout": 0.6682930588722229
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004532584106825117,
+      "training_mae_million_with_dropout": 1.0159465074539185,
+      "training_weighted_mae_million_with_dropout": 0.6565967798233032
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00040208371304520916,
+      "training_mae_million_with_dropout": 1.001599669456482,
+      "training_weighted_mae_million_with_dropout": 0.6471002697944641
+    },
+    {
+      "epoch": 19,
+      "learning_rate": 0.00035203658778440114,
+      "training_mae_million_with_dropout": 0.9906960725784302,
+      "training_weighted_mae_million_with_dropout": 0.6364502906799316
+    },
+    {
+      "epoch": 20,
+      "learning_rate": 0.000303665361677479,
+      "training_mae_million_with_dropout": 0.9798998832702637,
+      "training_weighted_mae_million_with_dropout": 0.6273818612098694
+    },
+    {
+      "epoch": 21,
+      "learning_rate": 0.0002575000000000002,
+      "training_mae_million_with_dropout": 0.9681041240692139,
+      "training_weighted_mae_million_with_dropout": 0.616181492805481
+    },
+    {
+      "epoch": 22,
+      "learning_rate": 0.0002140463001152259,
+      "training_mae_million_with_dropout": 0.9634497761726379,
+      "training_weighted_mae_million_with_dropout": 0.6093565821647644
+    },
+    {
+      "epoch": 23,
+      "learning_rate": 0.00017378034985236537,
+      "training_mae_million_with_dropout": 0.9576020836830139,
+      "training_weighted_mae_million_with_dropout": 0.6049604415893555
+    },
+    {
+      "epoch": 24,
+      "learning_rate": 0.00013714331138868995,
+      "training_mae_million_with_dropout": 0.9486587047576904,
+      "training_weighted_mae_million_with_dropout": 0.59914231300354
+    },
+    {
+      "epoch": 25,
+      "learning_rate": 0.00010453658778440111,
+      "training_mae_million_with_dropout": 0.9438834190368652,
+      "training_weighted_mae_million_with_dropout": 0.5920773148536682
+    },
+    {
+      "epoch": 26,
+      "learning_rate": 7.631742512670288e-05,
+      "training_mae_million_with_dropout": 0.9444366693496704,
+      "training_weighted_mae_million_with_dropout": 0.5890945196151733
+    },
+    {
+      "epoch": 27,
+      "learning_rate": 5.279499846691254e-05,
+      "training_mae_million_with_dropout": 0.9339168071746826,
+      "training_weighted_mae_million_with_dropout": 0.5797716975212097
+    },
+    {
+      "epoch": 28,
+      "learning_rate": 3.422702443389901e-05,
+      "training_mae_million_with_dropout": 0.937522292137146,
+      "training_weighted_mae_million_with_dropout": 0.5801193118095398
+    },
+    {
+      "epoch": 29,
+      "learning_rate": 2.0816937636766188e-05,
+      "training_mae_million_with_dropout": 0.9377585053443909,
+      "training_weighted_mae_million_with_dropout": 0.5795543193817139
+    },
+    {
+      "epoch": 30,
+      "learning_rate": 1.2711661792704668e-05,
+      "training_mae_million_with_dropout": 0.935663104057312,
+      "training_weighted_mae_million_with_dropout": 0.577686071395874
+    }
+  ],
+  "fit_seconds": 16.390999999828637,
+  "parameter_count": 958493,
+  "saved_model_reload_exact": true,
+  "reload_rows": 81234,
+  "reload_batch_size": 4096,
+  "NPY_roundtrip_exact": true,
+  "prediction_min_twd": 40499.045691889005,
+  "prediction_max_twd": 7290472524.790093,
+  "model_sha256": "781db459b1dabeabf1fcb541b3a34cf1a3ea34ce2ceffdf74e0954bf07a1e494",
+  "predictions_sha256": "762e7e9d3c3c4913e845fe4cb2bd427bc1f75e6b0a1308aeff9903ac7d293333",
+  "elapsed_seconds": 18.687999999849126,
+  "maximum_gpu_allocated_bytes": 315700224
+}

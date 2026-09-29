@@ -1,0 +1,8 @@
+{
+  "planned_new_NN_fits": 6,
+  "source": {
+    "path": "outputs/round106_launcher_20260929/launch.py",
+    "sha256": "63da2663a1ae548ba1baa6f283de00a4ce5423c43f81c880e5d21d9bf9a40b08"
+  },
+  "started_at_utc": "2026-09-29T00:59:55.757579+00:00"
+}

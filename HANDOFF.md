@@ -15,11 +15,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | presentation/內22頁PPTX、講稿、排練指南及程式對照；20主講＋2附錄，規劃870秒 |
-| 研究程式 | research/src/保存379支歷史原碼與後續R85–R105來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
-| 最新研究 | R105原生固定平均完成；T−v22 -317.81／+2,010.70／-6,060.66 元；研究門檻未全通過，不採用，無新CSV |
+| 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
+| 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 374d488b2d1cfac5833bf685016522ad683d8949；當前身分以Git main／SOURCE_MANIFEST為準 |
-| 後續界線 | R105已完成；v22唯一提交、Private未知；後續需另固定假設，不自動新訓練 |
+| 本批發布 | 本頁於發布前核驗，base bde2a9221ea6beaad2297e97e12900e322b3872c；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
 
@@ -29,7 +29,8 @@
 - REPORT.md：清理、特徵、日期權重、六模型與三分支、年度回測、Public、限制。
 - evidence/reproduction/summary.json及integration_verified.json：全量實測結果。
 - research/README.md：原訓練程式入口及限制。
-- [最新 R105](docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)：固定原生平均、兩端重播、兩項門檻及24CI。
+- [最新 R106](docs/RESEARCH_UPDATES_20260929_JOINT_DROPOUT.md)：六NN、四欄聯動、C重訓偏移、兩門檻與24CI；完成後暫停。
+- [前批 R105](docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)：固定原生平均、兩端重播、兩項門檻及24CI。
 - [前批 R103／R104](docs/RESEARCH_UPDATES_20260929_BASE_OBJECTIVE.md)：誤差互補、固定 base 目標、兩項門檻、24 CI 與地理時間限制。
 - [前批 R101／R102](docs/RESEARCH_UPDATES_20260929_PRIOR_INPUT.md)：診斷、145 欄對照、兩項門檻、24 CI 與依賴界線。
 - [前批 R100 時間前置 prior](docs/RESEARCH_UPDATES_20260929_TEMPORAL_PRIOR.md)：兩組相同 loss 列、三期完整模型、24區間、工程修正與依賴界線。
@@ -51,13 +52,13 @@ v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Publi
 
 ## 最新研究與後續工作
 
-[R105完成頁](docs/RESEARCH_UPDATES_20260929_NATIVE_AVERAGE.md)是最新入口。R105固定原生50/50平均與三期隔離評分已完成；完整T−v22 MAE為 **-317.81／+2,010.70／-6,060.66 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。**
+[R106完成頁](docs/RESEARCH_UPDATES_20260929_JOINT_DROPOUT.md)是最新入口。R106六次NN與三窗評分完成；完整T−v22 MAE為 **-63.26／+2,439.67／+422.80 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。依使用者要求，本輪完成後暫停研究。**
 
-候選只固定50/50原生平均；兩端五層完全重播、同窗R/S未變，三窗全部封存後獨立評分。C為原R102T完整端點；没有新native模型fit，但有套用保存learned R/S狀態。
+C是原R63設定的新重訓，T只聯動四個類別遮罩；同23欄完整抽樣、其他19欄及eval不變。原v22五層先exact重播，六NN與全部query封存後才獨立評分。
 
-完整層次、分群正反證與24CI見[報告](evidence/reports/round105_report.md)。反覆窗口及靜態2023地理限制保留，不宣稱variance reduction、Private最好或全新環境重現。
+C−v22重訓偏移、完整層次、群別正反證與24CI見[報告](evidence/reports/round106_report.md)。單seed及舊窗口並非盲測；未知Private、2023地理及乾淨環境尚未重訓的限制保留。
 
-[下一方向盤點](evidence/reports/round105_next_direction_inventory.md)僅來源研究，尚無新計畫或訓練；R104提出的固定平均則已由本輪完成驗證。
+使用者要求跑完本輪後暫停；目前R106已完成，停止研究，不新增R107或排程／背景訓練。後續僅待新的明確指示。
 
 使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。主講4,143個純漢字，按250–300字／分估計13.81–16.57分鐘；14:30是配速規劃，不是已完成的真人排練。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 

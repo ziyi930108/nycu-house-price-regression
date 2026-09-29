@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round106_joint_dropout_experiment.py",
+    "--freeze-request",
+    "C:\\NYCU_ML\\outputs\\round106_launcher_20260929\\research_request.json"
+  ],
+  "elapsed_seconds": 2.719000000040978,
+  "exit_code": 0,
+  "log": {
+    "path": "outputs/round106_launcher_20260929/freeze.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "step": "freeze"
+}
