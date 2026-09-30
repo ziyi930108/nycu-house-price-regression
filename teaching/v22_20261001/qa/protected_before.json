@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-09-30T20:06:31.358635+00:00",
+  "new_model_training": false,
+  "Private_score": null,
+  "selected_submission": "v22",
+  "checks": {
+    "CURRENT_STATUS.md": {
+      "sha256": "76e7eee20d7440b5484a50294b600985afda5b9ca91ba5db77019157f884b82c",
+      "matches": true
+    },
+    "PRIVATE_SELECTION.md": {
+      "sha256": "5de7acb45998421b027f0762ed41850647a7546a6aa19739396902be3a377dbf",
+      "matches": true
+    },
+    "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf": {
+      "sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+      "matches": true
+    },
+    "deliverables/v22_github/presentation/臺灣房價預測_正式報告_v22.pptx": {
+      "sha256": "a36e0e2b880423d0a405e8faa2eb1962412072c1811077329cc98f4d1f380cdf",
+      "matches": true
+    },
+    "outputs/current_private_candidate.json": {
+      "sha256": "a82c1291b04b20bbfe66da528ad97daca6493a7162fd6a4e03cd2cc5a34b8dce",
+      "matches": true
+    },
+    "outputs/round79/selection/decision.json": {
+      "sha256": "2efdfc9480d81bb6148e98a668f11dd62e1cf8d8cbfaaf4b363ff3cb445f639a",
+      "matches": true
+    },
+    "outputs/round84/decision.json": {
+      "sha256": "737435674404325b334cfafcee318d7fe8cd903c72b19c7fb6992ed2be1d7af0",
+      "matches": true
+    },
+    "outputs/submission_v22_trial.csv": {
+      "sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+      "matches": true
+    },
+    "outputs/v22_submission_focus_20260928/user_selection.json": {
+      "sha256": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76",
+      "matches": true
+    }
+  }
+}

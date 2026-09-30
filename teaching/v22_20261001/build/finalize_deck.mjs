@@ -1,0 +1,20 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const DIR=path.resolve(import.meta.dirname,'..');
+const BUILD=path.join(DIR,'build'),OUT=path.join(DIR,'deliverables');
+const SKILL='C:/Users/ziyi9/.codex/plugins/cache/openai-primary-runtime/presentations/26.905.11957/skills/presentations';
+const PY='C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe';
+process.env.RUNTIME_NODE_MODULES='C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const revision=process.argv[2]||'r1';
+const final=path.join(OUT,`臺灣房價預測_v22_零基礎簡報_${revision}.pptx`);
+const renders=path.join(BUILD,`renders_${revision}`);
+const {finalizePresentation}=await import(pathToFileURL(SKILL+'/container_tools/artifact_tool_utils.mjs').href);
+await fs.mkdir(renders,{recursive:true});
+const tableOwners=[3,4,5,6,7,8,10,12,13,22,23];
+const result=await finalizePresentation({workspaceDir:DIR,explicitTotalSlideCount:23,candidatePath:BUILD+'/candidate.pptx',finalPath:final,pythonExecutable:PY,integrityValidatorPath:SKILL+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:SKILL+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit',...tableOwners.flatMap(n=>['--require-native-table-slide',String(n)])],requiredNativeTableOwnerSlides:tableOwners,requiredNativeChartOwnerSlides:[11,15,16],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'design',families:['Microsoft JhengHei','Consolas']},verifyArtifactToolImport:true,receiptPath:BUILD+`/final_${revision}.validation.json`});
+console.log('FINALIZED',final);
+const p=await PresentationFile.importPptx(await FileBlob.load(final));
+for(let i=0;i<p.slides.items.length;i++){const s=p.slides.items[i],stem='slide-'+String(i+1).padStart(2,'0');const png=await p.export({slide:s,format:'png',scale:1.25});await fs.writeFile(path.join(renders,stem+'.png'),new Uint8Array(await png.arrayBuffer()));const layout=await s.export({format:'layout'});await fs.writeFile(path.join(renders,stem+'.json'),await layout.text());console.log('RENDERED',i+1);}
+console.log(JSON.stringify({file:final,renders,slideCount:p.slides.items.length,validation:BUILD+`/final_${revision}.validation.json`}));

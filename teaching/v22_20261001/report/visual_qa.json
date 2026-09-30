@@ -1,0 +1,187 @@
+{
+  "status": "pass",
+  "reviewed_utc": "2026-09-30T20:16:48.149172+00:00",
+  "reviewer": "v22_beginner_report agent",
+  "method": "All 14 pages individually inspected after full Poppler rendering. Final editorial changes on pages 1 and 11 were re-rendered and visually inspected; all other 12 rendered PNG hashes exactly match their previously inspected images.",
+  "pdf_sha256": "f1e38679acb1ce9e3ae16ac74f165d9e935fc3b91bd3cc846abb1743baf1087f",
+  "markdown_sha256": "95ead751b875db329fc10603c528dad8df3a398cd4719143085856e9f7ec8659",
+  "page_count": 14,
+  "body_font_pt": 10.4,
+  "source_table_font_pt": 8.2,
+  "checks": [
+    "No observed clipping, overlap, black boxes or missing Chinese glyphs",
+    "Tables, headings, footer and page numbers verified on every page",
+    "MAE and median examples explicitly hypothetical",
+    "Original submission SHA unchanged",
+    "29 cited source files exist and have saved SHA identities"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "page-01.png",
+      "sha256": "761dd8e12938973b34c9a77e00e7f843a06a1260023babf3b54232a762e6d260",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "正式黑色題名與研究成果小標清楚；表格與正文完整，無裁切。"
+    },
+    {
+      "page": 2,
+      "image": "page-02.png",
+      "sha256": "339b9e7cb91b70142c286bfba074e39c5f2b22a73cf4ee87d7b27efdb948468e",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "回歸/標籤定義與MAE手算表格清晰，100/50平均75萬。"
+    },
+    {
+      "page": 3,
+      "image": "page-03.png",
+      "sha256": "5135dc3f962897670947cda32b462f99f6fa2e48958661f54950526338787df0",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "四資料角色、清理列數和test30/70說明完整，表格無裁切。"
+    },
+    {
+      "page": 4,
+      "image": "page-04.png",
+      "sha256": "e176d11bfdc563caf230a687f1fe601a3a76430d76d90722614c9feab16998df",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "特徵用途表格、排除欄位、95/23僅CatBoost界線清晰。"
+    },
+    {
+      "page": 5,
+      "image": "page-05.png",
+      "sha256": "d57bca4ae9ae3cf92b7dba5e081499636f54cea00e114996bd914526bc901766",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "三窗日期與fit/query表格完整，狀態分離和窗口重用限制可讀。"
+    },
+    {
+      "page": 6,
+      "image": "page-06.png",
+      "sha256": "e042918188ee3d5bf395eaed1db5999da1e587c82560f4aadac166889b9e1ff4",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "六模型表格完整，模型與分支區別清楚，底部參數段未溢出。"
+    },
+    {
+      "page": 7,
+      "image": "page-07.png",
+      "sha256": "ba77cef8e7222f595b6cae7bf2289a7f9efb79c3b96ec4684ba21336b9b1101a",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "單價與面積權重公式及50/100平方公尺例子可讀，無缺字。"
+    },
+    {
+      "page": 8,
+      "image": "page-08.png",
+      "sha256": "a58186942d1ad05255ecfae927ed7198af585756359688678397e74981358d69",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "日期相對權重表格和log公式均完整，正規化語意清楚。"
+    },
+    {
+      "page": 9,
+      "image": "page-09.png",
+      "sha256": "33a786f78a40cee2a77559b2db1cbf9f43efd18c2f1bda105725866c9a7b0ec0",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "OOF分組三步表格、非時間OOF限制完整，標題與文字無裁切。"
+    },
+    {
+      "page": 10,
+      "image": "page-10.png",
+      "sha256": "826cc1a46a6c58a4a353583cf77aa9477f26acccd95a3d296fd4c13b61ad5171",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "三分支公式、中位數手算與np.rint恰半取偶完整，無重疊。"
+    },
+    {
+      "page": 11,
+      "image": "page-11.png",
+      "sha256": "8ab80fd83bfd261ee3af1ddaa856efb4ba4bba8768fb1e8e802843c746101cbf",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "固定對照觀察措辭及本專題口吻已修正；結果、未知Private與反證全部可讀。"
+    },
+    {
+      "page": 12,
+      "image": "page-12.png",
+      "sha256": "c8aa6a6dcbec233b4eea99bfa4ff8a17ba96d9ac17b40d4d89fdec62946d9229",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "命令採可複製完整行，PDF視覺換行，重現界線與SHA完整。"
+    },
+    {
+      "page": 13,
+      "image": "page-13.png",
+      "sha256": "9e0c2069ae8651381c7bede871498e766618a5f83b2b66625a237a6033d72d24",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "術語表所有列完整，底部自我檢查無孤行、裁切。"
+    },
+    {
+      "page": 14,
+      "image": "page-14.png",
+      "sha256": "59cec78658a09a06791e5a86f8dc2bbe105de2c824be6034557b6167a6cc2389",
+      "size": [
+        910,
+        1287
+      ],
+      "visual_review": "pass",
+      "review_notes": "來源表採8.2pt、11.4leading，所有11組來源完整，無空白尾頁。"
+    }
+  ],
+  "cjk_characters": 6764,
+  "limitations": [
+    "No fresh model training or inference performed during report authoring",
+    "Saved-model replay evidence cited from actual prior receipt",
+    "Private unknown"
+  ],
+  "source_evidence": "source_evidence.json",
+  "history": "build_history.json",
+  "fact_review": {
+    "reviewer": "v22_beginner_fact_audit",
+    "status": "no_blocker",
+    "scope": "Actual source, result JSON, training metadata, geography manifests and inference receipt; finite factual review."
+  }
+}

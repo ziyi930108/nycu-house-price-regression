@@ -1,0 +1,120 @@
+{
+  "checked_at_utc": "2026-09-30T20:18:11.725452+00:00",
+  "narrative_sha256": "518313989cfb63c4550cf32701826cb0892423ef470659479b053e46b5bb595f",
+  "deck": "C:\\NYCU_ML\\outputs\\v22_beginner_20261001\\deliverables\\臺灣房價預測_v22_零基礎簡報_r3.pptx",
+  "deck_sha256": "4f0aac558292a9a171d639b1e1db8deed226b4ba61b257ceb110f7292d017c85",
+  "main_slides": 20,
+  "appendix_slides": 3,
+  "spoken_han_characters": 4658,
+  "main_minutes_at_300_han_per_minute": 15.526666666666667,
+  "main_minutes_at_250_han_per_minute": 18.632,
+  "planned_seconds": 980,
+  "actual_presenter_rehearsal_completed": false,
+  "count_excludes_titles_citations_appendices_QA": true,
+  "complete_scripts_embedded_in_all_slide_notes": true,
+  "native_chart_count": 3,
+  "nine_protected_originals_unchanged": true,
+  "Private_score": null,
+  "per_slide": [
+    {
+      "slide": 1,
+      "han_characters": 169,
+      "seconds": 35
+    },
+    {
+      "slide": 2,
+      "han_characters": 223,
+      "seconds": 45
+    },
+    {
+      "slide": 3,
+      "han_characters": 232,
+      "seconds": 50
+    },
+    {
+      "slide": 4,
+      "han_characters": 214,
+      "seconds": 45
+    },
+    {
+      "slide": 5,
+      "han_characters": 227,
+      "seconds": 50
+    },
+    {
+      "slide": 6,
+      "han_characters": 236,
+      "seconds": 50
+    },
+    {
+      "slide": 7,
+      "han_characters": 244,
+      "seconds": 50
+    },
+    {
+      "slide": 8,
+      "han_characters": 238,
+      "seconds": 50
+    },
+    {
+      "slide": 9,
+      "han_characters": 234,
+      "seconds": 50
+    },
+    {
+      "slide": 10,
+      "han_characters": 235,
+      "seconds": 50
+    },
+    {
+      "slide": 11,
+      "han_characters": 245,
+      "seconds": 50
+    },
+    {
+      "slide": 12,
+      "han_characters": 247,
+      "seconds": 50
+    },
+    {
+      "slide": 13,
+      "han_characters": 230,
+      "seconds": 50
+    },
+    {
+      "slide": 14,
+      "han_characters": 250,
+      "seconds": 55
+    },
+    {
+      "slide": 15,
+      "han_characters": 246,
+      "seconds": 50
+    },
+    {
+      "slide": 16,
+      "han_characters": 244,
+      "seconds": 50
+    },
+    {
+      "slide": 17,
+      "han_characters": 242,
+      "seconds": 50
+    },
+    {
+      "slide": 18,
+      "han_characters": 255,
+      "seconds": 55
+    },
+    {
+      "slide": 19,
+      "han_characters": 243,
+      "seconds": 50
+    },
+    {
+      "slide": 20,
+      "han_characters": 204,
+      "seconds": 45
+    }
+  ]
+}
