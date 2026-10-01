@@ -1,0 +1,61 @@
+{
+  "created_at_utc": "2026-10-01T03:08:43.743849+00:00",
+  "archive": "v22_三種風格_上台完整包.zip",
+  "bytes": 4569201,
+  "sha256": "be8e6e39898679c4938a702d4fd05f27bfabc494116b543b0806f559056b7de7",
+  "files": 9,
+  "all_member_bytes_verified": true,
+  "members": [
+    {
+      "path": "上台包請先閱讀.md",
+      "sha256": "6bad187e0f1c25af1defd223daa93fdc1645cd8f9fb15cab447f7804086e59b4",
+      "bytes": 2367
+    },
+    {
+      "path": "完整講稿.md",
+      "sha256": "311a41e6bd6da31bc1d05b1db4d24b611b8614f0ffe9fb96f34359140d7dd047",
+      "bytes": 29251
+    },
+    {
+      "path": "排練與問答.md",
+      "sha256": "f814a0c15913556475119d3acd0073fbb3d5326f700697ff70947295ce66c1bf",
+      "bytes": 11353
+    },
+    {
+      "path": "臺灣房價預測_v22_暖色雜誌_r2.pptx",
+      "sha256": "981bc913bf01f37d33dc28362dfa17304ba323af1d114f7454c984298d99c08f",
+      "bytes": 499961
+    },
+    {
+      "path": "臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+      "sha256": "f1d8fb44d21e99fa00657fc6ba634a0959763efbc797879d099b645ec4bfcdba",
+      "bytes": 2391743
+    },
+    {
+      "path": "臺灣房價預測_v22_深色科技_r2.pptx",
+      "sha256": "9044da9e1f69882f22a06ed211cf5ccebe197c41a90dc0c0854f009d91d86823",
+      "bytes": 107219
+    },
+    {
+      "path": "臺灣房價預測_v22_深色科技_投影備份.pdf",
+      "sha256": "5c4644244feb95f4c6e0f7891ac6b0de97921429ab0a3c15740d711338273e3f",
+      "bytes": 1275741
+    },
+    {
+      "path": "臺灣房價預測_v22_白底學術_r2.pptx",
+      "sha256": "5c8af24c8b60645446550e61cb826b041fe32bef81b48fcac65a4662d43082eb",
+      "bytes": 104292
+    },
+    {
+      "path": "臺灣房價預測_v22_白底學術_投影備份.pdf",
+      "sha256": "8521cc62fd84ee15f3a891c7b1e770a343e7b175c2183e0deeef31308c4f0374",
+      "bytes": 1303409
+    }
+  ],
+  "original_r2_unchanged": true,
+  "protected_nine_unchanged": true,
+  "new_ML_fits": 0,
+  "Private_score": null,
+  "complete_source_backup": false,
+  "complete_retraining_backup": false
+}

@@ -1,0 +1,1156 @@
+{
+  "created_at_utc": "2026-10-01T03:01:34.047879+00:00",
+  "styles": [
+    {
+      "style": "A",
+      "path": "deliverables/臺灣房價預測_v22_白底學術_投影備份.pdf",
+      "bytes": 1303409,
+      "sha256": "8521cc62fd84ee15f3a891c7b1e770a343e7b175c2183e0deeef31308c4f0374",
+      "pages": 23,
+      "main_pages": 20,
+      "appendix_pages": 3,
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "page_size_points": [
+        960,
+        540
+      ],
+      "bookmark_count": 23,
+      "searchable_slide_text": false,
+      "editable_slide_objects": false,
+      "speaker_notes_in_pdf": false,
+      "render_command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+        "-r",
+        "120",
+        "-png",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\deliverables\\臺灣房價預測_v22_白底學術_投影備份.pdf",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\renders\\A\\slide"
+      ],
+      "poppler_exit_code": 0,
+      "render_and_comparison_seconds": 5.062592600000244,
+      "all_embedded_images_exact": true,
+      "all_render_pixels_exact": false,
+      "page_checks": [
+        {
+          "page": 1,
+          "title": "臺灣房屋總價預測",
+          "source_sha256": "9049440bd466ac7e46a635db0690c2b588bf4e2dd4827e4952f7c646ef184979",
+          "embedded_pixels_exact": true,
+          "render_sha256": "497829b29109e52dbd9506f870999f41e6fb33bdbc1a5d2e420dfe23d942e9cf",
+          "render_pixels_exact": false,
+          "changed_pixels": 46163,
+          "max_channel_difference": 168,
+          "mean_channel_difference": [
+            1.3734576388888888,
+            1.1996430555555555,
+            0.9217166666666666
+          ]
+        },
+        {
+          "page": 2,
+          "title": "回歸與模型學習",
+          "source_sha256": "aaa640cb198b1a902b754a9e72dfba3c089286c2c740b041d50a3f1f0c94a4f1",
+          "embedded_pixels_exact": true,
+          "render_sha256": "962967aac0baa2b023ece1c423843b0ebe318cfec9d8b115244bb28778688787",
+          "render_pixels_exact": false,
+          "changed_pixels": 57296,
+          "max_channel_difference": 194,
+          "mean_channel_difference": [
+            1.9509777777777777,
+            1.7051902777777779,
+            1.3167465277777777
+          ]
+        },
+        {
+          "page": 3,
+          "title": "平均絕對誤差",
+          "source_sha256": "897af917861a57b214e932148c10c069fc6f5ff58e651ec1cc682fd5573e6a71",
+          "embedded_pixels_exact": true,
+          "render_sha256": "c1f8e3f5edd5e9d8065c8f9c2861243ad803dfcb9483e04815c59165715e4bee",
+          "render_pixels_exact": false,
+          "changed_pixels": 67362,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            2.4558506944444445,
+            2.2261027777777778,
+            1.7854736111111111
+          ]
+        },
+        {
+          "page": 4,
+          "title": "四份資料的用途",
+          "source_sha256": "9571a86bcd5baaffab210f0779b0b372330fe420ecac728cbe6912fe495ddc06",
+          "embedded_pixels_exact": true,
+          "render_sha256": "40aa9491ef379a81c9acd765333bcc071a093a455744b2b20a043135ee3e439e",
+          "render_pixels_exact": false,
+          "changed_pixels": 87655,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.3577465277777776,
+            3.1554118055555556,
+            2.821132638888889
+          ]
+        },
+        {
+          "page": 5,
+          "title": "完整工作流程",
+          "source_sha256": "e8c56b9b5896764c76e6c5b8ab6c79621acde74fb72b9d8ec170b73403aa82d0",
+          "embedded_pixels_exact": true,
+          "render_sha256": "8f6bd1caa78d40a88bdaef658b812c871ee31c89c00dc3eee1d3b04d82159b7c",
+          "render_pixels_exact": false,
+          "changed_pixels": 72053,
+          "max_channel_difference": 207,
+          "mean_channel_difference": [
+            2.6728493055555558,
+            2.3117472222222224,
+            1.7162715277777778
+          ]
+        },
+        {
+          "page": 6,
+          "title": "資料清理",
+          "source_sha256": "d1ffc16f163ec330eebdb6fcb775e78b528a1473172889aae2f8cc86de2ba6f5",
+          "embedded_pixels_exact": true,
+          "render_sha256": "80431e62ca5d195c52258d2b249dc703720ffc12a50e4e6077384ed2cd4b90c6",
+          "render_pixels_exact": false,
+          "changed_pixels": 75959,
+          "max_channel_difference": 203,
+          "mean_channel_difference": [
+            3.012317361111111,
+            2.724495138888889,
+            2.2655729166666667
+          ]
+        },
+        {
+          "page": 7,
+          "title": "特徵工程與欄位取捨",
+          "source_sha256": "174bbc8623e76b4eafea980418f0861b59868a1519e5b205459b124e006b7b76",
+          "embedded_pixels_exact": true,
+          "render_sha256": "37cdee9d00930a391d3beff5aa2df4702dc0aa29c599cbe3402726bf954d3917",
+          "render_pixels_exact": false,
+          "changed_pixels": 109039,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            4.169179166666667,
+            3.8472618055555556,
+            3.3351506944444442
+          ]
+        },
+        {
+          "page": 8,
+          "title": "時間回測與過擬合",
+          "source_sha256": "558ebb1ce6fcc32f4f16933a91fbdc920f5810c4d4ba67ddc382b300868b1fd6",
+          "embedded_pixels_exact": true,
+          "render_sha256": "86678d36007f57f91236a8c2bc7b913794caefa66d7e4d166a4dac769a8edda4",
+          "render_pixels_exact": false,
+          "changed_pixels": 89183,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.5078756944444445,
+            3.1756458333333333,
+            2.56740625
+          ]
+        },
+        {
+          "page": 9,
+          "title": "樹模型與神經網路",
+          "source_sha256": "20765780a988ae3d1f691f8e2a6a58438920da4f337149555aac7f1a6849fa7a",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ed15a806535389bf1aace2f9ada15d17f46cc9dfc0c3c19ca3862a082c77b6a5",
+          "render_pixels_exact": false,
+          "changed_pixels": 73252,
+          "max_channel_difference": 206,
+          "mean_channel_difference": [
+            2.5373916666666667,
+            2.170954861111111,
+            1.5424638888888889
+          ]
+        },
+        {
+          "page": 10,
+          "title": "總價、單價與對數",
+          "source_sha256": "66185d871ecea89601b42e34ce5fc1bcc7cfde0671d43f946021e8ba781566b6",
+          "embedded_pixels_exact": true,
+          "render_sha256": "953022451e5e1f91ff191b47dc6e7ac0fae1777faa6b5e54ed0819e42a7093e8",
+          "render_pixels_exact": false,
+          "changed_pixels": 84316,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.1229006944444446,
+            2.8341451388888887,
+            2.3094354166666666
+          ]
+        },
+        {
+          "page": 11,
+          "title": "近期成交權重",
+          "source_sha256": "a2992278fb6fc331ee44c03d43c7b8d4a680294d102e3b2764f530452a4e8472",
+          "embedded_pixels_exact": true,
+          "render_sha256": "9f6942a2244d00d5bec81b2cc12e5892cff49f29668beb0fdcb8600c3c79f1af",
+          "render_pixels_exact": false,
+          "changed_pixels": 58495,
+          "max_channel_difference": 206,
+          "mean_channel_difference": [
+            1.360951388888889,
+            1.1080777777777777,
+            0.6470986111111111
+          ]
+        },
+        {
+          "page": 12,
+          "title": "價格先驗與分組學習",
+          "source_sha256": "eb1e5abd6fbae09cb8524d0493ee784312e4138150d3daf7199a4f3f6a66c086",
+          "embedded_pixels_exact": true,
+          "render_sha256": "073fda34a30a3b689ccb6f42e1a1872a39d8d62d6dc18399e3b54ad9ab177f52",
+          "render_pixels_exact": false,
+          "changed_pixels": 95596,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.4501243055555557,
+            3.113334722222222,
+            2.5494958333333333
+          ]
+        },
+        {
+          "page": 13,
+          "title": "六個模型與三條分支",
+          "source_sha256": "5cce84c2fb939cfcc00a798e77e51a69f50b20b8d0b3e4542aabb1d6b0d15a79",
+          "embedded_pixels_exact": true,
+          "render_sha256": "002457e589c1a436042c4404baea85066847560207ae46c7fcd88765490b3356",
+          "render_pixels_exact": false,
+          "changed_pixels": 99827,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.478254861111111,
+            3.194165972222222,
+            2.729507638888889
+          ]
+        },
+        {
+          "page": 14,
+          "title": "成交參考與空間修正",
+          "source_sha256": "52ad24c04b1a2cde5b39de5df2f031f555c55602dbe3319b01201ee04112eea9",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ed4ac38b373d114ba6d94fb65c07656d208ce1dd5cd7e9209df6b4b54296b243",
+          "render_pixels_exact": false,
+          "changed_pixels": 70212,
+          "max_channel_difference": 206,
+          "mean_channel_difference": [
+            2.3834597222222222,
+            1.9896090277777778,
+            1.2718868055555557
+          ]
+        },
+        {
+          "page": 15,
+          "title": "逐筆取中位數",
+          "source_sha256": "05143d7ba98ad9d00be562b6bc9e2bf5e91e619976ef27a65696a5765825bb8a",
+          "embedded_pixels_exact": true,
+          "render_sha256": "2a569fc0abc99a32be2979bfc139b356751be56e488c408239f96344fa73b30f",
+          "render_pixels_exact": false,
+          "changed_pixels": 55585,
+          "max_channel_difference": 208,
+          "mean_channel_difference": [
+            1.4137847222222222,
+            1.1782,
+            0.7056083333333333
+          ]
+        },
+        {
+          "page": 16,
+          "title": "三期時間回測",
+          "source_sha256": "6bb27f8a45662a70839942e7725ea87b3750b380d06cf03e0503efdc2438ecb8",
+          "embedded_pixels_exact": true,
+          "render_sha256": "3edf2c6e33a2400ea1f61876f0cae1607c149caa219f78cb2411a6f77c7f353c",
+          "render_pixels_exact": false,
+          "changed_pixels": 57695,
+          "max_channel_difference": 207,
+          "mean_channel_difference": [
+            1.5877868055555555,
+            1.2921243055555556,
+            0.7463263888888889
+          ]
+        },
+        {
+          "page": 17,
+          "title": "Kaggle 公開成績",
+          "source_sha256": "564daa06614ad1dc0d67e65245844080606457d56b2239d4bfd3c4c4a57f5a14",
+          "embedded_pixels_exact": true,
+          "render_sha256": "6e93ea770177234a85498631e57d955cfb34e1873b0a9b4b1416a6a122fc67c3",
+          "render_pixels_exact": false,
+          "changed_pixels": 51311,
+          "max_channel_difference": 217,
+          "mean_channel_difference": [
+            1.6660729166666666,
+            1.4767145833333333,
+            1.1943944444444445
+          ]
+        },
+        {
+          "page": 18,
+          "title": "限制與防過擬合",
+          "source_sha256": "1c39b18cce23501024b9c9051f1c3057c28eac0ecfbc0df46ffe5d9a9ce21da9",
+          "embedded_pixels_exact": true,
+          "render_sha256": "4ffae8a0936935eb7e391ac02a81eff00886055e5b9b1d35625737724c782133",
+          "render_pixels_exact": false,
+          "changed_pixels": 77584,
+          "max_channel_difference": 193,
+          "mean_channel_difference": [
+            2.7448756944444446,
+            2.4309284722222224,
+            1.9666819444444446
+          ]
+        },
+        {
+          "page": 19,
+          "title": "最終訓練與程式重現",
+          "source_sha256": "7ca857e4cd76e9620b203a4ec5d5ebbf22e1794847ced28d171880269285ecdb",
+          "embedded_pixels_exact": true,
+          "render_sha256": "5fc562467a07d95b72574a619e62306df764bb666e992a4b74fa4d2c265d01a3",
+          "render_pixels_exact": false,
+          "changed_pixels": 64912,
+          "max_channel_difference": 196,
+          "mean_channel_difference": [
+            1.702982638888889,
+            1.8060902777777779,
+            1.5629513888888888
+          ]
+        },
+        {
+          "page": 20,
+          "title": "結論",
+          "source_sha256": "656c6b38401f6bcfda828f1db832fee18dca141c69de29e688b991b71462d8fd",
+          "embedded_pixels_exact": true,
+          "render_sha256": "761ca8eba60488a6d416544ffefa35b7c88eb0cd793d59234d691221af5034e2",
+          "render_pixels_exact": false,
+          "changed_pixels": 47611,
+          "max_channel_difference": 216,
+          "mean_channel_difference": [
+            1.5708652777777778,
+            1.4479777777777778,
+            1.3088506944444445
+          ]
+        },
+        {
+          "page": 21,
+          "title": "附錄：精確計算公式",
+          "source_sha256": "f36ece205abf0b7a184f187ace45c97a75573b4cb9acbe958e1d112c5e81cd2f",
+          "embedded_pixels_exact": true,
+          "render_sha256": "1d12d505036190908b26dcf6da2db285fae5b6bf389dcb8b17bd427bc2359888",
+          "render_pixels_exact": false,
+          "changed_pixels": 57698,
+          "max_channel_difference": 204,
+          "mean_channel_difference": [
+            1.72859375,
+            1.4616368055555555,
+            0.9871777777777778
+          ]
+        },
+        {
+          "page": 22,
+          "title": "附錄：參數與程式",
+          "source_sha256": "cc1949b4320ef31d5feff613a01ae15373fa3f8c5b9142fedbc3d922b25b22e6",
+          "embedded_pixels_exact": true,
+          "render_sha256": "c9edcb5f0b695bd946ac70f6cd5bfebb9e5425c89dd086aff10589626f3224cb",
+          "render_pixels_exact": false,
+          "changed_pixels": 103473,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            3.9314965277777776,
+            3.643247222222222,
+            3.1794972222222224
+          ]
+        },
+        {
+          "page": 23,
+          "title": "附錄：常見名詞",
+          "source_sha256": "12a5bb32ba6904c798d4992ce60de9d65b3922de31bbeb5bae402938e5380ac3",
+          "embedded_pixels_exact": true,
+          "render_sha256": "488b342acc6c02444bf2cf0a642eafd3b480363cec039474453c4e823ed1b332",
+          "render_pixels_exact": false,
+          "changed_pixels": 118757,
+          "max_channel_difference": 240,
+          "mean_channel_difference": [
+            4.811368055555556,
+            4.6023958333333335,
+            4.420420833333333
+          ]
+        }
+      ]
+    },
+    {
+      "style": "B",
+      "path": "deliverables/臺灣房價預測_v22_深色科技_投影備份.pdf",
+      "bytes": 1275741,
+      "sha256": "5c4644244feb95f4c6e0f7891ac6b0de97921429ab0a3c15740d711338273e3f",
+      "pages": 23,
+      "main_pages": 20,
+      "appendix_pages": 3,
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "page_size_points": [
+        960,
+        540
+      ],
+      "bookmark_count": 23,
+      "searchable_slide_text": false,
+      "editable_slide_objects": false,
+      "speaker_notes_in_pdf": false,
+      "render_command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+        "-r",
+        "120",
+        "-png",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\deliverables\\臺灣房價預測_v22_深色科技_投影備份.pdf",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\renders\\B\\slide"
+      ],
+      "poppler_exit_code": 0,
+      "render_and_comparison_seconds": 4.868910500000311,
+      "all_embedded_images_exact": true,
+      "all_render_pixels_exact": false,
+      "page_checks": [
+        {
+          "page": 1,
+          "title": "臺灣房屋總價預測",
+          "source_sha256": "9dc77ff3385b0ac7952be0db42001239b3fc61b93f00e157a0c23053e58427fb",
+          "embedded_pixels_exact": true,
+          "render_sha256": "c34db90e849f08da68925d1cb1cfd03703d51d787b88c074877062b6e111c873",
+          "render_pixels_exact": false,
+          "changed_pixels": 38234,
+          "max_channel_difference": 167,
+          "mean_channel_difference": [
+            0.9125013888888889,
+            1.0831701388888888,
+            1.0274104166666667
+          ]
+        },
+        {
+          "page": 2,
+          "title": "回歸與模型學習",
+          "source_sha256": "539dc884ad002c1e49bfaf8177b74b881801fcb847fdb3130a94a9f32e525bea",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ac160df9fc1b16862ca5cbdcb1319c8ef9829d96d690ab40752c58767d7ba7d8",
+          "render_pixels_exact": false,
+          "changed_pixels": 57311,
+          "max_channel_difference": 195,
+          "mean_channel_difference": [
+            1.6858381944444445,
+            1.93453125,
+            1.8357895833333333
+          ]
+        },
+        {
+          "page": 3,
+          "title": "平均絕對誤差",
+          "source_sha256": "996393a73b4de0d18bc93b5cfb9663315841805cb6e5eaf8c0713c0f2cb2a394",
+          "embedded_pixels_exact": true,
+          "render_sha256": "67a058152e7bfad9a08ea3b4078e85e34fc0c0a7b84dec1c0f32d79d059067da",
+          "render_pixels_exact": false,
+          "changed_pixels": 52202,
+          "max_channel_difference": 199,
+          "mean_channel_difference": [
+            1.3932506944444445,
+            1.539979861111111,
+            1.5368125
+          ]
+        },
+        {
+          "page": 4,
+          "title": "四份資料的用途",
+          "source_sha256": "f0dedc979bb3ef9f99254c81ccfbb8b20cd77e880e8d4842d81d6e7ad84ce20e",
+          "embedded_pixels_exact": true,
+          "render_sha256": "2f6496e737b8b89e7ff1d349b0ee252fcfdf9b5c4f50222d59a22d0059d4e08e",
+          "render_pixels_exact": false,
+          "changed_pixels": 85770,
+          "max_channel_difference": 196,
+          "mean_channel_difference": [
+            1.6299611111111112,
+            2.030002083333333,
+            2.0108006944444443
+          ]
+        },
+        {
+          "page": 5,
+          "title": "完整工作流程",
+          "source_sha256": "95db7479f1bfe7e03e137f3ddf795a20e19d264d8bada0915094fc498c76b00f",
+          "embedded_pixels_exact": true,
+          "render_sha256": "c7615075f51bbb0658101ea457b3c18a1e887f975379fc78036a84705bb9140e",
+          "render_pixels_exact": false,
+          "changed_pixels": 72109,
+          "max_channel_difference": 200,
+          "mean_channel_difference": [
+            2.22116875,
+            2.6475006944444446,
+            2.488729861111111
+          ]
+        },
+        {
+          "page": 6,
+          "title": "資料清理",
+          "source_sha256": "b077fc9d77944789064ce50a596c7d61b6528792db92cbecfa4a65094f940421",
+          "embedded_pixels_exact": true,
+          "render_sha256": "71ea3a3d7962b181d14fc79e3c527258de318a0186f1f17c634f06743a6b584b",
+          "render_pixels_exact": false,
+          "changed_pixels": 75420,
+          "max_channel_difference": 199,
+          "mean_channel_difference": [
+            1.71814375,
+            2.1893291666666665,
+            2.104875
+          ]
+        },
+        {
+          "page": 7,
+          "title": "特徵工程與欄位取捨",
+          "source_sha256": "3297908bab7a938f1f2719512fe3b6c4a2088d5bf4afe8fcf9af696e320e7700",
+          "embedded_pixels_exact": true,
+          "render_sha256": "425daa0f8ff31285314d92586d853d37bd1b357a5065829984d120069015f26d",
+          "render_pixels_exact": false,
+          "changed_pixels": 108508,
+          "max_channel_difference": 200,
+          "mean_channel_difference": [
+            2.46468125,
+            2.9618284722222223,
+            2.879652777777778
+          ]
+        },
+        {
+          "page": 8,
+          "title": "時間回測與過擬合",
+          "source_sha256": "b6062ef62a6357bab268c6836dee79c7f1fef4e6f41876964b00f07cabd48429",
+          "embedded_pixels_exact": true,
+          "render_sha256": "5c0322cd88ae4ed2f2edc6e5e3ecafea2a6b5cfc8c278d4e03d7177bcff5483d",
+          "render_pixels_exact": false,
+          "changed_pixels": 88812,
+          "max_channel_difference": 198,
+          "mean_channel_difference": [
+            1.61129375,
+            2.2824388888888887,
+            2.1675722222222222
+          ]
+        },
+        {
+          "page": 9,
+          "title": "樹模型與神經網路",
+          "source_sha256": "f5f3eaba794c0bccd608be4da9a33d5c1e0e3c28b95f545700e830af63251c64",
+          "embedded_pixels_exact": true,
+          "render_sha256": "9f7bba859c36693329a1d0eead2b4cb045be82fb9a3032b804946a20bb995590",
+          "render_pixels_exact": false,
+          "changed_pixels": 73203,
+          "max_channel_difference": 199,
+          "mean_channel_difference": [
+            2.0413152777777777,
+            2.5310229166666667,
+            2.370196527777778
+          ]
+        },
+        {
+          "page": 10,
+          "title": "總價、單價與對數",
+          "source_sha256": "694e4e1d957a2e862483340c1729f6e3a8553bf45e2bec80c89bb911e3bfc7a1",
+          "embedded_pixels_exact": true,
+          "render_sha256": "2e42da25c6dfff04696425ab5d3ad25d3f38ecfe8eaa92d76df44cdbda18bd08",
+          "render_pixels_exact": false,
+          "changed_pixels": 84000,
+          "max_channel_difference": 181,
+          "mean_channel_difference": [
+            1.6040791666666667,
+            2.231297222222222,
+            2.1445381944444444
+          ]
+        },
+        {
+          "page": 11,
+          "title": "近期成交權重",
+          "source_sha256": "3c5da7d564cf72d4ca92ec9b6c889cc66565e8b88ef817a1b63f25fad43d7efc",
+          "embedded_pixels_exact": true,
+          "render_sha256": "40b28d6e8a0008195c32aac3e9802c1a341e9335009993f89c881b8841fcba44",
+          "render_pixels_exact": false,
+          "changed_pixels": 58441,
+          "max_channel_difference": 198,
+          "mean_channel_difference": [
+            0.9586541666666667,
+            1.3837472222222222,
+            1.3030375
+          ]
+        },
+        {
+          "page": 12,
+          "title": "價格先驗與分組學習",
+          "source_sha256": "2bd13416ae878670c054ae89ac57b7b9c9982a00bed21a50a08f02014e239063",
+          "embedded_pixels_exact": true,
+          "render_sha256": "70a557c4a0344b73a0decdbb2c826f11891ac86f9583ec76feb9968506190da0",
+          "render_pixels_exact": false,
+          "changed_pixels": 95367,
+          "max_channel_difference": 195,
+          "mean_channel_difference": [
+            2.111278472222222,
+            2.7339875,
+            2.598454861111111
+          ]
+        },
+        {
+          "page": 13,
+          "title": "六個模型與三條分支",
+          "source_sha256": "fc7f65489b461633e577ad5053271a3a414824ce5cd663b48bf7895cabdc8468",
+          "embedded_pixels_exact": true,
+          "render_sha256": "1325977c9d63e5ee9fc6f090232abb1b4e61f6049ed50ae860d163984b9dc449",
+          "render_pixels_exact": false,
+          "changed_pixels": 99421,
+          "max_channel_difference": 195,
+          "mean_channel_difference": [
+            2.0054069444444442,
+            2.473129166666667,
+            2.416175
+          ]
+        },
+        {
+          "page": 14,
+          "title": "成交參考與空間修正",
+          "source_sha256": "fe0f06f416d3391b554f5e71cf339c025ab51be2922bd3218acecf6801a804bb",
+          "embedded_pixels_exact": true,
+          "render_sha256": "c2240f27fa062af13710ed16ee441e0b72d37814e9849513a6ab620cb5555094",
+          "render_pixels_exact": false,
+          "changed_pixels": 70225,
+          "max_channel_difference": 198,
+          "mean_channel_difference": [
+            1.7337458333333333,
+            2.3667458333333333,
+            2.1642361111111112
+          ]
+        },
+        {
+          "page": 15,
+          "title": "逐筆取中位數",
+          "source_sha256": "4e0368ae9c8b5028d410d9125f969de375059426d2877a07c673bf1011220356",
+          "embedded_pixels_exact": true,
+          "render_sha256": "568f0dcbcb2729fc5e97ab786f4d21f7fa7338a11d9989a6275afc213604fefd",
+          "render_pixels_exact": false,
+          "changed_pixels": 55568,
+          "max_channel_difference": 200,
+          "mean_channel_difference": [
+            1.0183805555555556,
+            1.439942361111111,
+            1.3184013888888888
+          ]
+        },
+        {
+          "page": 16,
+          "title": "三期時間回測",
+          "source_sha256": "7cfd05103cab633e5ad0fd26cddca211832be28c6cd4789c57585a20fe25511b",
+          "embedded_pixels_exact": true,
+          "render_sha256": "09def9fe2698c9608182f05bde0c9df197906d5890fc51f9aff2464a23ca569a",
+          "render_pixels_exact": false,
+          "changed_pixels": 57634,
+          "max_channel_difference": 199,
+          "mean_channel_difference": [
+            1.0858673611111112,
+            1.5959881944444445,
+            1.4697180555555556
+          ]
+        },
+        {
+          "page": 17,
+          "title": "Kaggle 公開成績",
+          "source_sha256": "fe325f5441c1135624e78a2536303b0cff60a145874bbb3743ebcd50c1db84f6",
+          "embedded_pixels_exact": true,
+          "render_sha256": "4f72494e9fce2ee5fac6bb13b86b9e3696c19c354e5fbdb4ad5de10f8574212f",
+          "render_pixels_exact": false,
+          "changed_pixels": 51280,
+          "max_channel_difference": 212,
+          "mean_channel_difference": [
+            1.53494375,
+            1.664404861111111,
+            1.6016604166666666
+          ]
+        },
+        {
+          "page": 18,
+          "title": "限制與防過擬合",
+          "source_sha256": "62d37259d9ab666b508c873a33724f507234f6c866cc02afb77d03203413cdc0",
+          "embedded_pixels_exact": true,
+          "render_sha256": "fde8c9eabefc7ccb778a49ca205ca7847b883b2b517c8de763265fd287dd3f81",
+          "render_pixels_exact": false,
+          "changed_pixels": 77636,
+          "max_channel_difference": 194,
+          "mean_channel_difference": [
+            2.4942930555555556,
+            2.7328034722222223,
+            2.6279743055555556
+          ]
+        },
+        {
+          "page": 19,
+          "title": "最終訓練與程式重現",
+          "source_sha256": "93cbdfadf6e3be296dd4e8668cb612fff96cd286508107cd8eb015978d5aa90d",
+          "embedded_pixels_exact": true,
+          "render_sha256": "d413eb5c8ec825bb6554c9da9c9b992da4f985f7c26477761d4245553fc442bd",
+          "render_pixels_exact": false,
+          "changed_pixels": 64909,
+          "max_channel_difference": 229,
+          "mean_channel_difference": [
+            1.9507506944444444,
+            1.9406472222222222,
+            1.604117361111111
+          ]
+        },
+        {
+          "page": 20,
+          "title": "結論",
+          "source_sha256": "6ca1f334415cbff3b2268f77575a68c3f0472f658db9a80d5716952eb3da67d5",
+          "embedded_pixels_exact": true,
+          "render_sha256": "433bcc4bc2c4f05ef1f5fc79014291903aed0a9cb618cee157a710b2b5e39b2c",
+          "render_pixels_exact": false,
+          "changed_pixels": 47605,
+          "max_channel_difference": 223,
+          "mean_channel_difference": [
+            1.5447152777777777,
+            1.5251722222222222,
+            1.4590847222222223
+          ]
+        },
+        {
+          "page": 21,
+          "title": "附錄：精確計算公式",
+          "source_sha256": "cc050561c4a4712e215e5216366b0aaf15f46dc9842097d95606ee9bcf5cf56c",
+          "embedded_pixels_exact": true,
+          "render_sha256": "73f3bc8ab6660f25fb2b2a47c689836ce685d5ed32f322eaab4fcb1415fdaa9e",
+          "render_pixels_exact": false,
+          "changed_pixels": 57650,
+          "max_channel_difference": 197,
+          "mean_channel_difference": [
+            1.2988680555555556,
+            1.6746368055555556,
+            1.50209375
+          ]
+        },
+        {
+          "page": 22,
+          "title": "附錄：參數與程式",
+          "source_sha256": "fa8544f126e0264a85df609a52c3dfa8f52aebae32472871090e299332e85d8a",
+          "embedded_pixels_exact": true,
+          "render_sha256": "40aea54c3418fe300c92e5b95c41c0d26bfb2680e0872c25184e504332be2062",
+          "render_pixels_exact": false,
+          "changed_pixels": 102920,
+          "max_channel_difference": 199,
+          "mean_channel_difference": [
+            2.0195861111111113,
+            2.4801854166666666,
+            2.4550555555555555
+          ]
+        },
+        {
+          "page": 23,
+          "title": "附錄：常見名詞",
+          "source_sha256": "1eb0a382128090e0f6cc72fdef4ca2d20e87f500343d644c181cd19b476be627",
+          "embedded_pixels_exact": true,
+          "render_sha256": "021dcd746f35a6a98bd706a386f2aef22ae5153280e51bfc814687371c2bee1f",
+          "render_pixels_exact": false,
+          "changed_pixels": 118208,
+          "max_channel_difference": 188,
+          "mean_channel_difference": [
+            2.858058333333333,
+            2.9918645833333333,
+            3.0919506944444444
+          ]
+        }
+      ]
+    },
+    {
+      "style": "C",
+      "path": "deliverables/臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+      "bytes": 2391743,
+      "sha256": "f1d8fb44d21e99fa00657fc6ba634a0959763efbc797879d099b645ec4bfcdba",
+      "pages": 23,
+      "main_pages": 20,
+      "appendix_pages": 3,
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "page_size_points": [
+        960,
+        540
+      ],
+      "bookmark_count": 23,
+      "searchable_slide_text": false,
+      "editable_slide_objects": false,
+      "speaker_notes_in_pdf": false,
+      "render_command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+        "-r",
+        "120",
+        "-png",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\deliverables\\臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+        "C:\\NYCU_ML\\outputs\\v22_projection_pdf_20261001\\final\\renders\\C\\slide"
+      ],
+      "poppler_exit_code": 0,
+      "render_and_comparison_seconds": 5.192844500000319,
+      "all_embedded_images_exact": true,
+      "all_render_pixels_exact": false,
+      "page_checks": [
+        {
+          "page": 1,
+          "title": "臺灣房屋總價預測",
+          "source_sha256": "72d33177e124137d7ded41f3e13f5d35cd812147be2935e45028b1aade983307",
+          "embedded_pixels_exact": true,
+          "render_sha256": "d66cf11117a062f07bbb6167e521ee5eda16e36552c45eceb7fb5f1d1a92949a",
+          "render_pixels_exact": false,
+          "changed_pixels": 348543,
+          "max_channel_difference": 166,
+          "mean_channel_difference": [
+            4.289096527777778,
+            4.371159027777778,
+            4.266647222222222
+          ]
+        },
+        {
+          "page": 2,
+          "title": "回歸與模型學習",
+          "source_sha256": "11c1802bc569baa6326b7ab6567cbc60c72ebd4db0dae78b207e6e2fa4e37314",
+          "embedded_pixels_exact": true,
+          "render_sha256": "3397a0807f947b5c9e66196d7950183096bf9dbc5818b4ac8367bb1c0544787c",
+          "render_pixels_exact": false,
+          "changed_pixels": 59564,
+          "max_channel_difference": 160,
+          "mean_channel_difference": [
+            1.402370138888889,
+            1.61445625,
+            1.611048611111111
+          ]
+        },
+        {
+          "page": 3,
+          "title": "平均絕對誤差",
+          "source_sha256": "018f64bff4501dc9b6020e8f89d7d88eba759b16ec0a980b5510c192acc8dad9",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ceb15d261ad5f1e28f621b1951e1c4fe76fd8a7e0950ec94328b44604eee0c54",
+          "render_pixels_exact": false,
+          "changed_pixels": 69751,
+          "max_channel_difference": 173,
+          "mean_channel_difference": [
+            1.8408708333333332,
+            2.021334027777778,
+            2.004945833333333
+          ]
+        },
+        {
+          "page": 4,
+          "title": "四份資料的用途",
+          "source_sha256": "2a5381bf93d2357514caa16fe570c45ffd14228453288112deed5f5f54f8f7f9",
+          "embedded_pixels_exact": true,
+          "render_sha256": "375c7573241953c0ba71f59304f6edb9c569f7e93a7d699c60aeeee97cc06716",
+          "render_pixels_exact": false,
+          "changed_pixels": 89136,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            2.842972222222222,
+            2.9914395833333334,
+            2.8965520833333334
+          ]
+        },
+        {
+          "page": 5,
+          "title": "完整工作流程",
+          "source_sha256": "115df8d7848ec743770506f7c5fd2c5bd9f5e21690474adc3c525a700b57e356",
+          "embedded_pixels_exact": true,
+          "render_sha256": "72fb1576685ccda15a9206c04ac4f59b51436ba267d3045a99f68e4523d68672",
+          "render_pixels_exact": false,
+          "changed_pixels": 73179,
+          "max_channel_difference": 172,
+          "mean_channel_difference": [
+            1.830204861111111,
+            2.18360625,
+            2.1919520833333332
+          ]
+        },
+        {
+          "page": 6,
+          "title": "資料清理",
+          "source_sha256": "a7a80939c40de08c0598a51a0a804c1e99e10280eb91cb860984633ce4dc7bde",
+          "embedded_pixels_exact": true,
+          "render_sha256": "56254c98a07364caef47912d7e739ac28ad6fd699afe06cfedaaf569d65e7da1",
+          "render_pixels_exact": false,
+          "changed_pixels": 77611,
+          "max_channel_difference": 197,
+          "mean_channel_difference": [
+            2.333225,
+            2.6045256944444444,
+            2.566307638888889
+          ]
+        },
+        {
+          "page": 7,
+          "title": "特徵工程與欄位取捨",
+          "source_sha256": "a74d9cabbeb965563964b1968d335744f4a258270a79f5563ae0c2c2a7a0ecbf",
+          "embedded_pixels_exact": true,
+          "render_sha256": "92888d26a6083893cdfabb6f66e9f04d189e9bb7056b165ccdf4282e65c75302",
+          "render_pixels_exact": false,
+          "changed_pixels": 111898,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            3.405875,
+            3.6503270833333334,
+            3.54938125
+          ]
+        },
+        {
+          "page": 8,
+          "title": "時間回測與過擬合",
+          "source_sha256": "90ef37c0f52bb74d72913fd170b5a8146aaf7fccee41b109dea918fb3600be3d",
+          "embedded_pixels_exact": true,
+          "render_sha256": "d80eb4fed8de9f60f4540f9a6d001f448a625dc9e795e443eefd016fc0f6f4b7",
+          "render_pixels_exact": false,
+          "changed_pixels": 91122,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            2.685395833333333,
+            3.0677555555555553,
+            3.0408125
+          ]
+        },
+        {
+          "page": 9,
+          "title": "樹模型與神經網路",
+          "source_sha256": "f633fde618442c41e6ecb4ae8f859d6077e6c2c06d4d613b1cff15c90f42773e",
+          "embedded_pixels_exact": true,
+          "render_sha256": "aabea3616052daa4ac75fa372c0b65495d7092faf34400792ff9d2d2a19a0315",
+          "render_pixels_exact": false,
+          "changed_pixels": 75741,
+          "max_channel_difference": 172,
+          "mean_channel_difference": [
+            1.7050791666666667,
+            2.105896527777778,
+            2.1355263888888887
+          ]
+        },
+        {
+          "page": 10,
+          "title": "總價、單價與對數",
+          "source_sha256": "147261f48dc641d19adbcf5ca018c9bb1a29d98cfd84ffb71a2cb293fca07353",
+          "embedded_pixels_exact": true,
+          "render_sha256": "7a565095ff9611e8db64e34086f3ae98c88b793871b5e3d5013e4876efe064b0",
+          "render_pixels_exact": false,
+          "changed_pixels": 86820,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            2.4442430555555554,
+            2.7784583333333335,
+            2.7658722222222223
+          ]
+        },
+        {
+          "page": 11,
+          "title": "近期成交權重",
+          "source_sha256": "32a10d73432c87f992b45ccd6355f587bc4d215e86813dfd7a2032583f1e3a65",
+          "embedded_pixels_exact": true,
+          "render_sha256": "8149ef7cbd7a834330f2c91d5cd36706ba8645e39661e120389c91618bad3fd1",
+          "render_pixels_exact": false,
+          "changed_pixels": 60050,
+          "max_channel_difference": 172,
+          "mean_channel_difference": [
+            0.7975430555555556,
+            1.1221784722222221,
+            1.1955027777777778
+          ]
+        },
+        {
+          "page": 12,
+          "title": "價格先驗與分組學習",
+          "source_sha256": "6a312a558decb4c5fe895a5eb15a356dfe608dc45cc3a11eecd7e532429605fb",
+          "embedded_pixels_exact": true,
+          "render_sha256": "83eb3fe55ffc2a83ea0ac452378f388d1db42d5961d63e15a58bfbeeac610f08",
+          "render_pixels_exact": false,
+          "changed_pixels": 98072,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            2.66826875,
+            2.9911986111111113,
+            2.972286111111111
+          ]
+        },
+        {
+          "page": 13,
+          "title": "六個模型與三條分支",
+          "source_sha256": "be1ce12bae295a104d9b13fce6a39fe7de84dec664a511d21b30dcdc9635cf07",
+          "embedded_pixels_exact": true,
+          "render_sha256": "eeb06a909e0b7a83060a02ad4c554db631691b08deeafead35028dcbd9b29995",
+          "render_pixels_exact": false,
+          "changed_pixels": 101109,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            2.81968125,
+            3.0660979166666666,
+            3.0146076388888887
+          ]
+        },
+        {
+          "page": 14,
+          "title": "成交參考與空間修正",
+          "source_sha256": "155df5b2721abfa608e3dc091ead135cea95b588ffa9b2b6c6de60109b2a25b2",
+          "embedded_pixels_exact": true,
+          "render_sha256": "dac6912fefd7b9ac5d8c62d3da0628c80b4e5631ba9d9807bd65e87584ae4828",
+          "render_pixels_exact": false,
+          "changed_pixels": 72169,
+          "max_channel_difference": 171,
+          "mean_channel_difference": [
+            1.4586854166666667,
+            1.9581902777777778,
+            2.012427777777778
+          ]
+        },
+        {
+          "page": 15,
+          "title": "逐筆取中位數",
+          "source_sha256": "35f1300d6c1beaac4286a0e574db44a59efa88b82ff3cdd4c99c63e7eff4a170",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ff28bea49b6b466468b2285e0303515cd5c599d31ada666780a53ac5c476879c",
+          "render_pixels_exact": false,
+          "changed_pixels": 57169,
+          "max_channel_difference": 173,
+          "mean_channel_difference": [
+            0.8433729166666667,
+            1.1812979166666666,
+            1.24651875
+          ]
+        },
+        {
+          "page": 16,
+          "title": "三期時間回測",
+          "source_sha256": "5b11b845f7c5f52dbe4db08c8374c339036a5aa70195e3720432c1d93fbd8433",
+          "embedded_pixels_exact": true,
+          "render_sha256": "02a3792e5c7550d488e32a25901de752d594e5d97ff8053cae7d12f89abbcf15",
+          "render_pixels_exact": false,
+          "changed_pixels": 59201,
+          "max_channel_difference": 172,
+          "mean_channel_difference": [
+            0.90825,
+            1.296854861111111,
+            1.3678513888888888
+          ]
+        },
+        {
+          "page": 17,
+          "title": "Kaggle 公開成績",
+          "source_sha256": "c8e7db1788a946e9cca0b1d5e42dd776f0e6a40e484f59e7ed98cbc580dca724",
+          "embedded_pixels_exact": true,
+          "render_sha256": "ac6a70901f6a21b531215f80b07b887378a7db55e35e96cad20ee563713cef4e",
+          "render_pixels_exact": false,
+          "changed_pixels": 52185,
+          "max_channel_difference": 180,
+          "mean_channel_difference": [
+            1.2763847222222222,
+            1.398673611111111,
+            1.394070138888889
+          ]
+        },
+        {
+          "page": 18,
+          "title": "限制與防過擬合",
+          "source_sha256": "435da1e58a5b10cbf607d2fc0a6c9ca05e8f2834ca5df953b781947d89f9a723",
+          "embedded_pixels_exact": true,
+          "render_sha256": "2544cfd83ae536e9f66ea9c1e108a2f437881f4118e705af4a25736e2003397a",
+          "render_pixels_exact": false,
+          "changed_pixels": 79513,
+          "max_channel_difference": 159,
+          "mean_channel_difference": [
+            2.051738888888889,
+            2.2706597222222222,
+            2.2495993055555554
+          ]
+        },
+        {
+          "page": 19,
+          "title": "最終訓練與程式重現",
+          "source_sha256": "afa7210e492d6b0d02d3a5f83ebd08aa7304be47ae5111b13eb3e5e082511fbd",
+          "embedded_pixels_exact": true,
+          "render_sha256": "e18a1ce14692e2e18565ef39696ade19204764843ef40beb9491df36574e95e4",
+          "render_pixels_exact": false,
+          "changed_pixels": 66894,
+          "max_channel_difference": 149,
+          "mean_channel_difference": [
+            1.4757013888888888,
+            1.594238888888889,
+            1.62509375
+          ]
+        },
+        {
+          "page": 20,
+          "title": "結論",
+          "source_sha256": "1ba201141249952121be562e3bd24218a85b656fcacdbb34191ca370a97b3a87",
+          "embedded_pixels_exact": true,
+          "render_sha256": "783e3d1eb978860c477c95882176b9c41a88cd169bd86ce100fe7a33f95600d9",
+          "render_pixels_exact": false,
+          "changed_pixels": 48064,
+          "max_channel_difference": 195,
+          "mean_channel_difference": [
+            1.3515354166666667,
+            1.3458645833333334,
+            1.3147847222222222
+          ]
+        },
+        {
+          "page": 21,
+          "title": "附錄：精確計算公式",
+          "source_sha256": "13c87da5f78852398a6623afdc3407a54b045b8ee4624a58db9b2020179914ac",
+          "embedded_pixels_exact": true,
+          "render_sha256": "2c7f5b82d91d90f9ad70a42fa3cebd11b2d09dca9cf9846558b713b07ad33d6a",
+          "render_pixels_exact": false,
+          "changed_pixels": 59103,
+          "max_channel_difference": 170,
+          "mean_channel_difference": [
+            1.1272715277777778,
+            1.4197965277777778,
+            1.4387069444444445
+          ]
+        },
+        {
+          "page": 22,
+          "title": "附錄：參數與程式",
+          "source_sha256": "991b94350eb69ba4115881d8eeed12427a4023a802473a62e3fb0a342681f8d9",
+          "embedded_pixels_exact": true,
+          "render_sha256": "f8d1641853cf6f63aa3ee0f0e06f4a83753a68f9e4ccbfd45fcc3de84a16ae03",
+          "render_pixels_exact": false,
+          "changed_pixels": 104968,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            3.2274444444444446,
+            3.45715,
+            3.3637118055555555
+          ]
+        },
+        {
+          "page": 23,
+          "title": "附錄：常見名詞",
+          "source_sha256": "44d3ce3da27ba6f76ed189baef00a40540e437b585ba3b4c18462ee28a82ae57",
+          "embedded_pixels_exact": true,
+          "render_sha256": "b9849443e5d16466c6eb5ff3ad01fe589c85afa3102439b52b3feb52fb3682b4",
+          "render_pixels_exact": false,
+          "changed_pixels": 119819,
+          "max_channel_difference": 235,
+          "mean_channel_difference": [
+            4.3513520833333335,
+            4.268794444444445,
+            4.066531944444445
+          ]
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 19.138228400000116,
+  "originals_unchanged": true,
+  "reference": "C:\\NYCU_ML\\outputs\\v22_teaching_refinement_20261001",
+  "reference_receipt_sha256": "c1ff54f041c8980475cd695c756200eb463f5e92deaa22c4898ee34422ceb377",
+  "render_root": "C:\\NYCU_ML\\outputs\\v22_teaching_refinement_20261001\\build",
+  "method": "Lossless RGB images placed full-page; original notes remain in PPTX and separate script",
+  "build_script_sha256": "5877d64463b32c7457206319f802d9423690ad2d2fb1b51fbf8e5711148ca315",
+  "new_ML_fits": 0,
+  "new_submission_CSV": false,
+  "Private_score": null,
+  "physical_projection_tested": false
+}

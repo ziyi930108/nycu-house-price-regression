@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T02:48:53.832147+00:00",
+  "created_at_utc": "2026-10-01T03:10:31.187325+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9464,8 +9464,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7322,
-      "sha256": "211c051ed28fbc5d6a838d3bec061eb9877a19c3648ab1ac2ef00b72ffaf36ca"
+      "bytes": 7528,
+      "sha256": "1f8c9e9d9dbb58246b696ae54e018aa9a3dbee0c9d8be21e9fd4f6edb0552768"
     },
     {
       "path": "presentation/README.md",
@@ -9524,8 +9524,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6612,
-      "sha256": "3250a3d7e29b6d9fcf0838244e4ffb968e31b31325253ec3b984ab21b7a43b6d"
+      "bytes": 6818,
+      "sha256": "64c7b0ac181d2fc4446a6f52077e15c9ad3167e7aa75431f3780174c81c2a86a"
     },
     {
       "path": "REPORT.md",
@@ -12273,9 +12273,49 @@
       "sha256": "c1ff54f041c8980475cd695c756200eb463f5e92deaa22c4898ee34422ceb377"
     },
     {
+      "path": "teaching/v22_styles_20261001/projection/delivery_receipt.json",
+      "bytes": 45205,
+      "sha256": "2856a03c6613a03d0d0433cf41a8e30d9b974ef928a8b624bd404d1b5ecb8b3c"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/export_slide_pdfs.py",
+      "bytes": 7405,
+      "sha256": "5877d64463b32c7457206319f802d9423690ad2d2fb1b51fbf8e5711148ca315"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/package_receipt.json",
+      "bytes": 2105,
+      "sha256": "491e74fc669b4e1a13704f91762ea12475e7c5cba51216c6739cf0276da31bbd"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/README.md",
+      "bytes": 4023,
+      "sha256": "b57a61465bc8fc1310b996a3477f46daf8cc19fa385537dab54b2588cf9a6661"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/visual_review.json",
+      "bytes": 1473,
+      "sha256": "3bef370582e850e48e2313695bd023fbc09d62d2857f95e4769d07d025158273"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+      "bytes": 2391743,
+      "sha256": "f1d8fb44d21e99fa00657fc6ba634a0959763efbc797879d099b645ec4bfcdba"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/臺灣房價預測_v22_深色科技_投影備份.pdf",
+      "bytes": 1275741,
+      "sha256": "5c4644244feb95f4c6e0f7891ac6b0de97921429ab0a3c15740d711338273e3f"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/projection/臺灣房價預測_v22_白底學術_投影備份.pdf",
+      "bytes": 1303409,
+      "sha256": "8521cc62fd84ee15f3a891c7b1e770a343e7b175c2183e0deeef31308c4f0374"
+    },
+    {
       "path": "teaching/v22_styles_20261001/README.md",
-      "bytes": 4480,
-      "sha256": "9623786f43347294a076acddcaee6cbf4fd0588e40f4072c73207940195939c1"
+      "bytes": 4629,
+      "sha256": "b4c5b6b78f6a4723ba69f0e35f26468101a57a4fd7084951e9af211e28fc252e"
     },
     {
       "path": "teaching/v22_styles_20261001/rebuild_evidence/preflight.json",
