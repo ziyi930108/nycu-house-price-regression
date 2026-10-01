@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T03:55:33.601163+00:00",
+  "created_at_utc": "2026-10-01T04:10:27.895293+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -108,9 +108,14 @@
       "sha256": "7b1472a725281b330d41e5ba51f4683841a643dd8bbd7d3159f3a5a6e8b647f3"
     },
     {
+      "path": "docs/SPOKEN_TEACHING_REBUILD.md",
+      "bytes": 3410,
+      "sha256": "f088ccd26948560cbf6f8b8174919993bf7514b18e6df5cde6447dc8f71bd12e"
+    },
+    {
       "path": "docs/TEACHING_REBUILD.md",
-      "bytes": 3502,
-      "sha256": "a6c95498c3a41f38cde4d2f7a2e98cdc78be4ad26988d28183c9a306d3576d26"
+      "bytes": 3722,
+      "sha256": "10073773640743f7b33ab979efdb97a0d140387cb0e8608f819e4b082deda361"
     },
     {
       "path": "docs/third_party/rtdl_LICENSE.txt",
@@ -9464,8 +9469,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7726,
-      "sha256": "5d786fe7c3d41e6f0dd83379d718206736ac4da56b2fe1318adfb32a518b7088"
+      "bytes": 7719,
+      "sha256": "b4b7fd7a8cbef62431276f47b59cbf30499a75775dd5594c38ade4fc69e65e94"
     },
     {
       "path": "presentation/README.md",
@@ -9524,8 +9529,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6692,
-      "sha256": "5e4b76dca63218ce71b7de6efb5a55aec3fca81edcbd766d5d703dff8d94d8f9"
+      "bytes": 6781,
+      "sha256": "cf9b42948ff89d9b70fe8407da5ecb986bb97a85ec01a31710d1445983a0127c"
     },
     {
       "path": "REPORT.md",
@@ -11888,6 +11893,11 @@
       "sha256": "008d2c3179d7fef541faf135282be862605c1edd4669d8e77aae9896a1a592a6"
     },
     {
+      "path": "scripts/rebuild_spoken_teaching.py",
+      "bytes": 10845,
+      "sha256": "70d4874016751ee1c5b03841754c8d91ff8357f58396059a732bfac7027d2355"
+    },
+    {
       "path": "scripts/rebuild_teaching.py",
       "bytes": 11539,
       "sha256": "bd0c02a1d190944abd97509e40da6dd7c858659bafc43d8c0768b155570c48bb"
@@ -12534,8 +12544,23 @@
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/README.md",
-      "bytes": 2458,
-      "sha256": "eab34bb07db2ec5351d2f962b9d96f22e6f1435b5c8bf1ded207e41f96407516"
+      "bytes": 2677,
+      "sha256": "f19e50e37fb125586ca264cb4ff5a818da71365430f78c6bc7c1a34e79ac0cd8"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/preflight.json",
+      "bytes": 2632,
+      "sha256": "191b12ef7b6b11bde614acd6556319474353180f3b614b567b8fc0aca5189fa9"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/rebuild_receipt.json",
+      "bytes": 12429,
+      "sha256": "0ccffe6015b363f9534330d45509d11823313f31b5d35b6944bf8b18450e04fd"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/verification.json",
+      "bytes": 1096,
+      "sha256": "bdc18079b8de5cfd88d2f7ee3382b0abec6d13700e96ef37e290dd7b430e3e66"
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/verify_and_package.py",

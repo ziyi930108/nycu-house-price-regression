@@ -1,5 +1,7 @@
 # 從GitHub來源重建三款簡報
 
+本頁入口重建原r2。最新白話口語稿請使用[口語版重建入口](SPOKEN_TEACHING_REBUILD.md)，其20頁備忘稿與4,981字講稿已同步；以下16:45屬原r2規劃。
+
 新增[scripts/rebuild_teaching.py](../scripts/rebuild_teaching.py)，可把已保存的v22簡報來源在全新目錄重新生成。只需要本儲存庫的講稿、製作來源、彙總結果及情境照片；不需原始交易Excel、模型權重、逐筆預測或原C:/NYCU_ML研究outputs。
 
 已用從私人GitHub重新clone的79f9a415688009fbe4d4b39f3d662aaa52cb1c28內容實測三款，每款23頁。全部69張PNG與已審原r2逐位元相同，文字、完整notes、圖表數值、媒體及頁面尺寸一致。PPTX整檔SHA不同，因此不宣稱PPTX位元重現，也不取代已發布的原r2成品。[驗證收據](../teaching/v22_styles_20261001/rebuild_evidence/verification.json)保存每款新舊SHA與檢查範圍。

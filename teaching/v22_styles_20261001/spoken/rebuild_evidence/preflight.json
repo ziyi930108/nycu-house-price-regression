@@ -1,0 +1,38 @@
+{
+  "repository": "C:\\NYCU_ML\\outputs\\github_publish_v22_spoken_20261001\\verified_clone",
+  "output": "C:\\NYCU_ML\\outputs\\v22_spoken_rebuild_20261001\\rebuilt",
+  "styles": [
+    "A",
+    "B",
+    "C"
+  ],
+  "input_sha256": {
+    "teaching/v22_styles_20261001/spoken/build/edit_notes.mjs": "1e01003284f1446b789e1120bff84825de447279289d68417c631693e86a0d32",
+    "teaching/v22_styles_20261001/spoken/build/finalize_notes.mjs": "6e74917d5ab05ee47badcbb3cd0ec8a01625bfb0e9eb18932d9572aaac152cd8",
+    "teaching/v22_styles_20261001/spoken/delivery_receipt.json": "131d699acf1337dfe1bddc39a92ec889076127ecfcf8e409e4d2998e12b0babd",
+    "teaching/v22_styles_20261001/spoken/content/notes_plan.json": "f69ca759f61a4519fb465094bf622710207c84c0c8f25d3c81839a9a3c99f884",
+    "teaching/v22_styles_20261001/spoken/content/narrative.json": "cf1d642550771fbd8a58aebd78bc024cab81bc58ab5151671a091e9465bb8302",
+    "teaching/v22_styles_20261001/spoken/content/完整口語講稿.md": "1bc07691bbaea4df9a4a769f7308388755f1b7783bd66480ace50b303f3a6a37",
+    "teaching/v22_styles_20261001/spoken/content/上台口述提示.md": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26",
+    "teaching/v22_styles_20261001/spoken/content/排練與問答.md": "c98d5c58c190217b96268f057c64b84693cd2527c28f9562a2daeddc0e489f5e",
+    "teaching/v22_styles_20261001/deliverables/臺灣房價預測_v22_白底學術_r2.pptx": "5c8af24c8b60645446550e61cb826b041fe32bef81b48fcac65a4662d43082eb",
+    "teaching/v22_styles_20261001/deliverables/臺灣房價預測_v22_深色科技_r2.pptx": "9044da9e1f69882f22a06ed211cf5ccebe197c41a90dc0c0854f009d91d86823",
+    "teaching/v22_styles_20261001/deliverables/臺灣房價預測_v22_暖色雜誌_r2.pptx": "981bc913bf01f37d33dc28362dfa17304ba323af1d114f7454c984298d99c08f"
+  },
+  "source_manifest_sha256": "49b13a42b4c6c38e246559296dc75be0256e841419a5eb54b1fbd13becae03be",
+  "runner_sha256": "70d4874016751ee1c5b03841754c8d91ff8357f58396059a732bfac7027d2355",
+  "runtime_paths": {
+    "TEACHING_PRESENTATION_SKILL": "C:\\Users\\ziyi9\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.905.11957\\skills\\presentations",
+    "RUNTIME_PYTHON": "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "RUNTIME_NODE_MODULES": "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules"
+  },
+  "runtime_versions": {
+    "node": "v24.19.0",
+    "python": "Python 3.12.14"
+  },
+  "required_fonts": [
+    "Microsoft JhengHei",
+    "Consolas",
+    "PMingLiU"
+  ]
+}

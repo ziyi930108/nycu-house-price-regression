@@ -1,0 +1,43 @@
+{
+  "guard_checks": [
+    {
+      "name": "existing_output",
+      "exit_code": 2,
+      "expected_message": "Output must not exist",
+      "passed": true
+    },
+    {
+      "name": "overlap",
+      "exit_code": 1,
+      "expected_message": "Output overlaps",
+      "passed": true
+    },
+    {
+      "name": "check_only",
+      "exit_code": 0,
+      "expected_message": "preflight_passed",
+      "passed": true
+    },
+    {
+      "name": "missing_runtime",
+      "exit_code": 1,
+      "expected_message": "Missing runtime dependency",
+      "passed": true
+    },
+    {
+      "name": "changed_source",
+      "exit_code": 1,
+      "expected_message": "Source identity mismatch",
+      "passed": true
+    }
+  ],
+  "original_inputs_and_rebuilt_decks_unchanged": true,
+  "nine_protected_sha_unchanged": true,
+  "all_69_renders_identical": true,
+  "all_three_pptx_byte_identical": true,
+  "all_notes_and_relationships_verified": true,
+  "input_count": 11,
+  "new_ML_fits": 0,
+  "PowerPoint_desktop_tested": false,
+  "clean_runtime_installation_tested": false
+}

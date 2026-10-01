@@ -18,6 +18,6 @@
 
 ## 程式範圍
 
-本目錄來源是原C:/NYCU_ML製作快照，含既有路徑及拒絕覆寫保護，不能在此副本直接執行。需要原r2資料與Codex bundled Node／Python、@oai/artifact-tool、Presentations技能工具。既有[簡報重建入口](../../../docs/TEACHING_REBUILD.md)仍產生原r2；口語版尚未移植成可配置重建命令。完整渲染、十檔上台ZIP、失敗候選及發布收據留在原工作區。
+本目錄來源是原C:/NYCU_ML製作快照，含既有路徑及拒絕覆寫保護，不能在此副本直接執行。需要原r2資料與Codex bundled Node／Python、@oai/artifact-tool、Presentations技能工具。新增[口語版重建入口](../../../docs/SPOKEN_TEACHING_REBUILD.md)，可指定runtime／repo，在新目錄生成三款口語版；從已發布clone的11項輸入實测，3PPTX及69張PNG完全相同。以下保存的歷史source仍依原布局，請執行新入口。原[簡報重建入口](../../../docs/TEACHING_REBUILD.md)仍產生r2。完整渲染、十檔上台ZIP、失敗候選及發布收據留在原工作區。
 
 本次沒有新ML fit、CSV或Kaggle操作，Public仍1,998,568.5706元、Private未知，v22唯一提交且R106保持停止。已驗證保存模型推論，未驗證全新安裝／從零重訓；本包不是完整重訓備份。尚未桌面PowerPoint／投影／真人計時。

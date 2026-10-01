@@ -19,11 +19,11 @@
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
 | 簡報 | teaching/v22_styles_20261001/spoken內三款23頁口語版、4,981字講稿與提示，主講規劃1,040秒；舊版保留，未真人計時 |
-| 簡報重建 | scripts/rebuild_teaching.py接受runtime路徑，只讀repo內容，在全新目錄生成三款；現有環境69頁render相同，PPTX全檔SHA不同，未全新安裝測試；詳見docs/TEACHING_REBUILD.md |
+| 簡報重建 | 新scripts/rebuild_spoken_teaching.py讀repo產生口語版，現有環境3PPTX與69render均完全相同；原rebuild_teaching.py仍產生r2。未全新安裝，詳見docs/SPOKEN_TEACHING_REBUILD.md |
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 1810550292d3369d0d84792f509ae17e5eefd4a1；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base 7035e492e1164be5783c449c67b7e6435147a551；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

@@ -18,7 +18,7 @@
 
 [最新口語版三款與講稿](teaching/v22_styles_20261001/spoken/README.md)都是20頁主講＋3頁附錄，以同一v22完整流程及設計理由為主線。[完整口語稿](teaching/v22_styles_20261001/spoken/content/完整口語講稿.md)及[口述提示](teaching/v22_styles_20261001/spoken/content/上台口述提示.md)配合使用。主講字數估時不包含問答，仍需實際排練。
 
-[原r2](teaching/v22_styles_20261001/README.md)及[原零基礎教材](teaching/v22_20261001/README.md)保留。既有[重建入口](docs/TEACHING_REBUILD.md)產生原r2，口語版的製作來源另存，尚未移植成可配置命令。原14頁報告方法適用，原配速屬歷史稿。
+[原r2](teaching/v22_styles_20261001/README.md)及[原零基礎教材](teaching/v22_20261001/README.md)保留。既有[重建入口](docs/TEACHING_REBUILD.md)產生原r2，新增[口語版重建入口](docs/SPOKEN_TEACHING_REBUILD.md)，可直接讀repo，在新目錄同步備忘稿；三款檔案與69渲染已重建相同。原14頁報告方法適用，原配速屬歷史稿。
 
 ## 最新聯動dropout研究
 
