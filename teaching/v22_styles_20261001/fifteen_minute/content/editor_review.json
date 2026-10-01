@@ -1,0 +1,18 @@
+{
+  "reviewer": "root",
+  "scope": "Read all 20 proposed scripts against the preserved v22 methodology; author agent proposal plus root review, not a separate independent review.",
+  "edits": [
+    "Remove redundant raw precision from slide 17 spoken text; exact Public remains on slide.",
+    "Replace semicolons with sentence boundaries."
+  ],
+  "approved_main_han": 4051,
+  "previous_spoken_main_han": 4981,
+  "reduction_han": 930,
+  "preserved": [
+    "Model and preprocessing rationale",
+    "Three branches, R then S, final median",
+    "Temporal fit/query separation and grouped OOF distinction",
+    "Unknown Private, reused-window selection bias and reproduction limits"
+  ],
+  "human_rehearsal_measured": false
+}

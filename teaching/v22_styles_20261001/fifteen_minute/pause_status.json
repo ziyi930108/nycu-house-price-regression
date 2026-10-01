@@ -1,0 +1,48 @@
+{
+  "saved_at_utc": "2026-10-01T04:54:14.745606+00:00",
+  "reason": "User explicitly required stopping when weekly remaining quota reaches 1%.",
+  "used_percent": 99,
+  "remaining_percent": 1,
+  "active_child": "fifteen_minute_script",
+  "child_status": "interrupted",
+  "proposal_exists": false,
+  "approved_script_exists": false,
+  "new_decks_built": false,
+  "artifact_authoring_marker_executed": false,
+  "new_html_built": false,
+  "new_github_publication": false,
+  "files": {
+    "prepare_content.py": {
+      "bytes": 7658,
+      "sha256": "d58ba635c4b3a2a9e09fc3f7729b61601d567c0a9f0eff468526a0a02267527a"
+    },
+    "preserve_package.py": {
+      "bytes": 2087,
+      "sha256": "c489d0852bf2d22ca48501d9b5ed667afdc8455979ac80379cca8c482573220d"
+    },
+    "run_build.py": {
+      "bytes": 1087,
+      "sha256": "f5438bf8c24bcff1dfbefe867d743ea853e0b855c6598e6dcdfda47ac1b714c0"
+    },
+    "save_pause.py": {
+      "bytes": 7985,
+      "sha256": "4f48044327fbcad7dc93a678edee26eff05fe26ab8fdb4471ed489c8cd2615d8"
+    },
+    "setup_sources.py": {
+      "bytes": 1816,
+      "sha256": "58f1e7e36632057426aa0f2d4014e2112b7ffed918613609fd1e1586e61b5163"
+    },
+    "user_timing_request.json": {
+      "bytes": 563,
+      "sha256": "47163b4209f1ca2a03561f17933ae2d17eb11b26a110af47aa8bbf2bd9bfd0b2"
+    },
+    "build/edit_notes.mjs": {
+      "bytes": 1568,
+      "sha256": "279d49619d0b357c7553120af0c042488339acc38fe4d6b844fa2a0e7e344260"
+    },
+    "build/finalize_notes.mjs": {
+      "bytes": 2815,
+      "sha256": "dd03eb676562fa9d2f4a6a69b23695cec11e94a3330dc5acf34db3a6ec68d659"
+    }
+  }
+}

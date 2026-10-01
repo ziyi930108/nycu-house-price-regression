@@ -26,6 +26,8 @@ TEACHING_EXTRA={"teaching/v22_styles_20261001/spoken/rehearsal/"+name for name i
 TEACHING_EXTRA={"teaching/v22_styles_20261001/spoken/rehearsal/"+name for name in
                 ("v22-rehearsal-reviewed.html", "template.html", "verify.cjs")}
 
+TEACHING_EXTRA.update({"teaching/v22_styles_20261001/fifteen_minute/"+name for name in ("deliverables/v22-15min-rehearsal.html","rehearsal_template.html","verify_browser.cjs","verify_browser_attempt1.cjs")})
+
 def sha(p):
 
     h=hashlib.sha256()

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-01",
+  "question": "簡報目前規劃約17分鐘。老師除了至少12分鐘，有沒有規定報告時間上限？",
+  "answer": "15分鐘上下，不要超過太多或是太少",
+  "interpretation": "Target approximately 15 minutes of complete main talk, preserve original at-least-12-minute requirement, exclude appendices and QA. Revise actual script, not only timing fields. Human rehearsal remains unmeasured.",
+  "previous_script_han": 4981,
+  "previous_planned_seconds": 1040,
+  "selected_model": "v22",
+  "model_training": false
+}

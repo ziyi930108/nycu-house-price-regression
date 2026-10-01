@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Updated script exact matches, 885-second planning sum, all seven boundary cases, exported 900-second target, responsive layout and no network requests. Existing stopwatch logic unchanged; not an exhaustive repeat of prior tests.",
+  "boundary_cases": [
+    [
+      719,
+      "尚未到12"
+    ],
+    [
+      720,
+      "已滿12"
+    ],
+    [
+      839,
+      "已滿12"
+    ],
+    [
+      840,
+      "接近15"
+    ],
+    [
+      900,
+      "接近15"
+    ],
+    [
+      960,
+      "接近15"
+    ],
+    [
+      961,
+      "超過16"
+    ]
+  ],
+  "human_rehearsal_measured": false,
+  "simulated_state": true,
+  "script_source_sha256": "1a238f805f82f21cc3c23d6678772c48a09c3780278d95f816a1a1c055047115",
+  "requests": [
+    "file:///C:/NYCU_ML/outputs/v22_15min_20261001/deliverables/v22-15min-rehearsal.html"
+  ]
+}

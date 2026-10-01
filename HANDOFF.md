@@ -1,14 +1,16 @@
 # v22 交付接手說明
 
+最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。
+
 新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
 
 另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
 
-最新[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
+先前[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
 
 [原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
 
-更新日期：2026-10-01。最新[口語版](teaching/v22_styles_20261001/spoken/README.md)讓講解先說意思再帶名詞，拆短句並分段。三款69頁畫面與原r2完全一致，20頁主講notes更新，原版、附錄、16題問答與PDF保持。原工作區C:/NYCU_ML保存來源、渲染及完整ZIP。模型仍v22、Private未知，R106停止。
+前次更新：2026-10-01。[舊口語版](teaching/v22_styles_20261001/spoken/README.md)讓講解先說意思再帶名詞，拆短句並分段。三款69頁畫面與原r2完全一致，20頁主講notes更新，原版、附錄、16題問答與PDF保持。原工作區C:/NYCU_ML保存來源、渲染及完整ZIP。模型仍v22、Private未知，R106停止。
 
 ## 當前成果
 
@@ -22,12 +24,12 @@
 | CSV | 完整SHA與原v22相同，見config/v22.json |
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
 | 報告 | REPORT.md及docs/內11頁PDF |
-| 簡報 | teaching/v22_styles_20261001/spoken內三款23頁口語版、4,981字講稿與提示，主講規劃1,040秒；舊版保留，未真人計時 |
+| 簡報 | fifteen_minute內三款23頁簡報、4,051字口語稿與排練HTML，主講規劃885秒，未真人計時；舊版保持 |
 | 簡報重建 | 新scripts/rebuild_spoken_teaching.py讀repo產生口語版，現有環境3PPTX與69render均完全相同；原rebuild_teaching.py仍產生r2。未全新安裝，詳見docs/SPOKEN_TEACHING_REBUILD.md |
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 69b556382278c69464ead99c7b9cbfc83ad55744；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base c27f92318fec556bc54b5c7e4ce1a97fd7e04d48；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

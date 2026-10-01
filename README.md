@@ -1,10 +1,12 @@
 # 臺灣房屋總價預測 v22
 
+最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。
+
 新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
 
 另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
 
-最新[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
+先前[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
 
 [原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
 
@@ -20,7 +22,7 @@
 
 ## 最新簡報與講稿 2026-10-01
 
-[最新口語版三款與講稿](teaching/v22_styles_20261001/spoken/README.md)都是20頁主講＋3頁附錄，以同一v22完整流程及設計理由為主線。[完整口語稿](teaching/v22_styles_20261001/spoken/content/完整口語講稿.md)及[口述提示](teaching/v22_styles_20261001/spoken/content/上台口述提示.md)配合使用。主講字數估時不包含問答，仍需實際排練。
+[先前口語版三款與講稿](teaching/v22_styles_20261001/spoken/README.md)都是20頁主講＋3頁附錄，以同一v22完整流程及設計理由為主線。[完整口語稿](teaching/v22_styles_20261001/spoken/content/完整口語講稿.md)及[口述提示](teaching/v22_styles_20261001/spoken/content/上台口述提示.md)配合使用。主講字數估時不包含問答，仍需實際排練。
 
 [原r2](teaching/v22_styles_20261001/README.md)及[原零基礎教材](teaching/v22_20261001/README.md)保留。既有[重建入口](docs/TEACHING_REBUILD.md)產生原r2，新增[口語版重建入口](docs/SPOKEN_TEACHING_REBUILD.md)，可直接讀repo，在新目錄同步備忘稿；三款檔案與69渲染已重建相同。原14頁報告方法適用，原配速屬歷史稿。
 
