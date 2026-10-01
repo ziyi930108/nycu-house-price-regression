@@ -1,6 +1,6 @@
 # 臺灣房屋總價預測 v22
 
-最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。
+最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。 已有[新稿重建入口](docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`從repo重建三款與HTML，實測全bytes一致。
 
 新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
 

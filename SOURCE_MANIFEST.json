@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T05:13:46.506468+00:00",
+  "created_at_utc": "2026-10-01T11:45:51.207353+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -31,6 +31,11 @@
       "path": "DATA.md",
       "bytes": 1826,
       "sha256": "ff80f53d58ed97dfee869d64c65719ba94e46d830ec713f2e2cb6aef8586e4ae"
+    },
+    {
+      "path": "docs/FIFTEEN_MINUTE_REBUILD.md",
+      "bytes": 3373,
+      "sha256": "c32ead7a97a1e8edad0b78efc62f0357d7c69dd44d58261f6c0edc25319de7d4"
     },
     {
       "path": "docs/PUBLISHING.md",
@@ -109,8 +114,8 @@
     },
     {
       "path": "docs/SPOKEN_TEACHING_REBUILD.md",
-      "bytes": 3410,
-      "sha256": "f088ccd26948560cbf6f8b8174919993bf7514b18e6df5cde6447dc8f71bd12e"
+      "bytes": 3631,
+      "sha256": "da17bdcbdaa687906b80597ddfc199c954b748282f17e2591d6c5e6e6ecf412f"
     },
     {
       "path": "docs/TEACHING_REBUILD.md",
@@ -9469,8 +9474,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8311,
-      "sha256": "09dc9200702d7e4309d4dadfddbe8f6f874e1a44543eee0d90d696c7b8d0178f"
+      "bytes": 8457,
+      "sha256": "a028f009bf033d47e912ad9feaadc413151c7a278407a660a10c9e640d826314"
     },
     {
       "path": "presentation/README.md",
@@ -9529,8 +9534,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7395,
-      "sha256": "4d0a2b17730d68ca4de3e5779f66fca812f71e1cd7e97d3bb2e8ce56b8e2025f"
+      "bytes": 7541,
+      "sha256": "dc53a915d164dbdfdd390ffd20192be78e7da4ecb816200dff939b2d012f7d1b"
     },
     {
       "path": "REPORT.md",
@@ -11894,8 +11899,8 @@
     },
     {
       "path": "scripts/rebuild_spoken_teaching.py",
-      "bytes": 10845,
-      "sha256": "70d4874016751ee1c5b03841754c8d91ff8357f58396059a732bfac7027d2355"
+      "bytes": 14406,
+      "sha256": "e78bb1267099c856640d2880f7dae86d4a01d998260795718945aacf769c1549"
     },
     {
       "path": "scripts/rebuild_teaching.py",
@@ -12439,8 +12444,33 @@
     },
     {
       "path": "teaching/v22_styles_20261001/fifteen_minute/README.md",
-      "bytes": 2632,
-      "sha256": "2d53658320f9508d2eca7dcacb448a6a7d7d31cd16583eb61013cf5fbc591705"
+      "bytes": 2717,
+      "sha256": "163a184f71e10f33300c1f07cac086a718cf1a3cbaf799d2f6bf6a259a1c0a6b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/guard_verification.json",
+      "bytes": 1362,
+      "sha256": "8cc80a0c12d047533bf87feb62e1af19adab8edce0c906c8a61c1f4e2d3b6096"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/preflight.json",
+      "bytes": 3318,
+      "sha256": "c2542bbf450bfc6ff5cb8ee2fd28b61b6c2a4e9c3b67422280f0537b260e5746"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/rebuild_receipt.json",
+      "bytes": 12573,
+      "sha256": "b41fd3c5d80dcc8ef2dc16b1ba742a3c7173ee39d167376e0e996bce0bbcde43"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/review.json",
+      "bytes": 1010,
+      "sha256": "1f8d63deffcc355a515b1c1dafe309a0f3a65213d5a2e40d950ac778b55de7d3"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/verification.json",
+      "bytes": 1750,
+      "sha256": "b6d2c3acdbb9feb1bd984a93e403378d6b9e50d4caaa63b11bc5da5dbebd3d01"
     },
     {
       "path": "teaching/v22_styles_20261001/fifteen_minute/rehearsal_template.html",

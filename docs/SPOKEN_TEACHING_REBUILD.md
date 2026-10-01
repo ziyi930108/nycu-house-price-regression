@@ -1,5 +1,7 @@
 # 從儲存庫重建口語版簡報
 
+本命令預設仍為舊17:20稿。最新約15分鐘版請看[新增版別操作](FIFTEEN_MINUTE_REBUILD.md)，加`--edition fifteen-minute`。下方原實測收據及舊稿身份保持。
+
 [rebuild_spoken_teaching.py](../scripts/rebuild_spoken_teaching.py)以repo原r2三款PPTX、口語講稿計畫及保存製作來源，在全新輸出目錄同步備忘稿。全部專案輸入來自repo，不需原C:/NYCU_ML、交易Excel或房價模型。
 
 已使用從私人GitHub main 7035e492e1164be5783c449c67b7e6435147a551下載的11項輸入，以新增runner實際生成三款；39.552秒含外層執行，無重訓。三份PPTX與已交付口語版逐bytes相同，69張PNG相同，23頁notes按實際slide關聯順序核對。原工作表、媒體及所有非主講notes的OPC部分逐bytes保持。[實際驗證](../teaching/v22_styles_20261001/spoken/rebuild_evidence/verification.json)、[建置收據](../teaching/v22_styles_20261001/spoken/rebuild_evidence/rebuild_receipt.json)、[輸入與環境](../teaching/v22_styles_20261001/spoken/rebuild_evidence/preflight.json)。

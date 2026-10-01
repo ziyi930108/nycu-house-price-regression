@@ -14,6 +14,10 @@ TEACHING=Path('teaching/v22_styles_20261001')
 NAMES={'A':'白底學術','B':'深色科技','C':'暖色雜誌'}
 NS={'a':'http://schemas.openxmlformats.org/drawingml/2006/main','p':'http://schemas.openxmlformats.org/presentationml/2006/main','r':'http://schemas.openxmlformats.org/officeDocument/2006/relationships'}
 EDITED={f'ppt/notesSlides/notesSlide{i}.xml' for i in range(1,21)}
+EDITIONS={
+ 'spoken':{'folder':'spoken','meta':'v22_spoken_20261001','suffix':'_口語講稿版.pptx','han':4981,'seconds':1040},
+ 'fifteen-minute':{'folder':'fifteen_minute','meta':'v22_15min_20261001','suffix':'_15分鐘版.pptx','han':4051,'seconds':885},
+}
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def save(p,d):
  with p.open('x',encoding='utf-8') as f:json.dump(d,f,ensure_ascii=False,indent=2);f.write('\n')
@@ -55,9 +59,29 @@ def verify_package(source,target,notes):
   assert all(texts(n.read(part))==notes[i] for i,part in enumerate(order))
  return order
 
+def validate_narrative(narrative,plan,config,narrative_sha):
+ if narrative['meta']['edition']!=config['meta']:raise ValueError('Narrative edition mismatch')
+ slides=narrative['slides']
+ if [s['number'] for s in slides]!=list(range(1,24)):raise ValueError('Narrative slide order changed')
+ if [s['is_appendix'] for s in slides]!=[False]*20+[True]*3:raise ValueError('Narrative appendix boundary changed')
+ count=sum(len(re.findall(r'[\u4e00-\u9fff]',s['script'])) for s in slides[:20])
+ seconds=sum(s['seconds'] for s in slides[:20])
+ if count!=config['han'] or seconds!=config['seconds']:raise ValueError('Frozen edition timing/text mismatch')
+ if plan['narrative_sha256']!=narrative_sha:raise ValueError('Notes plan references another narrative')
+ for e in plan['styles']:
+  if len(e['notes'])!=23:raise ValueError('Expected 23 notes per style')
+  for s,note in zip(slides,e['notes']):
+   if not s['script'] or note.count(s['script'])!=1:raise ValueError('Narrative script missing or duplicated in notes')
+
+def rehearsal_bytes(template,narrative,narrative_sha):
+ if template.count('__DECK_JSON__')!=1:raise ValueError('Expected one rehearsal data placeholder')
+ payload={'source_sha256':narrative_sha,'slides':[{k:s[k] for k in ('number','title','takeaway','script','seconds')} for s in narrative['slides'][:20]]}
+ return template.replace('__DECK_JSON__',json.dumps(payload,ensure_ascii=False).replace('<','\\u003c')).encode('utf-8')
+
 def main():
  ap=argparse.ArgumentParser(description=__doc__)
  ap.add_argument('--repository',type=Path,default=Path(__file__).resolve().parents[1]);ap.add_argument('--output',type=Path,required=True)
+ ap.add_argument('--edition',choices=EDITIONS,default='spoken',help='Frozen teaching edition; default preserves the original spoken edition.')
  for n in ('node','python','node-modules','presentation-skill'):ap.add_argument('--'+n,type=Path,required=True)
  ap.add_argument('--styles',nargs='+',choices=NAMES,default=list(NAMES));ap.add_argument('--check-only',action='store_true');args=ap.parse_args()
  if len(args.styles)!=len(set(args.styles)):ap.error('Duplicate styles')
@@ -68,12 +92,14 @@ def main():
   if out.is_relative_to(p) or p.is_relative_to(out):raise ValueError('Output overlaps protected source/runtime')
  for p in [node,python,modules/'@oai/artifact-tool/package.json']+[skill/'container_tools'/n for n in ('artifact_tool_utils.mjs','inspect_presentation_package_integrity.py','inspect_presentation_layout_geometry.py')]:
   if not p.is_file():raise ValueError('Missing runtime dependency: '+str(p))
- source=repo/TEACHING;spoken=source/'spoken'
+ config=EDITIONS[args.edition]
+ source=repo/TEACHING;spoken=source/config['folder']
  manifest=repo/'SOURCE_MANIFEST.json';expected={x['path']:x['sha256'] for x in json.loads(manifest.read_text(encoding='utf-8'))['files']}
  inputs=[spoken/'build/edit_notes.mjs',spoken/'build/finalize_notes.mjs',spoken/'delivery_receipt.json']
  content_names=['notes_plan.json','narrative.json','完整口語講稿.md','上台口述提示.md','排練與問答.md']
  inputs += [spoken/'content'/n for n in content_names]
  inputs += [source/'deliverables'/f'臺灣房價預測_v22_{NAMES[k]}_r2.pptx' for k in args.styles]
+ if args.edition=='fifteen-minute':inputs += [spoken/'rehearsal_template.html',spoken/'deliverables/v22-15min-rehearsal.html']
  hashes={}
  for p in inputs:
   if not p.resolve().is_relative_to(repo):raise ValueError('Source escaped repository')
@@ -81,6 +107,8 @@ def main():
   if value!=expected.get(relative):raise ValueError('Source identity mismatch: '+relative)
   hashes[relative]=value
  plan=json.loads((spoken/'content/notes_plan.json').read_text(encoding='utf-8'))
+ narrative=json.loads((spoken/'content/narrative.json').read_text(encoding='utf-8'))
+ validate_narrative(narrative,plan,config,sha(spoken/'content/narrative.json'))
  if [x['style'] for x in plan['styles']]!=list(NAMES):raise ValueError('Unexpected notes plan styles')
  entries={x['style']:x for x in plan['styles']}
  for k in args.styles:
@@ -89,6 +117,14 @@ def main():
   if sha(source/'deliverables'/e['source_file'])!=e['source_sha256']:raise ValueError('Original deck changed')
   with ZipFile(source/'deliverables'/e['source_file']) as z:note_order(z)
  reference=json.loads((spoken/'delivery_receipt.json').read_text(encoding='utf-8'))
+ if [x['style'] for x in reference['styles']]!=list(NAMES):raise ValueError('Reference styles changed')
+ for e in reference['styles']:
+  if e['path']!='deliverables/臺灣房價預測_v22_'+NAMES[e['style']]+config['suffix']:raise ValueError('Reference deck edition mismatch')
+  if not re.fullmatch(r'[0-9a-f]{64}',e['sha256']):raise ValueError('Invalid reference deck SHA')
+ rehearsal=None
+ if args.edition=='fifteen-minute':
+  rehearsal=rehearsal_bytes((spoken/'rehearsal_template.html').read_bytes().decode('utf-8'),narrative,sha(spoken/'content/narrative.json'))
+  if rehearsal!=(spoken/'deliverables/v22-15min-rehearsal.html').read_bytes():raise ValueError('Rebuilt rehearsal differs from frozen edition')
  edit=once((spoken/'build/edit_notes.mjs').read_text(encoding='utf-8'),"const OLD=path.resolve(DIR,'../v22_teaching_refinement_20261001');",'const OLD=process.env.TEACHING_SOURCE;')
  final=(spoken/'build/finalize_notes.mjs').read_text(encoding='utf-8')
  final=assignment(final,r"const SKILL='[^'\r\n]+';",'const SKILL=process.env.TEACHING_PRESENTATION_SKILL;')
@@ -97,11 +133,14 @@ def main():
  final=once(final,"const source=path.resolve(DIR,'../v22_teaching_refinement_20261001/deliverables',entry.source_file);","const source=path.join(process.env.TEACHING_SOURCE,'deliverables',entry.source_file);")
  env=os.environ.copy();env.update({'TEACHING_SOURCE':str(source),'TEACHING_PRESENTATION_SKILL':str(skill),'RUNTIME_PYTHON':str(python),'RUNTIME_NODE_MODULES':str(modules)})
  pre={'repository':str(repo),'output':str(out),'styles':args.styles,'input_sha256':hashes,'source_manifest_sha256':sha(manifest),'runner_sha256':sha(Path(__file__)),'runtime_paths':{k:env[k] for k in ('TEACHING_PRESENTATION_SKILL','RUNTIME_PYTHON','RUNTIME_NODE_MODULES')},'runtime_versions':{'node':subprocess.check_output([str(node),'--version'],text=True).strip(),'python':subprocess.check_output([str(python),'--version'],text=True).strip()},'required_fonts':['Microsoft JhengHei','Consolas']+(['PMingLiU'] if 'C' in args.styles else [])}
+ pre.update({'edition':args.edition,'narrative_edition':config['meta'],'narrative_sha256':sha(spoken/'content/narrative.json'),'main_han':config['han'],'planned_main_seconds':config['seconds'],'rehearsal_expected_sha256':hashlib.sha256(rehearsal).hexdigest() if rehearsal else None})
  if args.check_only:print(json.dumps({'status':'preflight_passed',**pre},ensure_ascii=False));return
  out.mkdir(parents=True,exist_ok=False);save(out/'preflight.json',pre);started=time.perf_counter();steps=[]
  try:
   for folder in ('build','deliverables','content'):(out/folder).mkdir()
   for name in content_names:shutil.copy2(spoken/'content'/name,out/'content'/name)
+  if rehearsal:
+   with (out/'deliverables/v22-15min-rehearsal.html').open('xb') as f:f.write(rehearsal)
   for name,value in [('edit_notes.mjs',edit),('finalize_notes.mjs',final)]:
    with (out/'build'/name).open('x',encoding='utf-8',newline='\n') as f:f.write(value)
   link=out/'build/node_modules'
@@ -122,7 +161,7 @@ def main():
       code=subprocess.run(command,cwd=out,env=env,stdout=stdout,stderr=stderr).returncode
     steps.append({'style':k,'stage':stage,'exit_code':code,'elapsed_seconds':time.perf_counter()-start});print(json.dumps(steps[-1]),flush=True)
     if code:raise RuntimeError('Build failed; inspect saved log and use a new output directory')
-   deck=out/'deliverables'/e['source_file'].replace('_r2.pptx','_口語講稿版.pptx')
+   deck=out/'deliverables'/e['source_file'].replace('_r2.pptx',config['suffix'])
    order=verify_package(original,deck,e['notes'])
    validation=json.loads((build/'final_preserved.validation.json').read_text(encoding='utf-8'))
    assert validation['finalSha256']==sha(deck) and validation['packageIntegrity']['status']=='pass'
@@ -130,8 +169,10 @@ def main():
    prior=next(x for x in reference['styles'] if x['style']==k)
    if renders!=prior['render_sha256']:raise ValueError('Rendered pixels differ from frozen edition; inspect runtime and output, do not claim visual identity')
    outputs.append({'style':k,'path':deck.relative_to(out).as_posix(),'sha256':sha(deck),'original_spoken_sha256':prior['sha256'],'pptx_bytes_identical':sha(deck)==prior['sha256'],'all_23_render_bytes_identical':True,'render_sha256':renders,'all_23_notes_match':True,'only_main_notes_parts_changed':True,'notes_in_actual_slide_order':order})
+   outputs[-1]['reference_deck_sha256']=prior['sha256']
+   if args.edition!='spoken':outputs[-1].pop('original_spoken_sha256')
   assert all(sha(repo/p)==h for p,h in hashes.items())
-  save(out/'rebuild_receipt.json',{'status':'completed','completed_at_utc':datetime.now(timezone.utc).isoformat(),'elapsed_seconds':time.perf_counter()-started,'steps':steps,'outputs':outputs,'all_project_inputs_from_repository':True,'frozen_sources_unchanged':True,'new_ML_fits':0,'clean_runtime_installation_tested':False,'PowerPoint_desktop_tested':False})
+  save(out/'rebuild_receipt.json',{'status':'completed','edition':args.edition,'completed_at_utc':datetime.now(timezone.utc).isoformat(),'elapsed_seconds':time.perf_counter()-started,'steps':steps,'outputs':outputs,'all_project_inputs_from_repository':True,'frozen_sources_unchanged':True,'rehearsal_sha256':sha(out/'deliverables/v22-15min-rehearsal.html') if rehearsal else None,'rehearsal_bytes_identical':True if rehearsal else None,'new_ML_fits':0,'clean_runtime_installation_tested':False,'PowerPoint_desktop_tested':False})
  except Exception as exc:
   save(out/'failure.json',{'status':'failed','error':str(exc),'steps':steps,'elapsed_seconds':time.perf_counter()-started});raise
 

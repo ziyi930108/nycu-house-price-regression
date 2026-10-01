@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "wrong_edition",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Narrative edition mismatch"
+    },
+    {
+      "case": "wrong_reference",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Reference deck edition mismatch"
+    },
+    {
+      "case": "wrong_notes",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Narrative script missing"
+    },
+    {
+      "case": "modified_template",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Source identity mismatch"
+    },
+    {
+      "case": "duplicate_placeholder",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Expected one rehearsal data placeholder"
+    },
+    {
+      "case": "wrong_html",
+      "rejected": true,
+      "output_created": false,
+      "error_contains": "Rebuilt rehearsal differs from frozen edition"
+    },
+    {
+      "case": "source_overlap",
+      "rejected": true,
+      "error_contains": "Output overlaps protected source/runtime"
+    },
+    {
+      "case": "existing_output",
+      "rejected": true,
+      "error_contains": "Output must not exist"
+    }
+  ],
+  "original_clone_inputs_unchanged": true,
+  "new_ML_fits": 0
+}

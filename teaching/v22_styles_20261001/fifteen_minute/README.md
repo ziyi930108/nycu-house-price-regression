@@ -14,6 +14,6 @@
 
 [16題問答](content/排練與問答.md)與[四頁答辯卡](../spoken/defense/README.md)供補充，不算主講。[交付收據](delivery_receipt.json)、[文字核准](content/editor_review.json)、[瀏覽器檢查](browser_verification.json)和[審查及測試修正](review_and_attempts.json)說明驗證範圍。瀏覽器檢查使用模擬狀態，不能當成本人排練；尚未桌面PowerPoint或現場試播。
 
-來源保存供追溯，這批prepare/build/verify腳本依原C:/NYCU_ML目錄與既有runtime，不是可直接從clone執行的新通用入口。既有scripts/rebuild_spoken_teaching.py仍重建舊4,981字口語版，不能宣稱已重建本版。完整13檔上台ZIP保留在原工作區outputs/v22_15min_20261001，未加入repo；repo已提供三款簡報、新稿、HTML及既有PDF/答辯卡連結。
+原prepare/build/verify腳本依原C:/NYCU_ML目錄保存供追溯。新增[可配置重建入口](../../../docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`直接讀repo，在新目錄產生本版三PPTX與HTML，現有環境實測逐bytes相同。入口不加版別仍重建舊4,981字稿，避免影響舊命令。完整13檔上台ZIP保留在原工作區outputs/v22_15min_20261001，未加入repo；repo已提供三款簡報、新稿、HTML及既有PDF/答辯卡連結。
 
 Public MAE仍為1,998,568.5706元，Private未知。沒有新模型訓練、CSV或Kaggle操作，R106研究保持停止。此為文件與程式快照，不是完整重訓備份。
