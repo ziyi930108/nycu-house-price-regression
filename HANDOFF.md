@@ -1,6 +1,6 @@
 # v22 交付接手說明
 
-最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。 已有[新稿重建入口](docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`從repo重建三款與HTML，實測全bytes一致。
+最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。 已有[新稿重建入口](docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`從repo重建三款與HTML，實測全bytes一致。 新增[第12–15頁排練重點](docs/FIFTEEN_MINUTE_REHEARSAL.md)，說清先驗倍率、模型名稱與配速估計的界線；目前成品保持，等待本人排練紀錄。
 
 新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
 
@@ -29,7 +29,7 @@
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 94922b362e4b728409bc12e70bfa40bda856e202；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base f805e2ae3207844474cdfe889fcd2e4aaaa2dc1e；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

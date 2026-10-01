@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T11:45:51.207353+00:00",
+  "created_at_utc": "2026-10-01T11:57:25.054417+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -36,6 +36,11 @@
       "path": "docs/FIFTEEN_MINUTE_REBUILD.md",
       "bytes": 3373,
       "sha256": "c32ead7a97a1e8edad0b78efc62f0357d7c69dd44d58261f6c0edc25319de7d4"
+    },
+    {
+      "path": "docs/FIFTEEN_MINUTE_REHEARSAL.md",
+      "bytes": 3222,
+      "sha256": "b76c1035641f8738f57ff880b626a65a6953c2c3106861a8e133db244d40f206"
     },
     {
       "path": "docs/PUBLISHING.md",
@@ -9474,8 +9479,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8457,
-      "sha256": "a028f009bf033d47e912ad9feaadc413151c7a278407a660a10c9e640d826314"
+      "bytes": 8636,
+      "sha256": "05261a4d47631545a46dc1f59e851b5e3c85a419a39da649190d4bedff613ec4"
     },
     {
       "path": "presentation/README.md",
@@ -9534,8 +9539,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7541,
-      "sha256": "dc53a915d164dbdfdd390ffd20192be78e7da4ecb816200dff939b2d012f7d1b"
+      "bytes": 7720,
+      "sha256": "061780a80a15b56be3412c01048a602858128b754f5accfae1866e97bb2d36af"
     },
     {
       "path": "REPORT.md",
@@ -12313,6 +12318,16 @@
       "sha256": "dd03eb676562fa9d2f4a6a69b23695cec11e94a3330dc5acf34db3a6ec68d659"
     },
     {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/coaching_evidence/review.json",
+      "bytes": 1331,
+      "sha256": "9bafce5d4d11983f035fcbed1921e27b5a4e28e303292940c078fa1d386f0fab"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/fifteen_minute/coaching_evidence/timing_analysis.json",
+      "bytes": 5045,
+      "sha256": "e5df27bf8ba09bc55e1ad250399fde673b99356a060f33a3fa40662832459bf4"
+    },
+    {
       "path": "teaching/v22_styles_20261001/fifteen_minute/content/approved_scripts.json",
       "bytes": 14919,
       "sha256": "f089b5af15b85aca0fbcebec06b2c4802ccc53ea1f9cb0c4ba87c6bc6b8126cc"
@@ -12444,8 +12459,8 @@
     },
     {
       "path": "teaching/v22_styles_20261001/fifteen_minute/README.md",
-      "bytes": 2717,
-      "sha256": "163a184f71e10f33300c1f07cac086a718cf1a3cbaf799d2f6bf6a259a1c0a6b"
+      "bytes": 2955,
+      "sha256": "aac7ac48306d2f27b4dfc83b8173665de6ad71473a75869a581cf3353710ae7d"
     },
     {
       "path": "teaching/v22_styles_20261001/fifteen_minute/rebuild_evidence/guard_verification.json",
