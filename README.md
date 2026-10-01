@@ -1,5 +1,7 @@
 # 臺灣房屋總價預測 v22
 
+已加入[三款風格選擇指南與文字核查](teaching/v22_styles_20261001/readability/README.md)，方便選風格及現場試播；PPTX、PDF與講稿維持r2。
+
 新增[三種風格PDF投影備份與上台說明](teaching/v22_styles_20261001/projection/README.md)，各23頁；PPTX與講稿保持r2。PDF為固定图片、無講者備忘稿，原件仍可編輯。
 
 使用課程交易資料、道路地理特徵與六個回歸模型預測房屋總價。使用者已選定 **v22 為唯一提交版本**；Public MAE **1,998,568.5706 元**，Private 尚未知。選定版本不代表已證明 Private 最佳；[選定紀錄](evidence/selection/user_selected_v22_20260928.json)保留日期、原話與 CSV 身分。

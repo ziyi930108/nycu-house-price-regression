@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T03:10:31.187325+00:00",
+  "created_at_utc": "2026-10-01T03:29:37.987005+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9464,8 +9464,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7528,
-      "sha256": "1f8c9e9d9dbb58246b696ae54e018aa9a3dbee0c9d8be21e9fd4f6edb0552768"
+      "bytes": 7700,
+      "sha256": "e1ffef3cf4c3116f139b02b9428c48f75085050a5ded459534a88511ee6a3a48"
     },
     {
       "path": "presentation/README.md",
@@ -9524,8 +9524,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6818,
-      "sha256": "64c7b0ac181d2fc4446a6f52077e15c9ad3167e7aa75431f3780174c81c2a86a"
+      "bytes": 6990,
+      "sha256": "ee1ab27074c21707332fb94eb37651d0226f103534a7e71fb824afeb5a628d38"
     },
     {
       "path": "REPORT.md",
@@ -12313,9 +12313,44 @@
       "sha256": "8521cc62fd84ee15f3a891c7b1e770a343e7b175c2183e0deeef31308c4f0374"
     },
     {
+      "path": "teaching/v22_styles_20261001/readability/attempt1_failure.json",
+      "bytes": 490,
+      "sha256": "8ecb5200ccfee4addf0f04ceeb08da211e2a30e7f14b77b159a673c5150aafba"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/audit_at_creation.md",
+      "bytes": 3596,
+      "sha256": "714d55fe42b43da0dd30641ea591835e4ca578d01515ae97c841d23f3c819861"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/inspect_readability.py",
+      "bytes": 6890,
+      "sha256": "95b157a03fde05195020ee64a10c6eba575df6480c7f446ee49225fcad3a0133"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/inspect_readability_attempt1.py",
+      "bytes": 6638,
+      "sha256": "5ca77df5e3cc0a17527bb5a9fd0b131d0e6e17a106ae6593d3ef175d126e5a0c"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/native_text_audit.json",
+      "bytes": 348728,
+      "sha256": "16dc47e0efa2c7f6b7443422716ad9b252922d526e8c1fc07bffc50fd966d5d6"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/README.md",
+      "bytes": 2286,
+      "sha256": "b09352592a068eee0a1757cf518c658b526cbd03650fa644c5fa743dba79d904"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/readability/三款風格怎麼選.md",
+      "bytes": 2776,
+      "sha256": "ec09f3c5098b9a73fee8707188ea4f4e08890bdab0a5f806b1bda1c718e9c7bf"
+    },
+    {
       "path": "teaching/v22_styles_20261001/README.md",
-      "bytes": 4629,
-      "sha256": "b4c5b6b78f6a4723ba69f0e35f26468101a57a4fd7084951e9af211e28fc252e"
+      "bytes": 4785,
+      "sha256": "e1422f99a72f233f2000fad7dbbb80d457b1f8e15ff75c456f9e018e9a327f7a"
     },
     {
       "path": "teaching/v22_styles_20261001/rebuild_evidence/preflight.json",

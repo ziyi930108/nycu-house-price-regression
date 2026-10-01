@@ -1,0 +1,11 @@
+{
+  "attempt": 1,
+  "exit_code": 1,
+  "error": "AssertionError at text-run coverage count",
+  "cause": "The denominator counted empty XML a:r nodes while extracted records skipped blank text.",
+  "output_json_written": false,
+  "original_pptx_modified": false,
+  "repair": "Retain original source; compare all nonempty native text strings against extracted records exactly, and record empty run counts separately.",
+  "retry_exit_code": 0,
+  "successful_result": "native_text_audit.json"
+}
