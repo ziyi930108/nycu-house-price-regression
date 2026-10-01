@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T04:10:27.895293+00:00",
+  "created_at_utc": "2026-10-01T04:22:52.584093+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9469,8 +9469,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7719,
-      "sha256": "b4b7fd7a8cbef62431276f47b59cbf30499a75775dd5594c38ade4fc69e65e94"
+      "bytes": 7917,
+      "sha256": "769c92826df2e1ed62c3cc02fc729677d6f1b77c0926bb124a7a8daa428af25e"
     },
     {
       "path": "presentation/README.md",
@@ -9529,8 +9529,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6781,
-      "sha256": "cf9b42948ff89d9b70fe8407da5ecb986bb97a85ec01a31710d1445983a0127c"
+      "bytes": 6979,
+      "sha256": "25145159edd593eaff929039e1cad1ed39eb329c7e105397f39d9c645ec54cf8"
     },
     {
       "path": "REPORT.md",
@@ -12493,6 +12493,51 @@
       "sha256": "c98d5c58c190217b96268f057c64b84693cd2527c28f9562a2daeddc0e489f5e"
     },
     {
+      "path": "teaching/v22_styles_20261001/spoken/defense/build_cards.py",
+      "bytes": 6234,
+      "sha256": "c29b75c6c5d4a755f4c2e12d26c9ec3576c166ef60d30e035ba0f82cab2b81d9"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/build_receipt.json",
+      "bytes": 10563,
+      "sha256": "835c363758755e027770e29285bf02499cb22620edf870ea9a2fb79cc93f05f9"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/content_review.json",
+      "bytes": 2318,
+      "sha256": "d905b57761a92374b9e54b1ea38536263a0378e9fa31736b9ab1fa543973b965"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/questions_approved.json",
+      "bytes": 8228,
+      "sha256": "7a922bf321fe7a9a3213710a0274d89ad213e84a168074dab3c1a512d2611172"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/questions_proposed.json",
+      "bytes": 8073,
+      "sha256": "c25bcc65b09631212a7f235b2ae7a18a2798acb5cb4664b6ce35d91480bc89b4"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/README.md",
+      "bytes": 2127,
+      "sha256": "8d40f2ae98e0113337e17912713c345320f6ab8e6a5a25c4d2e81fe7a46580e7"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/visual_review.json",
+      "bytes": 984,
+      "sha256": "38bd8024dc716a3ec204ab331000b3c1f6f0d7e81510df0f0a562d3c8cea722a"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/臺灣房價預測_v22_答辯提示卡.md",
+      "bytes": 7591,
+      "sha256": "839c98034c86beda55c108d951c49633785a4ffd974a4a3a20592dcbac5713a7"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/defense/臺灣房價預測_v22_答辯提示卡.pdf",
+      "bytes": 274648,
+      "sha256": "41970bd5bfb2462b755ee9a0f3f8943292400292ae13afa4384480efba4b739c"
+    },
+    {
       "path": "teaching/v22_styles_20261001/spoken/deliverables/上台口述提示.md",
       "bytes": 2307,
       "sha256": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26"
@@ -12544,8 +12589,8 @@
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/README.md",
-      "bytes": 2677,
-      "sha256": "f19e50e37fb125586ca264cb4ff5a818da71365430f78c6bc7c1a34e79ac0cd8"
+      "bytes": 2839,
+      "sha256": "69467dc9fef37586f659d2d02e6a94cebded536f53b4f68e73cd7ef08ed62906"
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/preflight.json",

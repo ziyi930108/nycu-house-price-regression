@@ -1,5 +1,7 @@
 # v22 交付接手說明
 
+另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
+
 最新[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
 
 [原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
@@ -23,7 +25,7 @@
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 7035e492e1164be5783c449c67b7e6435147a551；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base 69b556382278c69464ead99c7b9cbfc83ad55744；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

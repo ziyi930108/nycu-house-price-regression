@@ -1,0 +1,102 @@
+{
+  "source_proposal_sha256": "c25bcc65b09631212a7f235b2ae7a18a2798acb5cb4664b6ce35d91480bc89b4",
+  "approved_sha256": "7a922bf321fe7a9a3213710a0274d89ad213e84a168074dab3c1a512d2611172",
+  "source_sha256": {
+    "outputs/v22_spoken_20261001/content/排練與問答.md": "c98d5c58c190217b96268f057c64b84693cd2527c28f9562a2daeddc0e489f5e",
+    "outputs/v22_spoken_20261001/content/narrative.json": "cf1d642550771fbd8a58aebd78bc024cab81bc58ab5151671a091e9465bb8302",
+    "deliverables/v22_github/REPORT.md": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e"
+  },
+  "questions": 16,
+  "counts": [
+    {
+      "number": 1,
+      "say_han": 35,
+      "follow_han": 48
+    },
+    {
+      "number": 2,
+      "say_han": 43,
+      "follow_han": 49
+    },
+    {
+      "number": 3,
+      "say_han": 46,
+      "follow_han": 52
+    },
+    {
+      "number": 4,
+      "say_han": 42,
+      "follow_han": 54
+    },
+    {
+      "number": 5,
+      "say_han": 43,
+      "follow_han": 52
+    },
+    {
+      "number": 6,
+      "say_han": 37,
+      "follow_han": 51
+    },
+    {
+      "number": 7,
+      "say_han": 43,
+      "follow_han": 69
+    },
+    {
+      "number": 8,
+      "say_han": 46,
+      "follow_han": 59
+    },
+    {
+      "number": 9,
+      "say_han": 45,
+      "follow_han": 56
+    },
+    {
+      "number": 10,
+      "say_han": 47,
+      "follow_han": 56
+    },
+    {
+      "number": 11,
+      "say_han": 51,
+      "follow_han": 45
+    },
+    {
+      "number": 12,
+      "say_han": 45,
+      "follow_han": 59
+    },
+    {
+      "number": 13,
+      "say_han": 42,
+      "follow_han": 60
+    },
+    {
+      "number": 14,
+      "say_han": 41,
+      "follow_han": 59
+    },
+    {
+      "number": 15,
+      "say_han": 46,
+      "follow_han": 60
+    },
+    {
+      "number": 16,
+      "say_han": 54,
+      "follow_han": 68
+    }
+  ],
+  "root_edits": [
+    6,
+    8,
+    16
+  ],
+  "review": "Root read all 16 answers against original Q&A; simplify finite area, scope date comparison to valid dates, and make future research conditional. Preserve known evidence limits and student voice.",
+  "main_talk_unchanged": true,
+  "qa_excluded_from_12_minute_requirement": true,
+  "Private_score": null,
+  "new_ML_fits": 0
+}
