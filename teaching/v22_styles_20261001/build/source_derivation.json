@@ -1,0 +1,33 @@
+{
+  "styles": [
+    {
+      "style": "A",
+      "original_folder": "v22_full_style_20261001",
+      "source_sha256": "c081dc716b3f7e21ff020bfe2ee65697bd9c2512150da3cbf074daf854b38e79",
+      "visible_changes": [
+        13,
+        14
+      ]
+    },
+    {
+      "style": "B",
+      "original_folder": "v22_dark_style_20261001",
+      "source_sha256": "1634e1301f53b0f836f458a391bdfdcde01282d68ce928a761963d2b4c7698c3",
+      "visible_changes": [
+        13,
+        14
+      ]
+    },
+    {
+      "style": "C",
+      "original_folder": "v22_warm_style_20261001",
+      "source_sha256": "bf11a82d692a3a3abaafafe08b822aa9997fed743b300c9138fb0c1a499f38e1",
+      "visible_changes": [
+        13,
+        14
+      ]
+    }
+  ],
+  "new_ML_fits": 0,
+  "original_files_modified": false
+}

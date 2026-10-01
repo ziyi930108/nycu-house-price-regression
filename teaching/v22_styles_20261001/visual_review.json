@@ -1,0 +1,15 @@
+{
+  "review_date": "2026-10-01",
+  "reviewer": "root",
+  "method": "Individual full-size view_image inspection of all six changed slide renders",
+  "all_six_changed_slides_individually_reviewed": true,
+  "reviewed": {"A": [13,14], "B": [13,14], "C": [13,14]},
+  "findings": [
+    "Slide 13: illustrative assumption and ten-thousand-TWD unit are visible; weighted calculation 1000*0.75 + 1200*0.25 = 1050 is complete and legible in all three styles.",
+    "Slide 14: two correction steps, per-branch operation, retained three total prices and median order are legible; fit-only price source boundary remains visible."
+  ],
+  "blocking_findings": [],
+  "unchanged_slide_verification": "package_revision.py compares all other 21 pages per style against previously reviewed r1 pixels; actual result recorded in delivery_receipt.json",
+  "PowerPoint_desktop_tested": false,
+  "human_timed_rehearsal": false
+}

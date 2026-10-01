@@ -1,0 +1,80 @@
+{
+  "status": "content_revised_and_scope_verified",
+  "created_date": "2026-10-01",
+  "scope": "Only slides 13 and 14 spoken text and teaching cues changed; no model or predictions changed",
+  "source_sha256": {
+    "outputs/v22_full_style_20261001/content/narrative.json": "518313989cfb63c4550cf32701826cb0892423ef470659479b053e46b5bb595f",
+    "outputs/v22_full_style_20261001/content/完整講稿.md": "9a6a2d509c6c70c6db4cb6f71cb65c9ec116ef94f40e9a82edad0e8a71b84f46",
+    "outputs/v22_beginner_20261001/deliverables/臺灣房價預測_v22_排練與問答.md": "4f437c4e4ac3796207c7402ba47f923fa94096babb9d78e530be28f6403f679b"
+  },
+  "frozen_sources_unchanged": true,
+  "script_changed_slides": [
+    13,
+    14
+  ],
+  "other_21_slide_objects_identical": true,
+  "slide_count": 23,
+  "main_slide_count": 20,
+  "before_main_spoken_han_characters": 4658,
+  "after_main_spoken_han_characters": 4789,
+  "before_planned_main_seconds": 980,
+  "after_planned_main_seconds": 1005,
+  "estimated_minutes_at_250": 19.156,
+  "estimated_minutes_at_285": 16.803508771929824,
+  "estimated_minutes_at_300": 15.963333333333333,
+  "duration_measured_by_presenter": false,
+  "duration_excludes_appendix_and_questions": true,
+  "main_exceeds_12_minutes_at_300": true,
+  "per_changed_slide": [
+    {
+      "number": 13,
+      "before_han": 230,
+      "after_han": 304,
+      "before_seconds": 50,
+      "after_seconds": 65
+    },
+    {
+      "number": 14,
+      "before_han": 250,
+      "after_han": 307,
+      "before_seconds": 55,
+      "after_seconds": 65
+    }
+  ],
+  "example": {
+    "kind": "hypothetical_after_total_price_restoration",
+    "unit": "TWD_10000",
+    "C_unit": 1000,
+    "L_unit": 1200,
+    "C_weight": 0.75,
+    "L_weight": 0.25,
+    "B_unit": 1050,
+    "reference_and_spatial_correction_already_applied": false,
+    "claims_75_25_is_optimal": false
+  },
+  "checks": {
+    "all_scripts_in_markdown": true,
+    "all_16_qa_answers_unchanged": true,
+    "branch_example_arithmetic": true
+  },
+  "outputs": {
+    "narrative.json": {
+      "bytes": 39819,
+      "sha256": "9d6cfabb839e74bcc10ee09df86758db0d1bb0b8395ab605e9b6e5e28a7ac603"
+    },
+    "完整講稿.md": {
+      "bytes": 29251,
+      "sha256": "311a41e6bd6da31bc1d05b1db4d24b611b8614f0ffe9fb96f34359140d7dd047"
+    },
+    "排練與問答.md": {
+      "bytes": 11353,
+      "sha256": "f814a0c15913556475119d3acd0073fbb3d5326f700697ff70947295ce66c1bf"
+    }
+  },
+  "source_script_sha256": "2e75cc0b7247ed5f6eeaf5e8de73763c548d33e68f2fd49f2377950bf1ca7240",
+  "not_performed": [
+    "No PPTX built by this script",
+    "No new ML fit or prediction",
+    "No measured human rehearsal"
+  ]
+}
