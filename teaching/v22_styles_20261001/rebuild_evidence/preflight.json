@@ -1,0 +1,41 @@
+{
+  "repository": "C:\\NYCU_ML\\outputs\\github_publish_v22_styles_20261001\\verified_clone",
+  "output": "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt",
+  "styles": [
+    "A",
+    "B",
+    "C"
+  ],
+  "runtime_versions": {
+    "node": "v24.19.0",
+    "python": "Python 3.12.14"
+  },
+  "runtime_paths": {
+    "RUNTIME_NODE_MODULES": "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules",
+    "RUNTIME_PYTHON": "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "TEACHING_PRESENTATION_SKILL": "C:\\Users\\ziyi9\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.905.11957\\skills\\presentations"
+  },
+  "required_fonts": [
+    "Microsoft JhengHei",
+    "Consolas",
+    "PMingLiU"
+  ],
+  "input_sha256": {
+    "teaching/v22_styles_20261001/content/narrative.json": "9d6cfabb839e74bcc10ee09df86758db0d1bb0b8395ab605e9b6e5e28a7ac603",
+    "teaching/v22_styles_20261001/content/完整講稿.md": "311a41e6bd6da31bc1d05b1db4d24b611b8614f0ffe9fb96f34359140d7dd047",
+    "teaching/v22_styles_20261001/content/排練與問答.md": "f814a0c15913556475119d3acd0073fbb3d5326f700697ff70947295ce66c1bf",
+    "teaching/v22_styles_20261001/delivery_receipt.json": "c1ff54f041c8980475cd695c756200eb463f5e92deaa22c4898ee34422ceb377",
+    "evidence/outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json": "5c227b3077333e39fd92c51674fcccc5abb8d7bc1ac261e1abc020fc2a759601",
+    "teaching/v22_styles_20261001/build/A/build_deck.mjs": "2763ce40b1b6c6b81badf9117a5fd5d891209020346c09c76c2b99976c9e29ed",
+    "teaching/v22_styles_20261001/build/A/finalize_deck.mjs": "47eac697b298d170b0ce55b0c6a5449cdf4b22dd35379f9cb69137b4882611f9",
+    "teaching/v22_styles_20261001/build/B/build_deck.mjs": "24cba9166115ee4b5cdb72d38cbc0a9361f83f6d7978983f1e46f1c4e673a555",
+    "teaching/v22_styles_20261001/build/B/finalize_deck.mjs": "1b4483fae29928a8a99d2d5561c09f540352782f1ae05c5670051d79cef77846",
+    "teaching/v22_styles_20261001/build/C/build_deck.mjs": "ee5185743765909463a47e021d5647e463332e26039c2bb1ba7a22e7154319c9",
+    "teaching/v22_styles_20261001/build/C/finalize_deck.mjs": "592aeac1a761d0fea209089dcf09c57656fe5cb1df43941fdf81ddeeb9b8f253",
+    "teaching/v22_styles_20261001/build/C/assets/taipei_markus_winkler.jpg": "71aea4334d84fdaa7febedd610f54fb4971505f795a112db9e6befd3a4485f81"
+  },
+  "source_manifest_sha256": "4bb4d303442b8214841ad0c75888defe7753486788c855e3aeee4c1ff973a784",
+  "runner_sha256": "bd0c02a1d190944abd97509e40da6dd7c858659bafc43d8c0768b155570c48bb",
+  "new_ML_fits": 0
+}

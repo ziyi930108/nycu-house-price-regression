@@ -29,13 +29,13 @@ Public MAE為使用者回報的1,998,568.5706元，Private未知。沒有新訓�
 
 build/A、B、C的build_deck.mjs與finalize_deck.mjs是最終來源，content/narrative.json為完整敘事。source_data.json只是保存摘要，builders實際仍讀原outputs下的R79結果及Public回報。
 
-這是供接手與追溯的來源快照，尚未完成可攜建置。不要直接在保存副本上執行以下歷史程式：
+新增[重建入口與操作說明](../../docs/TEACHING_REBUILD.md)，可指定runtime路徑、只讀GitHub內資料，在新目錄生成三款。已用已發布的clone加既有Codex runtime實測，69張渲染與原版相同；未測試全新runtime安裝。原來源仍供追溯，不要直接在保存副本上執行以下歷史程式：
 
 - prepare_sources.py、revise_narrative.py依賴原r1來源，且拒絕覆寫。
 - run_all.py依賴本機Node，既有execution.json存在時拒絕重跑。
 - package_revision.py還需原r1三款、舊渲染與九份保護原件。
 
-製作需要Codex bundled Node／Python、@oai/artifact-tool及Presentations技能container_tools；路徑目前硬編碼到作者Windows帳號。字型為Microsoft JhengHei、Consolas，C另需PMingLiU；包裝需要Pillow。node_modules、runtime、技能工具和字型不隨Git散布。修改前先建立新目錄、配置依賴，再執行及驗證；尚未在乾淨環境重建。
+製作需要Codex bundled Node／Python、@oai/artifact-tool及Presentations技能container_tools。原MJS保留作者路徑，新runner只在輸出副本中配置路徑。字型為Microsoft JhengHei、Consolas，C另需PMingLiU；歷史包裝程式需要Pillow。node_modules、runtime、技能工具和字型不隨Git散布。新入口已在現有環境實跑，尚未在全新套件環境重建。
 
 講稿、JSON及PPTX notes中的sources以原工作區C:/NYCU_ML為基準。主要對照：原src/→本repo research/src/歷史程式或src/可攜推論；原reports/→evidence/reports/；原outputs/結果→evidence/outputs/。原件不一定全在Git中，不能把每個來源字串當成可點的repo連結。
 

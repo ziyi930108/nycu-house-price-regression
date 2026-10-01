@@ -1,0 +1,178 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-01T02:44:17.075168+00:00",
+  "elapsed_seconds": 31.81198989999939,
+  "steps": [
+    {
+      "style": "A",
+      "step": "build_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\A\\build_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3727632000000085
+    },
+    {
+      "style": "A",
+      "step": "finalize_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\A\\finalize_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.295608899999934
+    },
+    {
+      "style": "B",
+      "step": "build_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\B\\build_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3295633999996426
+    },
+    {
+      "style": "B",
+      "step": "finalize_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\B\\finalize_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.974561400000312
+    },
+    {
+      "style": "C",
+      "step": "build_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\C\\build_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.4082420999993701
+    },
+    {
+      "style": "C",
+      "step": "finalize_deck.mjs",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe",
+        "C:\\NYCU_ML\\outputs\\v22_rebuild_20261001\\rebuilt\\build\\C\\finalize_deck.mjs"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.177604900000006
+    }
+  ],
+  "outputs": [
+    {
+      "style": "A",
+      "path": "deliverables/臺灣房價預測_v22_白底學術_r2.pptx",
+      "sha256": "62ae0ffdd5276c320382ca63d25f2c3ca6533dfd2e8ecdccf1cce2e39e13067a",
+      "bytes": 104328,
+      "original_pptx_sha256": "5c8af24c8b60645446550e61cb826b041fe32bef81b48fcac65a4662d43082eb",
+      "pptx_byte_identical": false,
+      "all_23_render_bytes_identical": true,
+      "render_sha256": {
+        "slide-01": "9049440bd466ac7e46a635db0690c2b588bf4e2dd4827e4952f7c646ef184979",
+        "slide-02": "aaa640cb198b1a902b754a9e72dfba3c089286c2c740b041d50a3f1f0c94a4f1",
+        "slide-03": "897af917861a57b214e932148c10c069fc6f5ff58e651ec1cc682fd5573e6a71",
+        "slide-04": "9571a86bcd5baaffab210f0779b0b372330fe420ecac728cbe6912fe495ddc06",
+        "slide-05": "e8c56b9b5896764c76e6c5b8ab6c79621acde74fb72b9d8ec170b73403aa82d0",
+        "slide-06": "d1ffc16f163ec330eebdb6fcb775e78b528a1473172889aae2f8cc86de2ba6f5",
+        "slide-07": "174bbc8623e76b4eafea980418f0861b59868a1519e5b205459b124e006b7b76",
+        "slide-08": "558ebb1ce6fcc32f4f16933a91fbdc920f5810c4d4ba67ddc382b300868b1fd6",
+        "slide-09": "20765780a988ae3d1f691f8e2a6a58438920da4f337149555aac7f1a6849fa7a",
+        "slide-10": "66185d871ecea89601b42e34ce5fc1bcc7cfde0671d43f946021e8ba781566b6",
+        "slide-11": "a2992278fb6fc331ee44c03d43c7b8d4a680294d102e3b2764f530452a4e8472",
+        "slide-12": "eb1e5abd6fbae09cb8524d0493ee784312e4138150d3daf7199a4f3f6a66c086",
+        "slide-13": "5cce84c2fb939cfcc00a798e77e51a69f50b20b8d0b3e4542aabb1d6b0d15a79",
+        "slide-14": "52ad24c04b1a2cde5b39de5df2f031f555c55602dbe3319b01201ee04112eea9",
+        "slide-15": "05143d7ba98ad9d00be562b6bc9e2bf5e91e619976ef27a65696a5765825bb8a",
+        "slide-16": "6bb27f8a45662a70839942e7725ea87b3750b380d06cf03e0503efdc2438ecb8",
+        "slide-17": "564daa06614ad1dc0d67e65245844080606457d56b2239d4bfd3c4c4a57f5a14",
+        "slide-18": "1c39b18cce23501024b9c9051f1c3057c28eac0ecfbc0df46ffe5d9a9ce21da9",
+        "slide-19": "7ca857e4cd76e9620b203a4ec5d5ebbf22e1794847ced28d171880269285ecdb",
+        "slide-20": "656c6b38401f6bcfda828f1db832fee18dca141c69de29e688b991b71462d8fd",
+        "slide-21": "f36ece205abf0b7a184f187ace45c97a75573b4cb9acbe958e1d112c5e81cd2f",
+        "slide-22": "cc1949b4320ef31d5feff613a01ae15373fa3f8c5b9142fedbc3d922b25b22e6",
+        "slide-23": "12a5bb32ba6904c798d4992ce60de9d65b3922de31bbeb5bae402938e5380ac3"
+      }
+    },
+    {
+      "style": "B",
+      "path": "deliverables/臺灣房價預測_v22_深色科技_r2.pptx",
+      "sha256": "24f4f31a826458706ae1c7adf5ada68ef59581143caa6b704629b553550e984f",
+      "bytes": 107211,
+      "original_pptx_sha256": "9044da9e1f69882f22a06ed211cf5ccebe197c41a90dc0c0854f009d91d86823",
+      "pptx_byte_identical": false,
+      "all_23_render_bytes_identical": true,
+      "render_sha256": {
+        "slide-01": "9dc77ff3385b0ac7952be0db42001239b3fc61b93f00e157a0c23053e58427fb",
+        "slide-02": "539dc884ad002c1e49bfaf8177b74b881801fcb847fdb3130a94a9f32e525bea",
+        "slide-03": "996393a73b4de0d18bc93b5cfb9663315841805cb6e5eaf8c0713c0f2cb2a394",
+        "slide-04": "f0dedc979bb3ef9f99254c81ccfbb8b20cd77e880e8d4842d81d6e7ad84ce20e",
+        "slide-05": "95db7479f1bfe7e03e137f3ddf795a20e19d264d8bada0915094fc498c76b00f",
+        "slide-06": "b077fc9d77944789064ce50a596c7d61b6528792db92cbecfa4a65094f940421",
+        "slide-07": "3297908bab7a938f1f2719512fe3b6c4a2088d5bf4afe8fcf9af696e320e7700",
+        "slide-08": "b6062ef62a6357bab268c6836dee79c7f1fef4e6f41876964b00f07cabd48429",
+        "slide-09": "f5f3eaba794c0bccd608be4da9a33d5c1e0e3c28b95f545700e830af63251c64",
+        "slide-10": "694e4e1d957a2e862483340c1729f6e3a8553bf45e2bec80c89bb911e3bfc7a1",
+        "slide-11": "3c5da7d564cf72d4ca92ec9b6c889cc66565e8b88ef817a1b63f25fad43d7efc",
+        "slide-12": "2bd13416ae878670c054ae89ac57b7b9c9982a00bed21a50a08f02014e239063",
+        "slide-13": "fc7f65489b461633e577ad5053271a3a414824ce5cd663b48bf7895cabdc8468",
+        "slide-14": "fe0f06f416d3391b554f5e71cf339c025ab51be2922bd3218acecf6801a804bb",
+        "slide-15": "4e0368ae9c8b5028d410d9125f969de375059426d2877a07c673bf1011220356",
+        "slide-16": "7cfd05103cab633e5ad0fd26cddca211832be28c6cd4789c57585a20fe25511b",
+        "slide-17": "fe325f5441c1135624e78a2536303b0cff60a145874bbb3743ebcd50c1db84f6",
+        "slide-18": "62d37259d9ab666b508c873a33724f507234f6c866cc02afb77d03203413cdc0",
+        "slide-19": "93cbdfadf6e3be296dd4e8668cb612fff96cd286508107cd8eb015978d5aa90d",
+        "slide-20": "6ca1f334415cbff3b2268f77575a68c3f0472f658db9a80d5716952eb3da67d5",
+        "slide-21": "cc050561c4a4712e215e5216366b0aaf15f46dc9842097d95606ee9bcf5cf56c",
+        "slide-22": "fa8544f126e0264a85df609a52c3dfa8f52aebae32472871090e299332e85d8a",
+        "slide-23": "1eb0a382128090e0f6cc72fdef4ca2d20e87f500343d644c181cd19b476be627"
+      }
+    },
+    {
+      "style": "C",
+      "path": "deliverables/臺灣房價預測_v22_暖色雜誌_r2.pptx",
+      "sha256": "f0a2decd0cddb934fc94dc10cfa398d4d970960db8646fcb27ccdb8dd43146a4",
+      "bytes": 499977,
+      "original_pptx_sha256": "981bc913bf01f37d33dc28362dfa17304ba323af1d114f7454c984298d99c08f",
+      "pptx_byte_identical": false,
+      "all_23_render_bytes_identical": true,
+      "render_sha256": {
+        "slide-01": "72d33177e124137d7ded41f3e13f5d35cd812147be2935e45028b1aade983307",
+        "slide-02": "11c1802bc569baa6326b7ab6567cbc60c72ebd4db0dae78b207e6e2fa4e37314",
+        "slide-03": "018f64bff4501dc9b6020e8f89d7d88eba759b16ec0a980b5510c192acc8dad9",
+        "slide-04": "2a5381bf93d2357514caa16fe570c45ffd14228453288112deed5f5f54f8f7f9",
+        "slide-05": "115df8d7848ec743770506f7c5fd2c5bd9f5e21690474adc3c525a700b57e356",
+        "slide-06": "a7a80939c40de08c0598a51a0a804c1e99e10280eb91cb860984633ce4dc7bde",
+        "slide-07": "a74d9cabbeb965563964b1968d335744f4a258270a79f5563ae0c2c2a7a0ecbf",
+        "slide-08": "90ef37c0f52bb74d72913fd170b5a8146aaf7fccee41b109dea918fb3600be3d",
+        "slide-09": "f633fde618442c41e6ecb4ae8f859d6077e6c2c06d4d613b1cff15c90f42773e",
+        "slide-10": "147261f48dc641d19adbcf5ca018c9bb1a29d98cfd84ffb71a2cb293fca07353",
+        "slide-11": "32a10d73432c87f992b45ccd6355f587bc4d215e86813dfd7a2032583f1e3a65",
+        "slide-12": "6a312a558decb4c5fe895a5eb15a356dfe608dc45cc3a11eecd7e532429605fb",
+        "slide-13": "be1ce12bae295a104d9b13fce6a39fe7de84dec664a511d21b30dcdc9635cf07",
+        "slide-14": "155df5b2721abfa608e3dc091ead135cea95b588ffa9b2b6c6de60109b2a25b2",
+        "slide-15": "35f1300d6c1beaac4286a0e574db44a59efa88b82ff3cdd4c99c63e7eff4a170",
+        "slide-16": "5b11b845f7c5f52dbe4db08c8374c339036a5aa70195e3720432c1d93fbd8433",
+        "slide-17": "c8e7db1788a946e9cca0b1d5e42dd776f0e6a40e484f59e7ed98cbc580dca724",
+        "slide-18": "435da1e58a5b10cbf607d2fc0a6c9ca05e8f2834ca5df953b781947d89f9a723",
+        "slide-19": "afa7210e492d6b0d02d3a5f83ebd08aa7304be47ae5111b13eb3e5e082511fbd",
+        "slide-20": "1ba201141249952121be562e3bd24218a85b656fcacdbb34191ca370a97b3a87",
+        "slide-21": "13c87da5f78852398a6623afdc3407a54b045b8ee4624a58db9b2020179914ac",
+        "slide-22": "991b94350eb69ba4115881d8eeed12427a4023a802473a62e3fb0a342681f8d9",
+        "slide-23": "44d3ce3da27ba6f76ed189baef00a40540e437b585ba3b4c18462ee28a82ae57"
+      }
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "all_project_inputs_from_repository": true,
+  "new_ML_fits": 0,
+  "limitations": [
+    "Uses the provided existing Codex runtime and installed fonts; no fresh installation tested.",
+    "Rendered image comparison does not prove desktop PowerPoint behavior."
+  ]
+}

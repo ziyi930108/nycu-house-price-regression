@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T02:30:55.260603+00:00",
+  "created_at_utc": "2026-10-01T02:48:53.832147+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -106,6 +106,11 @@
       "path": "docs/source-checks.example.yml",
       "bytes": 611,
       "sha256": "7b1472a725281b330d41e5ba51f4683841a643dd8bbd7d3159f3a5a6e8b647f3"
+    },
+    {
+      "path": "docs/TEACHING_REBUILD.md",
+      "bytes": 3502,
+      "sha256": "a6c95498c3a41f38cde4d2f7a2e98cdc78be4ad26988d28183c9a306d3576d26"
     },
     {
       "path": "docs/third_party/rtdl_LICENSE.txt",
@@ -9459,8 +9464,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7095,
-      "sha256": "25f23aee09962947c9ee08d9e55e1978e67e79becb108f95235583fef6424926"
+      "bytes": 7322,
+      "sha256": "211c051ed28fbc5d6a838d3bec061eb9877a19c3648ab1ac2ef00b72ffaf36ca"
     },
     {
       "path": "presentation/README.md",
@@ -9519,8 +9524,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6503,
-      "sha256": "fac65da236c390a9592dae9dd5a8f671a5e966a6921e9c82a93f31ae52cd9fa7"
+      "bytes": 6612,
+      "sha256": "3250a3d7e29b6d9fcf0838244e4ffb968e31b31325253ec3b984ab21b7a43b6d"
     },
     {
       "path": "REPORT.md",
@@ -11883,6 +11888,11 @@
       "sha256": "008d2c3179d7fef541faf135282be862605c1edd4669d8e77aae9896a1a592a6"
     },
     {
+      "path": "scripts/rebuild_teaching.py",
+      "bytes": 11539,
+      "sha256": "bd0c02a1d190944abd97509e40da6dd7c858659bafc43d8c0768b155570c48bb"
+    },
+    {
       "path": "scripts/verify_source.py",
       "bytes": 1836,
       "sha256": "ca82b6e2295ad73339645d08fa6e035fa629964a492b9fd25af6ce8bbacbb3e4"
@@ -12264,8 +12274,23 @@
     },
     {
       "path": "teaching/v22_styles_20261001/README.md",
-      "bytes": 4251,
-      "sha256": "0e9dd7d62a5c544132b71a6b00cb89776316b1d7e89749a4877b495703415008"
+      "bytes": 4480,
+      "sha256": "9623786f43347294a076acddcaee6cbf4fd0588e40f4072c73207940195939c1"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/rebuild_evidence/preflight.json",
+      "bytes": 2765,
+      "sha256": "fa4fd5d214eeb035cc1e1e03666bee4ad1a20b594f40a3b7574fbcc5a0a29b3f"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/rebuild_evidence/rebuild_receipt.json",
+      "bytes": 10145,
+      "sha256": "3da1ad4cf69fcadf69c5ea039092585d932d4490aa5987d129aafab6622a291c"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/rebuild_evidence/verification.json",
+      "bytes": 2417,
+      "sha256": "d317afab092e477a6e25fd9022e71aea24d4e59669a1be9a574a2f959aa76ef6"
     },
     {
       "path": "teaching/v22_styles_20261001/source_copy_manifest.json",

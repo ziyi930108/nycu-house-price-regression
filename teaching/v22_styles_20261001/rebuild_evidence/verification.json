@@ -1,0 +1,74 @@
+{
+  "checked_at_utc": "2026-10-01T02:45:29.704667+00:00",
+  "styles": [
+    {
+      "style": "A",
+      "slides": 23,
+      "notes": 23,
+      "all_text_notes_chart_values_media_and_dimensions_match": true,
+      "all_23_render_bytes_identical": true,
+      "native_tables": 10,
+      "native_charts": 3,
+      "pptx_sha256": "62ae0ffdd5276c320382ca63d25f2c3ca6533dfd2e8ecdccf1cce2e39e13067a",
+      "original_pptx_sha256": "5c8af24c8b60645446550e61cb826b041fe32bef81b48fcac65a4662d43082eb",
+      "pptx_bytes_identical": false
+    },
+    {
+      "style": "B",
+      "slides": 23,
+      "notes": 23,
+      "all_text_notes_chart_values_media_and_dimensions_match": true,
+      "all_23_render_bytes_identical": true,
+      "native_tables": 9,
+      "native_charts": 4,
+      "pptx_sha256": "24f4f31a826458706ae1c7adf5ada68ef59581143caa6b704629b553550e984f",
+      "original_pptx_sha256": "9044da9e1f69882f22a06ed211cf5ccebe197c41a90dc0c0854f009d91d86823",
+      "pptx_bytes_identical": false
+    },
+    {
+      "style": "C",
+      "slides": 23,
+      "notes": 23,
+      "all_text_notes_chart_values_media_and_dimensions_match": true,
+      "all_23_render_bytes_identical": true,
+      "native_tables": 10,
+      "native_charts": 3,
+      "pptx_sha256": "f0a2decd0cddb934fc94dc10cfa398d4d970960db8646fcb27ccdb8dd43146a4",
+      "original_pptx_sha256": "981bc913bf01f37d33dc28362dfa17304ba323af1d114f7454c984298d99c08f",
+      "pptx_bytes_identical": false
+    }
+  ],
+  "guard_checks": [
+    {
+      "check": "existing_output_refused",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "check": "source_directory_overlap_refused",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true
+    },
+    {
+      "check": "check_only_does_not_create_output",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "missing_skill_does_not_create_output",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true
+    }
+  ],
+  "originals_and_rebuilt_decks_unchanged_by_negative_checks": true,
+  "all_project_inputs_from_verified_clone": true,
+  "original_research_outputs_used_as_build_inputs": false,
+  "clean_runtime_installation_tested": false,
+  "PowerPoint_desktop_tested": false,
+  "new_ML_fits": 0,
+  "Private_score": null
+}
