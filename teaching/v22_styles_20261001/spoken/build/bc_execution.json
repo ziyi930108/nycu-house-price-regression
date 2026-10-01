@@ -1,0 +1,74 @@
+[
+  {
+    "style": "B",
+    "stage": "edit",
+    "command": [
+      "C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\build\\edit_notes.mjs",
+      "B"
+    ],
+    "seconds": 2.644977400001153,
+    "exit_code": 0
+  },
+  {
+    "style": "B",
+    "stage": "preserve",
+    "command": [
+      "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\preserve_package.py",
+      "B"
+    ],
+    "seconds": 0.10573180000028515,
+    "exit_code": 0
+  },
+  {
+    "style": "B",
+    "stage": "finalize",
+    "command": [
+      "C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\build\\finalize_notes.mjs",
+      "B",
+      "preserved"
+    ],
+    "seconds": 9.235495900000387,
+    "exit_code": 0
+  },
+  {
+    "style": "C",
+    "stage": "edit",
+    "command": [
+      "C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\build\\edit_notes.mjs",
+      "C"
+    ],
+    "seconds": 2.6769420000000537,
+    "exit_code": 0
+  },
+  {
+    "style": "C",
+    "stage": "preserve",
+    "command": [
+      "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\preserve_package.py",
+      "C"
+    ],
+    "seconds": 0.12372429999959422,
+    "exit_code": 0
+  },
+  {
+    "style": "C",
+    "stage": "finalize",
+    "command": [
+      "C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+      "C:\\NYCU_ML\\outputs\\v22_spoken_20261001\\build\\finalize_notes.mjs",
+      "C",
+      "preserved"
+    ],
+    "seconds": 9.41928629999893,
+    "exit_code": 0
+  }
+]

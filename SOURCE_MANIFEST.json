@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T03:29:37.987005+00:00",
+  "created_at_utc": "2026-10-01T03:55:33.601163+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9464,8 +9464,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7700,
-      "sha256": "e1ffef3cf4c3116f139b02b9428c48f75085050a5ded459534a88511ee6a3a48"
+      "bytes": 7726,
+      "sha256": "5d786fe7c3d41e6f0dd83379d718206736ac4da56b2fe1318adfb32a518b7088"
     },
     {
       "path": "presentation/README.md",
@@ -9524,8 +9524,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6990,
-      "sha256": "ee1ab27074c21707332fb94eb37651d0226f103534a7e71fb824afeb5a628d38"
+      "bytes": 6692,
+      "sha256": "5e4b76dca63218ce71b7de6efb5a55aec3fca81edcbd766d5d703dff8d94d8f9"
     },
     {
       "path": "REPORT.md",
@@ -12349,8 +12349,8 @@
     },
     {
       "path": "teaching/v22_styles_20261001/README.md",
-      "bytes": 4785,
-      "sha256": "e1422f99a72f233f2000fad7dbbb80d457b1f8e15ff75c456f9e018e9a327f7a"
+      "bytes": 4998,
+      "sha256": "7bb60350f8eb33a36e0a435008c7519efd3cb3ac10cf752a2b35e6249fa4e99c"
     },
     {
       "path": "teaching/v22_styles_20261001/rebuild_evidence/preflight.json",
@@ -12371,6 +12371,176 @@
       "path": "teaching/v22_styles_20261001/source_copy_manifest.json",
       "bytes": 10150,
       "sha256": "2035c621f592b0d094eae6c0f24a4a248b9a5947c2fc030c6424c70eed4862f9"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/approve_scripts.py",
+      "bytes": 1790,
+      "sha256": "60b4e5bf67f8286a10dc1cc7f5c6c95a19c79e6d5e996aace015c714bf8dd866"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/A/attempt1_failure.json",
+      "bytes": 665,
+      "sha256": "8c2f345c7d39691ca48775c1d11f8a3bb3e7eca778c42d1d3877703ebb1064de"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/A/final_preserved.validation.json",
+      "bytes": 8821,
+      "sha256": "69b5915ce8a31acb1173776ded1f6fec31b4072f70718e0913aff536c0681f4a"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/A/preservation_receipt.json",
+      "bytes": 1381,
+      "sha256": "86b61e3b68bb5098e679e78d1a3b162aba6670ba6048bde7a93e886e3935f0cb"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/B/final_preserved.validation.json",
+      "bytes": 9499,
+      "sha256": "de8b2d275ba690a2dd16733e0acf7bba93e4dfff2a0cce7fc3f5dcb4058d84aa"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/B/preservation_receipt.json",
+      "bytes": 1382,
+      "sha256": "48159b0e3273a8ef7d7c600f453d9554d99867dfaa805e4d23cdb53b2843ac38"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/bc_execution.json",
+      "bytes": 1937,
+      "sha256": "c19f5a64a6f24929738828f14fe77b5d57a903a063e302543fd311f05ebbefb8"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/C/final_preserved.validation.json",
+      "bytes": 9013,
+      "sha256": "cc68364be108d311a612233253dd948d455754a2d7cc7cde507f15b20c566571"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/C/preservation_receipt.json",
+      "bytes": 1381,
+      "sha256": "092ebe9ed20856ae6112a882f62e9253250dc3d7fed6f090987303545940464b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/edit_notes.mjs",
+      "bytes": 1547,
+      "sha256": "1e01003284f1446b789e1120bff84825de447279289d68417c631693e86a0d32"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build/finalize_notes.mjs",
+      "bytes": 2798,
+      "sha256": "6e74917d5ab05ee47badcbb3cd0ec8a01625bfb0e9eb18932d9572aaac152cd8"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/build_remaining.py",
+      "bytes": 1113,
+      "sha256": "c41019e200b90eb7023c141dc134d77cc48ba2fb34cfa0f56e44e622a269f3d0"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/approved_scripts.json",
+      "bytes": 18011,
+      "sha256": "4ddd89f1753c4ed7421fd42e60bcb168f3c8b4270f379638050ee3c064ecb1d7"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/author_notes.md",
+      "bytes": 3979,
+      "sha256": "65e6f376aa15e893dde92c3a5d934981f06551d809ca658e739c62fd0deef846"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/editor_review.json",
+      "bytes": 1227,
+      "sha256": "e797c0c115dbc16e6a2ef63a3fc6337155c4d9af20da73e6cebc4df1c5d51aab"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/narrative.json",
+      "bytes": 41640,
+      "sha256": "cf1d642550771fbd8a58aebd78bc024cab81bc58ab5151671a091e9465bb8302"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/notes_plan.json",
+      "bytes": 64786,
+      "sha256": "f69ca759f61a4519fb465094bf622710207c84c0c8f25d3c81839a9a3c99f884"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/proposed_scripts.json",
+      "bytes": 17740,
+      "sha256": "907ba8b9c4a6b2a5e312802d4a67a10257d2010d063bd4cc83037b201af50d44"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/revision_receipt.json",
+      "bytes": 1498,
+      "sha256": "ca3cb6331d2fc181cb70e2ee5b810cff4bceb25302f380a1e585a272a7bb640b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/上台口述提示.md",
+      "bytes": 2307,
+      "sha256": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/完整口語講稿.md",
+      "bytes": 28958,
+      "sha256": "1bc07691bbaea4df9a4a769f7308388755f1b7783bd66480ace50b303f3a6a37"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/content/排練與問答.md",
+      "bytes": 11484,
+      "sha256": "c98d5c58c190217b96268f057c64b84693cd2527c28f9562a2daeddc0e489f5e"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/上台口述提示.md",
+      "bytes": 2307,
+      "sha256": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/先讀我.md",
+      "bytes": 1012,
+      "sha256": "b8954650ad9669b3e1f4dfb08f1ad86e950c9ea62f99e4ad8007a579c3db7ded"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/完整口語講稿.md",
+      "bytes": 28958,
+      "sha256": "1bc07691bbaea4df9a4a769f7308388755f1b7783bd66480ace50b303f3a6a37"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/排練與問答.md",
+      "bytes": 11484,
+      "sha256": "c98d5c58c190217b96268f057c64b84693cd2527c28f9562a2daeddc0e489f5e"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/臺灣房價預測_v22_暖色雜誌_口語講稿版.pptx",
+      "bytes": 500633,
+      "sha256": "fa80daa2821a1cc95c9df1cc144905ffefb41acf6cb22aa6f3459ed61d78f67c"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/臺灣房價預測_v22_深色科技_口語講稿版.pptx",
+      "bytes": 107889,
+      "sha256": "0b910b3c0c4041bdafdd4605477e8126e9bbdd1f4ac74639397df161e1252922"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/deliverables/臺灣房價預測_v22_白底學術_口語講稿版.pptx",
+      "bytes": 104962,
+      "sha256": "d5ec562fb90f7264974dffcf85c507495b6278ba84d1f5d8e87ab0d218148fa5"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/delivery_receipt.json",
+      "bytes": 10412,
+      "sha256": "131d699acf1337dfe1bddc39a92ec889076127ecfcf8e409e4d2998e12b0babd"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/prepare_content.py",
+      "bytes": 7299,
+      "sha256": "a2994618b46b4a5c691a6f3aba2b833662eaf420ad62418ec4eccb10b34cf391"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/preserve_package.py",
+      "bytes": 2063,
+      "sha256": "f24e25507cdda1850a3c30909e70c823586226f8b095b15e677c0a0abead1945"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/README.md",
+      "bytes": 2458,
+      "sha256": "eab34bb07db2ec5351d2f962b9d96f22e6f1435b5c8bf1ded207e41f96407516"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/verify_and_package.py",
+      "bytes": 5321,
+      "sha256": "d5f916490e2957c9d2f97565e9b9421d6dc3064cd95baa243c4c852e35a5890e"
     },
     {
       "path": "teaching/v22_styles_20261001/visual_review.json",

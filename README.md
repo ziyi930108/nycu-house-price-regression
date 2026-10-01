@@ -1,8 +1,8 @@
 # 臺灣房屋總價預測 v22
 
-已加入[三款風格選擇指南與文字核查](teaching/v22_styles_20261001/readability/README.md)，方便選風格及現場試播；PPTX、PDF與講稿維持r2。
+最新[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
 
-新增[三種風格PDF投影備份與上台說明](teaching/v22_styles_20261001/projection/README.md)，各23頁；PPTX與講稿保持r2。PDF為固定图片、無講者備忘稿，原件仍可編輯。
+[原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
 
 使用課程交易資料、道路地理特徵與六個回歸模型預測房屋總價。使用者已選定 **v22 為唯一提交版本**；Public MAE **1,998,568.5706 元**，Private 尚未知。選定版本不代表已證明 Private 最佳；[選定紀錄](evidence/selection/user_selected_v22_20260928.json)保留日期、原話與 CSV 身分。
 
@@ -16,11 +16,9 @@
 
 ## 最新簡報與講稿 2026-10-01
 
-[三種完整風格入口](teaching/v22_styles_20261001/README.md)：A白底學術、B深色科技、C暖色雜誌，各23頁（20主講＋3附錄），同一v22模型。共用[完整講稿](teaching/v22_styles_20261001/content/完整講稿.md)及[排練問答](teaching/v22_styles_20261001/content/排練與問答.md)，主講4,789純漢字，估計15.96–19.16分鐘、配速16:45；尚未真人計時，附錄與問答不計入。使用者尚未選視覺風格。
+[最新口語版三款與講稿](teaching/v22_styles_20261001/spoken/README.md)都是20頁主講＋3頁附錄，以同一v22完整流程及設計理由為主線。[完整口語稿](teaching/v22_styles_20261001/spoken/content/完整口語講稿.md)及[口述提示](teaching/v22_styles_20261001/spoken/content/上台口述提示.md)配合使用。主講字數估時不包含問答，仍需實際排練。
 
-本次r2補上加權算例與各分支修正順序，完整稿也嵌入PPTX備忘稿。新增[簡報重建入口](docs/TEACHING_REBUILD.md)，可由repo內來源與彙總數據在新目錄生成三款，runtime路徑可配置；既有環境實測69頁渲染與原版相同，未測試全新套件安裝。模型、預測與Public／未知Private未改。
-
-[原零基礎教材](teaching/v22_20261001/README.md)及[14頁報告](teaching/v22_20261001/deliverables/臺灣房價預測_v22_零基礎報告.pdf)保留；原報告方法仍適用，其16:20配速屬r1。最新上台請配合本節新講稿。
+[原r2](teaching/v22_styles_20261001/README.md)及[原零基礎教材](teaching/v22_20261001/README.md)保留。既有[重建入口](docs/TEACHING_REBUILD.md)產生原r2，口語版的製作來源另存，尚未移植成可配置命令。原14頁報告方法適用，原配速屬歷史稿。
 
 ## 最新聯動dropout研究
 

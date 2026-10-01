@@ -1,0 +1,21 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const DIR=path.resolve(import.meta.dirname,'..'), key=process.argv[2];
+const preserve=process.argv[3]==='preserved';
+const plan=JSON.parse(await fs.readFile(path.join(DIR,'content/notes_plan.json'),'utf8'));
+const entry=plan.styles.find(x=>x.style===key);if(!entry)throw Error('Expected A, B or C');
+const BUILD=path.join(DIR,'build',key), OUT=path.join(DIR,'deliverables');
+const SKILL='C:/Users/ziyi9/.codex/plugins/cache/openai-primary-runtime/presentations/26.905.11957/skills/presentations';
+const PY='C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe';
+process.env.RUNTIME_NODE_MODULES='C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const final=path.join(OUT,entry.source_file.replace('_r2.pptx','_口語講稿版.pptx'));
+const renders=path.join(BUILD,'renders');await fs.mkdir(renders,{recursive:true});
+const source=path.resolve(DIR,'../v22_teaching_refinement_20261001/deliverables',entry.source_file);
+const {finalizePresentation}=await import(pathToFileURL(SKILL+'/container_tools/artifact_tool_utils.mjs').href);
+const tableOwners=key==='B'?[4,6,7,8,10,12,13,22,23]:[3,4,6,7,8,10,12,13,22,23];
+await finalizePresentation({workspaceDir:DIR,explicitTotalSlideCount:23,candidatePath:BUILD+(preserve?'/candidate_preserved.pptx':'/candidate.pptx'),finalPath:final,pythonExecutable:PY,integrityValidatorPath:SKILL+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:SKILL+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit',...tableOwners.flatMap(n=>['--require-native-table-slide',String(n)])],requiredNativeTableOwnerSlides:tableOwners,requiredNativeChartOwnerSlides:key==='B'?[3,11,15,16]:[11,15,16],materializeLiteralChartWorkbooks:false,fontPolicy:{basis:'reference',families:key==='C'?['Microsoft JhengHei','Consolas','PMingLiU']:['Microsoft JhengHei','Consolas'],referencePath:source,referenceSha256:entry.source_sha256},verifyArtifactToolImport:true,receiptPath:BUILD+(preserve?'/final_preserved.validation.json':'/final.validation.json')});
+const p=await PresentationFile.importPptx(await FileBlob.load(final));
+for(let i=0;i<p.slides.items.length;i++){const s=p.slides.items[i],stem='slide-'+String(i+1).padStart(2,'0');const png=await p.export({slide:s,format:'png',scale:1.25});await fs.writeFile(path.join(renders,stem+'.png'),new Uint8Array(await png.arrayBuffer()),{flag:'wx'});}
+console.log(JSON.stringify({style:key,file:final,renders,slideCount:p.slides.items.length}));

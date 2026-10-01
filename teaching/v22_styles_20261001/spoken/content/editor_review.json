@@ -1,0 +1,40 @@
+{
+  "changed_pages": [
+    6,
+    7,
+    11,
+    17,
+    18,
+    19
+  ],
+  "replacements": {
+    "6": [
+      "先看資料清理。先處理格式和完全重複的資料。",
+      "先看資料清理。"
+    ],
+    "7": [
+      "因此不直接放進模型。",
+      "因此不直接放進模型。備註只保留有限的條件旗標。"
+    ],
+    "11": [
+      "比較近期也不代表一定更可靠",
+      "較近期的資料，也不一定更可靠"
+    ],
+    "17": [
+      "這是使用者提供的平台截圖所回報的結果。",
+      "這是我提交後，平台回報的結果，已保存截圖。"
+    ],
+    "18": [
+      "先固定想驗證的問題和時間切分",
+      "要減少這些風險，我們會先固定問題和時間切分"
+    ],
+    "19": [
+      "但請分清楚，我們這次沒有從頭重訓全部模型",
+      "剛才的重現驗證，是重新載入保存模型，沒有從頭重訓全部模型"
+    ]
+  },
+  "paragraph_breaks": "every three sentences",
+  "main_han": 4981,
+  "independent_review": "All 20 scripts reviewed; small oral clarity and presenter voice edits; no new factual defects found.",
+  "source_proposal_preserved": true
+}

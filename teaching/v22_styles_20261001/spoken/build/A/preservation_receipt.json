@@ -1,0 +1,31 @@
+{
+  "style": "A",
+  "method": "Retain original OPC package; replace only twenty notesSlide XML parts authored by Artifact Tool. No workbook snapshot regeneration.",
+  "source_sha256": "5c8af24c8b60645446550e61cb826b041fe32bef81b48fcac65a4662d43082eb",
+  "artifact_candidate_sha256": "f78e95e30981e289364a5ae4d0ad1f3c29778d39e9e3030c3da53271f79a6940",
+  "preserved_candidate_sha256": "d5ec562fb90f7264974dffcf85c507495b6278ba84d1f5d8e87ab0d218148fa5",
+  "only_changed_parts": [
+    "ppt/notesSlides/notesSlide1.xml",
+    "ppt/notesSlides/notesSlide2.xml",
+    "ppt/notesSlides/notesSlide3.xml",
+    "ppt/notesSlides/notesSlide4.xml",
+    "ppt/notesSlides/notesSlide5.xml",
+    "ppt/notesSlides/notesSlide6.xml",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/notesSlides/notesSlide8.xml",
+    "ppt/notesSlides/notesSlide9.xml",
+    "ppt/notesSlides/notesSlide10.xml",
+    "ppt/notesSlides/notesSlide11.xml",
+    "ppt/notesSlides/notesSlide12.xml",
+    "ppt/notesSlides/notesSlide13.xml",
+    "ppt/notesSlides/notesSlide14.xml",
+    "ppt/notesSlides/notesSlide15.xml",
+    "ppt/notesSlides/notesSlide16.xml",
+    "ppt/notesSlides/notesSlide17.xml",
+    "ppt/notesSlides/notesSlide18.xml",
+    "ppt/notesSlides/notesSlide19.xml",
+    "ppt/notesSlides/notesSlide20.xml"
+  ],
+  "unchanged_part_count": 98,
+  "original_embedded_workbooks_preserved": true
+}

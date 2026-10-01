@@ -1,0 +1,9 @@
+{
+  "stage": "Artifact import/export then finalization without workbook regeneration",
+  "exit_code": 1,
+  "failure": "native_chart_workbook_contract_failed",
+  "slides": [11,15,16],
+  "cause_observed": "Artifact export has no ppt/embeddings/ entries; original has three chart-data-snapshot workbooks. Finalizer correctly rejected the candidate.",
+  "candidate_sha256": "f78e95e30981e289364a5ae4d0ad1f3c29778d39e9e3030c3da53271f79a6940",
+  "repair": "Preserve all original package entries except the 20 explicitly edited notes XML parts. Retain original workbooks, charts, relationships and images byte for byte. Validate repaired candidate with the same gates."
+}
