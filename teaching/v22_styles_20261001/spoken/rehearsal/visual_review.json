@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-01T04:41:21.336760+00:00",
+  "reviewer": "root",
+  "screenshots": {
+    "desktop.png": "634d49d20b44a11d59f1558f0b80c372c06327ce4a0aad4341246090aa989454",
+    "mobile.png": "7973ba441e4c9bc1ad768f1f89a28cb2d1574b0523259a0d881234a679aeb9fa"
+  },
+  "reviewed": "Slide 12 full script expanded; desktop 1440px and mobile viewport 390px. No visible clipping, overlap or missing Chinese glyphs. No physical mobile or Safari test.",
+  "human_rehearsal_completed": false,
+  "nine_protected_hashes_unchanged": true
+}

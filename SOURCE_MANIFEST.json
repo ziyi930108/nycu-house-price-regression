@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-01T04:22:52.584093+00:00",
+  "created_at_utc": "2026-10-01T04:42:25.607449+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9469,8 +9469,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7917,
-      "sha256": "769c92826df2e1ed62c3cc02fc729677d6f1b77c0926bb124a7a8daa428af25e"
+      "bytes": 8096,
+      "sha256": "b31359011d1229f5917ffc882c8ee4584c79ca80104883cb1e75f4a5707e5bb8"
     },
     {
       "path": "presentation/README.md",
@@ -9529,8 +9529,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6979,
-      "sha256": "25145159edd593eaff929039e1cad1ed39eb329c7e105397f39d9c645ec54cf8"
+      "bytes": 7158,
+      "sha256": "9327904d83a9dede81e0759d5bc88ee0f582c4fca05134e803e636b8c82515b9"
     },
     {
       "path": "REPORT.md",
@@ -11889,8 +11889,8 @@
     },
     {
       "path": "scripts/package_source.py",
-      "bytes": 3456,
-      "sha256": "008d2c3179d7fef541faf135282be862605c1edd4669d8e77aae9896a1a592a6"
+      "bytes": 4084,
+      "sha256": "67b1bca4f33b227bbe4b8c8188dc31bfbfce96c4d341398dc89db00250db9ee9"
     },
     {
       "path": "scripts/rebuild_spoken_teaching.py",
@@ -12589,8 +12589,8 @@
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/README.md",
-      "bytes": 2839,
-      "sha256": "69467dc9fef37586f659d2d02e6a94cebded536f53b4f68e73cd7ef08ed62906"
+      "bytes": 2982,
+      "sha256": "379e9d0dffbdcfa0a1bf5de0cc5d2a1728d52389398cb7a4676fcb9e684c7bbd"
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/preflight.json",
@@ -12606,6 +12606,61 @@
       "path": "teaching/v22_styles_20261001/spoken/rebuild_evidence/verification.json",
       "bytes": 1096,
       "sha256": "bdc18079b8de5cfd88d2f7ee3382b0abec6d13700e96ef37e290dd7b430e3e66"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/browser_verification.json",
+      "bytes": 4273,
+      "sha256": "da60e1b72e18f6d3ea0cba604334e3629dc5a7cc93c10858b6520ad3f3ec77bc"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/build.py",
+      "bytes": 1567,
+      "sha256": "1af543c94ccee92af19841e227e33a8df4eb9296ecbccba6310aa71e66e20441"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/build_reviewed_receipt.json",
+      "bytes": 469,
+      "sha256": "16c0b08b7b81e51d98cc62e25452430b6b765f8ecee2c4b9d26387ee2430befd"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/desktop.png",
+      "bytes": 141231,
+      "sha256": "634d49d20b44a11d59f1558f0b80c372c06327ce4a0aad4341246090aa989454"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/mobile.png",
+      "bytes": 129818,
+      "sha256": "7973ba441e4c9bc1ad768f1f89a28cb2d1574b0523259a0d881234a679aeb9fa"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/README.md",
+      "bytes": 2907,
+      "sha256": "3d793f6f56abd6dac429af3ffe592809f5a42e193f3ef4e0df6f4e250080119d"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/review_history.json",
+      "bytes": 1109,
+      "sha256": "150c3f0eba04c9bd6a10ce84c2857a082478d638f2f031c49ad63f50ba81e58b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/template.html",
+      "bytes": 10483,
+      "sha256": "d4195e332c7a45a34b155d06753950770da9a971353efdf6c132846bceb24f6b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/v22-rehearsal-reviewed.html",
+      "bytes": 30671,
+      "sha256": "4a300e23d47d0f041bf7189654079dae5af6327a11c8292613405b2e5969d31b"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/verify.cjs",
+      "bytes": 5420,
+      "sha256": "1abb66d92ed4fb8245a1d4af0b97f9cbf51fbac0c7c49599875331d603c71b60"
+    },
+    {
+      "path": "teaching/v22_styles_20261001/spoken/rehearsal/visual_review.json",
+      "bytes": 548,
+      "sha256": "3cc437c2815f9a14b8521c15cdfd6630e69339e0578adb657ac442a17c81a285"
     },
     {
       "path": "teaching/v22_styles_20261001/spoken/verify_and_package.py",

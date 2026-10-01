@@ -1,0 +1,11 @@
+{
+  "input": "outputs/v22_spoken_20261001/content/narrative.json",
+  "source_sha256": "cf1d642550771fbd8a58aebd78bc024cab81bc58ab5151671a091e9465bb8302",
+  "approved_sha256": "4ddd89f1753c4ed7421fd42e60bcb168f3c8b4270f379638050ee3c064ecb1d7",
+  "slides": 20,
+  "script_exact_match": true,
+  "output_sha256": "4a300e23d47d0f041bf7189654079dae5af6327a11c8292613405b2e5969d31b",
+  "bytes": 30671,
+  "model_training": false,
+  "human_rehearsal_completed": false
+}

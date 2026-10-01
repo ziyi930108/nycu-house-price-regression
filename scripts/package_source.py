@@ -18,6 +18,14 @@ ALLOWED_TOP={".gitignore",".gitattributes","AGENTS.md","HANDOFF.md","README.md",
 
 SUFFIXES={".py",".md",".json",".txt",".pdf",".sha256",".pptx",".mjs",".png",".jpg",".yml",".yaml",".toml",".patch"}
 
+# Self-contained rehearsal app and its sources; keep the general suffix policy unchanged.
+TEACHING_EXTRA={"teaching/v22_styles_20261001/spoken/rehearsal/"+name for name in
+                ("v22-rehearsal-reviewed.html", "template.html", "verify.cjs")}
+
+# Self-contained rehearsal app and its sources; keep the general suffix policy unchanged.
+TEACHING_EXTRA={"teaching/v22_styles_20261001/spoken/rehearsal/"+name for name in
+                ("v22-rehearsal-reviewed.html", "template.html", "verify.cjs")}
+
 def sha(p):
 
     h=hashlib.sha256()
@@ -37,6 +45,10 @@ def included():
         if not p.is_file() or "__pycache__" in rel.parts or p.is_symlink():continue
 
         if len(rel.parts)==1 and rel.name in ALLOWED_TOP:yield p
+
+        elif rel.as_posix() in TEACHING_EXTRA:yield p
+
+        elif rel.as_posix() in TEACHING_EXTRA:yield p
 
         elif rel.parts[0] in ALLOWED_DIRS and (p.suffix.lower() in SUFFIXES or p.name == "LICENSE"):yield p
 

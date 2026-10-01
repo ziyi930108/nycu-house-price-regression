@@ -1,5 +1,7 @@
 # v22 交付接手說明
 
+新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
+
 另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
 
 最新[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
