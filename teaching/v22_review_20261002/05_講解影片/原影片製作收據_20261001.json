@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-01T12:33:20.187552+00:00",
+  "recovered_validator_only": true,
+  "original_failure_retained": "failure.json",
+  "recovery_evidence": "recovery.json",
+  "original_attempt_elapsed_seconds": 51.95119320000231,
+  "recovery_elapsed_seconds": 0.7174720999973943,
+  "executions": [
+    {
+      "label": "ffmpeg_version",
+      "exit_code": 0,
+      "elapsed_seconds": 1.3073111999983666
+    },
+    {
+      "label": "tempo",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4170220000014524
+    },
+    {
+      "label": "encode",
+      "exit_code": 0,
+      "elapsed_seconds": 43.82157520000328
+    },
+    {
+      "label": "decode",
+      "exit_code": 0,
+      "elapsed_seconds": 5.540072999996482
+    },
+    {
+      "label": "probe",
+      "exit_code": 0,
+      "elapsed_seconds": 0.0715492000017548
+    }
+  ],
+  "main_mp4": {
+    "bytes": 20299925,
+    "sha256": "eb79d32adb5e31ce157d90e4acf9c50870713e61899fbc3197161f63d1788b0e",
+    "duration_seconds": 900.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 15,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "main_slides": 20,
+  "sentence_count": 186,
+  "embedded_chapters": 20,
+  "atempo": 1.0517045603426556,
+  "tts_voice": "Microsoft Hanhan Desktop",
+  "tts_rate": 2,
+  "full_decode_passed": true,
+  "burned_subtitles": true,
+  "external_subtitles": [
+    "captions.srt",
+    "captions.vtt"
+  ],
+  "real_human_delivery_timed": false,
+  "human_audio_listening_performed": false,
+  "audio_playback_performed": false,
+  "network_speech_service_used": false,
+  "disclosure": "合成語音示範 · v22 · 非真人上台計時"
+}

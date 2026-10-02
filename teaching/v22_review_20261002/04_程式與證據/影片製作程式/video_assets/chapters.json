@@ -1,0 +1,182 @@
+[
+  {
+    "slide": 1,
+    "title": "第01頁",
+    "start_seconds": 0.0,
+    "end_seconds": 35.326346599171664,
+    "start_ms": 0,
+    "end_ms": 35326,
+    "raw_start_frame": 0
+  },
+  {
+    "slide": 2,
+    "title": "第02頁",
+    "start_seconds": 35.326346599171664,
+    "end_seconds": 85.19696899206495,
+    "start_ms": 35326,
+    "end_ms": 85197,
+    "raw_start_frame": 819221
+  },
+  {
+    "slide": 3,
+    "title": "第03頁",
+    "start_seconds": 85.19696899206495,
+    "end_seconds": 126.96516332147112,
+    "start_ms": 85197,
+    "end_ms": 126965,
+    "raw_start_frame": 1975725
+  },
+  {
+    "slide": 4,
+    "title": "第04頁",
+    "start_seconds": 126.96516332147112,
+    "end_seconds": 170.43800854167708,
+    "start_ms": 126965,
+    "end_ms": 170438,
+    "raw_start_frame": 2944333
+  },
+  {
+    "slide": 5,
+    "title": "第05頁",
+    "start_seconds": 170.43800854167708,
+    "end_seconds": 220.12945953867163,
+    "start_ms": 170438,
+    "end_ms": 220129,
+    "raw_start_frame": 3952472
+  },
+  {
+    "slide": 6,
+    "title": "第06頁",
+    "start_seconds": 220.12945953867163,
+    "end_seconds": 260.4591943194882,
+    "start_ms": 220129,
+    "end_ms": 260459,
+    "raw_start_frame": 5104821
+  },
+  {
+    "slide": 7,
+    "title": "第07頁",
+    "start_seconds": 260.4591943194882,
+    "end_seconds": 318.6571253606127,
+    "start_ms": 260459,
+    "end_ms": 318657,
+    "raw_start_frame": 6040071
+  },
+  {
+    "slide": 8,
+    "title": "第08頁",
+    "start_seconds": 318.6571253606127,
+    "end_seconds": 359.73321357589737,
+    "start_ms": 318657,
+    "end_ms": 359733,
+    "raw_start_frame": 7389686
+  },
+  {
+    "slide": 9,
+    "title": "第09頁",
+    "start_seconds": 359.73321357589737,
+    "end_seconds": 407.01298739878155,
+    "start_ms": 359733,
+    "end_ms": 407013,
+    "raw_start_frame": 8342244
+  },
+  {
+    "slide": 10,
+    "title": "第10頁",
+    "start_seconds": 407.01298739878155,
+    "end_seconds": 452.72963632878174,
+    "start_ms": 407013,
+    "end_ms": 452730,
+    "raw_start_frame": 9438666
+  },
+  {
+    "slide": 11,
+    "title": "第11頁",
+    "start_seconds": 452.72963632878174,
+    "end_seconds": 502.4398022200771,
+    "start_ms": 452730,
+    "end_ms": 502440,
+    "raw_start_frame": 10498839
+  },
+  {
+    "slide": 12,
+    "title": "第12頁",
+    "start_seconds": 502.4398022200771,
+    "end_seconds": 547.6870695268864,
+    "start_ms": 502440,
+    "end_ms": 547687,
+    "raw_start_frame": 11651622
+  },
+  {
+    "slide": 13,
+    "title": "第13頁",
+    "start_seconds": 547.6870695268864,
+    "end_seconds": 600.8120136780675,
+    "start_ms": 547687,
+    "end_ms": 600812,
+    "raw_start_frame": 12700910
+  },
+  {
+    "slide": 14,
+    "title": "第14頁",
+    "start_seconds": 600.8120136780675,
+    "end_seconds": 652.344423816749,
+    "start_ms": 600812,
+    "end_ms": 652344,
+    "raw_start_frame": 13932882
+  },
+  {
+    "slide": 15,
+    "title": "第15頁",
+    "start_seconds": 652.344423816749,
+    "end_seconds": 693.5118441659719,
+    "start_ms": 652344,
+    "end_ms": 693512,
+    "raw_start_frame": 15127923
+  },
+  {
+    "slide": 16,
+    "title": "第16頁",
+    "start_seconds": 693.5118441659719,
+    "end_seconds": 734.9854729585828,
+    "start_ms": 693512,
+    "end_ms": 734985,
+    "raw_start_frame": 16082599
+  },
+  {
+    "slide": 17,
+    "title": "第17頁",
+    "start_seconds": 734.9854729585828,
+    "end_seconds": 773.2194414308375,
+    "start_ms": 734985,
+    "end_ms": 773219,
+    "raw_start_frame": 17044376
+  },
+  {
+    "slide": 18,
+    "title": "第18頁",
+    "start_seconds": 773.2194414308375,
+    "end_seconds": 816.8884911880685,
+    "start_ms": 773219,
+    "end_ms": 816888,
+    "raw_start_frame": 17931025
+  },
+  {
+    "slide": 19,
+    "title": "第19頁",
+    "start_seconds": 816.8884911880685,
+    "end_seconds": 860.185399153096,
+    "start_ms": 816888,
+    "end_ms": 860185,
+    "raw_start_frame": 18943714
+  },
+  {
+    "slide": 20,
+    "title": "第20頁",
+    "start_seconds": 860.185399153096,
+    "end_seconds": 900.0,
+    "start_ms": 860185,
+    "end_ms": 900000,
+    "raw_start_frame": 19947773
+  }
+]

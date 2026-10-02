@@ -1,0 +1,116 @@
+{
+  "previous_edition": "v22_review_20261002",
+  "new_edition": "v22_review_20261002_r2",
+  "previous_manifest_sha256": "80685ec8a55362bbbec6e4c3bb6d2fb31919453bc5549e0fd999812ae527be45",
+  "changes": [
+    {
+      "path": "00_審查指南.md",
+      "old_sha256": "aecfce1adc4a7a1fdd810e8a8977789ff478a2defdb0fd4134c4d6388e492eea",
+      "new_sha256": "26172b2be1ddde20d24e1b89770eaea3b2d94962c2f7b02b84267f885ace952d"
+    },
+    {
+      "path": "02_講稿與排練/上台口述提示.md",
+      "old_sha256": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26",
+      "new_sha256": "1270a770eddf2b92f7f20c38c572648882312e8700079225aecf15fb1ac73676"
+    },
+    {
+      "path": "02_講稿與排練/完整口語講稿.md",
+      "old_sha256": "493e66f0ac4cf908b1cefbe150df5c88cb76eff54e3aafee7ff345937e3e628e",
+      "new_sha256": "6c2e77ac4da9e858b77b4cf2775b5cb778ca341a2c5948381f90aef4c489ae8c"
+    },
+    {
+      "path": "02_講稿與排練/排練與問答.md",
+      "old_sha256": "ebfedb024f406aa0d0175a1710116bc7c390049fc98a4c72c67f2fb5c170eabd",
+      "new_sha256": "27bea92229a71ca81bb5e19d81b36570fe403fdb3fbb00d152b55a6bc476eab4"
+    },
+    {
+      "path": "03_正式報告/臺灣房價預測_v22_正式報告.pdf",
+      "old_sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
+      "new_sha256": "57d3fa22868d7d0ca78625985132849a16b80ca2ee94889cf979c39adfe0bed5"
+    },
+    {
+      "path": "04_程式與證據/先讀我.md",
+      "old_sha256": "2e35d8e0c18b71ed7ace7a047ad993c4a49fbd7760a335a3b32f0bbae26f78b8",
+      "new_sha256": "24892bebbdc1fd14896f9bc773c65759719dd278a22441029b917480ebb87991"
+    },
+    {
+      "path": "04_程式與證據/執行程式先選對Python.md",
+      "old_sha256": null,
+      "new_sha256": "8dbbcfa497d54bddf548825443ff595dfedf455af4ca919e12a13c0d4c09997c"
+    },
+    {
+      "path": "04_程式與證據/本次閱讀修正/integrate_report.py",
+      "old_sha256": null,
+      "new_sha256": "8cb04164faf51482333c6919809e17f9a82ecae8770680cf2f2c2f461bb14890"
+    },
+    {
+      "path": "04_程式與證據/本次閱讀修正/powershell_guide_syntax.json",
+      "old_sha256": null,
+      "new_sha256": "e54945a7188504ac9e05993200f93640f4f48769ee98fc48cc7c4717f7d36efd"
+    },
+    {
+      "path": "04_程式與證據/本次閱讀修正/prepare_reader_revision.py",
+      "old_sha256": null,
+      "new_sha256": "b4ac63cd5760ab95cc2c5f33674c3372fa3eda4f3b2ad484fe21825e0085e592"
+    },
+    {
+      "path": "04_程式與證據/本次閱讀修正/report_integration.json",
+      "old_sha256": null,
+      "new_sha256": "28b187907bb14dea4b0030de67e7c4982c65538bba4ac835e67651092659b6e1"
+    },
+    {
+      "path": "04_程式與證據/本次閱讀修正/seal_reader_revision.py",
+      "old_sha256": null,
+      "new_sha256": "d48d6023349cacb5c2d2005dbe70ecdc213664620ff8c2c61b7af1954d81fad3"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/build_receipt.json",
+      "old_sha256": null,
+      "new_sha256": "72ee08e84808f58c635084e3fd0743aa816cea1617b075af117148d307052713"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/build_report_pdf_font_fixed.py",
+      "old_sha256": null,
+      "new_sha256": "ea016cdae4bd5d6e36a2caa93f101a4eead5f149f55d766294a188ee97d6c879"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/final_receipt.json",
+      "old_sha256": null,
+      "new_sha256": "ccc38425a18ae100cade38083e1b4345ba03208ea821624586778accd2b7cc4c"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/original_source_verification.json",
+      "old_sha256": null,
+      "new_sha256": "c55dac196d7b648f9a08063b166b3c96e45999e33dc8002bfe438d7d1f42b796"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/README.md",
+      "old_sha256": null,
+      "new_sha256": "a477520345c6a0cd79166eaaee582264e9492dbcc81178f83fba08482e6f7b2c"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/REPORT_font_fixed.txt",
+      "old_sha256": null,
+      "new_sha256": "0d000c9eec92c1253f27adeb08847fcf49b0a8b3083d21e224741588baeb1ce0"
+    },
+    {
+      "path": "04_程式與證據/正式報告字型修正/verification.json",
+      "old_sha256": null,
+      "new_sha256": "53338f7bb1df7ebceaa05bfa1b2493cd41151fbf7309d5a4763bf38d17a203be"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "1747998ca7caba6127a7d9a1939f54cad61a60d98c5bd9f664e7eeaee9ebbde4",
+      "new_sha256": "ca4b7d0cb5fc31cb8d56e61ad1a1e1e04e212185253f852070dcc1cf5e93cf5a"
+    },
+    {
+      "path": "本次修改.md",
+      "old_sha256": "5bb3efb3a39a41b7a6e3ea40184bebed11729909959ec6600e14a5f88eebf8bf",
+      "new_sha256": "d4eb50a18201e492862cc895e39c24af9c63ed2c846df580e1dd89409f3b9bed"
+    }
+  ],
+  "pptx_and_video_unchanged": true,
+  "narrative_unchanged": true,
+  "new_model_fits": 0,
+  "private_score": null
+}

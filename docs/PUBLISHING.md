@@ -10,9 +10,9 @@
 4. 執行格式測試，重新打包SOURCE_MANIFEST，再執行來源核驗。
 
 ~~~powershell
-python -m unittest discover -s tests -v
-python scripts/package_source.py --output ../source_snapshot_NEW.zip
-python scripts/verify_source.py
+.venv\Scripts\python.exe -m unittest discover -s tests -v
+.venv\Scripts\python.exe scripts/package_source.py --output ../source_snapshot_NEW.zip
+.venv\Scripts\python.exe scripts/verify_source.py
 ~~~
 
 ZIP檔名每次使用新的名稱。打包工具會更新SOURCE_MANIFEST.json，verify_source.py會核對這份清單與379支歷史程式來源SHA。提交時將修改檔案和新清單一起commit。

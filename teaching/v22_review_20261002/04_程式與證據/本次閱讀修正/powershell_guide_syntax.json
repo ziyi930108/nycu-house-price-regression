@@ -1,0 +1,18 @@
+{
+  "blocks": 3,
+  "results": [
+    {
+      "errors": [],
+      "parsed_without_execution": true
+    },
+    {
+      "errors": [],
+      "parsed_without_execution": true
+    },
+    {
+      "errors": [],
+      "parsed_without_execution": true
+    }
+  ],
+  "no_install_or_inference_executed": true
+}

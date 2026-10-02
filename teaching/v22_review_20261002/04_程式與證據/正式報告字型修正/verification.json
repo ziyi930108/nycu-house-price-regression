@@ -1,0 +1,375 @@
+{
+  "pdf_pages": 11,
+  "per_page_text": [
+    {
+      "page": 1,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 2,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 3,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 4,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 5,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 6,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 7,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 8,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 9,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 10,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 1,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    },
+    {
+      "page": 11,
+      "normalized_equal": true,
+      "old_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      },
+      "new_missing_counts": {
+        "U+0000": 0,
+        "U+FFFD": 0,
+        "U+25A1": 0,
+        "U+25A0": 0
+      }
+    }
+  ],
+  "text_normalization": "Remove whitespace and page labels; normalize dash only; repair the sole original page10 NUL immediately before 1,999.31 to ASCII minus per source REPORT.md:332",
+  "all_text_equal_except_declared_repair": true,
+  "all_new_missing_marker_counts_zero": true,
+  "render_commands": [
+    {
+      "label": "original",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+        "-r",
+        "120",
+        "-png",
+        "C:\\NYCU_ML\\deliverables\\v22_審查資料夾_20261002\\03_正式報告\\臺灣房價預測_v22_正式報告.pdf",
+        "C:\\NYCU_ML\\outputs\\v22_reader_review_20261002\\pdf_revision\\renders\\original\\page"
+      ],
+      "returncode": 0,
+      "seconds": 2.1820752999919932,
+      "pages": 11
+    },
+    {
+      "label": "revised",
+      "command": [
+        "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+        "-r",
+        "120",
+        "-png",
+        "C:\\NYCU_ML\\outputs\\v22_reader_review_20261002\\pdf_revision\\臺灣房價預測_v22_正式報告_字型修正版.pdf",
+        "C:\\NYCU_ML\\outputs\\v22_reader_review_20261002\\pdf_revision\\renders\\revised\\page"
+      ],
+      "returncode": 0,
+      "seconds": 2.0675914000021294,
+      "pages": 11
+    }
+  ],
+  "pixel_checks": [
+    {
+      "page": 1,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "7c76e266420653de5fc8e6813d265b7ccdc320fde54cdec80184449d0d4919bf",
+      "revised_png_sha256": "7c76e266420653de5fc8e6813d265b7ccdc320fde54cdec80184449d0d4919bf"
+    },
+    {
+      "page": 2,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "d10e4fc37631edf3bc6d3230a74cc430f9b8134012211a702b345f037834e343",
+      "revised_png_sha256": "d10e4fc37631edf3bc6d3230a74cc430f9b8134012211a702b345f037834e343"
+    },
+    {
+      "page": 3,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "586dd66e45bf14ac5c1726aee57264878b16cbce97310cba28ecd1397a83296a",
+      "revised_png_sha256": "586dd66e45bf14ac5c1726aee57264878b16cbce97310cba28ecd1397a83296a"
+    },
+    {
+      "page": 4,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "1546c2c70abc682f93d9aa0f4e6fe053206618a86a44506842ea9aaa59dd4751",
+      "revised_png_sha256": "1546c2c70abc682f93d9aa0f4e6fe053206618a86a44506842ea9aaa59dd4751"
+    },
+    {
+      "page": 5,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "29de1b37c0d7ceb5c2b1a828ce9636af0c05884f5e980ae372793f9564a19b6c",
+      "revised_png_sha256": "29de1b37c0d7ceb5c2b1a828ce9636af0c05884f5e980ae372793f9564a19b6c"
+    },
+    {
+      "page": 6,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "d5ed2b24e7e57d3d82bfaced4b9c6f9ee73319cf27486d4cfb0213c656a2eae6",
+      "revised_png_sha256": "d5ed2b24e7e57d3d82bfaced4b9c6f9ee73319cf27486d4cfb0213c656a2eae6"
+    },
+    {
+      "page": 7,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "d32622cfe026822752e2d86bac35f814dc7e7b4c7b91a37ea23275fe5735fc19",
+      "revised_png_sha256": "d32622cfe026822752e2d86bac35f814dc7e7b4c7b91a37ea23275fe5735fc19"
+    },
+    {
+      "page": 8,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "3da8d04c86be5a4e024583c533566af2c5b5fdac8a0e231ba7f58452db76e102",
+      "revised_png_sha256": "3da8d04c86be5a4e024583c533566af2c5b5fdac8a0e231ba7f58452db76e102"
+    },
+    {
+      "page": 9,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "339bc59b63caa94a0fd745ef58d438b4c122462462b5de83b13c89b6d5407b9f",
+      "revised_png_sha256": "339bc59b63caa94a0fd745ef58d438b4c122462462b5de83b13c89b6d5407b9f"
+    },
+    {
+      "page": 10,
+      "pixels_identical": false,
+      "difference_bbox": [
+        788,
+        1171,
+        897,
+        1188
+      ],
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "58cd1e775d6764f568e6d6c09721aeba099348404f5ccd66ac7b9edd6c9f586a",
+      "revised_png_sha256": "2d7cfd1887af70a2d7335014871688063806ed156e9c21023c2a4b6d4a5c4365"
+    },
+    {
+      "page": 11,
+      "pixels_identical": true,
+      "difference_bbox": null,
+      "size": [
+        993,
+        1404
+      ],
+      "original_png_sha256": "32777267f623d1e810a5a66721cd8bb50b779055c477bbbc70cd105f682735a1",
+      "revised_png_sha256": "32777267f623d1e810a5a66721cd8bb50b779055c477bbbc70cd105f682735a1"
+    }
+  ],
+  "changed_pixel_pages": [
+    10
+  ],
+  "font_cmap_scan": {
+    "msjh.ttc": {
+      "original_source_unsupported": [
+        {
+          "codepoint": "U+2212",
+          "count": 1,
+          "char": "−"
+        }
+      ],
+      "revised_source_unsupported": [],
+      "revised_pdf_text_unsupported": []
+    },
+    "msjhbd.ttc": {
+      "original_source_unsupported": [
+        {
+          "codepoint": "U+2212",
+          "count": 1,
+          "char": "−"
+        }
+      ],
+      "revised_source_unsupported": [],
+      "revised_pdf_text_unsupported": []
+    }
+  },
+  "source_hashes_still_unchanged": true,
+  "verification_seconds": 3.0624774000025354,
+  "pdf_sha256": "57d3fa22868d7d0ca78625985132849a16b80ca2ee94889cf979c39adfe0bed5",
+  "visual_review_status": "pending revised page10 inspection; unchanged pages may use exact pixel evidence",
+  "new_machine_installation_tested": false,
+  "new_training": 0
+}

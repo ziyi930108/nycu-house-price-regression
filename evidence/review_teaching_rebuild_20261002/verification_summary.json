@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-02T04:40:45.156442+00:00",
+  "entry": "scripts/rebuild_review_teaching.py",
+  "entry_sha256": "4c289a278ae8c4e2309de7e20f8b7287ca7ffcbd92e6ab131ebd5b95b8b58164",
+  "guide": "docs/REVIEW_TEACHING_REBUILD.md",
+  "guide_sha256": "968d339546efc2c82803a32310aa39587b4b252f8d3279c862583bdcbd514d26",
+  "project_input_sha256": {
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次內容\\narrative.json": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次內容\\notes_plan.json": "2b9f4b830d75621a716c432e6d6944dcfc6ae68539a5c992480554946699eba8",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次製作程式\\run_build.py": "dd11527bead0ef2bd8b13eae240f461640fcef7416a196b9efb5ecc0de118e0c",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次製作程式\\preserve_package.py": "fba374079356a71937f1ce235aac0f44913e754fa3c1a34bb127803c986adbd5",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次製作程式\\edit_notes.mjs": "e71d12ef762aeb4b7ee40654e327191762a99ca1e466b3c396a79b395ad546db",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次製作程式\\finalize_notes.mjs": "bfc57510792e1645700ddfa6222ae1741af08597f2dfe81754d9504ece59b886",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\04_程式與證據\\本次簡報製作收據.json": "7f391c02c39559fec58a76f6a80e64d64665761004907be81a3a9d1eecf5d45f",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_styles_20261001\\fifteen_minute\\delivery_receipt.json": "2bf59705a8c5aeb86c039e006e188c760297aacf1fac02ad46b7f8af806de199",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_styles_20261001\\fifteen_minute\\deliverables\\臺灣房價預測_v22_白底學術_15分鐘版.pptx": "1d7fa4cd7aae76c4620357d5b3f2e1839ba43cadf3fee0669c5f82fc87aaee00",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\01_上台簡報\\臺灣房價預測_v22_白底學術_審查版.pptx": "30526e504021249ee2a5fadf41c655ecf533c7dec703bad1f5a34d564c531512",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_styles_20261001\\fifteen_minute\\deliverables\\臺灣房價預測_v22_深色科技_15分鐘版.pptx": "08d716d6317fc837295f0fa9573d906e7ce71b063eb1fb539de5ce824d9c88a6",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\01_上台簡報\\臺灣房價預測_v22_深色科技_審查版.pptx": "5e286f34aecc4cad8183694a07fc009c7352c4cd60298ebf509b64236e1d4216",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_styles_20261001\\fifteen_minute\\deliverables\\臺灣房價預測_v22_暖色雜誌_15分鐘版.pptx": "4c8ac06efd61c1c4395b0bee939dec78363a3094d6761f10697b7961e66f6261",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\teaching\\v22_review_20261002\\01_上台簡報\\臺灣房價預測_v22_暖色雜誌_審查版.pptx": "feb42d8605b41ed858a4194f6ecc96e475f1b61d3c0ca941768a6cd6ee4a09f8",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\scripts\\rebuild_review_teaching.py": "4c289a278ae8c4e2309de7e20f8b7287ca7ffcbd92e6ab131ebd5b95b8b58164"
+  },
+  "runtime_file_sha256": {
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237",
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe": "b7a12c3af0b4db44191eec14ea095eba731b7328917f570806183093d19ddca2",
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\node_modules\\@oai\\artifact-tool\\package.json": "f7c9c1f1c31c5abfc68f7bc5d72dd1d42684ef94ace721cd3c1c8ca572edf9c6",
+    "C:\\Users\\ziyi9\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.905.11957\\skills\\presentations\\container_tools\\artifact_tool_utils.mjs": "17e988ef8c486800328e624154aa20b42c30fa85a236f60fbc9254d7a86bf18f",
+    "C:\\Users\\ziyi9\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.905.11957\\skills\\presentations\\container_tools\\inspect_presentation_package_integrity.py": "b54cb6004fe58213bcf4268c355e3f15ea78cd9dbfe0c955d65e92024fe080c8",
+    "C:\\Users\\ziyi9\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.905.11957\\skills\\presentations\\container_tools\\inspect_presentation_layout_geometry.py": "cfdc5076ffc4bc8c0c1d4578b6ce64c883e2d514780348bb278365fdb9f0e10d"
+  },
+  "runtime_versions": {
+    "node": "v24.19.0",
+    "python": "Python 3.12.14"
+  },
+  "rebuild_elapsed_seconds": 47.14912639999238,
+  "whole_entry_subprocess_seconds": 47.50567189999856,
+  "receipt_sha256": {
+    "rebuild/rebuild_receipt.json": "f900e036bcbb426aebd35741237b31ce40b1eb91237316514fa97aa9e7f82b80",
+    "rebuild/entry_preflight.json": "c75ab694d0a3a2fae7c65bf8acbaf7b2629c53e22cb53a3771d2f0773b6d13a0",
+    "rebuild/build/execution.json": "d07060963e226f25f5814e16a171a51009326fc19d6c4e66c5306f7ec832f73c",
+    "guards.json": "8c0e1ac4cf4e10f9310031a823d8689eb28a3f066fb0687fa2843659f9e9ab2a",
+    "marker_receipt.json": "36737c20c2da031dbf5b18abc8b623a1327fc7bdc62294e008b5399eeac957c5",
+    "powershell_syntax.json": "3783d747c318d3e2f34285cfd1b172ec56220230e9eb82a923305c9b2bc4d63d"
+  },
+  "all_3_PPTX_bytes_identical_to_frozen_review": true,
+  "all_69_PNG_bytes_identical_to_original_and_review_references": true,
+  "new_notes_only_slides": [
+    12,
+    13
+  ],
+  "all_notes_verified_in_slide_order": true,
+  "other_OPC_parts_preserved": true,
+  "embedded_chart_workbooks_preserved": true,
+  "check_only_creates_output": false,
+  "negative_guard_cases_passed": 5,
+  "powershell_documentation_blocks_parsed": 3,
+  "visual_review": {
+    "scope": "styles A, B, C, slides 12 and 13, before and after, full-size rendered PNGs",
+    "observations": "Text, table boundaries, units, typography and slide number remain legible; no new clipping or overlap observed.",
+    "all_other_slides_scanned_by_render_byte_identity": true,
+    "all_69_slides_new_human_visual_review_claimed": false
+  },
+  "model_training_or_inference_executed": false,
+  "new_ML_fits": 0,
+  "html_pdf_video_rebuilt": false,
+  "clean_environment_installation_tested": false,
+  "PowerPoint_desktop_tested": false,
+  "human_rehearsal_measured": false,
+  "input_files_unchanged": true,
+  "runtime_checked_files_unchanged": true,
+  "limits": [
+    "Same already-configured bundled runtime only; this does not prove another machine/runtime reproduces exact bytes.",
+    "Original 4,051-Han slides are source inputs; this rebuilds the 4,065-Han speaker-note edition only.",
+    "No clean ML environment installation, model training, HTML/PDF generation, video rendering or user rehearsal was performed."
+  ]
+}

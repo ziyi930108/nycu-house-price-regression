@@ -1,0 +1,245 @@
+{
+  "created_at_utc": "2026-10-02T03:50:47.504175+00:00",
+  "previous_edition": "v22_審查資料夾_20261001",
+  "previous_manifest_sha256": "14e79dfb2f0169d68b4aee98962be6f591e7932ce42c6201ad0f3392c690dfe4",
+  "old_copy_provenance_note": "複製來源.json保留首次收集來源；本次修訂檔案以本紀錄及本包manifest為準。",
+  "changes": [
+    {
+      "path": "00_審查指南.md",
+      "old_sha256": "37b7f321ec0f1e3237bb99b7e0e99c458f48ef4719d09c7fe5ef70914444456d",
+      "new_sha256": "aecfce1adc4a7a1fdd810e8a8977789ff478a2defdb0fd4134c4d6388e492eea"
+    },
+    {
+      "path": "04_程式與證據/先讀我.md",
+      "old_sha256": "3433c054ca19d0fcda7b8173daefeeacd35e8cb74b8a8eb5d0035ac2c4d02fe9",
+      "new_sha256": "2e35d8e0c18b71ed7ace7a047ad993c4a49fbd7760a335a3b32f0bbae26f78b8"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/build_video.py",
+      "old_sha256": "b2ce511189f80f879dee93fa5acf13266fbc28e6c5cd61f5d2e0c42dc0b398d6",
+      "new_sha256": "d4007b9ad047262ef0a38793b8711f502f726daf52cba64b137e99165530eed3"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/build_video_20261001.py",
+      "old_sha256": null,
+      "new_sha256": "b2ce511189f80f879dee93fa5acf13266fbc28e6c5cd61f5d2e0c42dc0b398d6"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/caption_changes.json",
+      "old_sha256": null,
+      "new_sha256": "5d7f38de87957da5ecb0b124f78853e2215052c07e7b0b7fa555015dcead67ae"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/completed_verification.json",
+      "old_sha256": null,
+      "new_sha256": "fd119d47ec6643fca6efd2c35ad4f2993e298b0789e90c8ce5c7e5b5701a8354"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/original_audio.stdout.log",
+      "old_sha256": null,
+      "new_sha256": "af090b8fa5d2e2806b01e271512658796617dc70ea23a237795367ff02c35e89"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/preflight_result.json",
+      "old_sha256": null,
+      "new_sha256": "e0c9c6835d5048086394be0f7817e2a5d143b395df15e6ff4a82770b8f44365d"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/README.md",
+      "old_sha256": "d6d55746a5bcb36b88270659e03cc6e13c80dba07e12d20264d641a019c41acc",
+      "new_sha256": "1f520254293bae996c8856f108a36f20daf759dd236a259c759288e8fac49fd2"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/rebuilt_audio.stdout.log",
+      "old_sha256": null,
+      "new_sha256": "af090b8fa5d2e2806b01e271512658796617dc70ea23a237795367ff02c35e89"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/recompose_video.py",
+      "old_sha256": null,
+      "new_sha256": "f54ea2294f9e86e6da417112d1e0593d575a4875c4d9c9fe310fefe112be971d"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/captions.json",
+      "old_sha256": null,
+      "new_sha256": "9bb360313ce2a01a2861b141c90bb3599e237ecd286cc6d0f596878da3243b1f"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/chapters.json",
+      "old_sha256": null,
+      "new_sha256": "986121cf5dcc83326e6bdc018921049d141d34ab74be6c72b66bda727acc9c47"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/manifest.json",
+      "old_sha256": null,
+      "new_sha256": "e3af7c0a1d0eeb5ad9d41f7600ce5e5366175b55cdf24e9042ad72a9cd6623e8"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_01.png",
+      "old_sha256": null,
+      "new_sha256": "9049440bd466ac7e46a635db0690c2b588bf4e2dd4827e4952f7c646ef184979"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_02.png",
+      "old_sha256": null,
+      "new_sha256": "aaa640cb198b1a902b754a9e72dfba3c089286c2c740b041d50a3f1f0c94a4f1"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_03.png",
+      "old_sha256": null,
+      "new_sha256": "897af917861a57b214e932148c10c069fc6f5ff58e651ec1cc682fd5573e6a71"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_04.png",
+      "old_sha256": null,
+      "new_sha256": "9571a86bcd5baaffab210f0779b0b372330fe420ecac728cbe6912fe495ddc06"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_05.png",
+      "old_sha256": null,
+      "new_sha256": "e8c56b9b5896764c76e6c5b8ab6c79621acde74fb72b9d8ec170b73403aa82d0"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_06.png",
+      "old_sha256": null,
+      "new_sha256": "d1ffc16f163ec330eebdb6fcb775e78b528a1473172889aae2f8cc86de2ba6f5"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_07.png",
+      "old_sha256": null,
+      "new_sha256": "174bbc8623e76b4eafea980418f0861b59868a1519e5b205459b124e006b7b76"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_08.png",
+      "old_sha256": null,
+      "new_sha256": "558ebb1ce6fcc32f4f16933a91fbdc920f5810c4d4ba67ddc382b300868b1fd6"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_09.png",
+      "old_sha256": null,
+      "new_sha256": "20765780a988ae3d1f691f8e2a6a58438920da4f337149555aac7f1a6849fa7a"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_10.png",
+      "old_sha256": null,
+      "new_sha256": "66185d871ecea89601b42e34ce5fc1bcc7cfde0671d43f946021e8ba781566b6"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_11.png",
+      "old_sha256": null,
+      "new_sha256": "a2992278fb6fc331ee44c03d43c7b8d4a680294d102e3b2764f530452a4e8472"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_12.png",
+      "old_sha256": null,
+      "new_sha256": "eb1e5abd6fbae09cb8524d0493ee784312e4138150d3daf7199a4f3f6a66c086"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_13.png",
+      "old_sha256": null,
+      "new_sha256": "5cce84c2fb939cfcc00a798e77e51a69f50b20b8d0b3e4542aabb1d6b0d15a79"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_14.png",
+      "old_sha256": null,
+      "new_sha256": "52ad24c04b1a2cde5b39de5df2f031f555c55602dbe3319b01201ee04112eea9"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_15.png",
+      "old_sha256": null,
+      "new_sha256": "05143d7ba98ad9d00be562b6bc9e2bf5e91e619976ef27a65696a5765825bb8a"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_16.png",
+      "old_sha256": null,
+      "new_sha256": "6bb27f8a45662a70839942e7725ea87b3750b380d06cf03e0503efdc2438ecb8"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_17.png",
+      "old_sha256": null,
+      "new_sha256": "564daa06614ad1dc0d67e65245844080606457d56b2239d4bfd3c4c4a57f5a14"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_18.png",
+      "old_sha256": null,
+      "new_sha256": "1c39b18cce23501024b9c9051f1c3057c28eac0ecfbc0df46ffe5d9a9ce21da9"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_19.png",
+      "old_sha256": null,
+      "new_sha256": "7ca857e4cd76e9620b203a4ec5d5ebbf22e1794847ced28d171880269285ecdb"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/video_assets/slide_20.png",
+      "old_sha256": null,
+      "new_sha256": "656c6b38401f6bcfda828f1db832fee18dca141c69de29e688b991b71462d8fd"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/wrap_captions.py",
+      "old_sha256": null,
+      "new_sha256": "4f1d364c5fd042fd41a9fd0102efe64dea5e43d17f5c5c6c174b8c9749edad0d"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/保存素材重組收據.json",
+      "old_sha256": null,
+      "new_sha256": "033aceb66c8db53ff158762163095d0aa4f5220ed575f651889f9ab185d7ef8f"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/保存素材重組核對.json",
+      "old_sha256": null,
+      "new_sha256": "28526f34ffbbb5dd38281ab4b00411662efa537b213841b5f22007020a16d4f4"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/重新配音與投影片渲染指南.md",
+      "old_sha256": null,
+      "new_sha256": "ef3cffb0d93d6da701084d9320cdfc3df8f4f826d1562eab2eaa1ef33dfa9629"
+    },
+    {
+      "path": "04_程式與證據/影片製作程式/離線瀏覽器檢查.json",
+      "old_sha256": null,
+      "new_sha256": "5b43fe8af18b584f23eb71d584f8dd34a5ee34be216b1738e1f88fdcec4459cd"
+    },
+    {
+      "path": "05_講解影片/v22_15分鐘講解.srt",
+      "old_sha256": "a19a1fede05c4d94014dca88060440e4681a6ae99698618844a404fd79bdf42a",
+      "new_sha256": "8e36c726ab731112abc4d1d017ea8b1fae75b4757d3bd751fcc5734ef6bc102a"
+    },
+    {
+      "path": "05_講解影片/v22_15分鐘講解.vtt",
+      "old_sha256": "be293384630dbdb0c80303e93ade42074ac24fa8a30f32e942b52ae0682bc1a5",
+      "new_sha256": "02f24b28358c7652ef9f2ee3efd89c021ffe595b84a25c9a42a97b6679be8c2d"
+    },
+    {
+      "path": "05_講解影片/v22_15分鐘講解_合成旁白.mp4",
+      "old_sha256": "eb79d32adb5e31ce157d90e4acf9c50870713e61899fbc3197161f63d1788b0e",
+      "new_sha256": "13f03575f6785d07999859a45babfb9173d46d997908062606fbcafa4ec823db"
+    },
+    {
+      "path": "05_講解影片/先讀我.md",
+      "old_sha256": "a3177c10660d2ce79c3fdff2cc50868c663fcff532f7d550f80d9789a2cb69d3",
+      "new_sha256": "d2983040b4c95f4145f920a5b8d3c2bc863538efadf5e911d7fbbc8ef256631b"
+    },
+    {
+      "path": "05_講解影片/原影片製作收據_20261001.json",
+      "old_sha256": null,
+      "new_sha256": "8ef1f4107c977097f8da339682b1f2d869c83d008c817dadadd47116a2e426db"
+    },
+    {
+      "path": "05_講解影片/影片製作收據.json",
+      "old_sha256": "8ef1f4107c977097f8da339682b1f2d869c83d008c817dadadd47116a2e426db",
+      "new_sha256": "150fbb49f75dd633b0dff66717dd4f55c22a4e7e023e3ac965b1976b379c6644"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "ad3dffb855e8a5429e51849eff68aa95c4a21a6494130c7aa96e572c82328c2d",
+      "new_sha256": "1747998ca7caba6127a7d9a1939f54cad61a60d98c5bd9f664e7eeaee9ebbde4"
+    },
+    {
+      "path": "本次修改.md",
+      "old_sha256": "159e48ad3919aadd26c3aa610bb720599c732baa2823e10bf38085ddd3141fa4",
+      "new_sha256": "5bb3efb3a39a41b7a6e3ea40184bebed11729909959ec6600e14a5f88eebf8bf"
+    }
+  ],
+  "no_new_model_fit": true,
+  "private_score": null
+}

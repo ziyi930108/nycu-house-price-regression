@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-02T03:48:24.188412+00:00",
+  "elapsed_seconds": 53.33124980000139,
+  "executions": [
+    {
+      "label": "ffmpeg_version",
+      "exit_code": 0,
+      "elapsed_seconds": 0.02081819999148138
+    },
+    {
+      "label": "encode",
+      "exit_code": 0,
+      "elapsed_seconds": 46.52065570000559
+    },
+    {
+      "label": "original_audio",
+      "exit_code": 0,
+      "elapsed_seconds": 0.12384129999554716
+    },
+    {
+      "label": "rebuilt_audio",
+      "exit_code": 0,
+      "elapsed_seconds": 0.11370399998850189
+    },
+    {
+      "label": "decode",
+      "exit_code": 0,
+      "elapsed_seconds": 6.310353499997291
+    },
+    {
+      "label": "probe",
+      "exit_code": 0,
+      "elapsed_seconds": 0.08580739999888465
+    }
+  ],
+  "main_mp4": {
+    "bytes": 20296382,
+    "sha256": "13f03575f6785d07999859a45babfb9173d46d997908062606fbcafa4ec823db",
+    "duration_seconds": 900.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 15,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "captions": 186,
+  "changed_wraps": 73,
+  "embedded_chapters": 20,
+  "caption_text_and_timing_unchanged": true,
+  "slide_images_unchanged": true,
+  "compressed_audio_payload_unchanged": true,
+  "compressed_audio_sha256": "a8dfd912862a3007a54b41b8cb58e05fdd69c87e83967db1edf5c039cf58e15f",
+  "audio_reencoded": false,
+  "new_tts_generated": false,
+  "full_decode_passed": true,
+  "human_audio_listening_performed": false,
+  "real_human_delivery_timed": false,
+  "alignment_method": "Preserved original estimated sentence timing, not forced alignment."
+}

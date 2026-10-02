@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "source_sha256": "f54ea2294f9e86e6da417112d1e0593d575a4875c4d9c9fe310fefe112be971d",
+  "cases": [
+    {
+      "case": "existing_output",
+      "exit_code": 1,
+      "expected_error_found": true,
+      "output_untouched_or_absent": true
+    },
+    {
+      "case": "input_overlap",
+      "exit_code": 1,
+      "expected_error_found": true,
+      "output_untouched_or_absent": true
+    },
+    {
+      "case": "overlapping_cues",
+      "exit_code": 1,
+      "expected_error_found": true,
+      "output_untouched_or_absent": true
+    },
+    {
+      "case": "chapter_mismatch",
+      "exit_code": 1,
+      "expected_error_found": true,
+      "output_untouched_or_absent": true
+    },
+    {
+      "case": "caption_text_mismatch",
+      "exit_code": 1,
+      "expected_error_found": true,
+      "output_untouched_or_absent": true
+    }
+  ],
+  "ffmpeg_executed": false,
+  "encoding_executed": false,
+  "tts_executed": false,
+  "original_assets_modified": false,
+  "production_output_modified": false
+}

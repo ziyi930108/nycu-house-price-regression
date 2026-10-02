@@ -1,30 +1,24 @@
 # 臺灣房屋總價預測 v22
 
-最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。 已有[新稿重建入口](docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`從repo重建三款與HTML，實測全bytes一致。 新增[第12–15頁排練重點](docs/FIFTEEN_MINUTE_REHEARSAL.md)，說清先驗倍率、模型名稱與配速估計的界線；目前成品保持，等待本人排練紀錄。
+最新[約15分鐘審查版](teaching/v22_review_20261002/README.md)已整理三款PPTX、4,065字口語稿、离線排練頁、15:00合成旁白影片與字型修正正式PDF。先完整下載repo，再開[審查頁](teaching/v22_review_20261002/index.html)。主講規劃14:45，尚未本人計時，合成影片不能代替真人排練。
 
-新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
-
-另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
-
-先前[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
-
-[原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
+[最新PPTX重建入口](docs/REVIEW_TEACHING_REBUILD.md)與[影片重組入口](teaching/v22_review_20261002/04_程式與證據/影片製作程式/README.md)各自說明實測範圍。原4,051字稿及其[舊重建命令](docs/FIFTEEN_MINUTE_REBUILD.md)保留作歷史，不能當成本版4,065字稿。
 
 使用課程交易資料、道路地理特徵與六個回歸模型預測房屋總價。使用者已選定 **v22 為唯一提交版本**；Public MAE **1,998,568.5706 元**，Private 尚未知。選定版本不代表已證明 Private 最佳；[選定紀錄](evidence/selection/user_selected_v22_20260928.json)保留日期、原話與 CSV 身分。
 
 - [新專案接手說明](HANDOFF.md)：現況、已完成驗證與下一步。
 - [正式研究報告](REPORT.md)：資料處理、公式、年度回測、Public、限制與取捨。
-- [正式 PDF](docs/臺灣房價預測_v22_正式報告.pdf)：適合列印與繳交。
+- [正式 PDF](teaching/v22_review_20261002/03_正式報告/臺灣房價預測_v22_正式報告.pdf)：適合列印與繳交。
 - [重現紀錄](docs/REPRODUCIBILITY.md)：實際測試範圍與收據。
 - [訓練程式導覽](research/README.md)：保留原始訓練來源及跨輪依賴。
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
 - [資料說明](DATA.md)：課程檔案、道路來源及取得方式。
 
-## 最新簡報與講稿 2026-10-01
+## 上台用哪一份
 
-[先前口語版三款與講稿](teaching/v22_styles_20261001/spoken/README.md)都是20頁主講＋3頁附錄，以同一v22完整流程及設計理由為主線。[完整口語稿](teaching/v22_styles_20261001/spoken/content/完整口語講稿.md)及[口述提示](teaching/v22_styles_20261001/spoken/content/上台口述提示.md)配合使用。主講字數估時不包含問答，仍需實際排練。
+[最新三款與講稿](teaching/v22_review_20261002/README.md)主講同一個v22流程及設計理由，不要求觀眾理解內部版本沿革。4,065字只計口述正文，不重念提示與理由，附錄和問答不計時。
 
-[原r2](teaching/v22_styles_20261001/README.md)及[原零基礎教材](teaching/v22_20261001/README.md)保留。既有[重建入口](docs/TEACHING_REBUILD.md)產生原r2，新增[口語版重建入口](docs/SPOKEN_TEACHING_REBUILD.md)，可直接讀repo，在新目錄同步備忘稿；三款檔案與69渲染已重建相同。原14頁報告方法適用，原配速屬歷史稿。
+[前版4,051字](teaching/v22_styles_20261001/fifteen_minute/README.md)、[歷史4,981字口語版](teaching/v22_styles_20261001/spoken/README.md)及[原r2](teaching/v22_styles_20261001/README.md)均保留。各自重建入口只對應自己的版本。三款視覺相同主線，尚待使用者選擇與實際排練。
 
 ## 最新聯動dropout研究
 
@@ -42,8 +36,8 @@ C為原R63設定重訓，T只改四欄mask聯動；C−v22偏移、24CI及反證
 
 ~~~powershell
 python -m venv .venv
-.venv\Scripts\python -m pip install -r requirements-inference.txt
-.venv\Scripts\python -m pip install -r requirements-torch.txt
+.venv\Scripts\python.exe -m pip install -r requirements-inference.txt
+.venv\Scripts\python.exe -m pip install -r requirements-torch.txt
 ~~~
 
 以上是安裝說明，尚未在全新環境完成安裝驗證。實測使用既有兩個 Python 3.12.14 環境：ML 環境與 Torch 2.13.0+cu126 環境。精確重現原 NN 需要對應 CUDA 與 GPU 運算設定，CPU 與其他硬體不保證輸出相同。
@@ -51,13 +45,13 @@ python -m venv .venv
 若有原研究工作區，可逐檔核對 SHA256 並複製必要 artifact：
 
 ~~~powershell
-python scripts/collect_artifacts.py --workspace C:/NYCU_ML
+.venv\Scripts\python.exe scripts/collect_artifacts.py --workspace C:/NYCU_ML
 ~~~
 
 將課程的兩個原始檔案放到 data/。程式核對檔案雜湊及 ID，因為保存地理特徵對應這份 test 的列序。這個入口用於固定競賽資料重現，並非任意新房屋資料的估價 API。
 
 ~~~powershell
-python src/predict_v22.py --test data/test-reindex-test-v2.2.xlsx --sample data/test-reindex-test-sample-submission-v2.csv --output-dir runs/v22_reproduction --device cuda:0
+.venv\Scripts\python.exe src/predict_v22.py --test data/test-reindex-test-v2.2.xlsx --sample data/test-reindex-test-sample-submission-v2.csv --output-dir runs/v22_reproduction --device cuda:0
 ~~~
 
 若 Torch 在另一環境，加 --nn-python C:/path/to/torch-env/Scripts/python.exe。output-dir 必須是新目錄。
@@ -80,7 +74,7 @@ v22 = median(S(B_nn, R(B_nn)), S(B_log, R(B_log)), S(B_unit, R(B_unit)))
 ## 驗證與目錄
 
 ~~~powershell
-python -m unittest discover -s tests -v
+.venv\Scripts\python.exe -m unittest discover -s tests -v
 ~~~
 
 | 位置 | 內容 |
@@ -90,7 +84,7 @@ python -m unittest discover -s tests -v
 | research/ | 原始訓練程式與導覽 |
 | evidence/ | 報告來源及實測收據 |
 | docs/ | 重現說明與正式 PDF |
-| teaching/ | 新三款23頁簡報、完整講稿、原零基礎報告與製作來源 |
+| teaching/ | 最新審查簡報、講稿、影片、修正版報告與來源；另保留歷史教材 |
 | presentation/ | 原22頁正式簡報與來源，保留歷史版本 |
 | private/、data/、runs/ | 本機使用，Git與公開ZIP排除 |
 

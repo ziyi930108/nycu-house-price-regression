@@ -1,0 +1,207 @@
+[
+  {
+    "source": "outputs/v22_review_pack_20261001_work/deliverables/臺灣房價預測_v22_暖色雜誌_審查版.pptx",
+    "path": "01_上台簡報/臺灣房價預測_v22_暖色雜誌_審查版.pptx",
+    "sha256": "feb42d8605b41ed858a4194f6ecc96e475f1b61d3c0ca941768a6cd6ee4a09f8"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/deliverables/臺灣房價預測_v22_深色科技_審查版.pptx",
+    "path": "01_上台簡報/臺灣房價預測_v22_深色科技_審查版.pptx",
+    "sha256": "5e286f34aecc4cad8183694a07fc009c7352c4cd60298ebf509b64236e1d4216"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/deliverables/臺灣房價預測_v22_白底學術_審查版.pptx",
+    "path": "01_上台簡報/臺灣房價預測_v22_白底學術_審查版.pptx",
+    "sha256": "30526e504021249ee2a5fadf41c655ecf533c7dec703bad1f5a34d564c531512"
+  },
+  {
+    "source": "outputs/v22_15min_20261001/deliverables/臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+    "path": "01_上台簡報/臺灣房價預測_v22_暖色雜誌_投影備份.pdf",
+    "sha256": "f1d8fb44d21e99fa00657fc6ba634a0959763efbc797879d099b645ec4bfcdba"
+  },
+  {
+    "source": "outputs/v22_15min_20261001/deliverables/臺灣房價預測_v22_深色科技_投影備份.pdf",
+    "path": "01_上台簡報/臺灣房價預測_v22_深色科技_投影備份.pdf",
+    "sha256": "5c4644244feb95f4c6e0f7891ac6b0de97921429ab0a3c15740d711338273e3f"
+  },
+  {
+    "source": "outputs/v22_15min_20261001/deliverables/臺灣房價預測_v22_白底學術_投影備份.pdf",
+    "path": "01_上台簡報/臺灣房價預測_v22_白底學術_投影備份.pdf",
+    "sha256": "8521cc62fd84ee15f3a891c7b1e770a343e7b175c2183e0deeef31308c4f0374"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/完整口語講稿.md",
+    "path": "02_講稿與排練/完整口語講稿.md",
+    "sha256": "493e66f0ac4cf908b1cefbe150df5c88cb76eff54e3aafee7ff345937e3e628e"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/上台口述提示.md",
+    "path": "02_講稿與排練/上台口述提示.md",
+    "sha256": "5d9f3a98367b5f47748d3ee6a66598e3f99eb93df5470c62cdc753e081864f26"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/排練與問答.md",
+    "path": "02_講稿與排練/排練與問答.md",
+    "sha256": "ebfedb024f406aa0d0175a1710116bc7c390049fc98a4c72c67f2fb5c170eabd"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/v22-review-rehearsal.html",
+    "path": "02_講稿與排練/v22-review-rehearsal.html",
+    "sha256": "41eaafd4145718e348682210315747fe4c3e6193c09d711fd433ab79fee76fb7"
+  },
+  {
+    "source": "outputs/v22_defense_cards_20261001/final/臺灣房價預測_v22_答辯提示卡.md",
+    "path": "02_講稿與排練/臺灣房價預測_v22_答辯提示卡.md",
+    "sha256": "839c98034c86beda55c108d951c49633785a4ffd974a4a3a20592dcbac5713a7"
+  },
+  {
+    "source": "outputs/v22_defense_cards_20261001/final/臺灣房價預測_v22_答辯提示卡.pdf",
+    "path": "02_講稿與排練/臺灣房價預測_v22_答辯提示卡.pdf",
+    "sha256": "41970bd5bfb2462b755ee9a0f3f8943292400292ae13afa4384480efba4b739c"
+  },
+  {
+    "source": "deliverables/v22_github/docs/臺灣房價預測_v22_正式報告.pdf",
+    "path": "03_正式報告/臺灣房價預測_v22_正式報告.pdf",
+    "sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca"
+  },
+  {
+    "source": "deliverables/v22_github_release_20261001_delivery_coaching.zip",
+    "path": "04_程式與證據/v22_程式與研究紀錄.zip",
+    "sha256": "58c551b07364bdfd7aa4978c447a4687c60165ab076bddcee3662b203313aeea"
+  },
+  {
+    "source": "deliverables/v22_github_release_20261001_delivery_coaching.zip.json",
+    "path": "04_程式與證據/原程式包身分.json",
+    "sha256": "e82262d8b58bffc246b8083da65114dce45fb158eeaa43a280cf2e08951efde9"
+  },
+  {
+    "source": "deliverables/v22_github/evidence/reproduction/integration_verified.json",
+    "path": "04_程式與證據/保存模型推論重現收據.json",
+    "sha256": "8681e73674500c25b090fe469630d20f8b2f771b6e7e0b0b665e0ce0070b70ca"
+  },
+  {
+    "source": "outputs/v22_submission_focus_20260928/user_selection.json",
+    "path": "04_程式與證據/v22選定紀錄.json",
+    "sha256": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76"
+  },
+  {
+    "source": "outputs/submission_v22_trial.csv",
+    "path": "04_程式與證據/submission_v22_trial.csv",
+    "sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/narrative.json",
+    "path": "04_程式與證據/本次內容/narrative.json",
+    "sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/notes_plan.json",
+    "path": "04_程式與證據/本次內容/notes_plan.json",
+    "sha256": "2b9f4b830d75621a716c432e6d6944dcfc6ae68539a5c992480554946699eba8"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/approved_changes.json",
+    "path": "04_程式與證據/本次內容/approved_changes.json",
+    "sha256": "4c989d95e07635cc4d34b975accae7083ebc905c60984a0c6d050507aecffa8f"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/content/timing.json",
+    "path": "04_程式與證據/本次內容/timing.json",
+    "sha256": "8879ade228ba8fe3ae9b25757ee8da2ea9a2f3087b99efb8f6e5dd7bfd54f16b"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build_source/edit_notes.mjs",
+    "path": "04_程式與證據/本次製作程式/edit_notes.mjs",
+    "sha256": "e71d12ef762aeb4b7ee40654e327191762a99ca1e466b3c396a79b395ad546db"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build_source/finalize_notes.mjs",
+    "path": "04_程式與證據/本次製作程式/finalize_notes.mjs",
+    "sha256": "bfc57510792e1645700ddfa6222ae1741af08597f2dfe81754d9504ece59b886"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build_source/preserve_package.py",
+    "path": "04_程式與證據/本次製作程式/preserve_package.py",
+    "sha256": "fba374079356a71937f1ce235aac0f44913e754fa3c1a34bb127803c986adbd5"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build_source/README.md",
+    "path": "04_程式與證據/本次製作程式/README.md",
+    "sha256": "c3cec9cafe2a24c8b65a3513d5997fe27ce7bb489146564ad624f233676da628"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build_source/run_build.py",
+    "path": "04_程式與證據/本次製作程式/run_build.py",
+    "sha256": "dd11527bead0ef2bd8b13eae240f461640fcef7416a196b9efb5ecc0de118e0c"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/prepare_review.py",
+    "path": "04_程式與證據/本次製作程式/prepare_review.py",
+    "sha256": "7ecb00b28828ae872a7ccb2f3283cfcb5c60b6d8303533f169b94e804af5a7e6"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/assemble_review.py",
+    "path": "04_程式與證據/本次製作程式/assemble_review.py",
+    "sha256": "e508e584ae3cddc67f8b6749edc3a7a2d5c942326e6855fdc77c50a09caf2946"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/script_proposal.json",
+    "path": "04_程式與證據/本次內容/script_proposal.json",
+    "sha256": "429f975aa575d2aedd7b52a3bb250b3f50ecb12ff0b5d43c80086d2b9e0fffe0"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/A/renders/slide-01.png",
+    "path": "assets/A-cover.png",
+    "sha256": "9049440bd466ac7e46a635db0690c2b588bf4e2dd4827e4952f7c646ef184979"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/A/renders/slide-12.png",
+    "path": "assets/A-12.png",
+    "sha256": "eb1e5abd6fbae09cb8524d0493ee784312e4138150d3daf7199a4f3f6a66c086"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/A/renders/slide-13.png",
+    "path": "assets/A-13.png",
+    "sha256": "5cce84c2fb939cfcc00a798e77e51a69f50b20b8d0b3e4542aabb1d6b0d15a79"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/B/renders/slide-01.png",
+    "path": "assets/B-cover.png",
+    "sha256": "9dc77ff3385b0ac7952be0db42001239b3fc61b93f00e157a0c23053e58427fb"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/B/renders/slide-12.png",
+    "path": "assets/B-12.png",
+    "sha256": "2bd13416ae878670c054ae89ac57b7b9c9982a00bed21a50a08f02014e239063"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/B/renders/slide-13.png",
+    "path": "assets/B-13.png",
+    "sha256": "fc7f65489b461633e577ad5053271a3a414824ce5cd663b48bf7895cabdc8468"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/C/renders/slide-01.png",
+    "path": "assets/C-cover.png",
+    "sha256": "72d33177e124137d7ded41f3e13f5d35cd812147be2935e45028b1aade983307"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/C/renders/slide-12.png",
+    "path": "assets/C-12.png",
+    "sha256": "6a312a558decb4c5fe895a5eb15a356dfe608dc45cc3a11eecd7e532429605fb"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/build/C/renders/slide-13.png",
+    "path": "assets/C-13.png",
+    "sha256": "be1ce12bae295a104d9b13fce6a39fe7de84dec664a511d21b30dcdc9635cf07"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/guide/00_審查指南.md",
+    "path": "00_審查指南.md",
+    "sha256": "b98a4390393c67ef6d69cd75879b67abbbbbfa8dbae15265819c7b5085e998bf"
+  },
+  {
+    "source": "outputs/v22_review_pack_20261001_work/guide/審查意見.md",
+    "path": "審查意見.md",
+    "sha256": "52a23e66b4da236a173bc857b6a2da05ed528b31979d8e029ea29f0b2c33aefb"
+  }
+]

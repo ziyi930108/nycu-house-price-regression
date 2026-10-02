@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "case": "existing_output",
+      "passed": true,
+      "exit_code": 2,
+      "expected_error": "Output already exists"
+    },
+    {
+      "case": "repository_overlap",
+      "passed": true,
+      "exit_code": 1,
+      "expected_error": "Output overlaps protected repository/runtime"
+    },
+    {
+      "case": "runtime_overlap",
+      "passed": true,
+      "exit_code": 1,
+      "expected_error": "Output overlaps protected repository/runtime"
+    },
+    {
+      "case": "missing_source",
+      "passed": true,
+      "exit_code": 1,
+      "expected_error": "No such file or directory"
+    },
+    {
+      "case": "altered_source",
+      "passed": true,
+      "exit_code": 1,
+      "expected_error": "Frozen source SHA mismatch"
+    }
+  ],
+  "check_only_created_output": false,
+  "sentinel_preserved": true,
+  "authoring_executed": false
+}

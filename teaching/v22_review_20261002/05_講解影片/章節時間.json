@@ -1,0 +1,182 @@
+[
+  {
+    "slide": 1,
+    "title": "臺灣房屋總價預測",
+    "start_seconds": 0.0,
+    "end_seconds": 35.326346599171664,
+    "start_ms": 0,
+    "end_ms": 35326,
+    "raw_start_frame": 0
+  },
+  {
+    "slide": 2,
+    "title": "回歸與模型學習",
+    "start_seconds": 35.326346599171664,
+    "end_seconds": 85.19696899206495,
+    "start_ms": 35326,
+    "end_ms": 85197,
+    "raw_start_frame": 819221
+  },
+  {
+    "slide": 3,
+    "title": "平均絕對誤差",
+    "start_seconds": 85.19696899206495,
+    "end_seconds": 126.96516332147112,
+    "start_ms": 85197,
+    "end_ms": 126965,
+    "raw_start_frame": 1975725
+  },
+  {
+    "slide": 4,
+    "title": "四份資料的用途",
+    "start_seconds": 126.96516332147112,
+    "end_seconds": 170.43800854167708,
+    "start_ms": 126965,
+    "end_ms": 170438,
+    "raw_start_frame": 2944333
+  },
+  {
+    "slide": 5,
+    "title": "完整工作流程",
+    "start_seconds": 170.43800854167708,
+    "end_seconds": 220.12945953867163,
+    "start_ms": 170438,
+    "end_ms": 220129,
+    "raw_start_frame": 3952472
+  },
+  {
+    "slide": 6,
+    "title": "資料清理",
+    "start_seconds": 220.12945953867163,
+    "end_seconds": 260.4591943194882,
+    "start_ms": 220129,
+    "end_ms": 260459,
+    "raw_start_frame": 5104821
+  },
+  {
+    "slide": 7,
+    "title": "特徵工程與欄位取捨",
+    "start_seconds": 260.4591943194882,
+    "end_seconds": 318.6571253606127,
+    "start_ms": 260459,
+    "end_ms": 318657,
+    "raw_start_frame": 6040071
+  },
+  {
+    "slide": 8,
+    "title": "時間回測與過擬合",
+    "start_seconds": 318.6571253606127,
+    "end_seconds": 359.73321357589737,
+    "start_ms": 318657,
+    "end_ms": 359733,
+    "raw_start_frame": 7389686
+  },
+  {
+    "slide": 9,
+    "title": "樹模型與神經網路",
+    "start_seconds": 359.73321357589737,
+    "end_seconds": 407.01298739878155,
+    "start_ms": 359733,
+    "end_ms": 407013,
+    "raw_start_frame": 8342244
+  },
+  {
+    "slide": 10,
+    "title": "總價、單價與對數",
+    "start_seconds": 407.01298739878155,
+    "end_seconds": 452.72963632878174,
+    "start_ms": 407013,
+    "end_ms": 452730,
+    "raw_start_frame": 9438666
+  },
+  {
+    "slide": 11,
+    "title": "近期成交權重",
+    "start_seconds": 452.72963632878174,
+    "end_seconds": 502.4398022200771,
+    "start_ms": 452730,
+    "end_ms": 502440,
+    "raw_start_frame": 10498839
+  },
+  {
+    "slide": 12,
+    "title": "價格先驗與分組學習",
+    "start_seconds": 502.4398022200771,
+    "end_seconds": 547.6870695268864,
+    "start_ms": 502440,
+    "end_ms": 547687,
+    "raw_start_frame": 11651622
+  },
+  {
+    "slide": 13,
+    "title": "六個模型與三條分支",
+    "start_seconds": 547.6870695268864,
+    "end_seconds": 600.8120136780675,
+    "start_ms": 547687,
+    "end_ms": 600812,
+    "raw_start_frame": 12700910
+  },
+  {
+    "slide": 14,
+    "title": "成交參考與空間修正",
+    "start_seconds": 600.8120136780675,
+    "end_seconds": 652.344423816749,
+    "start_ms": 600812,
+    "end_ms": 652344,
+    "raw_start_frame": 13932882
+  },
+  {
+    "slide": 15,
+    "title": "逐筆取中位數",
+    "start_seconds": 652.344423816749,
+    "end_seconds": 693.5118441659719,
+    "start_ms": 652344,
+    "end_ms": 693512,
+    "raw_start_frame": 15127923
+  },
+  {
+    "slide": 16,
+    "title": "三期時間回測",
+    "start_seconds": 693.5118441659719,
+    "end_seconds": 734.9854729585828,
+    "start_ms": 693512,
+    "end_ms": 734985,
+    "raw_start_frame": 16082599
+  },
+  {
+    "slide": 17,
+    "title": "Kaggle 公開成績",
+    "start_seconds": 734.9854729585828,
+    "end_seconds": 773.2194414308375,
+    "start_ms": 734985,
+    "end_ms": 773219,
+    "raw_start_frame": 17044376
+  },
+  {
+    "slide": 18,
+    "title": "限制與防過擬合",
+    "start_seconds": 773.2194414308375,
+    "end_seconds": 816.8884911880685,
+    "start_ms": 773219,
+    "end_ms": 816888,
+    "raw_start_frame": 17931025
+  },
+  {
+    "slide": 19,
+    "title": "最終訓練與程式重現",
+    "start_seconds": 816.8884911880685,
+    "end_seconds": 860.185399153096,
+    "start_ms": 816888,
+    "end_ms": 860185,
+    "raw_start_frame": 18943714
+  },
+  {
+    "slide": 20,
+    "title": "結論",
+    "start_seconds": 860.185399153096,
+    "end_seconds": 900.0,
+    "start_ms": 860185,
+    "end_ms": 900000,
+    "raw_start_frame": 19947773
+  }
+]

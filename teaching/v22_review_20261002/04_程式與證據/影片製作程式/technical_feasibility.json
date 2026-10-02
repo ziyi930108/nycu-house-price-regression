@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-01",
+  "status": "local_tts_technical_test_passed_ffmpeg_not_found",
+  "not_formal_narration": true,
+  "not_a_presentation_timing_measurement": true,
+  "ffmpeg_search": {
+    "path_lookup_found": false,
+    "common_paths_checked": [
+      "C:/ffmpeg/bin/ffmpeg.exe",
+      "C:/ProgramData/chocolatey/bin/ffmpeg.exe",
+      "C:/Program Files/ffmpeg/bin/ffmpeg.exe",
+      "C:/Program Files/FFmpeg/bin/ffmpeg.exe",
+      "C:/Program Files/ImageMagick-7.1.1-Q16-HDRI/ffmpeg.exe"
+    ],
+    "common_paths_found": [],
+    "python_environments_without_imageio_ffmpeg": [
+      "C:/NYCU_ML/.venv/Scripts/python.exe",
+      "C:/NYCU_ML/.venv_torch/Scripts/python.exe",
+      "C:/NYCU_ML/.venv-geo/Scripts/python.exe"
+    ],
+    "parent_reported_checks": "Parent separately checked bundled Python, workspace/.cache/WinGetPackages. Not repeated here.",
+    "search_is_exhaustive": false,
+    "installations_performed": 0
+  },
+  "tts_test": {
+    "engine": "System.Speech.Synthesis.SpeechSynthesizer",
+    "voice": "Microsoft Hanhan Desktop",
+    "culture": "zh-TW",
+    "rate": 0,
+    "volume": 100,
+    "audio": {
+      "frames": 93746,
+      "sample_rate": 22050,
+      "duration_seconds": 4.251519274376418,
+      "rms_amplitude": 2269.4150290769862,
+      "peak": 23805,
+      "sha256": "e9e19d225adc5017eaf00fa1bf49f6470d74eb200f04c2b7ce0d87a07e2a3e4d"
+    },
+    "metadata_path": "technical_test_hanhan_rate0/metadata.json",
+    "successful_normal_user_attempt_exit_code": 0,
+    "normal_user_attempt_wall_time_seconds": 0.6337064,
+    "synthesis_elapsed_seconds": 0.0653961,
+    "audio_listened_to_by_agent": false,
+    "existing_output_refusal_test_passed": true,
+    "refusal_kept_metadata_bytes": true,
+    "paid_api_used": false,
+    "network_service_used": false
+  },
+  "failures_preserved": [
+    {
+      "stage": "patch_creation",
+      "issue": "apply_patch absolute path could not create parent directory",
+      "resolution": "Created the permitted video_source directory with PowerShell then applied relative paths. No existing files overwritten."
+    },
+    {
+      "stage": "sandbox_synthesis_attempt",
+      "exit_code": 1,
+      "output_directory_created": false,
+      "message": "Exception calling SelectVoice: No voice installed on the system or none available with the current security setting.",
+      "resolution": "Same local-only one-sentence test succeeded under normal Windows user permissions via require_escalated."
+    }
+  ],
+  "next_steps": [
+    "Main thread finishes slides first; only then derive formal narration JSON from approved script.",
+    "Use an available free FFmpeg binary or install free imageio-ffmpeg in the workspace vendor folder as decided by the main thread; this agent did not install it.",
+    "Choose speaking rate using a short representative passage and inspect resulting total duration; rate0 technical test alone does not establish15min.",
+    "Formal audio quality, pronunciation and final video not yet tested."
+  ]
+}

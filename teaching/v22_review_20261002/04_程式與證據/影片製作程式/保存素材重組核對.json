@@ -1,0 +1,14 @@
+{
+  "completed_at_utc": "2026-10-02T03:56:16.345913+00:00",
+  "status": "passed",
+  "method": "Packaged script + twenty packaged PNGs/cue timelines + packaged MP4 AAC audio; existing Python and FFmpeg",
+  "original_sha256": "13f03575f6785d07999859a45babfb9173d46d997908062606fbcafa4ec823db",
+  "rebuilt_sha256": "13f03575f6785d07999859a45babfb9173d46d997908062606fbcafa4ec823db",
+  "full_mp4_bytes_identical": true,
+  "elapsed_seconds": 52.69269159999385,
+  "new_tts_generated": false,
+  "slides_rerendered": false,
+  "clean_environment_install_verified": false,
+  "from_text_audio_generation_verified_this_revision": false,
+  "human_listening_performed": false
+}

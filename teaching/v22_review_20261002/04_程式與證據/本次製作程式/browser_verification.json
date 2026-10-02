@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "review_scripts_matched": 23,
+  "rehearsal_scripts_matched": 20,
+  "feedback_download_tested": true,
+  "feedback_is_synthetic_test_data": true,
+  "no_network_requests": true,
+  "mobile_no_horizontal_overflow": true,
+  "video_metadata_and_seek_tested": true,
+  "human_rehearsal_measured": false,
+  "errors": []
+}

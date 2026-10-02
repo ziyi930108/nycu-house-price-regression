@@ -1,16 +1,8 @@
 # v22 交付接手說明
 
-最新[約15分鐘上台版](teaching/v22_styles_20261001/fifteen_minute/README.md)已完成三款PPTX、4,051字白話稿及離線排練工具，主講規劃14:45，尚未本人計時。原模型v22、Public及未知Private保持。 已有[新稿重建入口](docs/FIFTEEN_MINUTE_REBUILD.md)，使用`--edition fifteen-minute`從repo重建三款與HTML，實測全bytes一致。 新增[第12–15頁排練重點](docs/FIFTEEN_MINUTE_REHEARSAL.md)，說清先驗倍率、模型名稱與配速估計的界線；目前成品保持，等待本人排練紀錄。
+最新[約15分鐘審查版](teaching/v22_review_20261002/README.md)已整理三款PPTX、4,065字口語稿、离線排練頁、15:00合成旁白影片與字型修正正式PDF。先完整下載repo，再開[審查頁](teaching/v22_review_20261002/index.html)。主講規劃14:45，尚未本人計時，合成影片不能代替真人排練。
 
-新增[離線上台排練頁](teaching/v22_styles_20261001/spoken/rehearsal/README.md)：20頁講稿、提示、分頁計時與卡住筆記。實測時長仍需本人排練。
-
-另附[四頁上台答辯提示卡](teaching/v22_styles_20261001/spoken/defense/README.md)：16題短答、追問補充與對照頁碼。原簡報及主講稿保持，問答不計主講時長。
-
-先前[白話口語講稿版](teaching/v22_styles_20261001/spoken/README.md)已同步三款PPTX備忘稿。20頁主講4,981漢字，估計16.60–19.92分鐘、規劃17:20，未真人計時；畫面保持r2。
-
-[原PDF投影備份](teaching/v22_styles_20261001/projection/README.md)與新口語版畫面相同，PDF無講者備忘稿。[風格指南](teaching/v22_styles_20261001/readability/README.md)供選擇參考，尚未代使用者選風格。
-
-前次更新：2026-10-01。[舊口語版](teaching/v22_styles_20261001/spoken/README.md)讓講解先說意思再帶名詞，拆短句並分段。三款69頁畫面與原r2完全一致，20頁主講notes更新，原版、附錄、16題問答與PDF保持。原工作區C:/NYCU_ML保存來源、渲染及完整ZIP。模型仍v22、Private未知，R106停止。
+[最新PPTX重建入口](docs/REVIEW_TEACHING_REBUILD.md)與[影片重組入口](teaching/v22_review_20261002/04_程式與證據/影片製作程式/README.md)各自說明實測範圍。原4,051字稿及其[舊重建命令](docs/FIFTEEN_MINUTE_REBUILD.md)保留作歷史，不能當成本版4,065字稿。
 
 ## 當前成果
 
@@ -23,13 +15,13 @@
 | 推論重現 | 原test Excel＋17項保存模型／狀態，47,073筆與原v22位元一致 |
 | CSV | 完整SHA與原v22相同，見config/v22.json |
 | 本次驗證 | 隔離模式84.7364秒，4項格式測試通過 |
-| 報告 | REPORT.md及docs/內11頁PDF |
-| 簡報 | fifteen_minute內三款23頁簡報、4,051字口語稿與排練HTML，主講規劃885秒，未真人計時；舊版保持 |
-| 簡報重建 | 新scripts/rebuild_spoken_teaching.py讀repo產生口語版，現有環境3PPTX與69render均完全相同；原rebuild_teaching.py仍產生r2。未全新安裝，詳見docs/SPOKEN_TEACHING_REBUILD.md |
+| 報告 | REPORT.md原文；最新11頁字型修正PDF在teaching/v22_review_20261002/03_正式報告，舊docs PDF保持 |
+| 簡報 | v22_review_20261002內三款23頁、4,065字稿與排練HTML；主講規劃885秒，未真人計時；15:00合成影片另外附上 |
+| 簡報重建 | [最新審查稿入口](docs/REVIEW_TEACHING_REBUILD.md)僅重建三款PPTX；舊--edition fifteen-minute仍產生4,051字稿。各自實測／限制見對應文件 |
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base f805e2ae3207844474cdfe889fcd2e4aaaa2dc1e；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base d747e98fef5842c293c2caf65c1f1aea5bd6e56b；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
@@ -69,9 +61,9 @@ C是原R63設定的新重訓，T只聯動四個類別遮罩；同23欄完整抽�
 
 C−v22重訓偏移、完整層次、群別正反證與24CI見[報告](evidence/reports/round106_report.md)。單seed及舊窗口並非盲測；未知Private、2023地理及乾淨環境尚未重訓的限制保留。
 
-使用者要求跑完本輪後暫停；目前R106已完成，停止研究，不新增R107或排程／背景訓練。後續僅待新的明確指示。
+使用者要求跑完本輪後暫停；目前R106已完成，停止研究，不新增R107或排程／背景訓練。簡報、影片與交接持續依使用者指示改良；不因交付工作自動恢復訓練。
 
-使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。最新主講4,789個純漢字，按250–300字／分估計15.96–19.16分鐘；16:45是配速規劃，未真人排練，附錄及問答不計入。原22頁的4,143字／14:30屬歷史稿。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
+使用者已選定v22，最新紀錄為evidence/selection/user_selected_v22_20260928.json。保留的上台要求是主講至少12分鐘並交代全部流程與設計理由。已擴充完整清理、特徵、驗證、模型表示、近期權重、OOF先驗、成交參考與空間修正、median、最終提交及保存模型重現。最新主講4,065個純漢字，按250–300字／分估計13.55–16.26分鐘，規劃14:45，未真人排練；附錄、問答和提示文字不計。4,789字／16:45、4,981字／17:20、4,051字／14:45及原22頁4,143字／14:30均為歷史稿。內部版本比較只作技術研究沿革，不再列為待選模型。錯開時間切點已完成R97七模型比較；不因舊文件的待辦而重跑或自動開新訓練。
 
 新切點必須重建encoder、OOF prior、NN、log、unit及reference/spatial。不能拿最終全量模型回測已看過的早期資料。
 

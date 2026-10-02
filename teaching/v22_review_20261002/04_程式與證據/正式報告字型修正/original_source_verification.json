@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "source_sha256": "ee613c7cd550c7cc0c79a1bcc9f8aa5b20d20ed2adc5da66e524ff9b7fb9989e",
+  "patched_builder_sha256": "ea016cdae4bd5d6e36a2caa93f101a4eead5f149f55d766294a188ee97d6c879",
+  "reference_pdf_sha256": "57d3fa22868d7d0ca78625985132849a16b80ca2ee94889cf979c39adfe0bed5",
+  "original_input_pdf_sha256": "9972295d3a11683d0de5589a3927d1927cd48476d131f7b39c7e7b34e6976fb3",
+  "both_pdfs_pages": [
+    11,
+    11
+  ],
+  "builder_normalized_source_identical": true,
+  "page_checks": [
+    {
+      "page": 1,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 2,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 3,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 4,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 5,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 6,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 7,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 8,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 9,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 10,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    },
+    {
+      "page": 11,
+      "extracted_text_identical": true,
+      "decoded_page_content_stream_identical": true,
+      "resolved_resources_identical": true
+    }
+  ],
+  "txt_same_bytes_as_fixed_md": true,
+  "new_visual_render": false,
+  "artifact_marker_repeated": false,
+  "proof_scope": "All decoded page drawing streams, fully resolved resource dictionaries including font streams, and extracted text match the visually verified repaired PDF. No second full 11-page render.",
+  "original_source_build_returncode": 0,
+  "original_source_build_seconds": null,
+  "original_source_attempt_outer_shell_wall_seconds": 1.3123415,
+  "timing_note": "Build subprocess duration was not persisted before first verifier assertion; the measured outer shell duration is saved instead.",
+  "verification_attempt1_failure": {
+    "exit_code": 1,
+    "assertion": "str(pageA[/Resources]) == str(pageB[/Resources])",
+    "reason": "pypdf IndirectObject repr embeds the reader memory identity, so equal resource contents compare unequal as display strings.",
+    "repair": "Resolve and recursively canonicalize resource objects and decoded font streams; no PDF rebuild."
+  }
+}
