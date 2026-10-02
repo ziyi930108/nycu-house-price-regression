@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-02T04:55:14.234Z",
+  "file": "deliverables/v22_上台練習_20261002/同一筆交易自測.html",
+  "sha256": "0d57395d73e750ce1de71d18d9042c03ff1e0f710e82df5b14b570e10723a61c",
+  "checks": [
+    {
+      "name": "initial_single_step_and_forward_guard",
+      "status": "passed"
+    },
+    {
+      "name": "blank_malformed_nonfinite_markup_and_unit_suffix_inputs_rejected_without_unlock",
+      "status": "passed"
+    },
+    {
+      "name": "zero_does_not_pass",
+      "status": "passed"
+    },
+    {
+      "name": "fullwidth_and_grouped_decimal_normalized",
+      "status": "passed"
+    },
+    {
+      "name": "step_change_moves_accessible_focus",
+      "status": "passed"
+    },
+    {
+      "name": "partial_branch_answers_cannot_complete_step",
+      "status": "passed"
+    },
+    {
+      "name": "three_branch_arithmetic_passes",
+      "status": "passed"
+    },
+    {
+      "name": "mean_rejected_and_median_accepted",
+      "status": "passed"
+    },
+    {
+      "name": "unanswered_and_wrong_boundaries_do_not_finish",
+      "status": "passed"
+    },
+    {
+      "name": "correct_boundaries_finish_with_honest_completion_mode",
+      "status": "passed"
+    },
+    {
+      "name": "reset_clears_answers_solution_and_progress",
+      "status": "passed"
+    },
+    {
+      "name": "revealed_steps_never_count_as_independent_correct_answers",
+      "status": "passed"
+    },
+    {
+      "name": "post_reveal_answer_does_not_rewrite_history",
+      "status": "passed"
+    },
+    {
+      "name": "reload_has_no_persisted_answers",
+      "status": "passed"
+    },
+    {
+      "name": "all_four_steps_fit_375px_without_document_overflow",
+      "status": "passed"
+    },
+    {
+      "name": "print_exposes_all_four_questions_and_solutions",
+      "status": "passed"
+    },
+    {
+      "name": "no_script_errors_or_network_requests",
+      "status": "passed"
+    },
+    {
+      "name": "standalone_source_without_external_assets_or_storage",
+      "status": "passed"
+    }
+  ],
+  "script_errors": [],
+  "requests": [
+    "file:///C:/NYCU_ML/deliverables/v22_%E4%B8%8A%E5%8F%B0%E7%B7%B4%E7%BF%92_20261002/%E5%90%8C%E4%B8%80%E7%AD%86%E4%BA%A4%E6%98%93%E8%87%AA%E6%B8%AC.html",
+    "file:///C:/NYCU_ML/deliverables/v22_%E4%B8%8A%E5%8F%B0%E7%B7%B4%E7%BF%92_20261002/%E5%90%8C%E4%B8%80%E7%AD%86%E4%BA%A4%E6%98%93%E8%87%AA%E6%B8%AC.html"
+  ],
+  "elapsed_seconds": 2.8260146,
+  "scope": "Synthetic browser operation and layout checks; no human rehearsal, model inference, audio or Private evaluation. Home link is relative; parent creates index.html."
+}

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T04:41:30.504891+00:00",
+  "created_at_utc": "2026-10-02T05:12:57.051913+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -7763,6 +7763,26 @@
       "sha256": "3aa0d81d42e771c028d27968e239c7a9c2d826baeb9f5c9b293ed9bbbfec89dd"
     },
     {
+      "path": "evidence/rehearsal_tools_20261002/delivery_receipt.json",
+      "bytes": 588,
+      "sha256": "2e9002f1f4b9eac90105c4ec2d4cbd4057cdf0c91fed8a4ed8794587a4d9f409"
+    },
+    {
+      "path": "evidence/rehearsal_tools_20261002/exercise_checks.json",
+      "bytes": 2591,
+      "sha256": "0f23ab0c8628973ec43a979fe05c9a02cbd097ddaba794b75bf0ee02fe1fe2b4"
+    },
+    {
+      "path": "evidence/rehearsal_tools_20261002/original_timer_audit.json",
+      "bytes": 1687,
+      "sha256": "7137cb36906cded847f39a36f509069b1b590b81a756f59bbc62b8f5e34c70f7"
+    },
+    {
+      "path": "evidence/rehearsal_tools_20261002/timer_checks.json",
+      "bytes": 65577,
+      "sha256": "abfd851239d0b6740b2b2a73f3d30548d88cfac8d3c30145d8355684cfdd032c"
+    },
+    {
       "path": "evidence/reports/attention_regression_feasibility_after_r93.md",
       "bytes": 9007,
       "sha256": "93a55705f8c04677b5cc45a7f66ea83f244cf0c84127bfcd83f7f5eb2480a4aa"
@@ -9519,8 +9539,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 7714,
-      "sha256": "cea093c8f26dbb24f13f97a2374e80f23b30ea11ff9ead5fb6bfcbec806ff87a"
+      "bytes": 8129,
+      "sha256": "9c14e2d0fdbe3c820d62b4653822da22b2b2f7fc09ae5be8177a2528f7d4e698"
     },
     {
       "path": "presentation/README.md",
@@ -9579,8 +9599,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6848,
-      "sha256": "942fe53aaa0366e715120c872f668596ca674d925891cd2b2d60e66b3955349f"
+      "bytes": 8049,
+      "sha256": "d562fbe9988e0fff6840ecb8ffd019bdfdfb9b4c0d18d9872bb19adf507ddb01"
     },
     {
       "path": "REPORT.md",
@@ -11939,8 +11959,8 @@
     },
     {
       "path": "scripts/package_source.py",
-      "bytes": 5104,
-      "sha256": "eb5d9a5fa803810400b443db66b1d3c6a3328d9e3845bdcb13888aded08738cb"
+      "bytes": 5355,
+      "sha256": "57a1ada8ae4d94cf3245221d06ae8a2f470739a82976d677b5bcc2a03f0970ee"
     },
     {
       "path": "scripts/rebuild_review_teaching.py",
@@ -12166,6 +12186,51 @@
       "path": "teaching/v22_20261001/report/visual_qa.json",
       "bytes": 6256,
       "sha256": "b4649da5e2562c716c1a40a4e818d849b7c945e09ec65715b9ef447adc810c57"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/index.html",
+      "bytes": 2725,
+      "sha256": "cbf9773f65020186d5d5d903d84090b6ae56521a2a5f183a7d2933067524542c"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/manifest.json",
+      "bytes": 1449,
+      "sha256": "22a9fe34af2b07ba6699400f6c498ae111d782f45771392ed7feb3b708dcec03"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/README.md",
+      "bytes": 2966,
+      "sha256": "342aee610af8459676b92696b30ae2623169706fe10bd8730bcc9e86c8dc7c9a"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/sources/build_rehearsal.py",
+      "bytes": 2176,
+      "sha256": "e2654be325c1a64c0d951675ce5041366d1ed6ca1bc9ca798f2090134a172bb4"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/sources/narrative.json",
+      "bytes": 38497,
+      "sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/sources/rehearsal_template.html",
+      "bytes": 17811,
+      "sha256": "01f263157ef9d0da8f6aaef69f02ccd5188bf855ff088410ca9956387b6f1361"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/sources/source_provenance.json",
+      "bytes": 772,
+      "sha256": "44b50fd4e48cf7b6b060a0668b167a57ba3e1a549e5ddd0a9960f3aea65b2ecb"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/同一筆交易自測.html",
+      "bytes": 24320,
+      "sha256": "0d57395d73e750ce1de71d18d9042c03ff1e0f710e82df5b14b570e10723a61c"
+    },
+    {
+      "path": "teaching/v22_practice_20261002/排練計時.html",
+      "bytes": 34925,
+      "sha256": "7d0cc19b00444214097f4e09efefa994e7433b611a8c9fe3673d45c3570a332f"
     },
     {
       "path": "teaching/v22_review_20261002/00_審查指南.md",

@@ -1,5 +1,7 @@
 # v22 交付接手說明
 
+新增[上台前練習](teaching/v22_practice_20261002/index.html)：用同一筆假設交易串起六模型與三分支；新計時工具分開保存分頁練習與完整主講，記錄暫停和回看，避免把單頁累計當完整報告。請完整下載repo後開啟。此工具沿用4,065字正文，不增加簡報頁數或改動影片；原審查包的舊計時頁保留，現在練習請用新入口。
+
 最新[約15分鐘審查版](teaching/v22_review_20261002/README.md)已整理三款PPTX、4,065字口語稿、离線排練頁、15:00合成旁白影片與字型修正正式PDF。先完整下載repo，再開[審查頁](teaching/v22_review_20261002/index.html)。主講規劃14:45，尚未本人計時，合成影片不能代替真人排練。
 
 [最新PPTX重建入口](docs/REVIEW_TEACHING_REBUILD.md)與[影片重組入口](teaching/v22_review_20261002/04_程式與證據/影片製作程式/README.md)各自說明實測範圍。原4,051字稿及其[舊重建命令](docs/FIFTEEN_MINUTE_REBUILD.md)保留作歷史，不能當成本版4,065字稿。
@@ -21,7 +23,7 @@
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base d747e98fef5842c293c2caf65c1f1aea5bd6e56b；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base e78b586e573ddb3852d70b4e4e1d2e4db257018b；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

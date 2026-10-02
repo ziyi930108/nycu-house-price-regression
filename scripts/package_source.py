@@ -31,6 +31,8 @@ TEACHING_EXTRA.update({"teaching/v22_styles_20261001/fifteen_minute/"+name for n
 # Exact media/runtime files in the 2026-10-02 review edition.
 TEACHING_EXTRA.update({'teaching/v22_review_20261002/04_程式與證據/本次製作程式/verify_review.cjs', 'teaching/v22_review_20261002/04_程式與證據/影片製作程式/synthesize_segments.ps1', 'teaching/v22_review_20261002/04_程式與證據/影片製作程式/original_audio.stdout.log', 'teaching/v22_review_20261002/05_講解影片/v22_15分鐘講解.srt', 'teaching/v22_review_20261002/02_講稿與排練/v22-review-rehearsal.html', 'teaching/v22_review_20261002/04_程式與證據/影片製作程式/rebuilt_audio.stdout.log', 'teaching/v22_review_20261002/05_講解影片/v22_15分鐘講解.vtt', 'teaching/v22_review_20261002/05_講解影片/v22_15分鐘講解_合成旁白.mp4', 'teaching/v22_review_20261002/index.html'})
 
+TEACHING_EXTRA.update({'teaching/v22_practice_20261002/sources/rehearsal_template.html', 'teaching/v22_practice_20261002/index.html', 'teaching/v22_practice_20261002/同一筆交易自測.html', 'teaching/v22_practice_20261002/排練計時.html'})
+
 def sha(p):
 
     h=hashlib.sha256()

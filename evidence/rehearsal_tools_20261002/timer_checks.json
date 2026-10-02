@@ -1,0 +1,2281 @@
+{
+  "started_at": "2026-10-02T05:00:04.125Z",
+  "method": "Headless Edge / Playwright UI; synthetic clock only, no human rehearsal or speech",
+  "source_sha256": "7d0cc19b00444214097f4e09efefa994e7433b611a8c9fe3673d45c3570a332f",
+  "cases": [
+    {
+      "name": "practice_one_page_900_seconds_is_not_a_full_talk",
+      "passed": true,
+      "elapsed_ms": 574,
+      "report": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:15:10.000Z",
+        "session_id": "d82331fd-7175-4f19-afbe-d40bf32b17af",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "practice",
+        "created_at": "2026-10-02T05:00:00.021Z",
+        "started_at": "2026-10-02T05:00:10.000Z",
+        "finished_at": "2026-10-02T05:15:10.000Z",
+        "saved_at": "2026-10-02T05:15:10.000Z",
+        "status": "finished",
+        "historical_snapshot": false,
+        "active_seconds": 900,
+        "elapsed_seconds": 900,
+        "total_seconds": 900,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 1,
+        "pages_needing_confirmation": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 13,
+            "active_seconds": 0,
+            "from_page": 1,
+            "to_page": 13,
+            "while_running": false
+          },
+          {
+            "type": "start",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 13,
+            "active_seconds": 0
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 13,
+            "active_seconds": 900,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "finish",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 13,
+            "active_seconds": 900
+          }
+        ],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 900,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          }
+        ]
+      },
+      "summary": "這是分頁練習的累計時間，不能用來判斷一場完整主講是否達到12分鐘或接近15分鐘。"
+    },
+    {
+      "name": "full_start_page_one_and_all_twenty_timed_and_confirmed_gate",
+      "passed": true,
+      "elapsed_ms": 2190,
+      "report": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:17:10.000Z",
+        "session_id": "d72e6ca2-0aed-42c1-b103-94d3ee23a87d",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "full",
+        "created_at": "2026-10-02T05:00:00.019Z",
+        "started_at": "2026-10-02T05:00:10.000Z",
+        "finished_at": "2026-10-02T05:15:10.000Z",
+        "saved_at": "2026-10-02T05:17:10.000Z",
+        "status": "finished",
+        "historical_snapshot": false,
+        "active_seconds": 900,
+        "elapsed_seconds": 900,
+        "total_seconds": 900,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 20,
+        "pages_needing_confirmation": [],
+        "eligible_for_duration_comparison": true,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 13,
+            "active_seconds": 0,
+            "from_page": 1,
+            "to_page": 13,
+            "while_running": false
+          },
+          {
+            "type": "start",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 1,
+            "active_seconds": 0
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:00:55.000Z",
+            "page": 1,
+            "active_seconds": 45,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:00:55.000Z",
+            "page": 2,
+            "active_seconds": 45,
+            "from_page": 1,
+            "to_page": 2,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:01:40.000Z",
+            "page": 2,
+            "active_seconds": 90,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:01:40.000Z",
+            "page": 3,
+            "active_seconds": 90,
+            "from_page": 2,
+            "to_page": 3,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:02:25.000Z",
+            "page": 3,
+            "active_seconds": 135,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:02:25.000Z",
+            "page": 4,
+            "active_seconds": 135,
+            "from_page": 3,
+            "to_page": 4,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:03:10.000Z",
+            "page": 4,
+            "active_seconds": 180,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:03:10.000Z",
+            "page": 5,
+            "active_seconds": 180,
+            "from_page": 4,
+            "to_page": 5,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:03:55.000Z",
+            "page": 5,
+            "active_seconds": 225,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:03:55.000Z",
+            "page": 6,
+            "active_seconds": 225,
+            "from_page": 5,
+            "to_page": 6,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:04:40.000Z",
+            "page": 6,
+            "active_seconds": 270,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:04:40.000Z",
+            "page": 7,
+            "active_seconds": 270,
+            "from_page": 6,
+            "to_page": 7,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:05:25.000Z",
+            "page": 7,
+            "active_seconds": 315,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:05:25.000Z",
+            "page": 8,
+            "active_seconds": 315,
+            "from_page": 7,
+            "to_page": 8,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:06:10.000Z",
+            "page": 8,
+            "active_seconds": 360,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:06:10.000Z",
+            "page": 9,
+            "active_seconds": 360,
+            "from_page": 8,
+            "to_page": 9,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:06:55.000Z",
+            "page": 9,
+            "active_seconds": 405,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:06:55.000Z",
+            "page": 10,
+            "active_seconds": 405,
+            "from_page": 9,
+            "to_page": 10,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:07:40.000Z",
+            "page": 10,
+            "active_seconds": 450,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:07:40.000Z",
+            "page": 11,
+            "active_seconds": 450,
+            "from_page": 10,
+            "to_page": 11,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:08:25.000Z",
+            "page": 11,
+            "active_seconds": 495,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:08:25.000Z",
+            "page": 12,
+            "active_seconds": 495,
+            "from_page": 11,
+            "to_page": 12,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:09:10.000Z",
+            "page": 12,
+            "active_seconds": 540,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:09:10.000Z",
+            "page": 13,
+            "active_seconds": 540,
+            "from_page": 12,
+            "to_page": 13,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:09:55.000Z",
+            "page": 13,
+            "active_seconds": 585,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:09:55.000Z",
+            "page": 14,
+            "active_seconds": 585,
+            "from_page": 13,
+            "to_page": 14,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:10:40.000Z",
+            "page": 14,
+            "active_seconds": 630,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:10:40.000Z",
+            "page": 15,
+            "active_seconds": 630,
+            "from_page": 14,
+            "to_page": 15,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:11:25.000Z",
+            "page": 15,
+            "active_seconds": 675,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:11:25.000Z",
+            "page": 16,
+            "active_seconds": 675,
+            "from_page": 15,
+            "to_page": 16,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:12:10.000Z",
+            "page": 16,
+            "active_seconds": 720,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:12:10.000Z",
+            "page": 17,
+            "active_seconds": 720,
+            "from_page": 16,
+            "to_page": 17,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:12:55.000Z",
+            "page": 17,
+            "active_seconds": 765,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:12:55.000Z",
+            "page": 18,
+            "active_seconds": 765,
+            "from_page": 17,
+            "to_page": 18,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:13:40.000Z",
+            "page": 18,
+            "active_seconds": 810,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:13:40.000Z",
+            "page": 19,
+            "active_seconds": 810,
+            "from_page": 18,
+            "to_page": 19,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:14:25.000Z",
+            "page": 19,
+            "active_seconds": 855,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:14:25.000Z",
+            "page": 20,
+            "active_seconds": 855,
+            "from_page": 19,
+            "to_page": 20,
+            "while_running": true
+          },
+          {
+            "type": "finish",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 20,
+            "active_seconds": 900
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 20,
+            "active_seconds": 900,
+            "checked": true,
+            "after_finish": true
+          },
+          {
+            "type": "review_page",
+            "at": "2026-10-02T05:17:10.000Z",
+            "page": 1,
+            "active_seconds": 900,
+            "from_page": 20,
+            "to_page": 1
+          }
+        ],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": "synthetic post-finish note"
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          }
+        ]
+      },
+      "summary": "這次手動計時約14至16分鐘，接近15分鐘目標；仍須自己確認內容講清楚。",
+      "finished_clocks_frozen_after_seconds": 120
+    },
+    {
+      "name": "pause_excludes_active_includes_wall_and_disqualifies_continuity",
+      "passed": true,
+      "elapsed_ms": 2562,
+      "report": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:18:10.000Z",
+        "session_id": "930e1e5b-4b74-4d53-92d5-00ceaab71c1e",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "full",
+        "created_at": "2026-10-02T05:00:00.021Z",
+        "started_at": "2026-10-02T05:00:10.000Z",
+        "finished_at": "2026-10-02T05:18:10.000Z",
+        "saved_at": "2026-10-02T05:18:10.000Z",
+        "status": "finished",
+        "historical_snapshot": false,
+        "active_seconds": 900,
+        "elapsed_seconds": 1080,
+        "total_seconds": 900,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 1,
+        "backtracks": 0,
+        "self_confirmed_pages": 20,
+        "pages_needing_confirmation": [],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 13,
+            "active_seconds": 0,
+            "from_page": 1,
+            "to_page": 13,
+            "while_running": false
+          },
+          {
+            "type": "start",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 1,
+            "active_seconds": 0
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:00:55.000Z",
+            "page": 1,
+            "active_seconds": 45,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:00:55.000Z",
+            "page": 2,
+            "active_seconds": 45,
+            "from_page": 1,
+            "to_page": 2,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:01:40.000Z",
+            "page": 2,
+            "active_seconds": 90,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:01:40.000Z",
+            "page": 3,
+            "active_seconds": 90,
+            "from_page": 2,
+            "to_page": 3,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:02:25.000Z",
+            "page": 3,
+            "active_seconds": 135,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:02:25.000Z",
+            "page": 4,
+            "active_seconds": 135,
+            "from_page": 3,
+            "to_page": 4,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:03:10.000Z",
+            "page": 4,
+            "active_seconds": 180,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:03:10.000Z",
+            "page": 5,
+            "active_seconds": 180,
+            "from_page": 4,
+            "to_page": 5,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:03:55.000Z",
+            "page": 5,
+            "active_seconds": 225,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:03:55.000Z",
+            "page": 6,
+            "active_seconds": 225,
+            "from_page": 5,
+            "to_page": 6,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:04:40.000Z",
+            "page": 6,
+            "active_seconds": 270,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:04:40.000Z",
+            "page": 7,
+            "active_seconds": 270,
+            "from_page": 6,
+            "to_page": 7,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:05:25.000Z",
+            "page": 7,
+            "active_seconds": 315,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:05:25.000Z",
+            "page": 8,
+            "active_seconds": 315,
+            "from_page": 7,
+            "to_page": 8,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:06:10.000Z",
+            "page": 8,
+            "active_seconds": 360,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:06:10.000Z",
+            "page": 9,
+            "active_seconds": 360,
+            "from_page": 8,
+            "to_page": 9,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:06:55.000Z",
+            "page": 9,
+            "active_seconds": 405,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:06:55.000Z",
+            "page": 10,
+            "active_seconds": 405,
+            "from_page": 9,
+            "to_page": 10,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:07:40.000Z",
+            "page": 10,
+            "active_seconds": 450,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "pause",
+            "at": "2026-10-02T05:07:40.000Z",
+            "page": 10,
+            "active_seconds": 450,
+            "reason": "使用者暫停"
+          },
+          {
+            "type": "resume",
+            "at": "2026-10-02T05:10:40.000Z",
+            "page": 10,
+            "active_seconds": 450
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:10:40.000Z",
+            "page": 11,
+            "active_seconds": 450,
+            "from_page": 10,
+            "to_page": 11,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:11:25.000Z",
+            "page": 11,
+            "active_seconds": 495,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:11:25.000Z",
+            "page": 12,
+            "active_seconds": 495,
+            "from_page": 11,
+            "to_page": 12,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:12:10.000Z",
+            "page": 12,
+            "active_seconds": 540,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:12:10.000Z",
+            "page": 13,
+            "active_seconds": 540,
+            "from_page": 12,
+            "to_page": 13,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:12:55.000Z",
+            "page": 13,
+            "active_seconds": 585,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:12:55.000Z",
+            "page": 14,
+            "active_seconds": 585,
+            "from_page": 13,
+            "to_page": 14,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:13:40.000Z",
+            "page": 14,
+            "active_seconds": 630,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:13:40.000Z",
+            "page": 15,
+            "active_seconds": 630,
+            "from_page": 14,
+            "to_page": 15,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:14:25.000Z",
+            "page": 15,
+            "active_seconds": 675,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:14:25.000Z",
+            "page": 16,
+            "active_seconds": 675,
+            "from_page": 15,
+            "to_page": 16,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 16,
+            "active_seconds": 720,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:15:10.000Z",
+            "page": 17,
+            "active_seconds": 720,
+            "from_page": 16,
+            "to_page": 17,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:15:55.000Z",
+            "page": 17,
+            "active_seconds": 765,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:15:55.000Z",
+            "page": 18,
+            "active_seconds": 765,
+            "from_page": 17,
+            "to_page": 18,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:16:40.000Z",
+            "page": 18,
+            "active_seconds": 810,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:16:40.000Z",
+            "page": 19,
+            "active_seconds": 810,
+            "from_page": 18,
+            "to_page": 19,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:17:25.000Z",
+            "page": 19,
+            "active_seconds": 855,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "navigate",
+            "at": "2026-10-02T05:17:25.000Z",
+            "page": 20,
+            "active_seconds": 855,
+            "from_page": 19,
+            "to_page": 20,
+            "while_running": true
+          },
+          {
+            "type": "self_confirmation",
+            "at": "2026-10-02T05:18:10.000Z",
+            "page": 20,
+            "active_seconds": 900,
+            "checked": true,
+            "after_finish": false
+          },
+          {
+            "type": "finish",
+            "at": "2026-10-02T05:18:10.000Z",
+            "page": 20,
+            "active_seconds": 900
+          }
+        ],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": true,
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "reload_keeps_old_fragment_with_new_zero_session",
+      "passed": true,
+      "elapsed_ms": 352,
+      "before": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:00:55.000Z",
+        "session_id": "8317be92-b5f0-4b71-bbd7-25031e95a8bb",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "full",
+        "created_at": "2026-10-02T05:00:00.023Z",
+        "started_at": "2026-10-02T05:00:10.000Z",
+        "finished_at": null,
+        "saved_at": "2026-10-02T05:00:55.000Z",
+        "status": "running",
+        "historical_snapshot": false,
+        "active_seconds": 45,
+        "elapsed_seconds": 45,
+        "total_seconds": 45,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 0,
+        "pages_needing_confirmation": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [
+          {
+            "type": "start",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 1,
+            "active_seconds": 0
+          }
+        ],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 45,
+            "visited_while_timing": true,
+            "self_confirmed": false,
+            "note": "synthetic before reload"
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          }
+        ]
+      },
+      "after": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:00:55.000Z",
+        "session_id": "8c310ddd-a9d9-4baf-b296-d81e6c4d0d90",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "practice",
+        "created_at": "2026-10-02T05:00:55.000Z",
+        "started_at": null,
+        "finished_at": null,
+        "saved_at": null,
+        "status": "ready",
+        "historical_snapshot": false,
+        "active_seconds": 0,
+        "elapsed_seconds": 0,
+        "total_seconds": 0,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 0,
+        "pages_needing_confirmation": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          }
+        ]
+      },
+      "copied": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:00:55.000Z",
+        "session_id": "adb17023-89d3-4076-8210-857b8def8f80",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "practice",
+        "created_at": "2026-10-02T05:00:55.000Z",
+        "started_at": null,
+        "finished_at": null,
+        "saved_at": null,
+        "status": "ready",
+        "historical_snapshot": false,
+        "active_seconds": 0,
+        "elapsed_seconds": 0,
+        "total_seconds": 0,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 0,
+        "pages_needing_confirmation": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": "8317be92-b5f0-4b71-bbd7-25031e95a8bb",
+        "events": [],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": "synthetic before reload"
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          }
+        ]
+      },
+      "history": "完整主講 · 2026-10-02T05:00:55.000Z · 00:45 · 尚未結束／可能是另一分頁或離開前片段這次完整主講尚未結束。若已關閉或重整，這只是先前儲存的片段，請另開一次完整計時。下載這筆紀錄帶入筆記，另開分頁練習"
+    },
+    {
+      "name": "two_tabs_preserve_distinct_notes_and_download_ids",
+      "passed": true,
+      "elapsed_ms": 2837,
+      "a_id": "a16d9a48-f98e-49aa-b252-056311dd4c7c",
+      "b_id": "f2348283-649a-4d5d-a82e-9fcd9d091c33",
+      "files": [
+        "tab_a_download.json",
+        "tab_b_download.json"
+      ],
+      "download_names": [
+        "v22-practice-a16d9a48-f98e-49aa-b252-056311dd4c7c.json",
+        "v22-practice-f2348283-649a-4d5d-a82e-9fcd9d091c33.json"
+      ],
+      "preserved_notes": true
+    },
+    {
+      "name": "storage_failure_warns_but_keeps_download_available",
+      "passed": true,
+      "elapsed_ms": 433,
+      "warning": "此瀏覽器無法保存紀錄；離開前請下載JSON，關閉後未下載內容可能遺失。",
+      "download_file": "storage_denied_download.json",
+      "report": {
+        "schema_version": 2,
+        "exported_at": "2026-10-02T05:00:20.000Z",
+        "session_id": "f69dd3fd-92e4-4e06-a1f0-1a1cab6e9bab",
+        "script_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6",
+        "mode": "practice",
+        "created_at": "2026-10-02T05:00:00.021Z",
+        "started_at": "2026-10-02T05:00:10.000Z",
+        "finished_at": null,
+        "saved_at": "2026-10-02T05:00:20.000Z",
+        "status": "running",
+        "historical_snapshot": false,
+        "active_seconds": 10,
+        "elapsed_seconds": 10,
+        "total_seconds": 10,
+        "minimum_seconds": 720,
+        "target_seconds": 900,
+        "pause_count": 0,
+        "backtracks": 0,
+        "self_confirmed_pages": 0,
+        "pages_needing_confirmation": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "eligible_for_duration_comparison": false,
+        "content_completion_verified": false,
+        "human_rehearsal_confirmed_by_assistant": false,
+        "measurement": "manual stopwatch and user checks; no audio or automatic content verification",
+        "notes_copied_from": null,
+        "events": [
+          {
+            "type": "start",
+            "at": "2026-10-02T05:00:10.000Z",
+            "page": 1,
+            "active_seconds": 0
+          }
+        ],
+        "slides": [
+          {
+            "number": 1,
+            "title": "臺灣房屋總價預測",
+            "seconds": 10,
+            "visited_while_timing": true,
+            "self_confirmed": false,
+            "note": "synthetic no-storage note"
+          },
+          {
+            "number": 2,
+            "title": "回歸與模型學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 3,
+            "title": "平均絕對誤差",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 4,
+            "title": "四份資料的用途",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 5,
+            "title": "完整工作流程",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 6,
+            "title": "資料清理",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 7,
+            "title": "特徵工程與欄位取捨",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 8,
+            "title": "時間回測與過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 9,
+            "title": "樹模型與神經網路",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 10,
+            "title": "總價、單價與對數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 11,
+            "title": "近期成交權重",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 12,
+            "title": "價格先驗與分組學習",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 13,
+            "title": "六個模型與三條分支",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 14,
+            "title": "成交參考與空間修正",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 15,
+            "title": "逐筆取中位數",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 16,
+            "title": "三期時間回測",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 17,
+            "title": "Kaggle 公開成績",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 18,
+            "title": "限制與防過擬合",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 19,
+            "title": "最終訓練與程式重現",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          },
+          {
+            "number": 20,
+            "title": "結論",
+            "seconds": 0,
+            "visited_while_timing": false,
+            "self_confirmed": false,
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile_360px_no_document_overflow_and_twenty_sources_match",
+      "passed": true,
+      "elapsed_ms": 430,
+      "before": {
+        "scroll": 360,
+        "width": 360
+      },
+      "after": {
+        "scroll": 360,
+        "width": 360
+      }
+    }
+  ],
+  "errors": [],
+  "external_requests": [],
+  "deck_match": {
+    "exact_all_fields": true,
+    "slides": 20,
+    "source_sha256": "b907f4e71a1f4f912f951f7c7780366e3b2aee9268aca44586611a3144f944b6"
+  },
+  "passed": true,
+  "finished_at": "2026-10-02T05:00:13.874Z"
+}
