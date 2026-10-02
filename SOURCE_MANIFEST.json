@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T05:36:33.438801+00:00",
+  "created_at_utc": "2026-10-02T06:01:38.210096+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -33,6 +33,11 @@
       "sha256": "32ae1c8c778567720ac2dbcba75b213e43b232cee61fb2c40d39e8df5d9a3728"
     },
     {
+      "path": "docs/ENVIRONMENT_INSTALL_20261002.md",
+      "bytes": 4152,
+      "sha256": "92966e722bd4ae389e7acc76d1c5f4b233474afb88657e203d7a232a935c0c08"
+    },
+    {
       "path": "docs/FIFTEEN_MINUTE_REBUILD.md",
       "bytes": 3373,
       "sha256": "c32ead7a97a1e8edad0b78efc62f0357d7c69dd44d58261f6c0edc25319de7d4"
@@ -49,8 +54,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 2342,
-      "sha256": "1e399cd3ecf5cc133f034a84fb3bf7ac74586b40b58741459e20f254102fea14"
+      "bytes": 3028,
+      "sha256": "9c4f2f92c9297c1dca6d19f5a9cf8ad966b7292e892ef35fcbefe669a8ea3491"
     },
     {
       "path": "docs/RESEARCH_UPDATES_20260928.md",
@@ -186,6 +191,66 @@
       "path": "evidence/DELIVERY_REQUIREMENTS.md",
       "bytes": 2153,
       "sha256": "23f56fea2b315ece15411f13f96da3777f431bea171457ec6b5ec56afc8d8f90"
+    },
+    {
+      "path": "evidence/environment_20261002/environment_receipt.json",
+      "bytes": 16801,
+      "sha256": "48fcac5389aa29d8d64ad9e1b1c1fc2650ce8ac1983b491bd9579a0782fa5550"
+    },
+    {
+      "path": "evidence/environment_20261002/first_network_failure.txt",
+      "bytes": 506,
+      "sha256": "187e00db17b8c703c54072267dcd9965ccaa9c7d95eae3af775c926800877bb0"
+    },
+    {
+      "path": "evidence/environment_20261002/format_tests.txt",
+      "bytes": 547,
+      "sha256": "376b14b2d171912ae993c83243c2d12e769037eb5dd68706152e1fcc1238c22a"
+    },
+    {
+      "path": "evidence/environment_20261002/import_check.py",
+      "bytes": 2593,
+      "sha256": "e18b2363a63f12b37cb8271f8fc075e97ed23fff97078a2a87748089cfd1f918"
+    },
+    {
+      "path": "evidence/environment_20261002/imports.json",
+      "bytes": 328544,
+      "sha256": "fcf124f915ca91d7b3bef266b88ab65d15ce0c48577b59648243ff527c679676"
+    },
+    {
+      "path": "evidence/environment_20261002/inspect_environment.py",
+      "bytes": 873,
+      "sha256": "1f9f4f77e85a00b348f6a01eec6e375d75bd73887140d7a9735877a6d632882c"
+    },
+    {
+      "path": "evidence/environment_20261002/installed_packages.txt",
+      "bytes": 633,
+      "sha256": "c70a0dbbc498b3d576bdb2137eab658989a201ad3f175692bd96acbeb0ea0ea4"
+    },
+    {
+      "path": "evidence/environment_20261002/installed_wheels.json",
+      "bytes": 12735,
+      "sha256": "62640765bc4fa5a6b82711779de0028e48d66cd02bebf2df2f5916a63306e5e5"
+    },
+    {
+      "path": "evidence/environment_20261002/neural_help.txt",
+      "bytes": 313,
+      "sha256": "28d1bf44780efb3f56ecaf3c0c3d2cd277c44334abe0a58c8524fb278ac2a5fc"
+    },
+    {
+      "path": "evidence/environment_20261002/packages.json",
+      "bytes": 2808,
+      "sha256": "cb84677f1d24d302d8ffa35dee65fc78e41e543924d35997dcfe49570166af2a"
+    },
+    {
+      "path": "evidence/environment_20261002/prediction_help.txt",
+      "bytes": 480,
+      "sha256": "e23b9a7deb8bf8c826bce8dfbbfd7d2b2d7e3290855594ad246c884e1e452614"
+    },
+    {
+      "path": "evidence/environment_20261002/tested_pyvenv_config.txt",
+      "bytes": 412,
+      "sha256": "9063e0dd14f0f3d379d23412cf26c27b4348b24ffe2bf817475041e8ce541f57"
     },
     {
       "path": "evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json",
@@ -9549,8 +9614,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8334,
-      "sha256": "c3a66927dd740c6d3ecf1677ed9e667f84e295301590e2a0249b4f266f767dd4"
+      "bytes": 8634,
+      "sha256": "5d16e2a71473df7926692f69a32d3f6fb8625a380d3c57abeb61dcd89113319c"
     },
     {
       "path": "presentation/README.md",
@@ -9609,8 +9674,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7986,
-      "sha256": "bc72579c32d9033b97d75fd2934befe70967baf74ddf9995354e594ecdf8282a"
+      "bytes": 8696,
+      "sha256": "bb85ff3ad79d2b1329f33cf15f8f8b4546c2cc4fda5cc5b09d11f9c4701e197f"
     },
     {
       "path": "REPORT.md",

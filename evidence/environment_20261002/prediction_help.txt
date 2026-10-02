@@ -1,0 +1,14 @@
+usage: predict_v22.py [-h] [--artifacts ARTIFACTS] --test TEST --sample SAMPLE
+                      --output-dir OUTPUT_DIR [--nn-python NN_PYTHON]
+                      [--device {cpu,cuda:0}]
+
+Recompute v22 from original test Excel and frozen model/geography states.
+
+options:
+  -h, --help            show this help message and exit
+  --artifacts ARTIFACTS
+  --test TEST
+  --sample SAMPLE
+  --output-dir OUTPUT_DIR
+  --nn-python NN_PYTHON
+  --device {cpu,cuda:0}

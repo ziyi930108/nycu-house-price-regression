@@ -1,0 +1,57 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Scripts\\python.exe",
+  "prefix": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv",
+  "base_prefix": "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+  "isolated": 1,
+  "user_site_enabled": false,
+  "sys_path": [
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip",
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs",
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib",
+    "C:\\Users\\ziyi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+    "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv",
+    "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": {
+      "version": "2.3.5",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\numpy-2.3.5.dist-info"
+    },
+    "pandas": {
+      "version": "3.0.1",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\pandas-3.0.1.dist-info"
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\scipy-1.18.1.dist-info"
+    },
+    "scikit-learn": {
+      "version": "1.9.1",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\scikit_learn-1.9.1.dist-info"
+    },
+    "catboost": {
+      "version": "1.2.10",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\catboost-1.2.10.dist-info"
+    },
+    "lightgbm": {
+      "version": "4.7.0",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\lightgbm-4.7.0.dist-info"
+    },
+    "openpyxl": {
+      "version": "3.1.5",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\openpyxl-3.1.5.dist-info"
+    },
+    "torch": {
+      "version": "2.13.0",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\torch-2.13.0.dist-info"
+    },
+    "pip": {
+      "version": "25.0.1",
+      "metadata_directory": "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Lib\\site-packages\\pip-25.0.1.dist-info"
+    }
+  },
+  "model_files_read": false,
+  "training": false
+}

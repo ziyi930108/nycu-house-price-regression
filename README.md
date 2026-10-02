@@ -46,7 +46,9 @@ python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements-torch.txt
 ~~~
 
-以上是安裝說明，尚未在全新環境完成安裝驗證。實測使用既有兩個 Python 3.12.14 環境：ML 環境與 Torch 2.13.0+cu126 環境。精確重現原 NN 需要對應 CUDA 與 GPU 運算設定，CPU 與其他硬體不保證輸出相同。
+這兩份requirements已於2026-10-02在同一台Windows、同一Python3.12.14 base的新隔離venv完成安裝、import與兩個CLI載入檢查，詳見[安裝核驗](docs/ENVIRONMENT_INSTALL_20261002.md)。新環境沒有繼承系統套件，但不是新電腦測試，也未載模型或推論。
+
+**本次由官方PyPI安裝得到Torch 2.13.0+cpu，沒有CUDA。** `torch==2.13.0`未固定原本的`+cu126`組建；這個新環境不能直接執行下方`cuda:0`命令。原v22完整CSV一致的證據來自既有ML環境及Torch2.13.0+cu126／CUDA12.6環境，不能套用到這次安裝結果。
 
 若有原研究工作區，可逐檔核對 SHA256 並複製必要 artifact：
 
@@ -60,7 +62,7 @@ python -m venv .venv
 .venv\Scripts\python.exe src/predict_v22.py --test data/test-reindex-test-v2.2.xlsx --sample data/test-reindex-test-sample-submission-v2.csv --output-dir runs/v22_reproduction --device cuda:0
 ~~~
 
-若 Torch 在另一環境，加 --nn-python C:/path/to/torch-env/Scripts/python.exe。output-dir 必須是新目錄。
+上方CUDA命令的前提是執行Python本身已裝好相容的GPU版Torch；本次新venv只有CPU版時，需透過 `--nn-python C:/path/to/verified-gpu-env/Scripts/python.exe` 指向另外準備且核實的GPU環境。這是路徑範例，請換成自己的實際路徑；本批未替新venv安裝CUDA版或測試跨環境推論。output-dir必須是新目錄。不要把CPU診斷結果當原CSV精確重現。
 
 程式讀 Excel、重建87欄特徵、套保存encoder／prior，真正載入六模型，逐分支套參考成交與空間修正，再取中位數。輸出 CSV、未取整預測、三分支向量及 receipt.json；不讀舊預測作為輸入。
 
@@ -94,6 +96,6 @@ v22 = median(S(B_nn, R(B_nn)), S(B_log, R(B_log)), S(B_unit, R(B_unit)))
 | presentation/ | 原22頁正式簡報與來源，保留歷史版本 |
 | private/、data/、runs/ | 本機使用，Git與公開ZIP排除 |
 
-保存模型推論已實測；從零重訓、地理重建、全新環境安裝尚未完成端到端驗證。固定seed也不保證GPU重訓位元相同。
+保存模型推論已在原環境實測；本批另完成同機新venv的安裝與載入。新venv內推論、從零重訓、地理重建及新電腦端到端驗證仍未完成。固定seed也不保證GPU重訓位元相同。
 
 GitHub儲存庫為[ziyi930108/nycu-house-price-regression](https://github.com/ziyi930108/nycu-house-price-regression)，設為私人。程式尚未選擇開源授權；課程資料再散布權限亦未確認。保留.gitignore，勿將private/與data/納入版本控制。

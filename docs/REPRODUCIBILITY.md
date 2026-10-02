@@ -2,13 +2,17 @@
 
 測試問題是「保存v22模型與狀態能否重新生成原提交」，不能以舊預測向量重組代替模型推論。
 
-## 環境
+## 原保存模型推論的受測環境
 
 Windows，Python3.12.14。ML環境：NumPy2.3.5、pandas3.0.1、CatBoost1.2.10、LightGBM4.7.0、SciPy1.18.1、scikit-learn1.9.1、openpyxl3.1.5。
 
-NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096、4threads、float32 matmul precision high。實測採兩個既有環境，--nn-python指定Torch；未驗證全新單一環境安裝。
+NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096、4threads、float32 matmul precision high。該次實測採兩個既有環境，--nn-python指定Torch；84.7364秒的收據仍屬這兩個環境。
 
-## 核驗
+## 2026-10-02同機新venv安裝
+
+另以同一Python3.12.14 base建立不繼承系統套件的新venv，原兩份requirements安裝、pip check、八套件import、兩CLI的--help與四項格式測試通過。35個wheel來源／SHA、2,130個已載入第三方模組路徑與命令收據已保存；詳見[安裝核驗](ENVIRONMENT_INSTALL_20261002.md)。本次取得的是Torch2.13.0+cpu、compiled CUDA為null，與原+cu126不同。未在新環境載模型、推論或重訓，也未測GPU運算；不把兩批證據串成同一次端到端重現。
+
+## 原保存模型推論核驗
 
 1. 原始Excel重建87特徵、核對frame hash，sample全量ID與順序。
 2. 17項artifact獨立複製且逐檔核對SHA，載六個模型。
@@ -25,7 +29,7 @@ NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096�
 
 ## 未驗證
 
-- 全新套件安裝、其他作業系統或GPU。
+- 新venv內的保存模型推論／CSV精確重播、其他電腦／作業系統或GPU。
 - 從原始OSM快照重建地理。
 - 從清理train/valid、OOF至全部模型重訓的可攜全流程。
 - 任意新資料的地理對齊與泛化。
@@ -33,6 +37,6 @@ NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096�
 
 test固定SHA檢查避免拿錯列序配保存地理狀態。新模型或配方需另建版本和清單，不覆寫v22身分。有實質進度時同步更新原專案HANDOFF.md、HANDOFF_LOG.md及交付報告與收據。
 
-## 最終結果
+## 原兩個既有環境的推論結果
 
 隔離模式單一入口完成，47,073筆未取整預測位元一致；CSV SHA256完全等於原v22。實測84.7364秒，4項格式測試通過。詳見[摘要](../evidence/reproduction/summary.json)與[收據](../evidence/reproduction/integration_verified.json)。第一次僅LF／CRLF差異導致全檔核驗失敗，已修正並整條重跑；失敗收據保留且摘要標記舊status欄誤導，未刪除。
