@@ -1,0 +1,46 @@
+{
+  "created_at_utc": "2026-10-02T06:57:36.774985+00:00",
+  "scope": "current defense Q15 and source-location update; no main talk/media/model changes",
+  "files": [
+    {
+      "path": "build_receipt.json",
+      "bytes": 10563,
+      "sha256": "bf2af8a4b78279104e02034649c6f26375a1a950d0703f639d6eeb497b1ddaaf"
+    },
+    {
+      "path": "independent_review.json",
+      "bytes": 16306,
+      "sha256": "edd81311f25c8830ab755566868f93a44a29980ea4416a269c556354a7867bb7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2214,
+      "sha256": "38397ce664f37f7187144c065ee29b70c6e07ad2e915fc128550c299f88b21c4"
+    },
+    {
+      "path": "sources/build_cards.py",
+      "bytes": 6340,
+      "sha256": "95fcf67d1268c212c5bb4f723d661a83ee8d9734994f71cd9be099c1bd9588cf"
+    },
+    {
+      "path": "sources/questions_approved.json",
+      "bytes": 8223,
+      "sha256": "8207016d738a45fa1d89ebf7354969d59ae8adec36add89eaa3aa0ff3acaa123"
+    },
+    {
+      "path": "排練與問答.md",
+      "bytes": 11981,
+      "sha256": "8938811e72f4afae571982b0987722922ad419c2286b0e98f8723c4748aa84b5"
+    },
+    {
+      "path": "臺灣房價預測_v22_答辯提示卡.md",
+      "bytes": 7602,
+      "sha256": "5815fe9eb87ecc63a01d76095d680c31f5062648e242ec796db1d5dfe5737ca4"
+    },
+    {
+      "path": "臺灣房價預測_v22_答辯提示卡.pdf",
+      "bytes": 281157,
+      "sha256": "bd4992c50a0607ab0ba3944812bd8d3bf039873d4e3ef2446fb198b1586008eb"
+    }
+  ]
+}

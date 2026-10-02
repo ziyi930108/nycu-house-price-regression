@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T06:40:31.496300+00:00",
+  "created_at_utc": "2026-10-02T06:59:45.886792+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9704,8 +9704,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8697,
-      "sha256": "a1c9f41a2d5f357172881f1de5880c8751aed7a53695b4e0be5d5793cef8d229"
+      "bytes": 9010,
+      "sha256": "c904ad7ba75e14c8257e12539a7de67c6b84ed15084268419666d7e976d215cd"
     },
     {
       "path": "presentation/README.md",
@@ -9764,8 +9764,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9265,
-      "sha256": "92cb0633cdf2c5105a5b01d2bd96bc6524f407c220127db01b198c1bb0eeead0"
+      "bytes": 9578,
+      "sha256": "8d20ce96464e5ea849bd704f47f236b54121ed28807bdead625b1a729ba21cb1"
     },
     {
       "path": "REPORT.md",
@@ -12351,6 +12351,51 @@
       "path": "teaching/v22_20261001/report/visual_qa.json",
       "bytes": 6256,
       "sha256": "b4649da5e2562c716c1a40a4e818d849b7c945e09ec65715b9ef447adc810c57"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/build_receipt.json",
+      "bytes": 10563,
+      "sha256": "bf2af8a4b78279104e02034649c6f26375a1a950d0703f639d6eeb497b1ddaaf"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/independent_review.json",
+      "bytes": 16306,
+      "sha256": "edd81311f25c8830ab755566868f93a44a29980ea4416a269c556354a7867bb7"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/manifest.json",
+      "bytes": 1504,
+      "sha256": "f220d0ca51d4792a9add27ba6b9c0bb775ee07e396f3d3fcc9de764d91967983"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/README.md",
+      "bytes": 2214,
+      "sha256": "38397ce664f37f7187144c065ee29b70c6e07ad2e915fc128550c299f88b21c4"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/sources/build_cards.py",
+      "bytes": 6340,
+      "sha256": "95fcf67d1268c212c5bb4f723d661a83ee8d9734994f71cd9be099c1bd9588cf"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/sources/questions_approved.json",
+      "bytes": 8223,
+      "sha256": "8207016d738a45fa1d89ebf7354969d59ae8adec36add89eaa3aa0ff3acaa123"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/排練與問答.md",
+      "bytes": 11981,
+      "sha256": "8938811e72f4afae571982b0987722922ad419c2286b0e98f8723c4748aa84b5"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/臺灣房價預測_v22_答辯提示卡.md",
+      "bytes": 7602,
+      "sha256": "5815fe9eb87ecc63a01d76095d680c31f5062648e242ec796db1d5dfe5737ca4"
+    },
+    {
+      "path": "teaching/v22_defense_20261002/臺灣房價預測_v22_答辯提示卡.pdf",
+      "bytes": 281157,
+      "sha256": "bd4992c50a0607ab0ba3944812bd8d3bf039873d4e3ef2446fb198b1586008eb"
     },
     {
       "path": "teaching/v22_practice_20261002/index.html",
