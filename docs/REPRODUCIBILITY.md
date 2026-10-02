@@ -12,6 +12,10 @@ NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096�
 
 另以同一Python3.12.14 base建立不繼承系統套件的新venv，原兩份requirements安裝、pip check、八套件import、兩CLI的--help與四項格式測試通過。35個wheel來源／SHA、2,130個已載入第三方模組路徑與命令收據已保存；詳見[安裝核驗](ENVIRONMENT_INSTALL_20261002.md)。本次取得的是Torch2.13.0+cpu、compiled CUDA為null，與原+cu126不同。未在新環境載模型、推論或重訓，也未測GPU運算；不把兩批證據串成同一次端到端重現。
 
+## 後續同機新CUDA環境重現
+
+新增[實測路線與收據](CLEAN_GPU_REPLAY_20261002.md)：保留前階段CPU新venv作ML，另建Torch2.13.0+cu126／CUDA12.6的NN新venv。真正載入六模型、47,073筆，主程式76.930秒；CSV與六個比較向量全部逐bytes相同。原模型／source／requirements不改，fit0。父-I與子程序環境控制分開記錄，未宣稱全程-I、獨占GPU、新OS或全量重訓。
+
 ## 原保存模型推論核驗
 
 1. 原始Excel重建87特徵、核對frame hash，sample全量ID與順序。
@@ -29,7 +33,7 @@ NN環境：Torch2.13.0+cu126、CUDA12.6、NVIDIA GeForce RTX4060Ti、batch4096�
 
 ## 未驗證
 
-- 新venv內的保存模型推論／CSV精確重播、其他電腦／作業系統或GPU。
+- 其他電腦／作業系統／GPU或驅動組合；本機新套件環境的保存模型重播已另完成。
 - 從原始OSM快照重建地理。
 - 從清理train/valid、OOF至全部模型重訓的可攜全流程。
 - 任意新資料的地理對齊與泛化。

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T06:01:38.210096+00:00",
+  "created_at_utc": "2026-10-02T06:40:31.496300+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -23,6 +23,11 @@
       "sha256": "e5268c3fd72a8578498cc3d592e60e366e1b40b266ee979ced0fa4519032cf48"
     },
     {
+      "path": "config/requirements-torch-cu126-win-py312.txt",
+      "bytes": 323,
+      "sha256": "3d86f44b865c33cd86cf956eb4ce57ca6fe1d37a6711ad5db9460a7b178fdf31"
+    },
+    {
       "path": "config/v22.json",
       "bytes": 979,
       "sha256": "bdb5bc232d064bc580abcf6d09aa802e19bc13c017a241c1a51ad25992b1e4c7"
@@ -31,6 +36,11 @@
       "path": "DATA.md",
       "bytes": 6622,
       "sha256": "32ae1c8c778567720ac2dbcba75b213e43b232cee61fb2c40d39e8df5d9a3728"
+    },
+    {
+      "path": "docs/CLEAN_GPU_REPLAY_20261002.md",
+      "bytes": 5046,
+      "sha256": "0080f2cdc10a54b75ad77874b0523325c903796ee87493a6fc1fb11bbd5eb0ec"
     },
     {
       "path": "docs/ENVIRONMENT_INSTALL_20261002.md",
@@ -54,8 +64,8 @@
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
-      "bytes": 3028,
-      "sha256": "9c4f2f92c9297c1dca6d19f5a9cf8ad966b7292e892ef35fcbefe669a8ea3491"
+      "bytes": 3486,
+      "sha256": "a69a14e4f9fc76e72e626c14068a3078078e6ea0b5cf8c5f0c07a0f9a15dc5cc"
     },
     {
       "path": "docs/RESEARCH_UPDATES_20260928.md",
@@ -161,6 +171,86 @@
       "path": "evidence/artifact_roles_20261002/role_map.json",
       "bytes": 24091,
       "sha256": "2e5e7d501eac4415dbb6ef5100dc491d1808d360902eae03a4d2b4c74f1cb591"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/command.json",
+      "bytes": 858,
+      "sha256": "fdc3680f7c42c81787d4db9c4fbc518e167f6ed31cacff89c6bc45220c8cf1a0"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/comparison.json",
+      "bytes": 5466,
+      "sha256": "3652ac85b42703395ca7e553271cfc6caf50009dc5e4d331b3d6f023464215ea"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/environment_controls.json",
+      "bytes": 331,
+      "sha256": "f78a255d820b7b14f33f1a78c4e6fbf1b0dcfb66b1b34a7401950aea18f30355"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/gpu_hardware.txt",
+      "bytes": 47,
+      "sha256": "753dbab7adede591704929e6aff4a451a08b4933caafaa9dfbcc88132bb3adc9"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/gpu_packages.txt",
+      "bytes": 358,
+      "sha256": "aa532b849d276b1de0a9e20612f862c9e0546a661b0d3305171b06bcae766a1d"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/gpu_probe.json",
+      "bytes": 118848,
+      "sha256": "c78101dadae084f8ce73861a76aafa34ae966fae7d98214d1030310586cf97fa"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/gpu_probe.py",
+      "bytes": 1771,
+      "sha256": "074638d70a8ae8b2f44006922a6ece591f4c36809e9330a67a84be082f989683"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/independent_review.json",
+      "bytes": 24301,
+      "sha256": "e11a8a3a429b813a7514c5c719801035570dc21c7b5929a28ca7c815f93a77e9"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/inference.json",
+      "bytes": 2178,
+      "sha256": "dc9b44642015f3cb31848d0b0ebb8c922e7258bc818f94f709cbb14997884a85"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/initial_receipt.json",
+      "bytes": 20529,
+      "sha256": "34697f3b36fac7308734de8da40a8ebf8c41c59957c98eb33e55cbb4130f9c79"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/install_execution.json",
+      "bytes": 161,
+      "sha256": "f9737b431372e55b1869cf04c9022eb4514af5ff380080ba897430ab567148bd"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/N_area.json",
+      "bytes": 531,
+      "sha256": "1d84d94c02a611ce36eccf77eb852292b4f9600b80ad263b196adcf0b7ac322d"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/N_prior.json",
+      "bytes": 532,
+      "sha256": "dd70a0a4a983a862f0926f862b6415b23bd7ea17f1b4db867cd3f8b574d09fa1"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/official_index.json",
+      "bytes": 617,
+      "sha256": "c43eccacb747fb141be62a4e2f810657473a118f5d2cf1d391d711bd3bcd3108"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/reproduction_receipt.json",
+      "bytes": 20804,
+      "sha256": "47b886c238dfb5269d4c1cd52defa7243d7fda2087e0cee36af03a4e1f402935"
+    },
+    {
+      "path": "evidence/clean_gpu_20261002/wheel_verified.json",
+      "bytes": 399,
+      "sha256": "ea94a06fdbb4787429cf8b551cc0dabc86d037636f579c8882ca0dfc4b0db825"
     },
     {
       "path": "evidence/data_external/geography/ATTRIBUTION.md",
@@ -9614,8 +9704,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8634,
-      "sha256": "5d16e2a71473df7926692f69a32d3f6fb8625a380d3c57abeb61dcd89113319c"
+      "bytes": 8697,
+      "sha256": "a1c9f41a2d5f357172881f1de5880c8751aed7a53695b4e0be5d5793cef8d229"
     },
     {
       "path": "presentation/README.md",
@@ -9674,8 +9764,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8696,
-      "sha256": "bb85ff3ad79d2b1329f33cf15f8f8b4546c2cc4fda5cc5b09d11f9c4701e197f"
+      "bytes": 9265,
+      "sha256": "92cb0633cdf2c5105a5b01d2bd96bc6524f407c220127db01b198c1bb0eeead0"
     },
     {
       "path": "REPORT.md",

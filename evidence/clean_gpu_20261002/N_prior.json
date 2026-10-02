@@ -1,0 +1,15 @@
+{
+  "rows": 47073,
+  "model_sha256": "0647d15a57af51081daecb7fdaa9f45340e6536ce45d38364199df42daa77c72",
+  "inputs_sha256": "1cde470ada3967b798848cdc29752cbc9cf3a12f33d964ae25c518650e8681b1",
+  "output_sha256": "0f28f8faf19e1899ac63c8946f72650cd70df4ef0075aabc35d1a44a582930e8",
+  "torch": "2.13.0+cu126",
+  "numpy": "2.3.5",
+  "device": "cuda:0",
+  "cuda": "12.6",
+  "prediction_units": "TWD",
+  "saved_prediction_vectors_read": false,
+  "models_loaded": 1,
+  "new_fits": 0,
+  "elapsed_seconds": 0.36125440000614617
+}

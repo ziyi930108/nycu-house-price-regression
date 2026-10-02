@@ -19,14 +19,14 @@
 | 推論重現 | 原test Excel＋17項保存模型／狀態，47,073筆與原v22位元一致 |
 | CSV | 完整SHA與原v22相同，見config/v22.json |
 | 原推論驗證 | 既有兩環境、隔離模式84.7364秒，4項格式測試通過 |
-| 同機新venv | [2026-10-02安裝核驗](docs/ENVIRONMENT_INSTALL_20261002.md)：兩requirements／import／help／4格式測試過；Torch為CPU組建，未載模型或推論 |
+| 同機新venv | [後續CUDA重現](docs/CLEAN_GPU_REPLAY_20261002.md)：新ML與GPU環境、6模型／47,073筆／CSV及6比較向量逐bytes同，主程式76.930秒；不是從零重訓。上一階段CPU安裝紀錄保留 |
 | 報告 | REPORT.md原文；最新11頁字型修正PDF在teaching/v22_review_20261002/03_正式報告，舊docs PDF保持 |
 | 簡報 | v22_review_20261002內三款23頁、4,065字稿與排練HTML；主講規劃885秒，未真人計時；15:00合成影片另外附上 |
 | 簡報重建 | [最新審查稿入口](docs/REVIEW_TEACHING_REBUILD.md)僅重建三款PPTX；舊--edition fifteen-minute仍產生4,051字稿。各自實測／限制見對應文件 |
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 3d2caacb3c7b15b80bc98d6ce1e9144fb0cdab0a；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 本頁於發布前核驗，base 39db531e222364ef95be3e3396d5720b09131a4f；當前身分以Git main／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |
@@ -54,7 +54,7 @@
 
 ## 誠實界線
 
-交付推論階段完成保存模型重現；後續R97另在新cutoff重建完整七模型，沒有從原始train/valid重訓正式test模型，也未重新下載OSM。本批另完成同機新隔離venv安裝／載入，但其中未載模型或推論，不能稱新電腦端到端重現。原GPU與CPU的NN輸出有數值差，精確重播須匹配受測設定。固定seed不保證重訓位元一致。
+交付推論階段完成保存模型重現；後續R97另在新cutoff重建完整七模型，沒有從原始train/valid重訓正式test模型，也未重新下載OSM。後續同機新ML／GPU套件環境已完成保存模型推論並精確重播CSV；仍不能稱新電腦端到端重現或從零重訓。原GPU與CPU的NN輸出有數值差，精確重播須匹配受測設定。固定seed不保證重訓位元一致。
 
 v24在原三期本機整體MAE更低，但新R97窗口較高，且已回報Public較高；部分高價群退步。多輪重用年度窗口有選型偏差，bootstrap不是Private勝率。不可聲稱v22已證明Private最佳。
 

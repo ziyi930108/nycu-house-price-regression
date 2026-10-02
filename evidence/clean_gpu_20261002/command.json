@@ -1,0 +1,23 @@
+{
+  "cwd": "C:\\NYCU_ML\\deliverables\\v22_github",
+  "argv": [
+    "C:\\NYCU_ML\\outputs\\v22_clean_environment_20261002\\venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\src\\predict_v22.py",
+    "--artifacts",
+    "C:\\NYCU_ML\\deliverables\\v22_github\\private\\artifacts",
+    "--test",
+    "C:\\NYCU_ML\\台灣房屋銷售價格預測挑戰_回歸\\ml-2026-iaii-regression\\test-reindex-test-v2.2.xlsx",
+    "--sample",
+    "C:\\NYCU_ML\\台灣房屋銷售價格預測挑戰_回歸\\ml-2026-iaii-regression\\test-reindex-test-sample-submission-v2.csv",
+    "--output-dir",
+    "C:\\NYCU_ML\\outputs\\v22_clean_gpu_20261002\\replay",
+    "--nn-python",
+    "C:\\NYCU_ML\\outputs\\v22_clean_gpu_20261002\\venv\\Scripts\\python.exe",
+    "--device",
+    "cuda:0"
+  ]
+}

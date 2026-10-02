@@ -36,7 +36,7 @@ C為原R63設定重訓，T只改四欄mask聯動；C−v22偏移、24CI及反證
 
 [22頁正式簡報](presentation/臺灣房價預測_正式報告_v22.pptx)與[逐頁講稿](presentation/講稿與問答.md)涵蓋完整流程及每步理由，20頁主講＋2頁附錄。主講配速14分30秒；4,143個純漢字按每分鐘250–300字估計約13.81–16.57分鐘，不計附錄或問答，仍需實際計時排練。另附[排練與問答指南](presentation/排練與問答指南.md)及[流程與程式對照](presentation/流程與程式對照.md)。主講只說明使用者選定的v22。後續發布方式見[更新規則](docs/PUBLISHING.md)。本機已核對程式身分與提交格式。自動檢查設定以範例保留，尚未啟用GitHub Actions。
 
-## 快速開始
+## 快速開始（Windows／Python3.12受測路線）
 
 需要 Python 3.12、課程原始 test 與 sample，以及保存模型／狀態。公開程式包不含交易表、模型或價格先驗。
 
@@ -44,11 +44,13 @@ C為原R63設定重訓，T只改四欄mask聯動；C−v22偏移、24CI及反證
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements-inference.txt
 .venv\Scripts\python.exe -m pip install -r requirements-torch.txt
+python -m venv .venv-nn
+.venv-nn\Scripts\python.exe -I -m pip --isolated install --only-binary=:all: --index-url https://pypi.org/simple -r config/requirements-torch-cu126-win-py312.txt
 ~~~
 
-這兩份requirements已於2026-10-02在同一台Windows、同一Python3.12.14 base的新隔離venv完成安裝、import與兩個CLI載入檢查，詳見[安裝核驗](docs/ENVIRONMENT_INSTALL_20261002.md)。新環境沒有繼承系統套件，但不是新電腦測試，也未載模型或推論。
+2026-10-02已在同一台Windows／Python3.12.14 base新建ML與GPU套件環境，完成保存六模型、47,073筆推論，CSV及六個比較向量逐bytes等於原v22。主程式76.930秒；[新環境重現證據與限制](docs/CLEAN_GPU_REPLAY_20261002.md)。這是新venv，不是新電腦／新OS或從零重訓。
 
-**本次由官方PyPI安裝得到Torch 2.13.0+cpu，沒有CUDA。** `torch==2.13.0`未固定原本的`+cu126`組建；這個新環境不能直接執行下方`cuda:0`命令。原v22完整CSV一致的證據來自既有ML環境及Torch2.13.0+cu126／CUDA12.6環境，不能套用到這次安裝結果。
+`.venv`沿用上一階段受測的兩份requirements，其中一般PyPI Torch為CPU版；兩NN實際由`.venv-nn`的**2.13.0+cu126**執行。新的GPU清單固定官方wheel及SHA，僅適用Windows x64／CPython3.12，約2.6GB。原requirements保持；[上一階段CPU安裝紀錄](docs/ENVIRONMENT_INSTALL_20261002.md)仍是獨立歷史證據。
 
 若有原研究工作區，可逐檔核對 SHA256 並複製必要 artifact：
 
@@ -59,10 +61,14 @@ python -m venv .venv
 將課程的兩個原始檔案放到 data/。程式核對檔案雜湊及 ID，因為保存地理特徵對應這份 test 的列序。這個入口用於固定競賽資料重現，並非任意新房屋資料的估價 API。
 
 ~~~powershell
-.venv\Scripts\python.exe src/predict_v22.py --test data/test-reindex-test-v2.2.xlsx --sample data/test-reindex-test-sample-submission-v2.csv --output-dir runs/v22_reproduction --device cuda:0
+# 請在本repo的新PowerShell視窗執行；只清除此視窗的Python環境變數。
+@([Environment]::GetEnvironmentVariables('Process').Keys) | Where-Object { $_ -like 'PYTHON*' } | ForEach-Object { [Environment]::SetEnvironmentVariable($_, $null, 'Process') }
+$env:PYTHONNOUSERSITE = "1"
+$env:PYTHONDONTWRITEBYTECODE = "1"
+.venv\Scripts\python.exe -I -B -X utf8 src/predict_v22.py --test data/test-reindex-test-v2.2.xlsx --sample data/test-reindex-test-sample-submission-v2.csv --output-dir runs/v22_reproduction --nn-python .venv-nn/Scripts/python.exe --device cuda:0
 ~~~
 
-上方CUDA命令的前提是執行Python本身已裝好相容的GPU版Torch；本次新venv只有CPU版時，需透過 `--nn-python C:/path/to/verified-gpu-env/Scripts/python.exe` 指向另外準備且核實的GPU環境。這是路徑範例，請換成自己的實際路徑；本批未替新venv安裝CUDA版或測試跨環境推論。output-dir必須是新目錄。不要把CPU診斷結果當原CSV精確重現。
+上方兩環境分工對應本次實測。父程式使用-I；原NN子程序不自動繼承-I，所以本次另清除PYTHON相關變數並關閉user site，不能稱整條流程皆為-I。這不是全新驅動安裝教學；受測GPU為RTX4060Ti，其他GPU／驅動尚未驗證。output-dir必須是新目錄，不會自動覆寫既有結果。
 
 程式讀 Excel、重建87欄特徵、套保存encoder／prior，真正載入六模型，逐分支套參考成交與空間修正，再取中位數。輸出 CSV、未取整預測、三分支向量及 receipt.json；不讀舊預測作為輸入。
 
@@ -96,6 +102,6 @@ v22 = median(S(B_nn, R(B_nn)), S(B_log, R(B_log)), S(B_unit, R(B_unit)))
 | presentation/ | 原22頁正式簡報與來源，保留歷史版本 |
 | private/、data/、runs/ | 本機使用，Git與公開ZIP排除 |
 
-保存模型推論已在原環境實測；本批另完成同機新venv的安裝與載入。新venv內推論、從零重訓、地理重建及新電腦端到端驗證仍未完成。固定seed也不保證GPU重訓位元相同。
+保存模型推論已在原環境及同機新套件環境實測；從零重訓、地理重建及新電腦端到端驗證仍未完成。固定seed也不保證GPU重訓位元相同。
 
 GitHub儲存庫為[ziyi930108/nycu-house-price-regression](https://github.com/ziyi930108/nycu-house-price-regression)，設為私人。程式尚未選擇開源授權；課程資料再散布權限亦未確認。保留.gitignore，勿將private/與data/納入版本控制。
