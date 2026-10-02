@@ -6,7 +6,7 @@
 
 本方法使用六個回歸模型，組成單價、對數與神經網路三條價格分支。單價 CatBoost 同時使用面積權重與 365 日半衰期日期權重。所有模型輸出先還原為總價，各分支經訓練成交參考與空間修正後，逐筆取中位數。三個年度時間回測的整體 MAE 為 2,309,352.36、1,407,387.07 與 1,383,228.41 元，Kaggle Public 回報 MAE 為 **1,998,568.5706 元**，約 199.86 萬元。[E1、E2、E5]
 
-交付程式已從指定原始 test Excel 加保存的地理、模型與 fit 狀態，重新推論全部 47,073 筆，與原提交預測及 CSV 完全一致。全新環境安裝與從零重訓全鏈尚未驗證。已選定提交模型不代表已證明 Private 最佳：部分高價群仍有退步，歷史驗證窗口已多輪重用，研究中也有替代配方取得更低的歷史整體 MAE。完整比較保留於技術附錄，不隱藏不利證據。[E2、E3、E10、E11]
+交付程式已從指定原始 test Excel 加保存的地理、模型與 fit 狀態，重新推論全部 47,073 筆，與原提交預測及 CSV 完全一致。2026-10-02另完成同機新套件環境的保存模型推論；另一台電腦、地理重建與從零重訓全鏈仍未驗證。已選定提交模型不代表已證明 Private 最佳：部分高價群仍有退步，歷史驗證窗口已多輪重用，研究中也有替代配方取得更低的歷史整體 MAE。完整比較保留於技術附錄，不隱藏不利證據。[E2、E3、E10、E11、E13]
 
 ## 1. 問題定義與評估方法
 
@@ -233,9 +233,9 @@ prediction_v22 = median(N, H, U)  # 逐筆取中位數
 
 本報告不把未執行的重訓流程記為完成。交付入口為 src/predict_v22.py，從原始 test Excel、保存地理及 fit 狀態重新推論六個模型。操作、環境與驗證範圍見 README.md 及 docs/REPRODUCIBILITY.md。[E11]
 
-### 8.2 本次交付的實際重現測試
+### 8.2 初次交付：既有套件環境的重現測試
 
-在獨立交付目錄保存必要模型副本，以 Python 隔離模式執行單一入口。原始 test Excel 重新生成 87 欄基礎特徵，encoder、quantile knots 與 prior 重新生成 NN query 輸入，再真正載入四個樹模型與兩個 NN，重算各分支參考／空間修正及逐筆中位數，沒有將舊預測向量當成推論輸入。
+在獨立交付目錄保存必要模型副本，以 Python 隔離模式啟動父程式入口，NN另由指定Python子程序執行。原始 test Excel 重新生成 87 欄基礎特徵，encoder、quantile knots 與 prior 重新生成 NN query 輸入，再真正載入四個樹模型與兩個 NN，重算各分支參考／空間修正及逐筆中位數，沒有將舊預測向量當成推論輸入。
 
 | 核對項目 | 實測結果 |
 | --- | --- |
@@ -251,15 +251,31 @@ prediction_v22 = median(N, H, U)  # 逐筆取中位數
 
 首次整合已得到相同預測，但 CSV 使用 LF 而原檔為 CRLF，因此完整檔案雜湊核對失敗。修正換行及失敗收據狀態後，重新執行整條入口並通過。原失敗收據與更正說明均保留。這項格式修正沒有改動任何模型或價格。
 
-此次驗證是「原始 test 加保存地理／模型／fit 狀態的推論重現」，尚非從原始 train／valid 重訓全部模型，也沒有重新建立地理資料或測試全新環境安裝。保存的必要 artifact 約 1.45 GB，留在本機私有目錄，公開程式包不包含原交易表、模型與價格參考狀態。
+上述初次測試是「原始 test 加保存地理／模型／fit 狀態的推論重現」，當時未重新建立地理、測試新套件環境或從原始 train／valid 重訓全部模型。後續新套件環境測試另列於8.3，不改寫初次測試收據。保存的必要 artifact 約 1.45 GB，留在本機私有目錄，公開程式包不包含原交易表、模型與價格參考狀態。
 
 入口與命令見 [README](README.md)，驗證收據見 [重現摘要](evidence/reproduction/summary.json)及[完整收據](evidence/reproduction/integration_verified.json)。
+
+### 8.3 2026-10-02補充：同機新套件環境重現
+
+為確認程式不是只在原套件環境才能執行，另建ML與NN兩個套件環境，再用原始test、sample的ID／schema及17項保存模型與狀態推論。新環境不繼承system site；仍沿用同一台Windows電腦、Python 3.12.14基礎安裝、RTX 4060 Ti及616.64驅動。NN使用Torch 2.13.0+cu126／CUDA 12.6。沒有重新訓練，也沒有讀入舊預測向量或test真價當模型輸入。[E13]
+
+| 核對項目 | 新套件環境實測結果 |
+| --- | --- |
+| 六模型推論 | 47,073筆；新增fit為0 |
+| 保存向量比較 | 兩NN、三條修正分支及最終融合，共6向量逐bytes相同 |
+| 最終CSV | 734,491bytes；SHA256與原v22相同 |
+| 主程式時間 | 76.930302秒，不含環境安裝；外層程序78.939654秒 |
+| 尚未驗證 | 另一台電腦／OS、不同硬體／驅動、地理重建及全部模型從零重訓 |
+
+本次載入六個模型，但保存比較的是上述六個流程產物，未另存四樹的原生輸出。它們屬於同一條計算流程，不能當六份獨立泛化證據。CSV完全相同表示推論可重現，不表示MAE為零或Private已知；兩次執行秒數也不能用來宣稱效能提升，因為沒有固定條件的重複速度實驗。
+
+父程式以Python隔離模式執行，該旗標不會自動傳給NN子程序；外層另清除PYTHON開頭環境變數並停用user site。獨立probe確認新NN套件路徑，但不是實際NN全程的import追蹤。完整安裝、環境控制、前置停止紀錄與成功收據見[E13]；舊環境及原模型均保留。
 
 ## 9. 結論
 
 本專題完成以房屋、土地、位置與交易時間預測總價的監督式回歸方法。本專題選定「近期成交加權與多模型回歸」作為唯一提交模型，對應保存版本 v22。方法結合單價表示、面積對齊的總價誤差、近期成交權重及三分支中位數組合，Public 回報 MAE 約 199.86 萬元，年度回測與程式來源均有保存證據。
 
-交付包含單一推論入口、正式報告、模型與狀態清單，以及成功和失敗的驗證收據。以指定原始 test 加保存 artifact 真正重跑六模型後，47,073 筆預測及完整 CSV 與原提交一致。這驗證了保存狀態的推論可重現性，尚未驗證全新環境安裝、全部模型從零重訓或地理重建。
+交付包含單一推論入口、正式報告、模型與狀態清單，以及成功和失敗的驗證收據。以指定原始 test 加保存 artifact 真正重跑六模型後，47,073 筆預測及完整 CSV 與原提交一致。同機新套件環境也已完成相同推論，補足該機器上的套件安裝與保存模型重現證據；另一台電腦、全部模型從零重訓或地理重建仍未驗證。[E13]
 
 研究限制仍然存在：Private 未知，歷史窗口反覆參與選型，部分高價群退步，替代配方也曾取得更低歷史整體 MAE。已選定提交版本不改變這些證據。未來若延伸研究，應預先固定假設與時間切分、重新建立對應 fit 狀態，避免靠 Public 反覆調參。本次文件整理沒有新增訓練、修改模型或更改提交價格。
 
@@ -351,4 +367,5 @@ R84 相對 v24 的整體 MAE 差值為：較早年度 +7,114.59 元、中間年�
 | E10 | 最終預測與 CSV 核驗 | [outputs/round79/final/trial_release.json](evidence/outputs/round79/final/trial_release.json)、[outputs/round79/final_export/release.json](evidence/outputs/round79/final_export/release.json)、[src/round79_release.py](research/src/round79_release.py) |
 | E11 | 重現範圍、完成證據與歷史缺口 | [目前重現範圍](docs/REPRODUCIBILITY.md)、[成功摘要](evidence/reproduction/summary.json)、[完整推論收據](evidence/reproduction/integration_verified.json)；歷史：[舊重現盤點](evidence/reports/github_reproducibility_audit_r83.md)、[舊交付要求](evidence/DELIVERY_REQUIREMENTS.md) |
 | E12 | 外部非價格地理資料的來源與快照 | [data_external/geography/ATTRIBUTION.md](evidence/data_external/geography/ATTRIBUTION.md)、`data_external/geography/*.download.json`、[README_round6.md](evidence/README_round6.md) |
+| E13 | 2026-10-02同機新套件安裝與保存模型推論 | [新GPU環境說明](docs/CLEAN_GPU_REPLAY_20261002.md)、[重現彙總](evidence/clean_gpu_20261002/reproduction_receipt.json)、[向量比較](evidence/clean_gpu_20261002/comparison.json)、[套件安裝證據](docs/ENVIRONMENT_INSTALL_20261002.md) |
 

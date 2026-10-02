@@ -1,0 +1,127 @@
+{
+  "input": "outputs\\v22_formal_report_update_20261002\\REPORT_final.md",
+  "output": "outputs\\v22_formal_report_update_20261002\\final\\臺灣房價預測_v22_正式報告_20261002.pdf",
+  "input_sha256": "a539739e43ea78cf3a53229a4f4cdcb6629c9545b93fa375ae8bbdfc88c80ab7",
+  "output_sha256": "8cc925fb50ceba711ed47f2de94895ca491cf19d3b5bf374c34250aee5b3b000",
+  "pages": 12,
+  "font": "Microsoft JhengHei",
+  "page_size": "A4",
+  "section_pages": [
+    {
+      "heading": "摘要",
+      "page": 1
+    },
+    {
+      "heading": "1. 問題定義與評估方法",
+      "page": 1
+    },
+    {
+      "heading": "2. 資料來源與前處理",
+      "page": 2
+    },
+    {
+      "heading": "2.1 原始資料與使用範圍",
+      "page": 2
+    },
+    {
+      "heading": "2.2 清理順序",
+      "page": 2
+    },
+    {
+      "heading": "3. 特徵設計",
+      "page": 3
+    },
+    {
+      "heading": "4. 模型方法",
+      "page": 3
+    },
+    {
+      "heading": "4.1 近期加權的單價 CatBoost",
+      "page": 3
+    },
+    {
+      "heading": "4.2 神經網路與其他樹模型",
+      "page": 4
+    },
+    {
+      "heading": "4.3 三分支組合",
+      "page": 4
+    },
+    {
+      "heading": "5. 驗證設計與結果",
+      "page": 5
+    },
+    {
+      "heading": "5.1 時間切分",
+      "page": 5
+    },
+    {
+      "heading": "5.2 提交模型的年度整體 MAE",
+      "page": 5
+    },
+    {
+      "heading": "5.3 Kaggle Public 與未知 Private",
+      "page": 6
+    },
+    {
+      "heading": "6. 結果解讀與方法取捨",
+      "page": 6
+    },
+    {
+      "heading": "7. 過擬合、洩漏與適用限制",
+      "page": 6
+    },
+    {
+      "heading": "8. 程式與重現範圍",
+      "page": 7
+    },
+    {
+      "heading": "8.1 實際方法入口",
+      "page": 7
+    },
+    {
+      "heading": "8.2 初次交付：既有套件環境的重現測試",
+      "page": 8
+    },
+    {
+      "heading": "8.3 2026-10-02補充：同機新套件環境重現",
+      "page": 8
+    },
+    {
+      "heading": "9. 結論",
+      "page": 9
+    },
+    {
+      "heading": "附錄 A 研究對照與內部版本溯源",
+      "page": 9
+    },
+    {
+      "heading": "A.1 方法名稱與保存編號",
+      "page": 9
+    },
+    {
+      "heading": "A.2 歷史整體 MAE 與配對區間",
+      "page": 10
+    },
+    {
+      "heading": "A.3 保存的歷史 Public 回報",
+      "page": 10
+    },
+    {
+      "heading": "A.4 研究過程的比較與取捨",
+      "page": 11
+    },
+    {
+      "heading": "附錄 B 證據與程式來源",
+      "page": 11
+    }
+  ],
+  "text_checks": {
+    "467,221": true,
+    "1,998,568.5706": true,
+    "Private": true,
+    "v24": true,
+    "138.716": true
+  },
+  "visual_qa": "pending_png_inspection"
+}

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T07:30:01.666125+00:00",
+  "created_at_utc": "2026-10-02T07:52:39.690288+00:00",
   "edition": "v22_review_20261002_github",
   "scope": "review materials, media and sources; Git commit identifies publication",
   "source_pack_unchanged": true,
@@ -15,8 +15,8 @@
   "files": [
     {
       "path": "00_審查指南.md",
-      "bytes": 4431,
-      "sha256": "808fa3c9300ca0b5c2bfbe4e1ae8be9290a210c6d5e516322a9daa694675039b"
+      "bytes": 4587,
+      "sha256": "a48241ab9775fe849c3e6cdf41764c6ff96038a3fc2c1cea11a16fe9849ab7f8"
     },
     {
       "path": "01_上台簡報/臺灣房價預測_v22_暖色雜誌_審查版.pptx",
@@ -570,8 +570,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 42824,
-      "sha256": "366c0587e3a6d3a018da8e30021c8af540896db5bb607cf250f6331b12d854aa"
+      "bytes": 42884,
+      "sha256": "2c450aa86cc63b2790ad285b8ac777d607f45bd20e5d0d9af41dab839bb6a87c"
     },
     {
       "path": "navigation_update_20261002.json",
@@ -585,8 +585,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2622,
-      "sha256": "139084489587d8b77367bfd2add1c78e5e878a5183518a39eea210fcda5ca89d"
+      "bytes": 2804,
+      "sha256": "08e8d78c2dfc6cbf4f0a47533fb51619a70e5c793296d91e2d475292b8e3e8ea"
+    },
+    {
+      "path": "report_update_20261002.json",
+      "bytes": 528,
+      "sha256": "1f45b4857fe53cb9049dbc96785c3efc0fe34bf8b6cd1f57ec6b39c5885895a9"
     },
     {
       "path": "審查意見.md",
@@ -599,5 +604,6 @@
       "sha256": "6da00dab539d0d848bd55b97cbd49f9e70c6e3acbad1353bb227a04dbd9768ec"
     }
   ],
-  "navigation_update": "navigation_update_20261002.json"
+  "navigation_update": "navigation_update_20261002.json",
+  "current_report": "../../docs/臺灣房價預測_v22_正式報告_20261002.pdf"
 }

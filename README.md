@@ -10,7 +10,7 @@
 
 - [新專案接手說明](HANDOFF.md)：現況、已完成驗證與下一步。
 - [正式研究報告](REPORT.md)：資料處理、公式、年度回測、Public、限制與取捨。
-- [正式 PDF](teaching/v22_review_20261002/03_正式報告/臺灣房價預測_v22_正式報告.pdf)：適合列印與繳交。
+- [正式 PDF](docs/臺灣房價預測_v22_正式報告_20261002.pdf)：12頁，含同機新套件環境實測，適合列印與繳交；[更新與重建](docs/REPORT_UPDATE_20261002.md)。
 - [重現紀錄](docs/REPRODUCIBILITY.md)：實際測試範圍與收據。
 - [訓練程式導覽](research/README.md)：保留原始訓練來源及跨輪依賴。
 - [模型及狀態清單](artifacts/manifest.json)：17 項必要私有檔案，約 1.45 GB。
