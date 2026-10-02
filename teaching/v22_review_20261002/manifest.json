@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T04:39:59.863099+00:00",
+  "created_at_utc": "2026-10-02T07:30:01.666125+00:00",
   "edition": "v22_review_20261002_github",
   "scope": "review materials, media and sources; Git commit identifies publication",
   "source_pack_unchanged": true,
@@ -15,8 +15,8 @@
   "files": [
     {
       "path": "00_審查指南.md",
-      "bytes": 4191,
-      "sha256": "26172b2be1ddde20d24e1b89770eaea3b2d94962c2f7b02b84267f885ace952d"
+      "bytes": 4431,
+      "sha256": "808fa3c9300ca0b5c2bfbe4e1ae8be9290a210c6d5e516322a9daa694675039b"
     },
     {
       "path": "01_上台簡報/臺灣房價預測_v22_暖色雜誌_審查版.pptx",
@@ -95,8 +95,8 @@
     },
     {
       "path": "04_程式與證據/先讀我.md",
-      "bytes": 1786,
-      "sha256": "e1a203108a5b9e073111c3eac7a5f91ccd3e23f0357fd3b39fad33c0d52606d3"
+      "bytes": 1941,
+      "sha256": "0c3c10cbf28110fb04b8f15027402c58ebdc31ef97e1e8396fb60ec35855ec5b"
     },
     {
       "path": "04_程式與證據/原審查包manifest.json",
@@ -110,8 +110,8 @@
     },
     {
       "path": "04_程式與證據/執行程式先選對Python.md",
-      "bytes": 2875,
-      "sha256": "4b7e19d5142080c1034cf49fee36e0c15ba15cf0df3da76419ec5cb5ba57ed7e"
+      "bytes": 1267,
+      "sha256": "a5967e0d6a1ff97085f4b94996cd37dbdccf4ffd52e98a4c799a165d17324541"
     },
     {
       "path": "04_程式與證據/影片製作程式/build_video.py",
@@ -570,8 +570,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 42508,
-      "sha256": "4d6ea1a28534fe255af8c51514056ee73543bf8717182054228bcf889d335ed8"
+      "bytes": 42824,
+      "sha256": "366c0587e3a6d3a018da8e30021c8af540896db5bb607cf250f6331b12d854aa"
+    },
+    {
+      "path": "navigation_update_20261002.json",
+      "bytes": 1706,
+      "sha256": "9474f3ebb99d7a1df5a0dfaac2848b33a72b9841efd48865405ef44b7d07e88a"
     },
     {
       "path": "publication_provenance.json",
@@ -580,8 +585,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2011,
-      "sha256": "3cb4300e2840d3c39919b6da64fe4428cb2a3dbe87d74bc8a8d8e59d62dacceb"
+      "bytes": 2622,
+      "sha256": "139084489587d8b77367bfd2add1c78e5e878a5183518a39eea210fcda5ca89d"
     },
     {
       "path": "審查意見.md",
@@ -593,5 +598,6 @@
       "bytes": 1540,
       "sha256": "6da00dab539d0d848bd55b97cbd49f9e70c6e3acbad1353bb227a04dbd9768ec"
     }
-  ]
+  ],
+  "navigation_update": "navigation_update_20261002.json"
 }

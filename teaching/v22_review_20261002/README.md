@@ -8,7 +8,8 @@
 | --- | --- |
 | 比較風格、播放與按章節跳轉 | [離線審查頁](index.html) |
 | 上台講稿 | [完整口語稿](02_講稿與排練/完整口語講稿.md)、[口述提示](02_講稿與排練/上台口述提示.md) |
-| 自己計時 | [離線排練頁](02_講稿與排練/v22-review-rehearsal.html) |
+| 自己計時與自測 | [目前練習入口](../v22_practice_20261002/index.html)，分開完整主講與分頁練習 |
+| 準備答辯 | [最新四頁卡](../v22_defense_20261002/臺灣房價預測_v22_答辯提示卡.pdf)、[排練問答](../v22_defense_20261002/排練與問答.md) |
 | 15分鐘講解 | [MP4](05_講解影片/v22_15分鐘講解_合成旁白.mp4)、[字幕SRT](05_講解影片/v22_15分鐘講解.srt) |
 | 繳交閱讀報告 | [字型修正正式PDF](03_正式報告/臺灣房價預測_v22_正式報告.pdf) |
 | 程式與證據 | [先讀我](04_程式與證據/先讀我.md)、[repo推論入口](../../README.md) |
@@ -17,4 +18,7 @@
 
 Public MAE為1,998,568.5706元，Private未知。唯一選定模型仍v22，模型研究停在R106。本版只整理交付，不改價格或Kaggle勾選。
 
-本目錄不含巢狀舊程式ZIP、提交CSV、交易資料、私有模型或配音WAV；完整程式已在同repo。原包來源与必要文案適配記錄在[publication_provenance.json](publication_provenance.json)，当前檔案由[manifest.json](manifest.json)及repo SOURCE_MANIFEST.json核對。舊版保留在其他teaching目錄，4,051字稿的舊重建命令不會自動產生本版4,065字稿。
+本目錄不含巢狀舊程式ZIP、提交CSV、交易資料、私有模型或配音WAV；完整程式已在同repo。首次複製來源保留在[publication_provenance.json](publication_provenance.json)，它描述最初發布；本次導覽調整另見[navigation_update_20261002.json](navigation_update_20261002.json)。當前檔案由[manifest.json](manifest.json)及repo SOURCE_MANIFEST.json核對。舊版保留在其他teaching目錄，4,051字稿的舊重建命令不會自動產生本版4,065字稿。
+
+
+本資料夾保留的舊計時與舊問答是當時版本，現在由首頁與上表直接進入新工具及答辯卡。主講第19頁仍適用：同機新套件環境的保存模型推論已驗證，新電腦和從零重訓仍未驗證；[實測範圍](../../docs/CLEAN_GPU_REPLAY_20261002.md)。

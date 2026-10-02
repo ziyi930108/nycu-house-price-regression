@@ -1,0 +1,38 @@
+{
+  "created_at_utc": "2026-10-02T07:30:01.661005+00:00",
+  "base_commit": "4ebb161e1e5f9566593a91131de6ea89baf747cc",
+  "previous_manifest_sha256": "cf54fa33f67af8af9f3dde460b5dcc7aec876938a7a0be3de9d4f1eee690e799",
+  "changes": [
+    {
+      "path": "index.html",
+      "before_sha256": "4d6ea1a28534fe255af8c51514056ee73543bf8717182054228bcf889d335ed8",
+      "after_sha256": "366c0587e3a6d3a018da8e30021c8af540896db5bb607cf250f6331b12d854aa"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "3cb4300e2840d3c39919b6da64fe4428cb2a3dbe87d74bc8a8d8e59d62dacceb",
+      "after_sha256": "139084489587d8b77367bfd2add1c78e5e878a5183518a39eea210fcda5ca89d"
+    },
+    {
+      "path": "00_審查指南.md",
+      "before_sha256": "26172b2be1ddde20d24e1b89770eaea3b2d94962c2f7b02b84267f885ace952d",
+      "after_sha256": "808fa3c9300ca0b5c2bfbe4e1ae8be9290a210c6d5e516322a9daa694675039b"
+    },
+    {
+      "path": "04_程式與證據/先讀我.md",
+      "before_sha256": "e1a203108a5b9e073111c3eac7a5f91ccd3e23f0357fd3b39fad33c0d52606d3",
+      "after_sha256": "0c3c10cbf28110fb04b8f15027402c58ebdc31ef97e1e8396fb60ec35855ec5b"
+    },
+    {
+      "path": "04_程式與證據/執行程式先選對Python.md",
+      "before_sha256": "4b7e19d5142080c1034cf49fee36e0c15ba15cf0df3da76419ec5cb5ba57ed7e",
+      "after_sha256": "a5967e0d6a1ff97085f4b94996cd37dbdccf4ffd52e98a4c799a165d17324541"
+    }
+  ],
+  "immutable_publication_provenance_preserved": true,
+  "media_main_script_models_unchanged": true,
+  "current_practice": "../v22_practice_20261002/index.html",
+  "current_defense": "../v22_defense_20261002/README.md",
+  "new_fits": 0,
+  "Private_score": null
+}

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T06:59:45.886792+00:00",
+  "created_at_utc": "2026-10-02T07:33:22.309361+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9704,8 +9704,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 9010,
-      "sha256": "c904ad7ba75e14c8257e12539a7de67c6b84ed15084268419666d7e976d215cd"
+      "bytes": 8235,
+      "sha256": "ec9206b40a5f73c08bacaf86fde47daf583d679e4a2211fc37309c5f8a40e1e7"
     },
     {
       "path": "presentation/README.md",
@@ -9764,8 +9764,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9578,
-      "sha256": "8d20ce96464e5ea849bd704f47f236b54121ed28807bdead625b1a729ba21cb1"
+      "bytes": 8767,
+      "sha256": "5c5525e44cc64197f3605fac422a45b323a3ba3c61de6725faea73333018af06"
     },
     {
       "path": "REPORT.md",
@@ -12444,8 +12444,8 @@
     },
     {
       "path": "teaching/v22_review_20261002/00_審查指南.md",
-      "bytes": 4191,
-      "sha256": "26172b2be1ddde20d24e1b89770eaea3b2d94962c2f7b02b84267f885ace952d"
+      "bytes": 4431,
+      "sha256": "808fa3c9300ca0b5c2bfbe4e1ae8be9290a210c6d5e516322a9daa694675039b"
     },
     {
       "path": "teaching/v22_review_20261002/01_上台簡報/臺灣房價預測_v22_暖色雜誌_審查版.pptx",
@@ -12524,8 +12524,8 @@
     },
     {
       "path": "teaching/v22_review_20261002/04_程式與證據/先讀我.md",
-      "bytes": 1786,
-      "sha256": "e1a203108a5b9e073111c3eac7a5f91ccd3e23f0357fd3b39fad33c0d52606d3"
+      "bytes": 1941,
+      "sha256": "0c3c10cbf28110fb04b8f15027402c58ebdc31ef97e1e8396fb60ec35855ec5b"
     },
     {
       "path": "teaching/v22_review_20261002/04_程式與證據/原審查包manifest.json",
@@ -12539,8 +12539,8 @@
     },
     {
       "path": "teaching/v22_review_20261002/04_程式與證據/執行程式先選對Python.md",
-      "bytes": 2875,
-      "sha256": "4b7e19d5142080c1034cf49fee36e0c15ba15cf0df3da76419ec5cb5ba57ed7e"
+      "bytes": 1267,
+      "sha256": "a5967e0d6a1ff97085f4b94996cd37dbdccf4ffd52e98a4c799a165d17324541"
     },
     {
       "path": "teaching/v22_review_20261002/04_程式與證據/影片製作程式/build_video.py",
@@ -12999,13 +12999,18 @@
     },
     {
       "path": "teaching/v22_review_20261002/index.html",
-      "bytes": 42508,
-      "sha256": "4d6ea1a28534fe255af8c51514056ee73543bf8717182054228bcf889d335ed8"
+      "bytes": 42824,
+      "sha256": "366c0587e3a6d3a018da8e30021c8af540896db5bb607cf250f6331b12d854aa"
     },
     {
       "path": "teaching/v22_review_20261002/manifest.json",
-      "bytes": 22802,
-      "sha256": "cf54fa33f67af8af9f3dde460b5dcc7aec876938a7a0be3de9d4f1eee690e799"
+      "bytes": 23030,
+      "sha256": "242c31aea32299da5fd50a78b8f28dd2a2a82034427fa9b877d8dd58638199e5"
+    },
+    {
+      "path": "teaching/v22_review_20261002/navigation_update_20261002.json",
+      "bytes": 1706,
+      "sha256": "9474f3ebb99d7a1df5a0dfaac2848b33a72b9841efd48865405ef44b7d07e88a"
     },
     {
       "path": "teaching/v22_review_20261002/publication_provenance.json",
@@ -13014,8 +13019,8 @@
     },
     {
       "path": "teaching/v22_review_20261002/README.md",
-      "bytes": 2011,
-      "sha256": "3cb4300e2840d3c39919b6da64fe4428cb2a3dbe87d74bc8a8d8e59d62dacceb"
+      "bytes": 2622,
+      "sha256": "139084489587d8b77367bfd2add1c78e5e878a5183518a39eea210fcda5ca89d"
     },
     {
       "path": "teaching/v22_review_20261002/審查意見.md",
