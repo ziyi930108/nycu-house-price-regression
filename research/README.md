@@ -1,5 +1,41 @@
 # 原始訓練程式與重現界線
 
+先看本頁的v22來源表。若只是重做已選定提交，使用[保存模型推論入口](../src/predict_v22.py)與[重現說明](../docs/REPRODUCIBILITY.md)，不需依序跑完所有歷史實驗。下列原driver保留研究時的前置依賴，尚未串成原始四表的一鍵重訓流程。
+
+## v22訓練來源與重現界線
+
+src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R106程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
+
+| 分量 | 訓練入口／方法 |
+| --- | --- |
+| 近期單價CatBoost | [round79_recency_unit.py](src/round79_recency_unit.py)、[round79_final_unit.py](src/round79_final_unit.py) |
+| 直接總價CatBoost | [train_final.py](src/train_final.py) |
+| LightGBM單價 | [train_final.py](src/train_final.py)（全量 refit）、[train_lightgbm.py](src/train_lightgbm.py)（候選與編碼） |
+| log CatBoost | [round46_recency_log.py](src/round46_recency_log.py)、[round46_trial_release.py](src/round46_trial_release.py) |
+| 面積NN | [round55_final.py](src/round55_final.py)、[round48_nn_train.py](src/round48_nn_train.py)、[round54_numeric_encode.py](src/round54_numeric_encode.py) |
+| 先驗倍率NN | [round63_final.py](src/round63_final.py)、[round63_recency_weighted_prior_train.py](src/round63_recency_weighted_prior_train.py)、[round60_recency_price_prior.py](src/round60_recency_price_prior.py) |
+| 參考成交與空間 | [round2_neighborhood.py](src/round2_neighborhood.py)、[round8_spatial_reference.py](src/round8_spatial_reference.py) |
+| 三期回測 | [round79_experiment.py](src/round79_experiment.py) |
+
+原driver依賴固定資料布局、canonical索引、地理、OOF先驗、SHA及歷史收據；不是複製research/到空資料夾就能從零訓練。R55最初產生v14階段產物，R63產生v17階段產物，v22後續重用native模型。
+
+從已準備好的NPZ重訓單個NN，原始命令介面為：
+
+~~~powershell
+<torch-python> research/src/round48_nn_train.py --data <R55-final-prepared.npz> --out <new-model-dir>
+<torch-python> research/src/round63_recency_weighted_prior_train.py --data <R63-final-prepared.npz> --out <new-model-dir>
+~~~
+
+這是命令介面說明，並非本次已執行命令。需另提供約1.34GB／396.7MB的原prepared，原trainer要求CUDA。它不是raw Excel至v22的完整重訓入口。
+
+v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28完成六次單價分支CatBoost研究fit，2026-09-29先完成R91/R92六次CatBoost與R89三次CPU趨勢wrapper fit，後續R93另完成三次CatBoost；都不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
+
+R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days/365)，合法日期正規化、無效日期1；R79沿用R63保存的float32權重。NN價格先驗採建案分組五折OOF，不是時間OOF。歷史回測必須按切點重建全部fit狀態。
+
+如後續要求從原始四表一鍵重訓，需串接原driver前置狀態並實際跑完，另保存收據。
+
+## 後續研究沿革（不必先讀）
+
 ## 最新追加：R106聯動dropout，完成後暫停
 
 [完成頁](../docs/RESEARCH_UPDATES_20260929_JOINT_DROPOUT.md)：R106六次NN與三窗評分完成；完整T−v22 MAE為 **-63.26／+2,439.67／+422.80 元**（development／confirmation／auxiliary）。研究門檻未全通過，不採用；**唯一提交仍v22、Private未知，無新CSV。依使用者要求，本輪完成後暫停研究。**
@@ -29,36 +65,6 @@
 
 [本批來源清單](../evidence/outputs/research_snapshot_r102_20260929/copy_manifest.json)保留 bytes；不含標籤／模型／NPZ／逐筆向量／價格 prior states。379 歷史來源與正式交付不改。下方歷史研究的「尚未執行」是各批當時狀態；R100 提議的診斷與本輪輸入假說現已完成。
 
-
-src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.json；後續R85–R106程式另有複製身分證據，沒有回寫歷史清單；當前發布包身分見最外層SOURCE_MANIFEST；本頁內容於發布前核驗，最新發布身分以Git main歷史為準。原碼維持bytes，未刪除歷史SHA檢查或拒絕覆寫保護，不在推論主入口的import路徑內。
-
-| 分量 | 訓練入口／方法 |
-| --- | --- |
-| 近期單價CatBoost | round79_recency_unit.py、round79_final_unit.py |
-| 直接總價CatBoost | train_final.py |
-| LightGBM單價 | train_final.py（全量 refit）、train_lightgbm.py（候選與編碼） |
-| log CatBoost | round46_recency_log.py、round46_trial_release.py |
-| 面積NN | round55_final.py、round48_nn_train.py、round54_numeric_encode.py |
-| 先驗倍率NN | round63_final.py、round63_recency_weighted_prior_train.py、round60_recency_price_prior.py |
-| 參考成交與空間 | round2_neighborhood.py、round8_spatial_reference.py |
-| 三期回測 | round79_experiment.py |
-
-原driver依賴固定資料布局、canonical索引、地理、OOF先驗、SHA及歷史收據；不是複製research/到空資料夾就能從零訓練。R55最初產生v14階段產物，R63產生v17階段產物，v22後續重用native模型。
-
-從已準備好的NPZ重訓單個NN，原始命令介面為：
-
-~~~powershell
-<torch-python> research/src/round48_nn_train.py --data <R55-final-prepared.npz> --out <new-model-dir>
-<torch-python> research/src/round63_recency_weighted_prior_train.py --data <R63-final-prepared.npz> --out <new-model-dir>
-~~~
-
-這是命令介面說明，並非本次已執行命令。需另提供約1.34GB／396.7MB的原prepared，原trainer要求CUDA。它不是raw Excel至v22的完整重訓入口。
-
-v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28完成六次單價分支CatBoost研究fit，2026-09-29先完成R91/R92六次CatBoost與R89三次CPU趨勢wrapper fit，後續R93另完成三次CatBoost；都不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
-
-R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days/365)，合法日期正規化、無效日期1；R79沿用R63保存的float32權重。NN價格先驗採建案分組五折OOF，不是時間OOF。歷史回測必須按切點重建全部fit狀態。
-
-如後續要求從原始四表一鍵重訓，需串接原driver前置狀態並實際跑完，另保存收據。
 
 ## 後續固定實驗R85–R88
 

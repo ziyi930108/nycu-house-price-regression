@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-10-02T05:31:52.185863+00:00",
+  "base_commit": "bf67600024078c94b6a699064a39aae0334b9868",
+  "removed_exact_duplicate_paragraphs": 1,
+  "research_core_text_identical_after_removing_added_links": true,
+  "all_leading_and_trailing_history_sections_preserved_exactly": true,
+  "linked_model_source_filenames": [
+    "round79_recency_unit.py",
+    "round79_final_unit.py",
+    "train_final.py",
+    "train_final.py",
+    "train_lightgbm.py",
+    "round46_recency_log.py",
+    "round46_trial_release.py",
+    "round55_final.py",
+    "round48_nn_train.py",
+    "round54_numeric_encode.py",
+    "round63_final.py",
+    "round63_recency_weighted_prior_train.py",
+    "round60_recency_price_prior.py",
+    "round2_neighborhood.py",
+    "round8_spatial_reference.py",
+    "round79_experiment.py"
+  ],
+  "before_sha256": {
+    "README.md": "d562fbe9988e0fff6840ecb8ffd019bdfdfb9b4c0d18d9872bb19adf507ddb01",
+    "HANDOFF.md": "9c14e2d0fdbe3c820d62b4653822da22b2b2f7fc09ae5be8177a2528f7d4e698",
+    "DATA.md": "ff80f53d58ed97dfee869d64c65719ba94e46d830ec713f2e2cb6aef8586e4ae",
+    "research/README.md": "c86e725496668b16843669471a40f4da27b96ade7ccc4610dc837acd00ae37a8"
+  },
+  "phase": "navigation prepared; DATA role table still pending; not packaged or published",
+  "new_model_fits": 0
+}

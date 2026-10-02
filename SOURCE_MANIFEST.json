@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T05:12:57.051913+00:00",
+  "created_at_utc": "2026-10-02T05:36:33.438801+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -29,8 +29,8 @@
     },
     {
       "path": "DATA.md",
-      "bytes": 1826,
-      "sha256": "ff80f53d58ed97dfee869d64c65719ba94e46d830ec713f2e2cb6aef8586e4ae"
+      "bytes": 6622,
+      "sha256": "32ae1c8c778567720ac2dbcba75b213e43b232cee61fb2c40d39e8df5d9a3728"
     },
     {
       "path": "docs/FIFTEEN_MINUTE_REBUILD.md",
@@ -146,6 +146,16 @@
       "path": "docs/臺灣房價預測_v22_正式報告.pdf",
       "bytes": 453515,
       "sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca"
+    },
+    {
+      "path": "evidence/artifact_roles_20261002/navigation_preparation.json",
+      "bytes": 1339,
+      "sha256": "b57fbc563b2c4346849dc1f075d79021e0f52af3098610333d876a6d2e2ed5d5"
+    },
+    {
+      "path": "evidence/artifact_roles_20261002/role_map.json",
+      "bytes": 24091,
+      "sha256": "2e5e7d501eac4415dbb6ef5100dc491d1808d360902eae03a4d2b4c74f1cb591"
     },
     {
       "path": "evidence/data_external/geography/ATTRIBUTION.md",
@@ -9539,8 +9549,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 8129,
-      "sha256": "9c14e2d0fdbe3c820d62b4653822da22b2b2f7fc09ae5be8177a2528f7d4e698"
+      "bytes": 8334,
+      "sha256": "c3a66927dd740c6d3ecf1677ed9e667f84e295301590e2a0249b4f266f767dd4"
     },
     {
       "path": "presentation/README.md",
@@ -9599,8 +9609,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8049,
-      "sha256": "d562fbe9988e0fff6840ecb8ffd019bdfdfb9b4c0d18d9872bb19adf507ddb01"
+      "bytes": 7986,
+      "sha256": "bc72579c32d9033b97d75fd2934befe70967baf74ddf9995354e594ecdf8282a"
     },
     {
       "path": "REPORT.md",
@@ -9624,8 +9634,8 @@
     },
     {
       "path": "research/README.md",
-      "bytes": 20368,
-      "sha256": "c86e725496668b16843669471a40f4da27b96ade7ccc4610dc837acd00ae37a8"
+      "bytes": 21413,
+      "sha256": "f4a063b51615ccf91af732faad97a0c11c06c46c9dccc2a6aa045cd72a0a2057"
     },
     {
       "path": "research/source_manifest.json",
