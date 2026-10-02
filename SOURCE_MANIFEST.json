@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-02T07:53:56.527049+00:00",
+  "created_at_utc": "2026-10-02T08:06:22.461920+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -9814,8 +9814,8 @@
     },
     {
       "path": "research/README.md",
-      "bytes": 21413,
-      "sha256": "f4a063b51615ccf91af732faad97a0c11c06c46c9dccc2a6aa045cd72a0a2057"
+      "bytes": 21688,
+      "sha256": "c218d5567d843b67353e859bc0e9483a0673677393317a8de04e0fb96b023bde"
     },
     {
       "path": "research/source_manifest.json",

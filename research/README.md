@@ -28,7 +28,7 @@ src/保留379支歷史研究程式，原始路徑與SHA256見source_manifest.jso
 
 這是命令介面說明，並非本次已執行命令。需另提供約1.34GB／396.7MB的原prepared，原trainer要求CUDA。它不是raw Excel至v22的完整重訓入口。
 
-v22交付階段實测為../src/predict_v22.py保存模型推論，沒有重新訓練完整六模型鏈、重新下載地理或安裝全新環境。2026-09-28完成六次單價分支CatBoost研究fit，2026-09-29先完成R91/R92六次CatBoost與R89三次CPU趨勢wrapper fit，後續R93另完成三次CatBoost；都不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
+初次交付由[推論入口](../src/predict_v22.py)載入保存模型完成重現，當時使用既有套件環境。2026-10-02另完成同機新ML／GPU套件環境的六模型推論，47,073筆與原CSV一致，詳見[新環境實測與範圍](../docs/CLEAN_GPU_REPLAY_20261002.md)。這補足同機套件安裝與保存模型推論驗證；另一台電腦、原始地理重建與全部模型從零重訓仍未驗證。2026-09-28完成六次單價分支CatBoost研究fit，2026-09-29先完成R91/R92六次CatBoost與R89三次CPU趨勢wrapper fit，後續R93另完成三次CatBoost；都不是完整v22從零重訓。不得把原碼保存寫成從零重訓已驗證。
 
 R79 target=y/(A*10000)，weight=(A/100)*saved_date_weight。日期權重2^(-days/365)，合法日期正規化、無效日期1；R79沿用R63保存的float32權重。NN價格先驗採建案分組五折OOF，不是時間OOF。歷史回測必須按切點重建全部fit狀態。
 
