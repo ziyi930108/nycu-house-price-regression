@@ -68,6 +68,8 @@ $env:PYTHONDONTWRITEBYTECODE = "1"
 
 上方兩環境分工對應本次實測。父程式使用-I；原NN子程序不自動繼承-I，所以本次另清除PYTHON相關變數並關閉user site，不能稱整條流程皆為-I。這不是全新驅動安裝教學；受測GPU為RTX4060Ti，其他GPU／驅動尚未驗證。output-dir必須是新目錄，不會自動覆寫既有結果。
 
+2026-10-03起會先檢查 `--nn-python` 及所選裝置；錯誤設定在模型計算及輸出建立之前退出。可用 `src/nn_predict.py --check-environment --device cuda:0` 單獨檢查。[改動、測試及相同CSV證據](docs/CLI_PREFLIGHT_20261003.md)。
+
 程式讀 Excel、重建87欄特徵、套保存encoder／prior，真正載入六模型，逐分支套參考成交與空間修正，再取中位數。輸出 CSV、未取整預測、三分支向量及 receipt.json；不讀舊預測作為輸入。
 
 最後比對 CSV 與原 v22 的 SHA256；不一致會回報非零結束碼。--device cpu 可用於數值差異診斷，實測不能精確重現原GPU結果。這種差異不是test MAE。

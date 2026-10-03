@@ -4,7 +4,7 @@
 
 導覽與Python說明已同步同機新套件環境的保存模型推論結果；新電腦、地理重建與從零重訓仍未驗證。變更身分見[導覽紀錄](teaching/v22_review_20261002/navigation_update_20261002.json)，首次複製provenance與所有舊發布收據保留。主講約15分鐘的配速仍是估計，尚未本人計時。
 
-程式接手先看[前移的v22來源表](research/README.md)，需要辨識17項保存檔時看[DATA用途對照](DATA.md)。研究沿革留在來源表之後；原source、模型清單與SHA保持。
+程式接手先看[前移的v22來源表](research/README.md)，需要辨識17項保存檔時看[DATA用途對照](DATA.md)。研究沿革留在來源表之後；歷史訓練原碼、保存模型與既有身分清單保持；2026-10-03更新可攜推論入口的環境檢查，詳見[本次CLI實測](docs/CLI_PREFLIGHT_20261003.md)。
 
 ## 當前成果
 
@@ -17,14 +17,15 @@
 | 推論重現 | 原test Excel＋17項保存模型／狀態，47,073筆與原v22位元一致 |
 | CSV | 完整SHA與原v22相同，見config/v22.json |
 | 原推論驗證 | 既有兩環境、隔離模式84.7364秒，4項格式測試通過 |
+| 本次CLI驗證 | 9項單元測試通過、1項符號連結測試因本機權限跳過；真實錯環境提早拒絕，最終六模型重跑81.837秒，CSV與6比較向量相同，fit0 |
 | 同機新venv | [後續CUDA重現](docs/CLEAN_GPU_REPLAY_20261002.md)：新ML與GPU環境、6模型／47,073筆／CSV及6比較向量逐bytes同，主程式76.930秒；不是從零重訓。上一階段CPU安裝紀錄保留 |
-| 報告 | REPORT.md原文；最新11頁字型修正PDF在teaching/v22_review_20261002/03_正式報告，舊docs PDF保持 |
+| 報告 | REPORT.md原文；[目前12頁正式PDF](docs/臺灣房價預測_v22_正式報告_20261002.pdf)，原11頁只作歷史保留 |
 | 簡報 | v22_review_20261002內三款23頁、4,065字稿與排練HTML；主講規劃885秒，未真人計時；15:00合成影片另外附上 |
 | 簡報重建 | [最新審查稿入口](docs/REVIEW_TEACHING_REBUILD.md)僅重建三款PPTX；舊--edition fifteen-minute仍產生4,051字稿。各自實測／限制見對應文件 |
 | 研究程式 | research/src/保存379支歷史原碼與後續R85–R106來源；歷史清單不回寫，新來源見本批複製清單，當前包身分以SOURCE_MANIFEST為準 |
 | 最新研究 | R106六NN完成；T−v22 -63.26／+2,439.67／+422.80 元；研究門檻未全通過，不採用，無新CSV |
 | 新切點R90 | 272,117 fit／107,169 query純X與helpers已在R97使用；七模型、encoder／prior、reference／spatial均已按新cutoff重建 |
-| 本批發布 | 本頁於發布前核驗，base 39db531e222364ef95be3e3396d5720b09131a4f；當前身分以Git main／SOURCE_MANIFEST為準 |
+| 本批發布 | 2026-10-03 CLI環境檢查更新；[本批實測](docs/CLI_PREFLIGHT_20261003.md)，當前身分以Git commit／SOURCE_MANIFEST為準 |
 | 後續界線 | 使用者要求本輪跑完後暫停；R106完成後停止研究，不開R107或背景訓練；v22唯一提交 |
 | GitHub | 私人ziyi930108/nycu-house-price-regression |
 | 未交付資料 | 原交易表、模型、價格先驗與推論結果保留本機 |

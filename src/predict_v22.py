@@ -14,6 +14,30 @@ from tree_runtime import predict_trees, load_states, apply_branch
 
 ROOT=Path(__file__).resolve().parents[1]
 def read(path):return json.loads(Path(path).read_text(encoding="utf-8"))
+
+def check_nn_environment(interpreter,device):
+    """Probe the actual NN interpreter before creating outputs or loading models."""
+    # Keep a venv's symlink path: resolving it can select the base interpreter.
+    interpreter=interpreter.absolute()
+    if not interpreter.is_file():
+        raise FileNotFoundError(f"--nn-python must name an existing Python executable: {interpreter}")
+    try:
+        probe=subprocess.run([str(interpreter),str(ROOT/"src/nn_predict.py"),
+            "--check-environment","--device",device],check=True,capture_output=True,
+            text=True,encoding="utf-8",errors="replace",timeout=60)
+    except subprocess.CalledProcessError as error:
+        detail=(error.stderr or error.stdout or str(error)).strip()
+        raise RuntimeError(f"NN environment check failed for --nn-python {interpreter}:\n{detail}") from error
+    except (OSError,subprocess.TimeoutExpired) as error:
+        raise RuntimeError(f"Cannot check --nn-python {interpreter}: {error}") from error
+    try:
+        result=json.loads(probe.stdout)
+        if not isinstance(result,dict) or result.get("status")!="ready" or result.get("device")!=device:
+            raise ValueError("Unexpected probe result")
+    except ValueError as error:
+        raise RuntimeError("NN environment check returned an invalid result") from error
+    return interpreter,result
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--artifacts",type=Path,default=ROOT/"private/artifacts")
@@ -23,6 +47,8 @@ def main():
     ap.add_argument("--nn-python",type=Path,default=Path(sys.executable))
     ap.add_argument("--device",choices=["cpu","cuda:0"],default="cuda:0")
     a=ap.parse_args();start=time.perf_counter()
+    if a.output_dir.exists():raise FileExistsError("Use a new output directory")
+    a.nn_python,nn_environment=check_nn_environment(a.nn_python,a.device)
     config=read(ROOT/"config/v22.json"); manifest=read(ROOT/"artifacts/manifest.json")
     for name in ["test","sample"]:
         if digest(getattr(a,name)) != config["inputs"][name]["sha256"]:
@@ -31,7 +57,6 @@ def main():
         p=(a.artifacts/e["path"]).resolve()
         if not p.is_relative_to(a.artifacts.resolve()) or digest(p)!=e["sha256"]:
             raise ValueError(f"Artifact hash differs: {e['path']}")
-    if a.output_dir.exists():raise FileExistsError("Use a new output directory")
     a.output_dir.mkdir(parents=True)
     raw=pd.read_excel(a.test,sheet_name="Sheet1",dtype=object).reset_index(drop=True)
     if "總價元" in raw:raise ValueError("Query input must not contain targets")
@@ -79,6 +104,7 @@ def main():
       "saved_prediction_vectors_used_as_input":False,"test_prices_used":False,
       "python":platform.python_version(),"numpy":np.__version__,"pandas":pd.__version__,
       "nn_device":a.device,"artifact_manifest_sha256":digest(ROOT/"artifacts/manifest.json"),
+      "nn_environment_check":nn_environment,
       "output_sha256":actual_sha,"expected_v22_sha256":config["expected_csv_sha256"],
       "csv_bytes_equal_original":actual_sha==config["expected_csv_sha256"],
       "prediction_sha256":digest(a.output_dir/"predictions.npy"),

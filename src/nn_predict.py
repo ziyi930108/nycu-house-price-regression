@@ -1,6 +1,6 @@
 """Inference-only v22 neural heads; no saved prediction vectors are read."""
 from __future__ import annotations
-import argparse, hashlib, json, math, time
+import argparse, hashlib, json, math, sys, time
 from pathlib import Path
 import numpy as np
 import torch
@@ -64,11 +64,29 @@ def predict(model_path,inputs_path,device='cuda:0'):
         raise ValueError('Invalid total-price outputs')
     return result
 
+def check_environment(device):
+    """Check imports, device initialization and NumPy bridge without model files."""
+    if device.startswith('cuda') and not torch.cuda.is_available():
+        raise RuntimeError('CUDA unavailable; choose --device cpu explicitly')
+    # The transfer checks actual device initialization, not only driver discovery.
+    probe=torch.ones(1,device=device).cpu().numpy()
+    if probe.shape!=(1,) or probe[0]!=1:raise RuntimeError('Torch/NumPy device probe failed')
+    return {'status':'ready','python_executable':sys.executable,'torch':str(torch.__version__),
+            'numpy':np.__version__,'device':device,'cuda':torch.version.cuda,
+            'models_loaded':0,'new_fits':0}
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--model',type=Path,required=True);p.add_argument('--inputs',type=Path,required=True)
-    p.add_argument('--out',type=Path,required=True);p.add_argument('--device',default='cuda:0')
+    p.add_argument('--model',type=Path);p.add_argument('--inputs',type=Path)
+    p.add_argument('--out',type=Path);p.add_argument('--device',choices=['cpu','cuda:0'],default='cuda:0')
+    p.add_argument('--check-environment',action='store_true',help='Check imports and device without loading models or writing files')
     a=p.parse_args()
+    if a.check_environment:
+        if any(v is not None for v in (a.model,a.inputs,a.out)):
+            p.error('--check-environment cannot be combined with --model, --inputs or --out')
+        print(json.dumps(check_environment(a.device)));return
+    if any(v is None for v in (a.model,a.inputs,a.out)):
+        p.error('--model, --inputs and --out are required for prediction')
     if a.out.exists() or a.out.with_suffix('.json').exists():raise FileExistsError('Use a new output path')
     start=time.perf_counter();result=predict(a.model,a.inputs,a.device)
     a.out.parent.mkdir(parents=True,exist_ok=True)
