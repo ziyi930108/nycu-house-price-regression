@@ -3,15 +3,33 @@
 Feature/model readers are stubbed; no course data or saved weights are needed.
 """
 from contextlib import ExitStack
+import importlib.util
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
+from types import ModuleType
 import unittest
 from unittest.mock import MagicMock, patch
+import numpy  # Load real lightweight dependencies outside the import isolation.
+import pandas
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-import predict_v22 as cli
+SOURCE = Path(__file__).resolve().parents[1] / "src"
+
+def unexpected_model_work(*args, **kwargs):
+    raise AssertionError("Model work is outside these configuration tests")
+
+# The production CLI imports model libraries; these tests only exercise its
+# argument/error ordering. Keep the documented NumPy/pandas-only test setup.
+geo = ModuleType("round6_geo")
+geo.frame_sha = unexpected_model_work
+trees = ModuleType("tree_runtime")
+trees.predict_trees = trees.load_states = trees.apply_branch = unexpected_model_work
+with patch.dict(sys.modules, {"round6_geo": geo, "tree_runtime": trees}), \
+     patch.object(sys, "path", [str(SOURCE), *sys.path]):
+    spec = importlib.util.spec_from_file_location("v22_preflight_under_test", SOURCE / "predict_v22.py")
+    cli = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cli)
 
 
 class PredictionPreflightTests(unittest.TestCase):

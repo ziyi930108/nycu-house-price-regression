@@ -21,7 +21,9 @@ ZIP檔名每次使用新的名稱。打包工具會更新SOURCE_MANIFEST.json，
 
 ## 檢查範圍與自動化設定
 
-本機驗證涵蓋source manifest、歷史來源SHA、私有檔案排除與4項提交格式測試，不載入模型、資料或訓練GPU。
+本機驗證涵蓋source manifest、歷史來源SHA與私有檔案排除。當前測試含4項提交格式及6項推論入口設定測試；只需NumPy／pandas，不載入模型、課程資料或訓練GPU。入口測試隔離地理／樹模型的imports，仍執行真正的CLI參數與錯誤處理；真實裝置與全量推論另依[CLI重現紀錄](CLI_PREFLIGHT_20261003.md)驗證。
+
+2026-10-03曾發現新增入口測試會間接匯入CatBoost、LightGBM及SciPy，破壞原輕量設定。修正只在測試載入時替換兩個計算模組，不改生產程式、套件清單或workflow範例。以既有環境加import攔截器實測：模型套件不可匯入時，10項測試中9項通過、1項符號連結測試因Windows權限跳過；[證據與範圍](../evidence/cli_preflight_20261003/minimal_dependencies_check.json)。這不是新環境安裝、Linux實測或GitHub Actions執行。
 
 自動檢查範例保留在source-checks.example.yml，尚未啟用GitHub Actions。現有OAuth登入缺workflow scope，GitHub拒絕建立.github/workflows設定；這不影響程式、報告與簡報的發布。日後若要啟用，可在具有workflow權限的登入下把範例移至.github/workflows/，再刷新manifest和提交。自動測試也不能驗證Private分數或替代已記錄的本機全量推論。
 

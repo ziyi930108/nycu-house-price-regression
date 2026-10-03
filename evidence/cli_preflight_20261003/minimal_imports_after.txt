@@ -1,0 +1,15 @@
+test_dependency_or_device_failure_rejected_before_model_work (test_prediction_preflight.PredictionPreflightTests.test_dependency_or_device_failure_rejected_before_model_work) ... ok
+test_existing_output_is_preserved_without_launching_nn (test_prediction_preflight.PredictionPreflightTests.test_existing_output_is_preserved_without_launching_nn) ... ok
+test_missing_interpreter_rejected_before_model_work (test_prediction_preflight.PredictionPreflightTests.test_missing_interpreter_rejected_before_model_work) ... ok
+test_symlink_interpreter_path_is_not_replaced_with_base (test_prediction_preflight.PredictionPreflightTests.test_symlink_interpreter_path_is_not_replaced_with_base) ... skipped "This host cannot create file symlinks: [WinError 1314] 用戶端沒有這項特殊權限。: 'C:\\\\NYCU_ML\\\\outputs\\\\v22_clean_environment_20261002\\\\venv\\\\Scripts\\\\python.exe' -> 'C:\\\\Users\\\\ziyi9\\\\AppData\\\\Local\\\\Temp\\\\tmpdldzxbdb\\\\venv-python.exe'"
+test_unexpected_probe_response_is_rejected (test_prediction_preflight.PredictionPreflightTests.test_unexpected_probe_response_is_rejected) ... ok
+test_unlaunchable_interpreter_or_timeout_leaves_no_output (test_prediction_preflight.PredictionPreflightTests.test_unlaunchable_interpreter_or_timeout_leaves_no_output) ... ok
+test_bom_and_refuse_overwrite (test_submission_io.SubmissionTests.test_bom_and_refuse_overwrite) ... ok
+test_nonfinite_rejected (test_submission_io.SubmissionTests.test_nonfinite_rejected) ... ok
+test_numpy_ties_even_positive_floor (test_submission_io.SubmissionTests.test_numpy_ties_even_positive_floor) ... ok
+test_order_mismatch_fails_before_creation (test_submission_io.SubmissionTests.test_order_mismatch_fails_before_creation) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.028s
+
+OK (skipped=1)

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-03T00:32:19.025849+00:00",
+  "created_at_utc": "2026-10-03T00:46:15.941312+00:00",
   "scope": "code, reports, presentations and teaching sources, no model/data bundle",
   "files": [
     {
@@ -64,8 +64,8 @@
     },
     {
       "path": "docs/PUBLISHING.md",
-      "bytes": 2291,
-      "sha256": "5e51ed47a2e1599a079dcdd25aa966efd0c74071c047ad206ae86b13b5d04809"
+      "bytes": 3055,
+      "sha256": "ee11ed4ca422444234cf9edace32d16840f1a01e3f239f549877843d5133b844"
     },
     {
       "path": "docs/REPORT_UPDATE_20261002.md",
@@ -273,6 +273,11 @@
       "sha256": "8e933266d0504a89c0cd5d835d477e70ddf1f43d73ff086d57f57f0be466c479"
     },
     {
+      "path": "evidence/cli_preflight_20261003/check_minimal_test_imports.py",
+      "bytes": 949,
+      "sha256": "0ddc98001c41ad03b874f6414a34dc5f3b07a5fed50a5cbf2a336279cde3bbb8"
+    },
+    {
       "path": "evidence/cli_preflight_20261003/final_verification.json",
       "bytes": 4549,
       "sha256": "a1d25324c55c35effa9c5601ee89c98c6b4008f43b4f120c676b97b347b0e8f8"
@@ -281,6 +286,21 @@
       "path": "evidence/cli_preflight_20261003/first_verification.json",
       "bytes": 4177,
       "sha256": "fd862b1a782002bd69d6b7608b967d10624b2c15b010958d661e5469166a5d4a"
+    },
+    {
+      "path": "evidence/cli_preflight_20261003/minimal_dependencies_check.json",
+      "bytes": 2816,
+      "sha256": "31f26e451d8e416e7e7fcbe72075f824809c905d8cc104b0cee602a099d26773"
+    },
+    {
+      "path": "evidence/cli_preflight_20261003/minimal_imports_after.txt",
+      "bytes": 1858,
+      "sha256": "8ef8e230a391fdc5a9eb5758cd3ac34b7a913c1e57cedb3159d230513804869d"
+    },
+    {
+      "path": "evidence/cli_preflight_20261003/minimal_imports_before.txt",
+      "bytes": 2130,
+      "sha256": "4d3a40d741b372fef32462ae3656aa46e4ac0069d761c26d8bbd5baa99fbb5aa"
     },
     {
       "path": "evidence/cli_preflight_20261003/negative_checks.json",
@@ -13914,8 +13934,8 @@
     },
     {
       "path": "tests/test_prediction_preflight.py",
-      "bytes": 5699,
-      "sha256": "2b571bcabe6d45211a748087387f8ecae05c280186808d689e376e5a8679db32"
+      "bytes": 6587,
+      "sha256": "2edd9688be237d5c85daa959860c29a8cef2fd87d7f71f2da3bacfb310244188"
     },
     {
       "path": "tests/test_submission_io.py",
