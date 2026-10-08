@@ -1,0 +1,28 @@
+{
+  "GPU_work": false,
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "outputs\\research_round109_110_20261008\\verify_completed_v2.py",
+    "--evaluation-complete"
+  ],
+  "elapsed_seconds": 194.625,
+  "exit_code": 0,
+  "failure": null,
+  "log": {
+    "path": "outputs/research_round109_110_20261008/independent_audit_attempt2.log",
+    "sha256": "a3d3e3ac2f96e880953861a77285677b021b6e7cc8e2a7174f2a9f10cfa93bb0"
+  },
+  "new_fits": 0,
+  "postseal_query_labels_allowed_for_review_only": true,
+  "repair": {
+    "path": "outputs/research_round109_110_20261008/independent_audit_repair.json",
+    "sha256": "e0f79c32229b5165decb5d947d4596aea08a1e993a20ca28d171b2f9f46739e4"
+  },
+  "source": {
+    "path": "outputs/research_round109_110_20261008/verify_completed_v2.py",
+    "sha256": "018264e8ac779771f6c8804c540b192ebbff2a07ac0214a29b9554a68bc62692"
+  }
+}

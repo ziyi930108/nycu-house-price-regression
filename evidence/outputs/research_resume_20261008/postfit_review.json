@@ -1,0 +1,384 @@
+{
+  "GPU_work": false,
+  "Private_score": null,
+  "artifacts": {
+    "107/auxiliary": {
+      "evaluation": {
+        "path": "outputs/round107/auxiliary/evaluation/results.json",
+        "sha256": "f71e96887b4f55c38c8f6025690a178017b12e23ed350b6a9652f051ba17cf09"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round107/auxiliary/model/model.pt",
+        "sha256": "34d33b87474d048a70a5986563cd96acbc90520361495f8d7a9fde53a4509ab7"
+      },
+      "stage": {
+        "path": "outputs/round107/auxiliary/stage.json",
+        "sha256": "29fa0311f42e5fc3e57cb92cf1175582573488e983ea882c44ec8c21ccbd3167"
+      },
+      "training_metadata": {
+        "path": "outputs/round107/auxiliary/model/training.json",
+        "sha256": "3147c22534137ad2c2d86b0be3abcf232d1900f41f4d203e8fe513f0b5529a98"
+      }
+    },
+    "107/confirmation": {
+      "evaluation": {
+        "path": "outputs/round107/confirmation/evaluation/results.json",
+        "sha256": "5700d3c3ede4fd61786f6b5a70ff085b3c07cc5f7cb5310a4614f2ae5a0c3f72"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round107/confirmation/model/model.pt",
+        "sha256": "c8546a38b907db9e4899d2459bc3e96a2c7f009a5a552081fa7f9a8e4a119113"
+      },
+      "stage": {
+        "path": "outputs/round107/confirmation/stage.json",
+        "sha256": "6b26919b4014bc1ad37241e4022010b47f6dba6b44d12170c04a9ff441ae0db0"
+      },
+      "training_metadata": {
+        "path": "outputs/round107/confirmation/model/training.json",
+        "sha256": "24fff85c1140e4abba01dd2c22c31163eb66400cf010a8e29f48c3121cdacf3b"
+      }
+    },
+    "107/development": {
+      "evaluation": {
+        "path": "outputs/round107/development/evaluation/results.json",
+        "sha256": "b7acaa02d87d2afa57dfe32e94b4d4c9a47ce4e155f94c5fef5dc0997b14ec02"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round107/development/model/model.pt",
+        "sha256": "c9d2d449e0f5d1fb2ae7535dc69f121d1c0f6ce4fbd2aadf1ea8642355f28011"
+      },
+      "stage": {
+        "path": "outputs/round107/development/stage.json",
+        "sha256": "209064a643236aebc6fc2041e751ebd498121ccef409e3bb37f2b90fc6b81808"
+      },
+      "training_metadata": {
+        "path": "outputs/round107/development/model/training.json",
+        "sha256": "7cfae31459959a99264db350d24fba0f283d9b3a36253197becd7a6965a23b19"
+      }
+    },
+    "108/auxiliary": {
+      "evaluation": {
+        "path": "outputs/round108/auxiliary/evaluation/results.json",
+        "sha256": "48159f37093c45401a9bc19816425063d069c416bf493b5cd2ee793129407be8"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round108/auxiliary/model/model.cbm",
+        "sha256": "97fe98007c5f557ccce14c295c7d5b0301f91b7a10901c8a6c9df0d8a869aa3b"
+      },
+      "stage": {
+        "path": "outputs/round108/auxiliary/stage.json",
+        "sha256": "8ff0411c15ccfe041a034be61b3cc7f5d36b6b0c0a56b5ec11b09d19a35d35e7"
+      },
+      "training_metadata": {
+        "path": "outputs/round108/auxiliary/model/metadata.json",
+        "sha256": "3961ea990696ecc79394076691f8b117984705c7cbc2f5ebbb6a02d20a78502a"
+      }
+    },
+    "108/confirmation": {
+      "evaluation": {
+        "path": "outputs/round108/confirmation/evaluation/results.json",
+        "sha256": "643ba8845a354549ac81e813e299a4803f193a075247e1f74c54cff77ebe6f93"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round108/confirmation/model/model.cbm",
+        "sha256": "6150fe120d5554082dfae22c06f3aa40a16381a6947fdb64848718e6b2ca9b74"
+      },
+      "stage": {
+        "path": "outputs/round108/confirmation/stage.json",
+        "sha256": "cfd3f5e99348ab4ab7f3d0059db65e50714c025a4c4e220b442c5324bc8c43ef"
+      },
+      "training_metadata": {
+        "path": "outputs/round108/confirmation/model/metadata.json",
+        "sha256": "37e1c24fbe6e3543d999ceb62d6306b2c6af3d3af5c2be9ff229eaeda2d4280a"
+      }
+    },
+    "108/development": {
+      "evaluation": {
+        "path": "outputs/round108/development/evaluation/results.json",
+        "sha256": "20f6aaea1a9521da4bf2ccf0499fd12b558fa325145fafc5c8c9dde538f75d35"
+      },
+      "saved_model_postfit_identity": {
+        "path": "outputs/round108/development/model/model.cbm",
+        "sha256": "7910cb23496b5e247ab8ea63a4d81077c88d71cab6839e8d317fa87d4a1a80ea"
+      },
+      "stage": {
+        "path": "outputs/round108/development/stage.json",
+        "sha256": "274baa617916bc620f901b36c5839c3165d6369cc6c95e07fb6e24cd32803b2d"
+      },
+      "training_metadata": {
+        "path": "outputs/round108/development/model/metadata.json",
+        "sha256": "9892ad366b405b9c366ed581c8c1fba5c79bf6fe582d99706bc87f0825d8b2de"
+      }
+    }
+  },
+  "blocking_findings_remaining": [],
+  "bootstrap_artifacts": [
+    {
+      "path": "outputs/round107/development/evaluation/month_samples.npy",
+      "sha256": "f0f19251090c5e4e3a7ffb85c085fd95503c7e29f012d84f355b4ee2311fe148"
+    },
+    {
+      "path": "outputs/round107/development/evaluation/project_samples.npy",
+      "sha256": "6cb2bd1ad999e57bd62ad89f57ec57d7dbd904c92da7229bef7672d31e2c6ce8"
+    },
+    {
+      "path": "outputs/round108/development/evaluation/month_samples.npy",
+      "sha256": "46fcc71a5744a145bfb8f8e31ab9fa502456dd1de22c98946304bd8fd3531a1c"
+    },
+    {
+      "path": "outputs/round108/development/evaluation/project_samples.npy",
+      "sha256": "bbd366aeca79ce1911bbca2df1001c10abd4aef39366ccc1e5a3af7a0363a44e"
+    },
+    {
+      "path": "outputs/round107/confirmation/evaluation/month_samples.npy",
+      "sha256": "14f05ab210ea4b02e4ae48d7a86637125f865c9ff089bc7f2b68e289693e2617"
+    },
+    {
+      "path": "outputs/round107/confirmation/evaluation/project_samples.npy",
+      "sha256": "7c7a529909a51a248fea49fde48d6d19a4550e6d80909d81a5a0f3f53658cf4a"
+    },
+    {
+      "path": "outputs/round108/confirmation/evaluation/month_samples.npy",
+      "sha256": "6369ad19161042661a40a5f2c4109525a512439602a8f9db265a09aa8000aa42"
+    },
+    {
+      "path": "outputs/round108/confirmation/evaluation/project_samples.npy",
+      "sha256": "08bc0dfcfee952d8eb6fa106b5d06a05dd66464c7b728e362cc9e384210f2ea3"
+    },
+    {
+      "path": "outputs/round107/auxiliary/evaluation/month_samples.npy",
+      "sha256": "4ac3266f4bf59bbfe52039cc5d9490b7f7dff75577160e2cadd7c3a6aa225eef"
+    },
+    {
+      "path": "outputs/round107/auxiliary/evaluation/project_samples.npy",
+      "sha256": "ee49a5992236f491d5e9549b794e45ff4b005f639d71113a51c7a5f66db5fed7"
+    },
+    {
+      "path": "outputs/round108/auxiliary/evaluation/month_samples.npy",
+      "sha256": "3fe94db8b85295a008135ed6025590fdb1ee942eb6cdd93bda0e83a23168db5b"
+    },
+    {
+      "path": "outputs/round108/auxiliary/evaluation/project_samples.npy",
+      "sha256": "da5759feb0311f57a5a0e28c3c615eaa1115db6ff7fde547d1f22780b0686937"
+    }
+  ],
+  "conclusion": "R107 is eligible for the preregistered exploratory full-data fit and a separately labeled trial CSV. R108 is ineligible and should not receive a full-data fit/CSV under this plan. Neither passes the stronger research gate; v22 final selection remains unchanged and Private is unknown.",
+  "created_at_utc": "2026-10-08T06:31:17.559931+00:00",
+  "evaluation_execution": {
+    "path": "outputs/research_resume_20261008/evaluation_execution.json",
+    "sha256": "0b3b9bc92c0ee2f039521c429444843ce723fd3bc213c35e178528b17d25d646"
+  },
+  "identity_checks": {
+    "R107_30epochs_all_three_windows": true,
+    "R107_config_matches_R63_except_fixed_loss": true,
+    "R107_date_weight_and_prior_factor_identity": true,
+    "R108_artifact_hashes_match_training_metadata": true,
+    "R108_only_CTR_2_to_1_recipe_change": true,
+    "R108_saved_CBM_models_loaded_and_native_config_checked": 3,
+    "base_and_median_formula_bytes_exact_all_six": true,
+    "frozen_input_files_verified": 89,
+    "frozen_source_files_verified": 34,
+    "layer_file_and_values_hashes_verified": 30,
+    "protected_original_files_verified": 33,
+    "saved_training_scope_and_reload_evidence_checked": true,
+    "sealed_stage_records_verified": 6,
+    "sealed_training_metadata_verified": 6
+  },
+  "limits": [
+    "No independent NN model checkpoint inference was performed by this reviewer; exact full-query reload evidence is from frozen training execution.",
+    "R107 model.pt hashes are captured here post-fit; the original stage seal bound training metadata and prediction arrays but did not itself contain checkpoint SHA.",
+    "Reference/spatial candidate computation was reviewed through the frozen implementation and execution; this post-fit review independently recomputed base and median, not all R/S computations.",
+    "Repeated historical windows and saved-v22 rather than matched fresh-retraining control limit causal inference and future generalization.",
+    "Full-data candidate fit and test CSV are subsequent work, not certified by this review."
+  ],
+  "manual_gate_verdicts": {
+    "107": {
+      "components": {
+        "at_least_two_windows_overall_improve": true,
+        "each_metric_each_window_within_quarter_percent": true,
+        "latest_both_no_worse": true,
+        "no_large_group_or_quarter_above_five_percent": true
+      },
+      "exploratory_submission_eligible": true,
+      "strong_research_gate_passed": false
+    },
+    "108": {
+      "components": {
+        "at_least_two_windows_overall_improve": false,
+        "each_metric_each_window_within_quarter_percent": false,
+        "latest_both_no_worse": false,
+        "no_large_group_or_quarter_above_five_percent": false
+      },
+      "exploratory_submission_eligible": false,
+      "strong_research_gate_passed": false
+    }
+  },
+  "material_counterevidence": [
+    "R107 auxiliary overall and weighted MAE regress by 883.6591 and 755.9563 TWD versus v22. Latest overall improvement is only 0.110288%, below the strong 0.5% criterion.",
+    "R107 latest and auxiliary overall MAE remain 8506.9527 and 34826.8749 TWD worse than fixed v24.",
+    "R107 project-cluster overall and weighted 95% intervals cross zero in all three windows; conditional bootstrap is not a Private probability.",
+    "R108 latest overall/weighted regress, development Taipei 2698-row group MAE increases 6.59656%, violating the 5% group limit."
+  ],
+  "new_model_fits": 0,
+  "query_labels_used_for_postseal_review_only": true,
+  "request": {
+    "path": "outputs/research_resume_20261008/request.json",
+    "sha256": "1a0eb13f48c22f026be5551c8ecfd1810ca6299c24529282b3d9f937d433e321"
+  },
+  "results": {
+    "107": {
+      "path": "outputs/round107/results.json",
+      "sha256": "c52a025c347b69962809524ae16b3b09e67a9ee82d8e98975995b977df353491"
+    },
+    "108": {
+      "path": "outputs/round108/results.json",
+      "sha256": "d74638a155f5f3f93f0fdda73d1a158a482218a2396a7aa77d207a8bd0444481"
+    }
+  },
+  "review_elapsed_seconds": 1.2969999999913853,
+  "reviewer": "research_preflight_20261008",
+  "scope": "Independent post-fit identity, configuration and selection-rule review. No new fit, GPU prediction or bootstrap resampling. Raw query prices read only after six-fit unscored seal.",
+  "scoring_checks": {
+    "adverse_group_gate_independently_reconstructed": 6,
+    "all_manual_gate_components_match_saved_results": true,
+    "bootstrap_files_summary_recomputed_without_resampling": 12,
+    "candidate_and_both_controls_overall_MAE_independently_recomputed": 18,
+    "weighted_MAE_recombined_from_fixed_strata": 18
+  },
+  "seal": {
+    "path": "outputs/research_resume_20261008/seal.json",
+    "sha256": "2a88187401a7ab568f6c961d6f83899b050fc57c684c277bb789553283289c31"
+  },
+  "source_sha256": {
+    "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round100_temporal_prior_evaluate_v2.py": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+    "src/round104_composition.py": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0",
+    "src/round107_108_research.py": "acf6249f19c54cf5175269688a8fe57d376ae5af50b34be2b57a24c5e14103ea",
+    "src/round107_weighted_smooth_train.py": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+    "src/round108_single_ctr_unit.py": "0e46eae335d13e904b65a23eb120cd24f48bf5234b55b8c9c086c0a17820e6e8",
+    "src/round12_experiment.py": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+    "src/round12_log_geo.py": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round33_reproduction.py": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+    "src/round35_reproduction.py": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+    "src/round36_combination.py": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+    "src/round38_fixed_average.py": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+    "src/round39_city_road_experiment.py": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round47_nn_encode.py": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round48_nn_experiment.py": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round6_common.py": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+    "src/round6_evaluate.py": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round6_prepare_geo.py": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+    "src/round8_experiment.py": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+    "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "stage_summary": {
+    "107": {
+      "auxiliary": {
+        "adverse_groups": [],
+        "fit_seconds": 13.156000000002678,
+        "overall_delta_vs_v22": 883.6591019518673,
+        "overall_delta_vs_v24": 34826.87494051736,
+        "overall_mae": 2310236.016798522,
+        "project_overall_95pct": {
+          "percentile_2_5": -1921.029597792204,
+          "percentile_97_5": 4066.0421942271496
+        },
+        "weighted_delta_vs_v22": 755.9563341767062,
+        "weighted_delta_vs_v24": 31350.6423254658,
+        "weighted_mae": 2023921.6186092356
+      },
+      "confirmation": {
+        "adverse_groups": [],
+        "fit_seconds": 33.38999999999942,
+        "overall_delta_vs_v22": -1525.537418028107,
+        "overall_delta_vs_v24": 8506.952724630013,
+        "overall_mae": 1381702.8680319374,
+        "project_overall_95pct": {
+          "percentile_2_5": -3594.910185398179,
+          "percentile_97_5": 523.352777298243
+        },
+        "weighted_delta_vs_v22": -1723.0441658950876,
+        "weighted_delta_vs_v24": 9341.489096436184,
+        "weighted_mae": 1445430.3712542453
+      },
+      "development": {
+        "adverse_groups": [],
+        "fit_seconds": 16.078000000008615,
+        "overall_delta_vs_v22": -1415.879435196286,
+        "overall_delta_vs_v24": -1369.5254403296858,
+        "overall_mae": 1405971.1913706528,
+        "project_overall_95pct": {
+          "percentile_2_5": -3371.5796518557413,
+          "percentile_97_5": 550.8371527053694
+        },
+        "weighted_delta_vs_v22": -1398.0282787254546,
+        "weighted_delta_vs_v24": -1376.2060004156083,
+        "weighted_mae": 1398319.7157749971
+      }
+    },
+    "108": {
+      "auxiliary": {
+        "adverse_groups": [],
+        "fit_seconds": 30.437999999994645,
+        "overall_delta_vs_v22": -710.3022016207688,
+        "overall_delta_vs_v24": 33232.91363694472,
+        "overall_mae": 2308642.055494949,
+        "project_overall_95pct": {
+          "percentile_2_5": -17808.3270184904,
+          "percentile_97_5": 15100.275824142072
+        },
+        "weighted_delta_vs_v22": -749.9920163780916,
+        "weighted_delta_vs_v24": 29844.693974911002,
+        "weighted_mae": 2022415.6702586808
+      },
+      "confirmation": {
+        "adverse_groups": [],
+        "fit_seconds": 40.23500000000058,
+        "overall_delta_vs_v22": 8747.723813706543,
+        "overall_delta_vs_v24": 18780.213956364663,
+        "overall_mae": 1391976.129263672,
+        "project_overall_95pct": {
+          "percentile_2_5": -3028.4777112588986,
+          "percentile_97_5": 21185.67711103574
+        },
+        "weighted_delta_vs_v22": 9131.743793966714,
+        "weighted_delta_vs_v24": 20196.277056297986,
+        "weighted_mae": 1456285.159214107
+      },
+      "development": {
+        "adverse_groups": [
+          [
+            "cities",
+            "臺北市"
+          ]
+        ],
+        "fit_seconds": 30.172000000005937,
+        "overall_delta_vs_v22": 11741.409923245898,
+        "overall_delta_vs_v24": 11787.763918112498,
+        "overall_mae": 1419128.480729095,
+        "project_overall_95pct": {
+          "percentile_2_5": -1928.8451328030671,
+          "percentile_97_5": 27280.506215323643
+        },
+        "weighted_delta_vs_v22": 11500.673252554378,
+        "weighted_delta_vs_v24": 11522.495530864224,
+        "weighted_mae": 1411218.417306277
+      }
+    }
+  },
+  "status": "passed"
+}

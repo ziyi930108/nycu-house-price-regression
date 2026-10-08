@@ -1,0 +1,50 @@
+{
+  "Kaggle_uploaded_or_selection_changed": false,
+  "Private_score": null,
+  "actual_new_backtest_fits": 12,
+  "actual_new_full_fits": 1,
+  "clean_environment_six_model_retraining_claimed": false,
+  "created_at_utc": "2026-10-08T07:19:48.927052+00:00",
+  "not_released": {
+    "108": {
+      "exploratory_gate_passed": false,
+      "reason": "Fixed exploratory gate failed; no final fit or submission CSV."
+    },
+    "109": {
+      "exploratory_gate_passed": false,
+      "reason": "Fixed exploratory gate failed; no final fit or submission CSV."
+    },
+    "110": {
+      "exploratory_gate_passed": false,
+      "reason": "Fixed exploratory gate failed; no final fit or submission CSV."
+    }
+  },
+  "original_v22_Public_score": 1998568.5706,
+  "ready_candidates": [
+    {
+      "CSV": {
+        "path": "outputs/submission_v25_trial.csv",
+        "sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1"
+      },
+      "Private_score": null,
+      "Public_score": null,
+      "release": {
+        "path": "outputs/round107/final/release.json",
+        "sha256": "661b0cc0f1cf4eef9234187a51929e4eb8240ccf43bc1606f71a1086f865f189"
+      },
+      "review": {
+        "path": "outputs/research_resume_20261008/final_release_review.json",
+        "sha256": "3f30526c2e7167761ca9eb08a764c64b58062db8bd2f68731f77d8ed4e47f7d0"
+      },
+      "round": 107,
+      "strong_research_gate_passed": false,
+      "version": 25
+    }
+  ],
+  "reserved_but_not_created_versions": [
+    26,
+    27
+  ],
+  "selected_submission_preserved": "v22",
+  "status": "four_hypotheses_evaluated_one_exploratory_CSV_ready"
+}

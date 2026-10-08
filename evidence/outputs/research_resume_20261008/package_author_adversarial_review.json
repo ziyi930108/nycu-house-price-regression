@@ -1,0 +1,98 @@
+{
+  "GPU_calls": 0,
+  "attempt1": {
+    "review": "outputs/research_resume_20261008/package_attempt1_adversarial_review.json",
+    "sha256": "39b1b9f4ef3ba6ba5ff24258b55b78978eb1438880d593ceb168ba4c687a7436",
+    "source": "outputs/research_resume_20261008/package_attempt1_source.py",
+    "status": "changes_required_preserved"
+  },
+  "cli_changes": [
+    "--release-review ROUND=PATH required for newly released rounds 109/110; R107 default exists",
+    "--no-release ROUND=REASON only if fixed exploration gate failed",
+    "--defer-release ROUND=REASON explicitly acknowledges passed exploration gate but incomplete full-data release",
+    "--extra-file supports a named final driver; path/content policy and exact byte checks remain active"
+  ],
+  "corrected_findings": [
+    {
+      "correction": "Copied and generated text share credential guard; disposition reasons preflight checked; navigation old body must remain exact prefix/suffix and added text is bounded and dated. All write_new payloads scanned before opening a destination.",
+      "id": "P1-generated-text-policy"
+    },
+    {
+      "correction": "Each released round requires a passed exact-bound final review and SHA sidecar; review binds release/request/seal/authoring/training/CSV and source hashes, v22 preservation/unknown scores/no query labels/no automatic Kaggle action. Actual CSV is streamed through SHA without decoding/copying rows.",
+      "id": "P2-release-review-required"
+    },
+    {
+      "correction": "Original 2788-entry manifest hash and count fixed, and every existing record must match full path/bytes/SHA before any package write. Historical 379 and production 13 remain required. Finish rejects unexpected members or changed copy manifest and retains old-body navigation checks.",
+      "id": "P2-old-manifest-binding"
+    }
+  ],
+  "created_at_utc": "2026-10-08T07:10:22.982110+00:00",
+  "future_release_review_required_keys": [
+    "status",
+    "release",
+    "request",
+    "seal",
+    "authoring",
+    "training",
+    "CSV",
+    "source_sha256",
+    "selected_submission_preserved",
+    "automatic_Kaggle_upload_or_selection",
+    "Public_score",
+    "Private_score",
+    "query_or_test_labels_loaded",
+    "review_new_fits",
+    "trainer_saved_model_reload_exact",
+    "CSV_rows",
+    "CSV_once_rounded_from_unrounded_median",
+    "all_sample_IDs_prices_order_headers_and_encoding_exact",
+    "positive_safe_integer_prices"
+  ],
+  "git_or_network": false,
+  "independent_review_status": "pending_separate_preflight_agent",
+  "limits": [
+    "Full actual completion inventory/apply intentionally not run while R109/R110 evaluation/release was pending. FakeFS covers real run/refresh/finish logic with completion inventory stub, not an actual package copy.",
+    "Original authoring receipt inspection is omitted by a positive aggregate-field projection, not copied or silently overwritten. Credential patterns and row-field guards are conservative checks, not a mathematical proof against arbitrary encoded data.",
+    "No unevaluated query targets, NPZ/NPY, native models or price state were loaded. CSV bytes were hashed without decoding prices.",
+    "This is author self-review; a separate agent has been asked to review the stable source before root execution. No GitHub action or clean-environment retraining is claimed."
+  ],
+  "model_fits": 0,
+  "package_apply_performed": false,
+  "reviewer": "tool_author_adversarial_self_review_after_corrections",
+  "source_sha256": {
+    "src/package_research_resume_20261008.py": "dc7428387c55b16fe5f5292b2bd0ca4798ba8ab299f74d5961de39e67c583274"
+  },
+  "status": "passed",
+  "tests": {
+    "actual_R107_final_review_and_CSV_streaming_hash_passed": true,
+    "actual_existing_protected_files": 2785,
+    "actual_old_manifest_entries": 2788,
+    "actual_selected_hash_records_including_manifest": 2789,
+    "all_actual_old_manifest_records_exact": true,
+    "builtin_self_check_policy_rejections": 20,
+    "pure_memory_apply_refresh_finish": {
+      "actual_filesystem_writes": 0,
+      "authoring_preview_not_projected": true,
+      "dated_navigation_finish_passed": true,
+      "extra_final_source_exact": true,
+      "fake_path_implementation": "PurePosixPath subclass with BytesIO handles; files/dirs only in Python dictionaries; inventory stub has two exact safe source/report entries and one aggregate receipt projection",
+      "historical_379_and_production_13_and_old_receipt_exact": true,
+      "navigation_credential_rejected_before_finish_receipt_write": true,
+      "status": "passed",
+      "unexpected_manifest_member_rejected": true,
+      "unlisted_private_and_runs_artifacts_never_read": true,
+      "virtual_final_members": 407,
+      "virtual_old_members": 397
+    },
+    "synthetic_guards": [
+      "generated credential rejected",
+      "reason credential rejected",
+      "every old manifest record bound",
+      "gate failed cannot be called deferred-pass",
+      "gate passed cannot be called no-release failure",
+      "missing release review rejected",
+      "wrong release binding rejected",
+      "actual CSV SHA mismatch rejected"
+    ]
+  }
+}

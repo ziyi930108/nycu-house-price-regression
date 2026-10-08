@@ -1,3 +1,13 @@
+## 2026-10-08 研究恢復與新試交
+
+使用者已重新授權模型優化與嘗試新提交。四方法、十二次回測及一次全量 prior NN fit 完成；v25為新增探索候選，最新年度離線 MAE 改善約0.1103%，早期略退步，Public／Private尚未知。R108／R109／R110未通過探索門檻，沒有v26／v27。原v22選定、Public 1,998,568.5706與約15分鐘簡報保留，Private未知。
+
+[本輪方法、結果與限制](docs/RESEARCH_RESUME_20261008.md) · [R107／R108詳細報告](evidence/reports/round107_108_report.md) · [R109／R110詳細報告](evidence/reports/round109_110_report.md) · [v25訓練程式](research/src/round107_weighted_smooth_train.py) · [全量與CSV發行程式](research/src/round107_full_release.py)
+
+CSV、交易資料及模型留在完整原工作區；此repo保存來源與彙總證據，乾淨環境端到端重訓尚未完成。以下原日期正文完整保留，歷史停止研究／唯一版本等敘述以當時狀態理解。
+
+---
+
 # v22 交付接手說明
 
 先完整下載repo，再開[統一審查頁](teaching/v22_review_20261002/index.html)。首頁與指南已改指目前9檔練習工具及9檔答辯卡，舊計時／問答保留作歷史。三款PPTX、4,065字正文及15:00影片不改；[正式PDF](docs/臺灣房價預測_v22_正式報告_20261002.pdf)另更新為12頁，新增8.3同機新套件環境實測，原11頁保留。[報告更新与重建](docs/REPORT_UPDATE_20261002.md)。

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round107_108_research.py",
+    "--freeze"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.8590000000112923,
+  "log": "outputs\\research_resume_20261008\\freeze.log",
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

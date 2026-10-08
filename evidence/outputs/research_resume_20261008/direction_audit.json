@@ -1,0 +1,163 @@
+{
+  "GitHub_or_Kaggle_actions": false,
+  "R17_real_fit": {
+    "Q2_deterioration_percent_saved": 9.2054024,
+    "categorical_feature_count": 23,
+    "changed_parameter_names": [
+      "boosting_type"
+    ],
+    "confirmation_auxiliary_final": "not executed after development rejection",
+    "feature_count": 95,
+    "fit_rows": 240316,
+    "fixed_development_gates_all_failed": true,
+    "metric_recomputed_in_this_audit": false,
+    "metric_scope": "historical v3 blend and one reference, TWD MAE, not the native component alone",
+    "native_boosting_type": "Ordered",
+    "native_depth": 8,
+    "native_trees": 2999,
+    "new_nonmissing_deterioration_percent_saved": 7.4351277,
+    "overall_candidate_MAE": 1593812.8614378392,
+    "overall_control_MAE": 1502390.3147819813,
+    "overall_deterioration_percent_saved": 6.0851395,
+    "query_rows": 81234,
+    "reload_all_query_rows_exact": true,
+    "round": 17,
+    "runner_elapsed_seconds": 238.9220000000205,
+    "sample_weight": "uniform",
+    "target_mode": "raw",
+    "weighted_deterioration_percent_saved": 6.0414355
+  },
+  "R79_saved_native_metadata": [
+    {
+      "actual_boosting_type": "Plain",
+      "fit_rows": 240316,
+      "path": "outputs/round79/development/model/metadata.json",
+      "stage": "development",
+      "target_mode": "unit"
+    },
+    {
+      "actual_boosting_type": "Plain",
+      "fit_rows": 321550,
+      "path": "outputs/round79/confirmation/model/metadata.json",
+      "stage": "confirmation",
+      "target_mode": "unit"
+    },
+    {
+      "actual_boosting_type": "Plain",
+      "fit_rows": 134805,
+      "path": "outputs/round79/auxiliary/model/metadata.json",
+      "stage": "auxiliary",
+      "target_mode": "unit"
+    },
+    {
+      "actual_boosting_type": "Plain",
+      "fit_rows": 467221,
+      "path": "outputs/round79/final_model/model/metadata.json",
+      "stage": "final_model",
+      "target_mode": "unit"
+    }
+  ],
+  "artificial_vs_fake": {
+    "R17_artificial_GPU_compatibility": "Historical512 artificial rows/two trees; accepted Ordered MAE GPU but not a housing-price experiment.",
+    "R19_and_later_fake_Ordered_mentions": "Synthetic tests intentionally inject Ordered into a required Plain model and reject; not formal fit.",
+    "historical_saved_replay": "R17 independent CBM replay verifies saved fit; its fit_performed=false means no new fit by reviewer, not that the original experiment never trained."
+  },
+  "created_at_utc": "2026-10-08T07:21:53.837005+00:00",
+  "decision_for_current_batch": "Do not append Ordered training or expand packager ROUNDS beyond107-110; retain v22 and only already completed exploratory v25 candidate.",
+  "external_transaction_answers_accessed": false,
+  "limits": [
+    "Only one historical R17 formal window was evaluated; two later windows were not run.",
+    "R17 dates/raw-uniform blend are different from current unit/date-weighted v22 branch.",
+    "No proof of Private improvement or of all Ordered schemes being ineffective.",
+    "Full final unitOrdered467221-row memory/time untested; parser acceptance and historical raw fit do not establish it.",
+    "Current four-method batch final-state accounting is handled by main thread/postfit review; this audit does not itself sign those later results."
+  ],
+  "markdown_sha256": "4a3201957493b1d261c51b1ad66b7d2c07f396d7b62d34395a11bfc88977797f",
+  "new_GPU_calls": 0,
+  "new_model_fits": 0,
+  "official_sources": [
+    {
+      "checked_date": "2026-10-08",
+      "support": "Ordered supports CPU/GPU; GPU above50000 defaults Plain, not a hard upper limit for explicit Ordered.",
+      "url": "https://catboost.ai/docs/en/references/training-parameters/common#boosting_type"
+    },
+    {
+      "checked_date": "2026-10-08",
+      "support": "MAE optimization supports GPU.",
+      "url": "https://catboost.ai/docs/en/concepts/loss-functions-regression#used-for-optimization"
+    },
+    {
+      "checked_date": "2026-10-08",
+      "support": "Ordered boosting is permutation-driven; boosting and categorical encoding are separate prediction-shift interventions.",
+      "url": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html"
+    }
+  ],
+  "price_arrays_or_native_models_loaded": false,
+  "scope": {
+    "no_claim_about_unsaved_or_external_experiments": true,
+    "parameter_function_Ordered_literal_matches": [
+      {
+        "function": "parameters",
+        "line": 90,
+        "source": "src/round17_ordered_geo.py"
+      }
+    ],
+    "queries": [
+      "exact Ordered word and boosting_type",
+      "prediction shift",
+      "fold_len_multiplier/has_time/approx_on_full_history"
+    ],
+    "source_files_considered": 474,
+    "text_search_roots": [
+      "src",
+      "reports"
+    ]
+  },
+  "source_sha256": {
+    "outputs/round17/accepted_candidate.json": "1f42ac98eb95904d996ed05d6230eb9b64edab188540796dbf79a14bfd7d4bc0",
+    "outputs/round17/audit/development_replay.json": "2f5ed97fae9b4abae2005afc755f96a7347eb32f3d1845c4a542e0ed3b3f9180",
+    "outputs/round17/models/development/metadata.json": "894ef0817730151ad3ee59b2ed5d9c01e0167369bd581c9be9dc7fb1ef448746",
+    "outputs/round79/auxiliary/model/metadata.json": "846c51ffd7cb059c6a609f5e6c8dcf2a0e474cdee1803177c128dd22f241166d",
+    "outputs/round79/confirmation/model/metadata.json": "f8a94079d8fdb4df6be487851acdba83b04c76471705d917d7f7050d574863ef",
+    "outputs/round79/development/model/metadata.json": "b84babc144c93590862b9e4d20af34d31ba27af5f60594aa49f27ec49224e98f",
+    "outputs/round79/final_model/model/metadata.json": "b62ca091d6f37a4444e1c87d802bb1f54c4178ec2ad1b21270704f195f7f9779",
+    "reports/round17_categorical_method_review.md": "85b1e1aadd50df7ef1c56e8c7a4bdccba1fe4cf61cd9c427d3e88284d61b441f",
+    "reports/round17_report.md": "6fdef97dd0c6af71214aee830a78c15e4f88d7e2df17402666f57a7788c82e58",
+    "reports/round17_work_log.md": "bf6dd369be7c4410e6759eddb2f3b20e801abe6563e6147f1f077822568b8a77",
+    "reports/round18_method_audit.md": "ee83dfcf40660dfd3b5e4da22999bea3f572c74f6fc60b9e85af4b3966c13242",
+    "src/round17_ordered_geo.py": "a04d0ef7b3765777dd411f5b9070143603f19a32e2986fd02efbf47abe3b834f",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+    "src/train_catboost.py": "852719f41cb739814ea6e7fc4b97d21be1a231d439d1c9aadebd343898ea590f"
+  },
+  "status": "completed_readonly_direction_audit",
+  "unexecuted_direction": {
+    "formal_plan_created": false,
+    "mechanistic_difference": "Unit target plus area and recency weights alters gradient/CTR target statistics; raw uniform result is strong prior counterevidence, not universal disproof.",
+    "name": "R79 unit/date-weighted Plain to Ordered interaction",
+    "novelty": "No saved true fit of this exact unit/date-weighted branch found in bounded audit. Ordered algorithm itself already tried in R17.",
+    "other_new_training_recommendations": [],
+    "reason_not_to_run_now": "Strong R17 overall/unseen/quarter regressions and no fresh evidence justify appending another training experiment in this batch.",
+    "selected_for_current_batch": false,
+    "training_started": false
+  },
+  "zero_fit_native_parser": {
+    "GPU_calls": 0,
+    "accepted_modes": [
+      "Plain",
+      "Ordered"
+    ],
+    "catboost_version": "1.2.10",
+    "config_source": "round79_recency_unit.parameters",
+    "depth": 8,
+    "iterations": 2999,
+    "limitation": "Parameter acceptance is not kernel execution, memory feasibility or MAE evidence.",
+    "loss_function": "MAE",
+    "model_fits": 0,
+    "only_parameter_difference": [
+      "boosting_type"
+    ],
+    "status": "passed",
+    "task_type": "GPU"
+  }
+}

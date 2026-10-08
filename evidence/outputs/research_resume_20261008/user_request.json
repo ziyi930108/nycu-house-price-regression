@@ -1,0 +1,18 @@
+{
+  "date_local": "2026-10-08",
+  "timezone": "Asia/Taipei",
+  "user_request": "我要你繼續優化模型，我還想要繼續嘗試繳交",
+  "research_resumed": true,
+  "prior_R106_stop_superseded_for_new_experiments": true,
+  "v22_preserved": true,
+  "new_candidates_allowed": true,
+  "automatic_Kaggle_upload_or_selection": false,
+  "private_score": null,
+  "experiments": [
+    "R107 weighted SmoothL1 prior NN",
+    "R108 single CTR unit CatBoost"
+  ],
+  "plan": "reports/round107_108_plan.md",
+  "stop_at_remaining_percent": 1,
+  "credits_purchase_reset_authorized": false
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round108_single_ctr_unit.py",
+    "--self-check"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.1719999999913853,
+  "log": "outputs\\research_resume_20261008\\R108_helper_selfcheck.log",
+  "log_sha256": "07d2b6512c3442f57e33cf2e441c6f264546c0f966290633ec5af4f9236c5208"
+}

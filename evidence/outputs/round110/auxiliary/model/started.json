@@ -1,0 +1,49 @@
+{
+  "component": "geography_recency_target_borders8_unit_catboost",
+  "fit_area_weights_sha256": "0bd990b6d4c6f6903c6de24b57a1c72413287930a2668e875407a3c9a6f65525",
+  "fit_date_weights_sha256": "1e0259dafd5d7b510f7a7490677202d9de5f065a6a5547636e280dde3cb7c39f",
+  "fit_rows": 134805,
+  "fit_sample_weights_sha256": "8e5d974a06ac5bdc01d53ab2a4a51a85ae98511dd3f1fd1c7bb21789cbb0ff4f",
+  "fit_target_values_sha256": "a1c70ee3ab0f84eb4ffbd00aa530ad925f28096d87ed05516adcd437af2d9763",
+  "fit_transformed_target_values_sha256": "0c778022d81e3c42ce21832dce42c056c37810698050ce90c22a9eb075ef3350",
+  "frame_sha256": {
+    "fit_X": "1aac28c3a56839699729663b0a2e31ea52aa5268d3d3983be54c44bd32fa004e",
+    "fit_augmented": "cf58544ad50cd62d63ff66af41835a936df810aa1bbe2cef24ea6c5ef556ec17",
+    "fit_geo": "f8647654ef026ef686f1733c5711673f0f870383c6aa707bea2e43247475e488",
+    "query_X": "5a41a3bfc570ea3bb1617238ee102a6ee9c998a16d51bc0f8d29093b2401bebc",
+    "query_augmented": "3bb91d6c071a97af275b7f505905a77f1b9dcc450197b5e6ded39d9b3387fd70",
+    "query_geo": "2194cef15b45aea3eead163ced6ccdfe63c4c2dc05060dd54f689a06e21a5054"
+  },
+  "parameters": {
+    "allow_writing_files": false,
+    "boosting_type": "Plain",
+    "bootstrap_type": "Bernoulli",
+    "border_count": 128,
+    "ctr_target_border_count": 8,
+    "depth": 8,
+    "devices": "0",
+    "eval_metric": "MAE",
+    "gpu_ram_part": 0.75,
+    "iterations": 2999,
+    "l2_leaf_reg": 6.0,
+    "learning_rate": 0.065,
+    "loss_function": "MAE",
+    "max_ctr_complexity": 2,
+    "one_hot_max_size": 8,
+    "random_seed": 42,
+    "random_strength": 0.5,
+    "subsample": 0.85,
+    "task_type": "GPU",
+    "thread_count": 4,
+    "verbose": 300
+  },
+  "query_labels_available": false,
+  "query_rows": 105511,
+  "source_sha256": {
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round110_target_borders_unit.py": "694856bbdb1c58f6bda18e84fb7ba90c28c5224bcd161f42a0e1796ee66569fc",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2"
+  }
+}

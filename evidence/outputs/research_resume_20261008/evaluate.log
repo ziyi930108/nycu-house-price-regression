@@ -1,0 +1,24 @@
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"round": 107, "stage": "development", "mae": 1405971.1913706528, "delta": -1415.879435196286}
+{"round": 108, "stage": "development", "mae": 1419128.480729095, "delta": 11741.409923245898}
+{"level": "project", "assigned_rows": 51039, "reference_groups": 5305}
+{"level": "address", "assigned_rows": 9109, "reference_groups": 3944}
+{"level": "street_section", "assigned_rows": 12702, "reference_groups": 2369}
+{"level": "locality", "assigned_rows": 2065, "reference_groups": 1100}
+{"level": "street", "assigned_rows": 3549, "reference_groups": 2287}
+{"level": "district_style", "assigned_rows": 43257, "reference_groups": 428}
+{"round": 107, "stage": "confirmation", "mae": 1381702.8680319374, "delta": -1525.537418028107}
+{"round": 108, "stage": "confirmation", "mae": 1391976.129263672, "delta": 8747.723813706543}
+{"level": "project", "assigned_rows": 9055, "reference_groups": 1055}
+{"level": "address", "assigned_rows": 1639, "reference_groups": 478}
+{"level": "street_section", "assigned_rows": 11266, "reference_groups": 759}
+{"level": "locality", "assigned_rows": 855, "reference_groups": 525}
+{"level": "street", "assigned_rows": 2383, "reference_groups": 726}
+{"level": "district_style", "assigned_rows": 42236, "reference_groups": 169}
+{"round": 107, "stage": "auxiliary", "mae": 2310236.016798522, "delta": 883.6591019518673}
+{"round": 108, "stage": "auxiliary", "mae": 2308642.055494949, "delta": -710.3022016207688}

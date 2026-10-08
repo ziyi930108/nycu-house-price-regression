@@ -1,0 +1,58 @@
+{
+  "fit_rows": 134805,
+  "fit_seconds": 13.156000000002678,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round107/auxiliary/base.npy",
+      "sha256": "b4cc116b94f8bf53fcefd6bfc761a2505d6b8d5c44e5045c353f46ec6aa13066",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "e01097f6fbc38d11a34ea902e458f0e342c4a5d1b7c35fa420417fa1bc3f7046"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round107/auxiliary/median.npy",
+      "sha256": "befadcefa636fff5b853fd55c7d70a668bfd1367142f36a28fde482c10d27a13",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "159ae8a82bb7a6073569488de64684653c3b2470c6b8978cab4ab1e0bd008493"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round107/auxiliary/native.npy",
+      "sha256": "751b20af83db54f6ed1205d79600a9e78db1a21b7133f7a39ab435dd3fdb6d06",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "48b97a7522ae26d8e2a0ad5edb2d37759c67f4a0e71637b211c376c8f9fddbc1"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round107/auxiliary/reference.npy",
+      "sha256": "a9982d8bf9a95e026faff1d39527ed6814ed932936031356bd2608a1ae30636d",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "599556f1db820d77a4a63aa11c28b27337983cef618a4ae7775598c44ff3f2d1"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round107/auxiliary/spatial.npy",
+      "sha256": "652d881f6d6599fdd7ad9083450e727d5de6ce0849494a197acba9c26deab3be",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "365377da1e9aec0f03e5edc047a9247eb278290b6cbe79eb422968cd9740bb91"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round107/auxiliary/model/training.json",
+    "sha256": "3147c22534137ad2c2d86b0be3abcf232d1900f41f4d203e8fe513f0b5529a98"
+  },
+  "query_labels_available": false,
+  "query_rows": 105511,
+  "stage": "auxiliary"
+}

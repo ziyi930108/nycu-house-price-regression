@@ -1,3 +1,13 @@
+## 2026-10-08 研究恢復與新試交
+
+使用者已重新授權模型優化與嘗試新提交。四方法、十二次回測及一次全量 prior NN fit 完成；v25為新增探索候選，最新年度離線 MAE 改善約0.1103%，早期略退步，Public／Private尚未知。R108／R109／R110未通過探索門檻，沒有v26／v27。原v22選定、Public 1,998,568.5706與約15分鐘簡報保留，Private未知。
+
+[本輪方法、結果與限制](docs/RESEARCH_RESUME_20261008.md) · [R107／R108詳細報告](evidence/reports/round107_108_report.md) · [R109／R110詳細報告](evidence/reports/round109_110_report.md) · [v25訓練程式](research/src/round107_weighted_smooth_train.py) · [全量與CSV發行程式](research/src/round107_full_release.py)
+
+CSV、交易資料及模型留在完整原工作區；此repo保存來源與彙總證據，乾淨環境端到端重訓尚未完成。以下原日期正文完整保留，歷史停止研究／唯一版本等敘述以當時狀態理解。
+
+---
+
 # 臺灣房屋總價預測 v22
 
 完整下載或clone後，開啟[統一審查頁](teaching/v22_review_20261002/index.html)：三款PPTX、4,065字口語稿、15:00合成旁白影片、正式PDF，以及目前使用的答辯卡與練習工具，都從這裡進入。GitHub網頁通常只顯示HTML原碼，請保留完整目錄後用瀏覽器開啟。

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round110_target_borders_unit.py",
+    "--self-check"
+  ],
+  "elapsed_seconds": 1.2969999999913853,
+  "exit_code": 0
+}

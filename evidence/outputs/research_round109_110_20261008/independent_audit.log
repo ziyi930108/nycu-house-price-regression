@@ -1,0 +1,46 @@
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+Traceback (most recent call last):
+  File "C:\NYCU_ML\outputs\research_round109_110_20261008\verify_completed.py", line 518, in <module>
+    run()
+  File "C:\NYCU_ML\outputs\research_round109_110_20261008\verify_completed.py", line 373, in run
+    configs[f'{n}/{s}'] = check_ctr(s, st, meta, spec, ctx, arrays['train_sample_weight'])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\NYCU_ML\outputs\research_round109_110_20261008\verify_completed.py", line 209, in check_ctr
+    helper._check_state(state, ctx['fit_X'], meta['categorical_columns'])
+  File "C:\NYCU_ML\src\round110_target_borders_unit.py", line 76, in _check_state
+    original.check_state(legacy, X, cats)
+  File "C:\NYCU_ML\src\round19_unit_geo.py", line 278, in check_state
+    base.need(list(cats) == state['original_categorical_columns']
+  File "C:\NYCU_ML\src\round6_geo.py", line 15, in need
+    if not ok:raise ValueError(message)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Category schema changed

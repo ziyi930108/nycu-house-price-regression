@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_numerical_or_price_loading",
+  "error": "Direct final input not in immutable authority: outputs/round71/final/native_mean.npy",
+  "source_sha256": "fa1625118c2afb464744b8ca0a0ddc5f6d9247a78ae01f55ae6dc63a340480b4",
+  "source_snapshot": "outputs/research_resume_20261008/final_context_preflight_attempt1_source.py",
+  "new_fits": 0,
+  "new_CSV": false,
+  "output_receipt_written": false
+}

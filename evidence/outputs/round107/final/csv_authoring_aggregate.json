@@ -1,0 +1,21 @@
+{
+  "columns": [
+    "編號",
+    "總價元"
+  ],
+  "csv_encoding": "standard comma-delimited CRLF from exact artifact range; native CSV API unavailable",
+  "csv_sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+  "formula_count": 0,
+  "full_workbook_values_exact": true,
+  "input_json_sha256": "917f6cc676ae8cfc8c678248071e716b48f294893d52ebd439f1042512e14295",
+  "inspection_and_preview_rows_included": false,
+  "original_receipt_copied": false,
+  "rows": 47073,
+  "source_receipt": {
+    "path": "outputs/round107/final/csv_authoring_receipt.json",
+    "sha256": "5765d88873e5ad03f801c81fde512ec1cb7dc435373f9f94dea478753537d4ce"
+  },
+  "status": "artifact_typed_range_exported_to_csv",
+  "transformation": "Allowlisted aggregate receipt; embedded inspection/preview omitted",
+  "utf8_bom": true
+}

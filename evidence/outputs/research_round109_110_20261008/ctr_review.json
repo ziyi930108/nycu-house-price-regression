@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-08T06:37:14.310436+00:00",
+  "reviewer_task": "research_resume_audit_20261008",
+  "scope": "Read-only R110 source and R109/R110 plan; one immutable review JSON output only",
+  "source_sha256": {
+    "src/round110_target_borders_unit.py": "694856bbdb1c58f6bda18e84fb7ba90c28c5224bcd161f42a0e1796ee66569fc",
+    "reports/round109_110_plan.md": "6d66c70d984d1b6e407b3110c6605518732b5c1a5c05ea69fbd7cfb35b378d40"
+  },
+  "parameter_comparison": {
+    "added": [
+      "ctr_target_border_count"
+    ],
+    "changed": [],
+    "removed": [],
+    "ctr_target_border_count": 8,
+    "max_ctr_complexity": 2,
+    "simple_ctr_override": false,
+    "combinations_ctr_override": false,
+    "per_feature_ctr_override": false
+  },
+  "native_float_and_reload_review": {
+    "native_float_rtol": 1e-07,
+    "native_float_atol": 0.0,
+    "finite_float_tolerance_only": true,
+    "types_keys_list_structures_and_nonfloats_exact": true,
+    "both_models_checked_independently": true,
+    "raw_and_TWD_full_query_vectors_bytes_exact": true,
+    "actual_native_serialization_checks_await_real_fit": true
+  },
+  "target_border_structure_review": {
+    "records_grouped_by_CTR_type": true,
+    "actual_OnlineCtr_split_index_histogram": true,
+    "only_integer_indices_0_through_7_accepted": true,
+    "embedded_descriptor_1_allowed_with_global8": true,
+    "all8_indices_not_required": true,
+    "zero_realized_CTRs_allowed_and_reported": true,
+    "actual_structure_is_observational_not_accuracy_evidence": true
+  },
+  "fit_and_API_review": {
+    "single_fit_call_in_fit_predict": true,
+    "query_pool_no_label_or_sample_weight": true,
+    "R79_target_area_date_weights_and_features_unchanged": true,
+    "JSON_summary_runs_after_save_reload_prediction_checks": true,
+    "JSON_export_getters_do_not_fit_or_tune": true,
+    "returns_native_TWD_vector_and_metadata": true,
+    "no_R_S_calibration_or_submission_from_helper": true
+  },
+  "plan_review": {
+    "separate_R109_and_R110_single_variable_methods": true,
+    "R109_does_not_include_R107_SmoothL1": true,
+    "R110_preserves_max_ctr_complexity2": true,
+    "R23_synthetic_prior_attempt_disclosed": true,
+    "same_three_temporal_windows_and_predeclared_criteria": true,
+    "query_labels_reserved_for_postfit_scoring": true,
+    "v22_preserved_Private_unknown_no_auto_Kaggle": true,
+    "usage_stop_at_remaining_percent_le1": true,
+    "mechanism_qualification": "Global setting requests eight target borders; neither embedded descriptor values nor all-eight realized tree indices are required. Generalization remains unknown until fixed-window evaluation."
+  },
+  "official_source_reasoning": [
+    {
+      "url": "https://github.com/catboost/catboost/blob/v1.2.10/catboost/private/libs/options/catboost_options.cpp#L470-L480",
+      "evidence": "GPU ValidateCtr requires per-description target binarization to remain default and directs users to the global ctr_target_border_count option."
+    },
+    {
+      "url": "https://github.com/catboost/catboost/blob/v1.2.10/catboost/cuda/data/binarizations_manager.h#L206-L208",
+      "evidence": "The GPU target-binarization description is CatFeatureOptions.TargetBinarization."
+    },
+    {
+      "url": "https://github.com/catboost/catboost/blob/v1.2.10/catboost/cuda/data/binarizations_manager.cpp#L352-L385",
+      "evidence": "Borders CTR configurations iterate shared TargetBorders.size(); inference that global border configuration can affect CTR generation despite embedded serialized descriptor defaults."
+    }
+  ],
+  "local_runtime": {
+    "catboost": "1.2.10",
+    "core_py_sha256": "6bc0a210b7f62e3c1553682636a7ba2363ad0c71f6974a1030817e7d9754921e"
+  },
+  "parser_zero_fit_checks": [
+    {
+      "case": "R79_unchanged",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "case": "R110_global8_only",
+      "accepted": true,
+      "expected": true
+    },
+    {
+      "case": "nested_simple8_rejected",
+      "accepted": false,
+      "expected": true,
+      "message": "catboost/private/libs/options/catboost_options.cpp:505: Error: GPU doesn't not support target binarization per CTR description currently. Please use ctr_target_border_count option instead"
+    },
+    {
+      "case": "nested_combinations8_rejected",
+      "accepted": false,
+      "expected": true,
+      "message": "catboost/private/libs/options/catboost_options.cpp:505: Error: GPU doesn't not support target binarization per CTR description currently. Please use ctr_target_border_count option instead"
+    }
+  ],
+  "FakeModel_selfcheck": {
+    "status": "passed",
+    "synthetic_checks": [
+      "only_global_target_border_count_added",
+      "exact_original_area_date_weights",
+      "wrong_date_dtype",
+      "misordered_date_index",
+      "nonpositive_date_weight",
+      "negative_fit_price",
+      "one_fake_fit_and_no_true_fit",
+      "expected_TWD_inverse",
+      "raw_and_TWD_full_query_reload",
+      "actual_fitted_global8_complexity2_checked",
+      "observed_partial_border_usage_and_descriptor1_allowed",
+      "native_LR_subsample_serialization_rounding_recorded",
+      "legacy_params_explicit_provenance",
+      "native_wrong_ctr_rejected",
+      "native_wrong_global_border_count_rejected",
+      "native_wrong_seed_rejected",
+      "native_wrong_tree_count_rejected",
+      "native_float_rounding_beyond_tolerance_rejected",
+      "nonfloat_native_diagnostic_difference_rejected",
+      "nonfinite_native_float_rejected",
+      "native_scalar_type_change_rejected",
+      "FakeModel_abnormal_reload_LR_rejected",
+      "existing_output_rejected",
+      "saved_artifacts_exist",
+      "no_query_labels_earlystop_or_corrections",
+      "no_realized_CTR_is_reported_without_rejection",
+      "out_of_range_observed_border_index_rejected",
+      "wrong_exported_tree_count_rejected",
+      "all_input_frames_unchanged"
+    ],
+    "check_count": 29,
+    "true_model_fits": 0,
+    "fake_model_fits": 2,
+    "GPU_work": false,
+    "source_sha256": {
+      "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+      "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+      "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+      "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+      "src/round110_target_borders_unit.py": "694856bbdb1c58f6bda18e84fb7ba90c28c5224bcd161f42a0e1796ee66569fc"
+    },
+    "parameters": {
+      "iterations": 2999,
+      "depth": 8,
+      "learning_rate": 0.065,
+      "loss_function": "MAE",
+      "eval_metric": "MAE",
+      "l2_leaf_reg": 6.0,
+      "random_seed": 42,
+      "task_type": "GPU",
+      "devices": "0",
+      "thread_count": 4,
+      "boosting_type": "Plain",
+      "bootstrap_type": "Bernoulli",
+      "subsample": 0.85,
+      "random_strength": 0.5,
+      "one_hot_max_size": 8,
+      "max_ctr_complexity": 2,
+      "border_count": 128,
+      "allow_writing_files": false,
+      "gpu_ram_part": 0.75,
+      "verbose": 300,
+      "ctr_target_border_count": 8
+    }
+  },
+  "true_model_fits": 0,
+  "GPU_work": false,
+  "real_price_data_read": false,
+  "actual_trained_model_loaded": false,
+  "source_files_modified": false,
+  "blocking_findings": [],
+  "limitations": [
+    "No real GPU training or real saved-model reload was performed in this review.",
+    "Finite serialization tolerance does not relax exact full-query prediction requirements.",
+    "Official GPU source supports the mechanism; actual realized CTR usage and validation benefit must be read from later fit artifacts."
+  ]
+}

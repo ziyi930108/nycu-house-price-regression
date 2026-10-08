@@ -1,0 +1,115 @@
+{
+  "fit_rows": 134805,
+  "fit_seconds": 14.968999999997322,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/base.npy",
+      "sha256": "4ebcce0e5a4071ea6450b155f8a1c9cb9447c178e13df10ee903481d28445f4a",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "eec486a78b352deefd42bb4d89cde2b989656ad17a6e0b951e07a968fb6ad8cc"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/median.npy",
+      "sha256": "f7dcfc6495018db66dc63648d5984405e3641b6518e858e7f50bd664cd45d466",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "f966fbcbc0cc8efbf6e49926712d41c50a9d4aceabee5b86f2b03f470e2e16ba"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/native.npy",
+      "sha256": "10361322c09bd16661eb60221331e5fdbc0e76f03d77c31f37ab433b7d5cfb09",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "ba983de351fbff1590c9a987c028130c3696c7a36f7f4ee7d303c48ba7c02a50"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/reference.npy",
+      "sha256": "8c27197112202c5ca210c371bf3a4acfce9ad4df0638350e10bf584c59d54be1",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "5e1899f910b1b2d11aa7f2d19932b93e35c72ddfe3077f61360d6e9b55e42286"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/spatial.npy",
+      "sha256": "649fbd5c8795a4185ef57582d35b2bd3bd7155c4c37af8474f9c0cb04ac78e1f",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "4c529501989a8ca0568ab2a6c88f8e62e38711491ad2002b696ec80b7f281298"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round109/auxiliary/model/training.json",
+    "sha256": "195ee2c90451f8614217700e5a8adf85f235488308f587b87e7ee91b631afebb"
+  },
+  "query_labels_available": false,
+  "query_rows": 105511,
+  "same_trajectory_epoch30_layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/epoch30_base.npy",
+      "sha256": "e27deb48c4c5bfe229b30310a6e55da1c16edc0756ff0597c9360875e2a6be1c",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "5838b9c581b5e2db884a67c0104060e0af42b0be7a26c32bd5a49ff282a0d1c5"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/epoch30_median.npy",
+      "sha256": "f4ac70c6c7383de4c49b04bea64feb66d1a685cbd88d0a3b42e68f7df0059479",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "35610da01aafb24f1ea7ee21193394eb2b34b1fac1507df79a320a3ac56fdf48"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/epoch30_native.npy",
+      "sha256": "760466874b5b328728c13f7040606c18b37183152ae8c08c55e232480a759cd1",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "fcdd1e160aa17d0f464286ec7fd38bfda81a890786563f5b9bacbdf93d4063f9"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/epoch30_reference.npy",
+      "sha256": "fb14770587cc1158af4a79bf35511899e819aa6c9ffdb2633015337ad052fadf",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "c30fb99f7d7cabb4758dca976526cf99f34b69d4d0a0e6cd8a8b9f73a6406953"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round109/auxiliary/epoch30_spatial.npy",
+      "sha256": "63dd3be20c77943a71be10db93c6913b67e5a90fd72c11ad5393b05f85d69988",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "c1566c05e4eda26e0b29f8a5533ab210e6b80c118a33ca05a3a991fdce93271c"
+    }
+  },
+  "sealed_models": [
+    {
+      "path": "outputs/round109/auxiliary/model/model.pt",
+      "sha256": "1580c26eccced1dbb9d61308a5b81cdcd51977e665dc15193a799dcd35fa1d6b"
+    },
+    {
+      "path": "outputs/round109/auxiliary/model/model_epoch30.pt",
+      "sha256": "5afa0b6c95fbb1cda7f05abc4ae0ab56a65d158bd98a67862a8e7c9f07ec8b09"
+    }
+  ],
+  "stage": "auxiliary"
+}

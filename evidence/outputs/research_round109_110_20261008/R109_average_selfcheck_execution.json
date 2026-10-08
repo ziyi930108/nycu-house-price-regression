@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round109_tail_parameter_average_train.py",
+    "--cpu-unit-check"
+  ],
+  "elapsed_seconds": 3.047000000005937,
+  "exit_code": 0
+}

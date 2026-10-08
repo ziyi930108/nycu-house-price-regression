@@ -1,0 +1,61 @@
+{
+  "GPU_calls": 0,
+  "GitHub_or_git_or_network": false,
+  "actual_CSV_bytes_hashed_only_not_decoded": true,
+  "actual_R107_release_review": {
+    "path": "outputs/research_resume_20261008/final_release_review.json",
+    "sha256": "3f30526c2e7167761ca9eb08a764c64b58062db8bd2f68731f77d8ed4e47f7d0"
+  },
+  "actual_apply_or_copy_performed": false,
+  "actual_hash_records_including_manifest": 2789,
+  "actual_original_manifest_entries": 2788,
+  "actual_protected_non_navigation_files": 2785,
+  "author_review": {
+    "path": "outputs/research_resume_20261008/package_author_adversarial_review.json",
+    "sha256": "bc84ec2733be1830b004cea6c805746a77c1b464fd1324029a0ca38c1ad3c2b7"
+  },
+  "builtin_selfcheck_policy_rejections": 20,
+  "created_at_utc": "2026-10-08T07:12:27.928387+00:00",
+  "executed_checks": [
+    "actual_2788_original_manifest_records_and_379_history_exact",
+    "nonproduction_old_member_tamper_rejected",
+    "actual_R107_release_review_and_streamed_CSV_SHA_match",
+    "release_review_rejects_release",
+    "release_review_rejects_CSV",
+    "release_review_rejects_Private_score",
+    "release_review_rejects_query_or_test_labels_loaded",
+    "release_review_rejects_CSV_once_rounded_from_unrounded_median",
+    "write_new_existing_file_rejected_with_xb",
+    "generated_secret_rejected_before_open_or_mkdir",
+    "dated_navigation_keeps_original_body",
+    "dated_navigation_keeps_original_body",
+    "navigation_rejects_secret",
+    "navigation_rejects_middle",
+    "navigation_rejects_oversize",
+    "gate_disposition_mismatch_rejected_True",
+    "gate_disposition_mismatch_rejected_False"
+  ],
+  "findings_remaining": [],
+  "limits": [
+    "Full actual completion inventory/--check intentionally not run while R109/R110 evaluation remained pending.",
+    "Independent review tested policy functions and actual old-manifest/release bindings, not real package application or GitHub publication.",
+    "Author full FakeFS apply/refresh/finish test was reviewed, not repeated independently.",
+    "Pattern-based credential/data guards are bounded checks, not a proof against arbitrary encodings or malicious text.",
+    "Any source change invalidates this review and requires re-review."
+  ],
+  "new_fits": 0,
+  "partial_failure_behavior": "Exclusive xb writes preserve existing destinations. If a copy fails after earlier new files, partial new files remain as evidence; rerun preflight rejects unlisted destinations and requires explicit resolution. No atomic all-or-nothing copy or rollback is claimed.",
+  "read_scope": [
+    "stable packager source and author review",
+    "explicit old 2788-entry manifest members",
+    "R107 final release/review and their bound source hashes",
+    "actual v25 CSV streamed for SHA only"
+  ],
+  "review_elapsed_seconds": 4.171999999991385,
+  "reviewer": "research_preflight_20261008",
+  "source_sha256": {
+    "src/package_research_resume_20261008.py": "dc7428387c55b16fe5f5292b2bd0ca4798ba8ab299f74d5961de39e67c583274"
+  },
+  "status": "passed",
+  "unscored_query_y_or_new_results_read": false
+}

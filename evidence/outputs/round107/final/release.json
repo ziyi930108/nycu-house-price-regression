@@ -1,0 +1,73 @@
+{
+  "CSV": {
+    "path": "outputs/submission_v25_trial.csv",
+    "sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1"
+  },
+  "Private_score": null,
+  "Public_score": null,
+  "all_sample_ids_and_rounded_values_exact": true,
+  "authoring": {
+    "path": "outputs/round107/final/csv_authoring_receipt.json",
+    "sha256": "5765d88873e5ad03f801c81fde512ec1cb7dc435373f9f94dea478753537d4ce"
+  },
+  "automatic_Kaggle_upload_or_selection": false,
+  "clean_environment_end_to_end_retraining_verified": false,
+  "columns": [
+    "編號",
+    "總價元"
+  ],
+  "created_at_utc": "2026-10-08T06:44:28.924553+00:00",
+  "elapsed_seconds": 38.46799999999348,
+  "gate": {
+    "automatic_selection": false,
+    "exploratory_submission": {
+      "components": {
+        "at_least_two_windows_overall_improve": true,
+        "each_metric_each_window_within_quarter_percent": true,
+        "latest_both_no_worse": true,
+        "no_large_group_or_quarter_above_five_percent": true
+      },
+      "passed": true
+    },
+    "private_score": null,
+    "promotion": {
+      "Private_score": null,
+      "adoption_research_gate_passed": false,
+      "automatic_adoption": false,
+      "components": {
+        "all_three_overall_improve": false,
+        "all_three_weighted_improve": false,
+        "confirmation_at_least_half_percent": false,
+        "no_quarter_or_large_group_deterioration_above_5pct": true
+      },
+      "confirmation_fractional_improvement": 0.001102881788732388,
+      "selected_submission": "v22"
+    },
+    "selected_submission": "v22"
+  },
+  "old_protected_unchanged": true,
+  "positive_integer_prices": true,
+  "prediction_max_TWD": 13871624353.528257,
+  "prediction_min_TWD": 496397.9164528397,
+  "query_labels_used": false,
+  "request": {
+    "path": "outputs/round107/final/request.json",
+    "sha256": "8b1f1c6533009e0f30fe8258e1d3cff6fa5f10087692ef7739190845246d1bcb"
+  },
+  "round": 107,
+  "rows": 47073,
+  "same_order_as_sample": true,
+  "seal": {
+    "path": "outputs/round107/final/seal.json",
+    "sha256": "d694957d1853acaf609bc4495c51f4cea407c13c9eedcecd829d84a1ad6db5c7"
+  },
+  "selected_submission_preserved": "v22",
+  "status": "exploratory_submission_ready_not_selected",
+  "test_prediction_difference_not_MAE": {
+    "changed_rounded_rows": 13002,
+    "max_absolute_TWD": 13991169.7318089,
+    "mean_absolute_TWD": 29521.006236786397,
+    "mean_signed_TWD": -4507.859782775646
+  },
+  "version": 25
+}

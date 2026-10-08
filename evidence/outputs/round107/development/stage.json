@@ -1,0 +1,58 @@
+{
+  "fit_rows": 240316,
+  "fit_seconds": 16.078000000008615,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round107/development/base.npy",
+      "sha256": "41f8902a0ab4170213b1e470b3217855b4a54c16059f59ec44b20b4024c20718",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "9ab937cecfe57e398a6c00bd00c5290ae8224b2fc76f4a687a83ebb9f3de82f8"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round107/development/median.npy",
+      "sha256": "ad54ee70e82202136deab148479795bed623021c4bc56df5b3fccd573c25c71e",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "9bd5a7d5a5fec77fa3264f815adb6e9aeb2a6a749b9a0aff325ac895581c6fec"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round107/development/native.npy",
+      "sha256": "3d949440c8857eb3fbb4b6fbaeb3306512a6c5a0eddd786892e34cae13b367d5",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "b42bb91f7b0958f690b77c0bf886bdfd11351fbd44b7ee9c67897a23e7326735"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round107/development/reference.npy",
+      "sha256": "fe8be3062bdd394e824372c9dd4e38f1c28f67d92d4af0cc85a5ef6e6979453e",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "2d55ee3dcbf24787fbbbeca8b235c5c8dc0bfb0fd0b11c034801543a49107ccb"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round107/development/spatial.npy",
+      "sha256": "c9d76416af8c724f6a416c83a4fc21e0bb80027cc842bc62f0b8e874a5a563fc",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "7b7f89bf421a1b7445583842ef162aded2c2fc6e86d276c8945927e6f821f540"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round107/development/model/training.json",
+    "sha256": "7cfae31459959a99264db350d24fba0f283d9b3a36253197becd7a6965a23b19"
+  },
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "stage": "development"
+}

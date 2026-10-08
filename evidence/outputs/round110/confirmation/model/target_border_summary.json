@@ -1,0 +1,44 @@
+{
+  "all_eight_border_indices_required": false,
+  "ctr_records_without_target_border_idx": 0,
+  "embedded_descriptor_TargetBorderCount_8_required": false,
+  "export_and_summary_seconds": 3.360000000000582,
+  "exported_model_json_bytes": 121814237,
+  "exported_model_json_retained": false,
+  "exported_model_json_sha256": "4d6ca894679df006026f9947fb7af0755a95293a11699f49b85d67a1f0eb6fab",
+  "global_ctr_target_border_count": 8,
+  "native_ctr_feature_count": 2287,
+  "native_ctr_target_border_idx_histogram_by_type": {
+    "Borders": {
+      "0": 163,
+      "1": 343,
+      "2": 326,
+      "3": 302,
+      "4": 237,
+      "5": 282,
+      "6": 273,
+      "7": 257
+    },
+    "FeatureFreq": {
+      "0": 104
+    }
+  },
+  "observed_usage_not_accuracy_or_generalization_evidence": true,
+  "online_ctr_split_count": 8195,
+  "online_ctr_target_border_idx_histogram": {
+    "0": 1923,
+    "1": 1008,
+    "2": 893,
+    "3": 823,
+    "4": 715,
+    "5": 878,
+    "6": 984,
+    "7": 971
+  },
+  "tree_count": 2999,
+  "tree_split_type_counts": {
+    "FloatFeature": 15579,
+    "OneHotFeature": 218,
+    "OnlineCtr": 8195
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "src/round107_108_research.py",
+    "--train"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 272.0309999999881,
+  "log": "outputs\\research_resume_20261008\\six_fits.log",
+  "log_sha256": "48b3badf5113cc746c61a9570acc7cdf6108e55fe9c7cfca5c7c18acd68eaa29"
+}
