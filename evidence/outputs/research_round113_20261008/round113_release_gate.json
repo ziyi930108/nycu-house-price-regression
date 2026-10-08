@@ -1,0 +1,46 @@
+{
+  "Private_score": null,
+  "Public_score": null,
+  "candidate_gates": {
+    "107": {
+      "components": {
+        "no_quarter_or_large_group_above_5pct": true,
+        "overall_regression_at_most_0_25pct": true,
+        "weighted_regression_at_most_0_25pct": true
+      },
+      "passed": true
+    },
+    "111": {
+      "components": {
+        "no_quarter_or_large_group_above_5pct": true,
+        "overall_regression_at_most_0_25pct": true,
+        "weighted_regression_at_most_0_25pct": true
+      },
+      "passed": true
+    },
+    "112": {
+      "components": {
+        "no_quarter_or_large_group_above_5pct": false,
+        "overall_regression_at_most_0_25pct": false,
+        "weighted_regression_at_most_0_25pct": false
+      },
+      "passed": false
+    }
+  },
+  "candidates": [
+    107,
+    111,
+    112
+  ],
+  "new_CSV": false,
+  "plan": {
+    "path": "reports/round113_plan.md",
+    "sha256": "a21116136190aadf94d89329dd1b9dd98afb62dd493ef6863b356f50ea01dc2c"
+  },
+  "results": {
+    "path": "outputs/round113/results.json",
+    "sha256": "5e03e54975a96cac72d0a897448a625d202479eced28a5fc69cbebffb61ca903"
+  },
+  "selected_submission": "v22",
+  "status": "fixed_extra_origin_evaluated"
+}

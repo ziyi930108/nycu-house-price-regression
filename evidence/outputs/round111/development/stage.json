@@ -1,0 +1,81 @@
+{
+  "candidate_round": 111,
+  "fit_rows": 240316,
+  "fit_seconds": 32.78100000000268,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round111/development/base.npy",
+      "sha256": "7fc43ca6effefc5f562eb3a8e6a6f1d59eb63a4c7ecf8408c1be424a417e1479",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "40b49a3de4d564db3a55119127923229b877d8eeb3d8f6e7089d7fc23a9b9864"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round111/development/median.npy",
+      "sha256": "744552f6b3bfa2aaf150de186c6e6dac3d9ae2e8a0adac67bf4d974be22eca86",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "5d0f5e8edfdf5d1362e51779005c0b31d2cd3fdf05b93efec9ef9f71c80e5eb2"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round111/development/native.npy",
+      "sha256": "bcef1e8b6c08501eb9747e11cf92a888b7aa7906443aa0054a24ff4ef958f480",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "b1846a87d4a38e3ea3042eae3e4f97f90d37ba51ef3cec95d97b91d700f42612"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round111/development/reference.npy",
+      "sha256": "827ddf307e98a8bf8121aec100da7d762324c6e91aef4e48b2d9737dd5c66304",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "5d36415da679bada2d1792f48eba68013b3e9ffb265734e85edb3dd2443a5735"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round111/development/spatial.npy",
+      "sha256": "bd6b8e0373111d037f1cc7f02f03ae5680016849ad1edc714d97eea06d06f250",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "f2fb004bbbcb2e9a343d31d0b9f07460cf3cec3fcb44fc17df67e27377349421"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round111/development/model/training.json",
+    "sha256": "71695f7904a7eeba6ca93f8b95bd8da1cf886d7eae1195e03760bc7cbdb387eb"
+  },
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "sealed_models": [
+    {
+      "path": "outputs/round111/development/model/model.pt",
+      "sha256": "9c5f41adb0d58e5a926f3a239a3d0a6b111b4d1bb086177329a3b363264f0c7b"
+    },
+    {
+      "path": "outputs/round111/development/model/predictions_ratio.npy",
+      "sha256": "1931e0c62d767025f235277872a66044937431048fce4e29f35d3bcff7b1c7fb"
+    },
+    {
+      "path": "outputs/round111/development/model/predictions_twd.npy",
+      "sha256": "bcef1e8b6c08501eb9747e11cf92a888b7aa7906443aa0054a24ff4ef958f480"
+    },
+    {
+      "path": "outputs/round111/development/model/run.json",
+      "sha256": "b719cbc7f77de0abcd3a46562ff8a3d23186bb252b0138d42a12e62f554b7eef"
+    },
+    {
+      "path": "outputs/round111/development/model/training.json",
+      "sha256": "71695f7904a7eeba6ca93f8b95bd8da1cf886d7eae1195e03760bc7cbdb387eb"
+    }
+  ],
+  "stage": "development"
+}

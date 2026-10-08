@@ -1,0 +1,10 @@
+{
+  "parent": "src/round109_110_research.py",
+  "parent_sha256": "1a6595f3b3bb7557c1326ab12db028a134a8738e5f1802be770da8dc661ebf52",
+  "target": "src/round111_112_research.py",
+  "target_sha256": "b6181ebf11bfbd230d4ec4d1c4af66655fb54b503f376eff060f59b57fc0ec25",
+  "status": "source_prepared_no_fit",
+  "old_source_modified": false,
+  "CPU_compile_passed": true,
+  "new_model_fits": 0
+}

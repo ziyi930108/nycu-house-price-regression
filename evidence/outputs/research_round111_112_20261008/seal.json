@@ -1,0 +1,39 @@
+{
+  "elapsed_seconds": 1111.5469999999914,
+  "query_scores_computed": false,
+  "records": {
+    "111": {
+      "auxiliary": {
+        "path": "outputs/round111/auxiliary/stage.json",
+        "sha256": "8b2047464dbc4b412a8c7c9d290ba7410c31d8fd5cfb22c4a49895c0be8e666b"
+      },
+      "confirmation": {
+        "path": "outputs/round111/confirmation/stage.json",
+        "sha256": "faa7717c54602571bcca1af6841d5a80cd33a96b99d09606d0bc478974ae8844"
+      },
+      "development": {
+        "path": "outputs/round111/development/stage.json",
+        "sha256": "172d11dcc083d27037a4827eb31536ee1ef1ccc46f40aa26bd068d7a62ac9797"
+      }
+    },
+    "112": {
+      "auxiliary": {
+        "path": "outputs/round112/auxiliary/stage.json",
+        "sha256": "978ce8e62ee98791de3edcc3ed5b88e1a0f297c1f4afacc04d8223bda90f6a72"
+      },
+      "confirmation": {
+        "path": "outputs/round112/confirmation/stage.json",
+        "sha256": "244ef91ab66d6ea1db71b6a5f73778aee52522d0080e2e6e5309e7635f1d810f"
+      },
+      "development": {
+        "path": "outputs/round112/development/stage.json",
+        "sha256": "c7bd42efcde8af6b6147e93b33c18b43b40a3e89d30fa15703a0cd1c6fe916c3"
+      }
+    }
+  },
+  "request": {
+    "path": "outputs/research_round111_112_20261008/request.json",
+    "sha256": "991c86c5ede98c3f9bebae7a9c6c9fb6fc96d5d9a78f639bf5dd61adc8c10109"
+  },
+  "status": "six_models_all_query_predictions_sealed_unscored"
+}

@@ -1,0 +1,85 @@
+{
+  "candidate_round": 112,
+  "fit_rows": 240316,
+  "fit_seconds": 286.29700000000594,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round112/development/base.npy",
+      "sha256": "3e2278a49e2addf6506136d60ba4c1953f5a18f2555227e2f7985069017814b0",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "8a6e3d0a61710f1987fc0c2ea0f12d2a3364ead61140863b6a9e9800367603ac"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round112/development/median.npy",
+      "sha256": "17ac3d0d2fb7d34c86981046b9d0634e2e2c72e17c16ec1f1a839286ebfcef68",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "0b8d648c776c27cc923eccf38eb4babc5e4fb86c356d8b14e9d84dbff4fedb87"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round112/development/native.npy",
+      "sha256": "d6c80a1ce673487027949e741e320fb89d0881213f3655e34242a4a97d209dc6",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "ccc1dffee4a069e475271f541d686e06fe63d01971669986bdfb702e323b1283"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round112/development/reference.npy",
+      "sha256": "eac60f08d0f925b55ed7ddeb20edcd5a617aa4a7139c0ee4e4f3fcd822e27bf3",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "9f19fe4c03092780dc8c24239555dd43c9f2a7af486dcf321779809ec8eed702"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round112/development/spatial.npy",
+      "sha256": "fd8f145ce7b64eda3d09816e2b6387f1fd1059bb746fa6b8d298ea20eac647b2",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "065fb27b6d50d7526b40955456ee05dcdeac2fad4df586906dc42f97f255ddc0"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round112/development/model/metadata.json",
+    "sha256": "2f81d4c5863819728a7a2bfc6d1be5519c25f0966b895e2e6e3be3b9fc123393"
+  },
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "sealed_models": [
+    {
+      "path": "outputs/round112/development/model/feature_state.json",
+      "sha256": "4619ddd568eb126d2970102dcc9e27719efc54e2de11d358e1c464a292212744"
+    },
+    {
+      "path": "outputs/round112/development/model/metadata.json",
+      "sha256": "2f81d4c5863819728a7a2bfc6d1be5519c25f0966b895e2e6e3be3b9fc123393"
+    },
+    {
+      "path": "outputs/round112/development/model/model.cbm",
+      "sha256": "1b73ead3938c92cb76e08f147fa59572a4986b4b224ad14018df2f8246e0cda5"
+    },
+    {
+      "path": "outputs/round112/development/model/native.npy",
+      "sha256": "d6c80a1ce673487027949e741e320fb89d0881213f3655e34242a4a97d209dc6"
+    },
+    {
+      "path": "outputs/round112/development/model/raw.npy",
+      "sha256": "8293613d4c3d3493b1206e7ca451255cdbd10d1d13901aaea0d7a5f8094caf31"
+    },
+    {
+      "path": "outputs/round112/development/model/started.json",
+      "sha256": "ac2948d40e33b8b24f5acc8715949dd2fa44771c6ef83f0583bbda75ea415956"
+    }
+  ],
+  "stage": "development"
+}

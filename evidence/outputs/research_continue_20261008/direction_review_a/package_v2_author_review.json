@@ -1,0 +1,34 @@
+{
+  "actual_apply_or_fullcheck": false,
+  "blocking_author_findings_remaining": [],
+  "changes": [
+    "R113 mandatory exact request/seal/training_execution/evaluation_execution/results/release_gate/plan/review_tool",
+    "Exactly107/111/112 complete native model lists, stage/metadata/evaluation refs and complete metadata projection",
+    "Explicit manual components/pass/bothpoint match actual results/gate, with boolean components",
+    "No new fit/GPU/PublicPrivate/newCSV/selection changes and protected records verify",
+    "Sidecar supports bareSHA or single exact same-directory JSON filename; rejects traversal/multifile"
+  ],
+  "deliverables_writes": 0,
+  "file_copies": 0,
+  "fit_or_score": false,
+  "independent_review_required": true,
+  "query_labels_read": false,
+  "selfcheck": {
+    "path": "outputs/research_continue_20261008/direction_review_a/package_v2_author_selfcheck.json",
+    "sha256": "e6a00d22347204729ef947fda88b785670d3fcfa4c2f9d27fe69706d6dc408e8"
+  },
+  "source": {
+    "path": "src/package_research_continue_20261008_v2.py",
+    "sha256": "a9071908de685677bcbd1bc726d983c6fe5052f953afd1ea23bbbce587858b54"
+  },
+  "status": "author_source_review_passed_not_independent",
+  "unchanged": [
+    "R111112scientific gates and R113 thresholds",
+    "3017oldhash/379history/13production protection",
+    "private/row/state/price exclusion",
+    "datednavigation complete oldbody retention",
+    "non-atomic refusal to rerun",
+    "scope111113"
+  ],
+  "why_v2": "Independent review identified that v1 R113 receipt did not bind exact request/seal/executions, complete native artifact sets, full metadata/manual gates and privacy/protection flags. V1 and its own receipts remain unchanged and are not approval to apply."
+}

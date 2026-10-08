@@ -1,0 +1,81 @@
+{
+  "candidate_round": 111,
+  "fit_rows": 321550,
+  "fit_seconds": 43.171999999991385,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round111/confirmation/base.npy",
+      "sha256": "9e6440fb4c493a26e1c56a23667c666bab0599f8519133965bae4359a6c0681a",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "3169fb02bf421a09a99af967d5b0f7bab2449e9308516f873dcdcea94c26ff9b"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round111/confirmation/median.npy",
+      "sha256": "72dfeccc6e2ebc0f354e446d9e9a34636ccee6a925faa79d6921f77d72df670a",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "d391cd079abe7e458e3631ebda0d6b6a00b85cf9ba12ce74d408e2fc37337d15"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round111/confirmation/native.npy",
+      "sha256": "3612024f0fd084ef2fa678ab9f5659dbbca9c41a61ddc3ddb49e1b514af029d8",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "cbbce25cbad82c1dc19686af71ceba1182e65eaabbf9b08a27bf2f5c4fd10c8c"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round111/confirmation/reference.npy",
+      "sha256": "a08a0e6287bb170e59d9aacdf4a1924744df7eb1d06844331e9cfa24d0d2a5b6",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "1e6484df5f6803c22274a1e67829f1e62d3b2c4c5e3756cb8fba35378c964b42"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round111/confirmation/spatial.npy",
+      "sha256": "8d64d3f970adb6a50026c47c21dc1989d730c14bd275f2eeed5c5f12cc0544c8",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8ba97a2c3a929f7c34ce034b3bbbfe1ad2eaf9b2ae974de5cd15c1525fbff834"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round111/confirmation/model/training.json",
+    "sha256": "cf5769f98962e051ce7990ee29b48eb4a3ecaa01e7c629a8cf483f6cc340e0c7"
+  },
+  "query_labels_available": false,
+  "query_rows": 133697,
+  "sealed_models": [
+    {
+      "path": "outputs/round111/confirmation/model/model.pt",
+      "sha256": "6fef4a15960e72e2d646284e711a04f461595a673da9635fee7c93746ae8a758"
+    },
+    {
+      "path": "outputs/round111/confirmation/model/predictions_ratio.npy",
+      "sha256": "cf7a4425db237094ea8c45d397a8341d4cac0184af417da00f9b3d9f0d2fffa5"
+    },
+    {
+      "path": "outputs/round111/confirmation/model/predictions_twd.npy",
+      "sha256": "3612024f0fd084ef2fa678ab9f5659dbbca9c41a61ddc3ddb49e1b514af029d8"
+    },
+    {
+      "path": "outputs/round111/confirmation/model/run.json",
+      "sha256": "c2bc3d6926c57f040ff6e2c8181ed0d18e734a8a4cf013ee62c58ea3207170a3"
+    },
+    {
+      "path": "outputs/round111/confirmation/model/training.json",
+      "sha256": "cf5769f98962e051ce7990ee29b48eb4a3ecaa01e7c629a8cf483f6cc340e0c7"
+    }
+  ],
+  "stage": "confirmation"
+}

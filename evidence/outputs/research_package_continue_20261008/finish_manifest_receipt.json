@@ -1,0 +1,12 @@
+{
+  "copy_manifest_sha256": "2e53a1b62ff64fd7d3c3cf3f0776869860654d6fa67fe021e4c9e7138d8cc6a7",
+  "created_at_utc": "2026-10-08T08:47:28.549915+00:00",
+  "git_or_network": false,
+  "navigation": {
+    "HANDOFF.md": "2bcbbe021eab5815c9269e72847b82b89381ac540f865cd1cc25183cbc62f6b0",
+    "README.md": "3bc9df77e11180a542d7b1d79a4ad0d0388cbe8dcfbc182474a40d0d98e825a6",
+    "research/README.md": "c4a3363e691743a05e02b9c15d110ee757f74f9c02b80fccbc999848a6a4ff90"
+  },
+  "protected_files_unchanged": true,
+  "status": "dated_navigation_finish_local_only"
+}

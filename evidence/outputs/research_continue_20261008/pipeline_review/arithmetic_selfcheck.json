@@ -1,0 +1,25 @@
+{
+  "GPU_calls": 0,
+  "check_count": 14,
+  "checks": [
+    "array_record_file_projection",
+    "exploratory_two_improvements_latest_equal",
+    "only_one_improvement_rejected",
+    "latest_any_regression_rejected",
+    "quarter_percent_endpoint_inclusive",
+    "quarter_percent_excess_rejected",
+    "half_percent_strong_endpoint",
+    "half_percent_excess_strong_rejected",
+    "five_percent_endpoint_allowed",
+    "large_city_excess_flagged",
+    "small_city_excluded_from_gate",
+    "quarter_all_support_checked",
+    "secondary_control_label",
+    "different_group_support_rejected"
+  ],
+  "new_fits": 0,
+  "price_data_loaded": false,
+  "query_labels_loaded": false,
+  "status": "passed",
+  "synthetic_values_only": true
+}

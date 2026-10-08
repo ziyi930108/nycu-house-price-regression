@@ -1,0 +1,23 @@
+{
+  "elapsed_seconds": 581.4689999999973,
+  "query_scores_computed": false,
+  "records": {
+    "107": {
+      "path": "outputs/round113/R107/stage.json",
+      "sha256": "c7faf4c9203687fb9ecfd4823b01153d23a18c59fc25c51fed5a8caaedaa9e0b"
+    },
+    "111": {
+      "path": "outputs/round113/R111/stage.json",
+      "sha256": "3b8f9201f521559546d309c07728e0d4c55987ea01a5349dcfd3a7a336fdbc04"
+    },
+    "112": {
+      "path": "outputs/round113/R112/stage.json",
+      "sha256": "5a42c749d879131fdec05794047cf1319b5dfe22e47d4ef975d3ffdf9f1ce6b1"
+    }
+  },
+  "request": {
+    "path": "outputs/round113/request.json",
+    "sha256": "935db0256eb127234099c9a6937537271d97e9539f4509dba11328fd5199d3e5"
+  },
+  "status": "three_offset_models_all_query_predictions_sealed_unscored"
+}

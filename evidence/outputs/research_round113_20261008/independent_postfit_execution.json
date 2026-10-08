@@ -1,0 +1,37 @@
+{
+  "GPU_work": false,
+  "automatic_retry": false,
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\outputs\\research_round113_20261008\\verify_completed.py",
+    "--evaluation-complete"
+  ],
+  "elapsed_seconds": 102.11000000000058,
+  "evaluation_execution": {
+    "path": "outputs/research_round113_20261008/evaluation_execution.json",
+    "sha256": "962c8a4452d4fc22ba883d1e7ad7ed2d1fb77819d051dfac37fa1d0227e8a821"
+  },
+  "exit_code": 0,
+  "failure": null,
+  "launcher": {
+    "path": "outputs/research_round113_20261008/launch_independent_postfit.py",
+    "sha256": "20a450cf31836f92f73f3ca3282780d55364ffb3b2d97a6ef331d51b886d0588"
+  },
+  "log": {
+    "path": "outputs/research_round113_20261008/postfit_review.log",
+    "sha256": "4027f7489d0d11a2c77715686046374942a2ae4c3b4098cc5b5d10ac5f836854"
+  },
+  "new_model_fits": 0,
+  "postfit_review": {
+    "path": "outputs/research_round113_20261008/postfit_review.json",
+    "sha256": "cbd93b81c572649b42dfbef4582c72e9c29eefef207143970a738b447d19eb39"
+  },
+  "review_tool": {
+    "path": "outputs/research_round113_20261008/verify_completed.py",
+    "sha256": "ac91cb7d579f889c7f50afdcda70986ad2474893d9ea8c4c77749b82d83c8f5f"
+  },
+  "status": "independent_CPU_postfit_execution"
+}

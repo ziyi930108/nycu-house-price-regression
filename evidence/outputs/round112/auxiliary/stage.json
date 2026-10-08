@@ -1,0 +1,85 @@
+{
+  "candidate_round": 112,
+  "fit_rows": 134805,
+  "fit_seconds": 284.32799999999406,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round112/auxiliary/base.npy",
+      "sha256": "d330aa6c0f6539378802c9f72be4379a89f48dd69146726a2b9e1d0af7d8b3f4",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "a2c23c0f87b3b5c65a1328654fcfbca1a343f54a2ea2f5516e46c555c53befe5"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round112/auxiliary/median.npy",
+      "sha256": "ecd5080bc5554d2c70b3afa2ce62a4a8e407361da138908e704ef89d10b15d34",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "8efc720a398cc638c19a54ff35fc4088ec9e2df40e7ef85387fa4c2009e7b943"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round112/auxiliary/native.npy",
+      "sha256": "80bac8740f2371227f870335712eac9a8544aadc01da271aea98cfe09d8b4b5a",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "dbb1aee82ec2974e7e26f50ac6310561c91eb7579908f02c1a92b5345c90e538"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round112/auxiliary/reference.npy",
+      "sha256": "4509fa85e05b5c7d29dd67f39441138833ae15ff42b0d032b4d9d189cc259be4",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "f0bb06a2e3bd65551b18557401367bf4e62aca35695f4c28a8a6a077bb9339f2"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round112/auxiliary/spatial.npy",
+      "sha256": "8be97a98fe13fb2f6bfd719463137520ee5d702308dc4de96b813c2d19d2b696",
+      "shape": [
+        105511
+      ],
+      "values_sha256": "ec925c806c0afaa39c91d0a2b584fb9dddc263fac96a546004ac5d434fd1e680"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round112/auxiliary/model/metadata.json",
+    "sha256": "9d9a66cb2cfdfb36700547dd0667673b06514e251f05422f43455143c13e3a0a"
+  },
+  "query_labels_available": false,
+  "query_rows": 105511,
+  "sealed_models": [
+    {
+      "path": "outputs/round112/auxiliary/model/feature_state.json",
+      "sha256": "ed3cc8c603643a1731e2c9ecb7a01e188492308daf67f171c4e7526990f38aa0"
+    },
+    {
+      "path": "outputs/round112/auxiliary/model/metadata.json",
+      "sha256": "9d9a66cb2cfdfb36700547dd0667673b06514e251f05422f43455143c13e3a0a"
+    },
+    {
+      "path": "outputs/round112/auxiliary/model/model.cbm",
+      "sha256": "5a5cb9349f7b5a84443beca702a3bf00b6b0dac5ce869ceba237c48acde53bd5"
+    },
+    {
+      "path": "outputs/round112/auxiliary/model/native.npy",
+      "sha256": "80bac8740f2371227f870335712eac9a8544aadc01da271aea98cfe09d8b4b5a"
+    },
+    {
+      "path": "outputs/round112/auxiliary/model/raw.npy",
+      "sha256": "d5162ff4c1952d3b1818f78236a4382f75affc72ddb091a61a89f27e0a790d54"
+    },
+    {
+      "path": "outputs/round112/auxiliary/model/started.json",
+      "sha256": "b0be8539c80a7ffcc1e490cf4a394138ed7d0dfd1f06dd05fb9b3972ab4059cb"
+    }
+  ],
+  "stage": "auxiliary"
+}

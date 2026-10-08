@@ -1,0 +1,15 @@
+{
+  "created_at_utc": "2026-10-08T07:43:08.4868839Z",
+  "request": "ok你繼續直到剩餘用量剩下20%",
+  "scope": "Continue model research and trial candidates; retain v22 selection and presentation",
+  "stop_remaining_percent": 20,
+  "supersedes_remaining_percent": 1,
+  "initial_used_percent": 12,
+  "initial_remaining_percent": 88,
+  "initial_credits_balance": "47468.4195640000",
+  "no_reset_or_credits": true,
+  "no_kaggle_upload_or_selection": true,
+  "no_project_training_process_found": true,
+  "goal_status": "active",
+  "source": "direct human user request 2026-10-08"
+}

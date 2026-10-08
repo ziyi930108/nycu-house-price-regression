@@ -1,0 +1,72 @@
+{
+  "GPU_calls": 0,
+  "blocking_findings": [],
+  "checks": {
+    "path": "outputs/research_continue_20261008/pipeline_review/final_preflight_checks.json",
+    "sha256": "27165856525d77095516525099a3fdbead368a9a476eebef0838ab9e3ba1e60b"
+  },
+  "created_at_utc": "2026-10-08T07:56:54.375737+00:00",
+  "formal_launcher_selfchecks_already_performed": false,
+  "formal_launcher_selfchecks_required_before_freeze": true,
+  "limits": [
+    "No actual new native model/checkpoint, stage seal or query score exists in this preflight.",
+    "CPU author self-check execution supplements independent source review; it is not independent ML accuracy evidence.",
+    "Full input-file SHA verification is required by freeze/stage/seal; this review did not reload original NPZ payloads.",
+    "Reused annual windows and saved-model controls do not remove selection or seed variation.",
+    "Postfit independent audit and separate fullfit/release preflight remain required."
+  ],
+  "new_fits": 0,
+  "original_files_modified": false,
+  "query_labels_loaded": false,
+  "review_tool": {
+    "path": "outputs/research_continue_20261008/pipeline_review/finish_preflight.py",
+    "sha256": "2171c3eebdad09e781e54439828426ca85c6988a6c7ab1fbe578a79dd43750e3"
+  },
+  "reviewed_launch_contract": {
+    "path": "outputs/research_round111_112_20261008/launch.py",
+    "sha256": "7f358dd979fead86c5be5999307063468f48713dbf48c8e4475b0ea786b99c79"
+  },
+  "scope": "Independent source/plan review plus CPU synthetic contracts before freeze; not actual housing fit/evaluation approval.",
+  "source_sha256": {
+    "reports/round111_112_plan.md": "3234fa23aeab952f335f4dbf66b14e012df38d5b601f7cee8f80dfc4cae76649",
+    "src/house_features.py": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round100_temporal_prior_evaluate_v2.py": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+    "src/round104_composition.py": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0",
+    "src/round111_112_research.py": "5eca9b030e0809490c7e218c3dc0c5b51c918f88d99b39c728de7d5d936eb85c",
+    "src/round111_residual_prior_train.py": "318aae73904ceb8c02fdf42107bd80db4388d35717cdd123e5085f8ec298f0db",
+    "src/round112_ordered_unit.py": "c8b6b64577b57c3b5c4e5ff8bde0accfe72866d1e5b6d4338746dd6ebaff3b73",
+    "src/round12_experiment.py": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+    "src/round12_log_geo.py": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round33_reproduction.py": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+    "src/round35_reproduction.py": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+    "src/round36_combination.py": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+    "src/round38_fixed_average.py": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+    "src/round39_city_road_experiment.py": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round47_nn_encode.py": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round48_nn_experiment.py": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round6_common.py": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+    "src/round6_evaluate.py": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round6_prepare_geo.py": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+    "src/round8_experiment.py": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+    "src/round8_spatial_reference.py": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "status": "passed",
+  "workflow_review": {
+    "path": "outputs/research_continue_20261008/pipeline_review/pipeline_review.json",
+    "sha256": "621624b5e060aa1de42aa7410c19dab954af8b8f387240b5f844d6fc7642210f"
+  }
+}

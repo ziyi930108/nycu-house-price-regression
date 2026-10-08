@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round107_weighted_smooth_train.py",
+    "--cpu-unit-check"
+  ],
+  "elapsed_seconds": 4.405999999988126,
+  "exit_code": 0,
+  "source_sha256": {
+    "src/round107_weighted_smooth_train.py": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a"
+  }
+}
