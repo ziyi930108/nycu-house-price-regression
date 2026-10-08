@@ -1,0 +1,22 @@
+{
+  "elapsed_seconds": 177.875,
+  "exit_code": 0,
+  "failure": null,
+  "new_CSV": false,
+  "new_fits": 0,
+  "new_prior_builds": 0,
+  "query_labels_used_for_scoring_only": true,
+  "request": {
+    "path": "outputs/round117_v2/request.json",
+    "sha256": "7effb37a1e5d0b7178a1c0876a72dec25408f29a558104d8148123cc6e68e243"
+  },
+  "seal": {
+    "path": "outputs/round117_v2/seal.json",
+    "sha256": "6c8aaed338cfe5a18924190cd8b881958e381f4900082c36fca5a27159b07203"
+  },
+  "training_already_finished_before_scoring": true,
+  "training_execution": {
+    "path": "outputs/research_round117_v2_20261008/training_execution.json",
+    "sha256": "5406b2433f3eab9f908ccf71c71a8bcab4346c05699ca458a74853de17d1e717"
+  }
+}

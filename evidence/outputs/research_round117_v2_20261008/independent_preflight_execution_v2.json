@@ -1,0 +1,35 @@
+{
+  "status": "independent_CPU_source_metadata_preflight_execution",
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\outputs\\research_round117_v2_20261008\\independent_preflight.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 18.812000000005355,
+  "review_tool": {
+    "path": "outputs/research_round117_v2_20261008/independent_preflight.py",
+    "sha256": "9f8f3d1fac431f8204884bc9216230ac775c06bbd015bb64364f6f696b010ff2"
+  },
+  "source_stable": true,
+  "log": {
+    "path": "outputs/research_round117_v2_20261008/independent_preflight_v2.log",
+    "sha256": "d80368c652b7af8442b03c0e3535c46c273ac1e0f79dd1468c5392eca796ac26"
+  },
+  "new_model_fits": 0,
+  "new_prior_builds": 0,
+  "GPU_work": false,
+  "real_context_replay_repeated": false,
+  "prior_failed_execution": {
+    "path": "outputs/research_round117_v2_20261008/independent_preflight_execution.json",
+    "sha256": "1afc4a651c6cda70c82abe52dd198a68a5284fc38b836dd5999b354dd8ea6ff1"
+  },
+  "prior_failure_reason": "Torch environment lacks pandas; failed at import, before source/data checks or model work",
+  "automatic_retry": false,
+  "preflight_review": {
+    "path": "outputs/research_round117_v2_20261008/preflight_review.json",
+    "sha256": "806ef05753985a85dbc3d313b20c3cf00ee617bc0fb273830e82664be39d0c9b"
+  }
+}

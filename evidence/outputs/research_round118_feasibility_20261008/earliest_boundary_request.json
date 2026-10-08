@@ -1,0 +1,12 @@
+{
+  "allowed_deserialization": "original pureX87frame then only trade_day_index; canonical standaloneint64 mapping; aggregateJSON",
+  "input_sha256": {
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/geography/osm_2021/audit.json": "d77c29105db2d030ee450b1508fd36d6505d54faf2d6837a55fa034fcb8db548",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "outputs/round98_artifact_inventory/results.json": "11eccec76cee77b5d660bf60eb1f9679b0cb71c9cb1ba4a5d044dd79df54b359",
+    "reports/feature_schema.json": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa"
+  },
+  "no_price_prediction_model_private_state_or_NPZ_reads": true,
+  "root_explicit_final_date_coverage_request": "2021-01-03 through2021-08-10, derived from timestamp not prices/scores; no new experiment selected"
+}

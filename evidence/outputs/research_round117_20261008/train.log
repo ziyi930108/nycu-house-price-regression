@@ -1,0 +1,38 @@
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+{"level": "project", "assigned_rows": 24776, "reference_groups": 3611}
+{"level": "address", "assigned_rows": 3679, "reference_groups": 2561}
+{"level": "street_section", "assigned_rows": 8856, "reference_groups": 1718}
+{"level": "locality", "assigned_rows": 1010, "reference_groups": 874}
+{"level": "street", "assigned_rows": 3061, "reference_groups": 1652}
+{"level": "district_style", "assigned_rows": 29073, "reference_groups": 338}
+Traceback (most recent call last):
+  File "C:\NYCU_ML\src\round117_research.py", line 759, in <module>
+    elif args.stage: stage(args.stage)
+                     ^^^^^^^^^^^^^^^^^
+  File "C:\NYCU_ML\src\round117_research.py", line 486, in stage
+    meta = c.read(folder / 'model/training.json'); check_metadata(meta, r, origin, prep)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\NYCU_ML\src\round117_research.py", line 393, in check_metadata
+    c.need(meta['complete_source_sha256'] == {k: r['source_sha256'][k] for k in parent_names}
+                                                 ~~~~~~~~~~~~~~~~~~^^^
+KeyError: 'src/round52_nn_train.py'
+Traceback (most recent call last):
+  File "C:\NYCU_ML\src\round117_research.py", line 758, in <module>
+    elif args.train: train()
+                     ^^^^^^^
+  File "C:\NYCU_ML\src\round117_research.py", line 517, in train
+    c.need(process.returncode == 0, 'Origin failed, no automatic retry: ' + origin)
+  File "C:\NYCU_ML\src\round100_contract.py", line 34, in need
+    raise ValueError(message)
+ValueError: Origin failed, no automatic retry: development

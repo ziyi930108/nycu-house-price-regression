@@ -1,0 +1,13 @@
+{
+  "status": "interpretation_clarification_without_original_mutation",
+  "results": {
+    "path": "outputs/round114/results.json",
+    "sha256": "98c5253ed55a9acea5da5688abfc12fc6b1999cc5225e8d997e309a6789be735"
+  },
+  "original_field": "stages.*.raw_signed_total_diagnostic_only.query_y_used_for_diagnostics=false",
+  "scope_of_original_false": "Pre-scoring native negative-total/projection count and magnitude statistics copied from sealed model metadata.",
+  "overall_mae_uses_query_labels": true,
+  "overall_mae_computed_only_in_post_seal_evaluation": true,
+  "original_results_source_and_gates_unchanged": true,
+  "no_fit_or_query_vector_changes": true
+}

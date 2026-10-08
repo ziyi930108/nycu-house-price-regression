@@ -1,0 +1,21 @@
+{
+  "GPU_work": false,
+  "actual_copy_or_formal_package_check": false,
+  "actual_deliverables_FS_reads_or_writes": false,
+  "checks": [
+    "complete_memory_apply_refresh_dated_navigation_finish_exact3238_members",
+    "second_memory_finish_refuses_overwrite",
+    "injected_memory_copy_failure_preserves_complete_and_partial_outputs",
+    "partial_memory_rerun_refuses_unlisted_destinations_without_writes"
+  ],
+  "new_model_fits": 0,
+  "review_tool": {
+    "path": "outputs/research_continue_20261008/package_four_origins_memory_apply_checks.py",
+    "sha256": "0adbfae2841ef24364195df5f4cbb4a84d14bd156494ad6a852ff5801ea0b814"
+  },
+  "source": {
+    "path": "src/package_research_four_origins_20261008.py",
+    "sha256": "a7edf6d9e9d347b7afc3fbb8c59d9be7db24415dae32a7679ce5bec212e5f16a"
+  },
+  "status": "passed_memory_filesystem_only"
+}

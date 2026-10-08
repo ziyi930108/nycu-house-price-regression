@@ -1,0 +1,540 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-08T08:43:59.960956+00:00",
+  "source_sha256": "9b9e44554fe998312a3cd41e1b94cba1c810860edc3b200d95d2a0baeb154e66",
+  "input_sha256": "bac694108514b916cf01dce8e6374acc0b400d4b45066a1aebd55085539b8102",
+  "input_arrays": {
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        272117,
+        144
+      ],
+      "values_sha256": "27eb224aaa507d660761c60556894f15622b88b92d1f0c681715ed1967c169a5"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        272117,
+        23
+      ],
+      "values_sha256": "e7a8309973af71fc7b0decde047e0ad80f94e384089bb02588746b25d78425d7"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "ca96278c36c001d8ecaf5e0b947fffe846c1f6f9256d5368793e25f62853d7f4"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        107169,
+        144
+      ],
+      "values_sha256": "92b250feb44111b74965e30bca94ec555ed3df07f6693ba976bcc37cb2dc533f"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        107169,
+        23
+      ],
+      "values_sha256": "a9e90aabedd5e9b041b173fee8a23e673b87d39eeabab1f33613087274effa9c"
+    },
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "413056a518230779e4ed829c9c5fa0972527a4c7b469f810633067adc13d633f"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "e629adbe3460136732b039558096e29a9c84bc357e5259b12597520f6bfbee6b"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "bf6eb689563ab033c81d3cadfed55f1ea48711e3d48a098b60a1aa90185d15dd"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "6004d416ec3c325175a38608b4361452fcba541d47b21405d905f9aed7f8f935"
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "dropout": 0.1,
+    "category_dropout": 0.1,
+    "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "minimum_learning_rate": 1e-05,
+    "loss": "fit-recency weighted MAE in million TWD",
+    "positive_output": "Identity signed residual; inference projection only after total restoration",
+    "epoch_selection": "fixed last epoch; no query labels or early stopping",
+    "float_precision": "float32; matmul precision high",
+    "thread_count": 4,
+    "prediction_head": "signed linear residual million TWD; total_million = saved_price_factor_million + residual_million",
+    "output_units": "signed million TWD residual",
+    "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+    "price_factor_uses_fit_labels": true,
+    "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+    "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+    "loss_formula": "mean(train_sample_weight * abs(train_price_factor_million + residual_million - train_y_million))",
+    "initial_bias": "median_fit(train_y_million - train_price_factor_million)",
+    "extra_sample_weights": true,
+    "price_or_ratio_clipping": true,
+    "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+    "head_weight_initialization": "original R47 Linear weight initialization; not zeroed",
+    "price_or_ratio_clipping_scope": "only one nonnegative projection of inference total; no training or ratio clipping",
+    "training_total_clipped": false,
+    "inference_total_projection": "max((saved_factor_float64 + signed_residual_float64) * 1e6, 0)",
+    "loss_only_change_claimed": false,
+    "gradient_magnitude_matching_to_ratio_claimed": false
+  },
+  "baseline_configuration": {
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "dropout": 0.1,
+    "category_dropout": 0.1,
+    "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "minimum_learning_rate": 1e-05,
+    "loss": "fit-recency weighted MAE in million TWD",
+    "positive_output": "Softplus",
+    "epoch_selection": "fixed last epoch; no query labels or early stopping",
+    "float_precision": "float32; matmul precision high",
+    "thread_count": 4,
+    "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+    "output_units": "dimensionless positive price ratio",
+    "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+    "price_factor_uses_fit_labels": true,
+    "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+    "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+    "loss_formula": "mean(train_sample_weight * abs(ratio_output * train_price_factor_million - train_y_million))",
+    "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+    "extra_sample_weights": true,
+    "price_or_ratio_clipping": false,
+    "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization"
+  },
+  "parameterization_overrides": {
+    "positive_output": "Identity signed residual; inference projection only after total restoration",
+    "prediction_head": "signed linear residual million TWD; total_million = saved_price_factor_million + residual_million",
+    "output_units": "signed million TWD residual",
+    "loss_formula": "mean(train_sample_weight * abs(train_price_factor_million + residual_million - train_y_million))",
+    "initial_bias": "median_fit(train_y_million - train_price_factor_million)",
+    "head_weight_initialization": "original R47 Linear weight initialization; not zeroed",
+    "price_or_ratio_clipping": true,
+    "price_or_ratio_clipping_scope": "only one nonnegative projection of inference total; no training or ratio clipping",
+    "training_total_clipped": false,
+    "inference_total_projection": "max((saved_factor_float64 + signed_residual_float64) * 1e6, 0)",
+    "loss_only_change_claimed": false,
+    "gradient_magnitude_matching_to_ratio_claimed": false
+  },
+  "changed_configuration_fields": [
+    "initial_bias",
+    "loss_formula",
+    "output_units",
+    "positive_output",
+    "prediction_head",
+    "price_or_ratio_clipping"
+  ],
+  "added_configuration_fields": [
+    "gradient_magnitude_matching_to_ratio_claimed",
+    "head_weight_initialization",
+    "inference_total_projection",
+    "loss_only_change_claimed",
+    "price_or_ratio_clipping_scope",
+    "training_total_clipped"
+  ],
+  "parent_trainer_source": "src/round63_recency_weighted_prior_train.py",
+  "parent_trainer_source_sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+  "architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+  "original_architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+  "actual_model_class": "round114_additive_prior_train.AdditivePriorMLP",
+  "original_globals_modified": false,
+  "hidden_architecture_embedding_dropouts_optimizer_schedule_unchanged": true,
+  "parameterization_initial_bias_and_gradient_also_change": true,
+  "loss_only_change_claimed": false,
+  "gradient_magnitude_matching_to_ratio_claimed": false,
+  "head_weight_zeroed": false,
+  "initial_prediction_equals_prior_claimed": false,
+  "initial_training_median_residual_million": -1.405787467956543,
+  "initial_head_bias": -1.405787467956543,
+  "initial_head_bias_dtype": "float32",
+  "initial_head_bias_rounding": "original parameter dtype float32",
+  "training_objective_name": "weighted MAE of unprojected additive total million TWD",
+  "epoch_selection_uses_training_metrics": false,
+  "training_total_clipped": false,
+  "inference_nonnegative_projection_after_total_restoration": true,
+  "other_price_cap_applied": false,
+  "query_labels_available": false,
+  "query_labels_used": false,
+  "fit_rows": 272117,
+  "query_rows": 107169,
+  "numeric_count": 144,
+  "categorical_count": 23,
+  "cardinalities": [
+    248,
+    4,
+    7,
+    8,
+    8,
+    11,
+    12,
+    14,
+    3,
+    9,
+    4329,
+    4327,
+    69,
+    3631,
+    23,
+    257,
+    2372,
+    17,
+    1317,
+    3151,
+    370,
+    15,
+    779
+  ],
+  "prediction_units": "TWD",
+  "output_units": "signed million TWD residual",
+  "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+  "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+  "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+  "price_factor_used_as_additive_offset": true,
+  "price_factor_uses_fit_labels": true,
+  "price_factor_provenance_verified_in_trainer": false,
+  "train_price_factor_million_sha256": "e629adbe3460136732b039558096e29a9c84bc357e5259b12597520f6bfbee6b",
+  "query_price_factor_million_sha256": "bf6eb689563ab033c81d3cadfed55f1ea48711e3d48a098b60a1aa90185d15dd",
+  "train_sample_weight_sha256": "6004d416ec3c325175a38608b4361452fcba541d47b21405d905f9aed7f8f935",
+  "train_sample_weight_summary": {
+    "rows": 272117,
+    "min": 0.00012359047832433134,
+    "max": 3.145897626876831,
+    "mean": 0.9999999998076456,
+    "sum": 272116.9999476571,
+    "sum_squares": 491584.47857689473,
+    "effective_sample_size": 150630.5932906515
+  },
+  "sample_weight_provenance_verified_in_trainer": false,
+  "sample_weights_recomputed_in_trainer": false,
+  "sample_weights_batch_renormalized": false,
+  "torch": "2.13.0+cu126",
+  "numpy": "2.3.5",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "bitwise_retraining_determinism_claimed": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "training_mae_million_with_dropout": 3.146228075027466,
+      "training_weighted_mae_million_with_dropout": 2.0778160095214844,
+      "training_negative_raw_total_rows_with_dropout": 554
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972883382072953,
+      "training_mae_million_with_dropout": 2.5854406356811523,
+      "training_weighted_mae_million_with_dropout": 1.4260623455047607,
+      "training_negative_raw_total_rows_with_dropout": 1482
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009891830623632338,
+      "training_mae_million_with_dropout": 2.3327317237854004,
+      "training_weighted_mae_million_with_dropout": 1.2426451444625854,
+      "training_negative_raw_total_rows_with_dropout": 743
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009757729755661011,
+      "training_mae_million_with_dropout": 2.1675539016723633,
+      "training_weighted_mae_million_with_dropout": 1.1436437368392944,
+      "training_negative_raw_total_rows_with_dropout": 368
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009572050015330874,
+      "training_mae_million_with_dropout": 2.0398688316345215,
+      "training_weighted_mae_million_with_dropout": 1.0675487518310547,
+      "training_negative_raw_total_rows_with_dropout": 299
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009336825748732973,
+      "training_mae_million_with_dropout": 1.9451749324798584,
+      "training_weighted_mae_million_with_dropout": 1.0177491903305054,
+      "training_negative_raw_total_rows_with_dropout": 276
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009054634122155991,
+      "training_mae_million_with_dropout": 1.8587721586227417,
+      "training_weighted_mae_million_with_dropout": 0.9710677862167358,
+      "training_negative_raw_total_rows_with_dropout": 254
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008728566886113102,
+      "training_mae_million_with_dropout": 1.798128366470337,
+      "training_weighted_mae_million_with_dropout": 0.9417560696601868,
+      "training_negative_raw_total_rows_with_dropout": 229
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008362196501476349,
+      "training_mae_million_with_dropout": 1.7405385971069336,
+      "training_weighted_mae_million_with_dropout": 0.9104622006416321,
+      "training_negative_raw_total_rows_with_dropout": 215
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007959536998847742,
+      "training_mae_million_with_dropout": 1.6919666528701782,
+      "training_weighted_mae_million_with_dropout": 0.889004111289978,
+      "training_negative_raw_total_rows_with_dropout": 212
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.0007525,
+      "training_mae_million_with_dropout": 1.6484285593032837,
+      "training_weighted_mae_million_with_dropout": 0.8675140142440796,
+      "training_negative_raw_total_rows_with_dropout": 191
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007063346383225212,
+      "training_mae_million_with_dropout": 1.611146330833435,
+      "training_weighted_mae_million_with_dropout": 0.8480256199836731,
+      "training_negative_raw_total_rows_with_dropout": 176
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.000657963412215599,
+      "training_mae_million_with_dropout": 1.581212043762207,
+      "training_weighted_mae_million_with_dropout": 0.831714391708374,
+      "training_negative_raw_total_rows_with_dropout": 161
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006079162869547909,
+      "training_mae_million_with_dropout": 1.5444514751434326,
+      "training_weighted_mae_million_with_dropout": 0.8117457032203674,
+      "training_negative_raw_total_rows_with_dropout": 147
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005567415893174886,
+      "training_mae_million_with_dropout": 1.5273362398147583,
+      "training_weighted_mae_million_with_dropout": 0.7953048348426819,
+      "training_negative_raw_total_rows_with_dropout": 129
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005050000000000002,
+      "training_mae_million_with_dropout": 1.5080208778381348,
+      "training_weighted_mae_million_with_dropout": 0.7883437275886536,
+      "training_negative_raw_total_rows_with_dropout": 150
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004532584106825117,
+      "training_mae_million_with_dropout": 1.4796139001846313,
+      "training_weighted_mae_million_with_dropout": 0.77034592628479,
+      "training_negative_raw_total_rows_with_dropout": 132
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00040208371304520916,
+      "training_mae_million_with_dropout": 1.4672671556472778,
+      "training_weighted_mae_million_with_dropout": 0.7579522132873535,
+      "training_negative_raw_total_rows_with_dropout": 127
+    },
+    {
+      "epoch": 19,
+      "learning_rate": 0.00035203658778440114,
+      "training_mae_million_with_dropout": 1.4555212259292603,
+      "training_weighted_mae_million_with_dropout": 0.7492051720619202,
+      "training_negative_raw_total_rows_with_dropout": 138
+    },
+    {
+      "epoch": 20,
+      "learning_rate": 0.000303665361677479,
+      "training_mae_million_with_dropout": 1.4448683261871338,
+      "training_weighted_mae_million_with_dropout": 0.73800128698349,
+      "training_negative_raw_total_rows_with_dropout": 146
+    },
+    {
+      "epoch": 21,
+      "learning_rate": 0.0002575000000000002,
+      "training_mae_million_with_dropout": 1.4351664781570435,
+      "training_weighted_mae_million_with_dropout": 0.7322640419006348,
+      "training_negative_raw_total_rows_with_dropout": 123
+    },
+    {
+      "epoch": 22,
+      "learning_rate": 0.0002140463001152259,
+      "training_mae_million_with_dropout": 1.4245363473892212,
+      "training_weighted_mae_million_with_dropout": 0.7205520868301392,
+      "training_negative_raw_total_rows_with_dropout": 127
+    },
+    {
+      "epoch": 23,
+      "learning_rate": 0.00017378034985236537,
+      "training_mae_million_with_dropout": 1.4164661169052124,
+      "training_weighted_mae_million_with_dropout": 0.716956615447998,
+      "training_negative_raw_total_rows_with_dropout": 117
+    },
+    {
+      "epoch": 24,
+      "learning_rate": 0.00013714331138868995,
+      "training_mae_million_with_dropout": 1.4072624444961548,
+      "training_weighted_mae_million_with_dropout": 0.7081971168518066,
+      "training_negative_raw_total_rows_with_dropout": 142
+    },
+    {
+      "epoch": 25,
+      "learning_rate": 0.00010453658778440111,
+      "training_mae_million_with_dropout": 1.4068509340286255,
+      "training_weighted_mae_million_with_dropout": 0.7024588584899902,
+      "training_negative_raw_total_rows_with_dropout": 136
+    },
+    {
+      "epoch": 26,
+      "learning_rate": 7.631742512670288e-05,
+      "training_mae_million_with_dropout": 1.4023442268371582,
+      "training_weighted_mae_million_with_dropout": 0.6991984248161316,
+      "training_negative_raw_total_rows_with_dropout": 123
+    },
+    {
+      "epoch": 27,
+      "learning_rate": 5.279499846691254e-05,
+      "training_mae_million_with_dropout": 1.3977534770965576,
+      "training_weighted_mae_million_with_dropout": 0.6965256333351135,
+      "training_negative_raw_total_rows_with_dropout": 136
+    },
+    {
+      "epoch": 28,
+      "learning_rate": 3.422702443389901e-05,
+      "training_mae_million_with_dropout": 1.3960437774658203,
+      "training_weighted_mae_million_with_dropout": 0.6934353113174438,
+      "training_negative_raw_total_rows_with_dropout": 127
+    },
+    {
+      "epoch": 29,
+      "learning_rate": 2.0816937636766188e-05,
+      "training_mae_million_with_dropout": 1.3955365419387817,
+      "training_weighted_mae_million_with_dropout": 0.6944465637207031,
+      "training_negative_raw_total_rows_with_dropout": 137
+    },
+    {
+      "epoch": 30,
+      "learning_rate": 1.2711661792704668e-05,
+      "training_mae_million_with_dropout": 1.3930528163909912,
+      "training_weighted_mae_million_with_dropout": 0.6906276345252991,
+      "training_negative_raw_total_rows_with_dropout": 143
+    }
+  ],
+  "parameter_count": 1061167,
+  "embedding_dimensions": [
+    16,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    32,
+    32,
+    9,
+    32,
+    5,
+    17,
+    32,
+    5,
+    32,
+    32,
+    20,
+    4,
+    28
+  ],
+  "fit_seconds": 31.312000000005355,
+  "model_sha256": "58946a3e1709fc993aae5ba7fc459ecd2129dd82b99113226f956585a83e5fe3",
+  "prediction_artifacts": {
+    "predictions_raw_twd.npy": {
+      "sha256": "c7993822dc1213fe01168d1d6935514bda0f152b4cdf623874702039baafe38d",
+      "dtype": "float64",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "6e7fb876dd03c8277b381276ff2021efbd48b4ba763010bcce5a729c993d0eed"
+    },
+    "predictions_twd.npy": {
+      "sha256": "3a2b8899971dfc2b1a84c9208e8e7fc77916d8539a8a72250761b1306f81ec6f",
+      "dtype": "float64",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "74e3a85a6390c236bf07041e34c40b9c64d1235c65e19423215543b5788ff568"
+    }
+  },
+  "saved_model_reload_exact": true,
+  "saved_raw_total_reload_exact": true,
+  "reload_rows": 107169,
+  "projection_diagnostics": {
+    "raw_negative_total_rows": 5,
+    "raw_negative_total_fraction": 4.6655282777668915e-05,
+    "raw_zero_total_rows": 0,
+    "projected_zero_rows": 5,
+    "projected_zero_fraction": 4.6655282777668915e-05,
+    "raw_min_TWD": -2548185.348510742,
+    "raw_max_TWD": 1468543460.8459473,
+    "projected_min_TWD": 0.0,
+    "projected_max_TWD": 1468543460.8459473,
+    "projection_mean_correction_TWD": 61.39130469498409,
+    "projection_max_correction_TWD": 2548185.348510742,
+    "projection_changes_count": 5,
+    "query_y_used_for_diagnostics": false,
+    "negative_residual_not_equivalent_to_negative_total": true
+  },
+  "prediction_min_twd": 0.0,
+  "prediction_max_twd": 1468543460.8459473,
+  "elapsed_seconds": 34.453000000008615,
+  "maximum_gpu_allocated_bytes": 363765760
+}

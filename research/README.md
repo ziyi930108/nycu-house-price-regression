@@ -1,3 +1,17 @@
+## 2026-10-08 四時間起點研究：完整保存未採用結果
+
+R114 signed-additive NN、R116 Depthwise 單價樹、R117 固定交易五折先驗均完成四個時間起點的訓練、評分與獨立核驗，既定 combined 探索／強門檻皆未通過，因此不發行 v30–v32。R117 最新窗口比 v22 差約1,821元，其他三窗改善仍不能推翻事前固定的最新窗口不得退步規則。R115純X診斷與R118早期資料可行性盤點另列，不能當成價格改善。
+
+[本批結果與限制](../docs/RESEARCH_FOUR_ORIGINS_20261008.md) · [R114報告](../evidence/reports/round114_report.md) · [R115純X報告](../evidence/reports/round115_report.md) · [R116報告](../evidence/reports/round116_report.md) · [R117報告](../evidence/reports/round117_report.md)
+
+[R114四窗程式](../research/src/round114_research.py) · [R116四窗程式](../research/src/round116_research.py) · [R117工程v2程式](../research/src/round117_research_v2.py)
+
+v22原選定、Public 1,998,568.5706元及上台材料保持；Private未知。v25仍只是小幅改善的探索候選。反覆使用歷史窗口有累積選型偏差，bootstrap不能當作Private勝率。這次保存原始工程失敗與重跑成本，只包含完成研究的程式及聚合證據，不包含交易表、模型、逐筆預測或提交CSV；沒有Kaggle操作，沒有全新環境從零重訓。後續研究仍在本機，不能把這個快照當成已完成的候選發行。
+
+以下原日期正文逐bytes保留，依各自日期理解歷史狀態。
+
+---
+
 ## 2026-10-08 追加研究：完整保留未採用方法
 
 R111 殘差架構 NN 與 R112 Ordered 單價樹完成原三窗六 fit，兩者均未通過既定探索／強門檻，不產 v28／v29。額外 February 起點另完成 R107／R111／R112 三 fit：R107 整體改善約303元，R111改善約2,825元，R112退步約4,787元；額外起點改善不翻改原三窗失敗。

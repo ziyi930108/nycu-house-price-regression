@@ -1,0 +1,77 @@
+{
+  "GPU_work": false,
+  "Git_commands": 0,
+  "Private_score": null,
+  "Public_score": null,
+  "actual_R118_aggregate_schema_keys_readonly_compared": true,
+  "actual_file_copies": 0,
+  "actual_repository_old_members_reverified": false,
+  "actual_repository_writes": false,
+  "actual_request_preflight_input_map_shapes_readonly_matched": [
+    114,
+    116,
+    117
+  ],
+  "author_memo": {
+    "path": "outputs/research_continue_20261008/direction_review_a/package_four_origins_author_review.md",
+    "sha256": "d10a9439e2b6efb0f4819ed6f4a70ac0c39299f50eba0eb61021695295cffe19"
+  },
+  "author_pure_memory_cases_reexecuted_under_reader_writer_traps": 135,
+  "author_selfcheck": {
+    "path": "outputs/research_continue_20261008/direction_review_a/package_four_origins_author_selfcheck.json",
+    "sha256": "6ecc5afabdf62599b7022f3c779eee6e477af3de61514ead78104e66c20ce969"
+  },
+  "blocking_findings_remaining": [],
+  "created_at_utc": "2026-10-08T10:07:56.074465+00:00",
+  "formal_package_check_performed": false,
+  "independent_adversarial_cases": 27,
+  "independent_synthetic_execution": {
+    "path": "outputs/research_continue_20261008/package_four_origins_independent_execution.json",
+    "sha256": "d3aae5b020a2801e820e533635f59e39fedba2678d4880e5756834539ac00ea5"
+  },
+  "independent_synthetic_review": {
+    "path": "outputs/research_continue_20261008/package_four_origins_synthetic_review.json",
+    "sha256": "a5d59fed4c49b6b930df927ce44f59f07c7137e1198e2b25209455b295039870"
+  },
+  "memory_only_apply_refresh_finish_review": {
+    "path": "outputs/research_continue_20261008/package_four_origins_memory_review.json",
+    "sha256": "9ad2ae8fe02b36c8db0098265c0dcd0d0d0b55a581458803d6731b82a48e703b"
+  },
+  "memory_only_mutation_scenarios": 4,
+  "network": false,
+  "new_model_fits": 0,
+  "query_prices_or_new_meta_read": false,
+  "review_dependency_source_sha256": {
+    "outputs/research_continue_20261008/package_four_origins_independent_checks.py": "4b4b9736a051cfaad40fe0d1266c026e38533ee1235b5c34763e869552119e86",
+    "outputs/research_continue_20261008/package_four_origins_memory_apply_checks.py": "0adbfae2841ef24364195df5f4cbb4a84d14bd156494ad6a852ff5801ea0b814",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5"
+  },
+  "reviewed_source": {
+    "path": "src/package_research_four_origins_20261008.py",
+    "sha256": "a7edf6d9e9d347b7afc3fbb8c59d9be7db24415dae32a7679ce5bec212e5f16a"
+  },
+  "reviewer": "research_preflight_20261008",
+  "selected_submission": "v22",
+  "source_review_contracts": [
+    "All original3229 manifest records compare exact bytes/SHA/count and exact base HEAD/index membership before any new copy; all3226 non-navigation records remain protected, including former3014/history379/production13.",
+    "Every selected source/destination is explicit and privacy checked, and every planned destination checks reparse ancestry; private learned-state/model/array/row payloads remain opaque references only.",
+    "114/116/117v2 require exact preflight/request/seal/train/eval/postfit/actual-audit-execution/model-metadata/source/plan/manual-gate relationships. Missing future117v2 completion remains a hard failure.",
+    "Original117 aborted request/log/one completed native and v2 recovery53source/two-plan/27old-artifact/count1+4=5 evidence remain distinct; partial native reuse is forbidden.",
+    "R114/116 prediction-only false flags require root clarification/independent interpretation/exact binding instead of rewriting frozen results.",
+    "Failed combined gates require no-release; eligible combined gates require explicit deferred release. Future completed full releases or CSVs are refused until a separately reviewed extension.",
+    "R118 validators use actual existing metadata schema, preserve original pending author flag as history and bind added root independent bounded review without claiming binary geography replay.",
+    "Generated/copy/navigation text receives credential checks; strict single-sidecar identities/duplicate JSON/nonfinite/rows/private suffixes excluded; three navigation bodies retained byte-exact.",
+    "Explicit manifest membership after finish is old members plus copy/generated/finish evidence only. Partial copies remain and block silent rerun; no overwrite/rollback claim."
+  ],
+  "source_review_scope_limits": [
+    "No formal --check, --apply or --refresh-manifest executed against the real repository.",
+    "All copy/refresh/finish/partial-write tests used an in-memory fake filesystem. No real delivery files were copied or modified.",
+    "Actual3229 old member contents/index/base/protected files were not rehashed in this source review; formal package --check must still verify them.",
+    "Existing request/preflight input SHA-map shape and R118 aggregate field names were read only for schema compatibility, without private artifact hashing/deserialization or new scores.",
+    "Future117v2 postfit/results were not read and are still necessary before formal package check. Source review pass cannot create missing completion evidence.",
+    "Opaque private artifact identity hashing in the future formal package check is distinct from backing those artifacts up to GitHub.",
+    "New report links/navigation and actual full selected inventory require separate bounded preapply/postapply review once real completion is available.",
+    "Git index parser checks names/checksum/HEAD and permitted membership; source review does not compare staged blobs or publish GitHub."
+  ],
+  "status": "passed_source_review_not_formal_package_check"
+}

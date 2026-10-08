@@ -1,0 +1,34 @@
+{
+  "elapsed_seconds": 281.45299999999406,
+  "new_fits": 4,
+  "origin_order": [
+    "development",
+    "confirmation",
+    "auxiliary",
+    "offset_2023_02_11"
+  ],
+  "query_scores_computed": false,
+  "records": {
+    "auxiliary": {
+      "path": "outputs/round114/auxiliary/stage.json",
+      "sha256": "b55b4329febca3e496a2135def72fe1c8148285c861e38c27f88878344fef7b2"
+    },
+    "confirmation": {
+      "path": "outputs/round114/confirmation/stage.json",
+      "sha256": "f49005b15495864d2607c7cc8007de3a13e1145fb1103740710f48b953b87fb6"
+    },
+    "development": {
+      "path": "outputs/round114/development/stage.json",
+      "sha256": "42e3f99a5d774da6ba534684fdc5f09d22e5144b27d8c92cb1494da5c4903fd4"
+    },
+    "offset_2023_02_11": {
+      "path": "outputs/round114/offset_2023_02_11/stage.json",
+      "sha256": "ab89827b554a438888044293eb93c098ad433b41a9d0f499f3962fa965419105"
+    }
+  },
+  "request": {
+    "path": "outputs/round114/request.json",
+    "sha256": "09f08e6645f0711f8f778fc7ebc178941758b72f2297682dad32227716c45d9c"
+  },
+  "status": "four_models_all_native_signed_and_layers_sealed_unscored"
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round117_research_v2.py",
+    "--train"
+  ],
+  "elapsed_seconds": 416.1399999999994,
+  "exit_code": 0
+}

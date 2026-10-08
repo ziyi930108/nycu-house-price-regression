@@ -1,0 +1,388 @@
+{
+  "Private_score": null,
+  "Public_used_for_selection": false,
+  "actions": {
+    "GPU_calls": 0,
+    "GitHub_work": false,
+    "Kaggle_work": false,
+    "bootstrap_calls": 0,
+    "external_data_downloaded": false,
+    "new_CSV": false,
+    "new_agents": 0,
+    "new_meta_fits": 0,
+    "new_model_fits": 0,
+    "new_predictions": 0,
+    "new_scores": 0,
+    "prediction_or_checkpoint_arrays_loaded": false,
+    "raw_or_per_row_prices_loaded": false,
+    "source_or_plan_modified": false
+  },
+  "created_at_utc": "2026-10-08T09:03:25.382761+00:00",
+  "entry_readset": [
+    {
+      "bytes": 5864,
+      "path": "AGENTS.md",
+      "read_mode": "full",
+      "sha256": "a004017e3bf7461e3e7eb29404cb5b601f04347660f1dd385873157ba0dc69f6"
+    },
+    {
+      "bytes": 27889,
+      "path": "HANDOFF.md",
+      "read_mode": "lines 1-145 incl research segment; parent live messages override stale stage status",
+      "sha256": "a264f2c633200f9541b461173d896cacace5bef69acfabe48bbeb4e1a44f78f2"
+    },
+    {
+      "bytes": 213355,
+      "path": "HANDOFF_LOG.md",
+      "read_mode": "research/OOF keyword and recent matching excerpts; not full",
+      "sha256": "904248e8dc8b43b81ff3df97f9f1dc5c41649d94bb50acc6504e1ba63e6611b6"
+    }
+  ],
+  "evidence_lines": {
+    "R2_coarse_project_folds_and_caveat": "src/round2_blend.py:64-90,125",
+    "R98_prepare_dates_and_outer_fit_membership": "src/round98_prepare_inputs.py:29-42,85-105,117-124",
+    "R98_source_separation": "src/round98_temporal_stack.py:50-72",
+    "R99_city_and_tail_counterevidence": "reports/round99_summary.md:45,55-61",
+    "R99_query_and_meta_metrics": "reports/round99_summary.md:20-34",
+    "R99_source_separation_and_four_experts": "src/round99_temporal_stack.py:103-130",
+    "earliest_block_and_rebuild_cost": "reports/regression_direction_after_r97_inventory.md:24-38",
+    "global_equal_row_MAE_simplex": "src/round98_l1_stacker.py:67-76"
+  },
+  "findings": {
+    "X_conditional_clean_meta_fit_found_in_bounded_readset": false,
+    "coarse_seen_unseen_holdout_gate_already_done": true,
+    "immediate_new_fit_recommended": false,
+    "more_global_weight_search_recommended": false,
+    "prior_group_OOF_not_full_branch_time_OOF": true,
+    "true_fit_only_temporal_forward_meta_regression_already_done": true
+  },
+  "handoff_update_owner": "root; no shared-file edits by this audit",
+  "historical_completed_meta_fits": [
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U"
+      ],
+      "execution": {
+        "bytes": 308,
+        "path": "outputs/round98/development/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "60f198e9987e4e642cb10583c6fc04b146383ac1b3814b9a3777008b6adee99b"
+      },
+      "fit_metadata": {
+        "bytes": 7766,
+        "path": "outputs/round98/development/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "a3ff8e3451559feecc2de40ded34425f8fa61b04aac1467043c30130dbefbf15"
+      },
+      "fit_rows": 105511,
+      "query_targets_available": false,
+      "round": 98,
+      "stage": "development",
+      "status": "completed"
+    },
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U"
+      ],
+      "execution": {
+        "bytes": 303,
+        "path": "outputs/round98/offset/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "1fc428247c2765d9d5ece61c5fa4f8b3f39629cc56fdd42767a7d10e2a6968d6"
+      },
+      "fit_metadata": {
+        "bytes": 7761,
+        "path": "outputs/round98/offset/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "10abbc5a1ef9404f5f97d7f789b7b4d186f2f717f952a6740480ebe0921679eb"
+      },
+      "fit_rows": 137312,
+      "query_targets_available": false,
+      "round": 98,
+      "stage": "offset",
+      "status": "completed"
+    },
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U"
+      ],
+      "execution": {
+        "bytes": 308,
+        "path": "outputs/round98/confirmation/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "7578ed2c17e3098474f83da5985138ccecf6e252e0ad3504e23cd39d4fe9d552"
+      },
+      "fit_metadata": {
+        "bytes": 7774,
+        "path": "outputs/round98/confirmation/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "5aa14061c826332bde06459f317709d1a19fa26c54ec05383e9f54c3fe377268"
+      },
+      "fit_rows": 186745,
+      "query_targets_available": false,
+      "round": 98,
+      "stage": "confirmation",
+      "status": "completed"
+    },
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U",
+        "M"
+      ],
+      "execution": {
+        "bytes": 307,
+        "path": "outputs/round99/development/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "dd13c479b78698e5235b9ce30e880a02ade8ee7846cf037341810837b606f0cb"
+      },
+      "fit_metadata": {
+        "bytes": 8081,
+        "path": "outputs/round99/development/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "595930ae14ee82291975c1518242165f5c8fcbb2fa8c6e03dca088d447eadd23"
+      },
+      "fit_rows": 105511,
+      "query_targets_available": false,
+      "round": 99,
+      "stage": "development",
+      "status": "completed"
+    },
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U",
+        "M"
+      ],
+      "execution": {
+        "bytes": 303,
+        "path": "outputs/round99/offset/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "baa672a49e6441cdeb401048cff810ca016c6590341eb6285addcb0d5cba0dcc"
+      },
+      "fit_metadata": {
+        "bytes": 8125,
+        "path": "outputs/round99/offset/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "9e59a9167a961f0262c453508dc484e0ecdb0cd4c07ee2814f283d5af1a03278"
+      },
+      "fit_rows": 137312,
+      "query_targets_available": false,
+      "round": 99,
+      "stage": "offset",
+      "status": "completed"
+    },
+    {
+      "GPU_calls": 0,
+      "branch_order": [
+        "N",
+        "H",
+        "U",
+        "M"
+      ],
+      "execution": {
+        "bytes": 309,
+        "path": "outputs/round99/confirmation/execution.json",
+        "read_mode": "old aggregate only",
+        "sha256": "50e17398b12c3ee8a47aba9c3d2eab0eb2b7d9ac957a33b52ab485dcfde70d1a"
+      },
+      "fit_metadata": {
+        "bytes": 8062,
+        "path": "outputs/round99/confirmation/model/fit_metadata.json",
+        "read_mode": "old aggregate only",
+        "sha256": "5f7957dd499aadb38a07e32da4fc4d68b08fdcb8fd3dbd7cf76443d7e7b466d1"
+      },
+      "fit_rows": 186745,
+      "query_targets_available": false,
+      "round": 99,
+      "stage": "confirmation",
+      "status": "completed"
+    }
+  ],
+  "metrics": {
+    "R98_overall_delta": [
+      8798.64,
+      -4255.03,
+      5190.67
+    ],
+    "R99_confirmation_ge100m_overall_contribution_TWD": 9615.26,
+    "R99_confirmation_ge100m_rows": 319,
+    "R99_meta_MAE_delta_vs_median": [
+      -25912.38,
+      -18033.98,
+      -14836.22
+    ],
+    "R99_offset_Chiayi_county_regression_pct": 6.08,
+    "R99_overall_delta": [
+      10449.82,
+      -6281.53,
+      2821.52
+    ],
+    "R99_weighted_delta": [
+      10336.51,
+      -7487.25,
+      2732.32
+    ],
+    "stage_order": [
+      "development",
+      "offset",
+      "confirmation"
+    ],
+    "units": "TWD MAE; candidate minus v22, negative better"
+  },
+  "one_candidate": {
+    "allowable_feature_classes": [
+      "pure-X effective area",
+      "seen/support computed relative to each OOF generating prefix",
+      "disagreement of strictly forward N/H/U predictions"
+    ],
+    "cost": "Hash-bound later forward vectors may be reused. Filling earliest coverage needs at least four trees plus two NNs and encoder/prior/reference/spatial states at the new prefix, with as-of geographic availability checked. No new cutoff or wall-time estimate fixed.",
+    "coverage_gap": "No complete forward block before the earliest auxiliary origin 2021-08-11 was found. Four-origin validation cannot silently omit that origin or reuse later trained states.",
+    "forbidden": [
+      "true-price bands/same-query errors/test ID as routing features",
+      "full-outer-fit seen/support on inner-OOF rows",
+      "later model/encoder/prior/reference/spatial backprediction",
+      "Public-driven gate/capacity selection"
+    ],
+    "must_fix_before_fit": [
+      "one low-capacity parameterization, TWD MAE objective and regularization",
+      "small exact feature list with prefix-relative state identities",
+      "exact median-only legal hypothesis and all unchanged baseline controls",
+      "complete inner-origin coverage and outer fit/query separation",
+      "source/plan/preflight/fit-state seal before outer scoring"
+    ],
+    "name": "Low-capacity fit-only forward-OOF X-conditioned convex gate retaining exact median-only feasibility",
+    "possible_mechanism": "Reliability may depend on property size, prefix-relative project support and branch disagreement. Global weights cannot express these conditions. Historical error decomposition does not prove this cause.",
+    "recommendation": "At most separately fix a feasibility/coverage contract first. Do not immediately run a cheap global reweight or incomplete conditional gate. No Private improvement established.",
+    "status": "unexecuted feasibility hypothesis; not a frozen experiment or recommendation to train now",
+    "strongest_counterevidence": "R99 meta objective improved by 14836.22 to 25912.38 TWD versus median, yet development and confirmation query MAE regressed 10449.82 and 2821.52 TWD. More conditional capacity can worsen transfer failure.",
+    "structural_difference": "R98/R99 learn one global weight vector. This would learn branch reliability conditional on a very small predeclared pure-X/support/disagreement feature set; no global ratio grid."
+  },
+  "report_budget": {
+    "actual_reports": 9,
+    "full_reports": 8,
+    "maximum_related_reports": 12,
+    "partial_reports": 1
+  },
+  "report_readset": [
+    {
+      "bytes": 6209,
+      "path": "reports/regression_direction_after_r97_inventory.md",
+      "read_mode": "full",
+      "sha256": "e3c884ede6f36d42818c9c732488ee780f4b57787f6057d1a6e183e382d01f3d"
+    },
+    {
+      "bytes": 8906,
+      "path": "reports/round98_summary_v2.md",
+      "read_mode": "full",
+      "sha256": "91f608b164ca2a53b6ee79332d93f6712e03164826340cceaf0b6e9d831a0f77"
+    },
+    {
+      "bytes": 5501,
+      "path": "reports/round99_summary.md",
+      "read_mode": "full",
+      "sha256": "b5ee14b91b5b145c7fc64fce5b6bac847134e0b9fe73770f7688f71e520d9a48"
+    },
+    {
+      "bytes": 2530,
+      "path": "reports/round99_next_direction_inventory.md",
+      "read_mode": "full",
+      "sha256": "b747f4ebb0cef16b7d39d439e0e47337a461505c66631bab33a6185593f007fd"
+    },
+    {
+      "bytes": 2547,
+      "path": "reports/round100_next_direction_inventory.md",
+      "read_mode": "full",
+      "sha256": "2acca306d546b5af8ac0a4b20ca932c9aa0327d97eea9b0137bb1e89e636aa33"
+    },
+    {
+      "bytes": 10891,
+      "path": "reports/round101_representation_direction.md",
+      "read_mode": "full",
+      "sha256": "29f1d1c7ae7ae51df2b244bb2bcd502c097415ed29496c28030fbdd1fe87d09f"
+    },
+    {
+      "bytes": 8798,
+      "path": "reports/round98_validation_contract_review.md",
+      "read_mode": "full",
+      "sha256": "a56a00e9bd0af610f3ac5cca742fa49716182585df5cfa8a7e8010ae50bbc1a4"
+    },
+    {
+      "bytes": 6335,
+      "path": "reports/reference_blending_audit_r84.md",
+      "read_mode": "full",
+      "sha256": "570dc019b6a6a003adee8f1a0782a0409c473227f5ff284d0355616de68fd2a3"
+    },
+    {
+      "bytes": 7379,
+      "path": "reports/optimization_round2_report.md",
+      "read_mode": "keyword excerpts only",
+      "sha256": "7f2dfc36faea22d85f56ce2a9806e58655bb32bab01b98b4d9ff84c1e3b50946"
+    }
+  ],
+  "selected_submission": "v22",
+  "selection_bias": "Earlier query rows may legally become later-origin meta-fit labels, but not same-origin query labels. Reused and overlapping windows are not independent blind tests. Fixed-model bootstrap excludes meta refit/native retraining/cumulative selection uncertainty; not Private probability.",
+  "source_readset": [
+    {
+      "bytes": 8905,
+      "path": "src/round2_blend.py",
+      "read_mode": "full",
+      "sha256": "d2f094e8a1c3a7db87f7074f6040a54f786f8fb9f353c6329ebe899ce6a59468"
+    },
+    {
+      "bytes": 8840,
+      "path": "src/round98_temporal_stack.py",
+      "read_mode": "full",
+      "sha256": "87e3ededcfd7520b3fcf730d2c1b962f5e8000cd0b49cd283756c4b2f144ac6d"
+    },
+    {
+      "bytes": 14663,
+      "path": "src/round99_temporal_stack.py",
+      "read_mode": "key temporal guards, fit/predict and metadata excerpts",
+      "sha256": "37a15ac42f8decae65ae863def319d61342d9604406affff24f8dc5bb963ed39"
+    },
+    {
+      "bytes": 10696,
+      "path": "src/round98_prepare_inputs.py",
+      "read_mode": "key assemble/date/identity/export guard excerpts",
+      "sha256": "2f01a180e145e36eb0d798221e5b3aa232661e70c47772274cbf2b9ea1ba9492"
+    },
+    {
+      "bytes": 27058,
+      "path": "src/round98_l1_stacker.py",
+      "read_mode": "parameters, fit/certificate/predict and unit-check excerpts",
+      "sha256": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864"
+    },
+    {
+      "bytes": 5297,
+      "path": "src/round98_contract.py",
+      "read_mode": "stage/contract excerpts",
+      "sha256": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62"
+    },
+    {
+      "bytes": 6624,
+      "path": "src/round99_contract.py",
+      "read_mode": "stage/four-column excerpts",
+      "sha256": "8acd9ba333a3f5e557204d871f9e12fbd413649860035627f066656e639dfb35"
+    }
+  ],
+  "source_search": {
+    "content_pattern_hits": 14,
+    "limitation": "Bounded text search/readset; absence is not proof about every binary or historical artifact. Some initial combined source outputs truncated; only listed excerpts claimed read.",
+    "scope": "src/*.py; filename stack/blend/ensemble/fusion/meta/gate and explicit stacking/meta-fit/conditional-weight/gating terms"
+  },
+  "status": "bounded_historical_method_review_completed"
+}

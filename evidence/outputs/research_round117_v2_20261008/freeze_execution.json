@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-u",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round117_research_v2.py",
+    "--freeze"
+  ],
+  "elapsed_seconds": 10.860000000000582,
+  "exit_code": 0
+}

@@ -1,0 +1,10 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 78.21899999999732,
+  "exit_code": 1,
+  "failure": "Traceback (most recent call last):\n  File \"C:\\NYCU_ML\\src\\round117_research.py\", line 517, in train\n    c.need(process.returncode == 0, 'Origin failed, no automatic retry: ' + origin)\n  File \"C:\\NYCU_ML\\src\\round100_contract.py\", line 34, in need\n    raise ValueError(message)\nValueError: Origin failed, no automatic retry: development\n",
+  "request": {
+    "path": "outputs/round117/request.json",
+    "sha256": "de781e3bdc9b44f8f2df3fb8aa3f23b317233f1870139b1602322db81077b98e"
+  }
+}

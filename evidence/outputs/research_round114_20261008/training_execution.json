@@ -1,0 +1,10 @@
+{
+  "automatic_retry": false,
+  "elapsed_seconds": 281.4679999999935,
+  "exit_code": 0,
+  "failure": null,
+  "request": {
+    "path": "outputs/round114/request.json",
+    "sha256": "09f08e6645f0711f8f778fc7ebc178941758b72f2297682dad32227716c45d9c"
+  }
+}

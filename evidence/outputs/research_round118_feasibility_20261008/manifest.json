@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "outputs/research_round118_feasibility_20261008/audit_feasibility.py": "f912790bab18b941c87a73739864f0bd793f65654579dce2d855e7db04e6d5e3",
+    "outputs/research_round118_feasibility_20261008/author_synthetic_checks.json": "3e462972eef0674f939a61fba1ba0c99e15e8af7aaea773cabfaeaedd69e8680",
+    "outputs/research_round118_feasibility_20261008/design_limits.json": "ddb19fdc8522ffa08b31450f4159069409350211afeee1d360291d54fb6e174d",
+    "outputs/research_round118_feasibility_20261008/earliest_boundary_feasibility.json": "fef5463bc0d08738d240d364c27d8e858d7a9a9701ff6b2f09fc5e5072fd7a7e",
+    "outputs/research_round118_feasibility_20261008/earliest_boundary_request.json": "5000fe23c52218cafafd3884c6a728174663ba3f2d57ef091d8da47ca67b3fe1",
+    "outputs/research_round118_feasibility_20261008/earliest_local_boundary.py": "955e5cb94249eea88fd2d89bef7e8a45dec39850d6a89a14e71d0490fc973708",
+    "outputs/research_round118_feasibility_20261008/feasibility.json": "b8740e4174468e3fb1eed8735cf8f89ffe80c65514020e7919c893a1a7a308f1",
+    "outputs/research_round118_feasibility_20261008/feasibility.md": "5d39223aa5508d81f05b33d6ffed61e407ee621ca413c5edb74685980c075374",
+    "outputs/research_round118_feasibility_20261008/final_design_limits.json": "1e4e014e52fdb1da04c739555f6e6069b5228296d83b8b80c63664e2aed9dbd0",
+    "outputs/research_round118_feasibility_20261008/finalize_evidence.py": "278e18b45330ea2611c5a493f7856ed8bce9896889bb267520599213f9f9d8a0",
+    "outputs/research_round118_feasibility_20261008/packaging_failure_attempt1.json": "202b682b773ff3bb53238969652058d086e9942a86cae5c876b954d1f10740d8",
+    "outputs/research_round118_feasibility_20261008/partial_band_feasibility.json": "4a981c3ee259fb1f7ade20a72a99c394fbb34d867b24203511b2b916a41c9dac",
+    "outputs/research_round118_feasibility_20261008/planned_readset.json": "9532eca9b01eb6d9eb3c20e03b4bc75bb9cdcaef93a6d1b85ebe4eb0053ec243",
+    "outputs/research_round118_feasibility_20261008/readset.json": "dd7e363c947ffca6762be31f9dbd576b9d148906d7ea1a025efab003ba88de40",
+    "outputs/research_round118_feasibility_20261008/seal_evidence.py": "f6049c8488295e10876c89ed430d4e19f6204ef513a887ffccd886f989d25687",
+    "outputs/research_round118_feasibility_20261008/supplemental_date_candidates.py": "1adf106a5109f450f216c583d9680cd4e6734b4c4770ca2cda14a8652fa938f4",
+    "outputs/research_round118_feasibility_20261008/supplemental_request.json": "fbdefbcb442db1aadcd4f26a956178728e69b03c8fa1fc8dcd203243e2587771"
+  },
+  "author_checks_not_independent_review": true,
+  "author_synthetic_check_count": 30,
+  "completed_at_utc": "2026-10-08T09:30:22.087538+00:00",
+  "independent_review_pending_root": true,
+  "new_sources_compiled_in_memory": true,
+  "no_existing_project_source_or_artifact_mutated": true,
+  "no_model_or_cutoff_selected": true,
+  "no_training_or_CSV_or_Kaggle_changes": true,
+  "original_inputs_unique_count": 77,
+  "source_and_report_scope": "Dates/indices, source/aggregate metadata, geo filenames/timestamps. No price/model/private-state/prediction deserialization.",
+  "status": "sealed_bounded_feasibility_inventory"
+}

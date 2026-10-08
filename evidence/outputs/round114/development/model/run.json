@@ -1,0 +1,259 @@
+{
+  "status": "started",
+  "created_at_utc": "2026-10-08T08:40:36.356321+00:00",
+  "source_sha256": "9b9e44554fe998312a3cd41e1b94cba1c810860edc3b200d95d2a0baeb154e66",
+  "input_sha256": "e1411757d89ad74fdd5b6cd3622f6c8d26fdc9932859ae49eaa9be9705449bea",
+  "input_arrays": {
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        240316,
+        144
+      ],
+      "values_sha256": "265f10cf50cafa33a4cf4b14eb2a9f4493df66f53333ebf90737b961ccbccc8b"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        240316,
+        23
+      ],
+      "values_sha256": "11132bbd8641c5d39009745b8249873682692cbdd23885023292197b115d9493"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "28a552d3bd69273bf4dd27526be00989036dbfeac9ff63aadc5d20b13af9fb6d"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        81234,
+        144
+      ],
+      "values_sha256": "937fbfad3b4ba2a98db4a97f01fd2b909236a3fc4a3ea7785075daa39a83aef7"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        81234,
+        23
+      ],
+      "values_sha256": "8349e52df32564a908de5ebbb86ed60064d0a467d51c98ce9b4418cd0574e8cc"
+    },
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "668d04f6fcc55a2e1482984319ed219ad36cc4b3b9af17871f1bf27f122b19e8"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "6f24b6cfaf044eb4494c637da5a4a79b48b25e3e1dee9d9a7c5a27185b580365"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "d36bf6a2eceebab34522992939217b4d7e6e9c85e1878e0114966e4d14f6ef0f"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6"
+    }
+  },
+  "configuration": {
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "dropout": 0.1,
+    "category_dropout": 0.1,
+    "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "minimum_learning_rate": 1e-05,
+    "loss": "fit-recency weighted MAE in million TWD",
+    "positive_output": "Identity signed residual; inference projection only after total restoration",
+    "epoch_selection": "fixed last epoch; no query labels or early stopping",
+    "float_precision": "float32; matmul precision high",
+    "thread_count": 4,
+    "prediction_head": "signed linear residual million TWD; total_million = saved_price_factor_million + residual_million",
+    "output_units": "signed million TWD residual",
+    "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+    "price_factor_uses_fit_labels": true,
+    "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+    "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+    "loss_formula": "mean(train_sample_weight * abs(train_price_factor_million + residual_million - train_y_million))",
+    "initial_bias": "median_fit(train_y_million - train_price_factor_million)",
+    "extra_sample_weights": true,
+    "price_or_ratio_clipping": true,
+    "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+    "head_weight_initialization": "original R47 Linear weight initialization; not zeroed",
+    "price_or_ratio_clipping_scope": "only one nonnegative projection of inference total; no training or ratio clipping",
+    "training_total_clipped": false,
+    "inference_total_projection": "max((saved_factor_float64 + signed_residual_float64) * 1e6, 0)",
+    "loss_only_change_claimed": false,
+    "gradient_magnitude_matching_to_ratio_claimed": false
+  },
+  "baseline_configuration": {
+    "seed": 42,
+    "epochs": 30,
+    "batch_size": 2048,
+    "hidden": [
+      512,
+      256,
+      128
+    ],
+    "dropout": 0.1,
+    "category_dropout": 0.1,
+    "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "CosineAnnealingLR",
+    "minimum_learning_rate": 1e-05,
+    "loss": "fit-recency weighted MAE in million TWD",
+    "positive_output": "Softplus",
+    "epoch_selection": "fixed last epoch; no query labels or early stopping",
+    "float_precision": "float32; matmul precision high",
+    "thread_count": 4,
+    "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+    "output_units": "dimensionless positive price ratio",
+    "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+    "price_factor_uses_fit_labels": true,
+    "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+    "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+    "loss_formula": "mean(train_sample_weight * abs(ratio_output * train_price_factor_million - train_y_million))",
+    "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+    "extra_sample_weights": true,
+    "price_or_ratio_clipping": false,
+    "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization"
+  },
+  "parameterization_overrides": {
+    "positive_output": "Identity signed residual; inference projection only after total restoration",
+    "prediction_head": "signed linear residual million TWD; total_million = saved_price_factor_million + residual_million",
+    "output_units": "signed million TWD residual",
+    "loss_formula": "mean(train_sample_weight * abs(train_price_factor_million + residual_million - train_y_million))",
+    "initial_bias": "median_fit(train_y_million - train_price_factor_million)",
+    "head_weight_initialization": "original R47 Linear weight initialization; not zeroed",
+    "price_or_ratio_clipping": true,
+    "price_or_ratio_clipping_scope": "only one nonnegative projection of inference total; no training or ratio clipping",
+    "training_total_clipped": false,
+    "inference_total_projection": "max((saved_factor_float64 + signed_residual_float64) * 1e6, 0)",
+    "loss_only_change_claimed": false,
+    "gradient_magnitude_matching_to_ratio_claimed": false
+  },
+  "changed_configuration_fields": [
+    "initial_bias",
+    "loss_formula",
+    "output_units",
+    "positive_output",
+    "prediction_head",
+    "price_or_ratio_clipping"
+  ],
+  "added_configuration_fields": [
+    "gradient_magnitude_matching_to_ratio_claimed",
+    "head_weight_initialization",
+    "inference_total_projection",
+    "loss_only_change_claimed",
+    "price_or_ratio_clipping_scope",
+    "training_total_clipped"
+  ],
+  "parent_trainer_source": "src/round63_recency_weighted_prior_train.py",
+  "parent_trainer_source_sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+  "architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+  "original_architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+  "actual_model_class": "round114_additive_prior_train.AdditivePriorMLP",
+  "original_globals_modified": false,
+  "hidden_architecture_embedding_dropouts_optimizer_schedule_unchanged": true,
+  "parameterization_initial_bias_and_gradient_also_change": true,
+  "loss_only_change_claimed": false,
+  "gradient_magnitude_matching_to_ratio_claimed": false,
+  "head_weight_zeroed": false,
+  "initial_prediction_equals_prior_claimed": false,
+  "initial_training_median_residual_million": -1.2215776443481445,
+  "initial_head_bias": -1.2215776443481445,
+  "initial_head_bias_dtype": "float32",
+  "initial_head_bias_rounding": "original parameter dtype float32",
+  "training_objective_name": "weighted MAE of unprojected additive total million TWD",
+  "epoch_selection_uses_training_metrics": false,
+  "training_total_clipped": false,
+  "inference_nonnegative_projection_after_total_restoration": true,
+  "other_price_cap_applied": false,
+  "query_labels_available": false,
+  "query_labels_used": false,
+  "fit_rows": 240316,
+  "query_rows": 81234,
+  "numeric_count": 144,
+  "categorical_count": 23,
+  "cardinalities": [
+    239,
+    4,
+    7,
+    8,
+    8,
+    11,
+    12,
+    14,
+    3,
+    9,
+    3594,
+    3582,
+    65,
+    2965,
+    23,
+    248,
+    2090,
+    16,
+    1180,
+    2753,
+    318,
+    15,
+    696
+  ],
+  "prediction_units": "TWD",
+  "output_units": "signed million TWD residual",
+  "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+  "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+  "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+  "price_factor_used_as_additive_offset": true,
+  "price_factor_uses_fit_labels": true,
+  "price_factor_provenance_verified_in_trainer": false,
+  "train_price_factor_million_sha256": "6f24b6cfaf044eb4494c637da5a4a79b48b25e3e1dee9d9a7c5a27185b580365",
+  "query_price_factor_million_sha256": "d36bf6a2eceebab34522992939217b4d7e6e9c85e1878e0114966e4d14f6ef0f",
+  "train_sample_weight_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6",
+  "train_sample_weight_summary": {
+    "rows": 240316,
+    "min": 0.00015728281869087368,
+    "max": 2.8228559494018555,
+    "mean": 1.0000000003887903,
+    "sum": 240316.00009343255,
+    "sum_squares": 439578.0612011316,
+    "effective_sample_size": 131380.03234989019
+  },
+  "sample_weight_provenance_verified_in_trainer": false,
+  "sample_weights_recomputed_in_trainer": false,
+  "sample_weights_batch_renormalized": false,
+  "torch": "2.13.0+cu126",
+  "numpy": "2.3.5",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "bitwise_retraining_determinism_claimed": false
+}

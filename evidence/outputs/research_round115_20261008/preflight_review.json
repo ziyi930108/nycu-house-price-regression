@@ -1,0 +1,161 @@
+{
+  "GPU_calls": 0,
+  "approval_for_pure_X_audit": true,
+  "blocking_findings_remaining": [],
+  "created_at_utc": "2026-10-08T08:49:38.302660+00:00",
+  "fixed_rules": "Four original cells/min30, canonical group folds, seed42 balanced transaction folds, saved full-fit date mass only",
+  "formal_author_checks": {
+    "GPU_calls": 0,
+    "check_count": 41,
+    "command": [
+      "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\NYCU_ML\\src\\round115_prior_support_x_audit.py",
+      "--self-check"
+    ],
+    "elapsed_seconds": 1.625,
+    "exit_code": 0,
+    "housing_data_read": false,
+    "log_sha256": "e6c0000403910d8b7ad20e9f9cf2177af43d371ab5f33c635f70d417714e5940",
+    "new_fits": 0,
+    "source_sha256": {
+      "src/round115_prior_support_x_audit.py": "976c8180ffbe0693536556be4319efe5ac72e2eac0c19a783eec66e17ec84c96",
+      "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+      "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+      "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+    }
+  },
+  "independent_arithmetic_checks": {
+    "GPU_calls": 0,
+    "check_count": 75,
+    "command": [
+      "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\NYCU_ML\\outputs\\research_round115_20261008\\independent_preflight_checks.py"
+    ],
+    "elapsed_seconds": 1.0,
+    "exit_code": 0,
+    "housing_data_read": false,
+    "log_sha256": "56eec92fa05812f0c11a03afe3278d178d1b551fe88ef7ca11f89ccea50ddbea",
+    "new_fits": 0,
+    "source_sha256": {
+      "src/round115_prior_support_x_audit.py": "976c8180ffbe0693536556be4319efe5ac72e2eac0c19a783eec66e17ec84c96",
+      "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+      "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+      "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+    }
+  },
+  "input_files_verified": 30,
+  "input_sha256": {
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/round48/plan.json": "ece3c43bae1d2f4c5f471d623a0a1082dcd8152dc3b0d20e91e7bc10c1a184af",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "outputs/round60/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round60/auxiliary/prior_fold_ids.npy": "c6a872d9f92c84f7b3ce5d5cbc907b062ee0406ba6e7d240890871ff0f065f95",
+    "outputs/round60/auxiliary/query_indices.npy": "8f131880b605265e47de6310b7aa56a61065295961ea57da77f4081d1897c8e2",
+    "outputs/round60/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+    "outputs/round60/confirmation/prior_fold_ids.npy": "efcf50e95822cb325a2e2c336f6a01a29753eeec77c8ffd80f5dd9426a144b79",
+    "outputs/round60/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+    "outputs/round60/development/fit_indices.npy": "8ce930622540ef9321c94b347c58adad4005c7e4dd209484874594b2bb5fe0ac",
+    "outputs/round60/development/prior_fold_ids.npy": "e56f73984599a54f1bf3004b262c10e1df1f3a64b64d53779b7d2f722d4e88b8",
+    "outputs/round60/development/query_indices.npy": "2e1d097650f727b3e03a19d1d6aca811b8aab546573a7900a6edafeb61ed080d",
+    "outputs/round60/results.json": "8e1dc9e35e1685f4169327016b477fd21ff1b46fadf83cfa8cfb915bd23f1934",
+    "outputs/round79/auxiliary/model/date_weights.npy": "e0d3cf1c466d8ab68ac06e025baf1ecc9fd0e0e6da85946724acddccdb04a9b6",
+    "outputs/round79/auxiliary/model/metadata.json": "846c51ffd7cb059c6a609f5e6c8dcf2a0e474cdee1803177c128dd22f241166d",
+    "outputs/round79/confirmation/model/date_weights.npy": "370df1c113131f2ae2eaf868473a5e9096726e4a48a01e3d39d5f99a9c40ab25",
+    "outputs/round79/confirmation/model/metadata.json": "f8a94079d8fdb4df6be487851acdba83b04c76471705d917d7f7050d574863ef",
+    "outputs/round79/development/model/date_weights.npy": "fef71273ba9c75fc9211038f8c09972b73b69978d32b24e9869486850441868f",
+    "outputs/round79/development/model/metadata.json": "b84babc144c93590862b9e4d20af34d31ba27af5f60594aa49f27ec49224e98f",
+    "outputs/round79/results.json": "7b50e0a236f84649e20e5e35e72b2c7d09259322063dd0e0b2464cdba3240df6",
+    "outputs/round90/preparation/Xfit.pkl": "16667e17c9b6eef6866d730b5f4f959d465419fdb8fda7a241c7e20e331a2a78",
+    "outputs/round90/preparation/Xquery.pkl": "0802aaa2674a64c2edab03199d61cfd600df2b49be0f358d2ad37e10dca4c677",
+    "outputs/round90/preparation/fit_indices.npy": "905e5d48f29d7a858fe7487ef056aab7a38b0e92fb8623e1b5fe01e1b590943f",
+    "outputs/round90/preparation/manifest.json": "400f26bc74c00f7fa0e8062ceb509872eeb6a1af3c3b3437512569c441d17fa7",
+    "outputs/round90/preparation/query_indices.npy": "82fedd724cba31de7e9110048be6bc71635531c5520d1f9a8dee9432aaea04c4",
+    "outputs/round97/nn_prepared/date_weights_float32.npy": "ac8d9bb624dc853c336eca1356ef53ec7950d7bd850f010fd6497c959e83a15b",
+    "outputs/round97/nn_prepared/fold_ids.npy": "1e40f9b356aa02431de72f4343338b7fa3838510060efa4e41210afa07c767f5",
+    "outputs/round97/nn_prepared/prepared.json": "3496d144e8ca6762d10fa786d5968eaa3ee3afba6d4513f58107b6f2fd31b24a",
+    "outputs/round97/nn_prepared/source_indices.npy": "905e5d48f29d7a858fe7487ef056aab7a38b0e92fb8623e1b5fe01e1b590943f",
+    "reports/feature_schema.json": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa"
+  },
+  "limits": [
+    "Only structure/support/concentration; no evidence of price accuracy or Private benefit.",
+    "Existing authority JSON aggregates are read for artifact provenance; no price labels are deserialized.",
+    "Whole target-free raw cache will be deserialized during approved run; not only selected fit rows.",
+    "Named project and missing proxy clusters are not verified independent physical projects."
+  ],
+  "metadata_only_specification_reader_trap_passed": true,
+  "new_CSV": false,
+  "new_fits": 0,
+  "parameters": {
+    "GPU_calls": 0,
+    "NPZ_allowed": false,
+    "automatic_model_go_gate": false,
+    "date_weights": "saved full outer-fit float32, converted to float64; never recomputed/renormalized",
+    "global_minimum_rows": 1,
+    "group_folds": "original canonical cluster key sha256(42|key) first8 little-endian mod5",
+    "levels": [
+      [
+        "address_city",
+        "address_district",
+        "transaction_type",
+        "building_type"
+      ],
+      [
+        "address_city",
+        "transaction_type",
+        "building_type"
+      ],
+      [
+        "transaction_type",
+        "building_type"
+      ],
+      [
+        "transaction_type"
+      ]
+    ],
+    "maximum_project_date_mass_share": "max_g(M_g)/sum_g(M_g)",
+    "minimum_raw_cell_rows": 30,
+    "new_CSV": false,
+    "new_fits": 0,
+    "prices_or_query_labels": false,
+    "project_grouping": "original project/city/district cluster; missing original address/road/row fallbacks",
+    "project_mass_ESS": "(sum_g M_g)^2/sum_g(M_g^2); M_g=sum(saved date weights within reference cell/group)",
+    "quantile_method": "linear",
+    "quantiles": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1.0
+    ],
+    "role": "pure_X_fold_exposure_audit_not_model",
+    "round": 115,
+    "stage_order": [
+      "development",
+      "confirmation",
+      "auxiliary",
+      "offset_2023_02_11"
+    ],
+    "threshold_or_fold_search": false,
+    "transaction_folds": "for each origin: p=default_rng(42).permutation(n); folds[p]=arange(n)%5"
+  },
+  "query_labels_read": false,
+  "real_X_or_arrays_deserialized": false,
+  "reviewer": "root; not R115 source author",
+  "source_sha256": {
+    "reports/round115_plan.md": "2aa22b770ec7b7026f45f58d1793fcab581413092301fcc0e6e3309ac104503f",
+    "src/round115_prior_support_x_audit.py": "976c8180ffbe0693536556be4319efe5ac72e2eac0c19a783eec66e17ec84c96",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "status": "passed"
+}

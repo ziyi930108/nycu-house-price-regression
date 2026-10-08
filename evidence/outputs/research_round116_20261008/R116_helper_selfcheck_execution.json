@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\src\\round116_depthwise_unit.py",
+    "--self-check"
+  ],
+  "elapsed_seconds": 1.4680000000080327,
+  "exit_code": 0,
+  "source_sha256": {
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round116_depthwise_unit.py": "ae9d61c6710ee83a654b6171e2fd5de782f51dc36642d69e4bfede16495e7cd2",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round79_recency_unit.py": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2"
+  }
+}

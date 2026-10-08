@@ -1,0 +1,14 @@
+{
+  "no_fit_or_query_vector_changes": true,
+  "original_field": "stages.*.raw_unit_diagnostic_only.query_y_used_for_diagnostics=false",
+  "original_results_source_and_gates_unchanged": true,
+  "overall_mae_computed_only_in_post_seal_evaluation": true,
+  "overall_mae_uses_query_labels": true,
+  "results": {
+    "path": "outputs/round116/results.json",
+    "sha256": "fb9596b8a1b3eed2d9b5aceb839f1d05d8591657f0756f2f9dfb0f1432b85aa6"
+  },
+  "scope_of_original_false": "Pre-scoring raw-unit negative/projection/extrema statistics copied from sealed model metadata.",
+  "status": "interpretation_clarification_without_original_mutation",
+  "unprojected_TWD_overall_mae_inverse": "Raw unit price multiplied once by original effective-area factor before TWD MAE."
+}

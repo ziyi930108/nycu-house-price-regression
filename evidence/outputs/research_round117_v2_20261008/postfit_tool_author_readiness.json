@@ -1,0 +1,78 @@
+{
+  "GPU_work": false,
+  "checks": [
+    {
+      "check_count": 30,
+      "command": [
+        "C:\\NYCU_ML\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\NYCU_ML\\outputs\\research_round117_v2_20261008\\verify_completed_v2_roots.py",
+        "--self-check"
+      ],
+      "elapsed_seconds": 0.6089999999967404,
+      "exit_code": 0,
+      "log": {
+        "path": "outputs/research_round117_v2_20261008/postfit_tool_author_selfcheck.log",
+        "sha256": "4be0ef55f1a5a844963979099c89771e324491a47d75e5f5bd0406d68f7c7cfe"
+      },
+      "rejected_checkpoint_corruption_cases": null,
+      "status": "passed"
+    },
+    {
+      "check_count": null,
+      "command": [
+        "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\NYCU_ML\\outputs\\research_round117_v2_20261008\\audit_model_identity_v2.py",
+        "--self-check"
+      ],
+      "elapsed_seconds": 2.172000000005937,
+      "exit_code": 0,
+      "log": {
+        "path": "outputs/research_round117_v2_20261008/postfit_native_author_selfcheck.log",
+        "sha256": "72da3b7e9e4d5a4370e21d468fc4bc590ca2f5b198c5780b8a2cee3bd8be5f30"
+      },
+      "rejected_checkpoint_corruption_cases": [
+        "configuration",
+        "width",
+        "class",
+        "architecture"
+      ],
+      "status": "passed"
+    }
+  ],
+  "created_at_utc": "2026-10-08T09:48:49.175750+00:00",
+  "driver": {
+    "path": "src/round117_research_v2.py",
+    "sha256": "b2558a7ce7ae11814c624f9058598d931c4c95b0237776f266eff6ceb50b0a29"
+  },
+  "engineering_recovery_plan": {
+    "path": "reports/round117_engineering_recovery_v2.md",
+    "sha256": "cde448b473422eccc235f442eaaaf70d5140d565e845e883d2cb404fe04ad770"
+  },
+  "formal_postfit_executed": false,
+  "future_postfit_schema": {
+    "artifacts": "four origins each stage/training_metadata/evaluation/sealed_models/prior_preparation/sealed_prior_artifacts",
+    "historical_counts": "historical_aborted_batch_completed_NN_fits=1/fresh_NN_fits_in_this_batch=4/total_R117_actual_NN_fits_including_aborted=5",
+    "manual_gate_verdicts": "august/extra_origin/combined_exploratory_submission/combined_promotion; accuracy separate from engineering passed",
+    "source_sha256": "exact driver.sources plus scientific PLAN and RECOVERY_PLAN (53 current keys)"
+  },
+  "new_model_fits": 0,
+  "real_arrays_or_query_y_read": false,
+  "real_prior_builds": 0,
+  "round": 117,
+  "science_plan": {
+    "path": "reports/round117_plan.md",
+    "sha256": "c4084bee6bbe0f9ed97e019a88f48cbeee992f3a297a1b6ce251709f5377e8eb"
+  },
+  "scope": "Artificial CPU audit arithmetic and checkpoint constructor checks only. Four-stage actual artifact/OOF/metrics audit waits for root formal evaluate exit0 authorization.",
+  "source_sha256": {
+    "outputs/research_round117_v2_20261008/audit_model_identity_v2.py": "3b69f3f49498d0fec0fe988d313ec8572c0edfa0937a8af834e683590f16581f",
+    "outputs/research_round117_v2_20261008/verify_completed_v2_roots.py": "cd6504c3c4c06d87fa84d9cd5a8793ede2a312bb99febe8396665172a2e32a39"
+  },
+  "status": "author_CPU_tool_ready_not_postfit_executed"
+}

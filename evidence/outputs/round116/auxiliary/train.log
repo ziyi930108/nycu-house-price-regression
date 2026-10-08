@@ -1,0 +1,12 @@
+Default metric period is 5 because MAE is/are not implemented for GPU
+0:	learn: 3.2585674	total: 48.7ms	remaining: 2m 25s
+300:	learn: 0.3738066	total: 4.63s	remaining: 41.5s
+600:	learn: 0.3299856	total: 8.78s	remaining: 35s
+900:	learn: 0.3184967	total: 13s	remaining: 30.3s
+1200:	learn: 0.3139204	total: 16.9s	remaining: 25.3s
+1500:	learn: 0.3066414	total: 20.7s	remaining: 20.7s
+1800:	learn: 0.3027860	total: 24.5s	remaining: 16.3s
+2100:	learn: 0.2989528	total: 28.4s	remaining: 12.1s
+2400:	learn: 0.2962936	total: 32.6s	remaining: 8.11s
+2700:	learn: 0.2950569	total: 36.7s	remaining: 4.04s
+2998:	learn: 0.2940612	total: 40.5s	remaining: 0us

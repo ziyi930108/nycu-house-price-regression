@@ -1,0 +1,34 @@
+{
+  "candidate_dates_not_selected": [
+    "2021-01-02",
+    "2021-02-11"
+  ],
+  "deserialization": {
+    "other_binary_files": "not opened",
+    "standalone_indices": [
+      "canonical_mapping",
+      "auxiliary_fit_indices"
+    ],
+    "target_free_feature_pickle": "materialize87 then retain trade_day_index only"
+  },
+  "full_forward_block_means_all_six_natives_and_reference_spatial_not_necessarily_12_months": true,
+  "input_sha256": {
+    "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+    "outputs/geography/osm_2021/audit.json": "d77c29105db2d030ee450b1508fd36d6505d54faf2d6837a55fa034fcb8db548",
+    "outputs/round39/geography/auxiliary/manifest.json": "3a009e2b3b9594fdc8c5a44d747be31448f47782c2307b6c05335979a27e896c",
+    "outputs/round6/geography/auxiliary/manifest.json": "b17bd7c3a65f105c76709c2f23cb281be691990052bb802d13f43db4338b1191",
+    "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+    "outputs/round79/auxiliary/fit_indices.npy": "dc5e9bcd33be6094e5f4bc910d3bf146a0dafbbf33ee2fe173bb97c71d3537ea",
+    "outputs/round98_artifact_inventory/results.json": "11eccec76cee77b5d660bf60eb1f9679b0cb71c9cb1ba4a5d044dd79df54b359",
+    "reports/feature_schema.json": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa",
+    "reports/round118_feasibility_plan.md": "dfc41dfabba10c1af3a7968432e6a8b0e665ab11c38e79cfb4b896d151d9b7cf",
+    "src/geography_city_road_support.py": "1ab904ffd435afd80e4abb33d16ff1e16a94d1d2124e23c630e3c07fac6e1a97",
+    "src/round39_prepare_geo.py": "2ed6299dc4d7b32db3e123209b12572c6f9798dd15b8aab4b4f11fab352009b8",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/round6_prepare_geo.py": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0"
+  },
+  "no_fit_labels_or_query_labels_or_predictions_models_private_states": true,
+  "no_new_cutoff_or_model_selected": true,
+  "query_end_inclusive": "2021-08-10",
+  "source": "Root explicit task message on 2026-10-08; expansion of R118 pure-X feasibility inventory only"
+}

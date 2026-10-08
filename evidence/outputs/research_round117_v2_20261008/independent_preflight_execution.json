@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\NYCU_ML\\outputs\\research_round117_v2_20261008\\independent_preflight.py"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.34299999999348074,
+  "source": {
+    "path": "outputs/research_round117_v2_20261008/independent_preflight.py",
+    "sha256": "9f8f3d1fac431f8204884bc9216230ac775c06bbd015bb64364f6f696b010ff2"
+  },
+  "source_stable": true,
+  "log": {
+    "path": "outputs/research_round117_v2_20261008/independent_preflight.log",
+    "sha256": "79f1fa0cc674cbafe8363b4ca475c8fdc4385bc85e52d8ac30a1d36594352a25"
+  },
+  "new_model_fits": 0,
+  "new_prior_builds": 0,
+  "GPU_work": false,
+  "real_context_replay_repeated": false
+}

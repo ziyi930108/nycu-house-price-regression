@@ -1,0 +1,22 @@
+{
+  "completed_before_failure": [
+    {
+      "path": "outputs/research_round118_feasibility_20261008/author_synthetic_checks.json",
+      "sha256": "3e462972eef0674f939a61fba1ba0c99e15e8af7aaea773cabfaeaedd69e8680"
+    },
+    {
+      "path": "outputs/research_round118_feasibility_20261008/design_limits.json",
+      "sha256": "ddb19fdc8522ffa08b31450f4159069409350211afeee1d360291d54fb6e174d"
+    }
+  ],
+  "entry": {
+    "path": "outputs/research_round118_feasibility_20261008/seal_evidence.py",
+    "sha256": "f6049c8488295e10876c89ed430d4e19f6204ef513a887ffccd886f989d25687"
+  },
+  "exit_code": 1,
+  "failure": "FileExistsError: feasibility.sha256 already belonged to feasibility.json; using Path.with_suffix for feasibility.md would collide.",
+  "no_existing_sidecar_overwritten": true,
+  "no_old_source_changed": true,
+  "resolution": "Separate finalize tool uses feasibility.md.sha256, preserves original JSON sidecar and both successfully written receipts; no real data rerun.",
+  "role": "Preserved author document packaging failure, not model/data failure"
+}

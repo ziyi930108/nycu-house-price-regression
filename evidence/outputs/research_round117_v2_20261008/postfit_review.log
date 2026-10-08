@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\NYCU_ML\outputs\research_round117_v2_20261008\verify_completed_v2_roots.py", line 547, in <module>
+    else:run()
+         ^^^^^
+  File "C:\NYCU_ML\outputs\research_round117_v2_20261008\verify_completed_v2_roots.py", line 290, in run
+    deps={name:c.sha(name) for name in (c.rel(__file__),FOLDER+'audit_model_identity.py',PRIMITIVE)}
+               ^^^^^^^^^^^
+  File "C:\NYCU_ML\src\round100_contract.py", line 54, in sha
+    with safe(name).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ziyi9\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\NYCU_ML\\outputs\\research_round117_v2_20261008\\audit_model_identity.py'

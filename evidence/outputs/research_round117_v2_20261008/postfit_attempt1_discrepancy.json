@@ -1,0 +1,37 @@
+{
+  "CPU_prior_replay_before_failure": false,
+  "failed_execution": {
+    "path": "outputs/research_round117_v2_20261008/independent_postfit_execution.json",
+    "sha256": "208fed4c34f3e253cf04b02563ac20f8e3db53665466a865bdba096ff36dc79c"
+  },
+  "failed_launcher": {
+    "path": "outputs/research_round117_v2_20261008/launch_independent_postfit.py",
+    "sha256": "29516271f1676e9ae1112563184e531161182fde452f11e2caa7ac10142dbd76"
+  },
+  "failed_log": {
+    "path": "outputs/research_round117_v2_20261008/postfit_review.log",
+    "sha256": "21589c8d18cc697f7320f7ed46c94d91447c3d9294be271a81c8cba5f29ef9fc"
+  },
+  "failed_tool": {
+    "path": "outputs/research_round117_v2_20261008/verify_completed_v2_roots.py",
+    "sha256": "cd6504c3c4c06d87fa84d9cd5a8793ede2a312bb99febe8396665172a2e32a39"
+  },
+  "failure": "One dependency literal still named audit_model_identity.py while actual imported/launcher-bound module is audit_model_identity_v2.py.",
+  "model_fit_failure": false,
+  "new_dependency_literal": "FOLDER+'audit_model_identity_v2.py'",
+  "new_launcher": {
+    "path": "outputs/research_round117_v2_20261008/launch_independent_postfit_attempt2.py",
+    "sha256": "b59f8012d3913e62b9fb0c61d077e96d17941e8653f1ece6687be2ca07f8ec63"
+  },
+  "new_model_fits": 0,
+  "new_tool": {
+    "path": "outputs/research_round117_v2_20261008/verify_completed_v2_roots_attempt2.py",
+    "sha256": "2e16266b43f344bb35a80a84003c460886b3361e049278922c64c27139d510fa"
+  },
+  "next_attempt_requires_new_log_and_execution": true,
+  "old_dependency_literal": "FOLDER+'audit_model_identity.py'",
+  "original_failed_files_preserved": true,
+  "query_labels_read_before_failure": false,
+  "status": "diagnosed_audit_tool_path_failure",
+  "tool_only_one_literal_changed": true
+}

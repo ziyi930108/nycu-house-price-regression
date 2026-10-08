@@ -1,0 +1,533 @@
+{
+  "candidate_round": 114,
+  "context_after": {
+    "baseline_vectors": {
+      "H/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "9d4ff35c728bc4e55065d2cc0c4cb2276fc02608a96f8ff9d9a99ccba4b1d248"
+      },
+      "H/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "097d7907a81799d535f735793e1dfc37f1fc2b329de1a0e8d106f6a58655576b"
+      },
+      "H/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "41e24b306249423e942c76b1a591ace28b126ab968a501f2a5781325d3a708b8"
+      },
+      "N/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "5d5e3e00dc294b57760b2254472ce6888e70b281c11e7504af430eaca30ad8be"
+      },
+      "N/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "92844030f93835765284c117e7b894d4494eb539b7c86414d8973105df1795cf"
+      },
+      "N/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "785972d72c2814a551777b7c147a03e2a2414d047779c7e7491ea088645acb42"
+      },
+      "N_area": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "093ed07b80263ab21fe668bf44fad33e5752081af42b3ab6f86a0f515f57346b"
+      },
+      "N_prior": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "1fece866a4f73a0ecba37543a056e4081f0d00ab3d24df755e51c2854e13e2aa"
+      },
+      "U22/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "bfecb9603535f6d0444fb33cc16e96156cb023eef23bf4551735ac33c789313a"
+      },
+      "U22/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "2ab583098b3a10e8576732803afac892d69e7aa3ff33180cb3fcb0b299cefadc"
+      },
+      "U22/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "e53e082ebb1f829f19f864f5e8e31730844948073fe4fd0f6e4bb558593bf023"
+      },
+      "U24/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "a08e3b31b50626a7c6315b8c7df84d95ebbbc939985c441e8cea74b29dcb11a4"
+      },
+      "U24/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "a06f6f14f1695c00f420e9da0de9d3a537c9fbaf2d192754ba5a27f6a0100eef"
+      },
+      "U24/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "dc5f9289f4e5032d4dee7039fa4e1853e34265cb1d0816c38eccaeb2cb683f35"
+      },
+      "light": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "ca2714a82f1eecc4211352bb3a7313f577cabb6a6c8a6066d413e56cd627db9b"
+      },
+      "log": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "f8fc70ee57a9168ef7bc4ee5ebe944438775ba0fe9958485ecd9fb3d57378257"
+      },
+      "raw": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "7d582c9ae507ffb7377c8ad52db1119ef95cd4583222ca8d70828b1acdacf714"
+      },
+      "unit137": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "e271161ae8e0846befdc0bc7d2e96ef2d3db6ace20af8726ff37d30b7131d67a"
+      },
+      "unit42": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "8253328ab8e98ca01a151b3d74c10b608b82c4d81b886c77e23618ce9efedd99"
+      },
+      "v22": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "d63de133cd3d89cda66ae0c150b612e8b03ca8990bed1940f6a2da0cc8c8faf3"
+      },
+      "v24": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "6089e319a3e5061e4420d7573c2c059632b64073a0f14c15e6a09d2a696afc63"
+      }
+    },
+    "fit_labels": {
+      "dtype": "float64",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "735162202e395f230cceeb8ac30b1f779254186dd3271174592d3a81d86d1c08"
+    },
+    "frames_and_indices": {
+      "Xfit": "3146249368cabaece984b854ef41fdb9c146f30be10a9049c885c963477d58f3",
+      "Xquery": "f524e381b1dcf19ead8c63db815652cfe04fac10cd433489e7cb109d1541d0dd",
+      "fit_indices": "64e7eadeb39fa96abe8f3f2903aa5dd6632de52a1a4d4f1037ab0c02e7a027f3",
+      "fit_source_cache_indices": "beb1a53d8c6a575a346d0446532093d6ceaed261759318630c4e84e56ae15e62",
+      "query_indices": "7dd254c2ae8fed176ec2f0740620d24dbbad39f175cb1bc50f80f13c8b354c45",
+      "query_source_cache_indices": "9e762d7cc8840d629adfbff5741ecc114473be435c36c706a8e294c65d61db1c",
+      "spatial_fit": "7e4cc001b1c7335ed428e1ab7f98707d9217069a2dd2342a75cb6416eb568661",
+      "spatial_query": "526006b0b14eec16ab394495f98287c16cee2fd1383d8cf43df0ed33994a6eb9",
+      "tree_fit": "b196e50c456ab1febb4bd4743957c6ed44b0a55d65b00961d6b1cc86f357b937",
+      "tree_query": "ac27afeedacb0f3a4e62c280ccb14c033fb19e0dedb6d155a46f7cbfb0be9264"
+    },
+    "state": "0ac3896ed4a22a9bf00652da1ffe82a0070347802a07959b05ebac275e50f5a9",
+    "weights": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "6004d416ec3c325175a38608b4361452fcba541d47b21405d905f9aed7f8f935"
+    }
+  },
+  "context_before": {
+    "baseline_vectors": {
+      "H/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "9d4ff35c728bc4e55065d2cc0c4cb2276fc02608a96f8ff9d9a99ccba4b1d248"
+      },
+      "H/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "097d7907a81799d535f735793e1dfc37f1fc2b329de1a0e8d106f6a58655576b"
+      },
+      "H/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "41e24b306249423e942c76b1a591ace28b126ab968a501f2a5781325d3a708b8"
+      },
+      "N/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "5d5e3e00dc294b57760b2254472ce6888e70b281c11e7504af430eaca30ad8be"
+      },
+      "N/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "92844030f93835765284c117e7b894d4494eb539b7c86414d8973105df1795cf"
+      },
+      "N/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "785972d72c2814a551777b7c147a03e2a2414d047779c7e7491ea088645acb42"
+      },
+      "N_area": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "093ed07b80263ab21fe668bf44fad33e5752081af42b3ab6f86a0f515f57346b"
+      },
+      "N_prior": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "1fece866a4f73a0ecba37543a056e4081f0d00ab3d24df755e51c2854e13e2aa"
+      },
+      "U22/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "bfecb9603535f6d0444fb33cc16e96156cb023eef23bf4551735ac33c789313a"
+      },
+      "U22/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "2ab583098b3a10e8576732803afac892d69e7aa3ff33180cb3fcb0b299cefadc"
+      },
+      "U22/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "e53e082ebb1f829f19f864f5e8e31730844948073fe4fd0f6e4bb558593bf023"
+      },
+      "U24/base": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "a08e3b31b50626a7c6315b8c7df84d95ebbbc939985c441e8cea74b29dcb11a4"
+      },
+      "U24/reference": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "a06f6f14f1695c00f420e9da0de9d3a537c9fbaf2d192754ba5a27f6a0100eef"
+      },
+      "U24/spatial": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "dc5f9289f4e5032d4dee7039fa4e1853e34265cb1d0816c38eccaeb2cb683f35"
+      },
+      "light": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "ca2714a82f1eecc4211352bb3a7313f577cabb6a6c8a6066d413e56cd627db9b"
+      },
+      "log": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "f8fc70ee57a9168ef7bc4ee5ebe944438775ba0fe9958485ecd9fb3d57378257"
+      },
+      "raw": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "7d582c9ae507ffb7377c8ad52db1119ef95cd4583222ca8d70828b1acdacf714"
+      },
+      "unit137": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "e271161ae8e0846befdc0bc7d2e96ef2d3db6ace20af8726ff37d30b7131d67a"
+      },
+      "unit42": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "8253328ab8e98ca01a151b3d74c10b608b82c4d81b886c77e23618ce9efedd99"
+      },
+      "v22": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "d63de133cd3d89cda66ae0c150b612e8b03ca8990bed1940f6a2da0cc8c8faf3"
+      },
+      "v24": {
+        "dtype": "float64",
+        "shape": [
+          107169
+        ],
+        "values_sha256": "6089e319a3e5061e4420d7573c2c059632b64073a0f14c15e6a09d2a696afc63"
+      }
+    },
+    "fit_labels": {
+      "dtype": "float64",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "735162202e395f230cceeb8ac30b1f779254186dd3271174592d3a81d86d1c08"
+    },
+    "frames_and_indices": {
+      "Xfit": "3146249368cabaece984b854ef41fdb9c146f30be10a9049c885c963477d58f3",
+      "Xquery": "f524e381b1dcf19ead8c63db815652cfe04fac10cd433489e7cb109d1541d0dd",
+      "fit_indices": "64e7eadeb39fa96abe8f3f2903aa5dd6632de52a1a4d4f1037ab0c02e7a027f3",
+      "fit_source_cache_indices": "beb1a53d8c6a575a346d0446532093d6ceaed261759318630c4e84e56ae15e62",
+      "query_indices": "7dd254c2ae8fed176ec2f0740620d24dbbad39f175cb1bc50f80f13c8b354c45",
+      "query_source_cache_indices": "9e762d7cc8840d629adfbff5741ecc114473be435c36c706a8e294c65d61db1c",
+      "spatial_fit": "7e4cc001b1c7335ed428e1ab7f98707d9217069a2dd2342a75cb6416eb568661",
+      "spatial_query": "526006b0b14eec16ab394495f98287c16cee2fd1383d8cf43df0ed33994a6eb9",
+      "tree_fit": "b196e50c456ab1febb4bd4743957c6ed44b0a55d65b00961d6b1cc86f357b937",
+      "tree_query": "ac27afeedacb0f3a4e62c280ccb14c033fb19e0dedb6d155a46f7cbfb0be9264"
+    },
+    "state": "0ac3896ed4a22a9bf00652da1ffe82a0070347802a07959b05ebac275e50f5a9",
+    "weights": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "6004d416ec3c325175a38608b4361452fcba541d47b21405d905f9aed7f8f935"
+    }
+  },
+  "fit_rows": 272117,
+  "fit_seconds": 31.312000000005355,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round114/offset_2023_02_11/base.npy",
+      "sha256": "582fb5d85f0f39069354fe6f96eaecf8d9742cde7a67067b9db703db91087e94",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "6e5f2f7e66bc7859e06d28c249d9f0df39ca8825a32093c10fcae26a344fa081"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round114/offset_2023_02_11/median.npy",
+      "sha256": "d3f0a3208aef9b9a20ca59978442caa5441aafd99965caaf566ce4d5bb9ae0b0",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "f195b478313959beb5aa49c3e875c8758480d7ecec63a5b9ecb7a4f6f102f8d5"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round114/offset_2023_02_11/native.npy",
+      "sha256": "3a2b8899971dfc2b1a84c9208e8e7fc77916d8539a8a72250761b1306f81ec6f",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "74e3a85a6390c236bf07041e34c40b9c64d1235c65e19423215543b5788ff568"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round114/offset_2023_02_11/reference.npy",
+      "sha256": "4f80ceb3b4d11280fd0c3e4c77d40bbba83840b80c36a21084b8a82a5ba31e60",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "c84b44ef9a6971bc0b243557890f664acb29866fc6447ec13f0505c58289948c"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round114/offset_2023_02_11/spatial.npy",
+      "sha256": "c086f09c5f780b20799ef118ee926a92a32f71c94414b55adcd9c3b41455a4d1",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "3c1665718fe393c74e0970faff1bf35c6f250c58372f26d5c21bf0bfe9c0147b"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round114/offset_2023_02_11/model/training.json",
+    "sha256": "9adf6a1f7237d07b86774442c312fe5364dff1d1bca139cb43b3eafdd232926d"
+  },
+  "original_v22_v24_and_prior_slot_replayed_exact": true,
+  "prepared_array_identities": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "413056a518230779e4ed829c9c5fa0972527a4c7b469f810633067adc13d633f"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        107169,
+        23
+      ],
+      "values_sha256": "a9e90aabedd5e9b041b173fee8a23e673b87d39eeabab1f33613087274effa9c"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        107169,
+        144
+      ],
+      "values_sha256": "92b250feb44111b74965e30bca94ec555ed3df07f6693ba976bcc37cb2dc533f"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        107169
+      ],
+      "values_sha256": "bf6eb689563ab033c81d3cadfed55f1ea48711e3d48a098b60a1aa90185d15dd"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        272117,
+        23
+      ],
+      "values_sha256": "e7a8309973af71fc7b0decde047e0ad80f94e384089bb02588746b25d78425d7"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        272117,
+        144
+      ],
+      "values_sha256": "27eb224aaa507d660761c60556894f15622b88b92d1f0c681715ed1967c169a5"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "e629adbe3460136732b039558096e29a9c84bc357e5259b12597520f6bfbee6b"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "6004d416ec3c325175a38608b4361452fcba541d47b21405d905f9aed7f8f935"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        272117
+      ],
+      "values_sha256": "ca96278c36c001d8ecaf5e0b947fffe846c1f6f9256d5368793e25f62853d7f4"
+    }
+  },
+  "projection_diagnostics": {
+    "negative_residual_not_equivalent_to_negative_total": true,
+    "projected_max_TWD": 1468543460.8459473,
+    "projected_min_TWD": 0.0,
+    "projected_zero_fraction": 4.6655282777668915e-05,
+    "projected_zero_rows": 5,
+    "projection_changes_count": 5,
+    "projection_max_correction_TWD": 2548185.348510742,
+    "projection_mean_correction_TWD": 61.39130469498409,
+    "query_y_used_for_diagnostics": false,
+    "raw_max_TWD": 1468543460.8459473,
+    "raw_min_TWD": -2548185.348510742,
+    "raw_negative_total_fraction": 4.6655282777668915e-05,
+    "raw_negative_total_rows": 5,
+    "raw_zero_total_rows": 0
+  },
+  "query_labels_available": false,
+  "query_rows": 107169,
+  "query_scores_computed": false,
+  "raw_signed_total": {
+    "dtype": "float64",
+    "path": "outputs/round114/offset_2023_02_11/model/predictions_raw_twd.npy",
+    "sha256": "c7993822dc1213fe01168d1d6935514bda0f152b4cdf623874702039baafe38d",
+    "shape": [
+      107169
+    ],
+    "values_sha256": "6e7fb876dd03c8277b381276ff2021efbd48b4ba763010bcce5a729c993d0eed"
+  },
+  "sealed_models": [
+    {
+      "path": "outputs/round114/offset_2023_02_11/model/model.pt",
+      "sha256": "58946a3e1709fc993aae5ba7fc459ecd2129dd82b99113226f956585a83e5fe3"
+    },
+    {
+      "path": "outputs/round114/offset_2023_02_11/model/predictions_raw_twd.npy",
+      "sha256": "c7993822dc1213fe01168d1d6935514bda0f152b4cdf623874702039baafe38d"
+    },
+    {
+      "path": "outputs/round114/offset_2023_02_11/model/predictions_twd.npy",
+      "sha256": "3a2b8899971dfc2b1a84c9208e8e7fc77916d8539a8a72250761b1306f81ec6f"
+    },
+    {
+      "path": "outputs/round114/offset_2023_02_11/model/run.json",
+      "sha256": "b982ddd949fd0b93ffc4882ac561e7d5084b0f1127f0a66c655b58a8591ad520"
+    },
+    {
+      "path": "outputs/round114/offset_2023_02_11/model/training.json",
+      "sha256": "9adf6a1f7237d07b86774442c312fe5364dff1d1bca139cb43b3eafdd232926d"
+    }
+  ],
+  "stage": "offset_2023_02_11"
+}

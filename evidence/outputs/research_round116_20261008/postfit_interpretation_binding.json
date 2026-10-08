@@ -1,0 +1,28 @@
+{
+  "GPU_work": false,
+  "Private_score": null,
+  "Public_score": null,
+  "created_at_utc": "2026-10-08T09:34:43.010859+00:00",
+  "evaluation_results": {
+    "path": "outputs/round116/results.json",
+    "sha256": "fb9596b8a1b3eed2d9b5aceb839f1d05d8591657f0756f2f9dfb0f1432b85aa6"
+  },
+  "fullfit_release_newCSV": false,
+  "immutable_results_and_source_preserved": true,
+  "independent_interpretation": {
+    "path": "outputs/research_round116_20261008/postfit_interpretation_review.json",
+    "sha256": "5b41e2a6638fa2c3f3a71b2757ec88bc08fe42b99f253013978be730690331a9"
+  },
+  "interpretations_consistent": true,
+  "new_fits": 0,
+  "postfit_review": {
+    "path": "outputs/research_round116_20261008/postfit_review.json",
+    "sha256": "1962183f1456832ac48b9796d8f66dcc48f81f8ab340bc839876af9007108573"
+  },
+  "query_y_read": false,
+  "root_semantics_clarification": {
+    "path": "outputs/research_round116_20261008/evaluation_semantics_clarification.json",
+    "sha256": "c048c3f15a5a01b20ce6eccef7df08f8656d17e623c6eda52c367978f386f7ef"
+  },
+  "status": "passed"
+}

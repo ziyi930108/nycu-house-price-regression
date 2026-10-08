@@ -1,0 +1,375 @@
+{
+  "candidate_round": 116,
+  "context_after": {
+    "fixed": {
+      "H": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "c5271c426677cd19e17230dd4b36ac9d210df309c611a006a0a22147cf760474"
+      },
+      "U": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6960e90f311ff642bb16acf0c5768b6fe1e4d698bbec55e65c30ce4c02adbb3c"
+      },
+      "area": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "b0177f3e6dc659d5a6370608267b47867cd7a24a0ce5e3276632a2c0723a2fd2"
+      },
+      "lgb": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6a18771a5fb977a18c9b4c950d0f5b68824e114b7fb2d76a13db2263ec5ca89b"
+      }
+    },
+    "frames": [
+      "4f82f194a1a1c14a068db51f639bce0bc9a9cae8b4fb2ab22fec44b4c884e3f9",
+      "d1ad47dd39249564ecd3c1e6920c36b0f84acbc8318c925ccfd362c0979e7d73"
+    ],
+    "indices": {
+      "fit_indices": {
+        "dtype": "int64",
+        "shape": [
+          240316
+        ],
+        "values_sha256": "73750cf8018b2a28198db91ae397137a90366ae96e5f186cfdf862ab4a29e593"
+      },
+      "fit_source_cache_indices": {
+        "dtype": "int64",
+        "shape": [
+          240316
+        ],
+        "values_sha256": "ea971317c052558f9e3e64d0e46e2abffc42613c5f086957c9a2b7c4fbee90e9"
+      },
+      "query_indices": {
+        "dtype": "int64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43"
+      },
+      "query_source_cache_indices": {
+        "dtype": "int64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "48527fbd6d1dfd9a000761ed9a6385a7f13d7d543ebca63038d9a649d34646a6"
+      }
+    },
+    "original": {
+      "base": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "1c6157352941f2802f959935076f2cd231a5521bd84f466418ed6e8b68f34ab4"
+      },
+      "median": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+      },
+      "native": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "d26db12c910350ae70da46923a65249bb5627935da2a94f66fdca0bfd4aead6a"
+      },
+      "reference": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "fcdef9b067b16b249f237774cb1a2fff04ed12ab6a85360d7b2ac05fd368dda9"
+      },
+      "spatial": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "ff516f5893c82eb73e5111e5959b0c22b0e37dc696e0026366fbf1323bbeb5b2"
+      }
+    },
+    "state": "100e7bbe5e035266c062c9c7ffafb47931dfd8b1c248620c27c600a78db3c139"
+  },
+  "context_before": {
+    "fixed": {
+      "H": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "c5271c426677cd19e17230dd4b36ac9d210df309c611a006a0a22147cf760474"
+      },
+      "U": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6960e90f311ff642bb16acf0c5768b6fe1e4d698bbec55e65c30ce4c02adbb3c"
+      },
+      "area": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "b0177f3e6dc659d5a6370608267b47867cd7a24a0ce5e3276632a2c0723a2fd2"
+      },
+      "lgb": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6a18771a5fb977a18c9b4c950d0f5b68824e114b7fb2d76a13db2263ec5ca89b"
+      }
+    },
+    "frames": [
+      "4f82f194a1a1c14a068db51f639bce0bc9a9cae8b4fb2ab22fec44b4c884e3f9",
+      "d1ad47dd39249564ecd3c1e6920c36b0f84acbc8318c925ccfd362c0979e7d73"
+    ],
+    "indices": {
+      "fit_indices": {
+        "dtype": "int64",
+        "shape": [
+          240316
+        ],
+        "values_sha256": "73750cf8018b2a28198db91ae397137a90366ae96e5f186cfdf862ab4a29e593"
+      },
+      "fit_source_cache_indices": {
+        "dtype": "int64",
+        "shape": [
+          240316
+        ],
+        "values_sha256": "ea971317c052558f9e3e64d0e46e2abffc42613c5f086957c9a2b7c4fbee90e9"
+      },
+      "query_indices": {
+        "dtype": "int64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "343b1b0762dfec06fe118f7c62c33e0e8988ea14ecf6846735b55d576cd7df43"
+      },
+      "query_source_cache_indices": {
+        "dtype": "int64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "48527fbd6d1dfd9a000761ed9a6385a7f13d7d543ebca63038d9a649d34646a6"
+      }
+    },
+    "original": {
+      "base": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "1c6157352941f2802f959935076f2cd231a5521bd84f466418ed6e8b68f34ab4"
+      },
+      "median": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "6307476eb4fc080f143525897b872fc64317beb729ffba6b88b6e82f236c23f6"
+      },
+      "native": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "d26db12c910350ae70da46923a65249bb5627935da2a94f66fdca0bfd4aead6a"
+      },
+      "reference": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "fcdef9b067b16b249f237774cb1a2fff04ed12ab6a85360d7b2ac05fd368dda9"
+      },
+      "spatial": {
+        "dtype": "float64",
+        "shape": [
+          81234
+        ],
+        "values_sha256": "ff516f5893c82eb73e5111e5959b0c22b0e37dc696e0026366fbf1323bbeb5b2"
+      }
+    },
+    "state": "100e7bbe5e035266c062c9c7ffafb47931dfd8b1c248620c27c600a78db3c139"
+  },
+  "fit_input_identity": {
+    "categorical_columns": [
+      "district",
+      "transaction_type",
+      "urban_zone",
+      "nonurban_zone",
+      "nonurban_use",
+      "building_type",
+      "main_use",
+      "main_material",
+      "partition",
+      "parking_type",
+      "project_name",
+      "building_and_unit",
+      "transfer_floor_raw",
+      "address_raw",
+      "address_city",
+      "address_district",
+      "address_road",
+      "address_section",
+      "address_locality",
+      "location_road",
+      "building_block"
+    ],
+    "fit_area_weights_sha256": "dde5cabf86c38695a706aa5029035f44066b0d8ad03ea2e57c05a695cf527a20",
+    "fit_date_weights_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6",
+    "fit_sample_weights_sha256": "32fa95cc7650e0bb3125a34af63bc72cc552cc3df13cbe8b165f490ca545ff2c",
+    "fit_target_values_sha256": "5b97c5c453603ffc6bd9967e1a51168d970c52c7bcc711dcb4ff0d4c02d10b0f",
+    "fit_transformed_target_values_sha256": "5c06a4870fdb548e9729ae643649603ad1231a6b8981d3eea3eeb85cfcabc4ec",
+    "frame_sha256": {
+      "fit_X": "4f82f194a1a1c14a068db51f639bce0bc9a9cae8b4fb2ab22fec44b4c884e3f9",
+      "fit_augmented": "bffa2eb37c8d81335e6e52a0bb6b91567550148e7fb7ccbe631ec22a8c1db717",
+      "fit_geo": "54241d478fa5268ee25d65ad96d5bcab5654c9efc2b0225e09ff1f1292cf397c",
+      "query_X": "d1ad47dd39249564ecd3c1e6920c36b0f84acbc8318c925ccfd362c0979e7d73",
+      "query_augmented": "e535e9a5fda26ee64a004fa0a50271f08514a95cb2f196ff9c2ef2c3a14f6596",
+      "query_geo": "75f892f91f894a42d6c842350ad3685e2c2be3f4ddecbd4f48ce6429479e4340"
+    }
+  },
+  "fit_rows": 240316,
+  "fit_seconds": 39.29700000000594,
+  "layers": {
+    "base": {
+      "dtype": "float64",
+      "path": "outputs/round116/development/base.npy",
+      "sha256": "bfd789e802a3b7134a3c546ada8acded6823678defdbae9f59d68d19569499d4",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "5a6ea048117509797eba22d4419706261c23e9d90e79942bc36329e96f1570ed"
+    },
+    "median": {
+      "dtype": "float64",
+      "path": "outputs/round116/development/median.npy",
+      "sha256": "78693b8ea3786c18bf15605ac9f7d241571a89b2c998547d7ba3c326bf95a3af",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "c5d08b1bd5e2b42d4d601a8d29974291c0358541944b600ef5782a1db241777a"
+    },
+    "native": {
+      "dtype": "float64",
+      "path": "outputs/round116/development/native.npy",
+      "sha256": "626b46232210bf383fe8652f14e60190d384b1e7d9fab8281cb9f08e2f06d181",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "a2f0875413e855c6c89a15edc2cb8130086213578c772373e8523d9a63192f1c"
+    },
+    "reference": {
+      "dtype": "float64",
+      "path": "outputs/round116/development/reference.npy",
+      "sha256": "dbf53d58cb98de3762eb7e91212be63e49cec65cf34242d5d28e21be8b37bc50",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "1b16977f77e19b402384c72e2b6024413ebb83eca58a0fc8737986bca78390ba"
+    },
+    "spatial": {
+      "dtype": "float64",
+      "path": "outputs/round116/development/spatial.npy",
+      "sha256": "4237af483b7325faaeb508e0bd95b99315bec5d8ef9884f83735517705ec4644",
+      "shape": [
+        81234
+      ],
+      "values_sha256": "3789fa356aa9eae0152d3f6c027c28b51b8e210ba6a61af547ce4a5c73cd047e"
+    }
+  },
+  "model_metadata": {
+    "path": "outputs/round116/development/model/metadata.json",
+    "sha256": "c358bbceaf23d3266179b61ebe24e543ac41d49cbbff803f45e541cf28e91fa3"
+  },
+  "original_v22_v24_and_unit42_slot_replayed_exact": true,
+  "prepared_array_identities": {
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "bd22ee426159dc495434d024ff111ae39a19cd77e92d7980e9b333b3acd00af6"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        240316
+      ],
+      "values_sha256": "28a552d3bd69273bf4dd27526be00989036dbfeac9ff63aadc5d20b13af9fb6d"
+    }
+  },
+  "query_labels_available": false,
+  "query_rows": 81234,
+  "query_scores_computed": false,
+  "raw_unit_prediction": {
+    "dtype": "float64",
+    "path": "outputs/round116/development/model/raw.npy",
+    "sha256": "2f02064602b5dec541b8f0c7ad9a356cef4e2e4be66bde62341d15b8afab6f58",
+    "shape": [
+      81234
+    ],
+    "values_sha256": "8ab0bbd7d29225296f7ebfd648ae5ba42a83e238ee12d010529fc61c024b2152"
+  },
+  "sealed_models": [
+    {
+      "path": "outputs/round116/development/model/feature_state.json",
+      "sha256": "2c7e7277e02c58e72724a03aaf993a2e71d923b84d99477c4d535db313b1044a"
+    },
+    {
+      "path": "outputs/round116/development/model/metadata.json",
+      "sha256": "c358bbceaf23d3266179b61ebe24e543ac41d49cbbff803f45e541cf28e91fa3"
+    },
+    {
+      "path": "outputs/round116/development/model/model.cbm",
+      "sha256": "282b82953d2071f6a706360832d5dbbdf51870a8f7db1cc0034f770bd0634a98"
+    },
+    {
+      "path": "outputs/round116/development/model/native.npy",
+      "sha256": "626b46232210bf383fe8652f14e60190d384b1e7d9fab8281cb9f08e2f06d181"
+    },
+    {
+      "path": "outputs/round116/development/model/raw.npy",
+      "sha256": "2f02064602b5dec541b8f0c7ad9a356cef4e2e4be66bde62341d15b8afab6f58"
+    },
+    {
+      "path": "outputs/round116/development/model/started.json",
+      "sha256": "efbf870dbeb656cc28b7d1a2a228d1c1db2a71f1a0d6152551b8a9449e1c5e8a"
+    }
+  ],
+  "stage": "development",
+  "training_log": {
+    "path": "outputs/round116/development/train.log",
+    "sha256": "a40b20df43366237cc5a4d4f8864b0344d2ac3a918be02d5dbc6f02314cd93a0"
+  },
+  "unit_inverse_diagnostics": {
+    "extra_price_cap_applied": false,
+    "inverse_applications_per_prediction": 1,
+    "native_TWD_max": 3583018846.22417,
+    "native_TWD_min": 49909.14752678778,
+    "native_zero_rows": 0,
+    "nonnegative_projection_after_TWD_reconstruction": true,
+    "query_y_used_for_diagnostics": false,
+    "raw_negative_unit_rows": 0,
+    "raw_unit_max": 50.996918657267685,
+    "raw_unit_min": 3.514458676779755,
+    "raw_units": "unit"
+  }
+}

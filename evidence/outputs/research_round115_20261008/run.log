@@ -1,0 +1,5 @@
+{"stage": "development", "status": "pure_X_support_exposure_completed", "elapsed_seconds": 21.421999999991385}
+{"stage": "confirmation", "status": "pure_X_support_exposure_completed", "elapsed_seconds": 28.26600000000326}
+{"stage": "auxiliary", "status": "pure_X_support_exposure_completed", "elapsed_seconds": 15.468999999997322}
+{"stage": "offset_2023_02_11", "status": "pure_X_support_exposure_completed", "elapsed_seconds": 26.077999999994063}
+{"status": "all_four_origins_pure_X_audit_completed", "elapsed_seconds": 95.28100000000268, "new_fits": 0}
