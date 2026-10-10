@@ -1,0 +1,193 @@
+{
+  "GPU_calls": 0,
+  "checkpoint_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "last_snapshot_equals_final_model": true,
+  "native_forward_calls": 0,
+  "new_fits": 0,
+  "query_labels_loaded": false,
+  "snapshots": [
+    {
+      "epoch": 1,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_01.pt",
+      "sha256": "af6a57b867834f45b4b2c0a7d4f43eed2017917386537d0d5cd3802bc79ddeea"
+    },
+    {
+      "epoch": 2,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_02.pt",
+      "sha256": "06848e6d26db5b471b453cd2beeeaa131efec16536e156ec867495ed92474bc7"
+    },
+    {
+      "epoch": 3,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_03.pt",
+      "sha256": "8265d3a5ff9292888579eb6bdee233489ada973189c0d8acecd6c3b48ea4a3c1"
+    },
+    {
+      "epoch": 4,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_04.pt",
+      "sha256": "0c616d2aaf0b05eba4e46eb7f8d81de9aa55736779182463e783888ceb9d8b30"
+    },
+    {
+      "epoch": 5,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_05.pt",
+      "sha256": "45f32e3aaf5983b3386b0345c907e0134e5d5f506f8095a0b97b4c0b8bb9b7dc"
+    },
+    {
+      "epoch": 6,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_06.pt",
+      "sha256": "8677a7746ba15cddec6da49e1dcd2ef1bfb0187554f3797a2b6d16b2237aee8e"
+    },
+    {
+      "epoch": 7,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_07.pt",
+      "sha256": "dec8f11bd62893eabacad182dfb5d1091738ffd608e55aa4bbff499e5638597a"
+    },
+    {
+      "epoch": 8,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_08.pt",
+      "sha256": "a802e3dff6a09aeb579373c79b1d2be6ef68800e051c0728b05f459a6f529216"
+    },
+    {
+      "epoch": 9,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_09.pt",
+      "sha256": "6cbb73417379536328e69a3765bdedbc293fba2e7905b681dec4b8d9195cd62f"
+    },
+    {
+      "epoch": 10,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_10.pt",
+      "sha256": "81c53bb655b300d56d391fede67fd305e9377b3e9d2b732fff74ebda412fa83a"
+    },
+    {
+      "epoch": 11,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_11.pt",
+      "sha256": "e66c29490b48a7a557dca290b70b5c0129170fe20e849683a22a14d41e944c92"
+    },
+    {
+      "epoch": 12,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_12.pt",
+      "sha256": "ac8ceafac0d77a9c0cfa13e1a05453aad57f73130834e4d8ed14e012e48d27e6"
+    },
+    {
+      "epoch": 13,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_13.pt",
+      "sha256": "3b66603d68ba2ba7d3b6440d736773ae8ad5a45e817065bfb1480f6bf6b32d14"
+    },
+    {
+      "epoch": 14,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_14.pt",
+      "sha256": "a245f5843956a6e1a0aa7df2892008e2f46c6db060eecccd55ab2bf215277dc9"
+    },
+    {
+      "epoch": 15,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_15.pt",
+      "sha256": "57dd33da9303df360e3c73627f02b22817195b3b4d221d85500736657ee6cb97"
+    },
+    {
+      "epoch": 16,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_16.pt",
+      "sha256": "444c686d5cc4bbfa249804d590c5505c06a0e8f90b517acc99135e50ea6e196c"
+    },
+    {
+      "epoch": 17,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_17.pt",
+      "sha256": "178d4779d720ebc795ce87777900cafde3dc0bad6eb24d83d25fa93a3d9597dc"
+    },
+    {
+      "epoch": 18,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_18.pt",
+      "sha256": "37e8487bce6fcce823456ef73705b43c6dfb2150474d69fa4ae9bbbd7091527d"
+    },
+    {
+      "epoch": 19,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_19.pt",
+      "sha256": "836fc86698202cef47def1de86c13646b7a58ceee036ae6e8632c51447133365"
+    },
+    {
+      "epoch": 20,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_20.pt",
+      "sha256": "69efec6cc66a5e14c83902527ff6f7ad428bb6c966841bf0b455e17b2667d11c"
+    },
+    {
+      "epoch": 21,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_21.pt",
+      "sha256": "1b2344e34ec04f724bbbdc236be1785c26edb5766c02eae9f1c0efb80be71cf0"
+    },
+    {
+      "epoch": 22,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_22.pt",
+      "sha256": "27f20926775b98baa3f33dab8fb083301667a184dcd93cf2d3358a401c33e05f"
+    },
+    {
+      "epoch": 23,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_23.pt",
+      "sha256": "15a67ceb2a9652b5674c92ab51b2d836aa6b176c134e3ace900bcc36985a9d95"
+    },
+    {
+      "epoch": 24,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_24.pt",
+      "sha256": "b22567de4490368c3d2f567146b16f586015c247282361aadd2734b4d96f44d1"
+    },
+    {
+      "epoch": 25,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_25.pt",
+      "sha256": "2e0a6756e887269359cb16d2112989957b17fe1e41b3abad7d573d73ab688232"
+    },
+    {
+      "epoch": 26,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_26.pt",
+      "sha256": "cd0d61a4a8990befb15b26ea2d77a2af21d5d82267c5565feb2aaf7987e4c28c"
+    },
+    {
+      "epoch": 27,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_27.pt",
+      "sha256": "9a505cd6cf37589d0510f7160d3059438442eba89047a69eec63896731daaab9"
+    },
+    {
+      "epoch": 28,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_28.pt",
+      "sha256": "de9b30a95279578d2605eae856e465f846c651f103ba083999f74ff8aa588673"
+    },
+    {
+      "epoch": 29,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_29.pt",
+      "sha256": "657770f31c7d56c49323cfb07f639a16d1149186b0bfef0e581542a8dfb99eaf"
+    },
+    {
+      "epoch": 30,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_30.pt",
+      "sha256": "7954eb2adbe4a7cb441c7de1563f9bc4297dcea191321d534d41328d456e0f50"
+    }
+  ],
+  "status": "passed_thirty_checkpoint_structure_and_final_state",
+  "strict_state_dict_shape_dtype_finite_checks": true
+}

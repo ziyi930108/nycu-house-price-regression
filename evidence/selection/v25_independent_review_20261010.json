@@ -1,0 +1,398 @@
+{
+  "status": "passed",
+  "review_date_Asia_Taipei": "2026-10-10",
+  "recorded_at_utc": "2026-10-10T08:12:00.498696+00:00",
+  "scope": "Read-only supplemental audit after the direct human Public-score reply; no source, model, root documentation or repository mutation.",
+  "supersedes_only_prior_audit_unknown_Public_statement": true,
+  "prior_audit": {
+    "path": "outputs/v25_selection_20261010_audit/read_only_v25_audit.md",
+    "sha256": "3108805e0db252af75f687aa49b6dd06c83d54deee16afe29022dc3e626b70a5",
+    "bytes": 11984
+  },
+  "selected_submission": "v25",
+  "human_reported_public_mae_twd": 1995836.2136,
+  "private_mae_twd": null,
+  "public_delta_vs_v22_twd": -2732.3570000000764,
+  "checks": {
+    "raw_human_answer_numeric_value_exact": true,
+    "selected_v25_explicit_latest_instruction": true,
+    "csv_release_identity_bound": true,
+    "feedback_binding_full_record": true,
+    "selection_binding_full_record": true,
+    "prior_selection_binding_full_record": true,
+    "release_binding_full_record": true,
+    "both_private_unknown": true,
+    "reported_score_not_platform_byte_attestation": true,
+    "no_agent_kaggle_action": true,
+    "public_delta_arithmetic": true,
+    "historical_release_unchanged_unknown_scores": true,
+    "historical_gates_not_promoted": true,
+    "protected_identity_outputs/round107/final/release.json": true,
+    "protected_identity_outputs/round107/final/request.json": true,
+    "protected_identity_outputs/round107/final/seal.json": true,
+    "protected_identity_outputs/round107/results.json": true,
+    "protected_identity_outputs/v22_submission_focus_20260928/user_selection.json": true,
+    "protected_identity_outputs/submission_v22_trial.csv": true,
+    "protected_identity_outputs/submission_v25_trial.csv": true,
+    "protected_identity_src/round107_weighted_smooth_train.py": true,
+    "protected_identity_src/round107_108_research.py": true,
+    "protected_identity_src/round107_final_candidate.py": true,
+    "protected_identity_src/round107_full_release.py": true,
+    "source_and_repo_copy_outputs/research_resume_20261008/build_submission.mjs": true,
+    "source_and_repo_copy_src/house_features.py": true,
+    "source_and_repo_copy_src/model_common.py": true,
+    "source_and_repo_copy_src/prepare_data.py": true,
+    "source_and_repo_copy_src/round100_contract.py": true,
+    "source_and_repo_copy_src/round100_temporal_prior_evaluate_v2.py": true,
+    "source_and_repo_copy_src/round104_composition.py": true,
+    "source_and_repo_copy_src/round107_108_research.py": true,
+    "source_and_repo_copy_src/round107_final_candidate.py": true,
+    "source_and_repo_copy_src/round107_full_release.py": true,
+    "source_and_repo_copy_src/round107_weighted_smooth_train.py": true,
+    "source_and_repo_copy_src/round108_single_ctr_unit.py": true,
+    "source_and_repo_copy_src/round12_experiment.py": true,
+    "source_and_repo_copy_src/round12_log_geo.py": true,
+    "source_and_repo_copy_src/round19_unit_geo.py": true,
+    "source_and_repo_copy_src/round2_neighborhood.py": true,
+    "source_and_repo_copy_src/round33_reproduction.py": true,
+    "source_and_repo_copy_src/round34_trial_release.py": true,
+    "source_and_repo_copy_src/round35_reproduction.py": true,
+    "source_and_repo_copy_src/round36_combination.py": true,
+    "source_and_repo_copy_src/round38_fixed_average.py": true,
+    "source_and_repo_copy_src/round39_city_road_experiment.py": true,
+    "source_and_repo_copy_src/round3_backtest.py": true,
+    "source_and_repo_copy_src/round3_evaluate.py": true,
+    "source_and_repo_copy_src/round3_reference.py": true,
+    "source_and_repo_copy_src/round46_experiment.py": true,
+    "source_and_repo_copy_src/round46_recency_log.py": true,
+    "source_and_repo_copy_src/round46_trial_release.py": true,
+    "source_and_repo_copy_src/round47_nn_encode.py": true,
+    "source_and_repo_copy_src/round47_nn_train.py": true,
+    "source_and_repo_copy_src/round48_final_branch.py": true,
+    "source_and_repo_copy_src/round48_nn_experiment.py": true,
+    "source_and_repo_copy_src/round63_recency_weighted_prior_train.py": true,
+    "source_and_repo_copy_src/round6_common.py": true,
+    "source_and_repo_copy_src/round6_evaluate.py": true,
+    "source_and_repo_copy_src/round6_geo.py": true,
+    "source_and_repo_copy_src/round6_prepare_geo.py": true,
+    "source_and_repo_copy_src/round76_77_final.py": true,
+    "source_and_repo_copy_src/round79_final.py": true,
+    "source_and_repo_copy_src/round79_recency_unit.py": true,
+    "source_and_repo_copy_src/round8_experiment.py": true,
+    "source_and_repo_copy_src/round8_spatial_reference.py": true,
+    "source_and_repo_copy_src/train_lightgbm.py": true,
+    "source_and_repo_copy_src/v3_cluster_stability.py": true,
+    "prior_audit_preserved": true
+  },
+  "protected_existing_count": 11,
+  "protected_before_and_after": [
+    {
+      "path": "outputs/round107/final/release.json",
+      "sha256": "661b0cc0f1cf4eef9234187a51929e4eb8240ccf43bc1606f71a1086f865f189",
+      "bytes": 2446
+    },
+    {
+      "path": "outputs/round107/final/request.json",
+      "sha256": "8b1f1c6533009e0f30fe8258e1d3cff6fa5f10087692ef7739190845246d1bcb",
+      "bytes": 38454
+    },
+    {
+      "path": "outputs/round107/final/seal.json",
+      "sha256": "d694957d1853acaf609bc4495c51f4cea407c13c9eedcecd829d84a1ad6db5c7",
+      "bytes": 4548
+    },
+    {
+      "path": "outputs/round107/results.json",
+      "sha256": "c52a025c347b69962809524ae16b3b09e67a9ee82d8e98975995b977df353491",
+      "bytes": 306774
+    },
+    {
+      "path": "outputs/v22_submission_focus_20260928/user_selection.json",
+      "sha256": "c7d95d5f7732a8d3e32df7c5a4c80f5510b292f22e5d08a212cff14967a18c76",
+      "bytes": 1113
+    },
+    {
+      "path": "outputs/submission_v22_trial.csv",
+      "sha256": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+      "bytes": 734491
+    },
+    {
+      "path": "outputs/submission_v25_trial.csv",
+      "sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+      "bytes": 734489
+    },
+    {
+      "path": "src/round107_weighted_smooth_train.py",
+      "sha256": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+      "bytes": 18475
+    },
+    {
+      "path": "src/round107_108_research.py",
+      "sha256": "acf6249f19c54cf5175269688a8fe57d376ae5af50b34be2b57a24c5e14103ea",
+      "bytes": 14756
+    },
+    {
+      "path": "src/round107_final_candidate.py",
+      "sha256": "8252533fc4f6fea412d9ad95e20f9cef4384b00232db528d2a1591b157afd085",
+      "bytes": 19547
+    },
+    {
+      "path": "src/round107_full_release.py",
+      "sha256": "594dd283282bde33058d7e2e72f856bcba26d6157d2ea02469d785fb2ed18fb6",
+      "bytes": 13890
+    }
+  ],
+  "request_bound_source_count": 44,
+  "source_and_existing_repo_copy_checks": [
+    {
+      "path": "outputs/research_resume_20261008/build_submission.mjs",
+      "sha256": "1d7d693c89ab5abd279458cec5855dadb7b465e36e474de838ee65ef8bd29d47",
+      "repo_copy": "evidence/outputs/research_resume_20261008/build_submission.mjs"
+    },
+    {
+      "path": "src/house_features.py",
+      "sha256": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+      "repo_copy": "research/src/house_features.py"
+    },
+    {
+      "path": "src/model_common.py",
+      "sha256": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+      "repo_copy": "research/src/model_common.py"
+    },
+    {
+      "path": "src/prepare_data.py",
+      "sha256": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+      "repo_copy": "research/src/prepare_data.py"
+    },
+    {
+      "path": "src/round100_contract.py",
+      "sha256": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+      "repo_copy": "research/src/round100_contract.py"
+    },
+    {
+      "path": "src/round100_temporal_prior_evaluate_v2.py",
+      "sha256": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+      "repo_copy": "research/src/round100_temporal_prior_evaluate_v2.py"
+    },
+    {
+      "path": "src/round104_composition.py",
+      "sha256": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0",
+      "repo_copy": "research/src/round104_composition.py"
+    },
+    {
+      "path": "src/round107_108_research.py",
+      "sha256": "acf6249f19c54cf5175269688a8fe57d376ae5af50b34be2b57a24c5e14103ea",
+      "repo_copy": "research/src/round107_108_research.py"
+    },
+    {
+      "path": "src/round107_final_candidate.py",
+      "sha256": "8252533fc4f6fea412d9ad95e20f9cef4384b00232db528d2a1591b157afd085",
+      "repo_copy": "research/src/round107_final_candidate.py"
+    },
+    {
+      "path": "src/round107_full_release.py",
+      "sha256": "594dd283282bde33058d7e2e72f856bcba26d6157d2ea02469d785fb2ed18fb6",
+      "repo_copy": "research/src/round107_full_release.py"
+    },
+    {
+      "path": "src/round107_weighted_smooth_train.py",
+      "sha256": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+      "repo_copy": "research/src/round107_weighted_smooth_train.py"
+    },
+    {
+      "path": "src/round108_single_ctr_unit.py",
+      "sha256": "0e46eae335d13e904b65a23eb120cd24f48bf5234b55b8c9c086c0a17820e6e8",
+      "repo_copy": "research/src/round108_single_ctr_unit.py"
+    },
+    {
+      "path": "src/round12_experiment.py",
+      "sha256": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+      "repo_copy": "research/src/round12_experiment.py"
+    },
+    {
+      "path": "src/round12_log_geo.py",
+      "sha256": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+      "repo_copy": "research/src/round12_log_geo.py"
+    },
+    {
+      "path": "src/round19_unit_geo.py",
+      "sha256": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+      "repo_copy": "research/src/round19_unit_geo.py"
+    },
+    {
+      "path": "src/round2_neighborhood.py",
+      "sha256": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+      "repo_copy": "research/src/round2_neighborhood.py"
+    },
+    {
+      "path": "src/round33_reproduction.py",
+      "sha256": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+      "repo_copy": "research/src/round33_reproduction.py"
+    },
+    {
+      "path": "src/round34_trial_release.py",
+      "sha256": "ba6a7aa57409c2e22abeec2465d0dc4ff2eca86480bf106fc36f9c1e639d89e3",
+      "repo_copy": "research/src/round34_trial_release.py"
+    },
+    {
+      "path": "src/round35_reproduction.py",
+      "sha256": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+      "repo_copy": "research/src/round35_reproduction.py"
+    },
+    {
+      "path": "src/round36_combination.py",
+      "sha256": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+      "repo_copy": "research/src/round36_combination.py"
+    },
+    {
+      "path": "src/round38_fixed_average.py",
+      "sha256": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+      "repo_copy": "research/src/round38_fixed_average.py"
+    },
+    {
+      "path": "src/round39_city_road_experiment.py",
+      "sha256": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+      "repo_copy": "research/src/round39_city_road_experiment.py"
+    },
+    {
+      "path": "src/round3_backtest.py",
+      "sha256": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+      "repo_copy": "research/src/round3_backtest.py"
+    },
+    {
+      "path": "src/round3_evaluate.py",
+      "sha256": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+      "repo_copy": "research/src/round3_evaluate.py"
+    },
+    {
+      "path": "src/round3_reference.py",
+      "sha256": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+      "repo_copy": "research/src/round3_reference.py"
+    },
+    {
+      "path": "src/round46_experiment.py",
+      "sha256": "e56c758f55b8dc27c4b5fae613c7ca0b169de3645c09b8244c613123a0ea4405",
+      "repo_copy": "research/src/round46_experiment.py"
+    },
+    {
+      "path": "src/round46_recency_log.py",
+      "sha256": "48364428cdf6281205666470c8f61662fdb8aa65a18fc5a67d189d60cf7a8fa8",
+      "repo_copy": "research/src/round46_recency_log.py"
+    },
+    {
+      "path": "src/round46_trial_release.py",
+      "sha256": "2089bdc626f55cba43c8863038ccd6087ad9d5b24085ac948b4a465ba12bdd19",
+      "repo_copy": "research/src/round46_trial_release.py"
+    },
+    {
+      "path": "src/round47_nn_encode.py",
+      "sha256": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+      "repo_copy": "research/src/round47_nn_encode.py"
+    },
+    {
+      "path": "src/round47_nn_train.py",
+      "sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+      "repo_copy": "research/src/round47_nn_train.py"
+    },
+    {
+      "path": "src/round48_final_branch.py",
+      "sha256": "9775586eeadf382c6bc254a50cd3fbadd8f1d0e6e882cee4abf301efd7a61442",
+      "repo_copy": "research/src/round48_final_branch.py"
+    },
+    {
+      "path": "src/round48_nn_experiment.py",
+      "sha256": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+      "repo_copy": "research/src/round48_nn_experiment.py"
+    },
+    {
+      "path": "src/round63_recency_weighted_prior_train.py",
+      "sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+      "repo_copy": "research/src/round63_recency_weighted_prior_train.py"
+    },
+    {
+      "path": "src/round6_common.py",
+      "sha256": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+      "repo_copy": "research/src/round6_common.py"
+    },
+    {
+      "path": "src/round6_evaluate.py",
+      "sha256": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+      "repo_copy": "research/src/round6_evaluate.py"
+    },
+    {
+      "path": "src/round6_geo.py",
+      "sha256": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+      "repo_copy": "research/src/round6_geo.py"
+    },
+    {
+      "path": "src/round6_prepare_geo.py",
+      "sha256": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+      "repo_copy": "research/src/round6_prepare_geo.py"
+    },
+    {
+      "path": "src/round76_77_final.py",
+      "sha256": "ed54e7d0779c2156414510704e8ffc90cf1b42f65819d3b6cd5c3f08c143f26b",
+      "repo_copy": "research/src/round76_77_final.py"
+    },
+    {
+      "path": "src/round79_final.py",
+      "sha256": "c6ad4103c7e75ff1954954b234a671e842a4918618d5ceaadc6ecb4881b97684",
+      "repo_copy": "research/src/round79_final.py"
+    },
+    {
+      "path": "src/round79_recency_unit.py",
+      "sha256": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+      "repo_copy": "research/src/round79_recency_unit.py"
+    },
+    {
+      "path": "src/round8_experiment.py",
+      "sha256": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+      "repo_copy": "research/src/round8_experiment.py"
+    },
+    {
+      "path": "src/round8_spatial_reference.py",
+      "sha256": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+      "repo_copy": "research/src/round8_spatial_reference.py"
+    },
+    {
+      "path": "src/train_lightgbm.py",
+      "sha256": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+      "repo_copy": "research/src/train_lightgbm.py"
+    },
+    {
+      "path": "src/v3_cluster_stability.py",
+      "sha256": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9",
+      "repo_copy": "research/src/v3_cluster_stability.py"
+    }
+  ],
+  "feedback": {
+    "path": "outputs/kaggle_feedback/public_v25_user_report_20261010.json",
+    "sha256": "b4e5bf6cda46978d7209a54d7ed3a199b39a1bbb99b7c35e52678e96d07eec51",
+    "bytes": 1260
+  },
+  "selection": {
+    "path": "outputs/v25_submission_focus_20261010/user_selection.json",
+    "sha256": "95624af70d52a1ae9b439454d51221fb693d8e49298373d1eb2bd0529b6055db",
+    "bytes": 1707
+  },
+  "preservation": {
+    "path": "outputs/v25_submission_focus_20261010/preservation_check.json",
+    "sha256": "eea7bb91bd7df78f86db72ad8472d0d70c12e0084d3c35381f8fde91663eead1",
+    "bytes": 3162
+  },
+  "recorder_source": {
+    "path": "src/record_v25_selection_20261010.py",
+    "sha256": "29135c165f6df218c181c6386a0fd2d573166b874b05feadf5994ec4e169e5ad",
+    "bytes": 6251
+  },
+  "limitations": [
+    "Human text reports Public score; no new screenshot, independent platform inspection or uploaded-byte verification.",
+    "User choice changes current selected submission, not historical R107 exploration/strong gate values.",
+    "Private remains unknown; no Private superiority claim.",
+    "Existing v25 saved NN replay is not new-environment six-model v25 inference or raw-data end-to-end retraining."
+  ],
+  "new_fits": 0,
+  "new_inference": 0,
+  "Kaggle_actions": 0,
+  "git_mutations": 0
+}

@@ -1,3 +1,11 @@
+# 目前 v25 的資料範圍｜2026-10-10
+
+現行提交已改v25；課程原表及非價格地理來源沿原流程。下方17項artifact與config/v22.json僅屬v22，不是完整v25artifact清單。v25還依賴新R107 prior模型及原完整工作區前置；請讀[專屬重現範圍](docs/V25_REPRODUCIBILITY_20261010.md)。所有交易表／模型／提交CSV仍未納Git。
+
+下方為保留原 bytes 的歷史內容；選定、分數及重現範圍請以前述 2026-10-10 說明為準。
+
+---
+
 # 資料與模型取得
 
 由原Kaggle課程取得train-v2.xlsx、valid-v2.xlsx、test-reindex-test-v2.2.xlsx及test-reindex-test-sample-submission-v2.csv。公開程式包不包含交易資料；其公開再散布權限未確認。

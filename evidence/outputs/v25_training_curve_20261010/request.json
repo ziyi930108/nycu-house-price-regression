@@ -1,0 +1,265 @@
+{
+  "NPZ_features_prices_models_deserialized": false,
+  "checkpoint_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "created_at_utc": "2026-10-10T08:32:09.602649+00:00",
+  "metadata_only_freeze": true,
+  "model_fits": 1,
+  "new_CSV": false,
+  "plan": {
+    "path": "reports/v25_training_curve_plan_20261010.md",
+    "sha256": "9fcafe852041782da3d274e91e2a9b6a34899824f5e477f5890a9ab3da5ac2be"
+  },
+  "protected_before": {
+    "outputs/kaggle_feedback/public_v25_user_report_20261010.json": "b4e5bf6cda46978d7209a54d7ed3a199b39a1bbb99b7c35e52678e96d07eec51",
+    "outputs/round107/confirmation/model/training.json": "24fff85c1140e4abba01dd2c22c31163eb66400cf010a8e29f48c3121cdacf3b",
+    "outputs/submission_v22_trial.csv": "6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35",
+    "outputs/submission_v25_trial.csv": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+    "outputs/v25_submission_focus_20261010/user_selection.json": "95624af70d52a1ae9b439454d51221fb693d8e49298373d1eb2bd0529b6055db",
+    "src/round107_weighted_smooth_train.py": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e"
+  },
+  "query_labels_available_for_fitting": false,
+  "query_scores_computed": false,
+  "selection_changed": false,
+  "source_difference": {
+    "path": "outputs/v25_training_curve_20261010/trainer_source.diff",
+    "sha256": "e06610938dffc431253107c10e6181cb81df92d96e51db18fa5d857e4a5daab6"
+  },
+  "source_sha256": {
+    "src/model_common.py": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+    "src/prepare_data.py": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+    "src/round100_contract.py": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+    "src/round107_training_curve_train_20261010.py": "da03e0bbe5fa22789da6345b0bdd7f80a57e256a40ea113438c62bcd93a240fd",
+    "src/round107_weighted_smooth_train.py": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+    "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+    "src/round2_neighborhood.py": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+    "src/round3_backtest.py": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+    "src/round3_evaluate.py": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+    "src/round3_reference.py": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+    "src/round47_nn_train.py": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+    "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+    "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+    "src/round63_recency_weighted_prior_train.py": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+    "src/round6_geo.py": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+    "src/train_lightgbm.py": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+    "src/v25_training_curve_20261010.py": "20933a8b9ed316ecd10ae3c3ee92ba791b32dea502e0db15427ecc406001feb2",
+    "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+  },
+  "specification": {
+    "axes": {
+      "fit_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/confirmation/fit_indices.npy",
+        "sha256": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+        "shape": [
+          321550
+        ],
+        "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+      },
+      "fit_source_cache_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/confirmation/fit_source_cache_indices.npy",
+        "sha256": "80db4ee06dc43fd911f565671031af91521ee1737920aff03f5b64d807b90f90",
+        "shape": [
+          321550
+        ],
+        "values_sha256": "f1d76cb66640f818f338d819ccf72a8ea204e24aa36a2865fcf511f0a13a6885"
+      },
+      "query_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/confirmation/query_indices.npy",
+        "sha256": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+        "shape": [
+          133697
+        ],
+        "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+      },
+      "query_source_cache_indices": {
+        "dtype": "int64",
+        "path": "outputs/round102/confirmation/query_source_cache_indices.npy",
+        "sha256": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+        "shape": [
+          133697
+        ],
+        "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+      }
+    },
+    "canonical_mapping": {
+      "path": "outputs/round6/geography/development/train_source_cache_indices.npy",
+      "sha256": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4"
+    },
+    "end": "2024-08-10",
+    "expected_cardinalities": [
+      253,
+      4,
+      7,
+      8,
+      8,
+      11,
+      12,
+      14,
+      3,
+      9,
+      5223,
+      5680,
+      72,
+      4445,
+      24,
+      262,
+      2717,
+      17,
+      1443,
+      3620,
+      457,
+      15,
+      826
+    ],
+    "expected_training_configuration": {
+      "batch_size": 2048,
+      "category_dropout": 0.1,
+      "dropout": 0.1,
+      "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+      "epoch_selection": "fixed last epoch; no query labels or early stopping",
+      "epochs": 30,
+      "extra_sample_weights": true,
+      "float_precision": "float32; matmul precision high",
+      "hidden": [
+        512,
+        256,
+        128
+      ],
+      "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+      "learning_rate": 0.001,
+      "loss": "fit-recency weighted SmoothL1 in million TWD",
+      "loss_formula": "mean(train_sample_weight * smooth_l1_loss(ratio_output * train_price_factor_million, train_y_million, beta=0.1, reduction='none'))",
+      "loss_units": "million TWD",
+      "minimum_learning_rate": 1e-05,
+      "optimizer": "AdamW",
+      "output_units": "dimensionless positive price ratio",
+      "positive_output": "Softplus",
+      "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+      "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+      "price_factor_uses_fit_labels": true,
+      "price_or_ratio_clipping": false,
+      "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+      "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+      "scheduler": "CosineAnnealingLR",
+      "seed": 42,
+      "smooth_l1_beta_million": 0.1,
+      "thread_count": 4,
+      "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+      "weight_decay": 0.0001
+    },
+    "factor_values_sha256": {
+      "query_price_factor_million": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32",
+      "train_price_factor_million": "3a5d9c3759af6a01cda823a44a5f7a8f3f2acc22a68ebece7dfbaf65f7638405",
+      "train_sample_weight": "d1150f7935e78f75d28b6f6b8e004a97a5a90cc284e3a89c97ed0cf10b1e950e"
+    },
+    "features": {
+      "path": "data_cache/train_features.pkl",
+      "sha256": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7"
+    },
+    "fit_labels": {
+      "fit_indices": {
+        "dtype": "int64",
+        "path": "outputs/round100_inputs/confirmation/fit_indices.npy",
+        "sha256": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+        "shape": [
+          321550
+        ],
+        "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+      },
+      "fit_source_cache_indices": {
+        "dtype": "int64",
+        "path": "outputs/round100_inputs/confirmation/fit_source_cache_indices.npy",
+        "sha256": "80db4ee06dc43fd911f565671031af91521ee1737920aff03f5b64d807b90f90",
+        "shape": [
+          321550
+        ],
+        "values_sha256": "f1d76cb66640f818f338d819ccf72a8ea204e24aa36a2865fcf511f0a13a6885"
+      },
+      "fit_y": {
+        "dtype": "float64",
+        "path": "outputs/round100_inputs/confirmation/fit_y.npy",
+        "sha256": "0c43e0a5372e6249d35ab907f68a4d400168e0dd71e61d3e9eb7a1874b5467f1",
+        "shape": [
+          321550
+        ],
+        "values_sha256": "0b0bdc6f9ad3983d2ef1b899f37321ab47bc4c44828602317d5cf18e6472eeaa"
+      }
+    },
+    "fit_rows": 321550,
+    "input_sha256": {
+      "data_cache/train.pkl": "9acf8c65bf00f7067e9ea9612cabe9a1524b020a7596c8da3ce3d620131e5c00",
+      "data_cache/train_features.pkl": "7ad92824e7410ae86a79e11c17199f3136651f50908b3ac06b1949734ac4a7a7",
+      "outputs/research_resume_20261008/request.json": "1a0eb13f48c22f026be5551c8ecfd1810ca6299c24529282b3d9f937d433e321",
+      "outputs/round100_inputs/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+      "outputs/round100_inputs/confirmation/fit_source_cache_indices.npy": "80db4ee06dc43fd911f565671031af91521ee1737920aff03f5b64d807b90f90",
+      "outputs/round100_inputs/confirmation/fit_y.npy": "0c43e0a5372e6249d35ab907f68a4d400168e0dd71e61d3e9eb7a1874b5467f1",
+      "outputs/round102/confirmation/fit_indices.npy": "e183761e8d0fd074095d973e20d28997c163e9a9caa9b7ab8578a123f613b1bd",
+      "outputs/round102/confirmation/fit_source_cache_indices.npy": "80db4ee06dc43fd911f565671031af91521ee1737920aff03f5b64d807b90f90",
+      "outputs/round102/confirmation/query_indices.npy": "3d1b893099704f2014ddaa627921858bcd6727ecbaa9a810e798b11619ca7779",
+      "outputs/round102/confirmation/query_source_cache_indices.npy": "22eea1278893795f27635e84d287cb7ca7eb60931b21f5de44be4f7c89e023ff",
+      "outputs/round102/confirmation/stage_seal.json": "519ce8e4eb2db3a5ec3a2d97e077fb9bfa242853e51e55e33ae96a3ff69fd57e",
+      "outputs/round107/confirmation/model/training.json": "24fff85c1140e4abba01dd2c22c31163eb66400cf010a8e29f48c3121cdacf3b",
+      "outputs/round6/geography/development/train_source_cache_indices.npy": "7694e4fcc14989221c3f82abac1210b5258339c8ebd2b84261df4b2f74941ee4",
+      "outputs/round60/confirmation/prior_preparation.json": "9210b247b219fde6e9a70c20d4fd6c0b656f76cc6782bc266e76150af4c32d20",
+      "outputs/round63/confirmation/preparation.json": "33dc5c22da3ed66879ee738aedd5b8d1a6a645f5f1a9c3dd184ee2a8e7d530de",
+      "outputs/round63/confirmation/prepared.npz": "4d4b7866f4f94068e60585b6351fd1a669be184d9e1f8d14cc4a5eac652a0aff",
+      "src/round19_unit_geo.py": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+      "src/round52_price_prior.py": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+      "src/round60_recency_price_prior.py": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+      "src/v3_cluster_stability.py": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+    },
+    "original_six_encoding_values_sha256": {
+      "cardinalities": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4",
+      "query_cat": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f",
+      "query_num": "1dc6f1addb39a7f47b1e63e8d7ee62c1d1b05b40cdd3fef23c1215d04ea84f53",
+      "train_cat": "7f2e771a495c12e20fa2e0fa8c386b7f85469cf91d9e24612c26669a2c6907ce",
+      "train_num": "9836c10d38fdcacc9890385ec398a235ac53e01c089a3cf5064b4d3f884d003b",
+      "train_y_million": "c3a6d6920fba06f680b553986e2462a8726fb6fb86e5f0e472936fb828a30b1c"
+    },
+    "original_training": {
+      "path": "outputs/round107/confirmation/model/training.json",
+      "sha256": "24fff85c1140e4abba01dd2c22c31163eb66400cf010a8e29f48c3121cdacf3b"
+    },
+    "prepared": {
+      "path": "outputs/round63/confirmation/prepared.npz",
+      "sha256": "4d4b7866f4f94068e60585b6351fd1a669be184d9e1f8d14cc4a5eac652a0aff"
+    },
+    "query_rows": 133697,
+    "stage": "confirmation",
+    "start": "2023-08-11"
+  },
+  "status": "frozen_before_one_diagnostic_fit"
+}

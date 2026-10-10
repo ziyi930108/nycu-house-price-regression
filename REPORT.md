@@ -1,371 +1,215 @@
-# 臺灣房屋總價預測：近期成交加權與多模型回歸
+# v25 房屋總價回歸：目前選定方法與程式導覽
 
-## 摘要
+整理日期：2026-10-10。本文依保存的程式、訓練 metadata、離線結果、發行收據，以及使用者這次的選定與分數回報撰寫。本次只整理方法，沒有重訓或修改 v25 的價格。
 
-本研究將房屋成交總價預測建模為監督式回歸問題，使用課程提供的交易屬性與價格標籤，結合梯度提升樹、表格神經網路、訓練資料中的可比成交，以及非價格道路地理特徵。**本專題選定 v22 為唯一提交模型，Private 分數仍未知。** 本文以「近期成交加權與多模型回歸」說明這個模型的資料處理、訓練方法、驗證結果與可執行程式。內部版本編號只用來識別檔案和保存研究歷史，不作為讀者理解方法的前提。
+**使用者已於 2026-10-10 選定 v25 作為提交資料。** v25 的研究編號是 R107；它沿用原本的六模型、三分支架構，只把其中一個「價格先驗神經網路」的訓練損失改成日期加權 SmoothL1。原 v22、歷史結果與教學媒體保留；原始 release 記錄的是發行當時尚未選定的狀態，不能回寫成當時就已選定。[最新選定紀錄](evidence/selection/user_selected_v25_20261010.json)、[原 v25 發行收據](evidence/outputs/round107/final/release.json)。
 
-本方法使用六個回歸模型，組成單價、對數與神經網路三條價格分支。單價 CatBoost 同時使用面積權重與 365 日半衰期日期權重。所有模型輸出先還原為總價，各分支經訓練成交參考與空間修正後，逐筆取中位數。三個年度時間回測的整體 MAE 為 2,309,352.36、1,407,387.07 與 1,383,228.41 元，Kaggle Public 回報 MAE 為 **1,998,568.5706 元**，約 199.86 萬元。[E1、E2、E5]
+## 1. 要預測什麼，以及目前實際成績
 
-交付程式已從指定原始 test Excel 加保存的地理、模型與 fit 狀態，重新推論全部 47,073 筆，與原提交預測及 CSV 完全一致。2026-10-02另完成同機新套件環境的保存模型推論；另一台電腦、地理重建與從零重訓全鏈仍未驗證。已選定提交模型不代表已證明 Private 最佳：部分高價群仍有退步，歷史驗證窗口已多輪重用，研究中也有替代配方取得更低的歷史整體 MAE。完整比較保留於技術附錄，不隱藏不利證據。[E2、E3、E10、E11、E13]
-
-## 1. 問題定義與評估方法
-
-輸入為每筆交易的房屋、土地、位置及交易時間等屬性，輸出為總價元。這是連續數值的回歸預測，不是價格區間分類。主要評估指標為平均絕對誤差：
-
-$$
-\operatorname{MAE}=\frac{1}{n}\sum_{i=1}^{n}|y_i-\hat y_i|.
-$$
-
-其中 $y_i$ 為實際總價，$\hat y_i$ 為預測總價，單位皆為新臺幣元。MAE 越小代表平均金額誤差越低。Public MAE 約 199.86 萬元，表示該評分集合的平均絕對誤差約為此金額，不是預測準確率，也不代表每筆交易都偏差同一金額。
-
-Kaggle Public 約使用 test 的 30%，Private 使用其餘約 70%。此比例描述的是 test 的評分分割，與另外提供的 valid 檔案不同。Private 真實分數尚未知。本文分開呈現年度離線 MAE、平台回報 Public MAE 與未知 Private，避免混用不同集合的數字。[E1、E5]
-
-## 2. 資料來源與前處理
-
-### 2.1 原始資料與使用範圍
-
-| 檔案 | 原始列數 | 用途 |
-| --- | ---: | --- |
-| `train-v2.xlsx` | 455,787 | 模型訓練與歷史時間回測 |
-| `valid-v2.xlsx` | 11,994 | 最終全量訓練時併入的有標籤資料 |
-| `test-reindex-test-v2.2.xlsx` | 47,073 | 無價格標籤的預測對象 |
-| `test-reindex-test-sample-submission-v2.csv` | 47,073 | 提交欄位與編號順序範本 |
-
-價格標籤與參考成交均來自課程提供的資料。研究遵守禁止到內政部不動產成交案件實際資訊資料供應系統核對答案的限制，未取得外部 test 成交真價。sample submission 中的價格僅是格式範例，不能當作答案。
-
-後期模型另使用既有 OpenStreetMap／Geofabrik 道路地理快照，這些資料不含外部成交價格。本方法因此同時使用課程交易資料與外部非價格地理資料。地理來源標示為 © OpenStreetMap contributors，原來源聲明、快照 URL、檔案大小與 SHA256 均保留。[E6、E12]
-
-課程交易資料的公開再散布權限未在本研究中確認。程式交付應將資料取得方式與必要檔名分開說明，不因程式整理至 GitHub 就假定可一併公開原始交易表。道路資料的來源與授權聲明亦須保留。
-
-### 2.2 清理順序
-
-| 步驟 | 移除列數 | 保留列數 |
-| --- | ---: | ---: |
-| 原始 train | — | 455,787 |
-| 移除混入資料區的英文表頭 | 3 | 455,784 |
-| 排除編號、包含目標價格的整列完全去重 | 529 | 455,255 |
-| 併入 valid | 增加 11,994 | 467,249 |
-| 移除合併後跨集完全重複 | 28 | **467,221** |
-
-上述去重不是「相同編號只留一列」。年度回測僅使用 train 中早於當期起點的資料，不把 valid 加入回測的 fit。test 保留全部 47,073 列，不刪列、不去重，輸出依 sample 的編號順序對齊。[E1、E6]
-
-數值與日期處理包括民國日期、中文樓層、地址、交易筆棟數與數字文字解析，並保留適當的缺失及異常旗標。類別缺值以 `__MISSING__` 表示。編號與目標總價不作模型特徵。建築完成年月因資料不可用而排除，管理組織因為常數而排除。完整備註與解約情形不納入，避免交易後資訊或文字價格進入模型，僅保留有限的非價格備註旗標。[E1、E6]
-
-## 3. 特徵設計
-
-| 類型 | 內容與目的 |
-| --- | --- |
-| 面積與交易組成 | 土地、建物及車位面積、面積比例、交易筆棟數，描述交易規模 |
-| 建物與格局 | 樓層、總樓層、建物型態、用途、建材、房廳衛等，描述使用型態 |
-| 時間 | 交易日期解析後的時間特徵，描述市場時序變化 |
-| 類別與地址 | 地區、道路、建案等資訊，供類別模型及價格參考流程使用 |
-| 道路地理 | 道路代表位置、長度、範圍、可用性、片段數、匹配狀態及網格 |
-
-共同基礎特徵為 87 欄。近期加權單價 CatBoost 加入 8 欄既有地理特徵後，共 **95 欄，其中 23 欄為類別特徵**。此數字只適用於該模型，不代表所有分支的輸入維度相同。面積 NN 與先驗倍率 NN 另有數值編碼與類別 embedding。[E1、E7、E8]
-
-地理特徵使用固定年度快照，歷史時期各有對應來源。道路代表點是粗略位置，不等同住宅的精確門牌座標。地理狀態建立不使用 query 價格。[E7、E12]
-
-## 4. 模型方法
-
-模型先學習不同尺度的價格，再統一成總價元。六個不同的模型為三個 CatBoost（單價、直接總價及 log 總價）、一個單價 LightGBM，以及兩個表格神經網路。LightGBM 預測由三條分支共用，因此「六個模型」與「三條分支」是不同層級。以下先介紹主要訓練表示，再說明完整組合。
-
-### 4.1 近期加權的單價 CatBoost
-
-令 $y$ 為總價，$A$ 為有效面積。$A$ 優先取正且有限的建物面積，否則取正且有限的車位面積，仍無可用面積時取 1。此規則用於數值縮放，不宣稱估計了實際室內面積。
-
-```python
-target_unit = y / (A * 10_000)
-sample_weight = (A / 100) * date_weight
-predicted_total = np.maximum(predicted_unit * A * 10_000, 0)
-```
-
-日期權重以 fit 的最大合法交易日為基準，原始權重為：
-
-$$
-w_i^{\mathrm{date,raw}}=2^{-\Delta t_i/365}.
-$$
-
-合法日期的權重再除以 fit 合法日期原始權重的平均值，無效日期採中性值 1。因此，在同一 fit 中相差一年的合法交易，其日期權重比例為 1:2。實作使用已保存且列序一致的 `float32` 日期權重，再轉為 `float64` 與面積權重相乘，不重新計算或再次正規化。[E7]
-
-在非負裁切之前，有以下等價關係：
-
-$$
-\frac{A_i}{100}w_i^{\mathrm{date}}
-\left|\frac{y_i}{10,000A_i}-z_i\right|
-=\frac{w_i^{\mathrm{date}}}{1,000,000}|y_i-10,000A_i z_i|.
-$$
-
-因此，面積權重使單價誤差對應到總價誤差，日期權重則提高近期成交在訓練目標中的比重。這並未將評估指標改成百分比誤差。此處的日期權重明確作用於單價 CatBoost。其他分支亦有其各自的日期加權設定，不能將本方法概括成所有模型共同新增同一權重。
-
-| 參數 | 設定 |
-| --- | --- |
-| 模型與 loss | `CatBoostRegressor`、`MAE` |
-| iterations / depth | 2,999 / 8 |
-| learning rate | 0.065 |
-| L2 leaf regularization | 6.0 |
-| random seed | 42 |
-| boosting type | Plain |
-| bootstrap / subsample | Bernoulli / 0.85 |
-| random strength | 0.5 |
-| 運算 | GPU、4 threads |
-
-此模型沒有使用 query 標籤作訓練、`eval_set` 或 early stopping。完整參數以保存的 model metadata 與程式設定為準。[E7]
-
-### 4.2 神經網路與其他樹模型
-
-面積 NN 與價格先驗倍率 NN 皆使用 embedding MLP，隱藏層為 512→256→128，搭配 LayerNorm、ReLU、Dropout 0.1 與 Softplus 正值輸出。訓練設定為 30 epochs、batch size 2048、seed 42 與 AdamW，初始 learning rate 0.001。[E8]
-
-- 面積 NN 由單價輸出按面積還原總價，使用總價 MAE。其數值輸入為 603 維，包含分段線性編碼，另有類別 embedding。
-- 價格先驗倍率 NN 以區域單價先驗為基準學習調整倍率，使用近期加權的總價 MAE。其數值輸入為 144 維，另有類別 embedding。
-- 價格先驗訓練採五折建案分組 OOF，避免本建案標籤直接進入其訓練先驗。這是建案分組 OOF，不是時間 OOF，不能宣稱每筆訓練資料的先驗都只來自其成交日以前。
-- log CatBoost 以 `log1p(y / 1_000_000)` 為目標，還原方式為 `maximum(expm1(z) * 1_000_000, 0)`。其訓練 loss 是近期加權的 log 空間 MAE，完整組合才以元的 MAE 評估。
-- 原有 LightGBM 單價預測與直接總價 CatBoost 亦保留在分支中，所有組合均使用已還原為元的預測。[E8、E9]
-
-### 4.3 三分支組合
-
-下式所有模型符號皆代表已還原為總價元的預測。`C_unit` 為近期加權單價 CatBoost，`L_unit` 為 LightGBM 單價還原總價，`C_raw` 為直接總價 CatBoost，`C_log` 為 log CatBoost 還原總價。`N_area` 與 `N_prior` 分別為上述兩個 NN。
+這是監督式回歸：輸入房屋、土地、車位、位置及交易時間等資料，輸出每筆交易的總價元。官方指標是新臺幣元的平均絕對誤差（MAE）：
 
 ```text
-B_unit = 0.75 * C_unit + 0.25 * L_unit
-B_nn   = 0.75 * (0.5 * N_area + 0.5 * N_prior) + 0.25 * L_unit
-B_log  = 0.75 * (0.5 * C_raw  + 0.5 * C_log)   + 0.25 * L_unit
+MAE = 所有評分交易的 |預測總價 − 實際總價| 加總 ÷ 交易筆數
+```
+
+| 提交檔 | Public MAE（元） | 證據與角色 |
+| --- | ---: | --- |
+| v22 | 1,998,568.5706 | 先前使用者截圖回報；原選定基準，現在保留作對照 |
+| **v25** | **1,995,836.2136** | 2026-10-10 使用者文字回報；目前選定提交 |
+
+v25 的 Public MAE 比 v22 少 **2,732.3570 元，約降低 0.1367%**。這個分數表示公開評分交易的平均絕對總價誤差約 **199.58 萬元**；不是準確率，也不是每間房屋都差這個金額。這次分數來自使用者文字回報，沒有新截圖，也沒有另登入 Kaggle 核對實際上傳檔案的 bytes。[v25 分數紀錄](evidence/kaggle_feedback/public_v25_user_report_20261010.json)、[v22 原分數證據](evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json)。
+
+Public 約涵蓋 test 的 30%，Private 約涵蓋其餘 70%；這不是把課程 valid 切成三成與七成。**Private 仍未知**。目前 Public 有小幅進步，與使用者改選 v25 的決定一致，但不能把它寫成已證明 Private 最佳。
+
+## 2. 資料從原始表格走到模型
+
+| 步驟 | 實際處理 | 為什麼這樣做 |
+| --- | --- | --- |
+| 原始 train | 455,787 列，去除混入資料區的 3 列英文表頭，剩 455,784 列 | 避免把欄名當作交易樣本 |
+| train 完全去重 | 按除編號外的全部原欄位，包含目標價格，移除 529 列完全重複，剩 **455,255 列** | 避免同一完整紀錄被重複計入；不是只按相同 ID 刪除 |
+| 最終訓練集 | 合併 11,994 列 valid，移除 28 列跨集完全重複，得到 **467,221 列** | 最終提交使用所有可用的合法標籤；年度回測則不混入 valid |
+| test | 保留 **47,073 列**與 sample ID 順序，不去重、不刪列 | 每個測試 ID 都必須有一筆價格 |
+| 欄位清理 | 解析民國日期、中文樓層、交易筆棟數、地址及數字文字；保留缺失、異常旗標與有限備註旗標 | 讓模型使用明確數值及結構，同時保留「原資料不完整」這件事 |
+| 欄位排除 | 編號與總價不作特徵；建築完成年月不可用、管理組織為常數，排除；不納入解約情形與完整備註 | 避免識別碼記憶、無效欄位、交易後資訊及文字價格進入模型 |
+
+基礎特徵共有 87 欄。使用道路地理資訊的模型再加入 8 欄，得到 95 欄，其中 23 欄為類別；地理資訊包含道路位置、道路範圍與匹配狀態等。它不是精確門牌定位。各模型的輸入表示不同，不能把「95 欄」等同所有神經網路的最終輸入維度。
+
+prior NN 將 72 個數值欄位按 **fit 資料**的中位數、尺度與 `asinh` 轉換標準化，再各保留一個非有限值旗標，形成 **144 個數值輸入**。23 個類別欄位轉成 embedding；fit 中出現不到 5 次或 query 未見過的類別使用 0 編碼，不在 query 重新學詞表。另一個面積 NN 使用含分位節點的分段線性數值編碼，數值輸入為 603 維。
+
+價格標籤、價格先驗與鄰近成交參考都來自課程提供的訓練資料；既有道路地理流程依保存來源使用非價格資訊。沒有到內政部不動產成交案件實際資訊資料供應系統核對 test 答案。
+
+程式入口：[原始資料讀取](research/src/prepare_data.py)、[資料集合與去重](research/src/model_common.py)、[基礎特徵](research/src/house_features.py)、[特徵準備](research/src/prepare_features.py)、[道路地理特徵](research/src/round6_geo.py)、[prior NN 編碼](research/src/round47_nn_encode.py)、[面積 NN 編碼](research/src/round54_numeric_encode.py)。
+
+## 3. 六個模型，為什麼組成三條分支
+
+房價同時受面積、區域價格、建案及時間影響，因此保留不同表示法的模型。以下每個模型的輸出都先換回**新臺幣總價元**，才進行組合。
+
+| 原生模型 | 學習方式與用途 |
+| --- | --- |
+| `C_unit`：R79 CatBoost | 學單價，以有效面積乘回總價；訓練權重為面積權重乘日期權重，讓單價誤差對齊近期總價誤差 |
+| `L_unit`：LightGBM | 另一個單價模型，換回總價後作為三分支的共同分量 |
+| `C_raw`：CatBoost | 直接學總價，保留原金額尺度的訊號 |
+| `C_log`：R46 CatBoost | 學 `log1p(總價 / 1,000,000)`，逆轉回總價；其訓練 loss 是 log 空間 MAE，不能稱直接總價 MAE |
+| `N_area`：面積 NN | 學與面積連結的價格表示，再還原總價 |
+| **`N_prior`：R107 prior NN** | 以區域／建案價格先驗及面積為基準，學正值價格調整倍率；這是 v25 唯一替換的模型 |
+
+有效面積 `A` 優先採正且有限的建物面積，否則採正且有限的車位面積，再無法使用才取 1。它是數值縮放的回退規則，不是估計實際室內面積，也沒有改寫原面積特徵。
+
+prior NN 的概念是：先建立「這類地點和房屋大約多少單價」的參考，再讓神經網路學調整倍率：
+
+```text
+price_factor_million = A × fit 建立的參考單價 / 1,000,000
+prior NN 總價（元） = 正值倍率 × price_factor_million × 1,000,000
+```
+
+訓練列使用按建案分組的五折 OOF 先驗，避免把本建案標籤直接放入自己的訓練先驗；query 則用完整 fit 標籤建立的先驗。這是**建案分組 OOF，並非時間 OOF**，不能說每筆訓練先驗都只來自該筆成交當日以前。每個回測起點的 query 標籤均不參與該期先驗及模型的 fit。[先驗與日期權重](research/src/round60_recency_price_prior.py)。
+
+六個模型形成三條固定分支：
+
+```text
+B_unit = 0.75 × C_unit + 0.25 × L_unit
+B_nn   = 0.75 × (0.5 × N_area + 0.5 × N_prior_R107) + 0.25 × L_unit
+B_log  = 0.75 × (0.5 × C_raw  + 0.5 × C_log)        + 0.25 × L_unit
 
 U = S(B_unit, R(B_unit))
 N = S(B_nn,   R(B_nn))
 H = S(B_log,  R(B_log))
 
-prediction_v22 = median(N, H, U)  # 逐筆取中位數
+v25_prediction = median(N, H, U)  # 每筆交易各自取中位數
 ```
 
-`R` 為訓練資料內可比成交與時間趨勢參考，實際使用 `round2_neighborhood.predict_reference` 的 `variant='trend'`。`S` 為固定空間修正，使用 `round8_spatial_reference.predict` 與保存的空間狀態，在參考支持較弱時補充空間資訊，支持不足則回退。這些價格參考來自 fit，不是查詢外部 test 真價。[E9]
+`R` 使用 fit 中同建案、地址、道路等可比交易，以及 fit 估計的時間趨勢修正價格。`S` 再依固定空間狀態補充參考較弱的情況；支持不足時回退。空間修正同時接收原本 `B` 與 `R(B)`，不是把兩次完全相同的校正相加。[R 實作](research/src/round2_neighborhood.py)、[S 實作](research/src/round8_spatial_reference.py)。
 
-各分支先修正，最後才取中位數。不能先取中位數再重複修正，也不能在已還原總價後再乘面積。中位數可降低單一分支極端輸出的影響，但不保證消除共同偏差。[E9]
+中位數使某一條分支的極端輸出較不容易直接決定最後價格，但也可能擋掉某個分支的正確改善。它不能保證避免過擬合。v25 不重新搜尋混合比例，也不重新 fit R／S；它只重算新的 NN 分支 R／S **各一次**，再與原本完整 log、unit 分支取中位數。[全量組合實作 `apply_prior`](research/src/round107_final_candidate.py)。
 
-## 5. 驗證設計與結果
+## 4. v25 唯一訓練改動：日期加權 SmoothL1
 
-### 5.1 時間切分
+原 R63 prior NN 使用日期加權的總價絕對誤差。R107 保留九個 prepared 陣列、先驗、encoder、日期權重、初始化、架構及推論，唯一改動是訓練損失：
 
-每個回測以該期起點以前的 canonical train 資料作 fit，再以其後一年作 query。模型、encoder、prior、reference 與 spatial 狀態必須對應該次 fit。不能拿後期已看過 query 的模型評估較早年度。[E2]
+```python
+per_row = torch.nn.functional.smooth_l1_loss(
+    ratio_output * train_price_factor_million,
+    train_y_million,
+    beta=0.1,
+    reduction="none",
+)
+loss = (train_sample_weight * per_row).mean()
+```
 
-| 期別 | query 期間，含起訖日 | fit 列數 | query 列數 |
-| --- | --- | ---: | ---: |
-| 較早年度 | 2021-08-11～2022-08-10 | 134,805 | 105,511 |
-| 中間年度 | 2022-08-11～2023-08-10 | 240,316 | 81,234 |
-| 最新年度 | 2023-08-11～2024-08-10 | 321,550 | 133,697 |
+這是訓練核心摘錄，不是可單獨執行的完整程式。目標、預測及 `beta` 都在「百萬元」尺度，因此 `beta=0.1` 代表 **10 萬元**，不是 0.1 元。
 
-歷史程式將上述期別命名為 auxiliary、development 與 confirmation，但這些窗口已多次參與研究，不能因為命名為 confirmation 就視為未見過的新盲測。
+設誤差 `e` 的單位為百萬元，SmoothL1 在 `|e| < 0.1` 時使用 `e² / (2 × 0.1)`；在較大誤差時使用 `|e| − 0.1 / 2`。設計想法是：接近正確價格時把梯度變平滑，較大誤差時仍保持絕對誤差的線性尾部。它不是刪除高價房或異常交易，也不是改官方評分。官方仍用總價 MAE，因此損失變平滑是否有幫助，必須看保留的離線與 Kaggle 結果。
 
-### 5.2 提交模型的年度整體 MAE
+日期權重沿既有的 **365 天半衰期**：相差一年的有效成交日期，原始權重比例為 1:2；以該次 fit 的有效日期平均正規化，缺失／異常日期採中性權重 1。R107 直接使用原 prepared 中的正值 float32 權重，不重新計算、不按每個 batch 的權重和重新歸一。理由是近期價格可能較能代表待預測時期，但過強重視近期也可能減少有效歷史訊息。
 
-| query 期間 | 本方法 MAE（元） | 約當萬元 |
-| --- | ---: | ---: |
-| 2021-08-11～2022-08-10 | 2,309,352.36 | 230.94 |
-| 2022-08-11～2023-08-10 | 1,407,387.07 | 140.74 |
-| 2023-08-11～2024-08-10 | 1,383,228.41 | 138.32 |
-
-每列是該期完整模型組合對 query 的平均絕對總價誤差。不同年度包含不同交易，不能把年度間的數值下降直接解讀為同一模型逐年改善，也不能將這些數字當作 test 或 Private 誤差。[E2]
-
-研究另比較「單價 CatBoost 僅用面積權重」與「單價 CatBoost 使用面積乘日期權重」的完整組合，保留其他分支設定。比較結果與配對區間見附錄 A。這個對照僅改動單價 CatBoost 的日期權重，不表示對照組的 log 模型或先驗 NN 沒有日期加權。配對結果在中間年度的區間跨 0，且各年度窗口曾反覆參與選型，不能宣稱跨期改善均已獲統計確認。[E2]
-
-### 5.3 Kaggle Public 與未知 Private
-
-| 已選定提交模型 | Public MAE（元） | 約當萬元 | Private MAE |
-| --- | ---: | ---: | --- |
-| 近期成交加權與多模型回歸 | **1,998,568.5706** | **199.86** | **未知** |
-
-對應提交檔為 `submission_v22_trial.csv`。數值來自保存的 Kaggle 提交成績截圖及其登錄 JSON，評分使用約三成 test。本機提交檔的 SHA256 已保存，但未獨立向平台核對實際上傳檔案的 bytes。因此這是平台截圖回報的成績，不能擴張成已獨立核實平台全部輸入。[E5]
-
-本次選定此模型作為唯一提交版本。其餘約七成 test 的 Private 真價和分數尚未知。這項提交決定不構成對 Private 最佳、每筆均改善或未來市場泛化的保證。研究階段其他配方的成績與比較移至附錄 A，保留可追查性。
-
-## 6. 結果解讀與方法取捨
-
-單價表示先將總價按有效面積縮放，面積權重再讓其訓練誤差對應到總價誤差。日期權重讓較新的成交在這個訓練目標中占較高比重。這是一個可檢查的模型假設，不表示近期資料在所有城市、建案或價格範圍都較可靠。
-
-三條分支從不同表示估計同一筆總價，參考修正使用 fit 內的可比成交，空間修正補充地理資訊。最後的中位數降低單一分支極端輸出的影響，但若多條分支存在相同方向的偏差，整合結果仍可能偏高或偏低。研究比較應以完整最終組合為主，不能將單一分支的改善直接等同於提交模型的改善。
-
-整體 MAE 也會掩蓋局部退步。最新年度真價 5,000 萬至 1 億的 1,725 筆資料中，本方法的群內 MAE 比「單價 CatBoost 未加日期權重、其他分支相同」的對照組增加 **204,728.26 元**。這是有標籤回測的事後診斷，推論時不能依未知真價決定模型或逐筆封頂。[E2]
-
-另外，將單價分支改為兩個 CatBoost 種子平均的替代配方，在三期歷史整體 MAE 都比提交模型更低，卻有不同的高價群代價，且已回報 Public 排序不同。這項反證保留於附錄 A，說明目前選定模型並非在所有已測條件都最佳。歷史比較不是完整因子實驗，不能把各層級 MAE 差值相加成模組的因果貢獻。GPU 重訓亦非完全位元決定，固定 seed 不能排除全部訓練隨機性。[E2–E4]
-
-## 7. 過擬合、洩漏與適用限制
-
-1. **時間分離與狀態分離。** 年度 query 標籤不能進入同一期模型或價格參考。新切點必須重建對應的模型、encoder、prior、reference 與 spatial state，不能只替換評分索引。
-2. **OOF 的界線。** 建案分組先驗避免直接使用本建案標籤，但不是時間 OOF。不能擴張成每筆訓練先驗均滿足嚴格的逐筆歷史可得性。
-3. **窗口重用偏差。** 多輪研究重複使用同一批歷史期間，模型選擇可能對這些窗口適應。bootstrap 不會自動消除此偏差。
-4. **Public 適應風險。** 公開榜僅代表約三成 test，不能據此推定 Private 最佳，也不應反覆搜尋混合比例、seed 或逐筆價格來追逐 Public。
-5. **高價尾部風險。** 大面積物件與少量高價交易會放大總價外推。提交模型的最大未取整 test 預測約 138.716 億元，這是模型輸出，不是已核實成交價。中位數組合也可能保留多分支共有的偏差，未據未知 test 真價加設逐筆價帽。[E10]
-6. **群組診斷不等於推論規則。** 以真實價格分群只能用於有標籤回測的事後分析，不能在 test 推論時使用未知真價分流。
-7. **組成重加權不是真值。** testmix 僅在有歷史支持的城市與新舊建案群內重新加權，無法觀察 test 真實誤差，不等同 test 或 Private MAE。
-8. **粗略地理與資料範圍。** 道路特徵並非精確門牌定位，缺失地址、新建案或市場狀態改變仍可能導致分布差異。
-
-## 8. 程式與重現範圍
-
-### 8.1 實際方法入口
-
-| 功能 | 保存程式 |
+| 保留設定 | 值 |
 | --- | --- |
-| 讀取與清理 | `prepare_data.py`、`model_common.py` |
-| 基礎特徵 | `house_features.py`、`prepare_features.py` |
-| 地理與單價表示 | `round6_geo.py`、`round19_unit_geo.py` |
-| 近期加權單價模型訓練 | `round79_recency_unit.py`、`round79_final_unit.py` |
-| NN 編碼與訓練 | `round47_nn_train.py`、`round48_nn_train.py`、`round54_numeric_encode.py`、`round63_recency_weighted_prior_train.py` |
-| 日期權重與 OOF 先驗 | `round60_recency_price_prior.py` |
-| log 模型 | `round12_log_geo.py`、`round46_recency_log.py` |
-| 參考成交及空間修正 | `round2_neighborhood.py`、`round8_spatial_reference.py` |
-| 三分支組合 | `round79_final.py` |
-| 提交檔獨立核驗 | `round79_release.py` |
+| 數值／類別輸入 | 144／23 |
+| 隱藏層 | 512 → 256 → 128；LayerNorm、ReLU |
+| Dropout／category dropout | 0.1／0.1 |
+| 輸出 | Softplus 正值倍率 |
+| epochs／batch／seed | **30／2,048／42** |
+| optimizer | AdamW；learning rate 0.001、weight decay 0.0001 |
+| scheduler | CosineAnnealingLR，最低 learning rate 0.00001 |
+| 模型選擇 | 固定最後一個 epoch，不用 query y、eval_set 或 early stopping 選 epoch |
 
-這些檔案具有跨輪相依，並非複製單一 `round79_final.py` 就能從原始 Excel 重建全部模型。交付應分清下列三種模式：
+`beta=.1` 沿先前 R62 的固定值，沒有掃 beta；R62 已研究過未加日期權重的 SmoothL1，因此不能宣稱「平滑 loss 從未試過」。這次檢驗的是它與 R63 日期權重及既有完整組合的交互。R108 的 CatBoost CTR 改動是另一個未通過候選，**沒有混進 v25**。[訓練來源](research/src/round107_weighted_smooth_train.py)、[事前規約](evidence/reports/round107_108_plan.md)、[保存的全量設定](evidence/outputs/round107/final/model/training.json)。
 
-| 模式 | 實際工作 | 能證明什麼 |
-| --- | --- | --- |
-| 保存向量重組 | 讀取已保存分支，固定融合並輸出 CSV | 指定向量的組合與輸出一致性 |
-| 保存模型推論 | 重載模型、encoder 與價格參考狀態，對指定資料重新預測 | 該組狀態可重播推論 |
-| 從原始資料重訓 | 清理、地理、編碼、先驗、全部模型與參考狀態皆重建 | 所測環境下的完整方法可執行 |
+## 5. 時間驗證與不利證據
 
-保存的單價模型歷史證據已包含單價模型重載及 47,073 筆 raw／TWD 預測一致性核對。最終組合另保存未取整向量，CSV 已核對完整 ID、順序、欄名、列數、正整數、UTF-8 BOM 與一次取整結果。這些檢查支持指定產物鏈的可追溯性，不等於已完成乾淨環境從原始 Excel 重訓全部 v22 的驗證。[E7、E10、E11]
+先使用當時已存在的三個年度起點；每期只用起點以前的 train fit，該年 query 留作評分。三窗所有新模型與向量封存後，才讀 query 標籤評分。後續 R113 再固定檢查原本已有的 2 月起點，使用該起點自己的模型、encoder、prior、reference 與 spatial，沒有拿後期或全量模型回測。[三窗流程](research/src/round107_108_research.py)、[額外起點計畫](evidence/reports/round113_plan.md)。
 
-提交價格只做一次 `maximum(rint(prediction), 1).astype(int64)`，輸出兩欄 `編號,總價元`。原 v22 提交檔 SHA256 為：
+| query 時期 | fit 列數 | query 列數 | v22 MAE（元） | v25 方法 MAE（元） | 差：v25 方法 − v22 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2021-08-11～2022-08-10（auxiliary） | 134,805 | 105,511 | 2,309,352.36 | 2,310,236.02 | **+883.66** |
+| 2022-08-11～2023-08-10（development） | 240,316 | 81,234 | 1,407,387.07 | 1,405,971.19 | −1,415.88 |
+| 2023-08-11～2024-08-10（confirmation） | 321,550 | 133,697 | 1,383,228.41 | 1,381,702.87 | −1,525.54 |
+| 2023-02-11～2024-02-10（額外起點） | 272,117 | 107,169 | 1,336,410.67 | 1,336,107.62 | −303.06 |
+
+「v25 方法」指該起點各自 fit 的 R107 配方，並非拿最終全量模型去測歷史。負差代表 MAE 降低，正差代表退步；表中結果全部是**離線 MAE**，不能與 Public 混成一張排行榜。
+
+除整體 MAE，另固定按 test 的既有／新建案組成做加權診斷：既有 17,237／47,073，約 36.62%；新建案 29,836／47,073，約 63.38%。使用的是已知特徵及 fit 是否見過該建案，不使用 test 真價。它是補充選型指標，官方 MAE 並未改成此加權值。
+
+| 窗口 | 固定加權 MAE 差 vs v22 | 既有建案 MAE 差 | 新建案 MAE 差 |
+| --- | ---: | ---: | ---: |
+| auxiliary | **+755.96** | **+393.29** | **+965.48** |
+| development | −1,398.03 | −196.46 | −2,092.20 |
+| confirmation | −1,723.04 | **+213.10** | −2,841.61 |
+| 額外 2 月起點 | −259.51 | −604.49 | −60.21 |
+
+最近年度整體改善約 **0.1103%**，但既有建案小幅退步；較早年度兩個主要指標也都退步。因此 R107 **未通過原強推薦研究條件**（三窗整體及加權全改善，最近整體至少改善 0.5%，且季度或至少 500 列群無超過 5% 退步）。
+
+它通過的是訓練前另外固定的**探索提交條件**：最近整體及加權不退步、各窗兩指標退步不超過 0.25%、至少兩窗整體改善、季度及大型群無超過 5% 退步；額外 2 月起點也通過後續固定的穩定性檢查。這些工程條件允許產出新試交，不能改稱原強條件通過；2026-10-10 的選定是使用者在後續 Public 回報後的決定。[原三窗結果與門檻](evidence/reports/round107_108_report.md)、[原機器結果](evidence/outputs/round107/results.json)、[2 月結果](evidence/reports/round113_report.md)、[2 月機器結果](evidence/outputs/round113/results.json)。
+
+### 必須保留的次對照 v24
+
+| 窗口 | v24 離線 MAE（元） | v25 方法 − v24（元） |
+| --- | ---: | ---: |
+| auxiliary | 2,275,409.14 | **+34,826.87** |
+| development | 1,407,340.72 | −1,369.53 |
+| confirmation | 1,373,195.92 | **+8,506.95** |
+| 額外 2 月起點 | 1,340,328.14 | −4,220.52 |
+
+v24 在最早及最近年度比 v25 方法好；原三個年度整體及固定加權也都比 v22 好。但 v24 既有 Public 回報為 2,083,045.2932，反而比 v22 差。這是本專案的重要反證：離線窗口較好，不能直接推出 Kaggle 較好；不能因目前選 v25，就刪掉不支持它的對照。
+
+### 對過擬合與不確定性的實際限制
+
+- 保留城市、月份、相對季度、新舊建案與五個真價帶的完整診斷，不只報整體勝出的時期。真價帶只用於有標籤的離線分析，不拿未知 test 真價分流。
+- 各起點嚴格分開 fit 與 query 狀態；新起點不能沿用後期 encoder、prior、價格參考或模型。
+- 年度窗口已多輪參與研究；2 月起點也早已用過，並與 8 月窗口重疊。它們不是四次獨立盲測，不能當成三比一的獨立投票。
+- 每次 prior NN 固定 seed 42；保存 v22 是對照，沒有在本輪同期重新訓練一個 matched v22。小幅差異不等於已分離出 loss 的單獨因果效果，也不包含 GPU 重訓變異。
+- 建案重抽樣與三個月循環月份區塊各 2,000 次，都是條件於既有預測的配對 bootstrap，未校正累積選型、重新 fit 或未來分布變動。三個 8 月起點的整體「按建案」95% 區間都跨 0；最近年度為約 **[−3,594.91, +523.35] 元**。2 月起點整體的建案區間約 **[−2,558.33, +2,076.58] 元**，月份區間約 **[−844.28, +163.84] 元**，也都跨 0。不能把重抽樣的負差比例稱為 Private 勝率。
+
+## 6. 最終 v25 如何產生與檢查
+
+探索條件通過並完成獨立審查後，先凍結全量計畫、source／input SHA 與受保護舊產物；重播原 v22 的保存向量組合，逐 bytes 核對原三分支鏈、未取整中位數及 CSV。
+
+全量只新增**一次 R107 prior NN fit**，使用原 R63 final 的九鍵 `prepared.npz`，467,221 fit／47,073 query，固定 30 epochs／seed 42。這不是重新訓練全部六模型。新 NN 的全 query 總價輸出保存後重新載入模型，再推論核對逐 bytes 相同；之後替換 prior 槽、做一次原 R／S、與原 log／unit 分支逐筆取中位數。
+
+全量 native fit 實測 **48.875 秒**，trainer 全程序 **51.468 秒**；含 context、組合與封存的 fit 程序 **80.234 秒**，發行核對程序 **38.468 秒**。這些各自有不同計時範圍，不是整個專案總工時。[訓練 metadata](evidence/outputs/round107/final/model/training.json)、[fit 執行收據](evidence/outputs/round107/final/fit_execution.json)、[五層封存](evidence/outputs/round107/final/seal.json)、[release](evidence/outputs/round107/final/release.json)。
+
+最後只取整一次：
+
+```python
+rounded = np.maximum(np.rint(final_TWD), 1).astype(np.int64)
+```
+
+按 sample 的 47,073 個 ID 與順序，先用 Artifact Tool typed range 建立表格並核對全部值，再將該範圍以標準 comma／CRLF 編碼寫成 UTF-8 BOM CSV；當時 native CSV API 不可用，因此不是該 API 的直接匯出。Python `csv` reader 再獨立核對全部 ID、整數值、列數、兩欄名稱、順序及全檔 SHA。成品為 `outputs/submission_v25_trial.csv`（原工作區檔案，未納入GitHub）：
 
 ```text
-6490e2da78d4bf8173a27444de673a020152878f78e7ebec54d4fdc9bddfae35
+SHA256  36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1
+欄位    編號,總價元
+資料列  47,073
 ```
 
-本報告不把未執行的重訓流程記為完成。交付入口為 src/predict_v22.py，從原始 test Excel、保存地理及 fit 狀態重新推論六個模型。操作、環境與驗證範圍見 README.md 及 docs/REPRODUCIBILITY.md。[E11]
+相對 v22，13,002 列取整價格不同；未取整預測的平均絕對差為 29,521.0062 元。這是**兩個預測向量的差**，不是 test MAE，也不是它對真價改善的金額。這些發行證據沒有使用 test 真價或按 test ID 人為改價。
 
-### 8.2 初次交付：既有套件環境的重現測試
+## 7. 程式怎麼讀，以及目前能重現到哪裡
 
-在獨立交付目錄保存必要模型副本，以 Python 隔離模式啟動父程式入口，NN另由指定Python子程序執行。原始 test Excel 重新生成 87 欄基礎特徵，encoder、quantile knots 與 prior 重新生成 NN query 輸入，再真正載入四個樹模型與兩個 NN，重算各分支參考／空間修正及逐筆中位數，沒有將舊預測向量當成推論輸入。
-
-| 核對項目 | 實測結果 |
-| --- | --- |
-| 全量預測列數 | 47,073 |
-| 六模型與三分支 | 與原保存輸出完全位元一致 |
-| 最終未取整預測 | 最大絕對差 0 元 |
-| 最終 CSV | 完整 SHA256 與原 v22 相同 |
-| 單一入口執行時間 | 84.74 秒，不含先前模型複製及元件稽核 |
-| 提交格式單元測試 | 4 項通過 |
-| 本次新增訓練 | 0 次 |
-
-實測為 Windows／Python 3.12.14 的既有 ML 與 Torch 兩環境，NN 為 Torch 2.13.0+cu126／CUDA 12.6／RTX 4060 Ti。CPU 面積 NN 的預測與原 GPU 有差異，平均絕對預測差約 565.28 元；這不是 test MAE。精確重現須匹配受測計算設定，不能承諾所有硬體位元一致。
-
-首次整合已得到相同預測，但 CSV 使用 LF 而原檔為 CRLF，因此完整檔案雜湊核對失敗。修正換行及失敗收據狀態後，重新執行整條入口並通過。原失敗收據與更正說明均保留。這項格式修正沒有改動任何模型或價格。
-
-上述初次測試是「原始 test 加保存地理／模型／fit 狀態的推論重現」，當時未重新建立地理、測試新套件環境或從原始 train／valid 重訓全部模型。後續新套件環境測試另列於8.3，不改寫初次測試收據。保存的必要 artifact 約 1.45 GB，留在本機私有目錄，公開程式包不包含原交易表、模型與價格參考狀態。
-
-入口與命令見 [README](README.md)，驗證收據見 [重現摘要](evidence/reproduction/summary.json)及[完整收據](evidence/reproduction/integration_verified.json)。
-
-### 8.3 2026-10-02補充：同機新套件環境重現
-
-為確認程式不是只在原套件環境才能執行，另建ML與NN兩個套件環境，再用原始test、sample的ID／schema及17項保存模型與狀態推論。新環境不繼承system site；仍沿用同一台Windows電腦、Python 3.12.14基礎安裝、RTX 4060 Ti及616.64驅動。NN使用Torch 2.13.0+cu126／CUDA 12.6。沒有重新訓練，也沒有讀入舊預測向量或test真價當模型輸入。[E13]
-
-| 核對項目 | 新套件環境實測結果 |
-| --- | --- |
-| 六模型推論 | 47,073筆；新增fit為0 |
-| 保存向量比較 | 兩NN、三條修正分支及最終融合，共6向量逐bytes相同 |
-| 最終CSV | 734,491bytes；SHA256與原v22相同 |
-| 主程式時間 | 76.930302秒，不含環境安裝；外層程序78.939654秒 |
-| 尚未驗證 | 另一台電腦／OS、不同硬體／驅動、地理重建及全部模型從零重訓 |
-
-本次載入六個模型，但保存比較的是上述六個流程產物，未另存四樹的原生輸出。它們屬於同一條計算流程，不能當六份獨立泛化證據。CSV完全相同表示推論可重現，不表示MAE為零或Private已知；兩次執行秒數也不能用來宣稱效能提升，因為沒有固定條件的重複速度實驗。
-
-父程式以Python隔離模式執行，該旗標不會自動傳給NN子程序；外層另清除PYTHON開頭環境變數並停用user site。獨立probe確認新NN套件路徑，但不是實際NN全程的import追蹤。完整安裝、環境控制、前置停止紀錄與成功收據見[E13]；舊環境及原模型均保留。
-
-## 9. 結論
-
-本專題完成以房屋、土地、位置與交易時間預測總價的監督式回歸方法。本專題選定「近期成交加權與多模型回歸」作為唯一提交模型，對應保存版本 v22。方法結合單價表示、面積對齊的總價誤差、近期成交權重及三分支中位數組合，Public 回報 MAE 約 199.86 萬元，年度回測與程式來源均有保存證據。
-
-交付包含單一推論入口、正式報告、模型與狀態清單，以及成功和失敗的驗證收據。以指定原始 test 加保存 artifact 真正重跑六模型後，47,073 筆預測及完整 CSV 與原提交一致。同機新套件環境也已完成相同推論，補足該機器上的套件安裝與保存模型重現證據；另一台電腦、全部模型從零重訓或地理重建仍未驗證。[E13]
-
-研究限制仍然存在：Private 未知，歷史窗口反覆參與選型，部分高價群退步，替代配方也曾取得更低歷史整體 MAE。已選定提交版本不改變這些證據。未來若延伸研究，應預先固定假設與時間切分、重新建立對應 fit 狀態，避免靠 Public 反覆調參。本次文件整理沒有新增訓練、修改模型或更改提交價格。
-
-## 附錄 A 研究對照與內部版本溯源
-
-本附錄保留研究過程和不利證據，供需要核對方法差異的讀者查閱。主文介紹的是已選定提交模型，附錄中的內部編號不代表仍待多選一，其他版本不屬於本次提交。
-
-### A.1 方法名稱與保存編號
-
-| 方法名稱 | 保存編號 | 本報告中的用途 |
+| 用途 | 來源與實際入口 | 範圍 |
 | --- | --- | --- |
-| 單價 CatBoost 僅用面積權重的完整組合 | v20／R76 | 日期權重的歷史對照組 |
-| 單價 CatBoost 使用面積乘日期權重的完整組合 | v22／R79 | 本次選定的唯一提交模型 |
-| 單價分支移除 LightGBM 的配方 | v23／R80 | 保留歷史比較，不提交 |
-| 單價分支採兩個 CatBoost 種子平均的配方 | v24／R83 | 保留反證及研究歷史，不提交 |
-| 兩種子單價 CatBoost 增加樹數的試驗 | R84 | 未新增提交檔的研究記錄 |
+| 了解唯一 loss 改動 | [round107_weighted_smooth_train.py](research/src/round107_weighted_smooth_train.py)：`weighted_loss`、`run` | 九鍵 NPZ → 一支 prior NN fit → 保存模型／全 query reload；CLI 有 `--data`、`--out`、`--cpu-unit-check` |
+| 了解原三窗研究 | [round107_108_research.py](research/src/round107_108_research.py)：`freeze`、`train`、`stage`、`evaluate` | R107／R108 獨立、共六次 fit；CLI 為 `--freeze`／`--train`／`--stage`／`--evaluate`，不是最終 v25 一鍵推論 |
+| 了解全量資料身分與組合 | [round107_final_candidate.py](research/src/round107_final_candidate.py)：`specification`、`load_context`、`apply_prior` | 原 full-fit 資料、R／S 與保存向量的完整身分核對；CLI `--preflight` 是唯讀組合重播，沒有六模型 native 推論 |
+| 了解最終發行 | [round107_full_release.py](research/src/round107_full_release.py)：`freeze`、`fit`、`release` | 單次全量 NN fit、五層封存、CSV；CLI `--freeze`／`--fit`／`--release`，綁定當時 manifest 與拒絕覆寫 |
+| 了解 2 月後續檢查 | [round113_offset_research.py](research/src/round113_offset_research.py)、[round113_offset_composition.py](research/src/round113_offset_composition.py) | 自己起點的 R107／R111／R112；不產生新的 v25 CSV |
+| 了解共用架構／先驗 | [round47_nn_train.py](research/src/round47_nn_train.py)、[round47_nn_encode.py](research/src/round47_nn_encode.py)、[round60_recency_price_prior.py](research/src/round60_recency_price_prior.py)、[round63_recency_weighted_prior_train.py](research/src/round63_recency_weighted_prior_train.py) | v25 直接沿用的架構、encoder、先驗與日期權重來源 |
+| 查原基準完整方法 | [v22 方法導覽](evidence/reports/v22_method_and_code.md) | 歷史方法背景；其中舊選定／重現現況不能當作現在狀態 |
 
-v20 與 v22 的對照只涉及單價 CatBoost 是否乘日期權重。log CatBoost 與先驗倍率 NN 原有的近期權重不因這個對照而移除，不能將 v20 稱為「所有模型均無日期權重」的基準。
+目前 v25 已有真實訓練、保存模型全 query 重載、分支組合、CSV 全列核對與 source／artifact SHA 證據。原四支程式是研究與發行入口，依賴多輪保存資料、模型和狀態，原路徑也已有不可覆寫收據；不能現在直接重跑同一命令來覆蓋舊產物。
 
-實作溯源：R79 單價模型重用 R63 所保存、列序一致的 float32 日期權重，再轉 float64；固定空間修正使用保存的 R39 狀態。這些編號用來核對 source 與 artifact，不改變主文的方法定義。
+既有 GitHub 的 `src/predict_v22.py` 是 **v22 推論入口**，不能更換標題就宣稱能產出 v25。v22 曾驗證從原 test Excel 與保存六模型推論；該證據不自動延伸成 v25 的獨立推論入口或全新環境測試。本文所據的 v25 發行證據，其原控制鏈是**保存向量組合重播**，沒有重新推論其他五個原生模型。
 
-### A.2 歷史整體 MAE 與配對區間
+**尚未完成 v25 從原始 train／valid 到全部模型的乾淨環境單一入口重訓。** 固定 seed 與保存雜湊保證可追查這次產物，不保證任意硬體重訓逐 bytes 相同。GitHub 的 source／文件快照也不是含私有模型、交易表與逐筆價格的完整重訓備份；依後續新重現收據再更新實際完成範圍。
 
-| query 期間 | v20 MAE | v22 MAE | v22 相對 v20 降低 | v24 MAE |
-| --- | ---: | ---: | ---: | ---: |
-| 2021-08-11～2022-08-10 | 2,372,150.72 | 2,309,352.36 | 2.65% | **2,275,409.14** |
-| 2022-08-11～2023-08-10 | 1,416,140.05 | 1,407,387.07 | 0.62% | **1,407,340.72** |
-| 2023-08-11～2024-08-10 | 1,410,654.84 | 1,383,228.41 | 1.94% | **1,373,195.92** |
+目前三款 PPTX、約 15 分鐘講稿及影片仍是 **v22 教學媒體**；尚無新 v25 教學媒體，不能在正式報告改選 v25 後把原影片視為已同步。後續若改為 v25 上台版，應保留六模型與三分支的白話主線，另解釋 SmoothL1、當前分數及上述限制，再依新稿實際計時。
 
-全部 MAE 單位為元。v22 對 v20 的三期整體點估計都改善，支持單價 CatBoost 日期加權這項歷史研究假設。然而，v24 的三期整體與固定加權 MAE 點估計都比 v22 低。此反證必須與 Public 結果一起保留，不能宣稱 v22 在所有本機評估中最好。[E2、E3]
 
-R79 對 v20 另以建案重抽樣及三個月循環區塊重抽樣計算配對區間。每種方式使用 2,000 次重抽樣。以整體 MAE 差值「v22 減 v20」為例：
+## 本次實際訓練曲線與新版簡報
 
-| 年度 | 建案重抽樣的 95% 區間 | 三個月區塊的 95% 區間 |
-| --- | ---: | ---: |
-| 較早 | [-83,546.32, -40,840.43] | [-84,148.21, -49,070.97] |
-| 中間 | [-31,419.13, +14,340.18] | [-31,351.44, +4,747.05] |
-| 最新 | [-46,351.02, -10,140.17] | [-48,524.60, -8,874.84] |
+[實際曲線與白話說明](evidence/reports/v25_training_curve_20261010.md)、[完整簡報](teaching/v25_presentation_20261010/deliverables/臺灣房價預測_v25_含實際訓練曲線_r2.pptx)、[完整口語稿](teaching/v25_presentation_20261010/deliverables/完整口語講稿.md)。第19頁為另一次固定30輪的先驗NN診斷，未改原提交；圖的橫軸是epoch，架構固定。主講4,217漢字，以275字／分估15.33分鐘，尚未真人計時。
 
-中間年度的區間跨 0，因此不能說三期皆有一致的區間支持。上述區間未校正反覆選型造成的偏差，也不是 Private 的勝率。[E2]
 
-### A.3 保存的歷史 Public 回報
+## 歷史報告與媒體
 
-| 提交版本 | Public MAE（元） | Private MAE |
-| --- | ---: | --- |
-| v19 | 2,387,305.3199 | 未知 |
-| v20 | 2,069,837.8954 | 未知 |
-| v21 | 2,071,041.3042 | 未知 |
-| **v22** | **1,998,568.5706** | **未知** |
-| v23 | 2,026,961.4299 | 未知 |
-| v24 | 2,083,045.2932 | 未知 |
-
-數值來自保存的 Kaggle 提交成績截圖及其登錄 JSON。v22 是這六份回報中的 Public 最低值，相對 v20 減少 71,269.3248 元，約 3.4432%。本機 CSV 的雜湊有保存，但未獨立向平台驗證實際上傳的檔案 bytes，因此表格應描述為「平台截圖回報」，而非宣稱已獨立核實平台全部輸入。[E5]
-
-### A.4 研究過程的比較與取捨
-
-以下保存研究階段各方案的有利與不利結果，方法比較以完整最終組合為主，不將單一分支的改善直接等同於最終模型的改善。
-
-| 比較 | 固定改動 | 觀察與取捨 |
-| --- | --- | --- |
-| v20 → v22 | 單價 CatBoost 加入既有日期權重，其他分支保持 | 三期整體 MAE 都降低，但中間年度區間跨 0，部分高價群退步 |
-| v22 → v23 | 單價 base 由 75% CatBoost＋25% LightGBM 改為純 CatBoost | 三期變化不一致，保留為對照 |
-| v23 → v24 | 單價 base 改為 seed 42／137 CatBoost 各半 | 三期整體相對 v23 改善，對 v22 也有整體優勢，但有群組代價 |
-| v24 → R84 | 固定兩個 seed，單價樹 iterations 由 2,999 增至 4,499 | 最新年度改善，另兩期退步，保留研究而未產生新提交 |
-
-v24 的實際單價 base 為 `0.5*C42 + 0.5*C137`，不再包含原來的 25% LightGBM 項。NN 與 log 的完整分支仍沿用原配方，最後一樣取中位數。因此不能把 v24 簡化成「只替換 v22 的 CatBoost 為兩個 seed，仍保留 75%／25%」。[E3]
-
-v22 最新年度真價 5,000 萬至 1 億群共有 1,725 筆，群內 MAE 對 v20 增加 **204,728.26 元**。另一方面，v24 在最新年度真價至少 1 億的 319 筆資料中，群內 MAE 對 v22 增加約 **909,727.59 元**，中間年度的 test 組成重加權估計亦比 v22 高約 9,367.11 元。這些記錄說明研究當時的風險取捨，並非 v22 普遍較好的證明。本次僅提交 v22。[E2、E3]
-
-R84 相對 v24 的整體 MAE 差值為：較早年度 +7,114.59 元、中間年度 +930.08 元、最新年度 −1,999.31 元。最新年度的配對區間支持改善，是 R84 的有利證據，但另外兩期與高價群的代價使其未被採用為新提交。這不表示增加樹數在所有情況下都無效。[E4]
-
-上述是真實保存候選的比較，不是完整因子實驗。不同層級的 MAE 差值不能相加成各模組的因果貢獻。GPU 重訓亦非完全位元決定，固定 seed 不能排除全部訓練隨機性。[E2–E4]
-
-## 附錄 B 證據與程式來源
-
-下表顯示原研究來源名，連結指向本交付包內的副本。報告數字來自保存的結果及正式成績回報，未以未完成實驗填補。交付包可依 manifest 對應來源副本。
-
-| 編號 | 支持內容 | 來源路徑 |
-| --- | --- | --- |
-| E1 | v22 方法、清理及程式導覽 | [reports/v22_method_and_code.md](evidence/reports/v22_method_and_code.md) |
-| E2 | R79 三期 MAE、分群與配對區間 | [outputs/round79/results.json](evidence/outputs/round79/results.json)、[reports/round79_report.md](evidence/reports/round79_report.md)、[outputs/round79/paired_vs_v20/results.json](evidence/outputs/round79/paired_vs_v20/results.json) |
-| E3 | v24 配方、三期優勢及群組代價 | [reports/round83_report.md](evidence/reports/round83_report.md)、[reports/round83_delivery.md](evidence/reports/round83_delivery.md)、[src/round83_final.py](research/src/round83_final.py) |
-| E4 | 增加樹數的結果及未採用決策 | [reports/round84_report.md](evidence/reports/round84_report.md)、[outputs/round84/decision.json](evidence/outputs/round84/decision.json) |
-| E5 | Public v19–v24、未知 Private 與 CSV 身分 | [outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json](evidence/outputs/kaggle_feedback/public_submissions_v19_v24_20260927.json) 及同名 `.png` |
-| E6 | 原始資料與前處理實作 | [src/prepare_data.py](research/src/prepare_data.py)、[src/model_common.py](research/src/model_common.py)、[src/house_features.py](research/src/house_features.py)、[src/prepare_features.py](research/src/prepare_features.py) |
-| E7 | 單價、日期權重、CatBoost 設定及重載 | [src/round19_unit_geo.py](research/src/round19_unit_geo.py)、[src/round79_recency_unit.py](research/src/round79_recency_unit.py)、[src/round79_final_unit.py](research/src/round79_final_unit.py)、[outputs/round79/final_model/model/metadata.json](evidence/outputs/round79/final_model/model/metadata.json) |
-| E8 | NN 架構、編碼、日期權重與先驗 | [src/round47_nn_train.py](research/src/round47_nn_train.py)、[src/round48_nn_train.py](research/src/round48_nn_train.py)、[src/round54_numeric_encode.py](research/src/round54_numeric_encode.py)、[src/round60_recency_price_prior.py](research/src/round60_recency_price_prior.py)、[src/round63_recency_weighted_prior_train.py](research/src/round63_recency_weighted_prior_train.py) |
-| E9 | log 轉換、參考修正與最終融合 | [src/round12_log_geo.py](research/src/round12_log_geo.py)、[src/round46_recency_log.py](research/src/round46_recency_log.py)、[src/round71_final.py](research/src/round71_final.py)、[src/round46_trial_release.py](research/src/round46_trial_release.py)、[src/round2_neighborhood.py](research/src/round2_neighborhood.py)、[src/round8_spatial_reference.py](research/src/round8_spatial_reference.py)、[src/round79_final.py](research/src/round79_final.py) |
-| E10 | 最終預測與 CSV 核驗 | [outputs/round79/final/trial_release.json](evidence/outputs/round79/final/trial_release.json)、[outputs/round79/final_export/release.json](evidence/outputs/round79/final_export/release.json)、[src/round79_release.py](research/src/round79_release.py) |
-| E11 | 重現範圍、完成證據與歷史缺口 | [目前重現範圍](docs/REPRODUCIBILITY.md)、[成功摘要](evidence/reproduction/summary.json)、[完整推論收據](evidence/reproduction/integration_verified.json)；歷史：[舊重現盤點](evidence/reports/github_reproducibility_audit_r83.md)、[舊交付要求](evidence/DELIVERY_REQUIREMENTS.md) |
-| E12 | 外部非價格地理資料的來源與快照 | [data_external/geography/ATTRIBUTION.md](evidence/data_external/geography/ATTRIBUTION.md)、`data_external/geography/*.download.json`、[README_round6.md](evidence/README_round6.md) |
-| E13 | 2026-10-02同機新套件安裝與保存模型推論 | [新GPU環境說明](docs/CLEAN_GPU_REPLAY_20261002.md)、[重現彙總](evidence/clean_gpu_20261002/reproduction_receipt.json)、[向量比較](evidence/clean_gpu_20261002/comparison.json)、[套件安裝證據](docs/ENVIRONMENT_INSTALL_20261002.md) |
-
+原 v22 正式報告完整保存在[歷史原文](REPORT_V22.md)。[既有 v22 簡報、講稿與影片](teaching/v22_review_20261002/README.md)仍講 v22，本次另存新版 v25 簡報，舊影片與PDF仍講v22，未重新製作配音。

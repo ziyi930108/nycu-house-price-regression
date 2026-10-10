@@ -1,0 +1,15 @@
+--- src/round107_weighted_smooth_train.py
++++ src/round107_training_curve_train_20261010.py
+@@ -205,6 +205,12 @@
+                        'training_weighted_mae_million_with_dropout':weighted_mae_value,
+                        'training_weighted_smooth_l1_million_with_dropout':value})
+         schedule.step()
++        checkpoint_dir=out/'epoch_checkpoints'
++        checkpoint_dir.mkdir(exist_ok=True)
++        checkpoint_path=checkpoint_dir/f'epoch_{epoch:02d}.pt'
++        with checkpoint_path.open('xb') as checkpoint_file:
++            torch.save({'numeric_count':meta['numeric_count'],'cardinalities':card,'configuration':CONFIG,
++                        'state_dict':{k:v.detach().cpu() for k,v in model.state_dict().items()}},checkpoint_file)
+         if epoch==1 or epoch%5==0:
+             print(json.dumps({'event':'epoch_complete',**epochs[-1],'elapsed_seconds':time.monotonic()-fit_started}),flush=True)
+     torch.cuda.synchronize();fit_seconds=time.monotonic()-fit_started

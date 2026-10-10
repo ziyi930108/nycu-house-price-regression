@@ -1,0 +1,167 @@
+{
+  "created_at_utc": "2026-10-10T08:45:48.810578+00:00",
+  "status": "completed_and_all_24_final_renders_visually_reviewed_by_Codex",
+  "presentation": {
+    "path": "outputs/v25_presentation_20261010/deliverables/臺灣房價預測_v25_含實際訓練曲線_r2.pptx",
+    "bytes": 121137,
+    "sha256": "b75193f21a5476af285f07af108eb48edc90e70ba12e44852da75c31405a34d8"
+  },
+  "script": {
+    "path": "outputs/v25_presentation_20261010/deliverables/完整口語講稿.md",
+    "bytes": 20532,
+    "sha256": "22759eb3d1a853d2d087b71ee31e0efe9e56056534249ca432907f265c9f5492"
+  },
+  "narrative": {
+    "path": "outputs/v25_presentation_20261010/source/narrative.json",
+    "bytes": 40837,
+    "sha256": "dc3d4ac5f0f7e84a77c21cdaf5891da8dd7178de5014683ce0d6aba46f9f587d"
+  },
+  "slides": 24,
+  "main_slides": 21,
+  "appendix_slides": 3,
+  "actual_main_script_Han_characters": 4217,
+  "estimated_minutes_at_275_Han_per_minute": 15.334545454545454,
+  "human_rehearsal_performed": false,
+  "curve_slide_number": 19,
+  "curve": {
+    "path": "outputs/v25_training_curve_20261010/curve.json",
+    "bytes": 3728,
+    "sha256": "8c02ac44b579db70f918db180f1f54f3b3f603ef225c57ec900a74ac5fff0b6a"
+  },
+  "visual_review": {
+    "individual_final_render_count": 24,
+    "render_scale": 1.25,
+    "clipping_or_overlap_found": false,
+    "comparison_reference": "outputs/v22_full_style_20261001/build/renders_r1/slide-12.png",
+    "same_academic_style_retained": true,
+    "native_PowerPoint_opened": false
+  },
+  "renders": [
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-01.png",
+      "bytes": 59736,
+      "sha256": "6fefeed9c544bd078ce60743645e34349c2434e60a81a0384938a9952e46b01a"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-02.png",
+      "bytes": 72855,
+      "sha256": "aaa640cb198b1a902b754a9e72dfba3c089286c2c740b041d50a3f1f0c94a4f1"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-03.png",
+      "bytes": 67092,
+      "sha256": "897af917861a57b214e932148c10c069fc6f5ff58e651ec1cc682fd5573e6a71"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-04.png",
+      "bytes": 84866,
+      "sha256": "9571a86bcd5baaffab210f0779b0b372330fe420ecac728cbe6912fe495ddc06"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-05.png",
+      "bytes": 98485,
+      "sha256": "4677e0ed27d3b4f5571320dafd6fcc40eb9b76ef511603cecb5ff336c0552890"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-06.png",
+      "bytes": 85357,
+      "sha256": "d1ffc16f163ec330eebdb6fcb775e78b528a1473172889aae2f8cc86de2ba6f5"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-07.png",
+      "bytes": 99759,
+      "sha256": "174bbc8623e76b4eafea980418f0861b59868a1519e5b205459b124e006b7b76"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-08.png",
+      "bytes": 79072,
+      "sha256": "558ebb1ce6fcc32f4f16933a91fbdc920f5810c4d4ba67ddc382b300868b1fd6"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-09.png",
+      "bytes": 92476,
+      "sha256": "20765780a988ae3d1f691f8e2a6a58438920da4f337149555aac7f1a6849fa7a"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-10.png",
+      "bytes": 80691,
+      "sha256": "66185d871ecea89601b42e34ce5fc1bcc7cfde0671d43f946021e8ba781566b6"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-11.png",
+      "bytes": 57378,
+      "sha256": "e9fef75a81dc11ddcdb4fa050b2315b1fef568905a268498a6071e273a5c7a5e"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-12.png",
+      "bytes": 106678,
+      "sha256": "8757228b2702629004dce39f08207fa15a91f5d99ea8094c12d4a4729bc7a90c"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-13.png",
+      "bytes": 93427,
+      "sha256": "5cce84c2fb939cfcc00a798e77e51a69f50b20b8d0b3e4542aabb1d6b0d15a79"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-14.png",
+      "bytes": 94060,
+      "sha256": "52ad24c04b1a2cde5b39de5df2f031f555c55602dbe3319b01201ee04112eea9"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-15.png",
+      "bytes": 60673,
+      "sha256": "3f472d20687e4a766855c31fc848ff1f175ea86127b114e4e2978425abc20220"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-16.png",
+      "bytes": 63434,
+      "sha256": "65f06524c88b1dbccb906f4e09cfd930f86da226efc25e3a7a8eda3c0eb7f209"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-17.png",
+      "bytes": 81525,
+      "sha256": "ed08b2bb53ba96bbefb20a102ff44ff85cd8b943d4f4ad5ca9a90be894d9434e"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-18.png",
+      "bytes": 99151,
+      "sha256": "bf92cafc6d991503b77e20bf0c8e109859abb989e4bacb36f84e1ecf19a0b530"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-19.png",
+      "bytes": 117597,
+      "sha256": "fcdce05cb39b3a2eb438bc7ef8496bd273c20b8e2d4ab5af03ef50410d41db78"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-20.png",
+      "bytes": 104663,
+      "sha256": "5d400d1f95748286a9bef168dc51bba8de92e613b507aa8ff11519c6b64b52ec"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-21.png",
+      "bytes": 65009,
+      "sha256": "5d26e5b71cdea059ba19d7223f138ceb69c7d008520350fe11e74a107c55888f"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-22.png",
+      "bytes": 90245,
+      "sha256": "18fa3cdae0ed7915f0268231171eab890be58e808fff854687f5c4bd1cf2d931"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-23.png",
+      "bytes": 97596,
+      "sha256": "d0490fd673654b613fee5ed0604cea384ba707e9080aaa58125547a54b363406"
+    },
+    {
+      "path": "outputs/v25_presentation_20261010/build/A/renders_r2/slide-24.png",
+      "bytes": 98594,
+      "sha256": "777cefd913a5c6c7c72300eeebe3f00f29aaed740d349267e7a3c7ab8305de83"
+    }
+  ],
+  "original_v25_CSV_changed": false,
+  "new_video_created": false,
+  "Private_score": null,
+  "source_builder": "source/build_deck.mjs",
+  "source_finalizer": "source/finalize_deck.mjs",
+  "rebuild_scope": "saved original full workspace and bundled runtime; not clean GitHub-only rebuild verification"
+}

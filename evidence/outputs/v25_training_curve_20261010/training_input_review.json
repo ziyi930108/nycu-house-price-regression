@@ -1,0 +1,107 @@
+{
+  "array_identities": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        133697,
+        23
+      ],
+      "values_sha256": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        133697,
+        144
+      ],
+      "values_sha256": "1dc6f1addb39a7f47b1e63e8d7ee62c1d1b05b40cdd3fef23c1215d04ea84f53"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        321550,
+        23
+      ],
+      "values_sha256": "7f2e771a495c12e20fa2e0fa8c386b7f85469cf91d9e24612c26669a2c6907ce"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        321550,
+        144
+      ],
+      "values_sha256": "9836c10d38fdcacc9890385ec398a235ac53e01c089a3cf5064b4d3f884d003b"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "3a5d9c3759af6a01cda823a44a5f7a8f3f2acc22a68ebece7dfbaf65f7638405"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "d1150f7935e78f75d28b6f6b8e004a97a5a90cc284e3a89c97ed0cf10b1e950e"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "c3a6d6920fba06f680b553986e2462a8726fb6fb86e5f0e472936fb828a30b1c"
+    }
+  },
+  "axis_identities": {
+    "fit_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+    },
+    "fit_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "f1d76cb66640f818f338d819ccf72a8ea204e24aa36a2865fcf511f0a13a6885"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+    },
+    "query_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+    }
+  },
+  "encoder_or_prior_refit": false,
+  "fit_rows": 321550,
+  "query_labels_loaded": false,
+  "query_rows": 133697,
+  "raw_price_table_deserialized": false,
+  "status": "passed_own_cut_before_fit"
+}

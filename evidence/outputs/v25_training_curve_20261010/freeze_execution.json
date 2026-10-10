@@ -1,0 +1,17 @@
+{
+  "action": "freeze",
+  "automatic_retry": false,
+  "elapsed_seconds": 1.312999999994645,
+  "exit_code": 0,
+  "failure": null,
+  "new_CSV": false,
+  "plan": {
+    "path": "reports/v25_training_curve_plan_20261010.md",
+    "sha256": "9fcafe852041782da3d274e91e2a9b6a34899824f5e477f5890a9ab3da5ac2be"
+  },
+  "selection_changed": false,
+  "source": {
+    "path": "src/v25_training_curve_20261010.py",
+    "sha256": "20933a8b9ed316ecd10ae3c3ee92ba791b32dea502e0db15427ecc406001feb2"
+  }
+}

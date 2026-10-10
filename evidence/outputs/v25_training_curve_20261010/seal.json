@@ -1,0 +1,310 @@
+{
+  "array_identities": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "1df4d5a2a90cf95fff204716b4c30cd301b76e0c8ccb7b121c4fd689054224e4"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        133697,
+        23
+      ],
+      "values_sha256": "08aa87a9c1c7e9dfa5ddc0c47637b9361cd010b858f11f6ca1c2328c018cc76f"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        133697,
+        144
+      ],
+      "values_sha256": "1dc6f1addb39a7f47b1e63e8d7ee62c1d1b05b40cdd3fef23c1215d04ea84f53"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "7b77243f2ac03041d6a574dd500044311d78764f50404b3d3fdfc0ce9fc94f32"
+    },
+    "train_cat": {
+      "dtype": "int64",
+      "shape": [
+        321550,
+        23
+      ],
+      "values_sha256": "7f2e771a495c12e20fa2e0fa8c386b7f85469cf91d9e24612c26669a2c6907ce"
+    },
+    "train_num": {
+      "dtype": "float32",
+      "shape": [
+        321550,
+        144
+      ],
+      "values_sha256": "9836c10d38fdcacc9890385ec398a235ac53e01c089a3cf5064b4d3f884d003b"
+    },
+    "train_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "3a5d9c3759af6a01cda823a44a5f7a8f3f2acc22a68ebece7dfbaf65f7638405"
+    },
+    "train_sample_weight": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "d1150f7935e78f75d28b6f6b8e004a97a5a90cc284e3a89c97ed0cf10b1e950e"
+    },
+    "train_y_million": {
+      "dtype": "float32",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "c3a6d6920fba06f680b553986e2462a8726fb6fb86e5f0e472936fb828a30b1c"
+    }
+  },
+  "axis_identities": {
+    "fit_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+    },
+    "fit_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "f1d76cb66640f818f338d819ccf72a8ea204e24aa36a2865fcf511f0a13a6885"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+    },
+    "query_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+    }
+  },
+  "checkpoint_epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "checkpoint_review": {
+    "path": "outputs/v25_training_curve_20261010/checkpoints_review.json",
+    "sha256": "6f19399bb55f13b365de151a42de375d361035e7e0bdbb5e315f61cde02bec09"
+  },
+  "inspection_execution": {
+    "path": "outputs/v25_training_curve_20261010/checkpoint_inspection_execution.json",
+    "sha256": "41b7f06c56dce36db8c216bd261406bdad7c38a186aab5b376ec48ff7a1ed1f6"
+  },
+  "native_training_execution": {
+    "path": "outputs/v25_training_curve_20261010/native_training_execution.json",
+    "sha256": "838a10e37ba09ed4206e6b9b67c7ab37f7395747c6d45a9aea4ffe559503e041"
+  },
+  "new_CSV": false,
+  "query_labels_used_for_fitting": false,
+  "query_scores_computed": false,
+  "request": {
+    "path": "outputs/v25_training_curve_20261010/request.json",
+    "sha256": "7a99dd5fa4c5b79453089a5b7bfbd05fa8eedef405059003a0931247a9161599"
+  },
+  "selection_changed": false,
+  "snapshots": [
+    {
+      "epoch": 1,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_01.pt",
+      "sha256": "af6a57b867834f45b4b2c0a7d4f43eed2017917386537d0d5cd3802bc79ddeea"
+    },
+    {
+      "epoch": 2,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_02.pt",
+      "sha256": "06848e6d26db5b471b453cd2beeeaa131efec16536e156ec867495ed92474bc7"
+    },
+    {
+      "epoch": 3,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_03.pt",
+      "sha256": "8265d3a5ff9292888579eb6bdee233489ada973189c0d8acecd6c3b48ea4a3c1"
+    },
+    {
+      "epoch": 4,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_04.pt",
+      "sha256": "0c616d2aaf0b05eba4e46eb7f8d81de9aa55736779182463e783888ceb9d8b30"
+    },
+    {
+      "epoch": 5,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_05.pt",
+      "sha256": "45f32e3aaf5983b3386b0345c907e0134e5d5f506f8095a0b97b4c0b8bb9b7dc"
+    },
+    {
+      "epoch": 6,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_06.pt",
+      "sha256": "8677a7746ba15cddec6da49e1dcd2ef1bfb0187554f3797a2b6d16b2237aee8e"
+    },
+    {
+      "epoch": 7,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_07.pt",
+      "sha256": "dec8f11bd62893eabacad182dfb5d1091738ffd608e55aa4bbff499e5638597a"
+    },
+    {
+      "epoch": 8,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_08.pt",
+      "sha256": "a802e3dff6a09aeb579373c79b1d2be6ef68800e051c0728b05f459a6f529216"
+    },
+    {
+      "epoch": 9,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_09.pt",
+      "sha256": "6cbb73417379536328e69a3765bdedbc293fba2e7905b681dec4b8d9195cd62f"
+    },
+    {
+      "epoch": 10,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_10.pt",
+      "sha256": "81c53bb655b300d56d391fede67fd305e9377b3e9d2b732fff74ebda412fa83a"
+    },
+    {
+      "epoch": 11,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_11.pt",
+      "sha256": "e66c29490b48a7a557dca290b70b5c0129170fe20e849683a22a14d41e944c92"
+    },
+    {
+      "epoch": 12,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_12.pt",
+      "sha256": "ac8ceafac0d77a9c0cfa13e1a05453aad57f73130834e4d8ed14e012e48d27e6"
+    },
+    {
+      "epoch": 13,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_13.pt",
+      "sha256": "3b66603d68ba2ba7d3b6440d736773ae8ad5a45e817065bfb1480f6bf6b32d14"
+    },
+    {
+      "epoch": 14,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_14.pt",
+      "sha256": "a245f5843956a6e1a0aa7df2892008e2f46c6db060eecccd55ab2bf215277dc9"
+    },
+    {
+      "epoch": 15,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_15.pt",
+      "sha256": "57dd33da9303df360e3c73627f02b22817195b3b4d221d85500736657ee6cb97"
+    },
+    {
+      "epoch": 16,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_16.pt",
+      "sha256": "444c686d5cc4bbfa249804d590c5505c06a0e8f90b517acc99135e50ea6e196c"
+    },
+    {
+      "epoch": 17,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_17.pt",
+      "sha256": "178d4779d720ebc795ce87777900cafde3dc0bad6eb24d83d25fa93a3d9597dc"
+    },
+    {
+      "epoch": 18,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_18.pt",
+      "sha256": "37e8487bce6fcce823456ef73705b43c6dfb2150474d69fa4ae9bbbd7091527d"
+    },
+    {
+      "epoch": 19,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_19.pt",
+      "sha256": "836fc86698202cef47def1de86c13646b7a58ceee036ae6e8632c51447133365"
+    },
+    {
+      "epoch": 20,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_20.pt",
+      "sha256": "69efec6cc66a5e14c83902527ff6f7ad428bb6c966841bf0b455e17b2667d11c"
+    },
+    {
+      "epoch": 21,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_21.pt",
+      "sha256": "1b2344e34ec04f724bbbdc236be1785c26edb5766c02eae9f1c0efb80be71cf0"
+    },
+    {
+      "epoch": 22,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_22.pt",
+      "sha256": "27f20926775b98baa3f33dab8fb083301667a184dcd93cf2d3358a401c33e05f"
+    },
+    {
+      "epoch": 23,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_23.pt",
+      "sha256": "15a67ceb2a9652b5674c92ab51b2d836aa6b176c134e3ace900bcc36985a9d95"
+    },
+    {
+      "epoch": 24,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_24.pt",
+      "sha256": "b22567de4490368c3d2f567146b16f586015c247282361aadd2734b4d96f44d1"
+    },
+    {
+      "epoch": 25,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_25.pt",
+      "sha256": "2e0a6756e887269359cb16d2112989957b17fe1e41b3abad7d573d73ab688232"
+    },
+    {
+      "epoch": 26,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_26.pt",
+      "sha256": "cd0d61a4a8990befb15b26ea2d77a2af21d5d82267c5565feb2aaf7987e4c28c"
+    },
+    {
+      "epoch": 27,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_27.pt",
+      "sha256": "9a505cd6cf37589d0510f7160d3059438442eba89047a69eec63896731daaab9"
+    },
+    {
+      "epoch": 28,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_28.pt",
+      "sha256": "de9b30a95279578d2605eae856e465f846c651f103ba083999f74ff8aa588673"
+    },
+    {
+      "epoch": 29,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_29.pt",
+      "sha256": "657770f31c7d56c49323cfb07f639a16d1149186b0bfef0e581542a8dfb99eaf"
+    },
+    {
+      "epoch": 30,
+      "path": "outputs/v25_training_curve_20261010/model/epoch_checkpoints/epoch_30.pt",
+      "sha256": "7954eb2adbe4a7cb441c7de1563f9bc4297dcea191321d534d41328d456e0f50"
+    }
+  ],
+  "status": "thirty_snapshots_sealed_before_query_labels",
+  "training": {
+    "path": "outputs/v25_training_curve_20261010/model/training.json",
+    "sha256": "88e07eee4ef8588be8a07ee7d979bcf6cee626b0db8c6af0331c8b640c0d1cf1"
+  }
+}

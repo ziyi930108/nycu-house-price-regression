@@ -1,0 +1,66 @@
+{
+  "axes": {
+    "fit_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "08ffe5fb2c639598390ffbeff10ad243f0150bc9191e06f1b2924633f91b6c1c"
+    },
+    "fit_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        321550
+      ],
+      "values_sha256": "f1d76cb66640f818f338d819ccf72a8ea204e24aa36a2865fcf511f0a13a6885"
+    },
+    "query_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "8cffd2e1bb2bbc40c34c89350805d96a04386545015ccbb99bc4f8bca4ad4d83"
+    },
+    "query_source_cache_indices": {
+      "dtype": "int64",
+      "shape": [
+        133697
+      ],
+      "values_sha256": "88dc9455dcf84d95b7f86649ca61bb779577e9c58d748d03a0e0977e32fc7842"
+    }
+  },
+  "fit_raw_y_values_sha256": "0b0bdc6f9ad3983d2ef1b899f37321ab47bc4c44828602317d5cf18e6472eeaa",
+  "fit_y": {
+    "dtype": "float64",
+    "path": "outputs/round100_inputs/confirmation/fit_y.npy",
+    "sha256": "0c43e0a5372e6249d35ab907f68a4d400168e0dd71e61d3e9eb7a1874b5467f1",
+    "shape": [
+      321550
+    ],
+    "values_sha256": "0b0bdc6f9ad3983d2ef1b899f37321ab47bc4c44828602317d5cf18e6472eeaa"
+  },
+  "only_confirmation_rows_used_for_curve": true,
+  "query_labels_used_for_fitting": false,
+  "query_raw_y_values_sha256": "d9404e33ebcb5a1d6ce0abe36471899c978a8a938e8b22c6948709f3c5d2b1d1",
+  "query_y": {
+    "dtype": "float64",
+    "path": "outputs/v25_training_curve_20261010/query_y.npy",
+    "sha256": "0a10f3be8a05d283077e5f2c6e7fbc8db1a1c09fd0741464a6c82f10c5736899",
+    "shape": [
+      133697
+    ],
+    "values_sha256": "d9404e33ebcb5a1d6ce0abe36471899c978a8a938e8b22c6948709f3c5d2b1d1"
+  },
+  "raw_price_pickle_contains_all_train_prices": true,
+  "raw_price_pickle_materialized_once": true,
+  "root_train_execution": {
+    "path": "outputs/v25_training_curve_20261010/train_execution.json",
+    "sha256": "5a1e941c2a581051dd3c0ecf6c83b654c34731213b795ae69348ef8e4f7c55d0"
+  },
+  "seal": {
+    "path": "outputs/v25_training_curve_20261010/seal.json",
+    "sha256": "62b4bfb48ee0bafd44c3148f79f100bc0e24e3da24089d691fe10c6e8b74180f"
+  },
+  "status": "own_query_labels_after_all_snapshots_sealed",
+  "truth_precision_for_both_curves": "original float64 TWD from canonical raw rows"
+}

@@ -1,3 +1,11 @@
+# 最新選定與發布界線｜2026-10-10
+
+目前選定v25，依[V25_SELECTION_20261010.md](V25_SELECTION_20261010.md)；原v22證據保持。來源清單更新應由舊SOURCE_MANIFEST明列成員加本次精確新增檔組成，不可掃整個checkout把ignored私有資料或狀態混入。此次bounded工具在原工作區`src/package_v25_selection_20261010.py`，不執行訓練、網路或Git寫入。
+
+下方為保留原 bytes 的歷史內容；選定、分數及重現範圍請以前述 2026-10-10 說明為準。
+
+---
+
 # GitHub 交付與後續更新
 
 儲存庫：[ziyi930108/nycu-house-price-regression](https://github.com/ziyi930108/nycu-house-price-regression)，私人。程式、正式報告與簡報供專案成員閱讀，交易資料、模型權重與價格先驗不包含於 repository。
