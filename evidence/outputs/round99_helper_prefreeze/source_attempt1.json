@@ -1,7 +1,0 @@
-{
-  "status": "pre_selfcheck_source_snapshot",
-  "source_sha256": "f07d818aa9b12cf03726267188e99d111ce2529dd6d6cd5f9d921fee259fc09e",
-  "original_R98_sha256": "a1a501bc2c7874fc0d21983ad5a2be63e8d1c085f21d24a096220ff32dbfc864",
-  "plan_sha256": "8918ba8a4a0b50378aca56649131678ce069350902c044a6678384b4e95d75c9",
-  "true_arrays_or_labels_read": false
-}

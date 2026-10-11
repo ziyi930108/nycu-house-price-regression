@@ -1,9 +1,0 @@
-{
-  "recorded_at_utc": "2026-10-01T05:01:22.699903+00:00",
-  "user_instruction": "你到0%停止就好",
-  "remaining_percent_at_resume": 1,
-  "credits_authorized": false,
-  "reset_authorized": false,
-  "resumed_work": "15-minute script preparation",
-  "stop_rule": "Check limits between stages and stop new work at observed remaining 0%. No purchase/reset/credit-use action."
-}

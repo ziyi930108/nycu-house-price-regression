@@ -1,8 +1,0 @@
-{
-  "raw_pickle_scope": "extractor only; entire raw frame materialized",
-  "source_sha256": {
-    "src/round100_prepare_fit_labels.py": "7c13bb335387b11a777fdb0bc18815c66d8b37373c3b2968455e05fc8313fb98",
-    "src/round98_contract.py": "0bf50c43c4e3df4e506e9542dee35c76a77d984ce6870afb4a32ca3c3923cb62"
-  },
-  "started_at_utc": "2026-09-28T21:27:33.576623+00:00"
-}

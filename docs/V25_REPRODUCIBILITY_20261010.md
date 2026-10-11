@@ -22,6 +22,6 @@ python scripts/verify_selected_csv.py --csv C:/NYCU_ML/outputs/submission_v25_tr
 
 原[final request](../evidence/outputs/round107/final/request.json)、[seal](../evidence/outputs/round107/final/seal.json)、[training](../evidence/outputs/round107/final/model/training.json)和[release](../evidence/outputs/round107/final/release.json)保持不改。此批全量只有新prior NN一次fit；其餘五個native用保存向量組合重播，不能冒稱重新跑六模型。
 
-既有[src/predict_v22.py](../src/predict_v22.py)、[17項artifact清單](../artifacts/manifest.json)、[同機新環境六模型重現](CLEAN_GPU_REPLAY_20261002.md)均屬v22。執行predict_v22後更名CSV不會得到v25。尚無經驗證、可從repo直接載六模型重做v25的單一production CLI；v25新電腦／乾淨環境完整推論、地理重建與全部模型從零重訓未完成。
+舊版專用推論入口與其 artifact 清單已移出主分支。尚無經驗證、可從 repo 直接載六模型重做 v25 的單一 production CLI；v25 新電腦／乾淨環境完整推論、地理重建與全部模型從零重訓未完成。
 
 後續若補可攜v25推論入口，需另立新artifact清單與實測，不解除舊SHA或拒絕覆寫防護。Private未知，不能以這些重現檢查認證Private最佳。

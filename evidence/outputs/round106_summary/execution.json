@@ -1,7 +1,0 @@
-{
-  "automatic_retry": false,
-  "elapsed_seconds": 0.125,
-  "exit_code": 0,
-  "failure": null,
-  "new_fit_predict_score_bootstrap_calls": 0
-}

@@ -1,8 +1,0 @@
-{
-  "status": "failed_before_selfcheck_import",
-  "error": "SyntaxError: unmatched closing parenthesis at line 481 after adding synthetic header cases",
-  "source_sha256": "1a79da583ae52806adac15df713a7dc6723e1a982796beb3b9efa7527d310b17",
-  "real_data_read": false,
-  "GPU_calls": 0,
-  "model_fit_load_predict_calls": 0
-}

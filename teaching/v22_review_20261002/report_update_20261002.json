@@ -1,9 +1,0 @@
-{
-  "base_commit": "1b3fe1b91ecb339abfbef608130c3c3569cac2b7",
-  "new_report": "../../docs/臺灣房價預測_v22_正式報告_20261002.pdf",
-  "report_sha256": "a539739e43ea78cf3a53229a4f4cdcb6629c9545b93fa375ae8bbdfc88c80ab7",
-  "pdf_sha256": "8cc925fb50ceba711ed47f2de94895ca491cf19d3b5bf374c34250aee5b3b000",
-  "old_review_report_preserved": true,
-  "main_slides_script_video_unchanged": true,
-  "note": "Historical navigation/publication provenance stays unchanged; current folder manifest records current files."
-}

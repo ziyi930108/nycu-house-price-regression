@@ -1,9 +1,0 @@
-{
-  "status": "integrated",
-  "old_pdf_sha256": "e8470b323cdbcf6b340b06fd8106215cdaa301912a7bcbc1f69649139dc104ca",
-  "new_pdf_sha256": "57d3fa22868d7d0ca78625985132849a16b80ca2ee94889cf979c39adfe0bed5",
-  "declared_visible_change": "One missing minus sign on page 10; other ten rendered pages pixel-identical",
-  "source_folder": "outputs/v22_reader_review_20261002/pdf_revision",
-  "target": "deliverables/v22_審查資料夾_20261002_r2/03_正式報告/臺灣房價預測_v22_正式報告.pdf",
-  "text_and_numbers_preserved_except_declared_glyph_repair": true
-}

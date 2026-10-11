@@ -10,4 +10,4 @@
 
 [投影片builder](source/build_deck.mjs)、[finalizer](source/finalize_deck.mjs)、[內容JSON](source/narrative.json)保存原工作區來源。執行需要原C:/NYCU_ML完整工作區與指定bundled runtime；不是已驗證的GitHub-only可攜重建入口，也不會從這些聚合圖表重訓完整房價模型。原始資料、30個模型快照、逐筆價格與標籤不納GitHub。
 
-舊v22簡報、PDF與影片保留。新v25簡報已更新模型、loss、公開分數與程式界線，尚未製作新的配音影片。
+舊版簡報、PDF與影片已移出主分支，歷史留存於 Git 與原工作區。新v25簡報已更新模型、loss、公開分數與程式界線，尚未製作新的配音影片。

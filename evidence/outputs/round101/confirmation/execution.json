@@ -1,8 +1,0 @@
-{
-  "automatic_retry": false,
-  "elapsed_seconds": 28.07799999997951,
-  "exit_code": 0,
-  "failure": null,
-  "source_sha256": "22708cefde4ab7fda769954bd6d3564728e2f517eb5e40c97dddedeb40346308",
-  "stage": "confirmation"
-}

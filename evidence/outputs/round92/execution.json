@@ -1,8 +1,0 @@
-{
-  "completed_at_utc": "2026-09-28T16:30:36.514920+00:00",
-  "elapsed_seconds": 478.0150000001304,
-  "exit_code": 0,
-  "failure": null,
-  "source_sha256": "d84cb2acb42f188a049768ad55f1277cfa3ee6ab5305b4856b0f14c826817f43",
-  "started_at_utc": "2026-09-28T16:22:38.492868+00:00"
-}

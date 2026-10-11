@@ -1,8 +1,0 @@
-{
-  "status": "failed_before_arrays_or_labels",
-  "exit_code": 1,
-  "tool_wall_time_seconds": 0.8220098,
-  "source_sha256": "e1c9b34954ae9febd7830c9a86eb86be38a63404cb8063a564e4cd6c19d099d3",
-  "error": "Audit source allowlist only accepted src/*.py; existing R97 source_sha256 also legitimately includes runs/v1/models/final_config.json. Metadata-schema restriction failed before any feature/prediction array load. No candidate run or scoring.",
-  "preserved_source": "outputs/round98_artifact_inventory/attempt1_source.py"
-}

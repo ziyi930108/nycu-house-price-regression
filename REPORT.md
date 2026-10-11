@@ -2,7 +2,7 @@
 
 整理日期：2026-10-10。本文依保存的程式、訓練 metadata、離線結果、發行收據，以及使用者這次的選定與分數回報撰寫。本次只整理方法，沒有重訓或修改 v25 的價格。
 
-**使用者已於 2026-10-10 選定 v25 作為提交資料。** v25 的研究編號是 R107；它沿用原本的六模型、三分支架構，只把其中一個「價格先驗神經網路」的訓練損失改成日期加權 SmoothL1。原 v22、歷史結果與教學媒體保留；原始 release 記錄的是發行當時尚未選定的狀態，不能回寫成當時就已選定。[最新選定紀錄](evidence/selection/user_selected_v25_20261010.json)、[原 v25 發行收據](evidence/outputs/round107/final/release.json)。
+**使用者已於 2026-10-10 選定 v25 作為提交資料。** v25 的研究編號是 R107；它沿用原本的六模型、三分支架構，只把其中一個「價格先驗神經網路」的訓練損失改成日期加權 SmoothL1。舊版交付已移出目前主分支，歷史結果保留於比較證據及 Git 歷史；原始 release 記錄的是發行當時尚未選定的狀態，不能回寫成當時就已選定。[最新選定紀錄](evidence/selection/user_selected_v25_20261010.json)、[原 v25 發行收據](evidence/outputs/round107/final/release.json)。
 
 ## 1. 要預測什麼，以及目前實際成績
 
@@ -51,7 +51,7 @@ prior NN 將 72 個數值欄位按 **fit 資料**的中位數、尺度與 `asinh
 | `C_raw`：CatBoost | 直接學總價，保留原金額尺度的訊號 |
 | `C_log`：R46 CatBoost | 學 `log1p(總價 / 1,000,000)`，逆轉回總價；其訓練 loss 是 log 空間 MAE，不能稱直接總價 MAE |
 | `N_area`：面積 NN | 學與面積連結的價格表示，再還原總價 |
-| **`N_prior`：R107 prior NN** | 以區域／建案價格先驗及面積為基準，學正值價格調整倍率；這是 v25 唯一替換的模型 |
+| **`N_prior`：R107 prior NN** | 以區域／交易與建物類型價格先驗及面積為基準，學正值價格調整倍率；這是 v25 唯一替換的模型 |
 
 有效面積 `A` 優先採正且有限的建物面積，否則採正且有限的車位面積，再無法使用才取 1。它是數值縮放的回退規則，不是估計實際室內面積，也沒有改寫原面積特徵。
 
@@ -194,15 +194,14 @@ SHA256  36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1
 | 了解最終發行 | [round107_full_release.py](research/src/round107_full_release.py)：`freeze`、`fit`、`release` | 單次全量 NN fit、五層封存、CSV；CLI `--freeze`／`--fit`／`--release`，綁定當時 manifest 與拒絕覆寫 |
 | 了解 2 月後續檢查 | [round113_offset_research.py](research/src/round113_offset_research.py)、[round113_offset_composition.py](research/src/round113_offset_composition.py) | 自己起點的 R107／R111／R112；不產生新的 v25 CSV |
 | 了解共用架構／先驗 | [round47_nn_train.py](research/src/round47_nn_train.py)、[round47_nn_encode.py](research/src/round47_nn_encode.py)、[round60_recency_price_prior.py](research/src/round60_recency_price_prior.py)、[round63_recency_weighted_prior_train.py](research/src/round63_recency_weighted_prior_train.py) | v25 直接沿用的架構、encoder、先驗與日期權重來源 |
-| 查原基準完整方法 | [v22 方法導覽](evidence/reports/v22_method_and_code.md) | 歷史方法背景；其中舊選定／重現現況不能當作現在狀態 |
 
 目前 v25 已有真實訓練、保存模型全 query 重載、分支組合、CSV 全列核對與 source／artifact SHA 證據。原四支程式是研究與發行入口，依賴多輪保存資料、模型和狀態，原路徑也已有不可覆寫收據；不能現在直接重跑同一命令來覆蓋舊產物。
 
-既有 GitHub 的 `src/predict_v22.py` 是 **v22 推論入口**，不能更換標題就宣稱能產出 v25。v22 曾驗證從原 test Excel 與保存六模型推論；該證據不自動延伸成 v25 的獨立推論入口或全新環境測試。本文所據的 v25 發行證據，其原控制鏈是**保存向量組合重播**，沒有重新推論其他五個原生模型。
+v25 原控制鏈是保存向量組合重播，沒有重新推論其他五個原生模型。舊版推論入口已移出主分支，不能更名當作 v25。
 
 **尚未完成 v25 從原始 train／valid 到全部模型的乾淨環境單一入口重訓。** 固定 seed 與保存雜湊保證可追查這次產物，不保證任意硬體重訓逐 bytes 相同。GitHub 的 source／文件快照也不是含私有模型、交易表與逐筆價格的完整重訓備份；依後續新重現收據再更新實際完成範圍。
 
-目前三款 PPTX、約 15 分鐘講稿及影片仍是 **v22 教學媒體**；尚無新 v25 教學媒體，不能在正式報告改選 v25 後把原影片視為已同步。後續若改為 v25 上台版，應保留六模型與三分支的白話主線，另解釋 SmoothL1、當前分數及上述限制，再依新稿實際計時。
+目前提供 v25 的 24 頁簡報與完整講稿，尚未製作 v25 配音影片，亦未完成真人排練計時。
 
 
 ## 本次實際訓練曲線與新版簡報
@@ -210,6 +209,3 @@ SHA256  36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1
 [實際曲線與白話說明](evidence/reports/v25_training_curve_20261010.md)、[完整簡報](teaching/v25_presentation_20261010/deliverables/臺灣房價預測_v25_含實際訓練曲線_r2.pptx)、[完整口語稿](teaching/v25_presentation_20261010/deliverables/完整口語講稿.md)。第19頁為另一次固定30輪的先驗NN診斷，未改原提交；圖的橫軸是epoch，架構固定。主講4,217漢字，以275字／分估15.33分鐘，尚未真人計時。
 
 
-## 歷史報告與媒體
-
-原 v22 正式報告完整保存在[歷史原文](REPORT_V22.md)。[既有 v22 簡報、講稿與影片](teaching/v22_review_20261002/README.md)仍講 v22，本次另存新版 v25 簡報，舊影片與PDF仍講v22，未重新製作配音。

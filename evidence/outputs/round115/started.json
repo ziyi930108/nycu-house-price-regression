@@ -1,9 +1,0 @@
-{
-  "created_at_utc": "2026-10-08T08:50:05.324361+00:00",
-  "new_fits": 0,
-  "real_X_or_arrays_deserialized": false,
-  "request": {
-    "path": "outputs/round115/request.json",
-    "sha256": "df971dd4b82d9e1052b912034dc82bca16c8a1a5679000464a4c8cee627b015a"
-  }
-}

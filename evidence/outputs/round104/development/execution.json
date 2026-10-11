@@ -1,8 +1,0 @@
-{
-  "automatic_retry": false,
-  "elapsed_seconds": 50.60899999993853,
-  "exit_code": 0,
-  "failure": null,
-  "query_scores_computed": false,
-  "stage": "development"
-}

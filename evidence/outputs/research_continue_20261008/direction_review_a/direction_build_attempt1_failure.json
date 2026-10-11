@@ -1,7 +1,0 @@
-{
-  "exception": "LookupError: unknown encoding: utf8-sig",
-  "fix": "Use standard utf-8-sig in report/source scans",
-  "model_training": false,
-  "shared_files_changed": false,
-  "status": "failed_report_generation_after_helper_receipt_saved"
-}

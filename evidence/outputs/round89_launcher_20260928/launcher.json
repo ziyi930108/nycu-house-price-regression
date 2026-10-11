@@ -1,8 +1,0 @@
-{
-  "automatic_retry": false,
-  "helper_sha256": "233b7919d738fa6eff199138fd2a301cf67ed55f2b0fc6e64c92c10f59de71b0",
-  "driver_sha256": "1e111dbc2dc234cb41b593910de33b41cadf82a20807ac82008ac810ca5129d1",
-  "started_at_utc": "2026-09-28T15:50:34.6899729Z",
-  "command": "python -B -X utf8 src/round89_experiment.py --plan-sha 34811ae50be55f3165e6debe8c24559dee2436939e45a90d29282697d61de391",
-  "pid": 24564
-}

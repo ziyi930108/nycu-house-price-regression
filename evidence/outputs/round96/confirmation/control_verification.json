@@ -1,7 +1,0 @@
-{
-  "all_original_reference_spatial_vectors_and_diagnostics_exact": true,
-  "controls_full_metrics_exact": true,
-  "old_model_load_or_predict_calls": 0,
-  "original_control_vectors_saved": true,
-  "original_v22_median_exact": true
-}

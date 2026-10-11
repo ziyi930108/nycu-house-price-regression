@@ -1,6 +1,0 @@
-{
-  "pid": 28848,
-  "automatic_retry": false,
-  "command": "python -B -X utf8 src/round92_experiment.py --plan-sha 8b1a7419fb3536eca1179c202f58984c0941f6b5f79d0714adc7b3b1c3ec10f7",
-  "started_at_utc": "2026-09-28T16:22:37.6049033Z"
-}

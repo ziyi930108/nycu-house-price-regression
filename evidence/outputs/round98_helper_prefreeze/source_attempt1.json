@@ -1,5 +1,0 @@
-{
-  "source_sha256": "19f17bbc072edb1a2747826ef29649ad3c8e699f0692e7ec4abfaee1e154c7ce",
-  "receipt": "reports/round98_helper_selfcheck_attempt1.json",
-  "reason_for_next_revision": "Preserve solver timeout/status evidence when SciPy iteration fields are None; add synthetic refusal checks; no scientific changes"
-}

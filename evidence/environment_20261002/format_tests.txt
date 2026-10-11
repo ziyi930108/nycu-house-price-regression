@@ -1,9 +1,0 @@
-test_bom_and_refuse_overwrite (test_submission_io.SubmissionTests.test_bom_and_refuse_overwrite) ... ok
-test_nonfinite_rejected (test_submission_io.SubmissionTests.test_nonfinite_rejected) ... ok
-test_numpy_ties_even_positive_floor (test_submission_io.SubmissionTests.test_numpy_ties_even_positive_floor) ... ok
-test_order_mismatch_fails_before_creation (test_submission_io.SubmissionTests.test_order_mismatch_fails_before_creation) ... ok
-
-----------------------------------------------------------------------
-Ran 4 tests in 0.013s
-
-OK

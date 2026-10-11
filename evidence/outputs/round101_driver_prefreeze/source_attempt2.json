@@ -1,7 +1,0 @@
-{
-  "source": "src/round101_prior_diagnostics.py",
-  "sha256": "22708cefde4ab7fda769954bd6d3564728e2f517eb5e40c97dddedeb40346308",
-  "change": "File-only canonical mapping record accepted; semantic identity optional but not partial. Mapping is still checked against fixed dtype/size/raw indices. Before any actual diagnostic execution.",
-  "prior_selfcheck_passed": 24,
-  "real_data_loaded": false
-}

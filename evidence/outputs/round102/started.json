@@ -1,9 +1,0 @@
-{
-  "automatic_retry": false,
-  "plan_sha256": "ee59dba0da8abb79c88cb6e1b73a6417a91944de784f3c7f77e61755a68bc355",
-  "request": {
-    "path": "outputs/round102_launcher_20260929/research_request.json",
-    "sha256": "6d590f4521135c0965ea960f7daf22799cbf053588e0bbedb53c99cdd090aa4a"
-  },
-  "started_at_utc": "2026-09-28T22:48:28.384846+00:00"
-}

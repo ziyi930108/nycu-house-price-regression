@@ -1,8 +1,0 @@
-{
-  "automatic_retry": false,
-  "completed_at_utc": "2026-09-28T20:57:16.720947+00:00",
-  "elapsed_seconds": 31.063000000081956,
-  "exit_code": 0,
-  "failure": null,
-  "started_at_utc": "2026-09-28T20:56:45.648728+00:00"
-}

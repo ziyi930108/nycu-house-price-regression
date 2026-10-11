@@ -1,9 +1,0 @@
-{
-  "elapsed_seconds": 14.561999999918044,
-  "exit_code": 0,
-  "request": {
-    "path": "outputs/round104_teacher_launcher_20260929/fit_request.json",
-    "sha256": "0fafedf93298f0c72db63e3bba0edbc144f214f136e4a00dd35dcc34c31dddb5"
-  },
-  "retry": false
-}
