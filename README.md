@@ -4,7 +4,7 @@
 
 ## 閱讀順序
 
-1. [完整方法與結果](REPORT.md)
+1. [Word 正式報告](docs/臺灣房屋總價預測_v25_正式報告.docx) 與 [完整方法與結果](REPORT.md)
 2. [v25 簡報與講稿](teaching/v25_presentation_20261010/README.md)
 3. [實際訓練曲線](evidence/reports/v25_training_curve_20261010.md)
 4. [程式與重現界線](docs/V25_REPRODUCIBILITY_20261010.md)

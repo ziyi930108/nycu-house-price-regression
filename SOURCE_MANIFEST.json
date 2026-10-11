@@ -1,6 +1,6 @@
 {
-  "created_at_utc": "2026-10-11T23:08:16.838200+00:00",
-  "scope": "v25-only tracked delivery with necessary shared historical sources",
+  "created_at_utc": "2026-10-11T23:23:14.031853+00:00",
+  "scope": "v25 final delivery including verified Word report",
   "files": [
     {
       "path": ".gitattributes",
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1379,
-      "sha256": "331dfbb7525999203b4d25617e9a6fe1cdee809587ab5769c22d91d7050009f4"
+      "bytes": 1475,
+      "sha256": "1afaecabd11377fdb314a16a739e9e72b4ff02eff633b28361a5b8e1056c235c"
     },
     {
       "path": "REPORT.md",
@@ -51,6 +51,11 @@
       "path": "docs/V25_SELECTION_20261010.md",
       "bytes": 1781,
       "sha256": "8472931934895ca85c7ae6a921187340d76bd55e6e6b7a0d8f8190b4de850008"
+    },
+    {
+      "path": "docs/臺灣房屋總價預測_v25_正式報告.docx",
+      "bytes": 195032,
+      "sha256": "efedf6621fcd4ef2381656e24aaffc44bd11c70c9dacbd800b1ee834286745af"
     },
     {
       "path": "evidence/kaggle_feedback/public_v25_user_report_20261010.json",
