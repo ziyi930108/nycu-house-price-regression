@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "deck_sha256": "206ce802f70d2be39e09167745c7b426c2b7b84d059768d1fd991f9811f2064c",
-  "main_han": 4268,
-  "main_minutes_at_275": 15.52,
+  "deck_sha256": "db3331a785219760a584c32cdd5533871ea65a1ab2ff290c54c9ba3d803f5afb",
+  "main_han": 4298,
+  "main_minutes_at_275": 15.629090909090909,
   "slides": 16,
   "main_slides": 16,
   "appendix_slides": 0,
@@ -18,12 +18,18 @@
   ],
   "native_charts": 3,
   "embedded_workbooks": 3,
-  "changed_package_members": [
-    "ppt/slides/slide7.xml",
-    "ppt/notesSlides/notesSlide7.xml"
+  "logical_changed_slides": [
+    9,
+    10
   ],
-  "unchanged_other_slide_pixels": 15,
-  "unchanged_other_slide_notes": 15,
+  "changed_package_members": [
+    "ppt/slides/slide9.xml",
+    "ppt/notesSlides/notesSlide9.xml",
+    "ppt/slides/slide10.xml",
+    "ppt/notesSlides/notesSlide10.xml"
+  ],
+  "unchanged_other_slide_pixels": 14,
+  "unchanged_other_slide_notes": 14,
   "original_curve_values_preserved": 60,
   "native_chart_and_workbook_parts_byte_identical": true,
   "source_rebuild_pixel_identical_slides": 16,
@@ -31,7 +37,7 @@
     "Slides": "16",
     "Notes": "16"
   },
-  "visual_review": "slide7 manually inspected; no clipping or overlap; readable table and training sequence",
+  "visual_review": "slides9 and10 manually inspected; readable explanatory chart and unit-price example; no clipping or overlap",
   "scientific_review": "teaching_review.json",
   "word_changed": false,
   "csv_changed": false,
@@ -41,6 +47,5 @@
   "human_rehearsal_performed": false,
   "Private": "unknown",
   "usage_used_percent": 2,
-  "usage_remaining_percent": 98,
-  "pre_review_candidate_retained": "before_target_fix"
+  "usage_remaining_percent": 98
 }

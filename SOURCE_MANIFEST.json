@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-12T14:12:52.713599+00:00",
+  "created_at_utc": "2026-10-12T14:40:17.230389+00:00",
   "scope": "Final selected documents and necessary scientific source; excludes private data, weights and predictions.",
   "files": [
     {
@@ -24,13 +24,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 1493,
-      "sha256": "4ceed130a1cedc1ae2e3eef3be51142885e2018e39d761070e0e372a35d5b762"
+      "bytes": 1555,
+      "sha256": "40fd2eacf27a55b8c8ceeca98da9a2bb18afd7ff986193a17ff3467bb46e7ae6"
     },
     {
       "path": "README.md",
-      "bytes": 1462,
-      "sha256": "562ac6d68b07f87db4c5e096e4900ad4655611a15a1152cae0a9dcb69c31127a"
+      "bytes": 1466,
+      "sha256": "5b7eabb5d623c14047e5747decbf6200a35c24a57d87b6dff9a186a67eb4eb61"
     },
     {
       "path": "REPORT.md",
@@ -864,13 +864,13 @@
     },
     {
       "path": "teaching/final_presentation/README.md",
-      "bytes": 1443,
-      "sha256": "6e83d07331a7f027a8f7d148e53548b5c5525ae1c4c1cfff3998bf3db228c06c"
+      "bytes": 1602,
+      "sha256": "b0ed14dce089d26c25e1632664309ffbfe8cb61be59e4b63a830b0409b48e11d"
     },
     {
       "path": "teaching/final_presentation/delivery_review.json",
-      "bytes": 1296,
-      "sha256": "80d2f2000d74648a135a85779f0b85577ddd3f8ca8681b959019921f1357d0ad"
+      "bytes": 1397,
+      "sha256": "8e2afc609a3a26f3e15d6c76a389dfe746035ec7310ebd6980e07fc81d0cda92"
     },
     {
       "path": "teaching/final_presentation/previews/slide-01.png",
@@ -914,13 +914,13 @@
     },
     {
       "path": "teaching/final_presentation/previews/slide-09.png",
-      "bytes": 68247,
-      "sha256": "80048289516f46b1fa04fec06ac86ac6b526ebf933b7299b39490f8c7f4666ca"
+      "bytes": 95755,
+      "sha256": "68bc1c1365252cffe63e5d50f34b2dac9638f32d03738e95c279978b900a5dc9"
     },
     {
       "path": "teaching/final_presentation/previews/slide-10.png",
-      "bytes": 84694,
-      "sha256": "a2122b683b99d9c52077f0791b75c92b54b34c70db00f315aabe0a4430fdcfc7"
+      "bytes": 111364,
+      "sha256": "ca1f97bc4014a11d3d1abaf6e67dc1e9428d6bce769d178c14a2a16a912f7b0f"
     },
     {
       "path": "teaching/final_presentation/previews/slide-11.png",
@@ -954,8 +954,8 @@
     },
     {
       "path": "teaching/final_presentation/source/README.md",
-      "bytes": 1677,
-      "sha256": "d09fe02751108ee5126c83fafce7f6ea9bbf0365127f4e887c869376f555abe7"
+      "bytes": 1596,
+      "sha256": "137e850afffb12a303a95fd1b7f9309f25fc927af073b6c0a9bee69001efdf33"
     },
     {
       "path": "teaching/final_presentation/source/assets/house_illustration.json",
@@ -969,18 +969,18 @@
     },
     {
       "path": "teaching/final_presentation/source/build_presentation.mjs",
-      "bytes": 15727,
-      "sha256": "7abc50ae31cb40d0ae5a81d7590ab9b97b448132bfaeddbe52b065aa90656acd"
+      "bytes": 16456,
+      "sha256": "64fec2d56098786aaa209bcb4ee96f6d6e06e7c0c42a5c62c208aa535e776e52"
     },
     {
       "path": "teaching/final_presentation/source/content.json",
-      "bytes": 22348,
-      "sha256": "4f040eb761b93c6474bd01f7dd3c9d5d51402d9257e4e0311ed12d34b46d9102"
+      "bytes": 23883,
+      "sha256": "c573900253e54da5b471deeb8e3e2b38bae64b7029fe10b816a77f5858c199f1"
     },
     {
       "path": "teaching/final_presentation/source/finalize_presentation.mjs",
       "bytes": 4040,
-      "sha256": "c13cdc81509bc230b8b55ee675443c0f947b81298607f31309eb8b533fdf7047"
+      "sha256": "6b470b6896a22194add6a08c490e9a838e410a754efd7211eb785a29615a2304"
     },
     {
       "path": "teaching/final_presentation/source/training_curve.json",
@@ -989,13 +989,13 @@
     },
     {
       "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-      "bytes": 1649356,
-      "sha256": "206ce802f70d2be39e09167745c7b426c2b7b84d059768d1fd991f9811f2064c"
+      "bytes": 1651085,
+      "sha256": "db3331a785219760a584c32cdd5533871ea65a1ab2ff290c54c9ba3d803f5afb"
     },
     {
       "path": "teaching/final_presentation/完整口語講稿.md",
-      "bytes": 20391,
-      "sha256": "2c24af0dea490dfc3fe16b38bbe8c5f31acab5c077f553e7dec0b7a21bc37726"
+      "bytes": 21895,
+      "sha256": "eb900fa1379b8c33aed8bb8fb88cd488bd9d02921e614ed05ca16487512a53bd"
     }
   ]
 }

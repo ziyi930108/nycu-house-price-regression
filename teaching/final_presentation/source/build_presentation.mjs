@@ -18,7 +18,7 @@ function tx(s,text,x,y,w,h,size=28,o={}){
 function slide(n,title){const s=p.slides.add();s.background.fill=C.bg;if(title)N.slides[n-1].title=title;
  tx(s,title||N.slides[n-1].title,80,48,1120,76,44,{bold:true,color:C.ink,name:'slide-title'});
  tx(s,String(n).padStart(2,'0'),1150,674,50,25,17,{color:C.muted,align:'right'});
- const a=N.slides[n-1];s.speakerNotes.textFrame.setText(a.script+'\n\n補充理由\n'+a.why+'\n\n資料依據\n課程交易資料、保存的程式與發行證據、方法與程式導覽。');return s;}
+ const a=N.slides[n-1];s.speakerNotes.textFrame.setText(a.script+'\n\n補充理由\n'+a.why+'\n\n資料依據\n'+([9,10].includes(n)?a.sources.join('\n'):'課程交易資料、保存的程式與發行證據、方法與程式導覽。'));return s;}
 function text(s,t,x,y,w=1120,h=100,size=28,o={}){return tx(s,t,x,y,w,h,size,o);}
 function caption(s,t,y=627){tx(s,t,80,y,1110,60,23,{color:C.muted});}
 function heading(s,t,x,y,w=500){tx(s,t,x,y,w,45,28,{bold:true,color:C.teal});}
@@ -77,16 +77,29 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
  bar(s,['50 m²','100 m²'],[50,100],{x:635,y:215,w:565,h:350,max:120});
  text(s,'總價誤差，單位：萬元',655,158,530,45,23,{color:C.muted});
  caption(s,'面積權重對齊總價差距。另保留直接總價與對數學法，最後皆還原為元。');}
-{const s=slide(9,'日期權重的影響');
- text(s,'365 日半衰期',80,183,900,65,36,{bold:true,color:C.ink});
- bar(s,['最新日期','早一年','早兩年'],[1,.5,.25],{x:80,y:228,w:740,h:338,max:1.2,format:'0.00'});
- heading(s,'相差一年',920,275,280);text(s,'1 : 2',911,340,290,100,65,{bold:true,color:C.teal});text(s,'較舊與較新交易\n原始權重的比例',920,459,280,95,26);
- caption(s,'圖示為正規化前相對權重。權重改變學習影響，房價本身不乘權重。');}
-{const s=slide(10,'參考單價與分組先驗');
- text(s,'參考單價 × 有效面積 × 預測倍率',80,180,1120,80,36,{bold:true,color:C.ink});
- heading(s,'參考單價',80,320);text(s,'依地區、交易類型與建物類型\n資料不足時逐層放寬',80,385,540,116,29);
- heading(s,'建案分組 OOF',700,320);text(s,'分成5組，每組只參考其他4組\nquery 使用當期完整 fit',700,385,500,116,29);
- caption(s,'建案分組與時間隔離處理不同問題。NN固定30輪，SmoothL1轉折為10萬元。');}
+{const s=slide(9,'新舊交易的學習影響');
+ text(s,'房價會隨時間改變，因此讓近期成交有較大影響',80,140,1120,43,29,{color:C.muted});
+ text(s,'權重：一筆交易對模型學習的影響程度',80,190,1120,45,29,{bold:true,color:C.teal});
+ bar(s,['最新日期','早一年','早兩年'],[1,.5,.25],{x:80,y:250,w:740,h:320,max:1.2,format:'0.00'});
+ text(s,'圖中的數字代表\n相對學習影響',900,280,300,90,28);
+ text(s,'每早一年\n影響降為一半',900,415,300,110,36,{bold:true,color:C.teal});
+ caption(s,'圖為正規化前的相對比例。權重乘在訓練損失上，成交價本身不變。',622);}
+{const s=slide(10,'相似交易提供參考單價');
+ text(s,'用同類交易的中位單價作參考，近期交易影響較大',80,153,1120,46,29,{color:C.muted});
+ text(s,'教學假例',80,235,1120,35,23,{color:C.muted});
+ text(s,'20萬/m²',80,285,275,70,46,{bold:true,color:C.ink});
+ text(s,'× 50m²',355,285,265,70,46,{bold:true,color:C.ink});
+ text(s,'× 1.1',620,285,280,70,46,{bold:true,color:C.teal});
+ text(s,'＝1,100萬',900,285,300,70,46,{bold:true,color:C.teal});
+ text(s,'參考單價',80,362,275,44,26);
+ text(s,'有效面積',390,362,230,44,26);
+ text(s,'模型學到的倍率',650,362,260,44,26);
+ text(s,'預測總價',940,362,260,44,26);
+ heading(s,'參考價的分類',80,465,535);
+ text(s,'依地區、交易及建物類型整理\n同類不足30筆，就逐層放寬',80,519,535,95,27);
+ heading(s,'訓練時隔開答案',700,465,500);
+ text(s,'同建案放同組，分成5組\n每組只參考其他4組的交易',700,519,500,95,27);
+ caption(s,'這份參考單價稱為「分組先驗」，由當期訓練交易建立。',640);}
 {const s=slide(11,'用後一年交易檢查訓練過程');
  text(s,'較早交易學習：321,550筆　後一年驗證：133,697筆',80,132,1120,38,25,{color:C.muted});
  text(s,'訓練截至2023-08-10　驗證：2023-08-11 至 2024-08-10',80,169,1120,32,22,{color:C.muted});
