@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-12T07:16:52.084658+00:00",
+  "created_at_utc": "2026-10-12T07:27:09.834789+00:00",
   "scope": "Final selected documents and necessary scientific source; excludes private data, weights and predictions.",
   "files": [
     {
@@ -24,13 +24,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 1004,
-      "sha256": "7e17a1e9a012cb37ca33f545fb4163629d5622e9e9ba7d4f1a6a137a30ceb506"
+      "bytes": 1098,
+      "sha256": "acad5ed00c22f620c1a8e86b29d2f734eed36bbba506993e3d188a782377b10c"
     },
     {
       "path": "README.md",
-      "bytes": 1457,
-      "sha256": "0dd45655cd5b5a0dcc136863040d3b7ed669586f9710b0e2b1fdaac60d7b3b8d"
+      "bytes": 1421,
+      "sha256": "d969e1497f0a3a58112ceaea269ac6d6b225d632c6bf70d75cf791bfa0293726"
     },
     {
       "path": "REPORT.md",
@@ -864,13 +864,13 @@
     },
     {
       "path": "teaching/final_presentation/README.md",
-      "bytes": 1055,
-      "sha256": "43c79315fc191aef3a7062a35b38464c0ed6ac4c184ce31da9facf02066325f0"
+      "bytes": 1127,
+      "sha256": "f044ee19ef1626479bcfa29d7d738ae2bcef4b5a2638c4a3766fe16b9fb4c1a7"
     },
     {
       "path": "teaching/final_presentation/delivery_review.json",
-      "bytes": 2176,
-      "sha256": "6c95443f10734c62ab910835c3b3bd61a4b01281d4cf6fc643f97f4d6a548d55"
+      "bytes": 5553,
+      "sha256": "5b2ff943714171c72d6753529fd24060ad35cf8bf6dd28484a9fb413959187c0"
     },
     {
       "path": "teaching/final_presentation/previews/slide-01.png",
@@ -889,113 +889,103 @@
     },
     {
       "path": "teaching/final_presentation/previews/slide-04.png",
-      "bytes": 80376,
-      "sha256": "b7b1dcfbc97147557278d21ec87a7d7a760f8a2692095a573a1a18241a6c9e54"
+      "bytes": 73610,
+      "sha256": "891b6d9b853a15225966b7a78198a18baacc27f88ccd20c491c9757465ee0350"
     },
     {
       "path": "teaching/final_presentation/previews/slide-05.png",
-      "bytes": 89565,
-      "sha256": "4dc542f67e12dd9f43a1afdc719a0399bcf71cb87debf887552f704210ab28eb"
+      "bytes": 87772,
+      "sha256": "f3b40a352a2f8aa3e5a1b792377f4f48cec025595b61aeff9f89c2bb691dd5db"
     },
     {
       "path": "teaching/final_presentation/previews/slide-06.png",
-      "bytes": 73858,
-      "sha256": "2b0e5b84f3b8769b3846bffa0c5bdce78822faa5c5307d24f71270283af5b59d"
+      "bytes": 68247,
+      "sha256": "0f518c961834d0c234cc358778cf0ac11c524a6d4b36a541406a130bc417031a"
     },
     {
       "path": "teaching/final_presentation/previews/slide-07.png",
-      "bytes": 87756,
-      "sha256": "2113f2e9353d0ce0e17a581e6f1d8463a6f3ae4e381ca9f93966ab648aa1554b"
+      "bytes": 81075,
+      "sha256": "4a6bda4ae7f6d43b7f29d0befe4444ce7b7d6d1bd9cd431dde8c74f67a7bace6"
     },
     {
       "path": "teaching/final_presentation/previews/slide-08.png",
-      "bytes": 68260,
-      "sha256": "37320fee01a4c6963e2bb73b4ceb38732cded7c662b053dabad983afeb9194eb"
+      "bytes": 76876,
+      "sha256": "77492456b461c65b169571755e328bf6fe97d8f2ea2419f0b9e16326cc4d2668"
     },
     {
       "path": "teaching/final_presentation/previews/slide-09.png",
-      "bytes": 81202,
-      "sha256": "b01dde9af3f9906bb2f8544869b8ed0b51be691c7a0d0b2da38ef60b9ca90086"
+      "bytes": 68247,
+      "sha256": "80048289516f46b1fa04fec06ac86ac6b526ebf933b7299b39490f8c7f4666ca"
     },
     {
       "path": "teaching/final_presentation/previews/slide-10.png",
-      "bytes": 76536,
-      "sha256": "5026ee2a66b9f51026eee08bf169feeee4b21b818420b6bd516dfd7e64cb9477"
+      "bytes": 84694,
+      "sha256": "a2122b683b99d9c52077f0791b75c92b54b34c70db00f315aabe0a4430fdcfc7"
     },
     {
       "path": "teaching/final_presentation/previews/slide-11.png",
-      "bytes": 67765,
-      "sha256": "64ae742f4bdd2bc7294295a96edb50270c91c3391d6255e18867093d235a602b"
+      "bytes": 78022,
+      "sha256": "7e69fcdb6a632464b9dc76a93bd8139dd90e2025e93fa64698c695d1943041f8"
     },
     {
       "path": "teaching/final_presentation/previews/slide-12.png",
-      "bytes": 84657,
-      "sha256": "e90ec89ed09316d5eac9833a3a2f25728c89bd3850db00149c862610d124e7d8"
+      "bytes": 77428,
+      "sha256": "a9bbdbf7cf47b720d4e58eb2e43300a1c159f419c96b2bd1e52752f9e7e926ad"
     },
     {
       "path": "teaching/final_presentation/previews/slide-13.png",
-      "bytes": 78319,
-      "sha256": "f1756019c4bfd083f843c3b85b380b3a23165df2f38c89aa36e75cbb5e86ddb3"
+      "bytes": 58036,
+      "sha256": "01e78b2f65b4f3429598da63adc05d6089ce87d32dbb5eabea819b047c009c77"
     },
     {
       "path": "teaching/final_presentation/previews/slide-14.png",
-      "bytes": 77296,
-      "sha256": "2e2ea2d9a728315f252c55b2557b520ae6fea172f317fe2855f9338c15511e54"
+      "bytes": 91161,
+      "sha256": "bae76807bc3f24c42f85d5b9b61f5e1c9b469be9db5f8f4aec6c808aa6b714d2"
     },
     {
       "path": "teaching/final_presentation/previews/slide-15.png",
-      "bytes": 57907,
-      "sha256": "3e7984dde73886a61eceababfcb44df6eced8625bc9dc9362860ed9dcadbd236"
+      "bytes": 84097,
+      "sha256": "fc09460494240d4d5e50c5534df282c369ca601477856f883e485323188c2f6b"
     },
     {
       "path": "teaching/final_presentation/previews/slide-16.png",
-      "bytes": 91386,
-      "sha256": "fb809da8bdb6c7e7722d02c914888ea6c7449fda31a9ec3bc0e8fc345c9f19e1"
+      "bytes": 76415,
+      "sha256": "e22d72b9c3566e1122b1d79f724c2883c6a2f3f0453f47cd6cba63a82d436b26"
     },
     {
       "path": "teaching/final_presentation/previews/slide-17.png",
-      "bytes": 84083,
-      "sha256": "c3fe69375e30f702c0dd9c526b93da0d6da91cabfd9fe0cc4bea705091857fb6"
+      "bytes": 92993,
+      "sha256": "6c62610495eeef7144a52ffb5c5fe42466efd851d2a7cb40876ee9fc715d2d0d"
     },
     {
       "path": "teaching/final_presentation/previews/slide-18.png",
-      "bytes": 76468,
-      "sha256": "fa67da8b668bb41fff6c6fa5f25ac343b32a1ce366568e96036c6f078c390952"
+      "bytes": 86344,
+      "sha256": "1332c31518f529b848c5ee44c63bf35fe2a109b980f7cfffe6bc174152f55053"
     },
     {
       "path": "teaching/final_presentation/previews/slide-19.png",
-      "bytes": 93139,
-      "sha256": "c8d1b125a0a29ee59e936228a575558e238e809b1d03e04f4354c2f8c40775a4"
+      "bytes": 81863,
+      "sha256": "9be1184db093a3bf5a0add9e5e87b9d6e0b7e90692289dbd692cc07d24659f07"
     },
     {
       "path": "teaching/final_presentation/previews/slide-20.png",
-      "bytes": 86404,
-      "sha256": "453fb1b0fb7e84226d5b00aba99c63fbebd042d0b3e8a31bbd89dfc1d9a32c6e"
+      "bytes": 83117,
+      "sha256": "b8cabbda2963a4050f2584ac443c41f0623f1a9088c3953243922920e3ff8460"
     },
     {
       "path": "teaching/final_presentation/previews/slide-21.png",
-      "bytes": 81728,
-      "sha256": "7a1b823e91e412e632c5446706de4a2ef31a868479e0a8c15f332596ac6f1ee8"
+      "bytes": 82431,
+      "sha256": "8e807dcccc1a6a332301cbf3e61d982eb992e5bd5c3f76850621d13150018bd0"
     },
     {
       "path": "teaching/final_presentation/previews/slide-22.png",
-      "bytes": 83059,
-      "sha256": "fb1398e8bea36e349d9d5a90698c19e4a1d48f3e8897929bf8a92fe6f5c8747f"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-23.png",
-      "bytes": 82674,
-      "sha256": "03db367bb7c19e61c29041a4f04dc10e26fac61ff7e64567b21dc002cfcfd701"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-24.png",
-      "bytes": 79174,
-      "sha256": "b52371785cc2c9a11695b3acb4b30c3cf5c972a4006a05c8c1ccbba8090fb8b5"
+      "bytes": 79320,
+      "sha256": "82a9aa501b65f58c37d4b47647e60fc9d1c25d6c5d2a6e293cd363e4ed202444"
     },
     {
       "path": "teaching/final_presentation/source/README.md",
-      "bytes": 3293,
-      "sha256": "9d928352834694e665df06af6e0c3c09f7fabd914a8b496242b3da83886b3b48"
+      "bytes": 3447,
+      "sha256": "459db9d23e3766b743c4450a82810c2a95e4012daf687da5b3a5f0de34097932"
     },
     {
       "path": "teaching/final_presentation/source/assets/house_illustration.json",
@@ -1009,18 +999,18 @@
     },
     {
       "path": "teaching/final_presentation/source/build_presentation.mjs",
-      "bytes": 19905,
-      "sha256": "6acdefbf9a513fe564ab895c32416fe13f37446ca68824e0d3128d60f16c8857"
+      "bytes": 18743,
+      "sha256": "7e4ceefec20ca8b89b4809c09432bf0e2b36457de9f3b42929c16a1834e5db60"
     },
     {
       "path": "teaching/final_presentation/source/content.json",
-      "bytes": 25327,
-      "sha256": "460d5a1ee1ef6da9c40eae96152b5df3ce675c97dc2f4a5a35bf9ee9afc04337"
+      "bytes": 23379,
+      "sha256": "481729926cfd56d90bcb5376e1306d75a3c25b82af0429ceefcdd568d1721fa6"
     },
     {
       "path": "teaching/final_presentation/source/finalize_presentation.mjs",
-      "bytes": 2772,
-      "sha256": "2069892b859f4f3ba4857f29f04ff1427958dccc0666fd0872398dad63f35725"
+      "bytes": 2768,
+      "sha256": "b59674a0e2611e93d792e3f6ff3cc95cdbb07a5ece80e9adc40d763eccce2486"
     },
     {
       "path": "teaching/final_presentation/source/training_curve.json",
@@ -1029,13 +1019,13 @@
     },
     {
       "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-      "bytes": 1677664,
-      "sha256": "158883e1130cc861ec5ba42b820179340bf96bfa2176d86a8f61206141e89f0e"
+      "bytes": 1670192,
+      "sha256": "1c5204f9ced121e2a7a462fa0e3136bf4b557cb727fbd387244bbf47a118b4cb"
     },
     {
       "path": "teaching/final_presentation/完整口語講稿.md",
-      "bytes": 22272,
-      "sha256": "b0321ead743a061009de0b9bdf4d9ea6416a1047476fdd6dda1f649a348996ab"
+      "bytes": 20503,
+      "sha256": "9c0bb6fad042d02a773f93a46a239e21a27ed2ef6fbbfbb801eaa3822c822d2c"
     }
   ]
 }

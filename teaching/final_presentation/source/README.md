@@ -4,9 +4,9 @@
 
 ## 來源內容
 
-- `build_presentation.mjs`：建立24頁可編輯PPTX草稿。
-- `finalize_presentation.mjs`：核對PPTX結構、原生圖表與活頁簿，再渲染24頁。
-- `content.json`：24頁的標題、講稿、補充理由與來源對照。21頁主講正文為4118個純漢字。
+- `build_presentation.mjs`：建立22頁可編輯PPTX草稿。
+- `finalize_presentation.mjs`：核對PPTX結構、原生圖表與活頁簿，再渲染22頁。
+- `content.json`：22頁的標題、講稿、補充理由與來源對照。19頁主講正文為3758個純漢字。
 - `training_curve.json`：固定30輪、兩條線，共60個原始總價MAE數值，單位新臺幣元。
 - `README.md`：本說明。
 - `assets/house_illustration.png`：透明背景房屋示意插圖，放在第2頁右下。
@@ -35,10 +35,10 @@ Node執行檔由呼叫者指定。程式內預設路徑對應目前的Codex bund
 & 'C:/Users/ziyi9/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe' './source/finalize_presentation.mjs' 'C:/NYCU_ML/outputs/my_presentation_rebuild' r1
 ```
 
-產物包含`candidate.pptx`、`final/r1.pptx`、`renders_r1/slide-01.png`至`slide-24.png`及核對收據。再次finalize請換編號，既有final檔不覆寫。這些產物不會覆寫交付資料夾根目錄的PPTX。
+產物包含`candidate.pptx`、`final/r1.pptx`、`renders_r1/slide-01.png`至`slide-22.png`及核對收據。再次finalize請換編號，既有final檔不覆寫。這些產物不會覆寫交付資料夾根目錄的PPTX。
 
 Codex進行新的文件編輯任務時，仍應依Presentations技能先記錄一次artifact operation，最後逐張確認渲染圖。自動核對只驗證結構與資料，不能代替人眼檢閱或PowerPoint操作驗證。
 
 ## 講稿與時間
 
-完整口語講稿放在source的上一層。此次依批註在第2頁右下加入房屋插圖；封面先前刪除保持，24頁口語正文與完整講稿保持原文。主講第1至21頁共4118純漢字，275字／分估14.97分鐘，250–300字／分估16.47–13.73分鐘。附錄與問答不計；尚未本人計時排練。
+完整口語講稿放在source的上一層。此次刪除原第4頁「四份資料的用途」及原第5頁「表頭排除與完全去重」，後續頁碼減2。封面先前刪除及第2頁房屋插圖保持，其餘22頁的口語正文、補充理由與備忘稿維持原文，只重編章號及配速表。主講第1至19頁共3758純漢字，275字／分估13分40秒；250–300字／分約12分32秒至15分02秒。附錄第20至22頁與問答不計；尚未本人計時排練。
