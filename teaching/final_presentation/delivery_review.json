@@ -1,115 +1,189 @@
 {
   "status": "passed",
-  "deck_sha256": "f68f88abdd475532467cd2f04543f7c9193fd2f08d8765a41c9dc8c8e859bd24",
-  "main_han": 4340,
-  "main_minutes_at_275": 15.781818181818181,
-  "slides": 16,
-  "main_slides": 16,
-  "appendix_slides": 0,
-  "native_tables": 6,
-  "native_table_owner_slides": [
-    4,
-    5,
-    6,
-    7,
-    8,
-    12
-  ],
-  "native_charts": 3,
-  "native_chart_owner_slides": [
-    9,
-    10,
-    15
-  ],
-  "embedded_workbooks": 3,
-  "new_logical_order_of_old_slides": [
-    1,
-    null,
-    2,
-    3,
-    4,
+  "completedDate": "2026-10-13",
+  "folderNamingDate": "20261012",
+  "deliveryPath": "C:\\NYCU_ML\\deliverables\\房屋價格預測_課程要求補齊_20261012\\簡報\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+  "deliverySha256": "70c7ff31c61eae0550bc33765ae20a326add265a6618a1931c0eac6f772d202b",
+  "authoringFinal": "r7_build/final/r7.pptx",
+  "scriptSha256": "01f34415806d14f8fd640ad3088e00f38d80b9012cc174f4c1fa1b17de73ccbc",
+  "mainHan": 4209,
+  "estimatedMinutesAt275": 15.305454545454545,
+  "estimatedMinutesAt250": 16.836,
+  "estimatedMinutesAt300": 14.03,
+  "humanRehearsalPerformed": false,
+  "slideCount": 20,
+  "mainSlides": 20,
+  "appendixSlides": 0,
+  "nativeTableSlides": [
     5,
     6,
     7,
     8,
     9,
     10,
-    12,
-    13,
     14,
-    11,
-    16
+    20
   ],
-  "outline_new_page": 2,
-  "deleted_old_page": 15,
-  "chapter_page_ranges": {
-    "資料準備": [
-      3,
-      7
-    ],
-    "模型訓練": [
-      8,
-      11
-    ],
-    "預測整合": [
-      12,
-      14
-    ],
-    "驗證與檢查": [
-      15,
-      16
+  "nativeChartSlides": [
+    6,
+    11,
+    12,
+    17,
+    18
+  ],
+  "embeddedExcelWorkbooks": 5,
+  "programFlowConnectors": 5,
+  "notesContentWhySourcesMatchAll20": true,
+  "markdownScriptsMatchAll20": true,
+  "original60CurveValuesAndHouseAssetsPreserved": true,
+  "authorityPublicJsonBytesPreserved": true,
+  "privateRawIndicesAndOldScatterSamplingAbsent": true,
+  "visibleDeletedTermsAbsent": true,
+  "all20SlidesVisuallyReviewed": true,
+  "visualReviewMethod": "All20 R6 slides previously viewed individually. R7 changed slide20 viewed full-size; all19 unchanged pages pixel-identical to R6.",
+  "visualRepairs": [
+    "Slide3 native connector terminal corrected to follow 01→06.",
+    "Slide18 shortened exact upper-exclusive band labels to remove native-chart ellipses and diagonal text."
+  ],
+  "retainedFailures": [
+    "r1_failure.txt",
+    "candidate_before_precision_fix.pptx",
+    "r2_visual_review.json"
+  ],
+  "laterScientificRepairs": [
+    "Slide6 states statistics were added after model freeze, not used for tuning.",
+    "Slide19 defines baseline weighted MAE and explicitly states no concurrent matched retraining.",
+    "Slide20 clarifies existing type/use grouping; same-project counts differ from actual reference support; next-step checks area/parking within existing grouping."
+  ],
+  "sourceRebuild": {
+    "status": "passed",
+    "final": "source_rebuild_r7/final/r1.pptx",
+    "renderDirectory": "source_rebuild_r7/renders_r1",
+    "notesAll20Match": true,
+    "pixelComparison": [
+      {
+        "slide": 1,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 2,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 3,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 4,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 5,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 6,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 7,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 8,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 9,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 10,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 11,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 12,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 13,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 14,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 15,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 16,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 17,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 18,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 19,
+        "identical": true,
+        "bbox": null
+      },
+      {
+        "slide": 20,
+        "identical": true,
+        "bbox": null
+      }
     ]
   },
-  "changed_package_members": [
-    "ppt/presentation.xml",
-    "ppt/slides/slide1.xml",
-    "ppt/notesSlides/notesSlide1.xml",
-    "ppt/slides/slide2.xml",
-    "ppt/notesSlides/notesSlide2.xml",
-    "ppt/slides/slide3.xml",
-    "ppt/notesSlides/notesSlide3.xml",
-    "ppt/slides/slide4.xml",
-    "ppt/notesSlides/notesSlide4.xml",
-    "ppt/slides/slide5.xml",
-    "ppt/notesSlides/notesSlide5.xml",
-    "ppt/slides/slide6.xml",
-    "ppt/notesSlides/notesSlide6.xml",
-    "ppt/slides/slide7.xml",
-    "ppt/notesSlides/notesSlide7.xml",
-    "ppt/slides/slide8.xml",
-    "ppt/notesSlides/notesSlide8.xml",
-    "ppt/slides/slide9.xml",
-    "ppt/slides/slide10.xml",
-    "ppt/slides/slide11.xml",
-    "ppt/notesSlides/notesSlide11.xml",
-    "ppt/slides/slide12.xml",
-    "ppt/notesSlides/notesSlide12.xml",
-    "ppt/slides/slide13.xml",
-    "ppt/notesSlides/notesSlide13.xml",
-    "ppt/slides/slide14.xml",
-    "ppt/notesSlides/notesSlide14.xml",
-    "ppt/slides/slide15.xml",
-    "ppt/notesSlides/notesSlide15.xml",
-    "ppt/slides/slide16.xml",
-    "ppt/notesSlides/notesSlide16.xml"
-  ],
-  "retained_original_graphics_identical_except_page_markers_and_chapter_labels": 15,
-  "original_curve_values_preserved": 60,
-  "native_chart_and_workbook_parts_byte_identical": true,
-  "source_rebuild_pixel_identical_slides": 16,
-  "app_metadata_counts": {
-    "Slides": "16",
-    "Notes": "16"
+  "sourceFilesSha256": {
+    "source/analysis.json": "b73fb8301d80b217badc90f718b0fed477686d07c90432f983b0a6f38f1d7f07",
+    "source/analysis_receipt.json": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7",
+    "source/assets/house_illustration.json": "59047032e4e691f880f65b18723cb9e6bd32e6f20eda02a2bc28ca966c45f4dc",
+    "source/assets/house_illustration.png": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1",
+    "source/build_presentation.mjs": "7e4608e81e463ad130d026c581c06ca4b18a7a7749b6eaa61412f4bd733c7feb",
+    "source/city_statistics.json": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
+    "source/content.json": "58c00a46dc37502e950bdebe4d9b0e3c0d1b2828971baf73415bd6e31c8c8b16",
+    "source/finalize_presentation.mjs": "0b427360c720ab2c9bbde49869e16883910913ca751b5e6f40e50f0b41329235",
+    "source/README.md": "e7e9da154c2803575d1e564991c54b074f766c4892eec68c847d12f8c51a79a4",
+    "source/training_curve.json": "8c02ac44b579db70f918db180f1f54f3b3f603ef225c57ec900a74ac5fff0b6a",
+    "source/validation_report_summary.json": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889"
   },
-  "visual_review": "All16 final slides individually inspected at full size; outline and chapter labels legible; no clipping or overlap",
-  "scientific_review": "teaching_review.json",
-  "word_changed": false,
-  "csv_changed": false,
-  "model_changed": false,
-  "Kaggle_actions": false,
-  "native_powerpoint_tested": false,
-  "human_rehearsal_performed": false,
-  "Private": "unknown",
-  "usage_used_percent": 3,
-  "usage_remaining_percent": 97
+  "limitations": [
+    "Bundled runtime tested on this machine; fresh installation and native PowerPoint UI not tested.",
+    "Timing is text estimate, not human rehearsal.",
+    "Document reconstruction is not a full six-model retraining.",
+    "Private unknown; existing history reused during development."
+  ],
+  "externalActionsPerformed": false,
+  "modelTrainingPerformed": false,
+  "submissionCsvModified": false,
+  "externalStatus": "Classroom skipped; user authorizes only Kaggle name/GitHub changes handled by root, submission and final checkbox postponed."
 }

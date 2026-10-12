@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1180" viewBox="0 0 1800 1180">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#4A5665"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<polyline points="310,110 310,150 900,150 900,180" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,110 900,180" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="1490,110 1490,150 900,150 900,180" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,280 900,325" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,425 900,465 310,465 310,505" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,425 900,505" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,425 900,465 1490,465 1490,505" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="310,625 310,670" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,625 900,670" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="1490,625 1490,670" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="310,770 310,815 900,815 900,860" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,770 900,860" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="1490,770 1490,815 900,815 900,860" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<polyline points="900,960 900,1010" fill="none" stroke="#4A5665" stroke-width="5" marker-end="url(#arrow)"/>
+<rect x="50" y="10" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="310.0" y="60.0" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">train：房屋條件＋總價</text>
+<rect x="640" y="10" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="60.0" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">valid：最終合併標籤</text>
+<rect x="1230" y="10" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="1490.0" y="60.0" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">test：房屋條件，無總價</text>
+<rect x="200" y="180" width="1400" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="208.055" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">表頭檢查與文字解析；僅訓練資料完全去重</text>
+<text x="900.0" y="251.945" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">test 的每筆編號與原順序完整保留</text>
+<rect x="200" y="325" width="1400" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="353.055" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">建立特徵及 fit 狀態 → 套用到 query</text>
+<text x="900.0" y="396.945" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">詞表、數值轉換、價格參考與道路資訊</text>
+<rect x="50" y="505" width="520" height="120" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="310.0" y="541.725" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">單價模型</text>
+<text x="310.0" y="588.275" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">CatBoost ＋ LightGBM</text>
+<rect x="640" y="505" width="520" height="120" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="541.725" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">神經網路</text>
+<text x="900.0" y="588.275" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">面積網路 ＋ 參考單價網路</text>
+<rect x="1230" y="505" width="520" height="120" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="1490.0" y="541.725" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">總價模型</text>
+<text x="1490.0" y="588.275" font-family="Microsoft JhengHei" font-size="35" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">CatBoost總價 ＋ 對數總價</text>
+<rect x="50" y="670" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="310.0" y="700.715" font-family="Microsoft JhengHei" font-size="29" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">先還原總價 → 單價路線</text>
+<text x="310.0" y="739.2850000000001" font-family="Microsoft JhengHei" font-size="29" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">75% C_unit ＋ 25% L_unit</text>
+<rect x="640" y="670" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="701.38" font-family="Microsoft JhengHei" font-size="28" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">先還原總價 → 網路路線</text>
+<text x="900.0" y="738.62" font-family="Microsoft JhengHei" font-size="28" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">75%雙NN均值 ＋ 25% L_unit</text>
+<rect x="1230" y="670" width="520" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="1490.0" y="701.38" font-family="Microsoft JhengHei" font-size="28" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">先還原總價 → 總價路線</text>
+<text x="1490.0" y="738.62" font-family="Microsoft JhengHei" font-size="28" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">75%雙總價均值 ＋ 25% L_unit</text>
+<rect x="200" y="860" width="1400" height="100" rx="14" fill="#EAF0F6" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="888.055" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">各路分別套用成交參考 R 與空間修正 S</text>
+<text x="900.0" y="931.9449999999999" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">S 同時接收原始價格 B 與 R(B)</text>
+<rect x="200" y="1010" width="1400" height="125" rx="14" fill="#E8F2EE" stroke="#8796A7" stroke-width="3"/>
+<text x="900.0" y="1050.555" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="bold" fill="#142C44">三路逐筆取中位數 → 一次取整 → CSV檢查與輸出</text>
+<text x="900.0" y="1094.4450000000002" font-family="Microsoft JhengHei" font-size="33" text-anchor="middle" dominant-baseline="central" font-weight="normal" fill="#142C44">驗證流程讀 query 真價算 MAE；test 真價未知</text>
+</svg>

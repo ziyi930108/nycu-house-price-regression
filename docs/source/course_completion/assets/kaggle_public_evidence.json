@@ -1,0 +1,13 @@
+{
+  "status": "observed_logged_in_UI",
+  "competition": "https://www.kaggle.com/competitions/ml-2026-iaii-regression",
+  "submission_filename": "submission_v25_trial.csv",
+  "public_mae_twd": 1995836.2136,
+  "private_mae_twd": null,
+  "final_score_checkbox_at_observation": false,
+  "description_at_observation": "",
+  "screenshot": "outputs/course_requirements_external_20261012/kaggle_submission_before.png",
+  "screenshot_sha256": "332b5e826af2660e35be9051523654a2598e0471785fa0f3399c66551c971e25",
+  "uploaded_bytes_verified": false,
+  "user_decision": "Delay submission description and final selection; only profile name/GitHub edited."
+}

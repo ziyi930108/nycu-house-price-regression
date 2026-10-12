@@ -1,0 +1,7 @@
+# Course-required dependency entry point:
+# python -m pip install -r requirement.txt
+# See requirements-torch.txt before choosing a CPU or CUDA wheel for your platform.
+# These dependencies cover inference, neural-network sources, and report generation.
+-r requirements-inference.txt
+-r requirements-torch.txt
+-r requirements-report.txt

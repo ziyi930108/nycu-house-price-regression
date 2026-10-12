@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "docx_sha256": "bb529d4701138d9215fb73b7d5504809a493efd420745856e8e6270ca3851da9",
+  "reference_sha256": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e",
+  "page_count": 19,
+  "chapters": 19,
+  "native_tables": 16,
+  "images": 5,
+  "all_19_pages_visually_reviewed": true,
+  "revision": "r4",
+  "prior_docx": "qa/report_r3.docx",
+  "prior_review": "qa/delivery_review_r3.json",
+  "visual_review_directory": "qa/render_r4",
+  "render_method": "Microsoft Word 16 native PDF export + canonical render_docx.py adapter + bundled Poppler",
+  "visual_review_method": "Page17 individually reviewed in r4; all other18 pages pixel-identical to fully visually reviewed r3.",
+  "pixel_comparison_with_reviewed_r3": [
+    {
+      "page": 1,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 2,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 3,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 4,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 5,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 6,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 7,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 8,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 9,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 10,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 11,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 12,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 13,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 14,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 15,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 16,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 17,
+      "identical_to_reviewed_r3": false
+    },
+    {
+      "page": 18,
+      "identical_to_reviewed_r3": true
+    },
+    {
+      "page": 19,
+      "identical_to_reviewed_r3": true
+    }
+  ],
+  "changed_parts_from_r3": [
+    "word/document.xml"
+  ],
+  "review_corrections": [
+    "Price band first interval strictly below 5 million TWD; plot/paragraph corrected.",
+    "Public score verified from current screenshot and logged-in Kaggle page; upload bytes not audited, Private unknown.",
+    "Case A rarity is a possible hypothesis, not proven extrapolation or error cause.",
+    "Existing reference already groups building type and use; same-project 130/0 counts are descriptive, not actual reference support. Proposed support diagnostics and within-group conditions remain unexecuted."
+  ],
+  "blank_pages": false,
+  "clipping_overlap_missing_glyphs": false,
+  "accessibility_findings": {
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "all_original_10_tables_xml_retained": true,
+  "reference_title_name_student_id_abstract_preserved": true,
+  "deleted_abstract_results_restored": false,
+  "forbidden_reader_terms": false,
+  "source_rebuilds": {
+    "independent_source_copy": {
+      "file": "qa\\source_rebuild_r4\\台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "same_member_set": true,
+      "changed_members": []
+    },
+    "custom_cli_output": {
+      "file": "qa\\cli_rebuild_r4\\docs\\台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "same_member_set": true,
+      "changed_members": []
+    }
+  },
+  "local_markdown_links_checked": 14,
+  "original_styles_footer_theme_numbering_curve_preserved": true,
+  "data_scope": "frozen canonical train455255; confirmation fit321550/query133697; no test labels",
+  "validation_evidence": "source/assets/validation_report_summary.json",
+  "model_training": false,
+  "submission_csv_changed": false,
+  "Kaggle_operation": false,
+  "limitations": [
+    "Not a clean-environment six-model end-to-end reproduction.",
+    "Windows/Word16 rendering only; other Office versions may reflow."
+  ],
+  "outputs": {
+    "台灣房屋銷售價格預測挑戰賽_正式報告.docx": "bb529d4701138d9215fb73b7d5504809a493efd420745856e8e6270ca3851da9",
+    "REPORT.md": "82f47473df1751b0e9104e3258ae8dd864127f7f7024c13d255cc53fa6a9ba12",
+    "README.md": "36aa7b279f1fdfaeeee9347d16f5d915bcb5aa3950077dfe69a40a72c3a48a16",
+    "SOURCE_MAP.md": "90670bfaa12cddf9caea5a48c6bde6902e8b373fd7f84210ea9a60fe9af8708a"
+  },
+  "source_files": {
+    "source/artifact.md": "8d2c5a91232081f8b9a03fd6eb5ababd843ba1e57551d1ff2b8dbbd1a289c1b8",
+    "source/assets/analysis_receipt.json": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7",
+    "source/assets/city_price_distribution.png": "acc11cb8feae8a911b8d930091e1ed67e6bfa2f62d83f67190eac6bfe88d3ee3",
+    "source/assets/city_statistics.json": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
+    "source/assets/error_by_price_band.png": "4c28931e8eca9f1b9161d3682ab880a9fedaefc009e7da534f9859c22068022b",
+    "source/assets/fusion_validation.png": "ccec82123dc054028e91db06f88dd4b3b65f046988525229cc24be5acf22b316",
+    "source/assets/plot_rendering.json": "0383df8b7de00711a2249f3cef36fc1cbef7e5539a281da39030d15f17474fc8",
+    "source/assets/program_flow.png": "f689a61409e837491422f839fc5498d58d48eb5ea132de131450a8e8da8dcc91",
+    "source/assets/program_flow.svg": "315116961c8b88431deef6a502819667fb9053a1bce68ea0edafa6f4352543dc",
+    "source/assets/training_curve.png": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56",
+    "source/assets/validation_report_summary.json": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
+    "source/build_flowchart.py": "8ea35e9798315258401d8e047bc251750e386a21dfe01fd17eadbb9e5dad8b44",
+    "source/build_report.py": "6b7426a4b2a20dac0db8257b6806cab7a96b39f5d9b9043bcd33127a74c3efe5",
+    "source/make_supplement.py": "af8ed922a1badeeaa651c4a90742a9d7b6361cf8f90225d2bb51225c02b64683",
+    "source/README.md": "a869fdeb6af2826f4b076f49e4202775ca07d6d88c57c51f5e40710a753eda04",
+    "source/reference_report.docx": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e",
+    "source/render_review.py": "426d8731cd5eae431d7930667080a3a14aae50e391f4e1713e3b47a008a31efb",
+    "source/supplement.json": "6bfc73e1d6adfc95fe718cf7dafb5cdceaeb3c98450491955cb312b2a828845d"
+  }
+}

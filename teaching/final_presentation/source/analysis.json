@@ -1,0 +1,122 @@
+{
+  "city": {
+    "subtitle": "清理後train 455,255筆；全資料總價中位數1,212萬元",
+    "chart_categories": [
+      "臺北市",
+      "新北市",
+      "臺中市",
+      "桃園市",
+      "新竹市",
+      "高雄市"
+    ],
+    "chart_median_total_wan": [
+      2945.0,
+      1480.0,
+      1280.0,
+      1161.0,
+      1375.0,
+      1050.0
+    ],
+    "axis_max_wan": 3500,
+    "chart_rows": [
+      {
+        "city": "臺北市",
+        "count": 20023
+      },
+      {
+        "city": "新北市",
+        "count": 102060
+      },
+      {
+        "city": "臺中市",
+        "count": 83686
+      },
+      {
+        "city": "桃園市",
+        "count": 83774
+      },
+      {
+        "city": "新竹市",
+        "count": 9493
+      },
+      {
+        "city": "高雄市",
+        "count": 40980
+      }
+    ],
+    "selection": "明示6個城市；不是按房價篩選或全城市排名。",
+    "period": "2008-06-26至2024-08-10"
+  },
+  "validation": {
+    "subtitle": "2023-08-11至2024-08-10；完整融合，保留交易133,697筆",
+    "categories": [
+      "未滿500",
+      "500–<1000",
+      "1000–<2000",
+      "2000–<5000",
+      "≥5000"
+    ],
+    "mae_by_band_wan": [
+      53.96413153911047,
+      65.16847856510132,
+      104.18814510987345,
+      231.9559929213645,
+      824.0755334273427
+    ],
+    "band_rows": [
+      1174,
+      24411,
+      74109,
+      31959,
+      2044
+    ],
+    "axis_max_wan": 900,
+    "mae_wan_display": "138.17",
+    "summary_text": "誤差最大的5%交易\n占總絕對誤差28.01%",
+    "plot_disclosure": "五個價格帶涵蓋全部保留交易。以真價分組，僅供事後分析；未使用test答案。",
+    "bin_intervals_twd": "[0,5000000),[5000000,10000000),[10000000,20000000),[20000000,50000000),[50000000,inf)",
+    "mae_twd": 1381702.8680319374
+  },
+  "cases": {
+    "source_case_numbers": [
+      1,
+      4
+    ],
+    "rows": [
+      {
+        "label": "A",
+        "observation": "廠辦 19,410 m²\n訓練同建案 0 筆",
+        "actual_wan": "299,000",
+        "predicted_wan": "280,337",
+        "error_wan": "18,663"
+      },
+      {
+        "label": "B",
+        "observation": "店面 831 m²\n同建案130筆，全為住宅",
+        "actual_wan": "25,600",
+        "predicted_wan": "16,270",
+        "error_wan": "9,330"
+      }
+    ],
+    "improvements": [
+      {
+        "title": "A  大型、特殊用途",
+        "text": "先核對面積與車位解析\n再固定特殊用途對照方案"
+      },
+      {
+        "title": "B  同建案仍須可比",
+        "text": "既有用途分組內檢查面積／車位\n核對實際參考支持與回退"
+      }
+    ]
+  },
+  "provenance": {
+    "city_json_sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
+    "validation_json_sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
+    "fitted_new_model": false,
+    "modified_submission": false,
+    "private_raw_indices_included": false,
+    "scatter_points_included": false,
+    "analysis_receipt_sha256": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7",
+    "analysis_directory": "outputs/course_requirements_completion_20261012_r3"
+  }
+}

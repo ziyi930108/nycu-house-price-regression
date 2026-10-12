@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "prior_rendering": {
+    "status": "passed_visual_review",
+    "plots": {
+      "city_price_median": {
+        "svg": "db2582680b57700715acdc01961795cf4abd5c6a63ca5656a7aa7d986a6e0278",
+        "png": "acc11cb8feae8a911b8d930091e1ed67e6bfa2f62d83f67190eac6bfe88d3ee3"
+      },
+      "validation_actual_vs_predicted": {
+        "svg": "1ffddf394b9d517ef0262e381c6c2df6ebb8e6b23833e5a7db243335c2ed7e78",
+        "png": "ccec82123dc054028e91db06f88dd4b3b65f046988525229cc24be5acf22b316"
+      },
+      "validation_price_band_mae": {
+        "svg": "9ab0c34150bf3e229cb46e8da9272531e3beb4384c6e4eeb9a1245d997e0b509",
+        "png": "869cd7e8fb86c9981e6f71b6d5f931d081be62f43017047717649e8ad4174ea5"
+      }
+    },
+    "source_analysis_receipt": "analysis_receipt.json",
+    "public_summary": "validation_report_summary.json",
+    "note": "scatter_sampling in original analysis records describes an unused private 2500-point preview; delivered density figure includes all rows.",
+    "excel_content_equal": true,
+    "excel_audit_sha256": "20079a83e716199d959e1d1fe8d113178c169dab4c1cdc1a9b13c1e62dc86747"
+  },
+  "wording_correction": "未滿500萬; remaining intervals left-inclusive/right-exclusive; unchanged numeric statistics",
+  "statistics_sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
+  "corrected_files": {
+    "svg": {
+      "path": "C:/NYCU_ML/outputs/course_requirements_completion_20261012_r4/validation_price_band_mae.svg",
+      "sha256": "2c29fe538465e0d827b905e15494f65f16f4dd49f33a0a0395ccd921ec750d4f"
+    },
+    "png": {
+      "path": "C:/NYCU_ML/outputs/course_requirements_completion_20261012_r4/validation_price_band_mae.png",
+      "sha256": "4c28931e8eca9f1b9161d3682ab880a9fedaefc009e7da534f9859c22068022b"
+    }
+  },
+  "fit": false
+}
