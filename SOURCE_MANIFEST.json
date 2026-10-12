@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-12T00:03:39.746240+00:00",
+  "created_at_utc": "2026-10-12T00:06:59.657795+00:00",
   "scope": "Final house price delivery with neutral report labels",
   "files": [
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "docs/臺灣房屋總價預測_正式報告.docx",
-      "bytes": 162111,
-      "sha256": "413ed60a033487d32060841ed9dc64788e84247c068b9b0a2d6f88e6094fb2db"
+      "bytes": 184467,
+      "sha256": "4724749f25a9a809d8f53aa158f608758b4570ffca9b2e24278fcc358e55ec03"
     },
     {
       "path": "evidence/kaggle_feedback/public_v25_user_report_20261010.json",
