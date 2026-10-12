@@ -1,0 +1,109 @@
+{
+  "version": "v25-inference-artifacts-draft-v1",
+  "public_distribution": false,
+  "contains_course_derived_price_states": true,
+  "files": [
+    {
+      "path": "reports/feature_schema.json",
+      "bytes": 4910,
+      "sha256": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa",
+      "role": "87-column feature schema and categorical order"
+    },
+    {
+      "path": "outputs/round6/geography/final/test.pkl",
+      "bytes": 1743334,
+      "sha256": "158af43f5f37b94d07d5addada5988c9df7677ad7ebf38e292b9a12b561ef28c",
+      "role": "Aligned target-free R6 geo8 for fixed course test rows"
+    },
+    {
+      "path": "outputs/round39/geography/final/query.pkl",
+      "bytes": 1739804,
+      "sha256": "76b8802233e13accf53c77a0db8ae4ce038618f6ee7e90a63f0a5a1c4ea42ea7",
+      "role": "Aligned target-free R39 city/road query geography"
+    },
+    {
+      "path": "outputs/round79/final_model/model/model.cbm",
+      "bytes": 43984780,
+      "sha256": "1f40fe8b40ff0083dd4128e94659ecf0f77e632ff257e540fa645722f7e013db",
+      "role": "C_unit native CatBoost, 2999 trees"
+    },
+    {
+      "path": "outputs/round79/final_model/model/feature_state.json",
+      "bytes": 22422,
+      "sha256": "a48ed8c498f93051e1eac0ed76a6d05fc7929f788852f96c4f04d0ad15d6cfc7",
+      "role": "C_unit frozen geo/feature state"
+    },
+    {
+      "path": "outputs/round46/trial/model/model.cbm",
+      "bytes": 539304804,
+      "sha256": "c333d9afc970a30f53f14ad06cfba842f857a4f241ae59595cdd5a3cefa7f56f",
+      "role": "C_log native CatBoost, 2999 trees"
+    },
+    {
+      "path": "outputs/round46/trial/model/feature_state.json",
+      "bytes": 16505,
+      "sha256": "4b4edbc2a3fa42b0e4e694b2cbb774e7d879030c78bf683eb5b2f3f143f094b7",
+      "role": "C_log frozen geo/feature state"
+    },
+    {
+      "path": "models/final/catboost_raw.cbm",
+      "bytes": 630279576,
+      "sha256": "a7716df5ae940a26d56c1ef13c79b8e5858aa9521baeb3ba15970b76d1a59356",
+      "role": "C_raw native CatBoost, 2999 trees"
+    },
+    {
+      "path": "models/final/lightgbm_l1_unit63/model.txt",
+      "bytes": 150426919,
+      "sha256": "9ea53f7398e4717e4ac544d72122ee601208c7d4d98d675a9a22731ddd4eda63",
+      "role": "L_unit native LightGBM, 3999 trees"
+    },
+    {
+      "path": "models/final/lightgbm_l1_unit63/category_maps.json",
+      "bytes": 9141810,
+      "sha256": "72829a220c399cb62dcd9dbb2657ccf12a4160447ee36bcf3738105cafca8bee",
+      "role": "L_unit frozen category encoding"
+    },
+    {
+      "path": "outputs/round2/neighborhood/final_reference.pkl",
+      "bytes": 52470857,
+      "sha256": "7c0bf589b6a8a998d96e4a545a45ce8f4dca71ea68ac42ba8550d3781d2d7bca",
+      "role": "Full-fit comparable/trend reference, lawful fit prices"
+    },
+    {
+      "path": "outputs/round39/trial/artifacts/spatial_state.pkl",
+      "bytes": 4019035,
+      "sha256": "290cfcb5c2fa5397f864444acebcb442ac92e49b2f3315492970c9d1b0e5c929",
+      "role": "Full-fit spatial state, lawful fit residuals"
+    },
+    {
+      "path": "outputs/round48/final/encoder_state.json",
+      "bytes": 1049910,
+      "sha256": "a20cc35db6c67cf46c3715b2eb97ab6f16e941545253c996944bb2d8c57908ac",
+      "role": "Frozen 95-column NN encoder"
+    },
+    {
+      "path": "outputs/round55/final/numeric_state.json",
+      "bytes": 23603,
+      "sha256": "02372983c2314ebad277c8fde6ba56e85d6afce066834b18f7374c0fe575597b",
+      "role": "Frozen numeric quantile ramps for N_area"
+    },
+    {
+      "path": "outputs/round60/final/price_prior_state.json",
+      "bytes": 312217,
+      "sha256": "a961f1d88169029d4bda9e66c6e3f0eac3aba31781844448a369a966b0a63195",
+      "role": "Full-fit query-label-free hierarchical price prior"
+    },
+    {
+      "path": "outputs/round55/final/model/model.pt",
+      "bytes": 6908702,
+      "sha256": "2650cde4b10fb8d0ce72ef1307e41e1d3d40308240f2c0f8c54680d7a07e6bb3",
+      "role": "N_area Softplus unit-price checkpoint, 603 numeric inputs"
+    },
+    {
+      "path": "outputs/round107/final/model/model.pt",
+      "bytes": 5969182,
+      "sha256": "dfedbc2c82c8a2c2a763c59c9849da93e511f046754c335d4b00d5907577ff2a",
+      "role": "N_prior R107 weighted SmoothL1 ratio checkpoint, 144 numeric inputs"
+    }
+  ]
+}

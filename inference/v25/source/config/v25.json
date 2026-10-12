@@ -1,0 +1,193 @@
+{
+  "rows": 47073,
+  "inputs": {
+    "test": {
+      "filename": "test-reindex-test-v2.2.xlsx",
+      "sha256": "19c785ae5679973c0ad859090340dfa0dc8ad4a968f0fa764c16b0fa81d17736"
+    },
+    "sample": {
+      "filename": "test-reindex-test-sample-submission-v2.csv",
+      "sha256": "b4a26dd34d53c0a24343db3031a6a2cf007b8a8313bf282948070b9907aba204"
+    }
+  },
+  "feature_frame_sha256": "222c6f1797f8334350186b991a5a3f9f3026bb07e588d833a970dbb5754770fa",
+  "unit_weight": 0.75,
+  "lgb_weight": 0.25,
+  "fusion": "per-row median after branchwise reference and spatial correction",
+  "version": "v25",
+  "experiment": "R107",
+  "expected_csv_sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+  "selected_submission": "v25",
+  "Private_score": null,
+  "selection_evidence": {
+    "path": "outputs/v25_submission_focus_20261010/user_selection.json",
+    "bytes": 1707,
+    "sha256": "95624af70d52a1ae9b439454d51221fb693d8e49298373d1eb2bd0529b6055db",
+    "content_read": "source_or_metadata_only"
+  },
+  "artifact_manifest_sha256": "f0d5f8005911a65d963e7f7c904f0b286905e7a94ad233ee2907559160900689",
+  "neural_batch_size": 4096,
+  "tree_threads": 4,
+  "query_prior_identities": {
+    "cardinalities": {
+      "dtype": "int64",
+      "shape": [
+        23
+      ],
+      "values_sha256": "f44448b211b2d3db9a58973c2ffad15011c80e6717f25f4d51196af9db25d72c"
+    },
+    "query_cat": {
+      "dtype": "int64",
+      "shape": [
+        47073,
+        23
+      ],
+      "values_sha256": "0b7f5cf9ab0727a983954c0a9be2d936a913ac679a2afee0aa20829a0e8a23ba"
+    },
+    "query_num": {
+      "dtype": "float32",
+      "shape": [
+        47073,
+        144
+      ],
+      "values_sha256": "f4fa2fb2e8dd96b97aeb5ccf36101133a853c60c9e05f03b41d1903f5bf446af"
+    },
+    "query_price_factor_million": {
+      "dtype": "float32",
+      "shape": [
+        47073
+      ],
+      "values_sha256": "e2d5796ddd19d1011cbec69a7ed142931e0398fd24e7ee8e2be81ee36ef63103"
+    }
+  },
+  "area_factor_values_sha256": "14a9de52cfb9b8aec1bf7486120cf555e68399e8c680e1c3090c94d535119bbf",
+  "neural_models": {
+    "N_area": {
+      "model_path": "outputs/round55/final/model/model.pt",
+      "expected_model_sha256": "2650cde4b10fb8d0ce72ef1307e41e1d3d40308240f2c0f8c54680d7a07e6bb3",
+      "numeric_count": 603,
+      "cardinalities": [
+        257,
+        4,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        3,
+        9,
+        7056,
+        9015,
+        76,
+        6129,
+        24,
+        266,
+        3372,
+        19,
+        1736,
+        4570,
+        619,
+        15,
+        927
+      ],
+      "configuration": {
+        "seed": 42,
+        "epochs": 30,
+        "batch_size": 2048,
+        "hidden": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "category_dropout": 0.1,
+        "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+        "optimizer": "AdamW",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "scheduler": "CosineAnnealingLR",
+        "minimum_learning_rate": 1e-05,
+        "loss": "MAE in million TWD",
+        "positive_output": "Softplus",
+        "epoch_selection": "fixed last epoch; no query labels or early stopping",
+        "float_precision": "float32; matmul precision high",
+        "thread_count": 4,
+        "prediction_head": "Softplus unit price; unit * area_factor yields million TWD",
+        "output_units": "1e4 TWD per square metre of effective area A",
+        "area_formula": "finite positive building_area else finite positive parking_area else 1",
+        "area_factor_formula": "A / 100",
+        "loss_formula": "abs(unit_output * train_area_factor - train_y_million).mean()",
+        "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_area_factor))",
+        "extra_sample_weights": false,
+        "price_or_unit_clipping": false
+      }
+    },
+    "N_prior": {
+      "model_path": "outputs/round107/final/model/model.pt",
+      "expected_model_sha256": "dfedbc2c82c8a2c2a763c59c9849da93e511f046754c335d4b00d5907577ff2a",
+      "numeric_count": 144,
+      "cardinalities": [
+        257,
+        4,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        3,
+        9,
+        7056,
+        9015,
+        76,
+        6129,
+        24,
+        266,
+        3372,
+        19,
+        1736,
+        4570,
+        619,
+        15,
+        927
+      ],
+      "configuration": {
+        "seed": 42,
+        "epochs": 30,
+        "batch_size": 2048,
+        "hidden": [
+          512,
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "category_dropout": 0.1,
+        "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+        "optimizer": "AdamW",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "scheduler": "CosineAnnealingLR",
+        "minimum_learning_rate": 1e-05,
+        "loss": "fit-recency weighted SmoothL1 in million TWD",
+        "positive_output": "Softplus",
+        "epoch_selection": "fixed last epoch; no query labels or early stopping",
+        "float_precision": "float32; matmul precision high",
+        "thread_count": 4,
+        "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+        "output_units": "dimensionless positive price ratio",
+        "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+        "price_factor_uses_fit_labels": true,
+        "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+        "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+        "loss_formula": "mean(train_sample_weight * smooth_l1_loss(ratio_output * train_price_factor_million, train_y_million, beta=0.1, reduction='none'))",
+        "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+        "extra_sample_weights": true,
+        "price_or_ratio_clipping": false,
+        "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+        "smooth_l1_beta_million": 0.1,
+        "loss_units": "million TWD"
+      }
+    }
+  }
+}

@@ -62,7 +62,7 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
  }
  for(let i=0;i<5;i++){const side=i<2?'right':i===2?'bottom':'left',to=i<2?'left':i===2?'top':'right';s.shapes.connect(shapes[i],shapes[i+1],{kind:'straight',fromSide:side,toSide:to,line:{fill:C.teal,width:2,style:'solid'},tail:{type:'arrow',width:'med',length:'med'}});}
  caption(s,'保留交易只套用當期規則。有真價才評分，未知交易依編號順序輸出。',620);
- text(s,'最終只新增一支網路訓練，其餘五模型沿用保存預測。',80,660,1045,34,21,{color:C.muted});}
+ text(s,'原全量階段新增一支網路訓練，其餘五模型沿用保存預測。',80,660,1045,34,21,{color:C.muted});}
 {const s=slide(4,'房屋條件與價格答案');
  heading(s,'特徵',80,181);text(s,'地點、面積、樓層\n建物類型、交易日期',80,245,500,130,34);
  heading(s,'標籤',700,181);text(s,'已知成交總價',700,245,500,100,38,{bold:true,color:C.ink});
@@ -139,7 +139,8 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
  text(s,'同一間房，三個修正後總價',80,151,1120,55,29,{color:C.muted});
  const xs=[80,490,900],vals=['1,000','1,100','1,600'];
  for(let i=0;i<3;i++){heading(s,'分支 '+String.fromCharCode(65+i),xs[i],268,300);text(s,vals[i],xs[i]-4,342,330,120,68,{bold:i===1,color:i===1?C.teal:C.text});text(s,'萬元',xs[i],467,300,48,27,{color:C.muted});}
- caption(s,'中間值為1,100萬元，可減少單一路線極端值的影響，仍可能共同高估或低估。');}
+ caption(s,'中間值為1,100萬元，可減少單一路線極端值的影響，仍可能共同高估或低估。');
+ text(s,'後續兩種同機環境：6模型推論，13份向量與47,073筆CSV完全一致。',80,660,1045,34,21,{color:C.muted});}
 {const s=slide(17,'用後一年交易檢查訓練過程');
  text(s,'較早交易學習：321,550筆　後一年驗證：133,697筆',80,132,1120,38,25,{color:C.muted});
  text(s,'訓練截至2023-08-10　驗證：2023-08-11 至 2024-08-10',80,169,1120,32,22,{color:C.muted});

@@ -1,0 +1,108 @@
+{
+  "format": "v25-portable-inference-source-closure-v1",
+  "draft_only": true,
+  "models_loaded": 0,
+  "new_fits": 0,
+  "files": [
+    {
+      "path": "artifacts/manifest.json",
+      "bytes": 4211,
+      "sha256": "f0d5f8005911a65d963e7f7c904f0b286905e7a94ad233ee2907559160900689"
+    },
+    {
+      "path": "config/requirements-torch-cu126-win-py312.txt",
+      "bytes": 323,
+      "sha256": "3d86f44b865c33cd86cf956eb4ce57ca6fe1d37a6711ad5db9460a7b178fdf31"
+    },
+    {
+      "path": "config/v25.json",
+      "bytes": 6230,
+      "sha256": "8a97543703e92111123340c4729867e2eceb6516eaf02aa4e2739e58a2233101"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2530,
+      "sha256": "0fdb45b373d329064d63f32d75d462d6cf6f30092ca97da4774a3b04ce7f08d1"
+    },
+    {
+      "path": "requirements-inference.txt",
+      "bytes": 110,
+      "sha256": "f7e492622bc061c308c80cee9d9d1de1f4203488c23072286eaf09e3cc1914ec"
+    },
+    {
+      "path": "src/closure_modules/model_common.py",
+      "bytes": 6352,
+      "sha256": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f"
+    },
+    {
+      "path": "src/closure_modules/prepare_data.py",
+      "bytes": 5523,
+      "sha256": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6"
+    },
+    {
+      "path": "src/closure_modules/round2_neighborhood.py",
+      "bytes": 24171,
+      "sha256": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9"
+    },
+    {
+      "path": "src/closure_modules/round6_geo.py",
+      "bytes": 8777,
+      "sha256": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0"
+    },
+    {
+      "path": "src/closure_modules/round8_spatial_reference.py",
+      "bytes": 28410,
+      "sha256": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32"
+    },
+    {
+      "path": "src/house_features.py",
+      "bytes": 12549,
+      "sha256": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388"
+    },
+    {
+      "path": "src/nn_predict.py",
+      "bytes": 6734,
+      "sha256": "f4abb75c18f06124d098510240697cfb0ff085a654afa82d157435018993214c"
+    },
+    {
+      "path": "src/nn_prepare.py",
+      "bytes": 3704,
+      "sha256": "58d7fe5df62e38408476839c5d76f2174086dde64a1d5c9755726a6a9e93a490"
+    },
+    {
+      "path": "src/predict_v25.py",
+      "bytes": 11918,
+      "sha256": "8d0149803fb11b593972dce198975fda0041d9415b03bf8d016befc5a75e1219"
+    },
+    {
+      "path": "src/query_schema.py",
+      "bytes": 1319,
+      "sha256": "ab090e7f60203f736998d0ef3b3e275fb608cc33732d8f541112b0cd9e827296"
+    },
+    {
+      "path": "src/round47_nn_encode.py",
+      "bytes": 8385,
+      "sha256": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47"
+    },
+    {
+      "path": "src/round54_numeric_encode.py",
+      "bytes": 5697,
+      "sha256": "fe73f4154bcd0811b7cdad09c58e1dfd7cba5350446193e90f70bd8a7ef0206e"
+    },
+    {
+      "path": "src/runtime_guard.py",
+      "bytes": 5798,
+      "sha256": "86d3822141cec9cabd863fc7de1ddcc937964a323d015d337ff5aef390a5bbf5"
+    },
+    {
+      "path": "src/submission_io.py",
+      "bytes": 1839,
+      "sha256": "4c6005a0d0763dce8804e9f941daf4d8d1206011c72fae5c7eabc51636ee7798"
+    },
+    {
+      "path": "src/tree_runtime.py",
+      "bytes": 6621,
+      "sha256": "dd7ca25d2bda600bffd04cf072d59f1dc5a47b68a25d11478fa132b7e3e1b004"
+    }
+  ]
+}

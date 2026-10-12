@@ -1,0 +1,1749 @@
+{
+  "schema": "six_basis_full_training_readiness_source_audit_v1",
+  "created_at_utc": "2026-10-12T17:59:55.077423+00:00",
+  "status": "inventory_complete_full_retraining_not_verified",
+  "root": "C:\\NYCU_ML",
+  "repository": {
+    "path": "C:\\NYCU_ML\\deliverables\\v22_github",
+    "HEAD": "2fcf5cda93c1ff82d63c5b36d5aa2a87a70a57ce",
+    "tracked_file_count": 231,
+    "availability_semantics": "repo_tracked_at_HEAD uses git ls-tree HEAD of research/src paths; repo_worktree_exists separately records physical untracked copies. Local original sources exist even if not tracked."
+  },
+  "scope": {
+    "read_source_and_small_metadata_only": true,
+    "payloads_opened": 0,
+    "native_fits": 0,
+    "inference_or_scoring_runs": 0,
+    "checkpoint_payloads_hashed": 0,
+    "source_and_small_json_hashes_only": true,
+    "historical_receipts_are_not_new_execution_receipts": true
+  },
+  "core_findings": [
+    "All six selected native basis metadata independently record 467221 full-fit rows. No six-basis full retraining was performed in this audit.",
+    "Tracked HEAD is not a full training source closure: original final driver/config and several NN prepared-array builders are only in local/untracked worktree copies.",
+    "Even after adding source, original release drivers require old sealed metadata, vectors, reference/spatial price state, private prepared NPZ and protected releases; standalone raw-to-model rebuilding is not demonstrated.",
+    "Portable replay uses saved native checkpoints and frozen fit states; successful same-host query replay is not six-model retraining."
+  ],
+  "fit_row_accounting": {
+    "raw_train_after_three_english_headers": 455784,
+    "train_duplicate_rows_removed_ignoring_ID": 529,
+    "train_after_dedup": 455255,
+    "valid_rows": 11994,
+    "raw_train_plus_valid_before_dedup": 467778,
+    "train_dedup_plus_valid": 467249,
+    "second_full_merge_duplicates_removed_ignoring_ID": 28,
+    "six_basis_native_fit_rows": 467221,
+    "evidence": [
+      {
+        "file": "src/model_common.py",
+        "lines": [
+          43,
+          48
+        ]
+      },
+      {
+        "file": "src/model_common.py",
+        "lines": [
+          109,
+          114
+        ]
+      },
+      {
+        "file": "src/round46_trial_release.py",
+        "lines": [
+          155,
+          173
+        ]
+      },
+      {
+        "file": "src/round48_final_branch.py",
+        "lines": [
+          68,
+          85
+        ]
+      },
+      {
+        "file": "src/round107_final_candidate.py",
+        "lines": [
+          197,
+          216
+        ]
+      },
+      {
+        "file": "deliverables/v22_github/DATA.md",
+        "lines": [
+          3,
+          3
+        ]
+      }
+    ],
+    "required_precision": "Deduplication uses every original raw column except ID, including target. This is the historical rule; it is not a feature-only or target-free dedup rule. Counts of original train only (455784/455255) must not be described as the final six-model fit count.",
+    "report_change_needed_for_claim_all_six_fit_on_deduplicated_full_train_valid": false
+  },
+  "shared_raw_input_generation": {
+    "sources": [
+      "src/prepare_data.py",
+      "src/prepare_features.py",
+      "src/house_features.py",
+      "src/model_common.py"
+    ],
+    "evidence": [
+      {
+        "file": "src/prepare_data.py",
+        "lines": [
+          35,
+          75
+        ]
+      },
+      {
+        "file": "src/prepare_features.py",
+        "lines": [
+          8,
+          46
+        ]
+      }
+    ],
+    "sequence": [
+      "Course train/valid/test Excel: read dtype=object; remove precisely the three known English header rows; training labels float64; reset canonical RangeIndex.",
+      "Build fixed87 target-free features and schema with raw cache/source identities.",
+      "Deduplicate train by all raw columns except ID; concatenate train+valid; remove28 further duplicate rows to467221 full-fit labels.",
+      "For geo-using models, align original non-price geography through src/round6_prepare_geo.py --stage final --matches ... --index ... --extraction ...; no exact historical argv claimed here."
+    ],
+    "geo_builder_evidence": [
+      {
+        "file": "src/round6_prepare_geo.py",
+        "lines": [
+          167,
+          223
+        ]
+      },
+      {
+        "file": "src/round6_prepare_geo.py",
+        "lines": [
+          242,
+          243
+        ]
+      }
+    ],
+    "geo_inputs_required": "Original snapshot PBF, extraction/index/matching audits, parser outputs and aligned source-cache index arrays. No external property transaction answer labels allowed."
+  },
+  "models": [
+    {
+      "name": "C_raw",
+      "checkpoint": {
+        "file": "models/final/catboost_raw.cbm",
+        "recorded_sha256": "a7716df5ae940a26d56c1ef13c79b8e5858aa9521baeb3ba15970b76d1a59356",
+        "recorded_bytes": 630279576,
+        "local_file_exists": true,
+        "local_stat_bytes": 630279576,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/train_final.py",
+        "lines": [
+          15,
+          70
+        ]
+      },
+      "training_command": {
+        "argv": [
+          "python",
+          "src/train_final.py",
+          "--config",
+          "models/final_config.json",
+          "--device",
+          "GPU"
+        ],
+        "evidence_type": "source-derived CLI reconstruction; original argv/OS exit receipt not found in inspected final_training metadata",
+        "evidence": [
+          {
+            "file": "src/train_final.py",
+            "lines": [
+              72,
+              77
+            ]
+          },
+          {
+            "file": "reports/final_training.json",
+            "json_key": "device"
+          }
+        ]
+      },
+      "config": {
+        "file": "models/final_config.json",
+        "same_local_copy": "runs/v1/models/final_config.json",
+        "recorded_sha256": "2ca4258f363d1937df50aed72f5b11dc32b7e70d9dd5fb57fb6f375673a2a425",
+        "actual_parameters_after_overrides": {
+          "iterations": 2999,
+          "depth": 8,
+          "learning_rate": 0.065,
+          "loss_function": "MAE",
+          "eval_metric": "MAE",
+          "l2_leaf_reg": 6.0,
+          "random_seed": 42,
+          "task_type": "GPU",
+          "devices": "0",
+          "thread_count": 6,
+          "boosting_type": "Plain",
+          "bootstrap_type": "Bernoulli",
+          "subsample": 0.85,
+          "random_strength": 0.5,
+          "one_hot_max_size": 8,
+          "max_ctr_complexity": 2,
+          "border_count": 128,
+          "allow_writing_files": false,
+          "gpu_ram_part": 0.75,
+          "verbose": 200
+        },
+        "evidence": {
+          "file": "src/train_final.py",
+          "lines": [
+            28,
+            54
+          ]
+        },
+        "feature_count": 87,
+        "categorical_count": 21,
+        "feature_schema_evidence": {
+          "file": "models/final_config.json",
+          "json_key": "feature_columns/categorical_columns"
+        }
+      },
+      "native_fit_rows": 467221,
+      "fit_rows_evidence": {
+        "file": "reports/final_training.json",
+        "json_key": "components[0].rows"
+      },
+      "metadata": {
+        "file": "reports/final_training.json",
+        "component": {
+          "name": "catboost_raw",
+          "rows": 467221,
+          "iterations": 2999,
+          "seconds": 138.95,
+          "model_sha256": "a7716df5ae940a26d56c1ef13c79b8e5858aa9521baeb3ba15970b76d1a59356"
+        }
+      },
+      "input_generation": {
+        "entry": [
+          "python src/prepare_features.py",
+          "python src/train_final.py --config models/final_config.json --device GPU"
+        ],
+        "source_evidence": [
+          {
+            "file": "src/prepare_features.py",
+            "lines": [
+              8,
+              46
+            ]
+          },
+          {
+            "file": "src/model_common.py",
+            "lines": [
+              25,
+              48
+            ]
+          },
+          {
+            "file": "src/model_common.py",
+            "lines": [
+              109,
+              114
+            ]
+          },
+          {
+            "file": "src/train_final.py",
+            "lines": [
+              20,
+              21
+            ]
+          }
+        ],
+        "model_inputs": "87 original features; 467221 deduplicated full-fit labels; L_unit category maps learned on this fit only",
+        "target": "raw TWD / 1e6 with uniform sample weight",
+        "target_evidence": {
+          "file": "src/train_catboost.py",
+          "lines": [
+            10,
+            23
+          ]
+        }
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/train_final.py",
+        "src/train_catboost.py",
+        "src/train_lightgbm.py"
+      ],
+      "historical_dependencies": [
+        "models/final_config.json or byte-identical runs/v1/models/final_config.json",
+        "reports/feature_schema.json",
+        "data_cache/{train,valid,test}.pkl and {train,valid,test}_features.pkl with matching source metadata"
+      ],
+      "readiness": "source recipe recoverable locally; tracked HEAD lacks original final training driver and config; clean full retraining not executed",
+      "notes": [],
+      "untracked_builder_source_files": [
+        "src/train_final.py"
+      ]
+    },
+    {
+      "name": "L_unit",
+      "checkpoint": {
+        "file": "models/final/lightgbm_l1_unit63/model.txt",
+        "recorded_sha256": "9ea53f7398e4717e4ac544d72122ee601208c7d4d98d675a9a22731ddd4eda63",
+        "recorded_bytes": 150426919,
+        "local_file_exists": true,
+        "local_stat_bytes": 150426919,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/train_final.py",
+        "lines": [
+          15,
+          70
+        ]
+      },
+      "training_command": {
+        "argv": [
+          "python",
+          "src/train_final.py",
+          "--config",
+          "models/final_config.json",
+          "--device",
+          "GPU"
+        ],
+        "evidence_type": "source-derived CLI reconstruction; original argv/OS exit receipt not found in inspected final_training metadata",
+        "evidence": [
+          {
+            "file": "src/train_final.py",
+            "lines": [
+              72,
+              77
+            ]
+          },
+          {
+            "file": "reports/final_training.json",
+            "json_key": "device"
+          }
+        ]
+      },
+      "config": {
+        "file": "models/final_config.json",
+        "same_local_copy": "runs/v1/models/final_config.json",
+        "recorded_sha256": "2ca4258f363d1937df50aed72f5b11dc32b7e70d9dd5fb57fb6f375673a2a425",
+        "actual_parameters_after_overrides": {
+          "objective": "regression_l1",
+          "metric": "None",
+          "n_estimators": 3999,
+          "learning_rate": 0.04,
+          "num_leaves": 63,
+          "max_depth": -1,
+          "min_child_samples": 40,
+          "colsample_bytree": 0.9,
+          "subsample": 0.9,
+          "subsample_freq": 1,
+          "reg_lambda": 2.0,
+          "cat_smooth": 20.0,
+          "cat_l2": 10.0,
+          "max_cat_to_onehot": 4,
+          "max_cat_threshold": 64,
+          "random_state": 42,
+          "n_jobs": 4,
+          "verbosity": -1,
+          "deterministic": true,
+          "force_col_wise": true
+        },
+        "evidence": {
+          "file": "src/train_final.py",
+          "lines": [
+            28,
+            54
+          ]
+        },
+        "feature_count": 87,
+        "categorical_count": 21,
+        "feature_schema_evidence": {
+          "file": "models/final_config.json",
+          "json_key": "feature_columns/categorical_columns"
+        }
+      },
+      "native_fit_rows": 467221,
+      "fit_rows_evidence": {
+        "file": "reports/final_training.json",
+        "json_key": "components[1].rows"
+      },
+      "metadata": {
+        "file": "reports/final_training.json",
+        "component": {
+          "name": "lightgbm_l1_unit63",
+          "rows": 467221,
+          "iterations": 3999,
+          "seconds": 693.49,
+          "model_sha256": "9ea53f7398e4717e4ac544d72122ee601208c7d4d98d675a9a22731ddd4eda63",
+          "category_maps_sha256": "72829a220c399cb62dcd9dbb2657ccf12a4160447ee36bcf3738105cafca8bee"
+        }
+      },
+      "input_generation": {
+        "entry": [
+          "python src/prepare_features.py",
+          "python src/train_final.py --config models/final_config.json --device GPU"
+        ],
+        "source_evidence": [
+          {
+            "file": "src/prepare_features.py",
+            "lines": [
+              8,
+              46
+            ]
+          },
+          {
+            "file": "src/model_common.py",
+            "lines": [
+              25,
+              48
+            ]
+          },
+          {
+            "file": "src/model_common.py",
+            "lines": [
+              109,
+              114
+            ]
+          },
+          {
+            "file": "src/train_final.py",
+            "lines": [
+              20,
+              21
+            ]
+          }
+        ],
+        "model_inputs": "87 original features; 467221 deduplicated full-fit labels; L_unit category maps learned on this fit only",
+        "target": "y_TWD / (effective_area * 1e4); weight effective_area / 100",
+        "target_evidence": {
+          "file": "src/train_final.py",
+          "lines": [
+            45,
+            57
+          ]
+        }
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/train_final.py",
+        "src/train_catboost.py",
+        "src/train_lightgbm.py"
+      ],
+      "historical_dependencies": [
+        "models/final_config.json or byte-identical runs/v1/models/final_config.json",
+        "reports/feature_schema.json",
+        "data_cache/{train,valid,test}.pkl and {train,valid,test}_features.pkl with matching source metadata"
+      ],
+      "readiness": "source recipe recoverable locally; tracked HEAD lacks original final training driver and config; clean full retraining not executed",
+      "notes": [
+        "This L_unit is models/final/lightgbm_l1_unit63/model.txt, not round2_lightgbm.py final_spatial63."
+      ],
+      "untracked_builder_source_files": [
+        "src/train_final.py"
+      ]
+    },
+    {
+      "name": "C_log",
+      "checkpoint": {
+        "file": "outputs/round46/trial/model/model.cbm",
+        "recorded_sha256": "c333d9afc970a30f53f14ad06cfba842f857a4f241ae59595cdd5a3cefa7f56f",
+        "recorded_bytes": 539304804,
+        "local_file_exists": true,
+        "local_stat_bytes": 539304804,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/round46_trial_release.py",
+        "lines": [
+          146,
+          225
+        ]
+      },
+      "training_command": {
+        "record": {
+          "automatic_retry": false,
+          "command": [
+            "src/round46_trial_release.py",
+            "--run"
+          ],
+          "completed_at_utc": "2026-09-26T02:27:41.672353+00:00",
+          "elapsed_seconds": 171.96900000004098,
+          "exit_code": 0,
+          "failure": null,
+          "log_path": "outputs/round46/trial/execution.log",
+          "log_sha256": "ea98dc1b3084ce3d71dc7f6e696ec34a227408da24c909ff5e9282f755c3b38b",
+          "round": 46,
+          "source_sha256": "2089bdc626f55cba43c8863038ccd6087ad9d5b24085ac948b4a465ba12bdd19",
+          "started_at_utc": "2026-09-26T02:24:49.714224+00:00"
+        },
+        "evidence_type": "historical execution.json argv and exit_code=0; receipt not re-executed",
+        "evidence": {
+          "file": "outputs/round46/trial/execution.json",
+          "json_key": "command"
+        }
+      },
+      "config": {
+        "actual_parameters": {
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "bootstrap_type": "Bernoulli",
+          "border_count": 128,
+          "depth": 8,
+          "devices": "0",
+          "eval_metric": "MAE",
+          "gpu_ram_part": 0.75,
+          "iterations": 2999,
+          "l2_leaf_reg": 6.0,
+          "learning_rate": 0.065,
+          "loss_function": "MAE",
+          "max_ctr_complexity": 2,
+          "one_hot_max_size": 8,
+          "random_seed": 42,
+          "random_strength": 0.5,
+          "subsample": 0.85,
+          "task_type": "GPU",
+          "thread_count": 4,
+          "verbose": 300
+        },
+        "evidence": {
+          "file": "outputs/round46/trial/model/metadata.json",
+          "json_key": "parameters"
+        }
+      },
+      "native_fit_rows": 467221,
+      "fit_rows_evidence": {
+        "file": "outputs/round46/trial/model/fit_metadata.json",
+        "json_key": "fit_rows"
+      },
+      "input_generation": {
+        "source_evidence": [
+          {
+            "file": "src/round46_trial_release.py",
+            "lines": [
+              153,
+              181
+            ]
+          },
+          {
+            "file": "src/round46_trial_release.py",
+            "lines": [
+              208,
+              213
+            ]
+          },
+          {
+            "file": "src/round46_trial_release.py",
+            "lines": [
+              125,
+              143
+            ]
+          }
+        ],
+        "model_inputs": "87 features + original R6 geo8 =95; 23 categories; canonical full-fit labels; fixed half-life365 date weights from valid fit dates, eight invalid date rows neutral1",
+        "target": "log1p(y_TWD / 1e6); fitted MAE; inverse expm1 to TWD"
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/round6_prepare_geo.py",
+        "src/round6_geo.py",
+        "src/geo_address_audit.py",
+        "src/round46_trial_release.py",
+        "src/round46_recency_log.py",
+        "src/round46_experiment.py",
+        "src/round12_log_geo.py"
+      ],
+      "historical_dependencies": [
+        "outputs/round6/geography/final/{full,test}.pkl and source-cache index arrays",
+        "runs/v1/models/final_config.json",
+        "outputs/round46/final_date_support.json",
+        "Historical release plans, models metadata, saved branch vectors and CSV controls captured before native fit; src/round46_trial_release.py:146-199",
+        "outputs/round39/trial/artifacts/spatial_state.pkl",
+        "outputs/round2/neighborhood/final_reference.pkl"
+      ],
+      "readiness": "Native recipe source present in tracked HEAD; original full release launcher is not a raw-data-only trainer, and still requires historical saved branch/state/release inputs.",
+      "untracked_builder_source_files": []
+    },
+    {
+      "name": "C_unit",
+      "checkpoint": {
+        "file": "outputs/round79/final_model/model/model.cbm",
+        "recorded_sha256": "1f40fe8b40ff0083dd4128e94659ecf0f77e632ff257e540fa645722f7e013db",
+        "recorded_bytes": 43984780,
+        "local_file_exists": true,
+        "local_stat_bytes": 43984780,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/round79_final_unit.py",
+        "lines": [
+          34,
+          226
+        ]
+      },
+      "training_command": {
+        "record": {
+          "automatic_retry": false,
+          "command": [
+            "src\\round79_final_unit.py",
+            "--run",
+            "--plan-sha",
+            "cd3dd3b71fc24e405c8ade92ee89bc928e8ad76a6feca258c79e66e65455ae2d"
+          ],
+          "completed_at_utc": "2026-09-26T16:53:30.566867+00:00",
+          "decision_sha256": "12c5c188057ef36704f6e0553d1c9cfbd7d3d345dbbcac083275aa8fe9405ef5",
+          "elapsed_seconds": 191.93799999996554,
+          "exit_code": 0,
+          "failure": null,
+          "log_path": "outputs/round79/final_model/run.log",
+          "log_sha256": "0fbcafee55f58bdc00b99c52fc89525f0856eb8e28b04a2712ce7c42771fd77f",
+          "source_sha256": "9c05b4b2552e889ed2bc5fc269b181946b6992e87aad931ece64fa187527fea9",
+          "started_at_utc": "2026-09-26T16:50:18.623751+00:00",
+          "text_plan_sha256": "cd3dd3b71fc24e405c8ade92ee89bc928e8ad76a6feca258c79e66e65455ae2d"
+        },
+        "evidence_type": "historical execution.json argv and exit_code=0; receipt not re-executed",
+        "evidence": {
+          "file": "outputs/round79/final_model/execution.json",
+          "json_key": "command"
+        }
+      },
+      "config": {
+        "actual_parameters": {
+          "allow_writing_files": false,
+          "boosting_type": "Plain",
+          "bootstrap_type": "Bernoulli",
+          "border_count": 128,
+          "depth": 8,
+          "devices": "0",
+          "eval_metric": "MAE",
+          "gpu_ram_part": 0.75,
+          "iterations": 2999,
+          "l2_leaf_reg": 6.0,
+          "learning_rate": 0.065,
+          "loss_function": "MAE",
+          "max_ctr_complexity": 2,
+          "one_hot_max_size": 8,
+          "random_seed": 42,
+          "random_strength": 0.5,
+          "subsample": 0.85,
+          "task_type": "GPU",
+          "thread_count": 4,
+          "verbose": 300
+        },
+        "evidence": {
+          "file": "outputs/round79/final_model/model/metadata.json",
+          "json_key": "parameters"
+        }
+      },
+      "native_fit_rows": 467221,
+      "fit_rows_evidence": {
+        "file": "outputs/round79/final_model/model/metadata.json",
+        "json_key": "fit_rows"
+      },
+      "input_generation": {
+        "source_evidence": [
+          {
+            "file": "src/round79_final_unit.py",
+            "lines": [
+              149,
+              169
+            ]
+          },
+          {
+            "file": "src/round79_final_unit.py",
+            "lines": [
+              176,
+              196
+            ]
+          },
+          {
+            "file": "src/round79_final_unit.py",
+            "lines": [
+              204,
+              209
+            ]
+          },
+          {
+            "file": "src/round19_unit_geo.py",
+            "lines": [
+              19,
+              24
+            ]
+          }
+        ],
+        "model_inputs": "95 original+geo features; original R63 saved train_sample_weight float32 converted to float64; multiply by effective_area/100",
+        "target": "y_TWD / (effective_area * 1e4); prediction max(z*effective_area*1e4,0)"
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/round6_prepare_geo.py",
+        "src/round6_geo.py",
+        "src/geo_address_audit.py",
+        "src/round79_final_unit.py",
+        "src/round79_experiment.py",
+        "src/round79_recency_unit.py",
+        "src/round19_unit_geo.py",
+        "src/round48_final_branch.py",
+        "src/round47_nn_encode.py",
+        "src/round53_final.py",
+        "src/round52_nn_experiment.py",
+        "src/round52_price_prior.py",
+        "src/round60_final.py",
+        "src/round60_nn_experiment.py",
+        "src/round60_recency_price_prior.py",
+        "src/round63_final.py",
+        "src/round63_nn_experiment.py",
+        "src/round63_recency_weighted_prior_train.py",
+        "src/round107_weighted_smooth_train.py",
+        "src/round107_full_release.py",
+        "src/round107_final_candidate.py"
+      ],
+      "historical_dependencies": [
+        "outputs/round63/final/prepared.npz for date weights and F32 train target identity, not only features",
+        "outputs/round63/final/preparation.json and original training metadata",
+        "outputs/round6/geography/final/{full,test}.pkl and source-cache index arrays",
+        "Original R19 feature_state; R79 fixed plan/decision/source/protected evidence"
+      ],
+      "readiness": "Original native driver exists locally/physically in repo worktree but is not tracked at HEAD; round79_final.py is composition and cannot replace round79_final_unit.py.",
+      "untracked_builder_source_files": [
+        "src/round79_final_unit.py",
+        "src/round79_experiment.py",
+        "src/round53_final.py",
+        "src/round52_nn_experiment.py",
+        "src/round60_final.py",
+        "src/round60_nn_experiment.py",
+        "src/round63_final.py",
+        "src/round63_nn_experiment.py"
+      ]
+    },
+    {
+      "name": "N_area",
+      "checkpoint": {
+        "file": "outputs/round55/final/model/model.pt",
+        "recorded_sha256": "2650cde4b10fb8d0ce72ef1307e41e1d3d40308240f2c0f8c54680d7a07e6bb3",
+        "recorded_bytes": 6908702,
+        "local_file_exists": true,
+        "local_stat_bytes": 6908702,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/round55_final.py",
+        "lines": [
+          83,
+          156
+        ]
+      },
+      "training_command": {
+        "record": {
+          "automatic_retry": false,
+          "command": [
+            "C:\\NYCU_ML\\.venv_torch\\Scripts\\python.exe",
+            "-u",
+            "-B",
+            "-X",
+            "utf8",
+            "C:\\NYCU_ML\\src\\round48_nn_train.py",
+            "--data",
+            "C:\\NYCU_ML\\outputs\\round55\\final\\prepared.npz",
+            "--out",
+            "C:\\NYCU_ML\\outputs\\round55\\final\\model"
+          ],
+          "elapsed_seconds": 38.34400000004098,
+          "exit_code": 0
+        },
+        "evidence_type": "historical child trainer execution.json full argv and exit_code=0; receipt not re-executed",
+        "evidence": {
+          "file": "outputs/round55/final/model/execution.json",
+          "json_key": "command"
+        }
+      },
+      "config": {
+        "configuration": {
+          "seed": 42,
+          "epochs": 30,
+          "batch_size": 2048,
+          "hidden": [
+            512,
+            256,
+            128
+          ],
+          "dropout": 0.1,
+          "category_dropout": 0.1,
+          "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+          "optimizer": "AdamW",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "scheduler": "CosineAnnealingLR",
+          "minimum_learning_rate": 1e-05,
+          "loss": "MAE in million TWD",
+          "positive_output": "Softplus",
+          "epoch_selection": "fixed last epoch; no query labels or early stopping",
+          "float_precision": "float32; matmul precision high",
+          "thread_count": 4,
+          "prediction_head": "Softplus unit price; unit * area_factor yields million TWD",
+          "output_units": "1e4 TWD per square metre of effective area A",
+          "area_formula": "finite positive building_area else finite positive parking_area else 1",
+          "area_factor_formula": "A / 100",
+          "loss_formula": "abs(unit_output * train_area_factor - train_y_million).mean()",
+          "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_area_factor))",
+          "extra_sample_weights": false,
+          "price_or_unit_clipping": false
+        },
+        "evidence": {
+          "file": "outputs/round55/final/model/training.json",
+          "json_key": "configuration"
+        }
+      },
+      "native_fit_rows": 467221,
+      "query_rows": 47073,
+      "fit_rows_evidence": {
+        "file": "outputs/round55/final/model/training.json",
+        "json_key": "fit_rows"
+      },
+      "training_metadata": {
+        "status": "completed",
+        "source_sha256": "38fb91e01eabb2ed3163f1260e16c826ca55592951c22ce1107ad68c24b37082",
+        "architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+        "input_sha256": "55c218255fca255ea0d61632acdebcb899749c6d4354fe34e2dd3251d35ec1c5",
+        "numeric_count": 603,
+        "cardinalities": [
+          257,
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          3,
+          9,
+          7056,
+          9015,
+          76,
+          6129,
+          24,
+          266,
+          3372,
+          19,
+          1736,
+          4570,
+          619,
+          15,
+          927
+        ],
+        "saved_model_reload_exact": true
+      },
+      "input_generation": {
+        "chain": [
+          "src/round48_final_branch.py -> outputs/round48/final/prepared.npz + encoder_state.json",
+          "src/round55_final.py -> src/round54_nn_experiment.prepare -> outputs/round55/final/prepared.npz + numeric_state.json",
+          "src/round48_nn_train.py --data R55 prepared.npz --out R55 model"
+        ],
+        "source_evidence": [
+          {
+            "file": "src/round48_final_branch.py",
+            "lines": [
+              114,
+              130
+            ]
+          },
+          {
+            "file": "src/round54_nn_experiment.py",
+            "lines": [
+              14,
+              37
+            ]
+          },
+          {
+            "file": "src/round55_final.py",
+            "lines": [
+              127,
+              152
+            ]
+          },
+          {
+            "file": "src/round54_nn_experiment.py",
+            "lines": [
+              43,
+              57
+            ]
+          }
+        ],
+        "model_inputs": "Original 95 features encoded fit-only into144 numeric and23 category arrays; 17-quantile fit-only ramp state expands numeric144 to603 (459 ramps); target y/1e6 float32; area factors A/100 float32",
+        "required_npz_keys": [
+          "train_num",
+          "query_num",
+          "train_cat",
+          "query_cat",
+          "cardinalities",
+          "train_y_million",
+          "train_area_factor",
+          "query_area_factor"
+        ]
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/round6_prepare_geo.py",
+        "src/round6_geo.py",
+        "src/geo_address_audit.py",
+        "src/round48_final_branch.py",
+        "src/round48_nn_experiment.py",
+        "src/round47_nn_encode.py",
+        "src/round54_nn_experiment.py",
+        "src/round54_numeric_encode.py",
+        "src/round55_final.py",
+        "src/round48_nn_train.py",
+        "src/round47_nn_train.py"
+      ],
+      "historical_dependencies": [
+        "outputs/round48/final/prepared.npz and encoder_state.json",
+        "outputs/round48/final/model/training.json baseline config",
+        "outputs/round53/final model/prepared metadata and historical release controls required by original R55 driver",
+        "Saved historical branch vectors, CSVs, R2 reference, R39 spatial state for mandatory original replay before preparation"
+      ],
+      "readiness": "Trainer and pure numeric encoder present in tracked HEAD; original R55 final driver and R54 prepare driver are not tracked. They exist locally/physically. Native trainer alone consumes private prepared arrays; it does not rebuild raw Excel input.",
+      "untracked_builder_source_files": [
+        "src/round54_nn_experiment.py",
+        "src/round55_final.py"
+      ]
+    },
+    {
+      "name": "N_prior",
+      "version": "v25 R107 weighted SmoothL1",
+      "checkpoint": {
+        "file": "outputs/round107/final/model/model.pt",
+        "recorded_sha256": "dfedbc2c82c8a2c2a763c59c9849da93e511f046754c335d4b00d5907577ff2a",
+        "recorded_bytes": 5969182,
+        "local_file_exists": true,
+        "local_stat_bytes": 5969182,
+        "hash_evidence_file": "outputs/research_restart_20261013/portable_inference/source/artifacts/manifest.json",
+        "payload_opened_or_rehashed_in_this_audit": false
+      },
+      "original_entry": {
+        "file": "src/round107_full_release.py",
+        "lines": [
+          90,
+          117
+        ]
+      },
+      "training_command": {
+        "argv": [
+          "C:/NYCU_ML/.venv_torch/Scripts/python.exe",
+          "-u",
+          "-B",
+          "-X",
+          "utf8",
+          "C:/NYCU_ML/src/round107_weighted_smooth_train.py",
+          "--data",
+          "C:/NYCU_ML/outputs/round63/final/prepared.npz",
+          "--out",
+          "C:/NYCU_ML/outputs/round107/final/model"
+        ],
+        "evidence_type": "argv reconstructed from source and bound prepared path; historical fit_execution has exit_code0 but does not itself store argv",
+        "execution_record": {
+          "automatic_retry": false,
+          "elapsed_seconds": 80.23400000001129,
+          "exit_code": 0,
+          "failure": null
+        },
+        "evidence": [
+          {
+            "file": "src/round107_full_release.py",
+            "lines": [
+              109,
+              117
+            ]
+          },
+          {
+            "file": "outputs/round107/final/fit_execution.json",
+            "json_key": "exit_code"
+          }
+        ]
+      },
+      "config": {
+        "configuration": {
+          "seed": 42,
+          "epochs": 30,
+          "batch_size": 2048,
+          "hidden": [
+            512,
+            256,
+            128
+          ],
+          "dropout": 0.1,
+          "category_dropout": 0.1,
+          "embedding_dimension": "min(32,max(4,ceil(sqrt(cardinality))))",
+          "optimizer": "AdamW",
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "scheduler": "CosineAnnealingLR",
+          "minimum_learning_rate": 1e-05,
+          "loss": "fit-recency weighted SmoothL1 in million TWD",
+          "positive_output": "Softplus",
+          "epoch_selection": "fixed last epoch; no query labels or early stopping",
+          "float_precision": "float32; matmul precision high",
+          "thread_count": 4,
+          "prediction_head": "Softplus dimensionless ratio; ratio * price_factor_million yields million TWD",
+          "output_units": "dimensionless positive price ratio",
+          "price_factor_formula": "effective_area_A * group_prior_TWD_per_m2 / 1e6",
+          "price_factor_uses_fit_labels": true,
+          "train_price_factor_construction": "group-fold OOF fit-label prior supplied by driver",
+          "query_price_factor_construction": "full-fit label prior supplied by driver; no query labels",
+          "loss_formula": "mean(train_sample_weight * smooth_l1_loss(ratio_output * train_price_factor_million, train_y_million, beta=0.1, reduction='none'))",
+          "initial_bias": "inverseSoftplus(median_fit(train_y_million / train_price_factor_million))",
+          "extra_sample_weights": true,
+          "price_or_ratio_clipping": false,
+          "sample_weight_normalization": "driver-supplied fit-global normalization; no batch renormalization",
+          "smooth_l1_beta_million": 0.1,
+          "loss_units": "million TWD"
+        },
+        "evidence": {
+          "file": "outputs/round107/final/model/training.json",
+          "json_key": "configuration"
+        }
+      },
+      "native_fit_rows": 467221,
+      "query_rows": 47073,
+      "fit_rows_evidence": {
+        "file": "outputs/round107/final/model/training.json",
+        "json_key": "fit_rows"
+      },
+      "training_metadata": {
+        "status": "completed",
+        "source_sha256": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+        "architecture_source_sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+        "input_sha256": "c5c86dcb5138f203a53647b5034019089ac8b8d09ffd91cd21408726f1726eef",
+        "numeric_count": 144,
+        "cardinalities": [
+          257,
+          4,
+          7,
+          9,
+          10,
+          11,
+          13,
+          14,
+          3,
+          9,
+          7056,
+          9015,
+          76,
+          6129,
+          24,
+          266,
+          3372,
+          19,
+          1736,
+          4570,
+          619,
+          15,
+          927
+        ],
+        "saved_model_reload_exact": true,
+        "price_factor_provenance_verified_in_trainer": false,
+        "sample_weight_provenance_verified_in_trainer": false
+      },
+      "input_generation": {
+        "chain": [
+          "R48 original fit-only encoder and eight arrays -> R53 group-fold OOF prior eight arrays",
+          "R60 rebuild recency-weighted group-fold OOF fit prior and full-fit query prior; reuse original six encoding/target arrays",
+          "R63 append fit-global normalized date weights float32, keep original eight R60 arrays unchanged",
+          "R107 consume exact original nine R63 arrays; one fixed30epoch weighted SmoothL1 NN fit"
+        ],
+        "source_evidence": [
+          {
+            "file": "src/round53_final.py",
+            "lines": [
+              112,
+              128
+            ]
+          },
+          {
+            "file": "src/round52_nn_experiment.py",
+            "lines": [
+              76,
+              109
+            ]
+          },
+          {
+            "file": "src/round60_nn_experiment.py",
+            "lines": [
+              16,
+              55
+            ]
+          },
+          {
+            "file": "src/round60_final.py",
+            "lines": [
+              78,
+              113
+            ]
+          },
+          {
+            "file": "src/round63_final.py",
+            "lines": [
+              18,
+              51
+            ]
+          },
+          {
+            "file": "src/round107_full_release.py",
+            "lines": [
+              93,
+              108
+            ]
+          }
+        ],
+        "model_inputs": "numeric144, categories23, F32 target y/1e6; train_price_factor=A*OOF_prior/1e6, query_price_factor=A*full_fit_prior/1e6; group-heldfold fivefold OOF is not chronological OOF; date weights saved F32; no query labels",
+        "required_npz_keys": [
+          "cardinalities",
+          "query_cat",
+          "query_num",
+          "query_price_factor_million",
+          "train_cat",
+          "train_num",
+          "train_price_factor_million",
+          "train_sample_weight",
+          "train_y_million"
+        ]
+      },
+      "builder_sources": [
+        "src/prepare_data.py",
+        "src/prepare_features.py",
+        "src/house_features.py",
+        "src/model_common.py",
+        "src/round6_prepare_geo.py",
+        "src/round6_geo.py",
+        "src/geo_address_audit.py",
+        "src/round48_final_branch.py",
+        "src/round47_nn_encode.py",
+        "src/round53_final.py",
+        "src/round52_nn_experiment.py",
+        "src/round52_price_prior.py",
+        "src/round60_final.py",
+        "src/round60_nn_experiment.py",
+        "src/round60_recency_price_prior.py",
+        "src/round63_final.py",
+        "src/round63_nn_experiment.py",
+        "src/round63_recency_weighted_prior_train.py",
+        "src/round107_weighted_smooth_train.py",
+        "src/round107_full_release.py",
+        "src/round107_final_candidate.py"
+      ],
+      "historical_dependencies": [
+        "outputs/round63/final/prepared.npz contains labels, OOF price factors, query factors and date weights; not an answer-free query vector",
+        "outputs/round48/final/prepared.npz and encoder_state.json",
+        "outputs/round53/final/{prepared.npz,prior_fold_ids.npy,prior_preparation.json}",
+        "outputs/round60/final/{prepared.npz,price_prior_state.json,prior_preparation.json}",
+        "Original final source closure and eleven v22 replay checks mandated by round107_final_candidate.load_context",
+        "Saved branch controls/reference/spatial price state and historical release/source records"
+      ],
+      "readiness": "R107 trainer/release are tracked, but original R53/R60/R63 array-generation drivers are untracked. Source helpers exist; complete raw-to-nine-array build is not currently a standalone clean training entry.",
+      "untracked_builder_source_files": [
+        "src/round53_final.py",
+        "src/round52_nn_experiment.py",
+        "src/round60_final.py",
+        "src/round60_nn_experiment.py",
+        "src/round63_final.py",
+        "src/round63_nn_experiment.py"
+      ]
+    }
+  ],
+  "dynamic_builder_source_list": [
+    "src/geo_address_audit.py",
+    "src/house_features.py",
+    "src/model_common.py",
+    "src/prepare_data.py",
+    "src/prepare_features.py",
+    "src/round107_final_candidate.py",
+    "src/round107_full_release.py",
+    "src/round107_weighted_smooth_train.py",
+    "src/round46_trial_release.py",
+    "src/round47_nn_encode.py",
+    "src/round47_nn_train.py",
+    "src/round48_final_branch.py",
+    "src/round48_nn_experiment.py",
+    "src/round48_nn_train.py",
+    "src/round52_nn_experiment.py",
+    "src/round52_price_prior.py",
+    "src/round53_final.py",
+    "src/round54_nn_experiment.py",
+    "src/round54_numeric_encode.py",
+    "src/round55_final.py",
+    "src/round60_final.py",
+    "src/round60_nn_experiment.py",
+    "src/round60_recency_price_prior.py",
+    "src/round63_final.py",
+    "src/round63_nn_experiment.py",
+    "src/round63_recency_weighted_prior_train.py",
+    "src/round6_geo.py",
+    "src/round6_prepare_geo.py",
+    "src/round79_experiment.py",
+    "src/round79_final_unit.py",
+    "src/train_final.py"
+  ],
+  "static_local_import_closure": [
+    {
+      "file": "src/geo_address_audit.py",
+      "sha256": "e0672ff80e0a9558f4a09051a5f02edfa120d841cf8d91c8d89467e80a985bf9",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/geo_address_audit.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/house_features.py",
+      "sha256": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/house_features.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/model_common.py",
+      "sha256": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/model_common.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/prepare_data.py",
+      "sha256": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/prepare_data.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/prepare_features.py",
+      "sha256": "878bb2afaf8d4c8559280904b2f12a9ccccb017241edff1f572b4ef1aec5394b",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/prepare_features.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round100_contract.py",
+      "sha256": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round100_contract.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round100_temporal_prior_evaluate_v2.py",
+      "sha256": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round100_temporal_prior_evaluate_v2.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round104_composition.py",
+      "sha256": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round104_composition.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round107_108_research.py",
+      "sha256": "acf6249f19c54cf5175269688a8fe57d376ae5af50b34be2b57a24c5e14103ea",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round107_108_research.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round107_final_candidate.py",
+      "sha256": "8252533fc4f6fea412d9ad95e20f9cef4384b00232db528d2a1591b157afd085",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round107_final_candidate.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round107_full_release.py",
+      "sha256": "594dd283282bde33058d7e2e72f856bcba26d6157d2ea02469d785fb2ed18fb6",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round107_full_release.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round107_weighted_smooth_train.py",
+      "sha256": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round107_weighted_smooth_train.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round108_single_ctr_unit.py",
+      "sha256": "0e46eae335d13e904b65a23eb120cd24f48bf5234b55b8c9c086c0a17820e6e8",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round108_single_ctr_unit.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round12_experiment.py",
+      "sha256": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round12_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round12_log_geo.py",
+      "sha256": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round12_log_geo.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round19_unit_geo.py",
+      "sha256": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round19_unit_geo.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round2_neighborhood.py",
+      "sha256": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round2_neighborhood.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round33_reproduction.py",
+      "sha256": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round33_reproduction.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round34_trial_release.py",
+      "sha256": "ba6a7aa57409c2e22abeec2465d0dc4ff2eca86480bf106fc36f9c1e639d89e3",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round34_trial_release.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round35_reproduction.py",
+      "sha256": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round35_reproduction.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round36_combination.py",
+      "sha256": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round36_combination.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round38_fixed_average.py",
+      "sha256": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round38_fixed_average.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round39_city_road_experiment.py",
+      "sha256": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round39_city_road_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round3_backtest.py",
+      "sha256": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round3_backtest.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round3_evaluate.py",
+      "sha256": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round3_evaluate.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round3_features.py",
+      "sha256": "b4a904b59f5e4a4f44c5cd6d7a36ffc9b94f340f8483db56ee56c93c082d95cd",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round3_features.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round3_reference.py",
+      "sha256": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round3_reference.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round40_three_branch.py",
+      "sha256": "2642c47c977736eba13d9a1dcf2c8ba1b422d35e69f4b6853dc500ee0f258f80",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round40_three_branch.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round46_experiment.py",
+      "sha256": "e56c758f55b8dc27c4b5fae613c7ca0b169de3645c09b8244c613123a0ea4405",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round46_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round46_recency_log.py",
+      "sha256": "48364428cdf6281205666470c8f61662fdb8aa65a18fc5a67d189d60cf7a8fa8",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round46_recency_log.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round46_trial_release.py",
+      "sha256": "2089bdc626f55cba43c8863038ccd6087ad9d5b24085ac948b4a465ba12bdd19",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round46_trial_release.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round47_nn_encode.py",
+      "sha256": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round47_nn_encode.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round47_nn_train.py",
+      "sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round47_nn_train.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round48_final_branch.py",
+      "sha256": "9775586eeadf382c6bc254a50cd3fbadd8f1d0e6e882cee4abf301efd7a61442",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round48_final_branch.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round48_nn_experiment.py",
+      "sha256": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round48_nn_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round48_nn_train.py",
+      "sha256": "38fb91e01eabb2ed3163f1260e16c826ca55592951c22ce1107ad68c24b37082",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round48_nn_train.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round52_nn_experiment.py",
+      "sha256": "bc614b5b5a916e873a3015e9bfdd35e6704b1a890bd2d384f882d391541fb910",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round52_nn_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round52_price_prior.py",
+      "sha256": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round52_price_prior.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round53_final.py",
+      "sha256": "7fc632027107c953edfdf5f1c6a50af7d5e66d6160d383014ee360d7253486b2",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round53_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round54_nn_experiment.py",
+      "sha256": "57ebd44c8f27875476fd7b7122970be2c670b319d5b79690bf480d638d074918",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round54_nn_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round54_numeric_encode.py",
+      "sha256": "fe73f4154bcd0811b7cdad09c58e1dfd7cba5350446193e90f70bd8a7ef0206e",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round54_numeric_encode.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round55_final.py",
+      "sha256": "8f60cf3d5a5a994c09430a2856ed80c206299b56d9429722b12bc647d718b850",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round55_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round60_final.py",
+      "sha256": "5a57a4c9b0996384bd4383809dfcd91e3782b14331b5f7f3e807f379b12f133d",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round60_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round60_nn_experiment.py",
+      "sha256": "4f470c273052a953da944496b23a69fe248365199fbacd1104b78a66783aec3b",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round60_nn_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round60_recency_price_prior.py",
+      "sha256": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round60_recency_price_prior.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round63_final.py",
+      "sha256": "f5f5345641c7e6c769e1137d8c52cf9b8e4c0f4534e034eef757904d3e29ac3a",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round63_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round63_nn_experiment.py",
+      "sha256": "70d946c76df35761f55658f7b1ad0f04109ece2cf5901978bae6f0ce97ea513e",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round63_nn_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round63_recency_weighted_prior_train.py",
+      "sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round63_recency_weighted_prior_train.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round6_common.py",
+      "sha256": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round6_common.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round6_evaluate.py",
+      "sha256": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round6_evaluate.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round6_geo.py",
+      "sha256": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round6_geo.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round6_prepare_geo.py",
+      "sha256": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round6_prepare_geo.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round76_77_final.py",
+      "sha256": "ed54e7d0779c2156414510704e8ffc90cf1b42f65819d3b6cd5c3f08c143f26b",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round76_77_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round79_experiment.py",
+      "sha256": "33e59572785a4500288246b09a2a5aed038d83482f7ac79ac2050846cf530db6",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round79_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round79_final.py",
+      "sha256": "c6ad4103c7e75ff1954954b234a671e842a4918618d5ceaadc6ecb4881b97684",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round79_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round79_final_unit.py",
+      "sha256": "9c05b4b2552e889ed2bc5fc269b181946b6992e87aad931ece64fa187527fea9",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round79_final_unit.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/round79_recency_unit.py",
+      "sha256": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round79_recency_unit.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round8_experiment.py",
+      "sha256": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round8_experiment.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/round8_spatial_reference.py",
+      "sha256": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/round8_spatial_reference.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/train_catboost.py",
+      "sha256": "852719f41cb739814ea6e7fc4b97d21be1a231d439d1c9aadebd343898ea590f",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/train_catboost.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/train_final.py",
+      "sha256": "8d6b07f23310a895bf18718586e9ba13833e8bf8063ff92f9c226139fdef957a",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/train_final.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": false
+    },
+    {
+      "file": "src/train_lightgbm.py",
+      "sha256": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/train_lightgbm.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    },
+    {
+      "file": "src/v3_cluster_stability.py",
+      "sha256": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9",
+      "local_original_exists": true,
+      "repo_worktree_path": "research/src/v3_cluster_stability.py",
+      "repo_worktree_exists": true,
+      "repo_tracked_at_HEAD": true
+    }
+  ],
+  "static_closure_limit": "AST local imports only; does not prove dynamic subprocess/file manifest paths or historical source/metadata/protected chains are complete. Explicit dynamic builders above are source-identified, not executed.",
+  "missing_tracked_source_files": [
+    "src/round40_three_branch.py",
+    "src/round52_nn_experiment.py",
+    "src/round53_final.py",
+    "src/round54_nn_experiment.py",
+    "src/round55_final.py",
+    "src/round60_final.py",
+    "src/round60_nn_experiment.py",
+    "src/round63_final.py",
+    "src/round63_nn_experiment.py",
+    "src/round79_experiment.py",
+    "src/round79_final_unit.py",
+    "src/train_final.py"
+  ],
+  "config_metadata_copy_candidates": [
+    "models/final_config.json",
+    "runs/v1/models/final_config.json",
+    "reports/final_training.json",
+    "reports/feature_schema.json",
+    "outputs/round46/trial/execution.json",
+    "outputs/round46/trial/model/fit_metadata.json",
+    "outputs/round46/trial/model/metadata.json",
+    "outputs/round79/final_model/execution.json",
+    "outputs/round79/final_model/model/metadata.json",
+    "outputs/round55/final/preparation.json",
+    "outputs/round55/final/model/execution.json",
+    "outputs/round55/final/model/training.json",
+    "outputs/round63/final/preparation.json",
+    "outputs/round107/final/request.json",
+    "outputs/round107/final/fit_execution.json",
+    "outputs/round107/final/model/training.json"
+  ],
+  "metadata_limit": "Historical configuration/row-count and checkpoint hash declarations were inspected; this audit does not establish their correctness by loading model/data payloads or recreate a clean environment."
+}

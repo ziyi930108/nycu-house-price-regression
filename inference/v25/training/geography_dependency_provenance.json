@@ -1,0 +1,79 @@
+{
+  "schema": "v25_optional_geography_dependency_provenance_v1",
+  "created_at_utc": "2026-10-12T18:12:28.136044+00:00",
+  "scope": "Optional legal raw-to-geography source builders; portable saved-checkpoint inference already has complete ML/NN dependency locks.",
+  "historical_audit": {
+    "path": "outputs/geography/road_index_2024_annual_v3/audit.json",
+    "sha256": "5924b8c5971290dc639d66f9d4226a4ed8670839b7235a77eb4687c28f3a7a0c",
+    "json_key": "versions",
+    "versions": {
+      "osmium": "4.3.1",
+      "shapely": "2.1.2",
+      "pyproj": "3.7.2",
+      "numpy": "2.3.5",
+      "pandas": "3.0.1"
+    },
+    "metadata_only": true
+  },
+  "local_distribution_metadata": [
+    {
+      "metadata_path": ".venv-geo/Lib/site-packages/shapely-2.1.2.dist-info/METADATA",
+      "metadata_sha256": "01dd9a347d1efa56099c3aa54c09f61ddd19e8c91eb222b9f16b6d6095b0e4a3",
+      "name": "shapely",
+      "version": "2.1.2",
+      "requires_python": ">=3.10",
+      "evidence_type": "local installed distribution metadata only; no package import"
+    },
+    {
+      "metadata_path": ".venv-geo/Lib/site-packages/pyproj-3.7.2.dist-info/METADATA",
+      "metadata_sha256": "0c228c95542cf99a0033d9b2fa8c51f6082a0c8c519ba2ba7b639857a0248f75",
+      "name": "pyproj",
+      "version": "3.7.2",
+      "requires_python": ">=3.11",
+      "evidence_type": "local installed distribution metadata only; no package import"
+    },
+    {
+      "metadata_path": ".venv-geo/Lib/site-packages/osmium-4.3.1.dist-info/METADATA",
+      "metadata_sha256": "b0f7fffd48b3f813fba8aa0f60beff922c0b43af47ae3041ca4e11ae953d108e",
+      "name": "osmium",
+      "version": "4.3.1",
+      "requires_python": ">=3.8",
+      "evidence_type": "local installed distribution metadata only; no package import"
+    }
+  ],
+  "openpyxl_pin_evidence": {
+    "path": "deliverables/v22_github/requirements-inference.txt",
+    "sha256": "f7e492622bc061c308c80cee9d9d1de1f4203488c23072286eaf09e3cc1914ec",
+    "line": 7,
+    "requirement": "openpyxl==3.1.5",
+    "not_a_claim_of_original_geo_environment_installation": true
+  },
+  "source_hard_version_guards": [
+    {
+      "path": "src/geo_osm_extract.py",
+      "line": 63,
+      "requirement": "osmium==4.3.1"
+    },
+    {
+      "path": "src/geo_parent_coverage_v2.py",
+      "line": 69,
+      "requirement": "osmium==4.3.1"
+    }
+  ],
+  "target_environment_recommendation": "Separate Windows x64 / CPython3.12 geography venv; install existing ML requirements first; do not mix with NN/CUDA venv.",
+  "new_execution": {
+    "package_installations": 0,
+    "geo_or_ML_imports": 0,
+    "private_payload_reads": 0,
+    "geography_rebuilds": 0,
+    "native_fits": 0,
+    "inference_or_scoring_calls": 0
+  },
+  "historical_installation_does_not_prove_fresh_geography_or_full_six_model_training": true,
+  "unresolved_inputs": [
+    "Legally sourced non-price geographic snapshot PBF and original extraction/index/matching audits",
+    "Course raw workbooks and private legal cache with original alignment metadata",
+    "Historical source identity, fixed path, protected-state and refusal-to-overwrite guards"
+  ],
+  "no_private_payload_in_bundle": true
+}

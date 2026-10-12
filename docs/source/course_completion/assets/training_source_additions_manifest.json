@@ -1,0 +1,503 @@
+{
+  "status": "copied_and_full_bytes_verified",
+  "repo_head_checked": "2fcf5cda93c1ff82d63c5b36d5aa2a87a70a57ce",
+  "input_inventory": {
+    "path": "outputs/research_restart_20261013/full_training_readiness/source_inventory_final.json",
+    "sha256": "364803d8254b19e3d2585a913e2ebc5cb98320d0567384acf57d5a0bd053ee00"
+  },
+  "files": [
+    {
+      "source": "src/geo_acquire_annual.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_acquire_annual.py",
+      "repo_destination": "research/src/geo_acquire_annual.py",
+      "sha256": "ee36fc58534396f977648a3334d3562185ffa5def56f6c70c68dd0213917693e",
+      "bytes": 9344,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_match_queries.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_match_queries.py",
+      "repo_destination": "research/src/geo_match_queries.py",
+      "sha256": "e07a6785204c01d65edcc8f7e115c1e23b03249316c7fcab3a24277809737dce",
+      "bytes": 5620,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_match_queries_v2.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_match_queries_v2.py",
+      "repo_destination": "research/src/geo_match_queries_v2.py",
+      "sha256": "ef24d984c057339ee02447c62a086f3b85571065f81a794109d0c177a04bc5d4",
+      "bytes": 28989,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_osm_extract.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_osm_extract.py",
+      "repo_destination": "research/src/geo_osm_extract.py",
+      "sha256": "dfa1b06dfd113ad1ca2b58a48209ec1b62838603192c327f7b0e0e9cd1668ba1",
+      "bytes": 21111,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_parent_coverage_v2.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_parent_coverage_v2.py",
+      "repo_destination": "research/src/geo_parent_coverage_v2.py",
+      "sha256": "0655a43833183ded0333e9328ae28ab4a5c4847ea2c647a421ac854fc6fc67d3",
+      "bytes": 13700,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_road_index.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_road_index.py",
+      "repo_destination": "research/src/geo_road_index.py",
+      "sha256": "25602d881dd550e3b7d5d06324a4898fbb3522c992ecd402cb4907ad3cc9533c",
+      "bytes": 9470,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_road_index_v2.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_road_index_v2.py",
+      "repo_destination": "research/src/geo_road_index_v2.py",
+      "sha256": "8e2443c710876ebad9e4866f6d91459838c8906982328b69ecfbc9287bb53112",
+      "bytes": 23901,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geo_road_index_v3.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geo_road_index_v3.py",
+      "repo_destination": "research/src/geo_road_index_v3.py",
+      "sha256": "6b032caf08a9284aca18867178e51fa02662c6b78b36ef1b9f537a09ea9855ff",
+      "bytes": 19537,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/geography_city_road_support.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/geography_city_road_support.py",
+      "repo_destination": "research/src/geography_city_road_support.py",
+      "sha256": "1ab904ffd435afd80e4abb33d16ff1e16a94d1d2124e23c630e3c07fac6e1a97",
+      "bytes": 17264,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round39_prepare_geo.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round39_prepare_geo.py",
+      "repo_destination": "research/src/round39_prepare_geo.py",
+      "sha256": "2ed6299dc4d7b32db3e123209b12572c6f9798dd15b8aab4b4f11fab352009b8",
+      "bytes": 21326,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round40_three_branch.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round40_three_branch.py",
+      "repo_destination": "research/src/round40_three_branch.py",
+      "sha256": "2642c47c977736eba13d9a1dcf2c8ba1b422d35e69f4b6853dc500ee0f258f80",
+      "bytes": 19069,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round52_nn_experiment.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round52_nn_experiment.py",
+      "repo_destination": "research/src/round52_nn_experiment.py",
+      "sha256": "bc614b5b5a916e873a3015e9bfdd35e6704b1a890bd2d384f882d391541fb910",
+      "bytes": 20344,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round53_final.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round53_final.py",
+      "repo_destination": "research/src/round53_final.py",
+      "sha256": "7fc632027107c953edfdf5f1c6a50af7d5e66d6160d383014ee360d7253486b2",
+      "bytes": 16454,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round54_nn_experiment.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round54_nn_experiment.py",
+      "repo_destination": "research/src/round54_nn_experiment.py",
+      "sha256": "57ebd44c8f27875476fd7b7122970be2c670b319d5b79690bf480d638d074918",
+      "bytes": 11625,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round55_final.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round55_final.py",
+      "repo_destination": "research/src/round55_final.py",
+      "sha256": "8f60cf3d5a5a994c09430a2856ed80c206299b56d9429722b12bc647d718b850",
+      "bytes": 18721,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round60_final.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round60_final.py",
+      "repo_destination": "research/src/round60_final.py",
+      "sha256": "5a57a4c9b0996384bd4383809dfcd91e3782b14331b5f7f3e807f379b12f133d",
+      "bytes": 12741,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round60_nn_experiment.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round60_nn_experiment.py",
+      "repo_destination": "research/src/round60_nn_experiment.py",
+      "sha256": "4f470c273052a953da944496b23a69fe248365199fbacd1104b78a66783aec3b",
+      "bytes": 15262,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round63_final.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round63_final.py",
+      "repo_destination": "research/src/round63_final.py",
+      "sha256": "f5f5345641c7e6c769e1137d8c52cf9b8e4c0f4534e034eef757904d3e29ac3a",
+      "bytes": 17580,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round63_nn_experiment.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round63_nn_experiment.py",
+      "repo_destination": "research/src/round63_nn_experiment.py",
+      "sha256": "70d946c76df35761f55658f7b1ad0f04109ece2cf5901978bae6f0ce97ea513e",
+      "bytes": 16932,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round79_experiment.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round79_experiment.py",
+      "repo_destination": "research/src/round79_experiment.py",
+      "sha256": "33e59572785a4500288246b09a2a5aed038d83482f7ac79ac2050846cf530db6",
+      "bytes": 27453,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/round79_final_unit.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/round79_final_unit.py",
+      "repo_destination": "research/src/round79_final_unit.py",
+      "sha256": "9c05b4b2552e889ed2bc5fc269b181946b6992e87aad931ece64fa187527fea9",
+      "bytes": 20888,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "src/train_final.py",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/src/train_final.py",
+      "repo_destination": "research/src/train_final.py",
+      "sha256": "8d6b07f23310a895bf18718586e9ba13833e8bf8063ff92f9c226139fdef957a",
+      "bytes": 3995,
+      "role": "original_training_or_builder_source"
+    },
+    {
+      "source": "runs/v1/models/final_config.json",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/config/original_v1_final_config.json",
+      "repo_destination": "research/config/original_v1_final_config.json",
+      "sha256": "2ca4258f363d1937df50aed72f5b11dc32b7e70d9dd5fb57fb6f375673a2a425",
+      "bytes": 8870,
+      "role": "original_nonrow_config_or_schema_snapshot"
+    },
+    {
+      "source": "reports/feature_schema.json",
+      "staged_source": "outputs/research_restart_20261013/full_training_readiness/source_additions/research/config/original_feature_schema.json",
+      "repo_destination": "research/config/original_feature_schema.json",
+      "sha256": "18d1a4c98c7645387480fee7bbac532ea44e6ca9487e5a11e535eb43419f80aa",
+      "bytes": 4910,
+      "role": "original_nonrow_config_or_schema_snapshot"
+    }
+  ],
+  "source_count": 22,
+  "config_schema_count": 2,
+  "full_static_source_closure": {
+    "geo_match_queries_v2.py": {
+      "path": "src/geo_match_queries_v2.py",
+      "sha256": "ef24d984c057339ee02447c62a086f3b85571065f81a794109d0c177a04bc5d4"
+    },
+    "geo_match_queries.py": {
+      "path": "src/geo_match_queries.py",
+      "sha256": "e07a6785204c01d65edcc8f7e115c1e23b03249316c7fcab3a24277809737dce"
+    },
+    "geo_parent_coverage_v2.py": {
+      "path": "src/geo_parent_coverage_v2.py",
+      "sha256": "0655a43833183ded0333e9328ae28ab4a5c4847ea2c647a421ac854fc6fc67d3"
+    },
+    "geo_road_index_v3.py": {
+      "path": "src/geo_road_index_v3.py",
+      "sha256": "6b032caf08a9284aca18867178e51fa02662c6b78b36ef1b9f537a09ea9855ff"
+    },
+    "geo_road_index_v2.py": {
+      "path": "src/geo_road_index_v2.py",
+      "sha256": "8e2443c710876ebad9e4866f6d91459838c8906982328b69ecfbc9287bb53112"
+    },
+    "geo_road_index.py": {
+      "path": "src/geo_road_index.py",
+      "sha256": "25602d881dd550e3b7d5d06324a4898fbb3522c992ecd402cb4907ad3cc9533c"
+    },
+    "geo_address_audit.py": {
+      "path": "src/geo_address_audit.py",
+      "sha256": "e0672ff80e0a9558f4a09051a5f02edfa120d841cf8d91c8d89467e80a985bf9"
+    },
+    "round3_features.py": {
+      "path": "src/round3_features.py",
+      "sha256": "b4a904b59f5e4a4f44c5cd6d7a36ffc9b94f340f8483db56ee56c93c082d95cd"
+    },
+    "house_features.py": {
+      "path": "src/house_features.py",
+      "sha256": "108e42d4429961a10a704f85bd66791599d904e6e96381c4c2f6dd4275316388"
+    },
+    "geo_osm_extract.py": {
+      "path": "src/geo_osm_extract.py",
+      "sha256": "dfa1b06dfd113ad1ca2b58a48209ec1b62838603192c327f7b0e0e9cd1668ba1"
+    },
+    "geo_acquire_annual.py": {
+      "path": "src/geo_acquire_annual.py",
+      "sha256": "ee36fc58534396f977648a3334d3562185ffa5def56f6c70c68dd0213917693e"
+    },
+    "round107_weighted_smooth_train.py": {
+      "path": "src/round107_weighted_smooth_train.py",
+      "sha256": "f2330726165b1a102c893211268734c89e981b751f45167b82ae1c940917b36e"
+    },
+    "round63_recency_weighted_prior_train.py": {
+      "path": "src/round63_recency_weighted_prior_train.py",
+      "sha256": "26ed590b94992dbcd7ca7e26db7c45462ad6eaabfcc91c5bcee36c97390e253a"
+    },
+    "round47_nn_train.py": {
+      "path": "src/round47_nn_train.py",
+      "sha256": "68175c331e3fe31bdc298a9b37035fcbf51b78424749454dfde4a29e9cd65bb7"
+    },
+    "round48_nn_train.py": {
+      "path": "src/round48_nn_train.py",
+      "sha256": "38fb91e01eabb2ed3163f1260e16c826ca55592951c22ce1107ad68c24b37082"
+    },
+    "round60_final.py": {
+      "path": "src/round60_final.py",
+      "sha256": "5a57a4c9b0996384bd4383809dfcd91e3782b14331b5f7f3e807f379b12f133d"
+    },
+    "round48_final_branch.py": {
+      "path": "src/round48_final_branch.py",
+      "sha256": "9775586eeadf382c6bc254a50cd3fbadd8f1d0e6e882cee4abf301efd7a61442"
+    },
+    "round48_nn_experiment.py": {
+      "path": "src/round48_nn_experiment.py",
+      "sha256": "9bedbda9ed7e47213aadeb9852deee4f3878a456f57620694ca750e9d2e7a9a0"
+    },
+    "round19_unit_geo.py": {
+      "path": "src/round19_unit_geo.py",
+      "sha256": "fac832e6c81871833a136d05759c7f0926fb749d2320a9c39b581e3986dc75cf"
+    },
+    "prepare_data.py": {
+      "path": "src/prepare_data.py",
+      "sha256": "1b2a2c4c947aebdeff5d268300fac6f2f56331a850ffcc6eb6149e7f255ebde6"
+    },
+    "round6_geo.py": {
+      "path": "src/round6_geo.py",
+      "sha256": "df1454829b919e2a10ac264dd4e3f597367187174607a6d32abb20f40ef060a0"
+    },
+    "round47_nn_encode.py": {
+      "path": "src/round47_nn_encode.py",
+      "sha256": "6bee3297f761d2cda0a0b9224aebc61e6748c9e56d8738d1fe344ea0abda4c47"
+    },
+    "round39_city_road_experiment.py": {
+      "path": "src/round39_city_road_experiment.py",
+      "sha256": "8c26637712304043ed49aca18f53099d5ec1249f71718458a17f1cbc35ace4fd"
+    },
+    "round38_fixed_average.py": {
+      "path": "src/round38_fixed_average.py",
+      "sha256": "6058e972f831be9c6ae756966a807374c527d92c353f01a982b8c86ec41608bf"
+    },
+    "round36_combination.py": {
+      "path": "src/round36_combination.py",
+      "sha256": "114ec27f122b8935fe21fcf2d9151c3a6350a127e50d40cb45a214a5cc278059"
+    },
+    "round35_reproduction.py": {
+      "path": "src/round35_reproduction.py",
+      "sha256": "495f4649da118011210dbc4769303f218b5bcd6be37367f2a049adf01604f421"
+    },
+    "round12_experiment.py": {
+      "path": "src/round12_experiment.py",
+      "sha256": "c47e35601c8a4ed4d442945a057e01012da84dc023a00879ea188f851532ff06"
+    },
+    "round3_evaluate.py": {
+      "path": "src/round3_evaluate.py",
+      "sha256": "e00b2b09d4f0ed8d6fbd547f00ebbb2d8096136a567a56eb85ddacc6ec1f4271"
+    },
+    "round3_reference.py": {
+      "path": "src/round3_reference.py",
+      "sha256": "4d78963763458e5fd2dab2847a45cd7f356c58dc2288081c1f4006cd8dba3631"
+    },
+    "round2_neighborhood.py": {
+      "path": "src/round2_neighborhood.py",
+      "sha256": "cae244c40e6616d6c72f3aff7c3423a50a5bfbfbf35df33a7d044186eb491ae9"
+    },
+    "model_common.py": {
+      "path": "src/model_common.py",
+      "sha256": "efbe4aafe5cf7c0a7c78b002fb8e89e30db148c226e28284551e0318f3e7947f"
+    },
+    "round3_backtest.py": {
+      "path": "src/round3_backtest.py",
+      "sha256": "9d43e18b938aef9c729c546ed438d7b06948439281d33940691271d13e977c47"
+    },
+    "train_lightgbm.py": {
+      "path": "src/train_lightgbm.py",
+      "sha256": "f889de86d3088bd17483245f2278c8da7c554640e518b155196a6db5f0dd8b6d"
+    },
+    "round6_prepare_geo.py": {
+      "path": "src/round6_prepare_geo.py",
+      "sha256": "b8be469fc1217af9487534e1fb2ed048704ba9008e966a382d2f7ea8108344f0"
+    },
+    "round6_common.py": {
+      "path": "src/round6_common.py",
+      "sha256": "ae3e6d7950514ff215e71fc8642af938b9496e41227b1cdbdc2bd2801cd90c0a"
+    },
+    "round12_log_geo.py": {
+      "path": "src/round12_log_geo.py",
+      "sha256": "e16fbe33928bd1a635e5de8bd717f223263847b718aef373fb933224b13d6c42"
+    },
+    "round6_evaluate.py": {
+      "path": "src/round6_evaluate.py",
+      "sha256": "836687b1213d92f23183df60d21e9281d2ae9c9b96aa3ead54134b406ed3ef26"
+    },
+    "round33_reproduction.py": {
+      "path": "src/round33_reproduction.py",
+      "sha256": "2cb34f2a1047b57b78c14e7069e6ef606b621ec282d730c461935e43692d37b2"
+    },
+    "round8_experiment.py": {
+      "path": "src/round8_experiment.py",
+      "sha256": "11d6b5f5b7a1d4f39b2607d8cc4257f311fe94afcddc89314cf28cf4b0d2bd41"
+    },
+    "round8_spatial_reference.py": {
+      "path": "src/round8_spatial_reference.py",
+      "sha256": "de86397255d654f363f3b746d579923fe689aa41d9dc16335d0922fea05e1c32"
+    },
+    "round46_trial_release.py": {
+      "path": "src/round46_trial_release.py",
+      "sha256": "2089bdc626f55cba43c8863038ccd6087ad9d5b24085ac948b4a465ba12bdd19"
+    },
+    "round34_trial_release.py": {
+      "path": "src/round34_trial_release.py",
+      "sha256": "ba6a7aa57409c2e22abeec2465d0dc4ff2eca86480bf106fc36f9c1e639d89e3"
+    },
+    "round46_experiment.py": {
+      "path": "src/round46_experiment.py",
+      "sha256": "e56c758f55b8dc27c4b5fae613c7ca0b169de3645c09b8244c613123a0ea4405"
+    },
+    "round46_recency_log.py": {
+      "path": "src/round46_recency_log.py",
+      "sha256": "48364428cdf6281205666470c8f61662fdb8aa65a18fc5a67d189d60cf7a8fa8"
+    },
+    "round60_nn_experiment.py": {
+      "path": "src/round60_nn_experiment.py",
+      "sha256": "4f470c273052a953da944496b23a69fe248365199fbacd1104b78a66783aec3b"
+    },
+    "round60_recency_price_prior.py": {
+      "path": "src/round60_recency_price_prior.py",
+      "sha256": "4a549939ee688060252c30eb171528fa04496456a0a34d527f6430c247f8004f"
+    },
+    "round52_price_prior.py": {
+      "path": "src/round52_price_prior.py",
+      "sha256": "3617c88689976aa27e0a6430c75bb005cbe0c283746d32eddbc1755417e0bb07"
+    },
+    "v3_cluster_stability.py": {
+      "path": "src/v3_cluster_stability.py",
+      "sha256": "46622f859660e40bd78fbbd612db53b5a9bd5069f55eb9e7b169e19cc134d1c9"
+    },
+    "round53_final.py": {
+      "path": "src/round53_final.py",
+      "sha256": "7fc632027107c953edfdf5f1c6a50af7d5e66d6160d383014ee360d7253486b2"
+    },
+    "round52_nn_experiment.py": {
+      "path": "src/round52_nn_experiment.py",
+      "sha256": "bc614b5b5a916e873a3015e9bfdd35e6704b1a890bd2d384f882d391541fb910"
+    },
+    "round54_numeric_encode.py": {
+      "path": "src/round54_numeric_encode.py",
+      "sha256": "fe73f4154bcd0811b7cdad09c58e1dfd7cba5350446193e90f70bd8a7ef0206e"
+    },
+    "round54_nn_experiment.py": {
+      "path": "src/round54_nn_experiment.py",
+      "sha256": "57ebd44c8f27875476fd7b7122970be2c670b319d5b79690bf480d638d074918"
+    },
+    "geography_city_road_support.py": {
+      "path": "src/geography_city_road_support.py",
+      "sha256": "1ab904ffd435afd80e4abb33d16ff1e16a94d1d2124e23c630e3c07fac6e1a97"
+    },
+    "round39_prepare_geo.py": {
+      "path": "src/round39_prepare_geo.py",
+      "sha256": "2ed6299dc4d7b32db3e123209b12572c6f9798dd15b8aab4b4f11fab352009b8"
+    },
+    "prepare_features.py": {
+      "path": "src/prepare_features.py",
+      "sha256": "878bb2afaf8d4c8559280904b2f12a9ccccb017241edff1f572b4ef1aec5394b"
+    },
+    "round107_full_release.py": {
+      "path": "src/round107_full_release.py",
+      "sha256": "594dd283282bde33058d7e2e72f856bcba26d6157d2ea02469d785fb2ed18fb6"
+    },
+    "round107_108_research.py": {
+      "path": "src/round107_108_research.py",
+      "sha256": "acf6249f19c54cf5175269688a8fe57d376ae5af50b34be2b57a24c5e14103ea"
+    },
+    "round108_single_ctr_unit.py": {
+      "path": "src/round108_single_ctr_unit.py",
+      "sha256": "0e46eae335d13e904b65a23eb120cd24f48bf5234b55b8c9c086c0a17820e6e8"
+    },
+    "round79_recency_unit.py": {
+      "path": "src/round79_recency_unit.py",
+      "sha256": "9a124322a139e5621c28d26a6e7ab95385c73507f017a2765d9eaaa0eef39cd2"
+    },
+    "round100_temporal_prior_evaluate_v2.py": {
+      "path": "src/round100_temporal_prior_evaluate_v2.py",
+      "sha256": "c12e69764470b9f47a33f1fc1dbae0063a31aff1bfe5568f487d48a08f8792bf"
+    },
+    "round100_contract.py": {
+      "path": "src/round100_contract.py",
+      "sha256": "f6483f2e1e92f8286ea7aed081080c287888b1b6c9f4a3a519964f63ffdd77f5"
+    },
+    "round104_composition.py": {
+      "path": "src/round104_composition.py",
+      "sha256": "6f9998e71fc3e22b69bac29acb0501ca1146e5e9263b2c7d6015d7b6fd7a83f0"
+    },
+    "round107_final_candidate.py": {
+      "path": "src/round107_final_candidate.py",
+      "sha256": "8252533fc4f6fea412d9ad95e20f9cef4384b00232db528d2a1591b157afd085"
+    },
+    "round79_final.py": {
+      "path": "src/round79_final.py",
+      "sha256": "c6ad4103c7e75ff1954954b234a671e842a4918618d5ceaadc6ecb4881b97684"
+    },
+    "round76_77_final.py": {
+      "path": "src/round76_77_final.py",
+      "sha256": "ed54e7d0779c2156414510704e8ffc90cf1b42f65819d3b6cd5c3f08c143f26b"
+    },
+    "round63_final.py": {
+      "path": "src/round63_final.py",
+      "sha256": "f5f5345641c7e6c769e1137d8c52cf9b8e4c0f4534e034eef757904d3e29ac3a"
+    },
+    "round63_nn_experiment.py": {
+      "path": "src/round63_nn_experiment.py",
+      "sha256": "70d946c76df35761f55658f7b1ad0f04109ece2cf5901978bae6f0ce97ea513e"
+    },
+    "round55_final.py": {
+      "path": "src/round55_final.py",
+      "sha256": "8f60cf3d5a5a994c09430a2856ed80c206299b56d9429722b12bc647d718b850"
+    },
+    "round79_final_unit.py": {
+      "path": "src/round79_final_unit.py",
+      "sha256": "9c05b4b2552e889ed2bc5fc269b181946b6992e87aad931ece64fa187527fea9"
+    },
+    "round79_experiment.py": {
+      "path": "src/round79_experiment.py",
+      "sha256": "33e59572785a4500288246b09a2a5aed038d83482f7ac79ac2050846cf530db6"
+    },
+    "round40_three_branch.py": {
+      "path": "src/round40_three_branch.py",
+      "sha256": "2642c47c977736eba13d9a1dcf2c8ba1b422d35e69f4b6853dc500ee0f258f80"
+    },
+    "train_final.py": {
+      "path": "src/train_final.py",
+      "sha256": "8d6b07f23310a895bf18718586e9ba13833e8bf8063ff92f9c226139fdef957a"
+    },
+    "train_catboost.py": {
+      "path": "src/train_catboost.py",
+      "sha256": "852719f41cb739814ea6e7fc4b97d21be1a231d439d1c9aadebd343898ea590f"
+    }
+  },
+  "source_only_not_end_to_end_training": true,
+  "repo_modified_by_collector": false,
+  "true_payload_read": false,
+  "new_fit_inference_or_scoring_calls": 0,
+  "limit": "All original guards and historical path assumptions preserved. Config/schema snapshots are metadata; not a replacement for rebuilding features and all fitted price states from legal raw data."
+}

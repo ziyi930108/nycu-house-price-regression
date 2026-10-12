@@ -1,4 +1,4 @@
-# v25 程式與重現界線｜2026-10-10
+# v25 程式與重現界線
 
 v25只重新訓練日期加權prior NN，把L1改為固定10萬元SmoothL1，保留六模型／三分支配方。程式與證據已保存，沒有宣稱新環境從原始Excel一鍵重訓完成。
 
@@ -22,6 +22,8 @@ python scripts/verify_selected_csv.py --csv C:/NYCU_ML/outputs/submission_v25_tr
 
 原[final request](../evidence/outputs/round107/final/request.json)、[seal](../evidence/outputs/round107/final/seal.json)、[training](../evidence/outputs/round107/final/model/training.json)和[release](../evidence/outputs/round107/final/release.json)保持不改。此批全量只有新prior NN一次fit；其餘五個native用保存向量組合重播，不能冒稱重新跑六模型。
 
-舊版專用推論入口與其 artifact 清單已移出主分支。尚無經驗證、可從 repo 直接載六模型重做 v25 的單一 production CLI；v25 新電腦／乾淨環境完整推論、地理重建與全部模型從零重訓未完成。
+後續補入[可攜六模型推論入口](../inference/v25/README.md)，保留已實測20檔source/config/manifest原bytes。同機既有與全新獨立套件環境均從保存的六模型、encoder、prior、reference與spatial狀態重新推論，兩次實際exit0；13個完整向量逐位元相同，47,073筆CSV bytes完全相同。推論程序不讀保存答案向量；結束後才由分開程序比較。[公開收據](../inference/v25/evidence/reproducibility_receipt.json)列明來源、比較範圍、私有證據SHA及實測成本，不含逐筆資料。
 
-後續若補可攜v25推論入口，需另立新artifact清單與實測，不解除舊SHA或拒絕覆寫防護。Private未知，不能以這些重現檢查認證Private最佳。
+[訓練來源補件](../inference/v25/training/README.md)另補22支原程式及2份config/schema，保留歷史guard、固定路徑與私有prepared/state/保存向量依賴。完整raw→六模型重訓尚未執行驗證；[可選地理依賴](../inference/v25/training/GEOGRAPHY.md)為歷史版本證據，未做fresh地理安裝或重建。同機新套件環境不是新硬體／作業系統；不同裝置、版本及CPU／GPU逐bytes等價未驗。R2 reference中間向量未直接輸出，沒有直接逐值相同的證據。
+
+Private未知；原R107不利門檻與反覆驗證選型限制保留。推論重現不等於Private品質認證，不改選定CSV。

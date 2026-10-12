@@ -1,189 +1,169 @@
 {
   "status": "passed",
-  "completedDate": "2026-10-13",
-  "folderNamingDate": "20261012",
-  "deliveryPath": "C:\\NYCU_ML\\deliverables\\房屋價格預測_課程要求補齊_20261012\\簡報\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-  "deliverySha256": "70c7ff31c61eae0550bc33765ae20a326add265a6618a1931c0eac6f772d202b",
-  "authoringFinal": "r7_build/final/r7.pptx",
-  "scriptSha256": "01f34415806d14f8fd640ad3088e00f38d80b9012cc174f4c1fa1b17de73ccbc",
-  "mainHan": 4209,
-  "estimatedMinutesAt275": 15.305454545454545,
-  "estimatedMinutesAt250": 16.836,
-  "estimatedMinutesAt300": 14.03,
+  "created_at_utc": "2026-10-12T18:26:20.253446+00:00",
+  "final_file": {
+    "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+    "sha256": "17cc01048377b3f29936e03670778ac9ffc66b8f5bec78f5b3e89b37245db46d"
+  },
+  "script_file": {
+    "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/完整口語講稿.md",
+    "sha256": "6a249ff08f445148de8e117f321ccd6d4fd7165192f71ce197e5354c2039a016"
+  },
+  "final_slide_count": 20,
+  "mainSlideCount": 20,
+  "appendixSlideCount": 0,
+  "edited_visible_slides": [
+    3,
+    16
+  ],
+  "source_files": [
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/analysis.json",
+      "sha256": "b73fb8301d80b217badc90f718b0fed477686d07c90432f983b0a6f38f1d7f07"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/analysis_receipt.json",
+      "sha256": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/assets/house_illustration.json",
+      "sha256": "59047032e4e691f880f65b18723cb9e6bd32e6f20eda02a2bc28ca966c45f4dc"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/assets/house_illustration.png",
+      "sha256": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/build_presentation.mjs",
+      "sha256": "212270640be6c15e4d860e29ad1a5ba4dc2360e9e97778deb645402df4acbed5"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/city_statistics.json",
+      "sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/content.json",
+      "sha256": "e3cff5557e6fe2b23e55c2346682e76388af2cb2ee4c018a721388d72a668226"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/finalize_presentation.mjs",
+      "sha256": "0b427360c720ab2c9bbde49869e16883910913ca751b5e6f40e50f0b41329235"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/README.md",
+      "sha256": "7c5c76c3316996484fbab1dd1e296cc3747074da3ca9b57bd0be93139e9bb9e5"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/reproducibility_receipt.json",
+      "sha256": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/training_curve.json",
+      "sha256": "8c02ac44b579db70f918db180f1f54f3b3f603ef225c57ec900a74ac5fff0b6a"
+    },
+    {
+      "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/validation_report_summary.json",
+      "sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889"
+    }
+  ],
+  "source_evidence": {
+    "path": "deliverables/房屋價格預測_推論重現補齊_20261013/簡報/source/reproducibility_receipt.json",
+    "sha256": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2"
+  },
+  "mainHan": 4222,
+  "estimatedMinutesAt250": 16.888,
+  "estimatedMinutesAt275": 15.352727272727273,
+  "estimatedMinutesAt300": 14.073333333333334,
   "humanRehearsalPerformed": false,
-  "slideCount": 20,
-  "mainSlides": 20,
-  "appendixSlides": 0,
-  "nativeTableSlides": [
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    14,
-    20
-  ],
-  "nativeChartSlides": [
-    6,
-    11,
-    12,
-    17,
-    18
-  ],
-  "embeddedExcelWorkbooks": 5,
-  "programFlowConnectors": 5,
-  "notesContentWhySourcesMatchAll20": true,
-  "markdownScriptsMatchAll20": true,
-  "original60CurveValuesAndHouseAssetsPreserved": true,
-  "authorityPublicJsonBytesPreserved": true,
-  "privateRawIndicesAndOldScatterSamplingAbsent": true,
-  "visibleDeletedTermsAbsent": true,
-  "all20SlidesVisuallyReviewed": true,
-  "visualReviewMethod": "All20 R6 slides previously viewed individually. R7 changed slide20 viewed full-size; all19 unchanged pages pixel-identical to R6.",
-  "visualRepairs": [
-    "Slide3 native connector terminal corrected to follow 01→06.",
-    "Slide18 shortened exact upper-exclusive band labels to remove native-chart ellipses and diagonal text."
-  ],
-  "retainedFailures": [
-    "r1_failure.txt",
-    "candidate_before_precision_fix.pptx",
-    "r2_visual_review.json"
-  ],
-  "laterScientificRepairs": [
-    "Slide6 states statistics were added after model freeze, not used for tuning.",
-    "Slide19 defines baseline weighted MAE and explicitly states no concurrent matched retraining.",
-    "Slide20 clarifies existing type/use grouping; same-project counts differ from actual reference support; next-step checks area/parking within existing grouping."
-  ],
-  "sourceRebuild": {
+  "visual_review": {
+    "all20_final_slides_individually_viewed": true,
+    "changed3_and16_compared_with_previous": true,
+    "unintended_clipping_overlap_or_wrap_observed": false,
+    "required_native_tables": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      14,
+      20
+    ],
+    "required_native_charts": [
+      6,
+      11,
+      12,
+      17,
+      18
+    ],
+    "editable_workbooks": 5
+  },
+  "source_rebuild": {
     "status": "passed",
-    "final": "source_rebuild_r7/final/r1.pptx",
-    "renderDirectory": "source_rebuild_r7/renders_r1",
-    "notesAll20Match": true,
-    "pixelComparison": [
-      {
-        "slide": 1,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 2,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 3,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 4,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 5,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 6,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 7,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 8,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 9,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 10,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 11,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 12,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 13,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 14,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 15,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 16,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 17,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 18,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 19,
-        "identical": true,
-        "bbox": null
-      },
-      {
-        "slide": 20,
-        "identical": true,
-        "bbox": null
-      }
-    ]
+    "review": {
+      "path": "outputs/ppt_inference_replay_20261013/source_rebuild/source_rebuild_review.json",
+      "sha256": "eba219db9f92f5014bf740f95ba7e7be0866f59cd74a5a278867d036d2879a1e"
+    },
+    "all20_pixels_equal": true,
+    "all20_notes_script_why_sources_equal": true,
+    "render_dir": "outputs\\ppt_inference_replay_20261013\\source_rebuild\\renders_r1"
   },
-  "sourceFilesSha256": {
-    "source/analysis.json": "b73fb8301d80b217badc90f718b0fed477686d07c90432f983b0a6f38f1d7f07",
-    "source/analysis_receipt.json": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7",
-    "source/assets/house_illustration.json": "59047032e4e691f880f65b18723cb9e6bd32e6f20eda02a2bc28ca966c45f4dc",
-    "source/assets/house_illustration.png": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1",
-    "source/build_presentation.mjs": "7e4608e81e463ad130d026c581c06ca4b18a7a7749b6eaa61412f4bd733c7feb",
-    "source/city_statistics.json": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
-    "source/content.json": "58c00a46dc37502e950bdebe4d9b0e3c0d1b2828971baf73415bd6e31c8c8b16",
-    "source/finalize_presentation.mjs": "0b427360c720ab2c9bbde49869e16883910913ca751b5e6f40e50f0b41329235",
-    "source/README.md": "e7e9da154c2803575d1e564991c54b074f766c4892eec68c847d12f8c51a79a4",
-    "source/training_curve.json": "8c02ac44b579db70f918db180f1f54f3b3f603ef225c57ec900a74ac5fff0b6a",
-    "source/validation_report_summary.json": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889"
+  "previous_delivery_comparison": {
+    "review": {
+      "path": "outputs/ppt_inference_replay_20261013/previous_deck_pixel_comparison.json",
+      "sha256": "be47ab7f2db18dc31a27ceb6ed6992a4e6fcaacb3bef413f0e06580f521ed229"
+    },
+    "other18_pixels_equal": true,
+    "other18_notes_equal": true,
+    "changed_pixel_regions": {
+      "3": [
+        101,
+        829,
+        772,
+        853
+      ],
+      "16": [
+        101,
+        829,
+        898,
+        855
+      ]
+    }
   },
+  "finalization": {
+    "main": {
+      "path": "outputs/ppt_inference_replay_20261013/main_build/final_r1.validation.json",
+      "sha256": "c62632e996fbe077ba3fca625c4197021a5547b0b38cb4d26bb1c17276a9a04d"
+    },
+    "source_rebuild": {
+      "path": "outputs/ppt_inference_replay_20261013/source_rebuild/final_r1.validation.json",
+      "sha256": "db35e1edc81a40afc36f0c2507cdcd4f92bd3b2ab085c945915c2ed425f6c3b5"
+    },
+    "package_findings": 0,
+    "layout_findings": 0,
+    "first_party_import_verified": true,
+    "native_PowerPoint_UI_verified": false
+  },
+  "retained_scientific_scope": {
+    "original_full_data_phase_new_NN_fits": 1,
+    "original_other5_models_saved_vectors_reused": true,
+    "subsequent_each_environment_models_freshly_forwarded": 6,
+    "subsequent_each_environment_vectors_compared": 13,
+    "CSV_rows": 47073,
+    "prediction_replay_equality_is_not_target_MAE": true,
+    "raw_to_all6_retraining_completed": false,
+    "same_existing_host_GPU_Windows": true,
+    "new_hardware_or_OS_tested": false,
+    "direct_R2_intermediate_equality_claimed": false,
+    "Private_score": null
+  },
+  "models_or_CSV_modified_by_artifact_task": false,
+  "new_fits_by_artifact_task": 0,
+  "Kaggle_operation_by_artifact_task": false,
+  "marker_edit_expected1_pptx_run_once": true,
   "limitations": [
-    "Bundled runtime tested on this machine; fresh installation and native PowerPoint UI not tested.",
-    "Timing is text estimate, not human rehearsal.",
-    "Document reconstruction is not a full six-model retraining.",
-    "Private unknown; existing history reused during development."
-  ],
-  "externalActionsPerformed": false,
-  "modelTrainingPerformed": false,
-  "submissionCsvModified": false,
-  "externalStatus": "Classroom skipped; user authorizes only Kaggle name/GitHub changes handled by root, submission and final checkbox postponed."
+    "Pacing is pure-Han estimate, not human rehearsal.",
+    "Document rebuild used bundled same-host runtime, not native PowerPoint UI.",
+    "Inference evidence covers saved fitted states on the same host; raw-to-six-model retraining and another host were not tested."
+  ]
 }

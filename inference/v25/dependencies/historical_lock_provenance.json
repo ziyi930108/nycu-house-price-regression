@@ -1,0 +1,22 @@
+{
+  "status": "historical_metadata_only_new_install_not_run",
+  "ML_wheels": 25,
+  "NN_wheels": 11,
+  "ML_authority": {
+    "path": "outputs/v22_clean_environment_20261002/installed_wheels.json",
+    "sha256": "62640765bc4fa5a6b82711779de0028e48d66cd02bebf2df2f5916a63306e5e5"
+  },
+  "NN_authority": {
+    "path": "outputs/v22_clean_gpu_20261002/install/pip_report.json",
+    "sha256": "45ab5fac44d9db5dd2950343edf5a6ff487ee4e087dc9533c4a9e71f79bd9254"
+  },
+  "locks": {
+    "requirements-fresh-ml.lock.txt": "1a19063c1f5cffb421f2690f79790e467f0eadd8f19609dff43e2fc08c383df5",
+    "requirements-fresh-nn.lock.txt": "2a7836401c7f712048f1fc5d015699d92976ffb932e24e62c7729ffd62a904ef"
+  },
+  "same_host_new_package_environments_only": true,
+  "new_hardware_or_OS_claimed": false,
+  "network_requests": 0,
+  "downloads": 0,
+  "packages_installed": 0
+}

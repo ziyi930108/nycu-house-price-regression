@@ -1,0 +1,8 @@
+# Optional raw-to-geography builder dependencies; separate from NN/CUDA environment.
+# Pins come from historical audit/local distribution metadata; no fresh install claimed.
+numpy==2.3.5
+pandas==3.0.1
+shapely==2.1.2
+pyproj==3.7.2
+osmium==4.3.1
+openpyxl==3.1.5

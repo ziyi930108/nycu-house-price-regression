@@ -117,6 +117,24 @@ for p in doc.paragraphs:
         new=new.replace('閱讀順序：資料清理與轉換 → 特徵 → 模型與融合 → 訓練 → 時間驗證 → 曲線與結果 → 最終答案。','閱讀順序：程式流程 → 資料清理與分布 → 特徵 → 模型與融合 → 訓練 → 時間驗證與誤差分析 → 最終答案。')
         if new!=old:run.text=new
 
+# Local final-chapter update from independently verified inference receipts.
+# Historical R107 one-fit/five-vector evidence remains explicitly historical.
+updates = {
+ '方法確定後，最終使用467,221筆有標籤資料。全量階段新增訓練一個參考單價神經網路，其餘五模型沿用保存預測向量。新神經網路重載後，對47,073筆測試交易推論核對一致，再重算神經網路路線的成交與空間修正，並與保存的另外兩路逐筆取中位數。[6]':
+ '原全量階段使用467,221筆有標籤資料，只新訓練參考單價網路，其餘五模型沿用保存預測。[6] 後續已在同機既有與全新獨立套件環境，從保存模型及轉換狀態重新執行六模型推論；47,073筆的13個完整向量及答案檔皆核對一致，沒有重新訓練。[9]',
+ 'GitHub提供必要來源與文件，不含課程交易表、私有模型或提交CSV。尚未完成在乾淨環境從原始train／valid重訓全部六模型並產生最終答案的端到端驗證；固定seed與檔案指紋支持追查，不能保證任意硬體重訓完全相同。':
+ '程式包另補22支原訓練／準備程式及2份設定／欄位規格，不含交易表、私有模型或CSV。歷史路徑、私有準備陣列、價格狀態與保存預測依賴保留。從原始train／valid重訓全部六模型尚未驗證；同機推論成功不保證任意硬體重訓相同。[9]',
+}
+updates['程式與證據入口：github.com/ziyi930108/nycu-house-price-regression（私人儲存庫，需存取權限）。'] = '程式與證據入口：github.com/ziyi930108/nycu-house-price-regression（需權限）。'
+for before, after in updates.items():
+    matches = [p for p in doc.paragraphs if p.text == before]
+    assert len(matches) == 1, before
+    runs = matches[0].runs
+    assert runs
+    runs[0].text = after
+    for run in runs[1:]:
+        run.text = ''
+
 number=0
 for p in doc.paragraphs:
     if p.style.name=='Heading 1' and p.text!='摘要':
@@ -126,7 +144,8 @@ for p in doc.paragraphs:
 
 source_anchor=next(p._p for p in doc.paragraphs if p.text.startswith('程式與證據入口：'))
 for text in ['[7] 清理後train的城市總價描述統計與樣本分布。',
-             '[8] 封存完整融合驗證預測的列序、誤差、分群及匿名案例核對。']:
+             '[8] 封存完整融合驗證預測的列序、誤差、分群及匿名案例核對。',
+             '[9] 六模型完整推論、兩套環境核對及原訓練來源補件。']:
     p=paragraph(text);p.paragraph_format.space_after=Pt(2)
     for r in p.runs:r.font.size=Pt(9.5)
     source_anchor.addprevious(p._p)

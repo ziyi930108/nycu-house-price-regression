@@ -1,147 +1,143 @@
 {
   "status": "passed",
-  "docx_sha256": "bb529d4701138d9215fb73b7d5504809a493efd420745856e8e6270ca3851da9",
-  "reference_sha256": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e",
+  "docx_sha256": "6db27e7b7b078d2d11b5548937ccf00791b140cc79303090f424972f4c987b4e",
   "page_count": 19,
   "chapters": 19,
   "native_tables": 16,
   "images": 5,
+  "revision": "r2",
   "all_19_pages_visually_reviewed": true,
-  "revision": "r4",
-  "prior_docx": "qa/report_r3.docx",
-  "prior_review": "qa/delivery_review_r3.json",
-  "visual_review_directory": "qa/render_r4",
-  "render_method": "Microsoft Word 16 native PDF export + canonical render_docx.py adapter + bundled Poppler",
-  "visual_review_method": "Page17 individually reviewed in r4; all other18 pages pixel-identical to fully visually reviewed r3.",
-  "pixel_comparison_with_reviewed_r3": [
+  "visual_review_directory": "qa/render_r2",
+  "visual_review_method": "All 19 PNGs opened individually at original resolution; pages1–18 also pixel-identical to prior fully reviewed delivery.",
+  "render_method": "Microsoft Word16 native PDF export plus canonical render_docx.py adapter and bundled Poppler120dpi",
+  "pixel_comparison_to_prior": [
     {
       "page": 1,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 2,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 3,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 4,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 5,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 6,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 7,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 8,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 9,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 10,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 11,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 12,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 13,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 14,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 15,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 16,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 17,
-      "identical_to_reviewed_r3": false
+      "identical_to_prior": true
     },
     {
       "page": 18,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": true
     },
     {
       "page": 19,
-      "identical_to_reviewed_r3": true
+      "identical_to_prior": false
     }
   ],
-  "changed_parts_from_r3": [
+  "changed_parts_from_prior": [
     "word/document.xml"
   ],
-  "review_corrections": [
-    "Price band first interval strictly below 5 million TWD; plot/paragraph corrected.",
-    "Public score verified from current screenshot and logged-in Kaggle page; upload bytes not audited, Private unknown.",
-    "Case A rarity is a possible hypothesis, not proven extrapolation or error cause.",
-    "Existing reference already groups building type and use; same-project 130/0 counts are descriptive, not actual reference support. Proposed support diagnostics and within-group conditions remain unexecuted."
-  ],
-  "blank_pages": false,
-  "clipping_overlap_missing_glyphs": false,
+  "prior_docx_sha256": "bb529d4701138d9215fb73b7d5504809a493efd420745856e8e6270ca3851da9",
+  "prior_delivery_preserved": true,
+  "source_rebuilds": {
+    "independent_source_and_regenerated_supplement": {
+      "path": "qa/independent_source/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "all_package_parts_identical": true,
+      "zip_sha256": "5c5dcddd7e01c4dbd995703bfcde25b1c080c5b86eb3d521e24268c62c8de854",
+      "container_timestamps_may_differ": true
+    },
+    "custom_cli_output": {
+      "path": "qa/cli_rebuild/docs/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "all_package_parts_identical": true,
+      "zip_sha256": "5c5dcddd7e01c4dbd995703bfcde25b1c080c5b86eb3d521e24268c62c8de854",
+      "container_timestamps_may_differ": true
+    }
+  },
+  "supplement_regeneration_identical": true,
   "accessibility_findings": {
     "high": 0,
     "medium": 0,
     "low": 0
   },
-  "all_original_10_tables_xml_retained": true,
-  "reference_title_name_student_id_abstract_preserved": true,
+  "clipping_overlap_missing_glyphs": false,
+  "blank_pages": false,
+  "original_style_theme_numbering_footer_curve_preserved": true,
+  "original10_tables_XML_retained": true,
+  "title_name_student_id_abstract_preserved": true,
   "deleted_abstract_results_restored": false,
   "forbidden_reader_terms": false,
-  "source_rebuilds": {
-    "independent_source_copy": {
-      "file": "qa\\source_rebuild_r4\\台灣房屋銷售價格預測挑戰賽_正式報告.docx",
-      "same_member_set": true,
-      "changed_members": []
-    },
-    "custom_cli_output": {
-      "file": "qa\\cli_rebuild_r4\\docs\\台灣房屋銷售價格預測挑戰賽_正式報告.docx",
-      "same_member_set": true,
-      "changed_members": []
-    }
-  },
-  "local_markdown_links_checked": 14,
-  "original_styles_footer_theme_numbering_curve_preserved": true,
-  "data_scope": "frozen canonical train455255; confirmation fit321550/query133697; no test labels",
-  "validation_evidence": "source/assets/validation_report_summary.json",
+  "local_markdown_links_checked": 17,
+  "public_reproducibility_receipt_sha256": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2",
+  "inference_scope": "Both same-host existing and newly installed independent ML/NN package environments; six native forwards,13 full vector values bitwise equal and47073 CSV bytes exact; zero new fits.",
+  "full_raw_to_six_model_retraining_verified": false,
+  "new_hardware_or_OS_verified": false,
+  "fresh_geography_rebuild_verified": false,
   "model_training": false,
   "submission_csv_changed": false,
   "Kaggle_operation": false,
-  "limitations": [
-    "Not a clean-environment six-model end-to-end reproduction.",
-    "Windows/Word16 rendering only; other Office versions may reflow."
-  ],
+  "Private_score": null,
   "outputs": {
-    "台灣房屋銷售價格預測挑戰賽_正式報告.docx": "bb529d4701138d9215fb73b7d5504809a493efd420745856e8e6270ca3851da9",
-    "REPORT.md": "82f47473df1751b0e9104e3258ae8dd864127f7f7024c13d255cc53fa6a9ba12",
-    "README.md": "36aa7b279f1fdfaeeee9347d16f5d915bcb5aa3950077dfe69a40a72c3a48a16",
-    "SOURCE_MAP.md": "90670bfaa12cddf9caea5a48c6bde6902e8b373fd7f84210ea9a60fe9af8708a"
+    "台灣房屋銷售價格預測挑戰賽_正式報告.docx": "6db27e7b7b078d2d11b5548937ccf00791b140cc79303090f424972f4c987b4e",
+    "REPORT.md": "a2856f1ede26c68e46936689d9b1ca6eff5da439fa5c3fb96222f5a2fe82a314",
+    "README.md": "8af46d5a0419cbbfb9c8f68caf871f545fc06f344c63c0f62bc601ca4925dcd4",
+    "SOURCE_MAP.md": "910ac662debe42e49e3875749cc34219fd89dc14ac7ea8d6b9747a76c99ad563"
   },
   "source_files": {
-    "source/artifact.md": "8d2c5a91232081f8b9a03fd6eb5ababd843ba1e57551d1ff2b8dbbd1a289c1b8",
+    "source/artifact.md": "bfd3f90573741fa095d1afdb21f4656bac70cd325d81f97990cd43298ab63c6f",
     "source/assets/analysis_receipt.json": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7",
     "source/assets/city_price_distribution.png": "acc11cb8feae8a911b8d930091e1ed67e6bfa2f62d83f67190eac6bfe88d3ee3",
     "source/assets/city_statistics.json": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
@@ -150,14 +146,23 @@
     "source/assets/plot_rendering.json": "0383df8b7de00711a2249f3cef36fc1cbef7e5539a281da39030d15f17474fc8",
     "source/assets/program_flow.png": "f689a61409e837491422f839fc5498d58d48eb5ea132de131450a8e8da8dcc91",
     "source/assets/program_flow.svg": "315116961c8b88431deef6a502819667fb9053a1bce68ea0edafa6f4352543dc",
+    "source/assets/reproducibility_receipt.json": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2",
     "source/assets/training_curve.png": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56",
+    "source/assets/training_source_additions_manifest.json": "67b7eddec95a1ef5300f15dc4c1f5d4dd600e6d8830a642f4c1674a3c45de818",
+    "source/assets/training_source_audit.json": "0b1c2f73e0d1267e76e900558cf7c1ab71f778601bae8c253cb950d9805aae8c",
     "source/assets/validation_report_summary.json": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
     "source/build_flowchart.py": "8ea35e9798315258401d8e047bc251750e386a21dfe01fd17eadbb9e5dad8b44",
-    "source/build_report.py": "6b7426a4b2a20dac0db8257b6806cab7a96b39f5d9b9043bcd33127a74c3efe5",
+    "source/build_report.py": "2ebc1365b7db716826c7768deec9870af5c811785b7c47d790b83203d3b41e9e",
     "source/make_supplement.py": "af8ed922a1badeeaa651c4a90742a9d7b6361cf8f90225d2bb51225c02b64683",
-    "source/README.md": "a869fdeb6af2826f4b076f49e4202775ca07d6d88c57c51f5e40710a753eda04",
+    "source/README.md": "4c5b031a6ab681204ae8930bb15f70ba28761c7768c9fd17adac3c9586fff30b",
     "source/reference_report.docx": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e",
     "source/render_review.py": "426d8731cd5eae431d7930667080a3a14aae50e391f4e1713e3b47a008a31efb",
     "source/supplement.json": "6bfc73e1d6adfc95fe718cf7dafb5cdceaeb3c98450491955cb312b2a828845d"
-  }
+  },
+  "limitations": [
+    "Other Office versions may reflow.",
+    "Raw-to-six-native-model retraining and fresh geography rebuild not completed.",
+    "Same host/OS/hardware only; other devices/package versions not verified.",
+    "R2 reference intermediate was not directly exported."
+  ]
 }
