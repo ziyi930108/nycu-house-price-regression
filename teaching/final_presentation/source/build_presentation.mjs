@@ -64,13 +64,12 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
 {const s=slide(6,'用較早交易預測下一年');
  table(s,[['訓練資料截止','後一年評分期間'],['2021-08-10','2021-08-11 至 2022-08-10'],['2022-08-10','2022-08-11 至 2023-08-10'],['2023-08-10','2023-08-11 至 2024-08-10'],['2023-02-10','2023-02-11 至 2024-02-10']],{y:182,h:350,widths:[400,720],font:28});
  caption(s,'各起點重建模型、編碼及價格參考。窗口已反覆使用且重疊，無法視為四次獨立盲測。');}
-{const s=slide(7,'模型的訓練步驟');
- text(s,'用已知答案計算誤差，讓模型逐步調整',80,144,1120,50,29,{color:C.muted});
- const steps=[['01　輸入條件','面積、地區等\n整理好的特徵'],['02　產生估價','依目前模型\n計算預測'],['03　計算誤差','估價與已知\n答案比較'],['04　更新模型','新增小樹或\n更新網路權重']];
- for(let i=0;i<4;i++){let x=80+i*290;heading(s,steps[i][0],x,234,250);text(s,steps[i][1],x,296,250,95,27);}
- heading(s,'樹模型',80,433,520);text(s,'逐步增加小樹，修正誤差\nCatBoost、LightGBM',80,489,535,95,29);
- heading(s,'神經網路（以參考單價為例）',700,433,500);text(s,'反向調整計算權重\n每批2,048筆，固定30輪',700,489,500,95,29);
- caption(s,'訓練時更新參數。驗證時固定模型，只產生預測與計算誤差。');}
+{const s=slide(7,'模型的價格目標與訓練步驟');
+ text(s,'單價樹模型：訓練答案＝已知總價 ÷ 有效面積',80,143,1120,40,25,{color:C.teal});
+ table(s,[['模型路線','先預測什麼','總價如何產生'],['單價樹模型、面積網路','每平方公尺單價','預測單價 × 有效面積'],['直接總價樹模型','總價','直接換回總價元'],['對數總價樹模型','取對數後的總價','將預測值還原為總價'],['參考單價網路','相對參考價的倍率','參考單價 × 有效面積 × 倍率']],{x:80,y:198,w:1120,h:325,widths:[410,300,410],font:24});
+ text(s,'共同訓練：輸入條件、產生預測、依目標計算損失、更新模型',80,550,1120,42,27,{color:C.ink});
+ text(s,'樹模型：增加小樹修正誤差　神經網路：反向更新參數',80,596,1120,35,25);
+ text(s,'各模型先換回總價元，再進行分支融合與修正。驗證時固定參數。',80,645,1045,36,22,{color:C.muted});}
 {const s=slide(8,'面積與總價誤差');
  text(s,'總價 = 單價 × 有效面積',80,179,530,100,36,{bold:true,color:C.ink});
  text(s,'單價同樣估錯\n每平方公尺1萬元',80,332,490,100,31);
@@ -122,6 +121,6 @@ if(p.slides.items.length!==16)throw Error('Slide count');
 await fs.mkdir(QA,{recursive:true});
 await fs.writeFile(QA+'/narrative.json',JSON.stringify(N,null,2));
 await fs.writeFile(QA+'/presentation.json',JSON.stringify(p.toProto()));
-await fs.writeFile(QA+'/source_data.json',JSON.stringify({curve,mainHan:N.meta.mainHan,mainSlides:16,appendixSlides:0,nativeTableSlides:[3,4,5,6,12,15],nativeChartSlides:[8,9,11],retainedNotesUnchanged:false,modelChanged:false},null,2));
+await fs.writeFile(QA+'/source_data.json',JSON.stringify({curve,mainHan:N.meta.mainHan,mainSlides:16,appendixSlides:0,nativeTableSlides:[3,4,5,6,7,12,15],nativeChartSlides:[8,9,11],retainedNotesUnchanged:false,modelChanged:false},null,2));
 await (await PresentationFile.exportPptx(p)).save(QA+'/candidate.pptx');
 console.log(JSON.stringify({candidate:QA+'/candidate.pptx',slides:16}));
