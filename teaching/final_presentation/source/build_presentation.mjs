@@ -41,7 +41,6 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
 // A restrained typographic cover. All foreground text stays editable.
 {const s=slide(1);s.background.fill=C.cover;s.shapes.items[0].delete();
  tx(s,'台灣房屋銷售價格\n預測挑戰賽',88,178,1120,204,64,{bold:true,color:C.white,name:'slide-title'});
- text(s,'利用歷史成交資料，估計新交易總價',92,423,1040,60,30,{color:'#C7DAD4'});
  text(s,'姓名：廖子頤\n學號：315581048',94,548,850,90,27,{color:'#E5EEEB'});}
 {const s=slide(2,'房屋條件與價格答案');
  heading(s,'特徵',80,181);text(s,'地點、面積、樓層\n建物類型、交易日期',80,245,500,130,34);
