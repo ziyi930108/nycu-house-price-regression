@@ -1,0 +1,209 @@
+"""Author the reader-facing final report from preserved project evidence."""
+from pathlib import Path
+import hashlib,json,re
+from docx import Document
+from docx.shared import Cm,Pt,RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT,WD_CELL_VERTICAL_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+R=Path(__file__).resolve().parents[2];O=R/'docs';O.mkdir(exist_ok=True)
+Q=R/'build/report';Q.mkdir(parents=True,exist_ok=True)
+doc=Document();sec=doc.sections[0]
+sec.page_width=Cm(21);sec.page_height=Cm(29.7)
+sec.top_margin=Cm(1.9);sec.bottom_margin=Cm(1.9);sec.left_margin=Cm(2.1);sec.right_margin=Cm(2.1)
+sec.footer_distance=Cm(.8)
+for name,size in [('Normal',11.5),('Title',23),('Heading 1',17),('Heading 2',12.5),('Caption',10)]:
+ st=doc.styles[name];st.font.name='Calibri';st.font.size=Pt(size);st.font.color.rgb=RGBColor(0,0,0)
+ st.element.get_or_add_rPr().get_or_add_rFonts().set(qn('w:eastAsia'),'Microsoft JhengHei')
+ st.paragraph_format.space_after=Pt(7);st.paragraph_format.line_spacing=Pt(18 if name=='Normal' else size*1.3)
+ if name.startswith('Heading'):st.paragraph_format.keep_with_next=True;st.paragraph_format.space_before=Pt(9)
+ if name=='Title':st.paragraph_format.space_after=Pt(10)
+ ppr=st.element.get_or_add_pPr()
+ snap=OxmlElement('w:snapToGrid');snap.set(qn('w:val'),'0');ppr.append(snap)
+ for border in list(ppr.findall(qn('w:pBdr'))):ppr.remove(border)
+footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER
+run=footer.add_run();fld=OxmlElement('w:fldSimple');fld.set(qn('w:instr'),'PAGE');run._r.addnext(fld)
+def p(t,bold=False):
+ a=doc.add_paragraph();a.add_run(t).bold=bold;return a
+def h(t):doc.add_paragraph(t,'Heading 2')
+def page(t):doc.add_page_break();doc.add_paragraph(t,'Heading 1')
+def formula(t):
+ a=p(t,True);a.alignment=WD_ALIGN_PARAGRAPH.CENTER;a.paragraph_format.space_before=Pt(4);a.paragraph_format.space_after=Pt(10)
+def table(headers,rows,widths):
+ t=doc.add_table(rows=1,cols=len(headers));t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER
+ for c,w in zip(t.columns,widths):c.width=Cm(w)
+ for c,v in zip(t.rows[0].cells,headers):c.text=v
+ for row in rows:
+  for c,v in zip(t.add_row().cells,row):c.text=str(v)
+ for i,row in enumerate(t.rows):
+  rp=row._tr.get_or_add_trPr();cant=OxmlElement('w:cantSplit');rp.append(cant)
+  if i==0:rp.append(OxmlElement('w:tblHeader'))
+  for j,c in enumerate(row.cells):
+   c.width=Cm(widths[j]);c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
+   pr=c._tc.get_or_add_tcPr();b=OxmlElement('w:tcBorders')
+   for edge in ['top','left','bottom','right']:
+    x=OxmlElement('w:'+edge);x.set(qn('w:val'),'single');x.set(qn('w:sz'),'4');x.set(qn('w:color'),'D9D9D9');b.append(x)
+   pr.append(b);m=OxmlElement('w:tcMar')
+   for edge,val in [('top','85'),('bottom','85'),('left','110'),('right','110')]:
+    x=OxmlElement('w:'+edge);x.set(qn('w:w'),val);x.set(qn('w:type'),'dxa');m.append(x)
+   pr.append(m);sh=OxmlElement('w:shd');sh.set(qn('w:fill'),'DCE6F1' if i==0 else ('F5F7FA' if i%2==0 else 'FFFFFF'));pr.append(sh)
+   for a in c.paragraphs:
+    a.paragraph_format.line_spacing=Pt(15.5);a.paragraph_format.space_after=Pt(1)
+    a.alignment=WD_ALIGN_PARAGRAPH.CENTER if i==0 or len(c.text)<19 else WD_ALIGN_PARAGRAPH.LEFT
+    for z in a.runs:z.font.size=Pt(10.5);z.bold=i==0
+ p('').paragraph_format.space_after=Pt(0)
+
+doc.add_paragraph('台灣房屋銷售價格預測挑戰賽','Title')
+p('姓名：廖子頤　　學號：315581048')
+doc.add_paragraph('摘要','Heading 1')
+p('利用課程提供的房屋交易資料，依地點、面積、樓層、房屋類型與交易時間估計每筆交易的總價。資料先經清理與格式轉換，再交由六個模型學習不同的價格表示。各模型的答案換回總價後，組成三路預測，加入成交參考及空間修正，最後以三路的中位數產生提交答案。')
+p('本文依實際估價流程說明每一步的用途與設計理由。資料清理和文字轉換列在正文；模型設定、驗證結果及限制則各自說明，便於對照方法與證據。')
+doc.add_paragraph('1 目標與評估指標','Heading 1')
+p('這是回歸任務，也就是預測一個數值。最終答案是新臺幣總價；單價只是部分模型內部的學習方式。訓練資料提供成交總價，讓模型學習房屋條件與價格的關係；測試資料沒有提供總價，需由模型估計。')
+formula('MAE ＝ 每筆交易的絕對誤差加總 ÷ 交易筆數')
+p('絕對誤差是不分高估或低估的金額差。例如兩間房屋分別高估100萬元、低估50萬元，MAE就是75萬元。正負誤差不會互相抵銷；MAE也不表示每間房屋都差75萬元。所有正式比較均使用總價MAE，越低越好。')
+p('閱讀順序：資料清理與轉換 → 特徵 → 模型與融合 → 訓練 → 時間驗證 → 曲線與結果 → 最終答案。[1]')
+
+page('2 資料清理與重複紀錄')
+p('價格標籤來自課程的train與valid；test完整保留指定編號與順序。原始檔案另行保存，清理在處理流程中進行。[1]')
+table(['處理步驟','筆數'],[
+ ['原始train','455,787'],['移除混入的英文表頭','−3'],['移除表頭後','455,784'],['移除完全重複紀錄','−529'],['清理後train','455,255'],['最終訓練加入課程valid','＋11,994'],['最終合併再移除完全重複','−28'],['最終有標籤訓練資料','467,221'],['test完整保留','47,073']],[12.2,4.6])
+h('移除混入表頭')
+p('關鍵字是「混入表頭」與「標籤格式檢查」。程式先將總價轉成數值，找出無法轉換或非有限數值的列；只有編號恰為serial number、總價文字恰為total price NTD的列，才允許移除。實際有3列符合。遇到其他未知標籤問題就報錯停止，不會看到英文便刪除。')
+h('完全重複紀錄去重')
+p('關鍵字是「完全重複」「排除識別碼」「保留首次出現」。比較編號以外的全部原始欄位，包含成交總價，全部相同才保留第一筆、移除後續紀錄。這樣可避免相同內容被反覆學習、影響過大。')
+p('只有建案或面積相同不足以判為重複。日期、總價或任何其他原欄位不同，就不符合完全重複規則。此規則移除train的529列；最終合併valid時另移除28列。這是欄位去重，沒有外部證據確認每組紀錄均為同一真實交易。')
+
+page('3 文字與異常值的處理方式')
+p('模型需要一致的輸入形式，因此先解析文字，再保留原資料的缺失與異常狀態。以下為規則示例，不是新增交易。[1]')
+h('空白與數字')
+p('去除前後空白及全形空白；空字串、nan、NaN、None、null、<NA>統一視為缺失。數字先去除千分位逗號，再嘗試轉換，例如「1,200.5」變成1200.5。轉換失敗或正負無限大設為缺失；類別空值以專用缺失標記表示。')
+h('交易日期')
+p('解析民國與西元日期。民國年加1911，例如「112年8月11日」轉成2023-08-11，再取年、月、季、日及相對2000年的時間索引；月份另用sin與cos表達週期。無效日期設為缺失。年份超出1990至2030時，設為缺失並標記異常，不硬改成邊界年份。')
+h('樓層與交易筆棟數')
+p('中文數字轉成數值，例如「十二層」為12、「地下二層」為−2。移轉層次拆成最低、最高、平均樓層、層數與跨度，另標記地下、整棟及屋頂。「三至五層」的層數為3；跨地下與地上時不計第0樓。「土地1建物1車位2」則拆成土地1、建物1、車位2。')
+h('地址與有限備註')
+p('地址中的「台」統一成「臺」，拆出縣市、行政區、道路、路段及里村段資訊；棟及號另取棟別與樓層。原地址仍可作類別資訊，道路地理資訊不等於精確門牌定位。備註只用固定詞組建立親友交易、裝潢、毛胚、增建、預售、持分、特殊出售及無建物等旗標，不輸入完整價格文字。')
+h('異常數值保留標記')
+p('保留可解析的面積與格局值，另標記負值、面積為0和極端值。例如土地面積大於10,000或建物面積大於2,000平方公尺；房或衛大於20、廳大於10。極端數值本身不是直接刪除交易的理由，合法高價房也不因價格高就被排除。')
+
+page('4 特徵與資料隔離')
+p('特徵就是模型估價時可使用的線索。面積相同的房屋，也可能因地點、樓層或交易時間不同而有不同總價，因此需要共同考慮多項條件。[1][2]')
+table(['特徵類別','提供的線索'],[
+ ['地點','縣市、行政區、地址、道路與建案資訊'],['房屋條件','土地與建物面積、車位、樓層、格局、型態與用途'],['交易時間','年、月、季、日期索引與月份週期'],['資料狀態','缺失、日期異常、面積與格局異常旗標'],['道路地理','道路位置、範圍及匹配狀態等非價格資訊']],[3.6,13.2])
+h('不放進模型的欄位')
+p('編號只用來對齊提交，總價是要學習的答案，兩者都不作輸入。建築完成年月不可用，因此沒有據此建立可靠屋齡；管理組織為常數，無法區分房屋。解約情形可能是交易後資訊，也不納入。')
+h('模型輸入如何建立')
+p('基礎特徵共87欄，加上8欄道路地理資訊為95欄，其中23欄為類別。參考單價神經網路將72個數值欄位依訓練中位數填補，再用訓練尺度與asinh轉換處理，並附72個非有限值旗標，共144個數值輸入。asinh在數值很大時壓縮尺度，也能處理負值。')
+p('類別先建立訓練詞表，再轉成模型可學習的向量，也就是embedding。訓練中少於5次或預測時未見過的類別使用0編碼。另一個面積神經網路再加入依訓練分位節點建立的分段數值表示，數值輸入為603維。')
+h('規則只由訓練資料建立')
+p('每次驗證的訓練部分稱為fit，待評分部分稱為query。中位數、尺度、類別詞表、分位節點及價格參考都只在fit建立，再套到query。這可避免待評分資料提前影響模型規則。固定的日期與樓層解析規則則一致套用各資料集。')
+
+page('5 六個模型的估價方式')
+p('六個模型使用不同價格表示，讓各自擅長的關係有機會互補。CatBoost與LightGBM都以多棵樹逐步修正誤差；神經網路則以多層數值運算學習特徵組合。模型多並不保證更準，效果仍需驗證。[2]')
+table(['符號','模型與學習目標','還原總價方式'],[
+ ['C_unit','CatBoost單價','單價乘有效面積'],['L_unit','LightGBM單價','單價乘有效面積'],['C_raw','CatBoost總價','直接輸出總價'],['C_log','CatBoost對數總價','反轉log1p價格轉換'],['N_area','面積神經網路','正值單價乘有效面積與單位換算'],['N_prior','參考單價神經網路','參考單價乘有效面積，再乘預測倍率']],[2.0,6.5,8.3])
+h('單價與總價為何分開學')
+p('單價模型可比較不同面積的房屋，但最後必須乘回面積，才能用總價MAE評估。例如單價每平方公尺20萬元、面積40平方公尺，總價為800萬元。C_unit訓練採面積與日期權重，讓單價誤差較能對齊近期總價誤差。')
+p('直接總價模型保留金額尺度；對數總價模型學log1p（總價÷1,000,000），讓大金額在學習表示中受到壓縮，再轉回總價。對數模型的訓練損失位於對數空間，不能稱為直接總價MAE。')
+h('有效面積的回退')
+p('有效面積優先採正且有限的建物面積，否則採有效車位面積，再無法使用才取1，讓乘除計算能繼續。這個1不是估計室內面積，也不會改寫原面積特徵。面積神經網路的單價輸出以萬元／平方公尺表示，還原時還需乘10,000。')
+
+page('6 參考單價與建案分組')
+p('參考單價先提供區域與房屋類型的大致價格起點，再由神經網路學習個別交易的調整倍率。價格參考只使用當次fit提供的標籤。[2]')
+formula('預測總價 ＝ 參考單價 × 有效面積 × 預測倍率')
+p('假設參考單價為每平方公尺20萬元、有效面積40平方公尺，價格起點為800萬元；模型若預測倍率1.2，便得到960萬元。這只是公式示例，倍率由模型學習，不由未知真價倒算。')
+table(['查詢次序','參考分組','最低原始筆數'],[
+ ['1','城市＋行政區＋交易類型＋建物類型','30'],['2','城市＋交易類型＋建物類型','30'],['3','交易類型＋建物類型','30'],['4','交易類型','30'],['5','全域可用參考','無30筆門檻']],[2,11.3,3.5])
+p('細分組資料不足就退回較粗分組，避免少量交易決定參考價格。每層採365天半衰期的日期加權中位單價：將單價由低至高排序，取累積權重首次達到總權重一半的位置；恰好到一半時，取相鄰單價平均。近期交易的權重較大，較容易影響中位位置，沒有把價格乘上權重。缺日期採中性權重1，前四層筆數門檻仍按原始支持量計算。')
+h('避免自己的答案回到自己的參考')
+p('依城市、行政區與建案組成分組鍵，再分成五折；缺建案時以地址、道路或單筆鍵回退。一折房屋的參考單價只由另外四折建立，稱為分組五折OOF。待預測房屋則使用完整fit的參考；建案用於分組，不是上表查詢條件。')
+p('這種分組不等同逐筆時間隔離：同一fit內，參考交易可能比某筆訓練交易晚。歷史驗證另外用外層時間切點，限制整套fit不得包含驗證期間的交易；兩種隔離處理的是不同問題。')
+
+page('7 三路融合與成交參考修正')
+p('所有輸出先統一成新臺幣總價，再依固定比例形成三路答案。75%與25%是既定配方，並非每份資料上的最佳比例。[2]')
+table(['路線','原始組合'],[
+ ['單價路線','75% × C_unit ＋ 25% × L_unit'],['神經網路路線','75% ×（N_area與N_prior各半）＋ 25% × L_unit'],['總價路線','75% ×（C_raw與C_log各半）＋ 25% × L_unit']],[3.2,13.6])
+h('可比成交與空間修正')
+p('每一路先利用fit中同建案、地址、道路等可比交易，以及fit估計的時間趨勢，修正原始估價，記為R。接著再利用固定空間參考狀態，補充直接參考較弱的情況，記為S；支持不足時回退。')
+formula('一路修正結果 ＝ S（原始組合B，R（B））')
+p('S同時接收原始估價與成交參考修正後的估價，所以不能把流程說成兩次相同校正直接相加。新的時間切點需要建立自己的成交參考與空間狀態。')
+h('逐筆取三路中位數')
+p('將三路修正後的價格由低至高排序，取中間那個。假設某間房屋得到1,000、1,100、1,600萬元，最終為1,100萬元。中位數可降低單一路線極端值的影響，並沒有找出真正成交價。')
+p('三路共同使用LightGBM與相關資料，並非完全獨立。如果三路一起高估，中位數仍會高估；它也可能擋掉某一路正確的改善。因此融合仍需要相同交易上的公平驗證。')
+
+page('8 訓練損失與固定設定')
+p('參考單價神經網路採日期加權SmoothL1。比較基準採日期加權總價MAE，其餘輸入、架構、先驗及融合設定固定。SmoothL1的設計是讓接近正確價格時的更新較平滑，較大誤差仍保留線性尾部。[2]')
+p('誤差e以百萬元表示，轉折值β＝0.1，即10萬元。誤差絕對值小於β時，單筆損失為e²÷（2β）；大於或等於β時，為|e|−β÷2。它改變學習時的懲罰方式，沒有刪除高價房，也沒有改變正式MAE評分。')
+formula('批次訓練損失 ＝ 各筆「日期權重 × SmoothL1損失」的平均')
+p('日期權重讓較近期交易對訓練影響較大。相差一年的有效日期，原始權重比例為1比2，再除以fit中有效日期的原始權重平均值；缺失或異常日期維持1。每個批次不再除以批次權重和。參考單價也使用日期權重，但用途是選擇參考中位位置。')
+table(['設定','固定內容'],[
+ ['隱藏層','512、256、128；LayerNorm與ReLU'],['正規化','Dropout 0.1；category dropout 0.1'],['輸出','Softplus正值倍率'],['訓練輪數與批次','30輪；每批2,048筆；seed 42'],['最佳化','AdamW；學習率0.001；weight decay 0.0001'],['學習率排程','CosineAnnealingLR；T_max 30；最低0.00001'],['模型選擇','固定最後第30輪，未依驗證最低點挑選']],[4.2,12.6])
+p('學習率控制參數每次更新的幅度；dropout在訓練時隨機停用部分單元，降低對特定路徑的依賴。推論時關閉dropout，沿用訓練好的參數與轉換規則。面積神經網路仍使用總價絕對誤差，沒有額外日期樣本權重，不能將六模型都稱為同一損失。')
+
+page('9 時間驗證與離線結果')
+p('估價要面對未來交易，因此年度回測只用train中早於驗證首日的交易建立模型，再評估接下來一年；課程valid留到最終訓練才合併。每個切點都建立自己的模型、轉換規則、參考單價、成交參考及空間狀態，避免帶入後期資訊。[3]')
+table(['驗證期間','fit筆數','驗證筆數'],[
+ ['2021/08/11 至 2022/08/10','134,805','105,511'],['2022/08/11 至 2023/08/10','240,316','81,234'],['2023/08/11 至 2024/08/10','321,550','133,697'],['2023/02/11 至 2024/02/10','272,117','107,169']],[10.0,3.4,3.4])
+p('基準與此方法在相同房屋上比較，以下單位皆為新臺幣元。差值是此方法減基準，負值代表誤差降低；最終全量模型不直接用來回測自己已學過的歷史。')
+table(['驗證期間','基準MAE','此方法MAE','差值'],[
+ ['2021/08 至 2022/08','2,309,352.36','2,310,236.02','＋883.66'],['2022/08 至 2023/08','1,407,387.07','1,405,971.19','−1,415.88'],['2023/08 至 2024/08','1,383,228.41','1,381,702.87','−1,525.54'],['額外2月起點','1,336,410.67','1,336,107.62','−303.06']],[5.7,3.7,3.7,3.7])
+h('整體改善仍可能有群體退步')
+p('三個主要期間有兩期改善、一期退步，最近一期改善約0.1103%。最近年度既有建案MAE增加213.10元，新建案減少2,841.61元。依test已知的既有建案36.62%與新建案63.38%加權，差值為−1,723.04元；這是組成診斷，不是test真價誤差，也不是官方評分。')
+p('各窗口已反覆參與方法研究，且部分時間重疊，不能視為四次獨立盲測。相同交易上的比較提高公平性，仍無法消除反覆選型對結果的影響。')
+
+page('10 實際訓練與驗證曲線')
+p('為觀察學習過程，另以固定參考單價神經網路配方進行30輪診斷訓練。這張圖呈現一個神經網路的學習狀況；六模型融合結果需看前頁的整體驗證。[4]')
+a=doc.add_paragraph();a.alignment=WD_ALIGN_PARAGRAPH.CENTER;a.paragraph_format.line_spacing=1.0
+shape=a.add_run().add_picture(str(R/'docs/assets/training_curve.png'),width=Cm(16.8))
+shape._inline.docPr.set('descr','固定30輪單一參考單價神經網路的未加權總價MAE。藍線訓練誤差下降，橘線時間驗證誤差後期趨平且波動。')
+cap=doc.add_paragraph('圖1 單一參考單價神經網路的診斷曲線','Caption');cap.alignment=WD_ALIGN_PARAGRAPH.CENTER
+table(['評估資料','第1輪MAE','固定第30輪MAE'],[
+ ['訓練資料','2,235,313.48','715,006.13'],['時間驗證資料','1,981,140.43','1,777,133.98']],[6.8,5,5])
+p('藍線是321,550筆訓練交易，橘線是之後133,697筆時間驗證交易。兩線都在關閉dropout後，計算未加權總價MAE，單位為元；並非SmoothL1訓練損失。橘線後段改善有限且波動，訓練誤差整體下降不等於對未來的估價持續改善。')
+p('30輪快照先封存，再讀驗證答案評分，沒有依橘線最低點挑輪數，也沒有改提交答案。此圖不是原提交當時的訓練紀錄；時間組成及訓練OOF／驗證完整fit參考差異也會影響兩線距離。落差不能全歸因於過擬合，也不能據此證明完全沒有過擬合。epoch是學習輪數，不能稱為模型容量或VC維度。')
+
+page('11 公開成績與結論的限制')
+p('Public約使用test的30%計分，Private約為其餘70%；這與課程valid不同。公開成績只能描述公開部分，不能直接推論隱藏部分。[3][5]')
+table(['方法','使用者回報Public MAE元'],[
+ ['基準方法','1,998,568.5706'],['最終提交方法','1,995,836.2136'],['差值 此方法減基準','−2,732.3570']],[8.4,8.4])
+p('公開MAE約199.58萬元，比基準降低約2,732元，約0.1367%。此數值來自使用者文字回報，未另登入平台核對實際上傳檔案的內容；Private仍未知。')
+h('離線較好仍可能在平台較差')
+p('另一對照方法在原三期整體及固定加權離線指標都優於基準，Public卻為2,083,045.2932元，反而較差；它在最早及最近年度的離線MAE也優於最終方法。這表示歷史驗證無法保證平台表現，不能只保留支持最終方法的比較。')
+h('改善幅度與證據界線')
+p('原強條件要求三窗整體與固定加權都改善、最近至少改善0.5%，並檢查季度和大型群退步。此方法未通過原強條件；它通過的是訓練前另訂的探索提交條件，不能把兩者混為一談。')
+p('依保存預測進行建案配對重抽樣，最近年度整體差值95%區間約為−3,594.91至＋523.35元，跨過0，尚不能據此宣稱穩定勝出。重抽樣沒有重新訓練，也未校正反覆選型及未來分布變動，改善比例不是Private勝率。')
+p('每次參考單價神經網路使用單一seed；基準使用保存結果，沒有同期重新訓練完全匹配的對照。因此小幅差異不能完全分離為損失函數的單獨效果，也未涵蓋GPU重訓變異。')
+
+page('12 最終答案與可追溯性')
+p('方法確定後，最終使用467,221筆有標籤資料。全量階段新增訓練一個參考單價神經網路，其餘五模型沿用保存預測向量。新神經網路重載後，對47,073筆測試交易推論核對一致，再重算神經網路路線的成交與空間修正，並與保存的另外兩路逐筆取中位數。[6]')
+h('提交檔案檢查')
+p('最終總價只取整一次，依指定編號順序輸出「編號」與「總價元」兩欄，共47,073筆。以獨立CSV讀取檢查欄名、列數、編號、順序、整數金額及全檔指紋，確保交付對應同一份答案。編號只用於對齊，不用來人工調價。')
+formula('整數總價 ＝ max（rint（最終總價），1）')
+p('最終提交檔SHA256如下，兩行串接為完整指紋：')
+for s in ['36231cd17a6cbeafefeb62a7989d207fa20','d6c5f7aaf99857e4d9addd25597c1']:
+ a=p(s);a.paragraph_format.space_after=Pt(2)
+ for z in a.runs:z.font.name='Consolas';z.font.size=Pt(10)
+h('保存與重現')
+p('來源、設定、模型重載、預測組合與答案檔身分都有保存證據。相對基準有13,002筆取整價格不同；未取整預測的平均絕對差為29,521.0062元，這是兩份預測的差，不是真價誤差或改善金額。')
+p('GitHub提供必要來源與文件，不含課程交易表、私有模型或提交CSV。尚未完成在乾淨環境從原始train／valid重訓全部六模型並產生最終答案的端到端驗證；固定seed與檔案指紋支持追查，不能保證任意硬體重訓完全相同。')
+h('結論與證據來源')
+p('整套流程結合資料清理、價格表示、參考資訊與固定融合，並以時間驗證檢查未知交易的估價能力。目前可觀察到小幅改善，但跨期與分群結果不一致，Private未知。後續應優先使用新的時間留出資料及多seed對照確認穩定性。')
+for t in [
+ '[1] 資料讀取、完全去重與特徵解析程式。',
+ '[2] 六模型訓練、神經網路編碼、參考單價及融合來源。',
+ '[3] 三年度與額外二月起點的離線結果、分群及重抽樣紀錄。',
+ '[4] 固定30輪診斷的逐輪MAE、快照及保存預測核對。',
+ '[5] 最終選定與使用者公開分數回報。',
+ '[6] 全量訓練設定、模型重載與CSV發行核對。']:
+ a=p(t);a.paragraph_format.space_after=Pt(2)
+ for z in a.runs:z.font.size=Pt(9.5)
+p('程式與證據入口：github.com/ziyi930108/nycu-house-price-regression（私人儲存庫，需存取權限）。')
+doc.core_properties.title='台灣房屋銷售價格預測挑戰賽';doc.core_properties.author='廖子頤'
+doc.core_properties.subject='房屋總價預測方法與結果';doc.core_properties.keywords='房屋總價,MAE,資料清理,時間驗證'
+DEST=O/'台灣房屋銷售價格預測挑戰賽_正式報告.docx';doc.save(DEST)
+text='\n'.join(p.text for p in doc.paragraphs)+'\n'+'\n'.join(c.text for t in doc.tables for row in t.rows for c in row.cells)
+assert not re.search(r'本研究|\bv\d+\b|\bR\d+\b|報告日期|方法與實驗報告',text,re.I)
+(Q/'build.json').write_text(json.dumps({'report':DEST.relative_to(R).as_posix(),'sha256':hashlib.sha256(DEST.read_bytes()).hexdigest(),'tables':len(doc.tables),'images':len(doc.inline_shapes),'intended_pages':12,'chinese_characters':len(re.findall(r'[\u4e00-\u9fff]',text)),'model_changed':False},ensure_ascii=False,indent=2),encoding='utf8')
+(Q/'report_text.txt').write_text(text,encoding='utf8');print(DEST)
