@@ -6,7 +6,7 @@
 
 1. [Word正式報告](docs/台灣房屋銷售價格預測挑戰賽_正式報告.docx)：12頁，清理與文字轉換規則放在正文。
 2. [線上完整報告](REPORT.md)與[章節證據對照](docs/REPORT_SOURCES.md)。
-3. [上台簡報與講稿](teaching/final_presentation/README.md)：24頁，21主講＋3附錄；講稿4,118字，約14.97分鐘，尚未真人計時。
+3. [上台簡報與講稿](teaching/final_presentation/README.md)：24頁，21主講＋3附錄，已依排版回饋重排；講稿4,118字，約14.97分鐘，尚未真人計時。
 4. [程式與重現界線](docs/V25_REPRODUCIBILITY_20261010.md)、[選定與分數證據](docs/V25_SELECTION_20261010.md)。
 
 Public MAE為使用者回報 **1,995,836.2136元**；Private未知。最終訓練467,221筆，測試47,073筆。離線改善小且跨期、分群不一致，保留不利比較與限制。
@@ -15,4 +15,4 @@ Public MAE為使用者回報 **1,995,836.2136元**；Private未知。最終訓�
 
 價格標籤來自課程資料；禁止到內政部實價登錄系統核對答案。交易表、模型權重、價格先驗、逐筆預測及提交CSV不納入GitHub。來源與文件保存不等於乾淨環境全部六模型端到端重現。
 
-以`python scripts/verify_source.py`核對來源；提交CSV身分檢查見重現說明。這次只更新報告與簡報，未訓練、未改價格、未操作Kaggle。舊文件本機及Git歷史保留。
+以`python scripts/verify_source.py`核對來源；提交CSV身分檢查見重現說明。這次只重排簡報並同步講稿標題，Word報告保持；未訓練、未改價格、未操作Kaggle。舊文件本機及Git歷史保留。

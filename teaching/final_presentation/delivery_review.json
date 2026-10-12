@@ -1,29 +1,21 @@
 {
   "status": "passed",
-  "sha256": "dac9a3330812ddbbce5ab45093d7ce2ce1a252e11aca21b6efc755231ba93dd2",
-  "script_sha256": "7a494839f01bafae637f7093b2c4c7585c8a357750cd07dfc9ca29ec48658343",
+  "deck": "C:\\NYCU_ML\\deliverables\\房屋價格預測_簡報排版定稿_20261012\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+  "sha256": "6a7f0c50216433e65f53017cfae978bfc3c9669a2698956edb886628fca6713f",
+  "bytes": 121050,
+  "script": "C:\\NYCU_ML\\deliverables\\房屋價格預測_簡報排版定稿_20261012\\完整口語講稿.md",
+  "script_sha256": "b0321ead743a061009de0b9bdf4d9ea6416a1047476fdd6dda1f649a348996ab",
   "slides": 24,
   "main_slides": 21,
   "appendix_slides": 3,
   "main_script_han": 4118,
+  "estimated_minutes_at_250": 16.472,
   "estimated_minutes_at_275": 14.974545454545455,
+  "estimated_minutes_at_300": 13.726666666666667,
   "human_rehearsal_performed": false,
-  "native_tables": 11,
-  "native_charts": 3,
-  "curve_values": 60,
-  "curve_underlying_unit": "TWD",
-  "curve_axis_unit": "百萬元",
-  "curve_y_axis_Chinese_vertical": true,
-  "limitations": [
-    "Time is Han-character pace estimate, not human rehearsal.",
-    "No native PowerPoint editing test performed.",
-    "Curve is a separate fixed single-network diagnostic, not original submission trajectory or full ensemble.",
-    "All-six-model clean-environment training/inference remains unverified."
-  ],
-  "packaged_source_rebuild": {
-    "rebuild_completed": true,
-    "slide_count": 24,
-    "pixel_identical_slides": [
+  "count_scope": "主講 script 的漢字，不含標題、英文、數字、標點、補充理由、附錄、問答",
+  "visual_review": {
+    "r1_all_slides_individually_inspected": [
       1,
       2,
       3,
@@ -49,11 +41,92 @@
       23,
       24
     ],
-    "different_pixels": [],
-    "script_bytes_equal": true,
-    "pptx_bytes_equal": false,
-    "scope": "Same bundled runtime, copied five-file source package, no clean install or native PowerPoint execution"
+    "r3_revised_slides_individually_inspected": [
+      3,
+      4,
+      6,
+      8,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      23
+    ],
+    "r3_other_slides_pixel_identical_to_inspected_r1": [
+      1,
+      2,
+      5,
+      7,
+      9,
+      10,
+      14,
+      19,
+      20,
+      21,
+      22,
+      24
+    ],
+    "r3_all_slides_rendered": true,
+    "overlap_or_clipping_found": false
   },
-  "deck": "台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-  "script": "完整口語講稿.md"
+  "native_tables": 7,
+  "native_table_slides": [
+    3,
+    4,
+    8,
+    13,
+    16,
+    17,
+    23
+  ],
+  "native_charts": 3,
+  "native_chart_slides": [
+    10,
+    11,
+    19
+  ],
+  "editable_chart_embedded_workbooks": 3,
+  "curve_values": 60,
+  "curve_raw_values_source_unchanged": true,
+  "curve_editable_workbook_precision": "15 significant digits required by Excel",
+  "maximum_curve_workbook_change_TWD": 4.889443516731262e-09,
+  "curve_underlying_unit": "TWD",
+  "curve_axis_unit": "百萬元",
+  "curve_y_axis_Chinese_vertical": true,
+  "source_validation": {
+    "four_window_table": true,
+    "unfavorable_existing_project_stratum": true,
+    "public_counterexample": true,
+    "private_unknown": true,
+    "version_labels_absent_from_visible_text_and_notes": true,
+    "title_name_student_number": true,
+    "slide_notes_match_all_24_scripts": true
+  },
+  "finalizer_receipt": "C:\\NYCU_ML\\outputs\\ppt_layout_20261012\\final_r3.validation.json",
+  "PowerPoint_native_opening_performed": false,
+  "limitations": [
+    "Time is Han-character pace estimate, not human rehearsal.",
+    "No native PowerPoint editing test performed.",
+    "Curve is a separate fixed single-network diagnostic, not original submission trajectory or full ensemble.",
+    "All-six-model clean-environment training/inference remains unverified."
+  ],
+  "submission_csv_sha256_unchanged": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+  "new_model_training_performed": false,
+  "Kaggle_operation_performed": false,
+  "build_dependencies": [
+    "src/build_layout_ppt_20261012.mjs",
+    "src/finalize_layout_ppt_20261012.mjs",
+    "outputs/ppt_layout_20261012/narrative.json",
+    "outputs/v25_training_curve_20261010/curve.json",
+    "bundled Node artifact-tool",
+    "bundled Python and skill finalizers"
+  ],
+  "initial_failures": [
+    "Initial border configuration was ignored, leaving default black gridlines in rendered r1/r2. Corrected to explicit outside, insideHorizontal and insideVertical settings in r3."
+  ],
+  "previous_user_rejected_deck_sha256": "dac9a3330812ddbbce5ab45093d7ce2ce1a252e11aca21b6efc755231ba93dd2",
+  "word_report_unchanged_sha256": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e"
 }
