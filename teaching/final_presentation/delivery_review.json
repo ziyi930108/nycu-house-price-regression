@@ -1,269 +1,58 @@
 {
   "status": "passed",
-  "deck": "C:\\NYCU_ML\\deliverables\\房屋價格預測_刪除兩頁修訂_20261012\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-  "deck_sha256": "1c5204f9ced121e2a7a462fa0e3136bf4b557cb727fbd387244bbf47a118b4cb",
-  "slides": 22,
-  "main_slides": 19,
-  "appendix_slides": 3,
-  "deleted_original_slides": [
-    4,
-    5
+  "deck_sha256": "5677f3381b1f3b3462233f3d8884227e647d0d9dfbe818a2f4bd9078690c0624",
+  "main_han": 4075,
+  "main_minutes_at_275": 14.818181818181818,
+  "slides": 16,
+  "main_slides": 16,
+  "appendix_slides": 0,
+  "native_tables": 6,
+  "native_charts": 3,
+  "embedded_workbooks": 3,
+  "original_curve_values": 60,
+  "curve_max_abs_error_twd": 4.889443516731262e-09,
+  "unchanged_same_number_slides_pixel_identical": [
+    1,
+    2,
+    3,
+    6,
+    8,
+    9,
+    10
   ],
-  "deleted_titles": [
-    "四份資料的用途",
-    "表頭排除與完全去重"
-  ],
-  "main_han": 3758,
-  "main_minutes_at_275": 13.665454545454546,
-  "estimated_minutes_at_250": 15.032,
-  "estimated_minutes_at_300": 12.526666666666667,
-  "human_rehearsal_performed": false,
-  "narration_sha256": "9c0bb6fad042d02a773f93a46a239e21a27ed2ef6fbbfbb801eaa3822c822d2c",
-  "remaining_script_and_why_exactly_preserved": true,
-  "remaining_notes_byte_identical": 22,
-  "embedded_workbooks_preserved": 3,
-  "native_table_count": 6,
-  "native_chart_count": 3,
-  "cover_and_house_illustration_preserved": true,
-  "all_surviving_content_preserved_except_footer_numbers": true,
-  "pixel_comparison": [
-    {
-      "old": 1,
-      "new": 1,
-      "difference_bbox": null,
-      "only_page_number_changed": false
-    },
-    {
-      "old": 2,
-      "new": 2,
-      "difference_bbox": null,
-      "only_page_number_changed": false
-    },
-    {
-      "old": 3,
-      "new": 3,
-      "difference_bbox": null,
-      "only_page_number_changed": false
-    },
-    {
-      "old": 6,
-      "new": 4,
-      "difference_bbox": [
-        1488,
-        847,
-        1500,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 7,
-      "new": 5,
-      "difference_bbox": [
-        1488,
-        848,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 8,
-      "new": 6,
-      "difference_bbox": [
-        1489,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 9,
-      "new": 7,
-      "difference_bbox": [
-        1488,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 10,
-      "new": 8,
-      "difference_bbox": [
-        1476,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 11,
-      "new": 9,
-      "difference_bbox": [
-        1476,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 12,
-      "new": 10,
-      "difference_bbox": [
-        1488,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 13,
-      "new": 11,
-      "difference_bbox": [
-        1489,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 14,
-      "new": 12,
-      "difference_bbox": [
-        1488,
-        847,
-        1500,
-        864
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 15,
-      "new": 13,
-      "difference_bbox": [
-        1489,
-        847,
-        1499,
-        864
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 16,
-      "new": 14,
-      "difference_bbox": [
-        1488,
-        847,
-        1500,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 17,
-      "new": 15,
-      "difference_bbox": [
-        1488,
-        848,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 18,
-      "new": 16,
-      "difference_bbox": [
-        1489,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 19,
-      "new": 17,
-      "difference_bbox": [
-        1488,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 20,
-      "new": 18,
-      "difference_bbox": [
-        1476,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 21,
-      "new": 19,
-      "difference_bbox": [
-        1476,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 22,
-      "new": 20,
-      "difference_bbox": [
-        1488,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 23,
-      "new": 21,
-      "difference_bbox": [
-        1489,
-        847,
-        1499,
-        865
-      ],
-      "only_page_number_changed": true
-    },
-    {
-      "old": 24,
-      "new": 22,
-      "difference_bbox": [
-        1488,
-        847,
-        1500,
-        864
-      ],
-      "only_page_number_changed": true
-    }
-  ],
-  "portable_source_rebuild_repeated_this_minor_edit": true,
-  "portable_source_rebuild_pixel_identical_slides": 22,
-  "independent_visual_review_passed": true,
-  "finalizer_receipt": "C:\\NYCU_ML\\outputs\\ppt_delete_two_20261012\\final_r1.validation.json",
+  "app_metadata_counts": {
+    "Slides": "16",
+    "Notes": "16"
+  },
   "word_changed": false,
+  "csv_changed": false,
   "model_changed": false,
+  "native_powerpoint_tested": false,
+  "human_rehearsal_performed": false,
   "Kaggle_actions": false,
-  "native_PowerPoint_opening_performed": false,
+  "Private": "unknown",
+  "root_visual_reviewed_slides": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "independent_visual_review": "independent_visual_review.json",
+  "source_rebuild": "source_rebuild/source_rebuild_review.json",
   "usage_used_percent": 2,
   "usage_remaining_percent": 98,
-  "app_properties_count_correction": "Original Slides/Notes metadata was 0; now matches 22 actual slides/notes."
+  "root_visual_findings": [],
+  "visible_content_focus": "production process and design reasons"
 }
