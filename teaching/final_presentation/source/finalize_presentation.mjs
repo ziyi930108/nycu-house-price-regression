@@ -14,7 +14,7 @@ if(!/^r\d+$/.test(revision))throw Error('Revision required');
 const final=QA+`/final/${revision}.pptx`, renders=QA+`/renders_${revision}`;
 await fs.mkdir(QA+'/final',{recursive:true});
 const {finalizePresentation}=await import(pathToFileURL(SKILL+'/container_tools/artifact_tool_utils.mjs').href);
-const tableOwners=[3,4,5,6,7,12,15];
+const tableOwners=[4,5,6,7,8,12];
 // Normalize optional package counters only; authored slide content stays intact.
 const metadataPath=QA+`/candidate_metadata_${revision}.pptx`;
 const metadataCode=`import sys,zipfile,copy
@@ -35,7 +35,7 @@ with zipfile.ZipFile(src) as z,zipfile.ZipFile(dest,'x',compression=zipfile.ZIP_
 `;
 const metadata=spawnSync(PY,['-c',metadataCode,QA+'/candidate.pptx',metadataPath],{encoding:'utf8'});
 if(metadata.status!==0)throw Error(metadata.stderr||'Metadata normalization failed');
-const result=await finalizePresentation({workspaceDir:ROOT,explicitTotalSlideCount:16,candidatePath:metadataPath,finalPath:final,pythonExecutable:PY,integrityValidatorPath:SKILL+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:SKILL+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit',...tableOwners.flatMap(n=>['--require-native-table-slide',String(n)])],requiredNativeTableOwnerSlides:tableOwners,requiredNativeChartOwnerSlides:[8,9,11],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'reference',families:['Microsoft JhengHei'],referencePath:'C:/NYCU_ML/deliverables/房屋價格預測_價格目標說明_20261012/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx',referenceSha256:'206ce802f70d2be39e09167745c7b426c2b7b84d059768d1fd991f9811f2064c'},verifyArtifactToolImport:true,receiptPath:QA+`/final_${revision}.validation.json`});
+const result=await finalizePresentation({workspaceDir:ROOT,explicitTotalSlideCount:16,candidatePath:metadataPath,finalPath:final,pythonExecutable:PY,integrityValidatorPath:SKILL+'/container_tools/inspect_presentation_package_integrity.py',layoutValidatorPath:SKILL+'/container_tools/inspect_presentation_layout_geometry.py',layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit',...tableOwners.flatMap(n=>['--require-native-table-slide',String(n)])],requiredNativeTableOwnerSlides:tableOwners,requiredNativeChartOwnerSlides:[9,10,15],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'reference',families:['Microsoft JhengHei'],referencePath:'C:/NYCU_ML/deliverables/房屋價格預測_日期與參考價教學_20261012/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx',referenceSha256:'db3331a785219760a584c32cdd5533871ea65a1ab2ff290c54c9ba3d803f5afb'},verifyArtifactToolImport:true,receiptPath:QA+`/final_${revision}.validation.json`});
 console.log(JSON.stringify({event:'finalized',file:final,status:result.status}));
 await fs.mkdir(renders,{recursive:true});
 const p=await PresentationFile.importPptx(await FileBlob.load(final));

@@ -1,35 +1,99 @@
 {
   "status": "passed",
-  "deck_sha256": "db3331a785219760a584c32cdd5533871ea65a1ab2ff290c54c9ba3d803f5afb",
-  "main_han": 4298,
-  "main_minutes_at_275": 15.629090909090909,
+  "deck_sha256": "f68f88abdd475532467cd2f04543f7c9193fd2f08d8765a41c9dc8c8e859bd24",
+  "main_han": 4340,
+  "main_minutes_at_275": 15.781818181818181,
   "slides": 16,
   "main_slides": 16,
   "appendix_slides": 0,
-  "native_tables": 7,
+  "native_tables": 6,
   "native_table_owner_slides": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    12
+  ],
+  "native_charts": 3,
+  "native_chart_owner_slides": [
+    9,
+    10,
+    15
+  ],
+  "embedded_workbooks": 3,
+  "new_logical_order_of_old_slides": [
+    1,
+    null,
+    2,
     3,
     4,
     5,
     6,
     7,
-    12,
-    15
-  ],
-  "native_charts": 3,
-  "embedded_workbooks": 3,
-  "logical_changed_slides": [
+    8,
     9,
-    10
+    10,
+    12,
+    13,
+    14,
+    11,
+    16
   ],
+  "outline_new_page": 2,
+  "deleted_old_page": 15,
+  "chapter_page_ranges": {
+    "資料準備": [
+      3,
+      7
+    ],
+    "模型訓練": [
+      8,
+      11
+    ],
+    "預測整合": [
+      12,
+      14
+    ],
+    "驗證與檢查": [
+      15,
+      16
+    ]
+  },
   "changed_package_members": [
+    "ppt/presentation.xml",
+    "ppt/slides/slide1.xml",
+    "ppt/notesSlides/notesSlide1.xml",
+    "ppt/slides/slide2.xml",
+    "ppt/notesSlides/notesSlide2.xml",
+    "ppt/slides/slide3.xml",
+    "ppt/notesSlides/notesSlide3.xml",
+    "ppt/slides/slide4.xml",
+    "ppt/notesSlides/notesSlide4.xml",
+    "ppt/slides/slide5.xml",
+    "ppt/notesSlides/notesSlide5.xml",
+    "ppt/slides/slide6.xml",
+    "ppt/notesSlides/notesSlide6.xml",
+    "ppt/slides/slide7.xml",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/slides/slide8.xml",
+    "ppt/notesSlides/notesSlide8.xml",
     "ppt/slides/slide9.xml",
-    "ppt/notesSlides/notesSlide9.xml",
     "ppt/slides/slide10.xml",
-    "ppt/notesSlides/notesSlide10.xml"
+    "ppt/slides/slide11.xml",
+    "ppt/notesSlides/notesSlide11.xml",
+    "ppt/slides/slide12.xml",
+    "ppt/notesSlides/notesSlide12.xml",
+    "ppt/slides/slide13.xml",
+    "ppt/notesSlides/notesSlide13.xml",
+    "ppt/slides/slide14.xml",
+    "ppt/notesSlides/notesSlide14.xml",
+    "ppt/slides/slide15.xml",
+    "ppt/notesSlides/notesSlide15.xml",
+    "ppt/slides/slide16.xml",
+    "ppt/notesSlides/notesSlide16.xml"
   ],
-  "unchanged_other_slide_pixels": 14,
-  "unchanged_other_slide_notes": 14,
+  "retained_original_graphics_identical_except_page_markers_and_chapter_labels": 15,
   "original_curve_values_preserved": 60,
   "native_chart_and_workbook_parts_byte_identical": true,
   "source_rebuild_pixel_identical_slides": 16,
@@ -37,7 +101,7 @@
     "Slides": "16",
     "Notes": "16"
   },
-  "visual_review": "slides9 and10 manually inspected; readable explanatory chart and unit-price example; no clipping or overlap",
+  "visual_review": "All16 final slides individually inspected at full size; outline and chapter labels legible; no clipping or overlap",
   "scientific_review": "teaching_review.json",
   "word_changed": false,
   "csv_changed": false,
@@ -46,6 +110,6 @@
   "native_powerpoint_tested": false,
   "human_rehearsal_performed": false,
   "Private": "unknown",
-  "usage_used_percent": 2,
-  "usage_remaining_percent": 98
+  "usage_used_percent": 3,
+  "usage_remaining_percent": 97
 }
