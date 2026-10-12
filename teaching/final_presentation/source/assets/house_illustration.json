@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen text-to-image",
+  "transparent_background": true,
+  "prompt": "Create one tasteful small architectural illustration asset for a formal Traditional Chinese university PowerPoint about predicting Taiwan housing sale prices. Genuine transparent background. A compact three-quarter isometric view of a simple contemporary Taiwanese low-rise residential apartment building, with an adjacent smaller home, clean rooflines and a few clearly readable windows. Restrained flat editorial illustration with subtle dimensional depth, thin dark teal outlines, cream walls, muted sage/teal roofs and just a tiny warm terracotta accent. Palette should coordinate with #276E68, #23343A, #FCFCFA. Calm, polished, friendly but academic, simple silhouette readable when shown about 300 pixels wide. Centered composition with little transparent padding, entire building fully visible. No words, no letters, no numbers, no price tag, no chart, no people, no icons floating around, no background scene, no large base platform, no frame or card. This is a decorative supporting house illustration to fit in the lower-right blank area of an otherwise typographic slide, not a full slide.",
+  "asset": "house_illustration.png",
+  "sha256": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1",
+  "pixels": [
+    1322,
+    1190
+  ],
+  "slide": 2,
+  "placement": {
+    "left": 740,
+    "top": 330,
+    "width": 450,
+    "height": 275,
+    "fit": "contain"
+  },
+  "purpose": "裝飾性房屋示意插圖，非實際交易物件；不承載實驗證據。"
+}

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-12T06:59:44.977038+00:00",
+  "created_at_utc": "2026-10-12T07:16:52.084658+00:00",
   "scope": "Final selected documents and necessary scientific source; excludes private data, weights and predictions.",
   "files": [
     {
@@ -24,13 +24,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 964,
-      "sha256": "fe51f435ed267f574ad2b1a9a9643ba89ae1ddcb8ad994d1a2da86bc075906da"
+      "bytes": 1004,
+      "sha256": "7e17a1e9a012cb37ca33f545fb4163629d5622e9e9ba7d4f1a6a137a30ceb506"
     },
     {
       "path": "README.md",
-      "bytes": 1385,
-      "sha256": "0cf815cf22f586a10d6faf6c2d027cf0a1f064cb55c24ca0c1e651b591192207"
+      "bytes": 1457,
+      "sha256": "0dd45655cd5b5a0dcc136863040d3b7ed669586f9710b0e2b1fdaac60d7b3b8d"
     },
     {
       "path": "REPORT.md",
@@ -864,13 +864,13 @@
     },
     {
       "path": "teaching/final_presentation/README.md",
-      "bytes": 1319,
-      "sha256": "2314746ebfbea1d0832afbdb29ef67c9464c7a47dfe7863de5e77cb79e7dca72"
+      "bytes": 1055,
+      "sha256": "43c79315fc191aef3a7062a35b38464c0ed6ac4c184ce31da9facf02066325f0"
     },
     {
       "path": "teaching/final_presentation/delivery_review.json",
-      "bytes": 1536,
-      "sha256": "8b76554ef5dc1b2216b6cdac12b65c9aedc1c8c8b260ea8c45370097eaa9a0ef"
+      "bytes": 2176,
+      "sha256": "6c95443f10734c62ab910835c3b3bd61a4b01281d4cf6fc643f97f4d6a548d55"
     },
     {
       "path": "teaching/final_presentation/previews/slide-01.png",
@@ -879,8 +879,8 @@
     },
     {
       "path": "teaching/final_presentation/previews/slide-02.png",
-      "bytes": 73709,
-      "sha256": "74a72b63ce90127f7adff6301a0a43a92ae730b487e8e76960b26f4d7e9398c3"
+      "bytes": 234968,
+      "sha256": "b3a002f9b5fd72d08bee9f95886c6e51acaadc81e9558b41ac3b33c8572afb2d"
     },
     {
       "path": "teaching/final_presentation/previews/slide-03.png",
@@ -994,13 +994,23 @@
     },
     {
       "path": "teaching/final_presentation/source/README.md",
-      "bytes": 3004,
-      "sha256": "a9da3d03b81da4d964d5b44d619780ff4154909bac9881e45983cc51ce19eb04"
+      "bytes": 3293,
+      "sha256": "9d928352834694e665df06af6e0c3c09f7fabd914a8b496242b3da83886b3b48"
+    },
+    {
+      "path": "teaching/final_presentation/source/assets/house_illustration.json",
+      "bytes": 1594,
+      "sha256": "59047032e4e691f880f65b18723cb9e6bd32e6f20eda02a2bc28ca966c45f4dc"
+    },
+    {
+      "path": "teaching/final_presentation/source/assets/house_illustration.png",
+      "bytes": 1622223,
+      "sha256": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1"
     },
     {
       "path": "teaching/final_presentation/source/build_presentation.mjs",
-      "bytes": 19662,
-      "sha256": "ad5dd9a6480c506ccf4a8972da7e006fc2bb6af91e1be15e914f30b309779b87"
+      "bytes": 19905,
+      "sha256": "6acdefbf9a513fe564ab895c32416fe13f37446ca68824e0d3128d60f16c8857"
     },
     {
       "path": "teaching/final_presentation/source/content.json",
@@ -1019,8 +1029,8 @@
     },
     {
       "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-      "bytes": 120867,
-      "sha256": "2777c81b13950042956c0aea1aa3c29f6a7ef5d9f538bb17125b07f4b239ac01"
+      "bytes": 1677664,
+      "sha256": "158883e1130cc861ec5ba42b820179340bf96bfa2176d86a8f61206141e89f0e"
     },
     {
       "path": "teaching/final_presentation/完整口語講稿.md",

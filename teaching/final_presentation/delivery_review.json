@@ -1,22 +1,69 @@
 {
   "status": "passed",
-  "deck": "C:\\NYCU_ML\\deliverables\\房屋價格預測_封面文字修訂_20261012\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-  "deck_sha256": "2777c81b13950042956c0aea1aa3c29f6a7ef5d9f538bb17125b07f4b239ac01",
-  "source_deck_sha256": "6a7f0c50216433e65f53017cfae978bfc3c9669a2698956edb886628fca6713f",
+  "deck": "C:\\NYCU_ML\\deliverables\\房屋價格預測_房屋插圖修訂_20261012\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+  "deck_sha256": "158883e1130cc861ec5ba42b820179340bf96bfa2176d86a8f61206141e89f0e",
+  "source_deck_sha256": "2777c81b13950042956c0aea1aa3c29f6a7ef5d9f538bb17125b07f4b239ac01",
   "slides": 24,
   "main_slides": 21,
   "appendix_slides": 3,
-  "deleted_cover_text": "利用歷史成交資料，估計新交易總價",
+  "house_image_position": {
+    "left": 740,
+    "top": 330,
+    "width": 450,
+    "height": 275,
+    "fit": "contain"
+  },
+  "second_slide_visually_reviewed": true,
+  "decorative_image_AI_generated": true,
+  "asset_provenance": "C:\\NYCU_ML\\deliverables\\房屋價格預測_房屋插圖修訂_20261012\\source\\assets\\house_illustration.json",
   "changed_package_members": [
-    "ppt/slides/slide1.xml"
+    "ppt/slides/slide2.xml",
+    "ppt/slides/_rels/slide2.xml.rels",
+    "[Content_Types].xml"
   ],
-  "remaining_cover_xml_exactly_preserved": true,
-  "all_other_131_package_members_byte_identical": true,
+  "added_package_members": [
+    "ppt/media/house_illustration.png"
+  ],
+  "all_original_second_slide_shapes_exactly_preserved": true,
+  "unchanged_original_package_members": 129,
   "embedded_workbooks_preserved": 3,
   "speaker_notes_preserved": 24,
   "main_han": 4118,
   "narration_byte_identical": true,
   "unchanged_slide_pixels": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "second_slide_pixel_difference_bbox": [
+    1015,
+    421,
+    1379,
+    745
+  ],
+  "portable_source_rebuild_repeated_this_minor_edit": true,
+  "portable_source_rebuild_pixel_identical_slides": [
+    1,
     2,
     3,
     4,
@@ -41,18 +88,11 @@
     23,
     24
   ],
-  "cover_pixel_difference_bbox": [
-    117,
-    534,
-    714,
-    569
-  ],
-  "cover_visually_reviewed": true,
   "native_PowerPoint_opening_performed": false,
-  "finalizer_receipt": "C:\\NYCU_ML\\outputs\\ppt_cover_delete_20261012\\final_r3.validation.json",
+  "finalizer_receipt": "C:\\NYCU_ML\\outputs\\ppt_house_illustration_20261012\\final_r1.validation.json",
   "word_changed": false,
   "model_changed": false,
   "Kaggle_actions": false,
-  "portable_source_rebuild_repeated_this_minor_edit": false,
-  "source_builder_change": "One exact cover text call removed; no other authoring changes."
+  "usage_used_percent": 2,
+  "usage_remaining_percent": 98
 }

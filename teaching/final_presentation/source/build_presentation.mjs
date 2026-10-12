@@ -46,6 +46,7 @@ function bar(s,cats,vals,{x=600,y=192,w=590,h=350,max,min=0,format='0',horizonta
  heading(s,'特徵',80,181);text(s,'地點、面積、樓層\n建物類型、交易日期',80,245,500,130,34);
  heading(s,'標籤',700,181);text(s,'已知成交總價',700,245,500,100,38,{bold:true,color:C.ink});
  text(s,'訓練：用條件和答案調整規則\n推論：用保存的規則估計新交易',80,465,1120,115,29);
+ s.images.add({blob:new Uint8Array(await fs.readFile(path.join(import.meta.dirname,'assets/house_illustration.png'))),contentType:'image/png',alt:'青綠色房屋示意插圖',fit:'contain',position:{left:740,top:330,width:450,height:275}});
  caption(s,'回歸預測連續金額。未知交易仍需要獨立驗證。');}
 {const s=slide(3,'估價誤差與 MAE');
  text(s,'每筆相差金額取絕對值，再求平均',80,141,1120,55,29);
