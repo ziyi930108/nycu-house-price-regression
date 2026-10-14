@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-10-14T00:28:23.155399+00:00",
+  "actual_wall_seconds": 75.97092689998681,
+  "actual_exit_code": 0,
+  "rows": 47073,
+  "models_loaded": 6,
+  "new_fits": 0,
+  "wrapper_sha256": "473dae0dcbeabd34af54a667d5c3ab4ad7d10e5b9c64f39eebaa369e03d3dd12",
+  "selected_csv_sha256": "36231cd17a6cbeafefeb62a7989d207fa20d6c5f7aaf99857e4d9addd25597c1",
+  "CSV_bytes_equal_selected": true,
+  "original_selected_CSV_unchanged": true,
+  "existing_environments_reused": true,
+  "fresh_environment_installation_this_run": false,
+  "full_retraining_verified": false,
+  "Kaggle_operation": false
+}

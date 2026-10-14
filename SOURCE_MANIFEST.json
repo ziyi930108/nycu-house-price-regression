@@ -1,6 +1,6 @@
 {
-  "created_at_utc": "2026-10-12T18:42:26.169640+00:00",
-  "scope": "Selected v25 delivery and original source supplementation; excludes private payloads and new research.",
+  "created_at_utc": "2026-10-14T00:35:59.362464+00:00",
+  "scope": "Readable selected-method delivery, path-configured prediction and current report; private data and models excluded.",
   "files": [
     {
       "path": ".gitattributes",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 162,
-      "sha256": "1844c2e870dcbb3c92d5d189a5f72192e22cb93f2272679f7bbe7de671727786"
+      "bytes": 243,
+      "sha256": "36e76951381d5039c1ca229ea2cb62e46c654cc4eb9c9da7f318b7dc232284ef"
     },
     {
       "path": "AGENTS.md",
@@ -24,18 +24,28 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 1726,
-      "sha256": "e237d830c9a78f00377f7a6bfea3810acf33b6f62b8ee7389a996d941006aff6"
+      "bytes": 1344,
+      "sha256": "02351949d303d07a51724bc58af77fa3dffc4d161cf9b8f5e7a30bf4e8fd6fd8"
     },
     {
       "path": "README.md",
-      "bytes": 3215,
-      "sha256": "f8c9b7c3217ace868c8118749ecc52184a644ffc28a98ac018a963fdba99e4e8"
+      "bytes": 4601,
+      "sha256": "b765a1ebc145de083c317630655215ad8bac5d400ede0c3360fd39f06d915fe4"
     },
     {
       "path": "REPORT.md",
-      "bytes": 30985,
-      "sha256": "2649853fbfff724104b4dbd29b6eae8a5cc98187082099908946175ebd404dd1"
+      "bytes": 550,
+      "sha256": "cbb28c425c4cc9074180f6aa294ed647a0107737a2e7efe0762f753f306e5287"
+    },
+    {
+      "path": "config/README.md",
+      "bytes": 2505,
+      "sha256": "7f87d69458cfee764d4c2d1a7302fd840451b08173fd1157c0e282f3760b37ca"
+    },
+    {
+      "path": "config/predict.json",
+      "bytes": 339,
+      "sha256": "6e30bfd475e547f740248516042786009a0e8c3df92cd4057aa990fdef09207f"
     },
     {
       "path": "docs/PUBLISHING.md",
@@ -44,13 +54,18 @@
     },
     {
       "path": "docs/REPORT_README.md",
-      "bytes": 2087,
-      "sha256": "432fd35317dbcb3c98aacaeb9c8eb85a1862fc5eb2fb64c32e28f0afa51669f5"
+      "bytes": 217,
+      "sha256": "9f7c485ee86869d33e1b67a99bc452dbf38f365197f0d137144f5a33a3d3c92a"
     },
     {
       "path": "docs/REPORT_SOURCES.md",
-      "bytes": 3254,
-      "sha256": "c08e8c7be5ae3bda0fe2e4df3cab3264a7466a5338eb1b4780831944be37ff7e"
+      "bytes": 244,
+      "sha256": "6d8fa78595870e347003b120e6faf3e948302674840f38d8eb6172e1c3991db3"
+    },
+    {
+      "path": "docs/USAGE.md",
+      "bytes": 4102,
+      "sha256": "7c728209425dac354d67573eda4e6ac5e69579145f613556bf79fc0c2bbee033"
     },
     {
       "path": "docs/V25_REPRODUCIBILITY_20261010.md",
@@ -63,149 +78,39 @@
       "sha256": "8472931934895ca85c7ae6a921187340d76bd55e6e6b7a0d8f8190b4de850008"
     },
     {
+      "path": "docs/VALIDATION.md",
+      "bytes": 709,
+      "sha256": "a6e424eebd1a2c9aec1b524df8efe16ec46ee5ac8eee1e5b776991a108427ced"
+    },
+    {
       "path": "docs/assets/training_curve.png",
       "bytes": 145602,
       "sha256": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56"
     },
     {
+      "path": "docs/entry_validation.json",
+      "bytes": 639,
+      "sha256": "d5023613776d5d1485fbe4ee9431e23c5da6cefd216fb9bf358809be4a970173"
+    },
+    {
       "path": "docs/report_delivery_review.json",
-      "bytes": 6695,
-      "sha256": "31f8c68cd99b8e85f2ddb420392d765f2ada15b496630352754963731a2ce266"
+      "bytes": 348,
+      "sha256": "50ee20b3e6535dafc65af0a71f69d8cc4aae044735e10b61a0178513f13e287d"
     },
     {
       "path": "docs/source/README.md",
-      "bytes": 316,
-      "sha256": "f3b2345ac851c0743cb1c0efd8e6640a3b2b69304aacb6fd43499184d5999918"
+      "bytes": 555,
+      "sha256": "ff9ef26a463bd3873727e8c73abcee063afd9aaa5e0538cb8021ea1a424b648b"
     },
     {
       "path": "docs/source/build_report.py",
-      "bytes": 403,
-      "sha256": "bab4c0f0c2618f6320bae6a4cdceb7de2aeed667e8c37cd88c976c30fe9edeb5"
-    },
-    {
-      "path": "docs/source/course_completion/README.md",
-      "bytes": 2348,
-      "sha256": "4c5b031a6ab681204ae8930bb15f70ba28761c7768c9fd17adac3c9586fff30b"
-    },
-    {
-      "path": "docs/source/course_completion/SOURCE_MAP.md",
-      "bytes": 4664,
-      "sha256": "53ef385119442db1c88b9d120ee2f05effc58b3e5ba04cd3138d7ee89e2cf4cd"
-    },
-    {
-      "path": "docs/source/course_completion/artifact.md",
-      "bytes": 3136,
-      "sha256": "bfd3f90573741fa095d1afdb21f4656bac70cd325d81f97990cd43298ab63c6f"
-    },
-    {
-      "path": "docs/source/course_completion/assets/analysis_receipt.json",
-      "bytes": 3396,
-      "sha256": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7"
-    },
-    {
-      "path": "docs/source/course_completion/assets/city_price_distribution.png",
-      "bytes": 99034,
-      "sha256": "acc11cb8feae8a911b8d930091e1ed67e6bfa2f62d83f67190eac6bfe88d3ee3"
-    },
-    {
-      "path": "docs/source/course_completion/assets/city_statistics.json",
-      "bytes": 6014,
-      "sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f"
-    },
-    {
-      "path": "docs/source/course_completion/assets/error_by_price_band.png",
-      "bytes": 115057,
-      "sha256": "4c28931e8eca9f1b9161d3682ab880a9fedaefc009e7da534f9859c22068022b"
-    },
-    {
-      "path": "docs/source/course_completion/assets/fusion_validation.png",
-      "bytes": 147997,
-      "sha256": "ccec82123dc054028e91db06f88dd4b3b65f046988525229cc24be5acf22b316"
-    },
-    {
-      "path": "docs/source/course_completion/assets/kaggle_public_evidence.json",
-      "bytes": 657,
-      "sha256": "bbf9467f1cd2d2d8310b5e1858238e70afe57a36888a274afcfe1c3dc1f120a9"
-    },
-    {
-      "path": "docs/source/course_completion/assets/kaggle_submission_seen.png",
-      "bytes": 62904,
-      "sha256": "332b5e826af2660e35be9051523654a2598e0471785fa0f3399c66551c971e25"
-    },
-    {
-      "path": "docs/source/course_completion/assets/plot_rendering.json",
-      "bytes": 1813,
-      "sha256": "0383df8b7de00711a2249f3cef36fc1cbef7e5539a281da39030d15f17474fc8"
-    },
-    {
-      "path": "docs/source/course_completion/assets/program_flow.png",
-      "bytes": 175361,
-      "sha256": "f689a61409e837491422f839fc5498d58d48eb5ea132de131450a8e8da8dcc91"
-    },
-    {
-      "path": "docs/source/course_completion/assets/program_flow.svg",
-      "bytes": 8031,
-      "sha256": "315116961c8b88431deef6a502819667fb9053a1bce68ea0edafa6f4352543dc"
-    },
-    {
-      "path": "docs/source/course_completion/assets/reproducibility_receipt.json",
-      "bytes": 21016,
-      "sha256": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2"
-    },
-    {
-      "path": "docs/source/course_completion/assets/training_curve.png",
-      "bytes": 145602,
-      "sha256": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56"
-    },
-    {
-      "path": "docs/source/course_completion/assets/training_source_additions_manifest.json",
-      "bytes": 23375,
-      "sha256": "67b7eddec95a1ef5300f15dc4c1f5d4dd600e6d8830a642f4c1674a3c45de818"
-    },
-    {
-      "path": "docs/source/course_completion/assets/training_source_audit.json",
-      "bytes": 6392,
-      "sha256": "0b1c2f73e0d1267e76e900558cf7c1ab71f778601bae8c253cb950d9805aae8c"
-    },
-    {
-      "path": "docs/source/course_completion/assets/validation_report_summary.json",
-      "bytes": 22067,
-      "sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889"
-    },
-    {
-      "path": "docs/source/course_completion/build_flowchart.py",
-      "bytes": 3932,
-      "sha256": "8ea35e9798315258401d8e047bc251750e386a21dfe01fd17eadbb9e5dad8b44"
-    },
-    {
-      "path": "docs/source/course_completion/build_report.py",
-      "bytes": 12626,
-      "sha256": "2ebc1365b7db716826c7768deec9870af5c811785b7c47d790b83203d3b41e9e"
-    },
-    {
-      "path": "docs/source/course_completion/make_supplement.py",
-      "bytes": 12509,
-      "sha256": "af8ed922a1badeeaa651c4a90742a9d7b6361cf8f90225d2bb51225c02b64683"
-    },
-    {
-      "path": "docs/source/course_completion/reference_report.docx",
-      "bytes": 182759,
-      "sha256": "c882102537d1704b0cf5a22bcdbbb7ee84e593b77c8ba102c506e8c5bc58562e"
-    },
-    {
-      "path": "docs/source/course_completion/render_review.py",
-      "bytes": 1163,
-      "sha256": "426d8731cd5eae431d7930667080a3a14aae50e391f4e1713e3b47a008a31efb"
-    },
-    {
-      "path": "docs/source/course_completion/supplement.json",
-      "bytes": 20741,
-      "sha256": "6bfc73e1d6adfc95fe718cf7dafb5cdceaeb3c98450491955cb312b2a828845d"
+      "bytes": 481,
+      "sha256": "1bb6d06ce58505e805159d1f71ed6ab30351d72c3c0ad1ab72afd84bf8116082"
     },
     {
       "path": "docs/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
-      "bytes": 656773,
-      "sha256": "6db27e7b7b078d2d11b5548937ccf00791b140cc79303090f424972f4c987b4e"
+      "bytes": 1070434,
+      "sha256": "ad4d43738cee981dd230dcf91288b96fc40ca0da5ed9f34bff78ad2aba6ca74f"
     },
     {
       "path": "evidence/kaggle_feedback/public_v25_user_report_20261010.json",
@@ -788,9 +693,94 @@
       "sha256": "67b7eddec95a1ef5300f15dc4c1f5d4dd600e6d8830a642f4c1674a3c45de818"
     },
     {
+      "path": "report/README.md",
+      "bytes": 1113,
+      "sha256": "042436ae263987e3b61e5174f6db824dc2388797b0bce187432f16814051a97f"
+    },
+    {
+      "path": "report/REPORT.md",
+      "bytes": 36536,
+      "sha256": "279ccd000e4b5295943b8acce8d65a4b837eddb94061206523e9b447fc10d014"
+    },
+    {
+      "path": "report/SOURCE_MAP.md",
+      "bytes": 3598,
+      "sha256": "5eb925af029e43d3857fc2aa104050c131916793f7344f41f8c0360d45cf84ae"
+    },
+    {
+      "path": "report/delivery.json",
+      "bytes": 4736,
+      "sha256": "b0df95d0cfcd94e73afe91d8e65202ec80ae4f19f22406e8219105b855ee0f86"
+    },
+    {
+      "path": "report/source/README.md",
+      "bytes": 1393,
+      "sha256": "5c66b476e94bc38725010009c583f174c6cea29204959a73912637902cd98188"
+    },
+    {
+      "path": "report/source/assets/city_price_distribution.png",
+      "bytes": 98718,
+      "sha256": "3943c11c41ae343ee8f20964862513e9dd8dba921fe6d96dc06ee9df5c0c2348"
+    },
+    {
+      "path": "report/source/assets/city_statistics.json",
+      "bytes": 6014,
+      "sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f"
+    },
+    {
+      "path": "report/source/assets/error_by_price_band.png",
+      "bytes": 113105,
+      "sha256": "9820be5c41918e3f94a8b2b2103f8acdcbfc17229db317d7b828830453b81a74"
+    },
+    {
+      "path": "report/source/assets/fusion_validation.png",
+      "bytes": 364435,
+      "sha256": "c1b6aa472fb937f4aff70b948de22f4a2fa4da6acc4d39d312c7e886573dab3a"
+    },
+    {
+      "path": "report/source/assets/program_flow.png",
+      "bytes": 421986,
+      "sha256": "c7a681b36d54a926d870029b3659679b034f893f6622d33ed32467ba911779d0"
+    },
+    {
+      "path": "report/source/assets/training_curve.png",
+      "bytes": 145602,
+      "sha256": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56"
+    },
+    {
+      "path": "report/source/assets/validation_summary.json",
+      "bytes": 9764,
+      "sha256": "b9111f4997be88a7f20221290df1d8d37b8e9e4e78937ed57b7ff7e35764301e"
+    },
+    {
+      "path": "report/source/build_report.py",
+      "bytes": 2639,
+      "sha256": "fe04e156d06e93c4696d7c5519145f7dc259d27c86249f37d5dd7ec71b7312ae"
+    },
+    {
+      "path": "report/source/reference_report.docx",
+      "bytes": 1070910,
+      "sha256": "adb7ecd04924ad64567e49a23ba1715b6e60442e6046c9731930e9c160c5b0c3"
+    },
+    {
+      "path": "report/source/reference_report.md",
+      "bytes": 37216,
+      "sha256": "e5386842c01a87899b59ac1959114716d220dd31b0b15fd2b9061997cf34b349"
+    },
+    {
+      "path": "report/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "bytes": 1070434,
+      "sha256": "ad4d43738cee981dd230dcf91288b96fc40ca0da5ed9f34bff78ad2aba6ca74f"
+    },
+    {
+      "path": "report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf",
+      "bytes": 1331488,
+      "sha256": "d50f33ba3c15d63b105ddd7a8d637493cd42a3f1bfc481c754f84af4391e6ee4"
+    },
+    {
       "path": "requirement.txt",
-      "bytes": 337,
-      "sha256": "596a75b228e8479508ba7278fde45bd98062fa9f1d92db7f2fb0b3c66728a835"
+      "bytes": 325,
+      "sha256": "da51b4bc5b892488defc3f19821d4a7637c541c514021d55eb4e3e7a0db6b374"
     },
     {
       "path": "requirements-geography.txt",
@@ -804,13 +794,13 @@
     },
     {
       "path": "requirements-report.txt",
-      "bytes": 366,
-      "sha256": "7bd17963d237a6fba07f4e011f0ed567d64bdd6fc4f50022b6f34e7460b5b241"
+      "bytes": 390,
+      "sha256": "6ff781c7fa97b62b6ec631dc5fb4446a2f5e11f42ad2c0ccaefcfae8ab533ef4"
     },
     {
       "path": "requirements-torch.txt",
-      "bytes": 176,
-      "sha256": "7bf969f9a7e7d29d3f9a1e1883bc053878654d5147bdc2e8eafec3c0df878cb7"
+      "bytes": 281,
+      "sha256": "e971b13011ac4e6cdc833aa6dbfcd04d5e857b0ae414ad8d0c7d7dd80103e21a"
     },
     {
       "path": "research/config/original_feature_schema.json",
@@ -1296,6 +1286,16 @@
       "path": "scripts/verify_source.py",
       "bytes": 1836,
       "sha256": "ca82b6e2295ad73339645d08fa6e035fa629964a492b9fd25af6ce8bbacbb3e4"
+    },
+    {
+      "path": "src/README.md",
+      "bytes": 3296,
+      "sha256": "0e105f3746cc73c92fd72a0b0aa6ea37dcfda0a68400f2e40f1bf2a5456d785e"
+    },
+    {
+      "path": "src/predict.py",
+      "bytes": 4775,
+      "sha256": "473dae0dcbeabd34af54a667d5c3ab4ad7d10e5b9c64f39eebaa369e03d3dd12"
     },
     {
       "path": "teaching/final_presentation/README.md",

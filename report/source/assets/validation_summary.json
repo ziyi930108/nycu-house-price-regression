@@ -1,0 +1,312 @@
+{
+  "period": "2023-08-11至2024-08-10",
+  "model": "各切點獨立訓練之完整融合方法，保存未取整預測",
+  "fit_rows": 321550,
+  "query_rows": 133697,
+  "mae_twd": 1381702.8680319374,
+  "median_absolute_error_twd": 769778.4711017869,
+  "absolute_error_quantiles_twd": {
+    "0": 5.13127476722002,
+    "0.25": 322292.0132577885,
+    "0.5": 769778.4711017869,
+    "0.75": 1697142.6356953885,
+    "0.9": 3172581.2837530677,
+    "0.95": 4538015.9107625205,
+    "0.99": 8929452.754529782,
+    "1": 186631761.8830986
+  },
+  "mean_signed_error_twd": -354468.48661506193,
+  "under_prediction_fraction": 0.5219563640171433,
+  "tail_error_contribution": [
+    {
+      "fraction": 0.001,
+      "rows": 134,
+      "absolute_error_share": 0.02843973335435713
+    },
+    {
+      "fraction": 0.01,
+      "rows": 1337,
+      "absolute_error_share": 0.10654347856534697
+    },
+    {
+      "fraction": 0.05,
+      "rows": 6685,
+      "absolute_error_share": 0.2800834915834152
+    },
+    {
+      "fraction": 0.1,
+      "rows": 13370,
+      "absolute_error_share": 0.4164104713422115
+    }
+  ],
+  "by_city": [
+    {
+      "group": "臺中市",
+      "rows": 27157,
+      "mae_twd": 1411027.1017490493,
+      "median_absolute_error_twd": 763723.9203823041,
+      "mean_signed_error_twd": -148420.9465630554,
+      "true_price_median_twd": 17040000.0
+    },
+    {
+      "group": "桃園市",
+      "rows": 26327,
+      "mae_twd": 1227932.6392759546,
+      "median_absolute_error_twd": 781336.4321529567,
+      "mean_signed_error_twd": -243916.06407202673,
+      "true_price_median_twd": 13400000.0
+    },
+    {
+      "group": "新北市",
+      "rows": 21822,
+      "mae_twd": 1317193.9511201826,
+      "median_absolute_error_twd": 708516.3682441562,
+      "mean_signed_error_twd": -505784.92083815334,
+      "true_price_median_twd": 18950000.0
+    },
+    {
+      "group": "高雄市",
+      "rows": 16443,
+      "mae_twd": 1009178.5382381709,
+      "median_absolute_error_twd": 691185.5892673396,
+      "mean_signed_error_twd": -272297.70627878234,
+      "true_price_median_twd": 12390000.0
+    },
+    {
+      "group": "臺南市",
+      "rows": 9822,
+      "mae_twd": 913446.3674474331,
+      "median_absolute_error_twd": 674209.8112557195,
+      "mean_signed_error_twd": 353808.7695908609,
+      "true_price_median_twd": 12070000.0
+    },
+    {
+      "group": "新竹縣",
+      "rows": 5589,
+      "mae_twd": 2031198.0992857565,
+      "median_absolute_error_twd": 1046213.0586370844,
+      "mean_signed_error_twd": -952041.9631545484,
+      "true_price_median_twd": 15800000.0
+    },
+    {
+      "group": "臺北市",
+      "rows": 4957,
+      "mae_twd": 4091648.466398255,
+      "median_absolute_error_twd": 2456992.347898662,
+      "mean_signed_error_twd": -1195262.4822615364,
+      "true_price_median_twd": 33750000.0
+    },
+    {
+      "group": "苗栗縣",
+      "rows": 4001,
+      "mae_twd": 1490673.5691039176,
+      "median_absolute_error_twd": 1008857.7124349587,
+      "mean_signed_error_twd": -1114408.5586363978,
+      "true_price_median_twd": 12650000.0
+    },
+    {
+      "group": "彰化縣",
+      "rows": 3295,
+      "mae_twd": 1062803.3888570073,
+      "median_absolute_error_twd": 663492.3850838449,
+      "mean_signed_error_twd": -230877.01871813848,
+      "true_price_median_twd": 10970000.0
+    },
+    {
+      "group": "宜蘭縣",
+      "rows": 2907,
+      "mae_twd": 938325.1746788173,
+      "median_absolute_error_twd": 571674.9372086022,
+      "mean_signed_error_twd": -253150.69419773796,
+      "true_price_median_twd": 8780000.0
+    },
+    {
+      "group": "雲林縣",
+      "rows": 2364,
+      "mae_twd": 901073.3382823614,
+      "median_absolute_error_twd": 592268.3331653727,
+      "mean_signed_error_twd": 141195.84332405907,
+      "true_price_median_twd": 9400000.0
+    },
+    {
+      "group": "嘉義縣",
+      "rows": 2251,
+      "mae_twd": 1421077.12230486,
+      "median_absolute_error_twd": 1122926.8407545546,
+      "mean_signed_error_twd": -1129035.9670093572,
+      "true_price_median_twd": 10350000.0
+    },
+    {
+      "group": "新竹市",
+      "rows": 2131,
+      "mae_twd": 2578784.945620923,
+      "median_absolute_error_twd": 2161983.610201597,
+      "mean_signed_error_twd": -1804550.929065516,
+      "true_price_median_twd": 23880000.0
+    },
+    {
+      "group": "基隆市",
+      "rows": 1100,
+      "mae_twd": 1820096.1115238133,
+      "median_absolute_error_twd": 1211646.8559554797,
+      "mean_signed_error_twd": -1406317.0377519426,
+      "true_price_median_twd": 11710000.0
+    },
+    {
+      "group": "南投縣",
+      "rows": 1015,
+      "mae_twd": 964575.3123244189,
+      "median_absolute_error_twd": 508964.6556402277,
+      "mean_signed_error_twd": -529849.5749954099,
+      "true_price_median_twd": 10130000.0
+    },
+    {
+      "group": "屏東縣",
+      "rows": 1013,
+      "mae_twd": 759262.5451620459,
+      "median_absolute_error_twd": 590728.1967263278,
+      "mean_signed_error_twd": 253268.22171161612,
+      "true_price_median_twd": 8100000.0
+    },
+    {
+      "group": "嘉義市",
+      "rows": 689,
+      "mae_twd": 1164655.14408115,
+      "median_absolute_error_twd": 652760.8142370712,
+      "mean_signed_error_twd": 49106.25452577242,
+      "true_price_median_twd": 10740000.0
+    },
+    {
+      "group": "花蓮縣",
+      "rows": 583,
+      "mae_twd": 618257.5992535201,
+      "median_absolute_error_twd": 467970.78847940266,
+      "mean_signed_error_twd": 170146.50856667283,
+      "true_price_median_twd": 8781700.0
+    },
+    {
+      "group": "臺東縣",
+      "rows": 115,
+      "mae_twd": 523798.79145191703,
+      "median_absolute_error_twd": 339224.1835339479,
+      "mean_signed_error_twd": -239350.07846517672,
+      "true_price_median_twd": 9900000.0
+    },
+    {
+      "group": "金門縣",
+      "rows": 86,
+      "mae_twd": 773133.6006447541,
+      "median_absolute_error_twd": 599529.0880193505,
+      "mean_signed_error_twd": 59093.89422003513,
+      "true_price_median_twd": 7000000.0
+    },
+    {
+      "group": "澎湖縣",
+      "rows": 30,
+      "mae_twd": 2670305.2970506223,
+      "median_absolute_error_twd": 878850.8983364794,
+      "mean_signed_error_twd": 2414622.5279548853,
+      "true_price_median_twd": 7925000.0
+    }
+  ],
+  "by_project_status": [
+    {
+      "group": "新建案",
+      "rows": 76096,
+      "mae_twd": 1806345.220552779,
+      "median_absolute_error_twd": 1151188.5157723278,
+      "mean_signed_error_twd": -728906.5997583666,
+      "true_price_median_twd": 14360000.0
+    },
+    {
+      "group": "既有建案",
+      "rows": 57601,
+      "mae_twd": 820712.8772778539,
+      "median_absolute_error_twd": 478072.1725773681,
+      "mean_signed_error_twd": 140197.27713474978,
+      "true_price_median_twd": 14400000.0
+    }
+  ],
+  "by_price_band": [
+    {
+      "group": "1000至2000萬",
+      "rows": 74109,
+      "mae_twd": 1041881.4510987344,
+      "median_absolute_error_twd": 715728.7534465436,
+      "mean_signed_error_twd": -197554.81732756642,
+      "true_price_median_twd": 13870000.0
+    },
+    {
+      "group": "2000至5000萬",
+      "rows": 31959,
+      "mae_twd": 2319559.929213645,
+      "median_absolute_error_twd": 1531430.860690713,
+      "mean_signed_error_twd": -1078875.6957035118,
+      "true_price_median_twd": 25880000.0
+    },
+    {
+      "group": "500至1000萬",
+      "rows": 24411,
+      "mae_twd": 651684.7856510133,
+      "median_absolute_error_twd": 449936.12644641846,
+      "mean_signed_error_twd": 195623.16614233903,
+      "true_price_median_twd": 8440000.0
+    },
+    {
+      "group": "5000萬以上",
+      "rows": 2044,
+      "mae_twd": 8240755.334273428,
+      "median_absolute_error_twd": 5619167.675332837,
+      "mean_signed_error_twd": -1745884.4155304057,
+      "true_price_median_twd": 62375000.0
+    },
+    {
+      "group": "500萬以下",
+      "rows": 1174,
+      "mae_twd": 539641.3153911047,
+      "median_absolute_error_twd": 357620.61062630126,
+      "mean_signed_error_twd": 444834.49572974344,
+      "true_price_median_twd": 4420000.0
+    }
+  ],
+  "fit_building_area_p99_m2": 345.1000061035156,
+  "fit_true_price_p99_twd": 55970000.0,
+  "limits": [
+    "歷史驗證窗口反覆使用，這是凍結預測的事後分析，不是新盲測。",
+    "無test真價，案例及分價格帶結果均來自有標籤的時間驗證資料。",
+    "原因分析僅提出與已觀察欄位一致的假設，沒有重訓或修改價格。"
+  ],
+  "result_plot": {
+    "method": "64x64 logarithmic 2D histogram using all validation rows",
+    "rows": 133697,
+    "x": "true total TWD / 10000; log10 axis",
+    "y": "predicted total TWD / 10000; log10 axis",
+    "color": "log1p transaction count",
+    "reference": "prediction equals truth",
+    "no_point_subsampling": true
+  },
+  "price_band_definition": {
+    "bounds_twd": [
+      0,
+      5000000,
+      10000000,
+      20000000,
+      50000000,
+      null
+    ],
+    "lower_inclusive": true,
+    "upper_inclusive": false,
+    "last_upper": "infinity",
+    "first_label_means": "未滿500萬元"
+  },
+  "public_summary_scope": {
+    "aggregates_only": true,
+    "per_transaction_records_included": false,
+    "omitted_fields": [
+      "cases",
+      "current_excel_content_audit"
+    ],
+    "source_summary_sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
+    "report_cases": "Only the three examples already included in the unchanged report are published in the report text."
+  }
+}

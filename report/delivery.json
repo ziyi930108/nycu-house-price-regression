@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "date": "2026-10-14",
+  "docx_sha256": "ad4d43738cee981dd230dcf91288b96fc40ca0da5ed9f34bff78ad2aba6ca74f",
+  "pdf_sha256": "d50f33ba3c15d63b105ddd7a8d637493cd42a3f1bfc481c754f84af4391e6ee4",
+  "pdf_pages": 18,
+  "chapters": 8,
+  "appendices": 1,
+  "tables": 13,
+  "images": 5,
+  "references": 11,
+  "report_body_changed": false,
+  "markdown_bytes_exact": true,
+  "word_and_pdf_original_bytes_exact": true,
+  "source_builder_bytes_exact": true,
+  "reference_sha_guard_preserved": true,
+  "source_map_original_sha256": "0c62453d432d7a9052aa74e4a4fe58e31254e4643f9699b337ca7393262b659e",
+  "source_map_public_copy": "Retained eleven references and method limitations; local QA links and editorial history replaced with repository-relative evidence links. Formal report text unchanged.",
+  "validation_summary_original_sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889",
+  "validation_summary_omitted": [
+    "cases",
+    "current_excel_content_audit"
+  ],
+  "per_transaction_prediction_lists_published": false,
+  "raw_course_tables_published": false,
+  "model_weights_published": false,
+  "submission_csv_published": false,
+  "copied_files": [
+    {
+      "path": "台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "bytes": 1070434,
+      "sha256": "ad4d43738cee981dd230dcf91288b96fc40ca0da5ed9f34bff78ad2aba6ca74f",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "台灣房屋銷售價格預測挑戰賽_正式報告.pdf",
+      "bytes": 1331488,
+      "sha256": "d50f33ba3c15d63b105ddd7a8d637493cd42a3f1bfc481c754f84af4391e6ee4",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 36536,
+      "sha256": "279ccd000e4b5295943b8acce8d65a4b837eddb94061206523e9b447fc10d014",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/build_report.py",
+      "bytes": 2639,
+      "sha256": "fe04e156d06e93c4696d7c5519145f7dc259d27c86249f37d5dd7ec71b7312ae",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/reference_report.docx",
+      "bytes": 1070910,
+      "sha256": "adb7ecd04924ad64567e49a23ba1715b6e60442e6046c9731930e9c160c5b0c3",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/reference_report.md",
+      "bytes": 37216,
+      "sha256": "e5386842c01a87899b59ac1959114716d220dd31b0b15fd2b9061997cf34b349",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/city_statistics.json",
+      "bytes": 6014,
+      "sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/city_price_distribution.png",
+      "bytes": 98718,
+      "sha256": "3943c11c41ae343ee8f20964862513e9dd8dba921fe6d96dc06ee9df5c0c2348",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/error_by_price_band.png",
+      "bytes": 113105,
+      "sha256": "9820be5c41918e3f94a8b2b2103f8acdcbfc17229db317d7b828830453b81a74",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/fusion_validation.png",
+      "bytes": 364435,
+      "sha256": "c1b6aa472fb937f4aff70b948de22f4a2fa4da6acc4d39d312c7e886573dab3a",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/program_flow.png",
+      "bytes": 421986,
+      "sha256": "c7a681b36d54a926d870029b3659679b034f893f6622d33ed32467ba911779d0",
+      "source_bytes_exact": true
+    },
+    {
+      "path": "source/assets/training_curve.png",
+      "bytes": 145602,
+      "sha256": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56",
+      "source_bytes_exact": true
+    }
+  ],
+  "prior_native_Word_review_receipt_sha256": "d06473e6d0b2eab06603db267e5be557ea60a849e3e792071e7f24158c6e85a6",
+  "native_Word_export_receipt_sha256": "dcccf6d7e51d67dbe177a480c9b8bd1608089197ca263a7b665c2a3333289336",
+  "rebuild": {
+    "executed": true,
+    "exit_code": 0,
+    "DOCX_bytes_exact": true,
+    "Markdown_bytes_exact": true,
+    "source_builder_executed": "source/build_report.py",
+    "libraries": [
+      "Python standard library",
+      "lxml"
+    ],
+    "model_training": false,
+    "price_inference": false,
+    "PDF_regenerated": false
+  },
+  "limits": [
+    "Word and PDF are exact copies of the latest reviewed eighteen-page report.",
+    "The unchanged report retains three reviewed examples; the public statistics JSON omits the ten-record case list.",
+    "Document rebuilding is separate from complete raw-to-six-model retraining."
+  ],
+  "markdown_local_links_checked": 27,
+  "absolute_local_path_or_secret_pattern_findings": []
+}

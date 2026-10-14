@@ -1,0 +1,8 @@
+{
+  "artifacts": "../house-price-private/artifacts",
+  "test": "../house-price-private/data/test-reindex-test-v2.2.xlsx",
+  "sample": "../house-price-private/data/test-reindex-test-sample-submission-v2.csv",
+  "nn_python": ".venv-nn/Scripts/python.exe",
+  "device": "cuda:0",
+  "output_dir": "../house-price-private/predictions/run-001"
+}

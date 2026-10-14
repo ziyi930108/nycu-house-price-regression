@@ -1,5 +1,9 @@
-"""Rebuild current report; no model training."""
+"""Compatibility entry for the current report; never train a model."""
 from pathlib import Path
-import subprocess, sys
+import argparse, subprocess, sys
 r=Path(__file__).resolve().parents[2]
-subprocess.run([sys.executable,str(r/'docs/source/course_completion/build_report.py'),'--output-dir',str(r/'docs'),'--markdown-path',str(r/'REPORT.md'),'--source-map-path',str(r/'docs/REPORT_SOURCES.md'),'--qa-dir',str(r/'build/report_course')],check=True,cwd=r)
+p=argparse.ArgumentParser(description=__doc__)
+p.add_argument('--output-dir',type=Path,default=r/'build/report_current')
+a=p.parse_args()
+subprocess.run([sys.executable,'-B','-X','utf8',str(r/'report/source/build_report.py'),
+                '--output-dir',str(a.output_dir.absolute())],check=True,cwd=r)

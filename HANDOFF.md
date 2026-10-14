@@ -1,11 +1,11 @@
 # 最終交付交接
 
-入口見[README](README.md)。Word19頁；簡報20頁皆主講，4,222純漢字，275字／分估15:21，尚未本人計時。完整程式流程、城市統計、融合驗證圖、大誤差案例與對應改進及先前刪除要求保留。
+2026-10-14：使用者授權依README、程式、設定、requirement.txt、報告五項整理GitHub，並同步最新正式報告。入口為 [README](README.md)，程式 [src](src/README.md)，設定 [config](config/README.md)，操作細節 [USAGE](docs/USAGE.md)。
 
-Public 1,995,836.2136元有使用者截圖與登入頁面支持；Private未知，平台上傳bytes尚未核對。模型與選定CSV保持。單一NN曲線不是完整融合訓練軌跡，城市與案例是模型凍結後分析，原因是假說。原152個research/evidence保持逐bytes相同。
+報告改用 [report](report/README.md) 的18頁Word與PDF、八章一附錄；中文大章節、1.2縣市分析、清理精簡及前次批註保持。原報告與來源保存在Git歷史及作者原工作區。簡報保持20頁版本，未隨本輪改寫。
 
-[六模型推論入口](inference/v25/README.md)完整保留20檔已實測source closure。在同機既有與全新獨立ML／NN套件環境，從保存模型與完整fit狀態各重新執行六個native forward；13個完整向量與47,073筆CSV均完全相同，兩次實際exit0。公開收據只含[彙總與身分](inference/v25/evidence/reproducibility_receipt.json)，不含逐筆資料。這是推論重現，不是未知test價格評分，也沒有新增fit或更換硬體。
+主套件入口requirement.txt引用25項固定ML套件，神經網路另用requirements-torch.txt引用11項固定套件。預測包裝讀取config/predict.json，沿用原封存程式與全部核對規則；research、evidence與封存推論來源保持原bytes。
 
-[原始訓練來源](inference/v25/training/README.md)補22支程式及2份config/schema；原driver的歷史guard、固定路徑、私有prepared/state與保存向量依賴保留。從原始train／valid完整重訓全部六模型尚未驗證；[可選地理依賴](inference/v25/training/GEOGRAPHY.md)只有歷史版本證據，未做fresh地理安裝／重建。原R107只新fit一個NN的收據不因後續推論成功而回寫。新研究R123–127不發布。
+Public MAE為1,995,836.2136元，Private未知。已實測保存六模型的完整推論；從原始資料重訓全部六模型仍未完成整套驗證，範圍見 [原始來源](inference/v25/training/README.md)。單一NN曲線不代表完整融合訓練軌跡，反覆驗證及分群不利結果保留。
 
-Kaggle僅獲准改姓名與GitHub個人連結；提交說明、上傳與最終勾選明確延後。GitHub Classroom由使用者處理。接續教學使用短段與算例，不宣稱已講過就等於熟練。
+此repo已公開，使用者指定以此取代Classroom交付；教師實際收件未獨立確認。Kaggle提交說明、上傳與最終勾選仍依原指示延後。未改選定CSV或訓練新模型。

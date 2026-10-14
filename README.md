@@ -1,25 +1,67 @@
-# 台灣房屋銷售價格預測挑戰賽
+# 台灣房屋銷售價格預測挑戰賽（HW1）
 
-姓名：廖子頤　學號：315581048
+姓名：廖子頤　學號：315581048  
+[Kaggle 個人頁面](https://www.kaggle.com/ziyi315581048)
 
-本儲存庫提供最終提交方法的程式、報告、簡報及必要證據。
+根據房屋的地點、面積、樓層、類型與交易時間，預測每筆交易的成交總價，單位為新臺幣元。評估指標為平均絕對誤差（MAE），數值越小，代表平均預測誤差越低。
 
-1. [Word正式報告](docs/台灣房屋銷售價格預測挑戰賽_正式報告.docx)：19頁，包含程式流程、清理與文字轉換、城市統計、完整融合驗證圖及誤差案例。
-2. [線上完整報告](REPORT.md)與[章節證據對照](docs/REPORT_SOURCES.md)。
-3. [上台簡報與講稿](teaching/final_presentation/README.md)：20頁皆主講，無附錄；4,222純漢字，275字／分估15:21，尚未本人計時。
-4. [六模型可攜推論](inference/v25/README.md)、[原始訓練來源與命令證據](inference/v25/training/README.md)、[程式與重現界線](docs/V25_REPRODUCIBILITY_20261010.md)。
-5. [選定與分數證據](docs/V25_SELECTION_20261010.md)。
+**正式報告：[PDF](report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf) · [Word](report/台灣房屋銷售價格預測挑戰賽_正式報告.docx) · [線上文字](report/REPORT.md)**
 
-Public MAE **1,995,836.2136元**，使用者截圖與登入頁面已核對；Private未知。六個原生模型的原 metadata 各記467,221筆 fit，測試47,073筆。歷史時間驗證反覆用於選型，跨期與分群效果不一致，不利證據保留。
+## 方法與製作流程
 
-## 執行與依賴
+1. **整理資料**：排除誤植表頭與完全重複的交易，處理日期、面積與文字欄位。
+2. **建立特徵**：將房屋條件轉成模型可使用的數值與類別，所有轉換規則由當期訓練資料建立。
+3. **訓練模型**：使用 CatBoost、LightGBM 與神經網路，共六個模型，分別學習總價、單價及參考單價的調整倍率等表示。
+4. **整合估價**：將各模型輸出換算成總價，組成三路估價，套用成交參考與空間修正，再取三路總價的中位數。
+5. **檢查與輸出**：以較早交易訓練、較晚交易驗證，計算總價 MAE；正式預測依範例檔的編號與順序輸出 CSV。
 
-目前推論設定見[已驗證入口的設定](inference/v25/source/config/v25.json)；原訓練設定與欄位規格見[原設定快照](research/config/original_v1_final_config.json)及[原欄位規格](research/config/original_feature_schema.json)。`python scripts/verify_source.py`核對完整來源快照。報告與簡報可依各自source說明重建，這不等於模型重訓。
+## 檔案位置
 
-課程指定的[requirement.txt](requirement.txt)仍載入三份一般套件清單。已驗證的六模型推論使用兩套獨立 ML／NN 環境，請依[固定25／11個官方wheel的hash-lock安裝指引](inference/v25/README.md#兩套固定依賴環境)；一般清單中的`torch==2.13.0`不能替代已驗證的`2.13.0+cu126` wheel與其SHA。[可選地理建置依賴](inference/v25/training/GEOGRAPHY.md)另列歷史版本證據，尚未驗證全新地理環境或raw地理重建。
+| 項目 | 入口 | 內容 |
+| --- | --- | --- |
+| 專案說明 | 本頁 | 目標、流程、安裝與操作順序 |
+| 程式 | [src/](src/README.md) | 預測入口及清理、特徵、六模型訓練、驗證與融合程式導覽 |
+| 設定 | [config/](config/README.md) | 預測路徑設定及模型參數、時間切分與融合設定的來源 |
+| 套件需求 | [requirement.txt](requirement.txt) | 主環境的固定套件；神經網路環境另行安裝 |
+| 正式報告 | [report/](report/README.md) | 最新18頁、八章與一份附錄，含Word、PDF與製作來源 |
 
-價格標籤來自課程資料；禁止到內政部實價登錄系統核對答案。GitHub不包含交易表、模型權重、逐筆預測或提交CSV。原R107全量階段只新訓練參考單價網路，其餘五個沿用保存預測；其原收據與限制不回寫。後續已從保存的六模型及完整fit狀態，在同機既有與全新獨立套件環境各完成六個fresh forward。兩次13個完整向量與47,073筆CSV都完全一致，沒有新增fit；[公開彙總收據](inference/v25/evidence/reproducibility_receipt.json)列明範圍與成本。
+原始訓練來源放在 `research/`，已驗證的六模型推論實作放在 `inference/`，相關紀錄放在 `evidence/`。這些是上述入口所使用的來源與依賴。[上台簡報與講稿](teaching/final_presentation/README.md)另附於簡報資料夾。
 
-另補22支原訓練／準備程式和2份設定／欄位規格，保持原bytes與歷史guard。從原始train／valid重訓全部六模型的端到端驗證仍未完成；同機新套件環境不等於新硬體驗證。原driver仍依賴歷史路徑、私有prepared/state或保存向量，來源齊全不能當成一鍵重訓已成功。
+## 安裝環境
 
-模型與選定CSV保持。單一NN逐輪曲線與完整融合結果分開說明；舊文件與來源保留於本機及Git歷史。新研究R123–127不包含在此交付。GitHub Classroom由使用者處理；Kaggle提交說明與最終勾選依使用者指示暫不修改。
+已驗證環境為 **Windows x64、Python 3.12.14、CUDA 12.6 與 NVIDIA GPU**。主程式與神經網路使用兩個獨立環境；以下命令在儲存庫根目錄執行：
+
+```powershell
+py -3.12 -m venv .venv-ml
+py -3.12 -m venv .venv-nn
+.venv-ml/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirement.txt
+.venv-nn/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirements-torch.txt
+.venv-ml/Scripts/python.exe -m pip check
+.venv-nn/Scripts/python.exe -m pip check
+```
+
+套件清單使用已驗證的固定下載位置與檔案指紋。閱讀報告不需安裝；重新製作Word才需要 [requirements-report.txt](requirements-report.txt)。其他作業系統或GPU環境尚未驗證。[完整環境與資料準備](docs/USAGE.md)
+
+## 執行順序
+
+先查看設定與程式來源，這一步不需交易資料或模型：
+
+```powershell
+python src/predict.py --config config/predict.json --describe
+python scripts/verify_source.py
+```
+
+實際預測前，須備妥原測試資料、範例提交檔，以及已保存的六模型與必要轉換狀態。依 [config說明](config/README.md)複製設定為自己的本機設定，填入檔案路徑，再執行：
+
+```powershell
+.venv-ml/Scripts/python.exe src/predict.py --config config/predict.local.json --check-inputs
+.venv-ml/Scripts/python.exe src/predict.py --config config/predict.local.json
+```
+
+輸出會寫入設定指定的新資料夾，包含預測CSV與執行紀錄。原始交易資料、模型權重及逐筆預測保存在本機，未包含於此公開儲存庫。詳細輸入、輸出檔名與操作說明見 [執行指南](docs/USAGE.md)。
+
+## 結果與驗證範圍
+
+Public MAE為 **1,995,836.2136元**，Private成績未知。歷史驗證有改善也有退步，反覆使用相同驗證期間可能造成選型偏差；完整結果與限制見正式報告。
+
+已實測載入保存的六模型與完整轉換狀態重新預測，47,073筆CSV與選定答案完全一致。[推論驗證紀錄](inference/v25/evidence/reproducibility_receipt.json)記錄環境與比較範圍；本次新增設定入口也完成[完整預測核對](docs/VALIDATION.md)。從原始訓練資料重新訓練全部六模型的完整流程仍未驗證；[原始訓練程式與前置條件](inference/v25/training/README.md)已列明，不能直接當成一鍵重訓命令。

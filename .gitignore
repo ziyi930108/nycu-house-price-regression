@@ -13,3 +13,7 @@ __pycache__/
 *.cbm
 *.pt
 *.csv
+
+/config/*.local.json
+/build/
+/docs/source/course_completion/

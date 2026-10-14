@@ -1,4 +1,4 @@
-# Audited local version: torch 2.13.0+cu126, NVIDIA RTX 4060 Ti.
-# Choose the matching wheel for your platform; install in the same or a second env.
-torch==2.13.0
-numpy==2.3.5
+# Separate neural-network environment: Windows x64, CPython 3.12, CUDA 12.6.
+# python -m pip install --no-deps --require-hashes -r requirements-torch.txt
+# Preserves the tested torch 2.13.0+cu126 wheel and its hash.
+-r inference/v25/dependencies/requirements-fresh-nn.lock.txt

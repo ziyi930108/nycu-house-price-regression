@@ -1,7 +1,8 @@
-# Word/PDF authoring and optional text QA. Tested with Python 3.12.
-# Microsoft JhengHei font files are read from the user's installed local fonts.
-# Font files are not redistributed with this repository.
-# Use --font-dir to provide an authorized local folder containing msjh.ttc and msjhbd.ttc.
+# Current report rebuilding uses lxml and the preserved reference documents.
+# python report/source/build_report.py --output-dir ../house-report-rebuild
+# PDF is supplied separately; this builder does not export PDF or load fonts.
+lxml==6.1.1
+# Optional document authoring and text QA packages, tested with Python 3.12.
 reportlab==4.4.9
 pypdf==6.10.0
 pdfplumber==0.11.9
