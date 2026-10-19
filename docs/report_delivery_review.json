@@ -1,10 +1,12 @@
 {
-  "status": "passed",
+  "status": "current_report_pointer",
   "current_report": "../report/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
-  "docx_sha256": "ad4d43738cee981dd230dcf91288b96fc40ca0da5ed9f34bff78ad2aba6ca74f",
+  "docx_sha256": "f3a6b3402eaada071c6bb0ac1a93bef3a19ba1b7655da2bcfc6329a456b450f5",
   "page_count": 18,
   "tables": 13,
   "images": 5,
   "upstream_review": "../report/delivery.json",
-  "public_section_6_4_removed": true
+  "public_section_6_4_removed": true,
+  "section_8_4_removed": true,
+  "new_render_during_publication": false
 }

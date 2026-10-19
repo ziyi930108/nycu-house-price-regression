@@ -15,7 +15,7 @@ v25只重新訓練日期加權prior NN，把L1改為固定10萬元SmoothL1，保
 在repo根目錄核對原工作區CSV（CSV/sample必須由本人合法取得）：
 
 ~~~powershell
-python scripts/verify_selected_csv.py --csv C:/NYCU_ML/outputs/submission_v25_trial.csv --selection evidence/selection/user_selected_v25_20261010.json --sample <原始sample的路徑>
+python scripts/verify_selected_csv.py --csv C:/NYCU_ML/lab1/outputs/submission_v25_trial.csv --selection evidence/selection/user_selected_v25_20261010.json --sample <原始sample的路徑>
 ~~~
 
 `--sample`可省略；省略時仍核對已選CSV完整SHA及格式，但不另讀sample。命令沒有輸出或覆寫價格。實際v25CSV／原sample已由本機核對全列順序；[獨立證據](../evidence/selection/v25_independent_review_20261010.json)列明範圍。
@@ -26,4 +26,4 @@ python scripts/verify_selected_csv.py --csv C:/NYCU_ML/outputs/submission_v25_tr
 
 [訓練來源補件](../inference/v25/training/README.md)另補22支原程式及2份config/schema，保留歷史guard、固定路徑與私有prepared/state/保存向量依賴。完整raw→六模型重訓尚未執行驗證；[可選地理依賴](../inference/v25/training/GEOGRAPHY.md)為歷史版本證據，未做fresh地理安裝或重建。同機新套件環境不是新硬體／作業系統；不同裝置、版本及CPU／GPU逐bytes等價未驗。R2 reference中間向量未直接輸出，沒有直接逐值相同的證據。
 
-Private未知；原R107不利門檻與反覆驗證選型限制保留。推論重現不等於Private品質認證，不改選定CSV。
+原R107不利門檻與反覆驗證選型限制保留。推論重現確認保存狀態的輸出一致，不能據此推論未知交易的預測誤差；選定CSV保持。

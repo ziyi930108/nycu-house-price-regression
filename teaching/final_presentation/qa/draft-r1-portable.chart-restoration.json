@@ -1,0 +1,1019 @@
+{
+  "operation": "restore_original_chart_parts_only",
+  "source": "C:\\NYCU_ML\\lab1\\deliverables\\房屋價格預測_v25簡報批註精簡版_20261019\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+  "sourceSha256": "443ce69aff4b3ca2f0fa635391e15d7d5be4f8e3918489aaa7389cd46f160504",
+  "input": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\draft-r1.pptx",
+  "inputSha256": "8d9453350d0fe4eaeae310f09fc17f3c218b0be3ff5fdfee89ee0ba18e783756",
+  "output": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\draft-r1-portable.pptx",
+  "outputSha256": "e3e9a33869f5c45fb8a3643e6a5b340a5d58edc1799cb621c5240f2ff1a1630e",
+  "sourceUnchanged": true,
+  "inputUnchanged": true,
+  "owners": [
+    [
+      6,
+      6
+    ],
+    [
+      11,
+      11
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "mappings": [
+    {
+      "sourceSlide": 6,
+      "slide": 6,
+      "sourceChart": "ppt/slides/charts/chart1.xml",
+      "inputChart": "ppt/slides/charts/chart1.xml",
+      "categoryAndSeriesCachesEqual": true,
+      "caches": {
+        "chartTypes": [
+          "barChart"
+        ],
+        "series": [
+          {
+            "index": "0",
+            "order": "0",
+            "tx": {
+              "directText": "數值",
+              "caches": []
+            },
+            "cat": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "strCache",
+                  "count": "6",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "臺北市"
+                    },
+                    {
+                      "index": "1",
+                      "value": "新北市"
+                    },
+                    {
+                      "index": "2",
+                      "value": "臺中市"
+                    },
+                    {
+                      "index": "3",
+                      "value": "桃園市"
+                    },
+                    {
+                      "index": "4",
+                      "value": "新竹市"
+                    },
+                    {
+                      "index": "5",
+                      "value": "高雄市"
+                    }
+                  ]
+                }
+              ]
+            },
+            "val": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "6",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "2945"
+                    },
+                    {
+                      "index": "1",
+                      "value": "1.48E+3"
+                    },
+                    {
+                      "index": "2",
+                      "value": "1.28E+3"
+                    },
+                    {
+                      "index": "3",
+                      "value": "1161"
+                    },
+                    {
+                      "index": "4",
+                      "value": "1375"
+                    },
+                    {
+                      "index": "5",
+                      "value": "1.05E+3"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "workbooks": [
+        {
+          "source": "ppt/embeddings/chart-data-snapshot-001.xlsx",
+          "output": "ppt/embeddings/chart-data-snapshot-001.xlsx",
+          "sourceFormulaCount": 0
+        }
+      ]
+    },
+    {
+      "sourceSlide": 11,
+      "slide": 11,
+      "sourceChart": "ppt/slides/charts/chart2.xml",
+      "inputChart": "ppt/slides/charts/chart2.xml",
+      "categoryAndSeriesCachesEqual": true,
+      "caches": {
+        "chartTypes": [
+          "barChart"
+        ],
+        "series": [
+          {
+            "index": "0",
+            "order": "0",
+            "tx": {
+              "directText": "數值",
+              "caches": []
+            },
+            "cat": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "strCache",
+                  "count": "2",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "50 m²"
+                    },
+                    {
+                      "index": "1",
+                      "value": "100 m²"
+                    }
+                  ]
+                }
+              ]
+            },
+            "val": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "2",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "5E+1"
+                    },
+                    {
+                      "index": "1",
+                      "value": "1E+2"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "workbooks": [
+        {
+          "source": "ppt/embeddings/chart-data-snapshot-002.xlsx",
+          "output": "ppt/embeddings/chart-data-snapshot-002.xlsx",
+          "sourceFormulaCount": 0
+        }
+      ]
+    },
+    {
+      "sourceSlide": 12,
+      "slide": 12,
+      "sourceChart": "ppt/slides/charts/chart3.xml",
+      "inputChart": "ppt/slides/charts/chart3.xml",
+      "categoryAndSeriesCachesEqual": true,
+      "caches": {
+        "chartTypes": [
+          "barChart"
+        ],
+        "series": [
+          {
+            "index": "0",
+            "order": "0",
+            "tx": {
+              "directText": "數值",
+              "caches": []
+            },
+            "cat": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "strCache",
+                  "count": "3",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "最新日期"
+                    },
+                    {
+                      "index": "1",
+                      "value": "早一年"
+                    },
+                    {
+                      "index": "2",
+                      "value": "早兩年"
+                    }
+                  ]
+                }
+              ]
+            },
+            "val": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "3",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "1"
+                    },
+                    {
+                      "index": "1",
+                      "value": "0.5"
+                    },
+                    {
+                      "index": "2",
+                      "value": "0.25"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "workbooks": [
+        {
+          "source": "ppt/embeddings/chart-data-snapshot-003.xlsx",
+          "output": "ppt/embeddings/chart-data-snapshot-003.xlsx",
+          "sourceFormulaCount": 0
+        }
+      ]
+    },
+    {
+      "sourceSlide": 16,
+      "slide": 16,
+      "sourceChart": "ppt/slides/charts/chart4.xml",
+      "inputChart": "ppt/slides/charts/chart4.xml",
+      "categoryAndSeriesCachesEqual": true,
+      "caches": {
+        "chartTypes": [
+          "scatterChart"
+        ],
+        "series": [
+          {
+            "index": "0",
+            "order": "0",
+            "tx": {
+              "directText": "較早訓練交易",
+              "caches": []
+            },
+            "xVal": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "30",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "1"
+                    },
+                    {
+                      "index": "1",
+                      "value": "2"
+                    },
+                    {
+                      "index": "2",
+                      "value": "3"
+                    },
+                    {
+                      "index": "3",
+                      "value": "4"
+                    },
+                    {
+                      "index": "4",
+                      "value": "5"
+                    },
+                    {
+                      "index": "5",
+                      "value": "6"
+                    },
+                    {
+                      "index": "6",
+                      "value": "7"
+                    },
+                    {
+                      "index": "7",
+                      "value": "8"
+                    },
+                    {
+                      "index": "8",
+                      "value": "9"
+                    },
+                    {
+                      "index": "9",
+                      "value": "1E+1"
+                    },
+                    {
+                      "index": "10",
+                      "value": "11"
+                    },
+                    {
+                      "index": "11",
+                      "value": "12"
+                    },
+                    {
+                      "index": "12",
+                      "value": "13"
+                    },
+                    {
+                      "index": "13",
+                      "value": "14"
+                    },
+                    {
+                      "index": "14",
+                      "value": "15"
+                    },
+                    {
+                      "index": "15",
+                      "value": "16"
+                    },
+                    {
+                      "index": "16",
+                      "value": "17"
+                    },
+                    {
+                      "index": "17",
+                      "value": "18"
+                    },
+                    {
+                      "index": "18",
+                      "value": "19"
+                    },
+                    {
+                      "index": "19",
+                      "value": "2E+1"
+                    },
+                    {
+                      "index": "20",
+                      "value": "21"
+                    },
+                    {
+                      "index": "21",
+                      "value": "22"
+                    },
+                    {
+                      "index": "22",
+                      "value": "23"
+                    },
+                    {
+                      "index": "23",
+                      "value": "24"
+                    },
+                    {
+                      "index": "24",
+                      "value": "25"
+                    },
+                    {
+                      "index": "25",
+                      "value": "26"
+                    },
+                    {
+                      "index": "26",
+                      "value": "27"
+                    },
+                    {
+                      "index": "27",
+                      "value": "28"
+                    },
+                    {
+                      "index": "28",
+                      "value": "29"
+                    },
+                    {
+                      "index": "29",
+                      "value": "3E+1"
+                    }
+                  ]
+                }
+              ]
+            },
+            "yVal": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "30",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "2235313.48343883"
+                    },
+                    {
+                      "index": "1",
+                      "value": "1832261.4188805"
+                    },
+                    {
+                      "index": "2",
+                      "value": "1591415.61656558"
+                    },
+                    {
+                      "index": "3",
+                      "value": "1510153.84501852"
+                    },
+                    {
+                      "index": "4",
+                      "value": "1311856.8984844"
+                    },
+                    {
+                      "index": "5",
+                      "value": "1185182.70776998"
+                    },
+                    {
+                      "index": "6",
+                      "value": "1148706.16631189"
+                    },
+                    {
+                      "index": "7",
+                      "value": "1125197.24966036"
+                    },
+                    {
+                      "index": "8",
+                      "value": "1012946.97397296"
+                    },
+                    {
+                      "index": "9",
+                      "value": "1051593.84038778"
+                    },
+                    {
+                      "index": "10",
+                      "value": "975804.995821139"
+                    },
+                    {
+                      "index": "11",
+                      "value": "925532.316399218"
+                    },
+                    {
+                      "index": "12",
+                      "value": "857222.787359282"
+                    },
+                    {
+                      "index": "13",
+                      "value": "830988.799595044"
+                    },
+                    {
+                      "index": "14",
+                      "value": "805182.482096218"
+                    },
+                    {
+                      "index": "15",
+                      "value": "842231.268894053"
+                    },
+                    {
+                      "index": "16",
+                      "value": "784054.076659313"
+                    },
+                    {
+                      "index": "17",
+                      "value": "803667.713204716"
+                    },
+                    {
+                      "index": "18",
+                      "value": "768591.063195035"
+                    },
+                    {
+                      "index": "19",
+                      "value": "765402.656387365"
+                    },
+                    {
+                      "index": "20",
+                      "value": "751954.601149785"
+                    },
+                    {
+                      "index": "21",
+                      "value": "753961.258588071"
+                    },
+                    {
+                      "index": "22",
+                      "value": "739706.724836986"
+                    },
+                    {
+                      "index": "23",
+                      "value": "728262.765757631"
+                    },
+                    {
+                      "index": "24",
+                      "value": "723131.753773548"
+                    },
+                    {
+                      "index": "25",
+                      "value": "719029.416399214"
+                    },
+                    {
+                      "index": "26",
+                      "value": "720744.088754497"
+                    },
+                    {
+                      "index": "27",
+                      "value": "715970.247165135"
+                    },
+                    {
+                      "index": "28",
+                      "value": "714630.710990997"
+                    },
+                    {
+                      "index": "29",
+                      "value": "715006.131355397"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "index": "1",
+            "order": "1",
+            "tx": {
+              "directText": "後一年交易（未參與訓練）",
+              "caches": []
+            },
+            "xVal": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "30",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "1"
+                    },
+                    {
+                      "index": "1",
+                      "value": "2"
+                    },
+                    {
+                      "index": "2",
+                      "value": "3"
+                    },
+                    {
+                      "index": "3",
+                      "value": "4"
+                    },
+                    {
+                      "index": "4",
+                      "value": "5"
+                    },
+                    {
+                      "index": "5",
+                      "value": "6"
+                    },
+                    {
+                      "index": "6",
+                      "value": "7"
+                    },
+                    {
+                      "index": "7",
+                      "value": "8"
+                    },
+                    {
+                      "index": "8",
+                      "value": "9"
+                    },
+                    {
+                      "index": "9",
+                      "value": "1E+1"
+                    },
+                    {
+                      "index": "10",
+                      "value": "11"
+                    },
+                    {
+                      "index": "11",
+                      "value": "12"
+                    },
+                    {
+                      "index": "12",
+                      "value": "13"
+                    },
+                    {
+                      "index": "13",
+                      "value": "14"
+                    },
+                    {
+                      "index": "14",
+                      "value": "15"
+                    },
+                    {
+                      "index": "15",
+                      "value": "16"
+                    },
+                    {
+                      "index": "16",
+                      "value": "17"
+                    },
+                    {
+                      "index": "17",
+                      "value": "18"
+                    },
+                    {
+                      "index": "18",
+                      "value": "19"
+                    },
+                    {
+                      "index": "19",
+                      "value": "2E+1"
+                    },
+                    {
+                      "index": "20",
+                      "value": "21"
+                    },
+                    {
+                      "index": "21",
+                      "value": "22"
+                    },
+                    {
+                      "index": "22",
+                      "value": "23"
+                    },
+                    {
+                      "index": "23",
+                      "value": "24"
+                    },
+                    {
+                      "index": "24",
+                      "value": "25"
+                    },
+                    {
+                      "index": "25",
+                      "value": "26"
+                    },
+                    {
+                      "index": "26",
+                      "value": "27"
+                    },
+                    {
+                      "index": "27",
+                      "value": "28"
+                    },
+                    {
+                      "index": "28",
+                      "value": "29"
+                    },
+                    {
+                      "index": "29",
+                      "value": "3E+1"
+                    }
+                  ]
+                }
+              ]
+            },
+            "yVal": {
+              "directText": null,
+              "caches": [
+                {
+                  "kind": "numCache",
+                  "count": "30",
+                  "points": [
+                    {
+                      "index": "0",
+                      "value": "1981140.43488927"
+                    },
+                    {
+                      "index": "1",
+                      "value": "1927632.08130938"
+                    },
+                    {
+                      "index": "2",
+                      "value": "1809738.66013985"
+                    },
+                    {
+                      "index": "3",
+                      "value": "1954629.43221374"
+                    },
+                    {
+                      "index": "4",
+                      "value": "1896944.67968081"
+                    },
+                    {
+                      "index": "5",
+                      "value": "1867611.84546502"
+                    },
+                    {
+                      "index": "6",
+                      "value": "1915112.65992417"
+                    },
+                    {
+                      "index": "7",
+                      "value": "1947167.40665746"
+                    },
+                    {
+                      "index": "8",
+                      "value": "1876765.10207814"
+                    },
+                    {
+                      "index": "9",
+                      "value": "1899582.89506721"
+                    },
+                    {
+                      "index": "10",
+                      "value": "1895966.16637718"
+                    },
+                    {
+                      "index": "11",
+                      "value": "1800641.35546675"
+                    },
+                    {
+                      "index": "12",
+                      "value": "1830552.36974665"
+                    },
+                    {
+                      "index": "13",
+                      "value": "1796817.8718656"
+                    },
+                    {
+                      "index": "14",
+                      "value": "1762160.26849798"
+                    },
+                    {
+                      "index": "15",
+                      "value": "1828975.62324592"
+                    },
+                    {
+                      "index": "16",
+                      "value": "1772272.1199951"
+                    },
+                    {
+                      "index": "17",
+                      "value": "1789328.48447893"
+                    },
+                    {
+                      "index": "18",
+                      "value": "1775816.05141653"
+                    },
+                    {
+                      "index": "19",
+                      "value": "1840723.68747277"
+                    },
+                    {
+                      "index": "20",
+                      "value": "1796985.67935174"
+                    },
+                    {
+                      "index": "21",
+                      "value": "1809790.24604321"
+                    },
+                    {
+                      "index": "22",
+                      "value": "1774012.67498537"
+                    },
+                    {
+                      "index": "23",
+                      "value": "1770810.76091548"
+                    },
+                    {
+                      "index": "24",
+                      "value": "1781798.94944525"
+                    },
+                    {
+                      "index": "25",
+                      "value": "1792743.54911063"
+                    },
+                    {
+                      "index": "26",
+                      "value": "1781466.20557404"
+                    },
+                    {
+                      "index": "27",
+                      "value": "1788213.30648566"
+                    },
+                    {
+                      "index": "28",
+                      "value": "1786753.33411106"
+                    },
+                    {
+                      "index": "29",
+                      "value": "1777133.9759191"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "workbooks": [
+        {
+          "source": "ppt/embeddings/chart-data-snapshot-004.xlsx",
+          "output": "ppt/embeddings/chart-data-snapshot-004.xlsx",
+          "sourceFormulaCount": 0
+        }
+      ]
+    }
+  ],
+  "copiedOriginalBytes": [
+    {
+      "role": "original_chart_xml",
+      "sourcePath": "ppt/slides/charts/chart1.xml",
+      "outputPath": "ppt/slides/charts/chart1.xml",
+      "bytes": 4352,
+      "sha256": "450b521c122f82aed9d7066b76da659bacd5cd990d795606a15240d0871c2a17"
+    },
+    {
+      "role": "original_chart_relationships",
+      "sourcePath": "ppt/slides/charts/_rels/chart1.xml.rels",
+      "outputPath": "ppt/slides/charts/_rels/chart1.xml.rels",
+      "bytes": 276,
+      "sha256": "08d9a730b9d55a57141192c8ffdf07d56687ac3b98e8afe58707157f5369d5af"
+    },
+    {
+      "role": "original_embedded_workbook",
+      "sourcePath": "ppt/embeddings/chart-data-snapshot-001.xlsx",
+      "outputPath": "ppt/embeddings/chart-data-snapshot-001.xlsx",
+      "bytes": 1544,
+      "sha256": "094bc3c99ee5cfa06b7ad88a915e60fd5bbdd6712ad06cd80fa2a3bec3439735"
+    },
+    {
+      "role": "original_chart_xml",
+      "sourcePath": "ppt/slides/charts/chart2.xml",
+      "outputPath": "ppt/slides/charts/chart2.xml",
+      "bytes": 4035,
+      "sha256": "ba950570043f69dbb6364ce448f417bbb005cc77dc3ac838b225195674cc2ae4"
+    },
+    {
+      "role": "original_chart_relationships",
+      "sourcePath": "ppt/slides/charts/_rels/chart2.xml.rels",
+      "outputPath": "ppt/slides/charts/_rels/chart2.xml.rels",
+      "bytes": 276,
+      "sha256": "68115ab9999b1dc383cf32895a0c7fc443ded8adddc8a60d4cc8b69bd8bab27b"
+    },
+    {
+      "role": "original_embedded_workbook",
+      "sourcePath": "ppt/embeddings/chart-data-snapshot-002.xlsx",
+      "outputPath": "ppt/embeddings/chart-data-snapshot-002.xlsx",
+      "bytes": 1455,
+      "sha256": "a0da2f3eb68913952ef6784eda3ea152042d85a874c924840cfb2eb99fc36169"
+    },
+    {
+      "role": "original_chart_xml",
+      "sourcePath": "ppt/slides/charts/chart3.xml",
+      "outputPath": "ppt/slides/charts/chart3.xml",
+      "bytes": 4128,
+      "sha256": "9d3421779f994f1b97c859ae4c63fba9d1b47f77e41eb5a22f28a2d740e7951f"
+    },
+    {
+      "role": "original_chart_relationships",
+      "sourcePath": "ppt/slides/charts/_rels/chart3.xml.rels",
+      "outputPath": "ppt/slides/charts/_rels/chart3.xml.rels",
+      "bytes": 276,
+      "sha256": "2347e0511cd42389af538e25bd0e4b052e45c1454cc31e4b8b8621b26e832702"
+    },
+    {
+      "role": "original_embedded_workbook",
+      "sourcePath": "ppt/embeddings/chart-data-snapshot-003.xlsx",
+      "outputPath": "ppt/embeddings/chart-data-snapshot-003.xlsx",
+      "bytes": 1489,
+      "sha256": "1288960a14aeaef39be3d972da18a24747c13440312bd266465f55b2e19fd19d"
+    },
+    {
+      "role": "original_chart_xml",
+      "sourcePath": "ppt/slides/charts/chart4.xml",
+      "outputPath": "ppt/slides/charts/chart4.xml",
+      "bytes": 11064,
+      "sha256": "eb5302aa1d63b0b79769ee26bb45c8845017f76bfa90d42b46135eee990c421c"
+    },
+    {
+      "role": "original_chart_relationships",
+      "sourcePath": "ppt/slides/charts/_rels/chart4.xml.rels",
+      "outputPath": "ppt/slides/charts/_rels/chart4.xml.rels",
+      "bytes": 276,
+      "sha256": "b26a16710c090f64a3bb1d3c2567db511dc2b35118f9602092f5fe9f20b873a3"
+    },
+    {
+      "role": "original_embedded_workbook",
+      "sourcePath": "ppt/embeddings/chart-data-snapshot-004.xlsx",
+      "outputPath": "ppt/embeddings/chart-data-snapshot-004.xlsx",
+      "bytes": 2595,
+      "sha256": "0daeb3bb316a8d7d8f90701c3b7f1899331845c1910d1a51db15cbc3db841d41"
+    }
+  ],
+  "contentTypesXlsxDefaultAdded": true,
+  "unrelatedInputPartsUnchanged": [
+    "docProps/core.xml",
+    "docProps/app.xml",
+    "ppt/presentation.xml",
+    "ppt/theme/theme1.xml",
+    "ppt/slideMasters/slideMaster1.xml",
+    "ppt/slideMasters/theme/theme2.xml",
+    "ppt/slideLayouts/slideLayout1.xml",
+    "ppt/slideLayouts/slideLayout2.xml",
+    "ppt/slideLayouts/slideLayout3.xml",
+    "ppt/slideLayouts/slideLayout4.xml",
+    "ppt/slideLayouts/slideLayout5.xml",
+    "ppt/slideLayouts/slideLayout6.xml",
+    "ppt/notesMasters/notesMaster1.xml",
+    "ppt/notesMasters/theme/theme3.xml",
+    "ppt/presProps.xml",
+    "ppt/tableStyles.xml",
+    "ppt/slides/slide1.xml",
+    "ppt/notesSlides/notesSlide1.xml",
+    "ppt/slides/slide2.xml",
+    "ppt/notesSlides/notesSlide2.xml",
+    "ppt/slides/slide3.xml",
+    "ppt/notesSlides/notesSlide3.xml",
+    "ppt/slides/slide4.xml",
+    "ppt/media/image.png",
+    "ppt/notesSlides/notesSlide4.xml",
+    "ppt/slides/slide5.xml",
+    "ppt/notesSlides/notesSlide5.xml",
+    "ppt/slides/slide6.xml",
+    "ppt/notesSlides/notesSlide6.xml",
+    "ppt/slides/slide7.xml",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/slides/slide8.xml",
+    "ppt/notesSlides/notesSlide8.xml",
+    "ppt/slides/slide9.xml",
+    "ppt/notesSlides/notesSlide9.xml",
+    "ppt/slides/slide10.xml",
+    "ppt/notesSlides/notesSlide10.xml",
+    "ppt/slides/slide11.xml",
+    "ppt/notesSlides/notesSlide11.xml",
+    "ppt/slides/slide12.xml",
+    "ppt/notesSlides/notesSlide12.xml",
+    "ppt/slides/slide13.xml",
+    "ppt/notesSlides/notesSlide13.xml",
+    "ppt/slides/slide14.xml",
+    "ppt/notesSlides/notesSlide14.xml",
+    "ppt/slides/slide15.xml",
+    "ppt/notesSlides/notesSlide15.xml",
+    "ppt/slides/slide16.xml",
+    "ppt/notesSlides/notesSlide16.xml",
+    "ppt/slides/slide17.xml",
+    "ppt/notesSlides/notesSlide17.xml",
+    "_rels/.rels",
+    "ppt/notesMasters/_rels/notesMaster1.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide1.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide10.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide11.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide12.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide13.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide14.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide15.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide16.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide17.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide2.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide3.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide4.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide5.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide6.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide7.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide8.xml.rels",
+    "ppt/notesSlides/_rels/notesSlide9.xml.rels",
+    "ppt/_rels/presentation.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+    "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+    "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+    "ppt/slides/_rels/slide1.xml.rels",
+    "ppt/slides/_rels/slide10.xml.rels",
+    "ppt/slides/_rels/slide11.xml.rels",
+    "ppt/slides/_rels/slide12.xml.rels",
+    "ppt/slides/_rels/slide13.xml.rels",
+    "ppt/slides/_rels/slide14.xml.rels",
+    "ppt/slides/_rels/slide15.xml.rels",
+    "ppt/slides/_rels/slide16.xml.rels",
+    "ppt/slides/_rels/slide17.xml.rels",
+    "ppt/slides/_rels/slide2.xml.rels",
+    "ppt/slides/_rels/slide3.xml.rels",
+    "ppt/slides/_rels/slide4.xml.rels",
+    "ppt/slides/_rels/slide5.xml.rels",
+    "ppt/slides/_rels/slide6.xml.rels",
+    "ppt/slides/_rels/slide7.xml.rels",
+    "ppt/slides/_rels/slide8.xml.rels",
+    "ppt/slides/_rels/slide9.xml.rels"
+  ],
+  "slideTextNotesAndSlideRelationsUnchanged": true,
+  "newWorkbooksFabricated": false
+}

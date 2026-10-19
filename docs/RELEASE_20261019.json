@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-19",
+  "version": "v25",
+  "base_commit": "4c9e3b83701e91a715b052987e23701d5658142f",
+  "scope": "Final Lab1 documents and entry-point organization; no model changes",
+  "artifact_identities": [
+    {
+      "path": "report/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+      "bytes": 1070186,
+      "sha256": "f3a6b3402eaada071c6bb0ac1a93bef3a19ba1b7655da2bcfc6329a456b450f5"
+    },
+    {
+      "path": "report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf",
+      "bytes": 1329190,
+      "sha256": "e2c7284da8d4721ea04c0649b5651c7e1be12e91765da5714ebc7ca36dc5faca"
+    },
+    {
+      "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+      "bytes": 1663399,
+      "sha256": "e3e9a33869f5c45fb8a3643e6a5b340a5d58edc1799cb621c5240f2ff1a1630e"
+    }
+  ],
+  "report_pages": 18,
+  "presentation_slides": 17,
+  "root_readme_leaderboard_scores": false,
+  "report_body_preserved": true,
+  "presentation_user_edits_preserved": true,
+  "historical_sources_unchanged": 229,
+  "new_model_fits": 0,
+  "new_price_inference": false,
+  "new_visual_render_during_publication": false,
+  "copied_previously_reviewed_artifacts": true,
+  "verification_boundary": "Source/entry/links/current-document checks; earlier saved-model inference receipts remain historical. Fresh six-model training and cross-machine testing are not claimed.",
+  "removed_current_files": [
+    "docs/台灣房屋銷售價格預測挑戰賽_正式報告.docx",
+    "teaching/final_presentation/previews/slide-18.png",
+    "teaching/final_presentation/previews/slide-19.png",
+    "teaching/final_presentation/previews/slide-20.png"
+  ],
+  "old_files_available_in_git_history": true,
+  "course_records_weights_prediction_csvs_included": false
+}

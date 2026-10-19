@@ -1,0 +1,228 @@
+{
+  "source": "C:\\NYCU_ML\\lab1\\deliverables\\房屋價格預測_v25簡報批註精簡版_20261019\\台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
+  "sourceSha256": "443ce69aff4b3ca2f0fa635391e15d7d5be4f8e3918489aaa7389cd46f160504",
+  "userAnnotation": "annotation-mvf86n7t-b",
+  "scope": "light-grey bottom supplementary footer paragraphs only",
+  "deletes": [
+    {
+      "slide": 2,
+      "id": "sh/ahwrqhgj",
+      "text": "依照實際製作順序，說明每一步怎麼做、為什麼這樣做。",
+      "position": {
+        "left": 80,
+        "top": 638,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 3,
+      "id": "sh/tgry9ofu",
+      "text": "保留交易只套用當期規則。有真價才評分，未知交易依編號順序輸出。",
+      "position": {
+        "left": 80,
+        "top": 620,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 3,
+      "id": "sh/a9kfadwn",
+      "text": "原全量階段新增一支網路訓練，其餘五模型沿用保存預測。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 34
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 4,
+      "id": "sh/kbm987y5",
+      "text": "回歸預測連續金額。未知交易仍需要獨立驗證。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 5,
+      "id": "sh/w32dkbuh",
+      "text": "MAE 越低越好。高估和低估不會互相抵銷，也不表示每筆都相差75萬元。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 6,
+      "id": "sh/oryp8fah",
+      "text": "樣本數不均，評估時需分城市檢查。\n總價差異也包含面積、房型與成交年代的影響。",
+      "position": {
+        "left": 80,
+        "top": 622,
+        "width": 1110,
+        "height": 66
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 7,
+      "id": "sh/zedcfa9g",
+      "text": "空白及解析失敗另留標記。填補與類別編碼，只從訓練資料建立規則。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 8,
+      "id": "sh/tkby9kzm",
+      "text": "數值與類別採不同處理。所有需學習的轉換規則，只用當期訓練資料建立。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 9,
+      "id": "sh/mdonql4z",
+      "text": "各起點重建模型、編碼及價格參考。窗口已反覆使用且重疊，無法視為四次獨立盲測。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 10,
+      "id": "sh/725onyl4",
+      "text": "各模型先換回總價元，再進行分支融合與修正。驗證時固定參數。",
+      "position": {
+        "left": 80,
+        "top": 645,
+        "width": 1045,
+        "height": 36
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 11,
+      "id": "sh/61kzalof",
+      "text": "面積權重對齊總價差距。另保留直接總價與對數學法，最後皆還原為元。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 12,
+      "id": "sh/a543mx4r",
+      "text": "圖為正規化前的相對比例。權重乘在訓練損失上，成交價本身不變。",
+      "position": {
+        "left": 80,
+        "top": 622,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 13,
+      "id": "sh/lkvy103m",
+      "text": "這份參考單價稱為「分組先驗」，由當期訓練交易建立。",
+      "position": {
+        "left": 80,
+        "top": 640,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 14,
+      "id": "sh/5grehs7i",
+      "text": "假例：1,000萬 × 75% + 1,200萬 × 25% = 1,050萬。固定比例未證明最佳。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 15,
+      "id": "sh/4vm9ovel",
+      "text": "中間值為1,100萬元，可減少單一路線極端值的影響，仍可能共同高估或低估。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 15,
+      "id": "sh/5wvax0f6",
+      "text": "最後取整一次，依原編號順序輸出47,073筆總價。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 34
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 16,
+      "id": "sh/3qdg7qpo",
+      "text": "保存各輪模型後，固定參數分別計算兩批 MAE。此圖是另跑的一支網路診斷。",
+      "position": {
+        "left": 80,
+        "top": 618,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 16,
+      "id": "sh/fm1gzq5o",
+      "text": "固定30輪，不依最低點選輪數。曲線不能證明沒有過擬合，輪數也不代表模型容量。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 37
+      },
+      "color": "#718082"
+    }
+  ],
+  "deletedCount": 18,
+  "slideCountUnchanged": 17,
+  "allNonFooterLayoutElementsUnchanged": true,
+  "speakerNotesUnchanged": true
+}

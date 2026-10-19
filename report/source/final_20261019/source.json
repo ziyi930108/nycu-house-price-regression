@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-19",
+  "selected_submission": "v25",
+  "document_version": "Reviewed eighteen-page final report, eight chapters and one evidence appendix",
+  "Word_source_sha256": "f3a6b3402eaada071c6bb0ac1a93bef3a19ba1b7655da2bcfc6329a456b450f5",
+  "PDF_source_sha256": "e2c7284da8d4721ea04c0649b5651c7e1be12e91765da5714ebc7ca36dc5faca",
+  "Private_MAE": {
+    "display": "1876025.5730",
+    "unit": "TWD",
+    "source": "direct user report on 2026-10-19",
+    "independently_platform_verified": false
+  },
+  "selection_record_sha256": "fc75291225cc041eaf9c2368c8600b60c0bf0e3489059c212f57cd57f74501a7",
+  "score_source_record_sha256": "36d6262694a7a0715ad47eb79f98c4450988312be1bbf7b624efbe2bdc455d45",
+  "inherited_visual_review": {
+    "all_18_pages_reviewed": true,
+    "source_receipt_sha256": "10fdc145ce44918a2f98ed1518ac7fb87fdd35149c02573cdbd92fb51622a887",
+    "native_Word_export_receipt_sha256": "701328c2635a703c8feee77ceb56acc7597cffaa96aa3d462a6d5b247093477c",
+    "pages_1_9_visual_receipt_sha256": "3c5c9c7785c8d673d876059704a4928c8dd636a1e4720a4803924a49d59afb50",
+    "pages_10_18_visual_receipt_sha256": "4a5e41e2e65c359ff3fd48f0abe743cf18a6762299b3ef918e3663e2ecef52d5",
+    "new_render_or_visual_review_during_copy": false
+  },
+  "legacy_source_sha256_unchanged": {
+    "source/build_report.py": "fe04e156d06e93c4696d7c5519145f7dc259d27c86249f37d5dd7ec71b7312ae",
+    "source/reference_report.docx": "adb7ecd04924ad64567e49a23ba1715b6e60442e6046c9731930e9c160c5b0c3",
+    "source/reference_report.md": "e5386842c01a87899b59ac1959114716d220dd31b0b15fd2b9061997cf34b349"
+  },
+  "removed_sections_still_absent": [
+    "6.4 公開排行榜成績",
+    "8.4 最終訓練與重現範圍",
+    "提交檔核對與重現附錄"
+  ],
+  "figure_assets_sha256": {
+    "city_price_distribution.png": "3943c11c41ae343ee8f20964862513e9dd8dba921fe6d96dc06ee9df5c0c2348",
+    "error_by_price_band.png": "9820be5c41918e3f94a8b2b2103f8acdcbfc17229db317d7b828830453b81a74",
+    "fusion_validation.png": "c1b6aa472fb937f4aff70b948de22f4a2fa4da6acc4d39d312c7e886573dab3a",
+    "program_flow.png": "c7a681b36d54a926d870029b3659679b034f893f6622d33ed32467ba911779d0",
+    "training_curve.png": "7269b22f74029de2505316622ce8bd4c5faabc7712c3f371a7301ebfae86af56"
+  },
+  "source_scope": "Reviewed Word snapshot plus aggregate charts only; no course transaction tables, model weights, CSV answers or per-transaction prediction list."
+}

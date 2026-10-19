@@ -1,11 +1,15 @@
-# 台灣房屋銷售價格預測挑戰賽（HW1）
+# Lab 1｜台灣房屋銷售價格預測挑戰賽
 
 姓名：廖子頤　學號：315581048  
 [Kaggle 個人頁面](https://www.kaggle.com/ziyi315581048)
 
 根據房屋的地點、面積、樓層、類型與交易時間，預測每筆交易的成交總價，單位為新臺幣元。評估指標為平均絕對誤差（MAE），數值越小，代表平均預測誤差越低。
 
+本儲存庫整理 **v25 正式繳交版本**的方法、程式、設定與文件。
+
 **正式報告：[PDF](report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf) · [Word](report/台灣房屋銷售價格預測挑戰賽_正式報告.docx) · [線上文字](report/REPORT.md)**
+
+**上台資料：[17頁簡報](teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx) · [完整口語講稿](teaching/final_presentation/完整口語講稿.md) · [逐頁預覽與說明](teaching/final_presentation/README.md)**
 
 ## 方法與製作流程
 
@@ -24,8 +28,9 @@
 | 設定 | [config/](config/README.md) | 預測路徑設定及模型參數、時間切分與融合設定的來源 |
 | 套件需求 | [requirement.txt](requirement.txt) | 主環境的固定套件；神經網路環境另行安裝 |
 | 正式報告 | [report/](report/README.md) | 最新18頁、八章與一份附錄，含Word、PDF與製作來源 |
+| 簡報與講稿 | [teaching/final_presentation/](teaching/final_presentation/README.md) | 最新17頁簡報、同步講稿與逐頁預覽 |
 
-原始訓練來源放在 `research/`，已驗證的六模型推論實作放在 `inference/`，相關紀錄放在 `evidence/`。這些是上述入口所使用的來源與依賴。[上台簡報與講稿](teaching/final_presentation/README.md)另附於簡報資料夾。
+原始訓練來源放在 `research/`，已驗證的六模型推論實作放在 `inference/`，相關紀錄放在 `evidence/`。這些是上述入口所使用的來源與依賴；原始交易資料、模型權重、執行環境與逐筆預測另存於本機。
 
 ## 安裝環境
 
@@ -60,8 +65,8 @@ python scripts/verify_source.py
 
 輸出會寫入設定指定的新資料夾，包含預測CSV與執行紀錄。原始交易資料、模型權重及逐筆預測保存在本機，未包含於此公開儲存庫。詳細輸入、輸出檔名與操作說明見 [執行指南](docs/USAGE.md)。
 
-## 結果與驗證範圍
+## 驗證與可重現範圍
 
-Public MAE為 **1,995,836.2136元**，Private成績未知。歷史驗證有改善也有退步，反覆使用相同驗證期間可能造成選型偏差；完整結果與限制見正式報告。
+離線驗證採時間切分，保留各期間與分組的改善及退步；反覆使用相同驗證期間可能造成選型偏差，完整分析見正式報告。簡報中的訓練曲線是固定設定的單一神經網路診斷，不能當作完整融合模型的訓練軌跡。
 
-已實測載入保存的六模型與完整轉換狀態重新預測，47,073筆CSV與選定答案完全一致。[推論驗證紀錄](inference/v25/evidence/reproducibility_receipt.json)記錄環境與比較範圍；本次新增設定入口也完成[完整預測核對](docs/VALIDATION.md)。從原始訓練資料重新訓練全部六模型的完整流程仍未驗證；[原始訓練程式與前置條件](inference/v25/training/README.md)已列明，不能直接當成一鍵重訓命令。
+既有實測曾載入保存的六模型與完整轉換狀態重新預測，47,073筆CSV與選定檔案完全一致。[推論驗證紀錄](inference/v25/evidence/reproducibility_receipt.json)記錄環境與比較範圍；設定入口的核對紀錄見[驗證說明](docs/VALIDATION.md)。這次整理文件沒有重新訓練或產生預測。從原始訓練資料重新訓練全部六模型的完整流程仍未驗證；[原始訓練程式與前置條件](inference/v25/training/README.md)已列明，不能直接當成一鍵重訓命令。

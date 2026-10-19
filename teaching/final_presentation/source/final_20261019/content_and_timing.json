@@ -1,0 +1,251 @@
+{
+  "status": "authored_footer_visual_cleanup",
+  "recommended_slide_count": 17,
+  "full_script_by_slide": [
+    {
+      "slide": 1,
+      "title": "台灣房屋銷售價格預測挑戰賽",
+      "main": "大家好，我是廖子頤。這個挑戰要利用交易資料中的地點、面積、樓層與日期，預測房屋成交總價。部分資料附有答案，另一部分需要我們估價。\n\n今天照製作順序，說明資料如何整理、模型怎麼學習、不同估價怎麼組合，以及如何檢查誤差。每一步都會交代實際操作與原因。",
+      "explanation": "先定義一筆交易的輸入與輸出，讓零基礎聽眾知道整份報告要解決的問題。",
+      "sources": "- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 107,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 23.345454545454547,
+      "source_slide": 1
+    },
+    {
+      "slide": 2,
+      "title": "簡報大綱",
+      "main": "製作流程分成四章。資料準備先辨認條件和答案，觀察城市樣本，整理欄位並切開時間。模型訓練說明價格目標、面積、日期與參考單價。預測整合把不同方法的估價修正，合成一筆總價。最後用訓練與驗證曲線檢查學習過程，再總結資料處理、模型學習與預測整合的做法。",
+      "explanation": "四章依實際製作流程安排。第16頁為單一網路訓練／驗證診斷，第17頁回顧資料處理、模型與預測整合。",
+      "sources": "- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 109,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 23.78181818181818,
+      "source_slide": 2
+    },
+    {
+      "slide": 3,
+      "title": "資料到答案的程式方塊圖",
+      "main": "這張方塊圖對照程式的實際工作。先讀取交易表，移除混入表頭與完全重複紀錄；接著逐欄解析、建立特徵，再依日期分出訓練和保留交易。\n\n訓練部分建立填補、編碼、價格參考及模型狀態，保留交易只套用保存規則。每個模型先換回總價，組成三條分支，各自做成交和空間修正，再取中位數。\n\n有真價的保留交易用來評分，未知交易依指定順序輸出。原全量階段只新訓練一支參考單價網路，其餘五模型沿用保存預測。各時間切點都要重建當期規則，避免把未來答案帶回學習。",
+      "explanation": "程式方塊圖對應實際函式，區分當期fit狀態與保留交易套用。原全量階段只新增1NN訓練、其餘沿用保存向量。後續另做既有與全新套件環境的六模型真推論，保存預測只在推論完成後拿來核對，沒有當成模型輸入。",
+      "sources": "- src/prepare_data.py\n- src/model_common.py\n- src/house_features.py\n- src/round107_weighted_smooth_train.py\n- src/round107_final_candidate.py\n- src/round107_full_release.py\n- reproducibility_receipt.json",
+      "cjk_chars": 191,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 41.67272727272727,
+      "source_slide": 3
+    },
+    {
+      "slide": 4,
+      "title": "房屋條件與價格答案",
+      "main": "第一步分清條件和答案。地點、面積、樓層、建物類型與日期，都是估價時可用的條件，叫特徵。已知成交總價是標籤。預測連續金額，叫回歸。\n\n我把條件放成輸入表，成交總價另外保存。訓練時先估價，和答案比較，再依差距調整規則；完成後保存規則，新交易只輸入條件，產生估價，這叫推論。\n\n相同面積的房屋，也會因地點或成交時間不同而有不同價格，所以需要共同考慮多個條件。",
+      "explanation": "先教會訓練和推論的差異，避免將模型當成上網搜尋價格或背出固定答案。",
+      "sources": "- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 150,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 32.72727272727273,
+      "source_slide": 4
+    },
+    {
+      "slide": 5,
+      "title": "估價誤差與 MAE",
+      "main": "先決定怎麼比較估價。平均絕對誤差，縮寫ＭＡＥ，是每筆預測減真價後取絕對值，再求平均，單位為新臺幣元。\n\n這裡是假例。兩間房真價都是一千萬，分別估一千一百萬與九百五十萬，誤差是一百萬和五十萬。相加除以兩筆，ＭＡＥ為七十五萬元。\n\n高估和低估不會抵銷，數值越低越好。但這不是答對率，也不代表每間都差七十五萬。比較方法必須用同一批交易與同一金額單位。",
+      "explanation": "完整算一次比只展示公式容易理解，也能預防把MAE當成百分比或有正負號的平均誤差。",
+      "sources": "- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 145,
+      "english_tokens": {
+        "MAE": 2
+      },
+      "extra_english_seconds_estimate": 2.4,
+      "seconds_at_275_cjk_min_with_english_estimate": 34.03636363636363,
+      "source_slide": 5
+    },
+    {
+      "slide": 6,
+      "title": "各城市的價格與樣本數",
+      "main": "這頁先看我們手上的交易資料長什麼樣子。統計來自課程訓練表，清除混入的表頭與完全重複紀錄後，共四十五萬五千二百五十五筆，涵蓋二〇〇八年六月到二〇二四年八月。圖上挑六個城市展示。\n\n左邊是成交總價中位數，也就是把交易按價格排序後，取中間位置的代表值。例如臺北市是兩千九百四十五萬元，新北市是一千四百八十萬元。這裡比較的是整間房的總價，兩地的房屋面積、型態及成交年代可能不同，因此差距也包含這些條件的影響。\n\n右邊則是同一批樣本的交易筆數。新北市約十萬筆，新竹市不到一萬筆，表示模型接觸到的案例並不平均。這提醒我們，整體平均誤差容易受到樣本多的地區影響，檢查結果時還要分城市看，樣本少的地區則要更謹慎解讀。\n\n這些是模型凍結後補做的資料描述，沒有拿來調整提交價格，也不能直接代表現在市場行情。接下來回到實際處理流程，先把日期、樓層和地址等原始文字整理成模型能使用的欄位。",
+      "explanation": "圖表資料保持原數值。完整清理後課程train455,255筆，期間2008-06-26至2024-08-10，非任一時間切點的fit子集。六城市總價中位數為2945／1480／1280／1161／1375／1050萬元，右表同範圍的交易筆數；不是單價或平均數。描述統計於模型凍結後補做，不是事前選型依據。樣本少不能直接推論模型較差；城市總價差異混合面積、用途與年代。",
+      "sources": "- source/city_statistics.json\n- source/analysis.json\n- src/course_gap_analysis_20261012.py",
+      "cjk_chars": 344,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 75.05454545454546,
+      "source_slide": 6
+    },
+    {
+      "slide": 7,
+      "title": "原始文字的處理步驟",
+      "main": "接著逐欄整理原始文字。數值去除逗號後轉成數字；日期辨認民國年月日，年份加一千九百一十一轉西元，再拆出年月季。樓層辨認中文數字與地下標記，例如十二層變成十二、地下二層變成負二，另保留地下或整棟標記。\n\n地址把台字統一成臺字，依縣市、區鄉鎮市、路街與段的名稱結尾拆欄。假地址臺北市大安區和平東路一段一百號，可分成臺北市、大安區、和平東路和一段。交易筆棟數則依土地、建物、車位標籤擷取數字，例如土地一建物一車位零，變成三個數值欄。\n\n訓練資料先排除混入的英文表頭與完全重複紀錄，待預測資料仍保留完整列。空白或解析失敗另留標記，不假裝已知。這一步統一格式，下一步才決定模型輸入。",
+      "explanation": "逐欄說明解析規則與產生欄位，讓聽眾能解釋實際如何整理原始文字，而不是只背轉換後數字。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/prepare_data.py\n- src/model_common.py\n- src/house_features.py\n- src/round3_features.py",
+      "cjk_chars": 253,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 55.2,
+      "source_slide": 7
+    },
+    {
+      "slide": 8,
+      "title": "模型輸入欄位的選擇",
+      "main": "我選擇估價當下可取得的欄位。面積、樓層、地點、日期描述條件；總價另存答案，不能混進輸入。編號只用來對齊輸出，不能當價格線索。\n\n完整備註可能含價格，只留有限條件標記。解約可能是事後資訊，也排除。建築完成年月不可用，不能硬算屋齡；管理組織沒有變化，無法區分房屋。\n\n基礎特徵有八十七欄，部分模型加入八欄非價格道路資訊，共九十五欄，其中二十三欄是類別。道路代表點只是粗略位置。\n\n神經網路的數值用訓練中位數填補、調整尺度，另留缺失旗標。類別建立代碼表，再學數字表示，代碼大小沒有等級意義。填補值、尺度和代碼只從當期訓練建立，驗證與新交易沿用。樹模型依各自設定處理數值與類別，不能說所有模型共用同一套編碼。",
+      "explanation": "以欄位用途與可取得時間說明選擇依據，區分條件、答案和輸出識別碼。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/house_features.py\n- src/round6_geo.py\n- data_external/geography/ATTRIBUTION.md\n- src/round47_nn_encode.py\n- src/round54_numeric_encode.py\n- src/train_lightgbm.py",
+      "cjk_chars": 261,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 56.945454545454545,
+      "source_slide": 8
+    },
+    {
+      "slide": 9,
+      "title": "用較早交易預測下一年",
+      "main": "有答案的交易依日期切開，較早部分學習，後一年保留檢查。保留交易雖有真價，先預測完成才評分。\n\n房價隨時間變動，隨機混合年份未必反映用過去估未來。因此使用三個八月起點和一個二月起點，日期如表格所示。\n\n每個起點重建當期模型、填補、編碼及價格參考，只使用訓練截止以前的交易，不能拿後期模型回測。這些窗口已反覆用於開發且彼此重疊，不能當成四次獨立的新考試。",
+      "explanation": "先用新舊題目教過擬合，再說明時間隔離需涵蓋所有fit狀態，並保留反覆選型限制。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- outputs/round107/results.json\n- reports/round107_108_report.md",
+      "cjk_chars": 155,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 33.81818181818181,
+      "source_slide": 9
+    },
+    {
+      "slide": 10,
+      "title": "模型方法與價格目標",
+      "main": "先介紹兩個樹模型。決策樹依面積、地點等條件將交易分組，多棵樹依序學習，逐步修正前面的估價誤差，稱為梯度提升。\n\nCatBoost內建類別資料處理，本案用來學單價、總價與對數總價。LightGBM把數值分成區間，加快尋找切分條件，並優先細分能降低訓練誤差的葉節點。本案用它學單價。方法不同是否互補，仍要看時間驗證。\n\n接著設定價格目標。單價模型把已知總價除有效面積，得到訓練答案；新交易估出單價後，再乘面積。例如每平方公尺二十萬、面積五十平方公尺，就是一千萬。未知總價沒有拿來建立輸入。\n\n直接總價模型學總價；對數模型先壓縮金額尺度，預測後還原。參考單價網路學調整倍率，參考單價乘面積與倍率，得到總價。\n\n共同步驟是輸入、預測、計算損失與更新模型，各自使用原設定，不能說六模型都用同一損失。參考網路每批兩千零四十八筆、固定三十輪。驗證時固定參數，所有輸出先換回總價元，才融合與評分。",
+      "explanation": "先解釋梯度提升的共同原理，再介紹CatBoost類別處理及LightGBM分箱／葉節點細分。CatBoost在本案建立單價、總價、對數總價，LightGBM建立單價模型；建樹方法不同不代表一定互補。價格目標與演算法分開，單價預測後乘有效面積、對數需反向還原、參考網路直接輸出正倍率，不能重複乘面積。模型原生訓練損失不同；融合與最後評分才統一為總價元。參考網路使用日期加權SmoothL1，而非宣稱全部模型共同最小化總價MAE。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/round19_unit_geo.py\n- src/train_lightgbm.py\n- src/round48_nn_train.py\n- src/round47_nn_train.py\n- src/round107_weighted_smooth_train.py\n- src/round12_log_geo.py\n- 最新正式報告第4.1節及附錄[10][11]：CatBoost與LightGBM官方來源",
+      "cjk_chars": 326,
+      "english_tokens": {
+        "CatBoost": 1,
+        "LightGBM": 1
+      },
+      "extra_english_seconds_estimate": 2.6,
+      "seconds_at_275_cjk_min_with_english_estimate": 73.72727272727272,
+      "source_slide": 10
+    },
+    {
+      "slide": 11,
+      "title": "面積與總價誤差",
+      "main": "學單價還要考慮面積。這是假例：五十和一百平方公尺的房屋，單價同樣估錯一萬元，總價卻分別差五十萬和一百萬。把單價誤差看得一樣重，就沒有對齊比賽的總價誤差，所以相關模型加入面積權重。\n\n有效面積優先用建物面積，不可用則用車位面積，再不行才用一，避免無法相除，並不表示真的一平方公尺。單價乘回面積、對數反向轉換後，才可組合；已是總價就不能再乘一次。",
+      "explanation": "用同單價誤差導致不同總價誤差，解釋面積權重的必要性，並區分log原生loss與最終評估。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/round19_unit_geo.py\n- src/round12_log_geo.py\n- src/round79_recency_unit.py",
+      "cjk_chars": 152,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 33.163636363636364,
+      "source_slide": 11
+    },
+    {
+      "slide": 12,
+      "title": "新舊交易的學習影響",
+      "main": "房價會隨日期改變，所以讓近期交易對學習有較大影響，這個影響程度叫權重，乘在每筆訓練損失上。\n\n圖中是正規化前的比例。最新有效日期設為一，早三百六十五天是零點五，早七百三十天是零點二五，每早一年降為一半，稱三百六十五天半衰期。\n\n它改變學習影響，沒有改成交價，也沒有刪舊交易。單價樹另搭配面積權重，參考單價網路採日期加權損失，其餘模型保留原設定。建立參考單價時也使用日期權重，但用途不同。",
+      "explanation": "先接續上一頁的面積誤差，再交代日期加權的動機，定義權重後才讀圖。一年是365天，1、0.5、0.25是正規化前原始相對比例。實際有效日期權重除以有效參考列權重平均值，無效日期給1；相對於每次reference資料中的最新有效日期計算，OOF補集各自建立anchor。日期權重在NN訓練時乘loss，在下一頁先驗建立時用於加權中位數，屬兩個不同作用。單價樹另有面積權重，不宣稱六模型都共用同一權重，也不保證加權一定改善。",
+      "sources": "- src/round79_recency_unit.py\n- src/round60_recency_price_prior.py\n- src/round63_recency_weighted_prior_train.py\n- src/round107_weighted_smooth_train.py\n- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 171,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 37.30909090909091,
+      "source_slide": 12
+    },
+    {
+      "slide": 13,
+      "title": "相似交易提供參考單價",
+      "main": "我用當期訓練交易，按城市、行政區、交易與建物類型建立參考單價，叫分組先驗。取加權中位單價，近期交易影響較大；同類不足三十筆，就逐層放寬條件。\n\n假例中，二十萬元每平方公尺乘五十平方公尺，起點是一千萬；網路依條件學到倍率一點一，就得到一千一百萬。倍率由模型學習，不是逐筆指定。\n\n訓練用參考價按建案分五組，同建案在同組，每組只參考另外四組，排除自己整組的答案。這是建案隔離，不是依年份分五段。預測新交易時，查當期完整訓練建立的參考表，不使用新交易真價。",
+      "explanation": "畫面先展示參考單價及具體金額，再分開說明查表分類與訓練時隔開答案，避免把兩種分組混為一談。先驗精確查詢依序為城市＋行政區＋交易類型＋建物類型，城市＋交易類型＋建物類型，交易類型＋建物類型，交易類型，最後全域。前四層至少30筆原始reference交易；採365天日期加權中位單價，全域不受30筆門檻限制。建案不是先驗查表key，是OOF隔離分組；同組與同折的全部標籤均排除，訓練每列先驗可用同一fit範圍內較晚交易，故不是時間OOF。各時間切點的query標籤不參與先驗；query查完整當期fit。正倍率由Softplus直接輸出，並非log倍率再exp；總價＝參考單價×有效面積×倍率。NN固定30輪，日期加權SmoothL1轉折為10萬元，參考價加權中位數與NN損失加權是不同步驟。例子20萬元/m²、50m²、1.1及1100萬元皆為教學假設，未當成實際評分或真價。",
+      "sources": "- src/round52_price_prior.py\n- src/round60_recency_price_prior.py\n- src/round47_nn_train.py\n- src/round107_weighted_smooth_train.py\n- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 196,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 42.763636363636365,
+      "source_slide": 13
+    },
+    {
+      "slide": 14,
+      "title": "六模型組成三條分支",
+      "main": "每個模型先換回總價，再組成三支。第一支以單價ＣａｔＢｏｏｓｔ為主，第二支平均兩個網路，第三支平均直接總價和對數模型。\n\n每支再加入同一個ＬｉｇｈｔＧＢＭ，主要部分占七成五，共同部分占兩成五。四個樹模型加兩個網路，形成三個初估。\n\n假例一千萬乘零點七五，加一千兩百萬乘零點二五，得到一千零五十萬，是加權平均。先核對交易順序與單位；比例沒有證明最佳，三支共用模型，也不是完全獨立。",
+      "explanation": "分開解釋六模型和三分支，以同一間房的總價示例算一次75／25，再銜接後續修正。例子只說明運算，沒有證明這組比例最佳。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/round107_final_candidate.py",
+      "cjk_chars": 150,
+      "english_tokens": {
+        "CatBoost": 1,
+        "LightGBM": 1
+      },
+      "extra_english_seconds_estimate": 2.6,
+      "seconds_at_275_cjk_min_with_english_estimate": 35.32727272727273,
+      "source_slide": 14
+    },
+    {
+      "slide": 15,
+      "title": "三路估價取中位數",
+      "main": "上一頁的三條分支各自產生初估，接著參考當期訓練中的相似成交，再用粗略道路位置附近、條件相容的交易修正。參考不足時依既有規則回退，所有價格參考都只來自當期訓練。\n\n對同一筆交易，把三支修正後價格排序，取中間值。這裡是假例：一千萬、一千一百萬、一千六百萬，最後得到一千一百萬。如果第三支的估價再升高，中間值仍是一千一百萬，所以比較不容易受到單一路線極端估值影響。\n\n不過，中位數也可能擋掉正確的高估價；三路共同高估或低估，仍會留下誤差，不能保證每一筆都更準。\n\n最後只取整一次，依原編號順序輸出四萬七千零七十三筆總價。到這裡就完成一筆交易的估價流程，接著用保留交易檢查學習情形。",
+      "explanation": "空間修正同時讀取初估與成交修正結果，不能誤寫成只讀R的串接。三路取中位數後最後取整一次，交易與單位需對齊。後續同機六模型重載推論與保存向量一致；六模型乾淨環境從頭重訓與跨機驗證仍未完成。",
+      "sources": "- reports/v25_method_and_code_20261010.md\n- src/round107_final_candidate.py\n- reproducibility_receipt.json",
+      "cjk_chars": 255,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 55.63636363636363,
+      "source_slide": 15
+    },
+    {
+      "slide": 16,
+      "title": "用後一年交易檢查訓練過程",
+      "main": "先看單一網路的學習過程。較早三十二萬一千五百五十筆訓練到二〇二三年八月十日；後一年十三萬三千六百九十七筆保留驗證，日期是二〇二三年八月十一日至二〇二四年八月十日。兩批都從有答案的訓練資料切出，不是課程驗證或未知測試檔。\n\n橫軸是輪數，縱軸是未加權總價ＭＡＥ。藍線評訓練交易，橘線評後一年，兩線不是同一群。學習使用日期加權損失，評圖統一成不加權總價誤差。\n\n這是按固定配方另跑一支參考單價網路。三十輪模型全封存後才讀驗證答案，逐輪重載、關閉隨機丟棄評分，沒有看最低點挑輪。它不是原提交當時的軌跡，也不是完整融合曲線。\n\n橘線後段波動趨平，不能證明沒有過擬合，時間組成與先驗建立方式也會影響落差。輪數是學習次數，不等於模型容量或ＶＣ維度。看完這個訓練診斷，最後回顧整份作業的主要方法。",
+      "explanation": "用明確日期和資料角色定義時間驗證，區分固定設定診斷與完整融合，避免曲線選型。",
+      "sources": "- reports/v25_training_curve_plan_20261010.md\n- outputs/v25_training_curve_20261010/curve.json\n- src/v25_training_curve_20261010.py",
+      "cjk_chars": 299,
+      "english_tokens": {
+        "MAE": 1,
+        "VC": 1
+      },
+      "extra_english_seconds_estimate": 2.0,
+      "seconds_at_275_cjk_min_with_english_estimate": 67.23636363636363,
+      "source_slide": 16
+    },
+    {
+      "slide": 17,
+      "source_slide": 17,
+      "title": "總結",
+      "main": "最後整理這次房價預測的做法。我先把房屋條件整理成模型可用的欄位，注意面積和金額單位，再用較早的交易建立規則，以後一年的交易檢查估價。模型分別學習單價、總價與價格調整倍率，統一換回總價，再組成三路。經過成交與空間修正後，逐筆取中位數，減少單一路徑極端估價的影響。這份作業的重點，是把資料整理、不同價格目標與預測整合接成完整流程。我的報告到這裡，謝謝大家。",
+      "explanation": "回顧已完成的資料處理、不同價格目標與三路整合流程，最後致謝。",
+      "sources": "- reports/v25_method_and_code_20261010.md",
+      "cjk_chars": 159,
+      "english_tokens": {},
+      "extra_english_seconds_estimate": 0,
+      "seconds_at_275_cjk_min_with_english_estimate": 34.69090909090909
+    }
+  ],
+  "timing": {
+    "pure_cjk_chars": 3423,
+    "english_token_counts": {
+      "MAE": 3,
+      "CatBoost": 2,
+      "LightGBM": 2,
+      "VC": 1
+    },
+    "english_seconds_estimate": 9.6,
+    "english_seconds_assumptions": {
+      "MAE": 1.2,
+      "CatBoost": 1,
+      "LightGBM": 1.6,
+      "NN": 0.8,
+      "VC": 0.8,
+      "Private": 0.8,
+      "A": 0.8,
+      "C": 0.8,
+      "seed": 0.6
+    },
+    "minutes_at_275_cjk_min_plus_english": 12.607272727272727,
+    "range_minutes_at_300_to_250_plus_english": [
+      11.57,
+      13.852
+    ],
+    "actual_rehearsal_completed": false,
+    "Q_and_A_excluded": true
+  },
+  "flow": "資料與評分1–6 → 清理與特徵7–8 → 時間切分9 → 模型與目標10–13 → 三路整合14–15 → 診斷16 → 總結17",
+  "scope": "Remove repeated light-grey footer notes across slides, preserve main content/units/page numbers/closing. Speaker notes and script unchanged."
+}

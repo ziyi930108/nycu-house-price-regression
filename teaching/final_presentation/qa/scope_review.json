@@ -1,0 +1,502 @@
+{
+  "scope": "刪每頁與選定第2頁底部相同的淡灰補充說明，不是全簡報依色刪字",
+  "source_layout_dir": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_annotations_20261019_001\\build\\final_layouts",
+  "delete_count": 18,
+  "delete": [
+    {
+      "slide": 2,
+      "slide_id": "sl/hwbqtkby",
+      "element_id": "sh/ahwrqhgj",
+      "text": "依照實際製作順序，說明每一步怎麼做、為什麼這樣做。",
+      "position": {
+        "left": 80,
+        "top": 638,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 3,
+      "slide_id": "sl/ofy9wn61",
+      "element_id": "sh/tgry9ofu",
+      "text": "保留交易只套用當期規則。有真價才評分，未知交易依編號順序輸出。",
+      "position": {
+        "left": 80,
+        "top": 620,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 3,
+      "slide_id": "sl/ofy9wn61",
+      "element_id": "sh/a9kfadwn",
+      "text": "原全量階段新增一支網路訓練，其餘五模型沿用保存預測。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 34
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 4,
+      "slide_id": "sl/jyx0ra1s",
+      "element_id": "sh/kbm987y5",
+      "text": "回歸預測連續金額。未知交易仍需要獨立驗證。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 5,
+      "slide_id": "sl/i107q5of",
+      "element_id": "sh/w32dkbuh",
+      "text": "MAE 越低越好。高估和低估不會互相抵銷，也不表示每筆都相差75萬元。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 6,
+      "slide_id": "sl/x8f69ofe",
+      "element_id": "sh/oryp8fah",
+      "text": "樣本數不均，評估時需分城市檢查。\n總價差異也包含面積、房型與成交年代的影響。",
+      "position": {
+        "left": 80,
+        "top": 622,
+        "width": 1110,
+        "height": 66
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 7,
+      "slide_id": "sl/gnmp4jqx",
+      "element_id": "sh/zedcfa9g",
+      "text": "空白及解析失敗另留標記。填補與類別編碼，只從訓練資料建立規則。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 8,
+      "slide_id": "sl/fu1gfa1s",
+      "element_id": "sh/tkby9kzm",
+      "text": "數值與類別採不同處理。所有需學習的轉換規則，只用當期訓練資料建立。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 9,
+      "slide_id": "sl/udsvah03",
+      "element_id": "sh/mdonql4z",
+      "text": "各起點重建模型、編碼及價格參考。窗口已反覆使用且重疊，無法視為四次獨立盲測。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 10,
+      "slide_id": "sl/m90b6t0r",
+      "element_id": "sh/725onyl4",
+      "text": "各模型先換回總價元，再進行分支融合與修正。驗證時固定參數。",
+      "position": {
+        "left": 80,
+        "top": 645,
+        "width": 1045,
+        "height": 36
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 11,
+      "slide_id": "sl/jetc3ut0",
+      "element_id": "sh/61kzalof",
+      "text": "面積權重對齊總價差距。另保留直接總價與對數學法，最後皆還原為元。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 12,
+      "slide_id": "sl/8f2psfyx",
+      "element_id": "sh/a543mx4r",
+      "text": "圖為正規化前的相對比例。權重乘在訓練損失上，成交價本身不變。",
+      "position": {
+        "left": 80,
+        "top": 622,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 13,
+      "slide_id": "sl/hgzapcr6",
+      "element_id": "sh/lkvy103m",
+      "text": "這份參考單價稱為「分組先驗」，由當期訓練交易建立。",
+      "position": {
+        "left": 80,
+        "top": 640,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 14,
+      "slide_id": "sl/6lsnupw7",
+      "element_id": "sh/5grehs7i",
+      "text": "假例：1,000萬 × 75% + 1,200萬 × 25% = 1,050萬。固定比例未證明最佳。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 15,
+      "slide_id": "sl/vaxsvy10",
+      "element_id": "sh/4vm9ovel",
+      "text": "中間值為1,100萬元，可減少單一路線極端值的影響，仍可能共同高估或低估。",
+      "position": {
+        "left": 80,
+        "top": 627,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 15,
+      "slide_id": "sl/vaxsvy10",
+      "element_id": "sh/5wvax0f6",
+      "text": "最後取整一次，依原編號順序輸出47,073筆總價。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 34
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 16,
+      "slide_id": "sl/gny5sjyp",
+      "element_id": "sh/3qdg7qpo",
+      "text": "保存各輪模型後，固定參數分別計算兩批 MAE。此圖是另跑的一支網路診斷。",
+      "position": {
+        "left": 80,
+        "top": 618,
+        "width": 1110,
+        "height": 60
+      },
+      "color": "#718082"
+    },
+    {
+      "slide": 16,
+      "slide_id": "sl/gny5sjyp",
+      "element_id": "sh/fm1gzq5o",
+      "text": "固定30輪，不依最低點選輪數。曲線不能證明沒有過擬合，輪數也不代表模型容量。",
+      "position": {
+        "left": 80,
+        "top": 660,
+        "width": 1045,
+        "height": 37
+      },
+      "color": "#718082"
+    }
+  ],
+  "keep_lower_elements": [
+    {
+      "slide": 1,
+      "element_id": "sh/547294r6",
+      "text": "01",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 1,
+      "element_id": "sh/7qp4be9c",
+      "text": "姓名：廖子頤\n學號：315581048",
+      "position": {
+        "left": 94,
+        "top": 548,
+        "width": 850,
+        "height": 90
+      },
+      "reason": "封面姓名學號"
+    },
+    {
+      "slide": 2,
+      "element_id": "sh/9072xkry",
+      "text": "02",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 3,
+      "element_id": "sh/cza94vmx",
+      "text": "03",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 4,
+      "element_id": "sh/1cj2d8b6",
+      "text": "04",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 5,
+      "element_id": "sh/dgbulwnm",
+      "text": "05",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 6,
+      "element_id": "sh/yhg7epsj",
+      "text": "06",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 7,
+      "element_id": "sh/cb2tkvap",
+      "text": "07",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 8,
+      "element_id": "sh/18byd4zy",
+      "text": "08",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 9,
+      "element_id": "sh/1cfmhgne",
+      "text": "09",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 10,
+      "element_id": "sh/xc3mho32",
+      "text": "10",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 10,
+      "element_id": "sh/l036l83y",
+      "text": "CatBoost：逐步加樹修正誤差，內建類別處理",
+      "position": {
+        "left": 80,
+        "top": 550,
+        "width": 1120,
+        "height": 42
+      },
+      "reason": "模型正文介紹，非頁底淡灰註記"
+    },
+    {
+      "slide": 10,
+      "element_id": "sh/kzu5c32t",
+      "text": "LightGBM：數值分箱，優先細分能降低誤差的葉節點",
+      "position": {
+        "left": 80,
+        "top": 596,
+        "width": 1120,
+        "height": 35
+      },
+      "reason": "模型正文介紹，非頁底淡灰註記"
+    },
+    {
+      "slide": 11,
+      "element_id": "sh/xcryxg7y",
+      "text": "11",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 12,
+      "element_id": "sh/1gbm9s3a",
+      "text": "12",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 13,
+      "element_id": "sh/q50nydsj",
+      "text": "13",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 14,
+      "element_id": "sh/xc7eds76",
+      "text": "14",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 15,
+      "element_id": "sh/547mhg3m",
+      "text": "15",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 16,
+      "element_id": "sh/8z2h8bq1",
+      "text": "16",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 17,
+      "element_id": "sh/1c7e50ni",
+      "text": "17",
+      "position": {
+        "left": 1150,
+        "top": 674,
+        "width": 50,
+        "height": 25
+      },
+      "reason": "頁碼"
+    },
+    {
+      "slide": 17,
+      "element_id": "sh/pc7qhwn6",
+      "text": "謝謝大家",
+      "position": {
+        "left": 80,
+        "top": 653,
+        "width": 1050,
+        "height": 38
+      },
+      "reason": "最後致謝"
+    }
+  ],
+  "special_notes": [
+    "刪18個元素，位於第2–16頁；第3、15、16頁各有兩個頁底註記。",
+    "保留第1頁姓名學號、第17頁謝謝大家、全部頁碼、章節標籤、主副標、圖表單位與假例標籤。",
+    "第10頁CatBoost/LightGBM介紹雖在下半部仍屬正文，保留。",
+    "第16頁刪診斷與限制的可見註記，但口述與備忘稿仍需正確稱為單一網路診斷；不得暗示完整融合曲線或證明無過擬合。",
+    "這項要求是視覺精簡；不必因刪頁底文字把仍有必要的口頭解釋全部刪除。"
+  ]
+}

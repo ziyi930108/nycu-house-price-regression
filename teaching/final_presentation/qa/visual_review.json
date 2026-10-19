@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "method": "以view_image逐張原尺寸檢視17張1280x720成品預覽",
+  "scope": "18個頁底淡灰補充文字已移除；只核畫面，notes與講稿依本次任務維持原樣",
+  "pages": [
+    {
+      "slide": 1,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-01.png",
+      "observation": "封面標題、姓名、學號及01頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 2,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-02.png",
+      "observation": "底部補充句已移除；副標、四章導覽及02頁碼保留。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 3,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-03.png",
+      "observation": "兩段底部說明已移除；六方塊、箭頭、標題及03頁碼保留。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 4,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-04.png",
+      "observation": "底部補充句已移除；特徵、標籤、訓練推論說明、圖像及04頁碼保留。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 5,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-05.png",
+      "observation": "底部補充句已移除；MAE表格、75萬元、計算式及05頁碼保留。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 6,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-06.png",
+      "observation": "底部兩行說明已移除；圖表副標、萬元單位、六城市數值、筆數及06頁碼保留。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 7,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-07.png",
+      "observation": "底部補充句已移除；五列文字處理表及07頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 8,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-08.png",
+      "observation": "底部補充句已移除；副標、欄位選擇表及08頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 9,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-09.png",
+      "observation": "底部補充句已移除；四個訓練驗證時間窗及09頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 10,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-10.png",
+      "observation": "底部補充句已移除；價格目標表與CatBoost、LightGBM兩段模型介紹及10頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 11,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-11.png",
+      "observation": "底部補充句已移除；面積關係、總價誤差萬元單位、柱圖數值及11頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 12,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-12.png",
+      "observation": "底部補充句已移除；副標、權重定義、1/0.5/0.25柱圖及12頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 13,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-13.png",
+      "observation": "底部補充句已移除；教學假例、單位、算式、兩欄方法及13頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 14,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-14.png",
+      "observation": "底部補充句已移除；總價元副標、三分支表及14頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 15,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-15.png",
+      "observation": "兩段底部說明已移除；假例副標、三路總價及萬元單位、15頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 16,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-16.png",
+      "observation": "兩段底部說明已移除；資料量、日期、圖例、兩軸標、百萬元單位、曲線及16頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    },
+    {
+      "slide": 17,
+      "status": "pass",
+      "preview": "C:\\NYCU_ML\\lab1\\workbench\\v25_ppt_footer_20261019\\build\\previews\\slide-17.png",
+      "observation": "總結正文、謝謝大家及17頁碼完整。",
+      "clipping": false,
+      "overlap": false
+    }
+  ],
+  "summary": "17頁均無新增裁切、文字重疊或缺字；頁碼、主副標、軸標、圖表單位、模型介紹及致謝保留。"
+}
