@@ -9,7 +9,7 @@
 
 **正式報告：[PDF](report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf) · [Word](report/台灣房屋銷售價格預測挑戰賽_正式報告.docx) · [線上文字](report/REPORT.md)**
 
-**上台資料：[17頁簡報](teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx) · [完整口語講稿](teaching/final_presentation/完整口語講稿.md) · [逐頁預覽與說明](teaching/final_presentation/README.md)**
+**簡報：[17頁簡報](teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx)**
 
 ## 方法與製作流程
 
@@ -28,13 +28,13 @@
 | 設定 | [config/](config/README.md) | 資料位置、模型參數與融合設定 |
 | 套件需求 | [requirement.txt](requirement.txt) | 執行主要程式所需的Python套件 |
 | 正式報告 | [report/](report/README.md) | 18頁報告，提供Word、PDF與線上文字版 |
-| 簡報與講稿 | [teaching/final_presentation/](teaching/final_presentation/README.md) | 17頁簡報、完整講稿與逐頁預覽 |
+| 簡報 | [PowerPoint簡報](teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx) | 17頁簡報 |
 
 資料處理、模型訓練與融合的原始程式放在 `research/`，使用已訓練模型進行預測的程式放在 `inference/`，實驗與驗證紀錄放在 `evidence/`。
 
 ## 使用說明
 
-報告、簡報與講稿可以直接閱讀或下載。
+報告與簡報可以直接閱讀或下載。
 
 程式使用Windows、Python 3.12與NVIDIA顯示卡。執行預測前，需要準備測試資料、範例提交檔及訓練好的模型，並在設定檔填入各檔案的位置。程式會輸出CSV，列出每筆房屋的編號與預測總價。
 

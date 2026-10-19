@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-19",
+  "base_commit": "d45a18cbbdc2b6e646627df4987684e1d6eb109f",
+  "scope": "PPT only; spoken script, previews and presentation working files withdrawn from current public branch",
+  "presentation": {
+    "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx",
+    "bytes": 1650053,
+    "sha256": "93bf10edaec03e85d0dfb6413dfdbaf1bc970566ffeff339979bfa6929feb749",
+    "slides": 17,
+    "speaker_script_in_notes": false
+  },
+  "visible_slide_content_preserved": true,
+  "local_originals_preserved": true,
+  "withdrawn_tracked_files": 40,
+  "history_rewritten": false,
+  "previous_release_record": "docs/RELEASE_20261019.json",
+  "new_model_fits": 0,
+  "new_price_predictions": 0
+}

@@ -1,7 +1,7 @@
 {
-  "created_at_utc": "2026-10-19T14:47:11.180993+00:00",
-  "scope": "Selected v25 Lab1 final report, 17-slide presentation, entry points and immutable necessary source dependencies; private data, models, runtimes and predictions excluded.",
-  "base_commit": "b79d198e7393d5319fe443a708dae3ae997f0336",
+  "created_at_utc": "2026-10-19T15:03:46.041508+00:00",
+  "scope": "Selected Lab1 source, final report and public PPT without spoken notes; private scripts, previews and presentation working files excluded from current branch.",
+  "base_commit": "d45a18cbbdc2b6e646627df4987684e1d6eb109f",
   "files": [
     {
       "path": ".gitattributes",
@@ -10,13 +10,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 243,
-      "sha256": "36e76951381d5039c1ca229ea2cb62e46c654cc4eb9c9da7f318b7dc232284ef"
+      "bytes": 424,
+      "sha256": "b40fd0bd3f3cb6aaf3a1e205f6b14116d41cee0d0bce3c3f4d4d8f604ea8f674"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1240,
-      "sha256": "088be4985449aa6a27e682f4cda6e1217e7a22f1131f0119770841d1a027acf4"
+      "bytes": 1558,
+      "sha256": "fa991e061a6be49987c22399097c19f9c46f4514917762af012f87a01e2f4daa"
     },
     {
       "path": "DATA.md",
@@ -25,18 +25,18 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 1714,
-      "sha256": "b47f3ab23c57773d5591183a6dc462c2d0fb1153372eef3b8b705a149bf60f2c"
+      "bytes": 1807,
+      "sha256": "f2c2cade6d0cd3261eec3391517175554a92e1c12a8e8ffa25cb32916071190e"
     },
     {
       "path": "README.md",
-      "bytes": 2960,
-      "sha256": "edaa9472800c050528c8f549368c213e7e8881418fc7e4f036cea604baa22a27"
+      "bytes": 2730,
+      "sha256": "ae37d30c14ac2146232393bdc620ec2db5f5e1eb04b3d551d533f35ef35d853a"
     },
     {
       "path": "REPORT.md",
-      "bytes": 668,
-      "sha256": "fcd6f7141f9dec4289418330c341155087d5e8bde3602877a8c6c8f92ea63bda"
+      "bytes": 677,
+      "sha256": "e5c2e0e6eeec31b7950b8bb584ed3cd2db89781d977c60a175167dbc537abf68"
     },
     {
       "path": "config/README.md",
@@ -50,13 +50,18 @@
     },
     {
       "path": "docs/PUBLISHING.md",
-      "bytes": 704,
-      "sha256": "b4115d7d8d3b095b42030b325370609e37388aba423c9add21b34c242f70d160"
+      "bytes": 824,
+      "sha256": "c88df977ddeafebdf98381ab5c8b16a00cfd7f07350d1d7fbcc5dc475e8af655"
     },
     {
       "path": "docs/RELEASE_20261019.json",
       "bytes": 1832,
       "sha256": "0aa3ad70b9b564fd3432357445f04071a749a02cd88ec916a8dda597c5ebe781"
+    },
+    {
+      "path": "docs/RELEASE_20261019_PPT_ONLY.json",
+      "bytes": 757,
+      "sha256": "ee3c4d9ef643466de724ec27c9daacefbc912615dd022ddc46473c6b03d9f1c5"
     },
     {
       "path": "docs/REPORT_README.md",
@@ -1314,204 +1319,9 @@
       "sha256": "473dae0dcbeabd34af54a667d5c3ab4ad7d10e5b9c64f39eebaa369e03d3dd12"
     },
     {
-      "path": "teaching/final_presentation/README.md",
-      "bytes": 1150,
-      "sha256": "4d1eee9fb1216335597a27afdb35706ba7cdaec9c8572c3f197b216ffee60617"
-    },
-    {
-      "path": "teaching/final_presentation/delivery_review.json",
-      "bytes": 1724,
-      "sha256": "ddf20334e362d8229b63f8354f5007dc2bb1fa80410a6fa20ff8ab9fbc17aa9d"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-01.png",
-      "bytes": 33464,
-      "sha256": "ecd308bbacaeba7713b504ff5239a180b3a162aa2e5105954a6788b4904862a0"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-02.png",
-      "bytes": 63542,
-      "sha256": "34b91277ceb744e90fb2a4ccc7abdda552f9f2a7683f7ce2a1ebe2ac9998912d"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-03.png",
-      "bytes": 38074,
-      "sha256": "e59efcbbcd40424b0aab1447123f2beaa8478cfb3617099739480e1c0dff5eda"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-04.png",
-      "bytes": 157893,
-      "sha256": "ddba5b23de0749bef6ac1468faf1b04e4aafb85aa7edf3a893422f85a77c0d4a"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-05.png",
-      "bytes": 47099,
-      "sha256": "1c4827e024e603b72aaf80f39f1fbc60c79fc29de77e83cf34859f6041b64c7a"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-06.png",
-      "bytes": 79049,
-      "sha256": "57c99749b9e05400f4c88179bdbf713442cd1da640a7017f71c8752d70e85b6e"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-07.png",
-      "bytes": 68006,
-      "sha256": "98f1affc02a0cb86c8fd5d520c6ea211d12590af6ebffabd928425947df709a2"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-08.png",
-      "bytes": 74666,
-      "sha256": "ce6759761028ab5de9f0f3d277cb4df5071d4eb84b3c0b99f404bf40a093e0b4"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-09.png",
-      "bytes": 43005,
-      "sha256": "98097da334fcc7367b0db92ee844b2a894869cc47b9cb04fa5d46708fb4b002c"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-10.png",
-      "bytes": 85266,
-      "sha256": "d4ee31a7d04ae19dea7a49b22ede372997d4fc1622aeb85266725c575915ec83"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-11.png",
-      "bytes": 49415,
-      "sha256": "5f147a95196f03278f0d573db2ef8bea375c0821a554b5e2008726e7e8708082"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-12.png",
-      "bytes": 58851,
-      "sha256": "df5d34397ea121d7ede068e95565c8259c7e4a640207d02fc562e6561f11fb28"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-13.png",
-      "bytes": 80580,
-      "sha256": "7fbd044d0326bd7dcb81f99265f2f98b692b6dac0b910053ead685564a5d2f49"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-14.png",
-      "bytes": 50077,
-      "sha256": "9fddd3157240c6b02f188e1882564ede89c30bdde62c0e9c1318abe9c4ebade0"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-15.png",
-      "bytes": 40416,
-      "sha256": "a32dd15ca3e3e6a2aafcf8bc140f39ed999c5eba70044b3268c3d5d78b805473"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-16.png",
-      "bytes": 64950,
-      "sha256": "578fb0d56552a39b081a91e355e856a793a08bd87030a5f9f8d112daeac6518e"
-    },
-    {
-      "path": "teaching/final_presentation/previews/slide-17.png",
-      "bytes": 42181,
-      "sha256": "1f80f4e3839d7f3df54464b35a607221532c480583ce320a61e8728989aa4377"
-    },
-    {
-      "path": "teaching/final_presentation/qa/draft-r1-portable.chart-restoration.json",
-      "bytes": 32608,
-      "sha256": "58a9d50d068ea6a48e8aeade016e4104038ae43ff7a25ed46814f2aaa25997e5"
-    },
-    {
-      "path": "teaching/final_presentation/qa/edits.json",
-      "bytes": 6002,
-      "sha256": "9582f53c8c33346f0ed9f76db3f394af14239c9917a77c1786c1baba5ed368e6"
-    },
-    {
-      "path": "teaching/final_presentation/qa/finalization.validation.json",
-      "bytes": 9258,
-      "sha256": "85a66d25e06bc221102c0aaf966a4b03752bd6b0e9de369b7f92a7642df68f4e"
-    },
-    {
-      "path": "teaching/final_presentation/qa/scope_review.json",
-      "bytes": 12580,
-      "sha256": "8992ba161a66ed37caab0c9a6c06887a4914a8a7ebbfe0afa91686e9864b6a41"
-    },
-    {
-      "path": "teaching/final_presentation/qa/visual_review.json",
-      "bytes": 5877,
-      "sha256": "6465583b58f8b729b89e82f277da3acf38e2154be854d8fbd48af0c8d542bf93"
-    },
-    {
-      "path": "teaching/final_presentation/source/README.md",
-      "bytes": 1186,
-      "sha256": "5c8a451394f8be76718bcddb9c4dcaa3809820ee61c77aad73f72505ce6bb44c"
-    },
-    {
-      "path": "teaching/final_presentation/source/analysis.json",
-      "bytes": 3340,
-      "sha256": "b73fb8301d80b217badc90f718b0fed477686d07c90432f983b0a6f38f1d7f07"
-    },
-    {
-      "path": "teaching/final_presentation/source/analysis_receipt.json",
-      "bytes": 3396,
-      "sha256": "b83db883ee977ffb565db37db2908ecdebaea824004004bc100180ae5fe798d7"
-    },
-    {
-      "path": "teaching/final_presentation/source/assets/house_illustration.json",
-      "bytes": 1594,
-      "sha256": "59047032e4e691f880f65b18723cb9e6bd32e6f20eda02a2bc28ca966c45f4dc"
-    },
-    {
-      "path": "teaching/final_presentation/source/assets/house_illustration.png",
-      "bytes": 1622223,
-      "sha256": "2e8051b8f66f354454e7dad6d4f4376f55f0d08942428951b07145f1e5cecce1"
-    },
-    {
-      "path": "teaching/final_presentation/source/build_presentation.mjs",
-      "bytes": 19884,
-      "sha256": "212270640be6c15e4d860e29ad1a5ba4dc2360e9e97778deb645402df4acbed5"
-    },
-    {
-      "path": "teaching/final_presentation/source/city_statistics.json",
-      "bytes": 6014,
-      "sha256": "695873af3dfab5e69159fa1f412f27bc6f08b1640ddac5a67f10aa235f56332f"
-    },
-    {
-      "path": "teaching/final_presentation/source/content.json",
-      "bytes": 29715,
-      "sha256": "e3cff5557e6fe2b23e55c2346682e76388af2cb2ee4c018a721388d72a668226"
-    },
-    {
-      "path": "teaching/final_presentation/source/final_20261019/content_and_timing.json",
-      "bytes": 25214,
-      "sha256": "90b2d4bd6201677ef0c97d2937827a1dd64f5f985d90550ff738803dc4bbfc3c"
-    },
-    {
-      "path": "teaching/final_presentation/source/final_20261019/notes.json",
-      "bytes": 19702,
-      "sha256": "a7aec59efad97a9b042e476a9df413dc3175bba664d2c3634e7f07dd1b3620fc"
-    },
-    {
-      "path": "teaching/final_presentation/source/finalize_presentation.mjs",
-      "bytes": 3819,
-      "sha256": "0b427360c720ab2c9bbde49869e16883910913ca751b5e6f40e50f0b41329235"
-    },
-    {
-      "path": "teaching/final_presentation/source/reproducibility_receipt.json",
-      "bytes": 21016,
-      "sha256": "2ed1f768a50b85e508721c23e7f10e149a065fe7ec47588044310290067fb7b2"
-    },
-    {
-      "path": "teaching/final_presentation/source/training_curve.json",
-      "bytes": 3728,
-      "sha256": "8c02ac44b579db70f918db180f1f54f3b3f603ef225c57ec900a74ac5fff0b6a"
-    },
-    {
-      "path": "teaching/final_presentation/source/validation_report_summary.json",
-      "bytes": 22067,
-      "sha256": "d9e9f0d6da591a698fb181d0c7c6491f0bb2b43410859b3b5bcadb63f2220889"
-    },
-    {
-      "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_上台簡報.pptx",
-      "bytes": 1663399,
-      "sha256": "e3e9a33869f5c45fb8a3643e6a5b340a5d58edc1799cb621c5240f2ff1a1630e"
-    },
-    {
-      "path": "teaching/final_presentation/完整口語講稿.md",
-      "bytes": 21735,
-      "sha256": "bd95fb66547c2af110f9474b6b68a0d326520e13564fd9bed2fe397a8f6ecfd7"
+      "path": "teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx",
+      "bytes": 1650053,
+      "sha256": "93bf10edaec03e85d0dfb6413dfdbaf1bc970566ffeff339979bfa6929feb749"
     }
   ]
 }

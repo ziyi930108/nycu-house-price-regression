@@ -17,3 +17,7 @@ __pycache__/
 /config/*.local.json
 /build/
 /docs/source/course_completion/
+
+# Keep presentation scripts, previews and working files local.
+/teaching/final_presentation/*
+!/teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx

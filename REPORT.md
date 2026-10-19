@@ -11,4 +11,4 @@ v25正式報告採用2026-10-19定稿，18頁、八章與一份證據來源附�
 
 PDF與Word包含完整圖表；線上文字便於搜尋與閱讀。
 
-上台資料另見 [17頁簡報與完整口語講稿](teaching/final_presentation/README.md)。
+另見 [17頁簡報](teaching/final_presentation/台灣房屋銷售價格預測挑戰賽_簡報.pptx)。
