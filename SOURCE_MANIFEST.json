@@ -1,7 +1,7 @@
 {
-  "created_at_utc": "2026-10-19T12:41:24.071828+00:00",
+  "created_at_utc": "2026-10-19T14:47:11.180993+00:00",
   "scope": "Selected v25 Lab1 final report, 17-slide presentation, entry points and immutable necessary source dependencies; private data, models, runtimes and predictions excluded.",
-  "base_commit": "4c9e3b83701e91a715b052987e23701d5658142f",
+  "base_commit": "b79d198e7393d5319fe443a708dae3ae997f0336",
   "files": [
     {
       "path": ".gitattributes",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5228,
-      "sha256": "7dfb4258bdca3d3a2d172d464894fff7286116dea32eb74ac5e5f8bba5b9f40b"
+      "bytes": 2960,
+      "sha256": "edaa9472800c050528c8f549368c213e7e8881418fc7e4f036cea604baa22a27"
     },
     {
       "path": "REPORT.md",
@@ -70,8 +70,8 @@
     },
     {
       "path": "docs/USAGE.md",
-      "bytes": 4102,
-      "sha256": "7c728209425dac354d67573eda4e6ac5e69579145f613556bf79fc0c2bbee033"
+      "bytes": 4123,
+      "sha256": "41f133256952a62e2398283b84af7875e889baeb1575b83b24443a32d7183fef"
     },
     {
       "path": "docs/V25_REPRODUCIBILITY_20261010.md",

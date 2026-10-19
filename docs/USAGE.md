@@ -14,11 +14,20 @@
 
 ## 2. 安裝兩套環境
 
-在儲存庫根目錄依 [README安裝命令](../README.md#安裝環境)建立兩個尚不存在的Windows x64／Python 3.12環境。已驗證的Python版本為3.12.14，GPU使用CUDA 12.6。
+以下指令在儲存庫根目錄執行。使用環境為Windows x64、Python 3.12.14、CUDA 12.6與NVIDIA顯示卡。
 
-`requirement.txt`讀取主環境25個固定套件；`requirements-torch.txt`讀取神經網路環境11個固定套件，其中PyTorch為`2.13.0+cu126`。清單保留已驗證wheel的位置與SHA256。`--require-hashes`核對下載檔案，`--no-deps`避免額外安裝未列入版本，最後以`pip check`檢查套件相依性。
+主程式與神經網路分開安裝，分別使用`requirement.txt`與`requirements-torch.txt`中的套件。請先確認`.venv-ml`與`.venv-nn`這兩個資料夾尚未存在，再執行：
 
-`requirements-inference.txt`是主要套件版本摘要，完整固定安裝以`requirement.txt`為準。`requirements-report.txt`用於文件製作；地理從頭建置的歷史依賴另見 [GEOGRAPHY](../inference/v25/training/GEOGRAPHY.md)，保存模型推論不用重建地理資料。
+```powershell
+py -3.12 -m venv .venv-ml
+py -3.12 -m venv .venv-nn
+.venv-ml/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirement.txt
+.venv-nn/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirements-torch.txt
+.venv-ml/Scripts/python.exe -m pip check
+.venv-nn/Scripts/python.exe -m pip check
+```
+
+前兩行建立各自的Python環境，中間兩行安裝套件，最後兩行檢查套件是否有衝突。安裝時請使用上述清單，讓套件版本與本專案一致。
 
 ## 3. 準備私人輸入
 

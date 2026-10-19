@@ -5,7 +5,7 @@
 
 根據房屋的地點、面積、樓層、類型與交易時間，預測每筆交易的成交總價，單位為新臺幣元。評估指標為平均絕對誤差（MAE），數值越小，代表平均預測誤差越低。
 
-本儲存庫整理 **v25 正式繳交版本**的方法、程式、設定與文件。
+本儲存庫整理房價預測的方法、程式、設定與文件。
 
 **正式報告：[PDF](report/台灣房屋銷售價格預測挑戰賽_正式報告.pdf) · [Word](report/台灣房屋銷售價格預測挑戰賽_正式報告.docx) · [線上文字](report/REPORT.md)**
 
@@ -23,50 +23,19 @@
 
 | 項目 | 入口 | 內容 |
 | --- | --- | --- |
-| 專案說明 | 本頁 | 目標、流程、安裝與操作順序 |
-| 程式 | [src/](src/README.md) | 預測入口及清理、特徵、六模型訓練、驗證與融合程式導覽 |
-| 設定 | [config/](config/README.md) | 預測路徑設定及模型參數、時間切分與融合設定的來源 |
-| 套件需求 | [requirement.txt](requirement.txt) | 主環境的固定套件；神經網路環境另行安裝 |
-| 正式報告 | [report/](report/README.md) | 最新18頁、八章與一份附錄，含Word、PDF與製作來源 |
-| 簡報與講稿 | [teaching/final_presentation/](teaching/final_presentation/README.md) | 最新17頁簡報、同步講稿與逐頁預覽 |
+| 專案說明 | 本頁 | 作業目標、方法與檔案介紹 |
+| 程式 | [src/](src/README.md) | 資料處理、模型訓練與預測的程式說明 |
+| 設定 | [config/](config/README.md) | 資料位置、模型參數與融合設定 |
+| 套件需求 | [requirement.txt](requirement.txt) | 執行主要程式所需的Python套件 |
+| 正式報告 | [report/](report/README.md) | 18頁報告，提供Word、PDF與線上文字版 |
+| 簡報與講稿 | [teaching/final_presentation/](teaching/final_presentation/README.md) | 17頁簡報、完整講稿與逐頁預覽 |
 
-原始訓練來源放在 `research/`，已驗證的六模型推論實作放在 `inference/`，相關紀錄放在 `evidence/`。這些是上述入口所使用的來源與依賴；原始交易資料、模型權重、執行環境與逐筆預測另存於本機。
+資料處理、模型訓練與融合的原始程式放在 `research/`，使用已訓練模型進行預測的程式放在 `inference/`，實驗與驗證紀錄放在 `evidence/`。
 
-## 安裝環境
+## 使用說明
 
-已驗證環境為 **Windows x64、Python 3.12.14、CUDA 12.6 與 NVIDIA GPU**。主程式與神經網路使用兩個獨立環境；以下命令在儲存庫根目錄執行：
+報告、簡報與講稿可以直接閱讀或下載。
 
-```powershell
-py -3.12 -m venv .venv-ml
-py -3.12 -m venv .venv-nn
-.venv-ml/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirement.txt
-.venv-nn/Scripts/python.exe -m pip install --no-deps --require-hashes -r requirements-torch.txt
-.venv-ml/Scripts/python.exe -m pip check
-.venv-nn/Scripts/python.exe -m pip check
-```
+程式使用Windows、Python 3.12與NVIDIA顯示卡。執行預測前，需要準備測試資料、範例提交檔及訓練好的模型，並在設定檔填入各檔案的位置。程式會輸出CSV，列出每筆房屋的編號與預測總價。
 
-套件清單使用已驗證的固定下載位置與檔案指紋。閱讀報告不需安裝；重新製作Word才需要 [requirements-report.txt](requirements-report.txt)。其他作業系統或GPU環境尚未驗證。[完整環境與資料準備](docs/USAGE.md)
-
-## 執行順序
-
-先查看設定與程式來源，這一步不需交易資料或模型：
-
-```powershell
-python src/predict.py --config config/predict.json --describe
-python scripts/verify_source.py
-```
-
-實際預測前，須備妥原測試資料、範例提交檔，以及已保存的六模型與必要轉換狀態。依 [config說明](config/README.md)複製設定為自己的本機設定，填入檔案路徑，再執行：
-
-```powershell
-.venv-ml/Scripts/python.exe src/predict.py --config config/predict.local.json --check-inputs
-.venv-ml/Scripts/python.exe src/predict.py --config config/predict.local.json
-```
-
-輸出會寫入設定指定的新資料夾，包含預測CSV與執行紀錄。原始交易資料、模型權重及逐筆預測保存在本機，未包含於此公開儲存庫。詳細輸入、輸出檔名與操作說明見 [執行指南](docs/USAGE.md)。
-
-## 驗證與可重現範圍
-
-離線驗證採時間切分，保留各期間與分組的改善及退步；反覆使用相同驗證期間可能造成選型偏差，完整分析見正式報告。簡報中的訓練曲線是固定設定的單一神經網路診斷，不能當作完整融合模型的訓練軌跡。
-
-既有實測曾載入保存的六模型與完整轉換狀態重新預測，47,073筆CSV與選定檔案完全一致。[推論驗證紀錄](inference/v25/evidence/reproducibility_receipt.json)記錄環境與比較範圍；設定入口的核對紀錄見[驗證說明](docs/VALIDATION.md)。這次整理文件沒有重新訓練或產生預測。從原始訓練資料重新訓練全部六模型的完整流程仍未驗證；[原始訓練程式與前置條件](inference/v25/training/README.md)已列明，不能直接當成一鍵重訓命令。
+原始資料與訓練好的模型保存在本機，未放在GitHub。安裝套件、準備檔案及執行指令，請見[程式操作說明](docs/USAGE.md)。
